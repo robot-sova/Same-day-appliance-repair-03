@@ -11,15 +11,56 @@ import { Icon } from "astro-icon";
   <div class="py-6 md:order-1 md:block">
     <p>Same Day Appliance Repair - your destination for all your commercial and household appliance repair needs! We deliver professional appliance repair services, that you can rely on with confidence.<br><br> We have helped thousands of customers, alleviating the stress that comes when appliances malfunction. Our quick response time and efficient work ethic form the cornerstone of our operational approach, aiming to resolve your appliance issues promptly and proficiently.</p>
    <br><div class="callback">
-    <form class='contact-form' id='simple-contact-form' method='POST' name='simpleContactForm'><input type='hidden' name='form-name' value='simpleContactForm' />
-<!-- <form name="contact" method="POST" data-netlify="true" onSubmit="submit">-->
-<label id="contact-form-name-label" for="contact-form-name" class="form-label">Name</label>
-<input type="text" name="name" id="contact-form-name" aria-labelledby="contact-form-name-label" class="form-input">
-<label id="contact-form-phone-label" for="contact-form-phone" class="form-label">Phone</label>
-<input type="tel" name="phone" id="contact-form-phone" aria-labelledby="contact-form-phone-label" class="form-input">
-<label id="contact-form-message-label" for="contact-form-message" class="form-label">Message</label>
-<textarea name="message" id="contact-form-message" aria-labelledby="contact-form-message-label" class="form-textarea" rows="2"></textarea>
-<button class="formbutton" type="submit" style="font-weight:900;">REQUEST A CALLBACK</button>
+<form
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  id="form"
+  class="needs-validation"
+  novalidate>
+  <input type="hidden" name="access_key" value="1d881d82-bde0-46fc-8047-cfaf21357f33" />
+  <!-- Create your free access key from https://web3forms.com/ -->
+  <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
+  <div class="mb-5">
+    <input
+      type="text"
+      placeholder="Full Name"
+      required
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+      name="name"
+    />
+    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+      Please provide your full name.
+    </div>
+  </div>
+  <div class="mb-5">
+    <label for="email_address" class="sr-only">Email Address</label><input
+      id="email_address"
+      type="email"
+      placeholder="Email Address"
+      name="email"
+      required
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+    />
+    <div class="empty-feedback text-red-400 text-sm mt-1">
+      Please provide your email address.
+    </div>
+    <div class="invalid-feedback text-red-400 text-sm mt-1">
+      Please provide a valid email address.
+    </div>
+  </div>
+  <div class="mb-3">
+    <textarea
+      name="message"
+      required
+      placeholder="Your Message"
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+    ></textarea>
+    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+      Please enter your message.
+    </div>
+  </div>
+  <button class="formbutton" type="submit">Send Message</Button>
+  <div id="result" class="mt-3 text-center"></div>
 </form>
 </div> 
   </div>
