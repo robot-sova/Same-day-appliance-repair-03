@@ -1,0 +1,94 @@
+---
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Contactbtn from "@components/contactbtn.astro";
+import Features from "@components/features.astro";
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/Layout.astro";
+
+---
+<Layout title="Same Day Refrigerator Repair - Los Angeles and Surrounding Areas">
+<Container>
+    <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-title" onclick="toggleAccordion(this)">
+            What is your return policy?
+            <span class="arrow">&#9660;</span> <!-- Downward arrow -->
+          </div>
+          <div class="accordion-content">
+            Our return policy is 30 days, no questions asked.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-title" onclick="toggleAccordion(this)">
+            How long does shipping take?
+            <span class="arrow">&#9660;</span> <!-- Downward arrow -->
+          </div>
+          <div class="accordion-content">
+            Shipping takes 5-7 business days, depending on your location.
+          </div>
+        </div>
+        <!-- Add more accordion items here -->
+      </div>
+      <style>.accordion {
+        max-width: 600px;
+        margin: auto;
+      }
+      
+      .accordion-item {
+        border: 1px solid #ddd;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      
+      .accordion-title {
+        padding: 15px;
+        margin: 0;
+        background-color: #f7f7f7;
+        cursor: pointer;
+        font-weight: bold;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .accordion-content {
+        padding: 15px;
+        display: none;
+        background-color: #fff;
+      }
+      
+      .accordion-item.active .accordion-content {
+        display: block;
+      }
+      
+      .arrow {
+        transition: transform 0.3s ease;
+      }
+      
+      .accordion-item.active .arrow {
+        transform: rotate(180deg);
+      }
+      </style>
+<script>
+function toggleAccordion(element) {
+    const item = element.parentNode;
+    item.classList.toggle('active');
+    
+    // Optionally, close other accordion items when one is opened
+    if (item.classList.contains('active')) {
+      const allItems = document.querySelectorAll('.accordion-item');
+      allItems.forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('active');
+        }
+      });
+    }
+  }</script>      
+<Cta />
+</Container>
+</Layout>
+
