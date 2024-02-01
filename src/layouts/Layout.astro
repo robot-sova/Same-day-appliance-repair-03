@@ -385,6 +385,53 @@ const makeTitle = title
 .col-sixteen-img{grid-column:2; width:190px;}
 .col-seventeen-img{grid-column:1; width:190px;}
 }
+
+/*Accordion for FAQs*/
+.accordion {
+  max-width: 600px;
+  margin: auto;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+}
+
+.accordion-title {
+  padding: 15px;
+  margin: 0;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-content {
+  padding: 15px;
+  display: none;
+  background-color: #fff;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .accordion-title + .accordion-content {
+  display: block;
+}
+
+input[type="checkbox"]:checked + .accordion-title .arrow {
+  transform: rotate(180deg);
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
     </style>
   </body>
 </html>
