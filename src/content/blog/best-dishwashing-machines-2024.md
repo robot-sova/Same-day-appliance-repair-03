@@ -3,12 +3,12 @@ draft: false
 title: "Best Dishwashers of 2024"
 snippet: "What are the best and budget friendly dishwashers in 2024, find detailed information with prices and convinient link suppliers."
 image: {
-    src: "https://images.unsplash.com/best-dishwashing-machines-2024.webp",
+    src: "https://samedayappliance.repair/images/best-dishwashing-machines-2024.webp",
     alt: "data structures & algorithms"
 }
 publishDate: "2022-11-09 16:39"
-category: "Courses"
-author: "Marcell Ziemann"
+category: "Best Products"
+author: "Vega"
 tags: [webdev, tailwindcss, frontend]
 ---
 
