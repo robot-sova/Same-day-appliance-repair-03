@@ -5,8 +5,121 @@ scroll-behavior: smooth;
 
 h2{
     margin-left: 10px;
+    font-size: 28px !important;
+    text-align: center;
 }
 
 .reviews {
-   
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
+
+main {
+    width: 100%;
+    max-width: 1920px !important;
+}
+
+.max-w-screen-xl {
+    width: 100%;
+    max-width: 1920px !important;
+}
+
+
+
+
+
+
+
+/* Часто задаваемые вопросы */
+
+.FAQ {
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #dedede;
+    padding: 2% 2%;
+    display: flex;
+  }
+  
+  .FAQ.active .fa_minus {
+    display: block;
+  }
+  
+  .FAQ.active .fa_plus {
+    display: none;
+  }
+  
+  .FAQ:hover .fa a {
+    color: #3d7bf5;
+    text-shadow: 0.1px 0.1px 0.1px #000;
+    transition: all 0.25s linear;
+}
+  
+  .FAQ_bottom {
+    border-bottom: 1px solid #dedede;
+  }
+  
+  .fa {
+    width: 96%;
+    margin-right: 10px;
+}
+
+  .fa h3 {
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .fa_plus {
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+  }
+  
+  .fa_minus {
+    display: none;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  .questions {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0% 2%;
+  }
+
+  .questions p {
+    font-weight: 500;
+    max-width: 92%;
+}
+
+  /* Часто задаваемые вопросы */
+
+  @media (max-width:1024px) {
+
+    .two-col-grid {
+        width:100%;
+        display: grid;
+        /* grid-template-columns: 1fr 2fr; */
+    }
+
+    .col-one {
+        width: 100%;
+        margin: 0;
+    }
+
+    .col-one a{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        margin-bottom: 2%;
+    }
+
+    .col-one img {
+        /* width: 80%; */
+        justify-self: center;
+        margin: 0;
+    }
+
+  }
