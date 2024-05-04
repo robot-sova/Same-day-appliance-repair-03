@@ -3,16 +3,24 @@ overflow-y: scroll;
 scroll-behavior: smooth;
 }
 
-h2{
-    margin-left: 10px;
-    font-size: 28px !important;
-    text-align: center;
+h2 {
+  text-align: center;
+  margin: 6% 0% 3% 0%;
+  text-decoration-line: underline;
+  text-decoration-color: #75baf587;
+  text-decoration-thickness: 5px;
+  font-size: clamp(24px, 5vw, 28px) !important;
 }
 
 .reviews {
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0% 3% 0% 3%;
+}
+
+.reviews p {
+  margin: 0;
 }
 
 main {
@@ -21,8 +29,9 @@ main {
 }
 
 .max-w-screen-xl {
-    width: 100%;
-    max-width: 1920px !important;
+  width: 100%;
+  max-width: 1920px !important;
+  padding: 2% 3% 2% 3%;
 }
 
 
@@ -37,7 +46,8 @@ main {
     cursor: pointer;
     width: 100%;
     text-align: left;
-    border-top: 1px solid #dedede;
+    /* border-top: 1px solid #dedede; */
+    border-top: 1px solid #75baf566;
     padding: 2% 2%;
     display: flex;
   }
@@ -51,13 +61,13 @@ main {
   }
   
   .FAQ:hover .fa a {
-    color: #3d7bf5;
+    color: #2c7bc0;
     text-shadow: 0.1px 0.1px 0.1px #000;
     transition: all 0.25s linear;
 }
   
   .FAQ_bottom {
-    border-bottom: 1px solid #dedede;
+    border-bottom: 1px solid #75baf566;
   }
   
   .fa {
@@ -65,10 +75,11 @@ main {
     margin-right: 10px;
 }
 
-  .fa h3 {
-    margin: 0;
-    font-weight: 600;
-  }
+.fa h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: clamp(22px, 5vw, 24px)!important;
+}
   
   .fa_plus {
     display: inline-block;
@@ -94,9 +105,94 @@ main {
   .questions p {
     font-weight: 500;
     max-width: 92%;
+    font-size: clamp(16px, 3vw, 20px);
 }
 
   /* Часто задаваемые вопросы */
+
+
+
+
+
+
+.job-prices {
+  width: 100%;
+}
+
+.head-prices h2 {
+  margin-bottom: 1%;
+}
+
+.head-prices p {
+  text-align: center;
+  margin: 0 0 3% 0;
+  font-size: clamp(16px, 3vw, 20px);
+}
+
+.content_job-prices {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  border-radius: 5px;
+  min-height: 120px;
+}
+
+#col-prices {
+  background-color: #64b7ff61;
+}
+
+.content_job-prices p {
+  margin: 0;
+  padding: 1% 1% 1% 0%;
+}
+
+.desk_job-prices {
+  text-align: left;
+  width: 90%;
+  display: grid;
+}
+
+.desk_job-prices a {
+  align-self: center;
+}
+
+.desk_job-prices a:hover{
+  text-decoration: underline;
+}
+
+.money_job-prices {
+  text-align: center;
+  align-self: center;
+  min-width: 130px;
+}
+
+.money_job-prices p{
+  white-space: nowrap;
+  width: 100%;
+  font-size: clamp(22px, 5vw, 24px);
+}
+
+.desk_job-prices p:nth-child(1) {
+  font-size: clamp(22px, 5vw, 24px);
+  padding: 1% 1% 0% 0%;
+}
+
+.desk_job-prices p {
+  font-size: clamp(16px, 4vw, 20px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
   @media (max-width:1024px) {
 
@@ -123,5 +219,34 @@ main {
         justify-self: center;
         margin: 0;
     }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width:768px) { 
+
+    .content_job-prices {
+      padding: 3% 2%;
+  }
+
+    .money_job-prices {
+      min-width: auto;
+  }
+
+  .money_job-prices p {
+    white-space: wrap;
+}
 
   }
