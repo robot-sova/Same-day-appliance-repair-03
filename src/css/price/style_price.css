@@ -28,11 +28,11 @@ h2 {
 .animate-charcter {
   text-transform: uppercase;
   background-image: linear-gradient(
-  -225deg,
-  #fff 0%,
-  #000 15%,
-  #111112 67%,
-  #858384 100%
+-225deg,
+#fff 0%,
+#000 15%,
+#111112 67%,
+#858384 100%
 );
   background-size: auto auto;
   background-clip: border-box;
@@ -45,7 +45,7 @@ h2 {
   animation: textclip 4s linear infinite;
   display: inline-block;
   font-size: clamp(40px, 8vw, 60px);
-  line-height: clamp(42px,4vh,66px);
+  line-height: clamp(56px,8vh,60px);
   font-weight: 900;
 }
 
@@ -81,6 +81,7 @@ main {
 .pricing-policy {
   width: 100%;
   display: grid;
+  margin-bottom: 5%;
 }
 
 .head_pricing-policy {
@@ -146,39 +147,35 @@ display: flex;
   font-size: clamp(16px, 4vw, 18px);
 }
 
-
-
 #cost-svg {
   stroke: #000;
   stroke-width: 5px;
 }
 
 .con-inside_pricing-policy:hover #cost-svg {
-  stroke: rgb(52, 81, 248);
+  fill: rgb(31 120 243);
+  stroke:rgb(31 120 243);
   transition: 0.3s;
 }
 
 .con-inside_pricing-policy:hover svg {
-  fill: rgb(52, 81, 248);
+  fill: rgb(31 120 243);
   transition: 0.3s;
 }
 
-
-/* 
-.pricing-policy {
-  width: 100%;
+.pros_pricing-policy {
+  width: 80%;
+  margin: 0 auto;
+  border: solid 3px #ff2a2a52;
+  border-radius: 5px;
 }
 
-svg {
-  max-width: 50px;
+.pros_pricing-policy p{
+  font-size: clamp(16px, 4vw, 18px);
 }
 
 
-.pricing-policy:hover svg {
-fill: aqua;
-}
 
- */
 
 
 
@@ -353,6 +350,17 @@ fill: aqua;
   font-size: clamp(16px, 4vw, 20px);
 }
 
+.pros_job-prices {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3%;
+    border: solid 3px #ff2a2a52;
+    border-radius: 5px;
+}
+
+.pros_job-prices p{
+  font-size: clamp(16px, 4vw, 18px);
+}
 
 
 
@@ -418,12 +426,16 @@ fill: aqua;
   }
 
   .content_pricing-policy {
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 .icon_pricing-policy {
   min-width: auto;
   margin-bottom: 2%;
+}
+
+.pros_pricing-policy {
+  width: 100%;
 }
 
     .content_job-prices {
@@ -440,6 +452,10 @@ fill: aqua;
 
   .money_job-prices p {
     white-space: wrap;
+}
+
+.pros_job-prices {
+  width: 100%;
 }
 
   }
