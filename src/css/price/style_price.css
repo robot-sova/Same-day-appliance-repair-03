@@ -1,3 +1,15 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
 html {
 overflow-y: scroll;
 scroll-behavior: smooth;
@@ -11,6 +23,32 @@ h2 {
   text-decoration-thickness: 5px;
   font-size: clamp(24px, 5vw, 28px) !important;
 }
+
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+  -225deg,
+  #fff 0%,
+  #000 15%,
+  #111112 67%,
+  #858384 100%
+);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+  font-size: clamp(40px, 8vw, 60px);
+  line-height: clamp(42px,4vh,66px);
+  font-weight: 900;
+}
+
 
 .reviews {
   width: 100%;
@@ -40,14 +78,131 @@ main {
 
 
 
+.pricing-policy {
+  width: 100%;
+  display: grid;
+}
+
+.head_pricing-policy {
+  text-align: center;
+  display: grid;
+}
+
+.head_pricing-policy h2{
+    margin: 6% 0% 0% 0%;
+    margin-bottom: 1%;
+}
+
+.head_pricing-policy p {
+  text-align: center;
+  margin: 0 0 3% 0;
+  font-size: clamp(16px, 3vw, 20px);
+  max-width: 80%;
+  justify-self: center;
+}
+
+
+.content_pricing-policy {
+  text-align: left;
+  margin-bottom: 3%;
+}
+
+.con-inside_pricing-policy {
+display: flex;
+}
+
+.con-inside_pricing-policy p {
+  margin: 0;
+}
+
+
+
+
+
+
+.icon_pricing-policy {
+  margin: auto auto;
+  display: grid;
+  min-width: 130px;
+}
+
+.icon_pricing-policy svg {
+ justify-self: center;
+}
+
+.icon_pricing-policy h6 {
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: clamp(18px, 4vw, 20px);
+}
+.desc_pricing-policy {
+  display: grid;
+  padding-left: 2%;
+}
+
+.desc_pricing-policy p {
+  align-self: center;
+  font-size: clamp(16px, 4vw, 18px);
+}
+
+
+
+#cost-svg {
+  stroke: #000;
+  stroke-width: 5px;
+}
+
+.con-inside_pricing-policy:hover #cost-svg {
+  stroke: rgb(52, 81, 248);
+  transition: 0.3s;
+}
+
+.con-inside_pricing-policy:hover svg {
+  fill: rgb(52, 81, 248);
+  transition: 0.3s;
+}
+
+
+/* 
+.pricing-policy {
+  width: 100%;
+}
+
+svg {
+  max-width: 50px;
+}
+
+
+.pricing-policy:hover svg {
+fill: aqua;
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Часто задаваемые вопросы */
 
 .FAQ {
     cursor: pointer;
     width: 100%;
     text-align: left;
-    /* border-top: 1px solid #dedede; */
-    border-top: 1px solid #75baf566;
+    border-top: 1px solid #dedede;
+    /* border-top: 1px solid #75baf566; */
     padding: 2% 2%;
     display: flex;
   }
@@ -67,7 +222,8 @@ main {
 }
   
   .FAQ_bottom {
-    border-bottom: 1px solid #75baf566;
+    /* border-bottom: 1px solid #75baf566; */
+    border-top: 1px solid #dedede;
   }
   
   .fa {
@@ -119,6 +275,11 @@ main {
   width: 100%;
 }
 
+.head-prices {
+  text-align: center;
+  display: grid;
+}
+
 .head-prices h2 {
   margin-bottom: 1%;
 }
@@ -127,6 +288,8 @@ main {
   text-align: center;
   margin: 0 0 3% 0;
   font-size: clamp(16px, 3vw, 20px);
+  max-width: 80%;
+  justify-self: center;
 }
 
 .content_job-prices {
@@ -137,13 +300,17 @@ main {
   min-height: 120px;
 }
 
+.content_job-prices-h-m {
+  min-height: auto;
+}
+
 #col-prices {
   background-color: #64b7ff61;
 }
 
 .content_job-prices p {
   margin: 0;
-  padding: 1% 1% 1% 0%;
+  padding: 0% 1% 1% 0%;
 }
 
 .desk_job-prices {
@@ -175,6 +342,11 @@ main {
 .desk_job-prices p:nth-child(1) {
   font-size: clamp(22px, 5vw, 24px);
   padding: 1% 1% 0% 0%;
+}
+
+.content_job-prices-h-m p:nth-child(1) {
+  font-size: clamp(22px, 5vw, 24px);
+  padding: 1% 1% 1% 0%;
 }
 
 .desk_job-prices p {
@@ -237,9 +409,30 @@ main {
 
   @media (max-width:768px) { 
 
+    .head_pricing-policy {
+      margin-bottom: 7%;
+  }
+
+    .con-inside_pricing-policy {
+      display: grid;
+  }
+
+  .content_pricing-policy {
+    margin-bottom: 15%;
+}
+
+.icon_pricing-policy {
+  min-width: auto;
+  margin-bottom: 2%;
+}
+
     .content_job-prices {
       padding: 3% 2%;
   }
+
+  .head-prices p {
+    max-width: 100%;
+}
 
     .money_job-prices {
       min-width: auto;
