@@ -421,6 +421,12 @@ display: flex;
         display: grid;
         /* grid-template-columns: 1fr 2fr; */
     }
+    
+    .col-one img {
+        /* width: 80%; */
+        justify-self: center;
+        margin: 0;
+    }
 
     .col-one {
         width: 100%;
@@ -432,17 +438,22 @@ display: flex;
         margin: 0;
         display: grid;
         margin-bottom: 2%;
+        text-align: center;
     }
 
-    .col-one img {
-        /* width: 80%; */
-        justify-self: center;
-        margin: 0;
-    }
-
+    .contactbtn-form {
+      max-width: 341px;
+      margin: 0 !important;
   }
 
+ 
+  .contactbtn-form a {
+    max-width: 215px !important;
+    display: inline;
+    margin-top: 10px;
+}
 
+  }
 
 
 
