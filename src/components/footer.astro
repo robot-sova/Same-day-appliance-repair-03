@@ -1,6 +1,9 @@
 <footer class="my-20">
  <!--Housecall pro chat bubble-->
+
   <script id="housecall-pro-chat-bubble" src="https://chat.housecallpro.com/proChat.js" type="text/javascript" data-color="#0E6FBE" data-organization="3fe576c5-6201-448a-a776-b450ad1cf95f" defer></script>
+
+
   <p class="text-center text-sm text-slate-500">
     Copyright © {new Date().getFullYear()}. All rights reserved.
   </p>
@@ -13,4 +16,18 @@
     Made by 
       Gain Top Skills
   </p>
+  <script>
+    var TimeoutSeconds = 5
+
+setTimeout(() => {
+  const chatBubble = document.createElement("script");
+  chatBubble.setAttribute("id", "housecall-pro-chat-bubble");
+  chatBubble.setAttribute("scr", "https://chat.housecallpro.com/proChat.js");
+  chatBubble.setAttribute("type", "text/javascript");
+  chatBubble.setAttribute("data-color", "0E6FBE");
+  chatBubble.setAttribute("data-organization", "3fe576c5-6201-448a-a776-b450ad1cf95f");
+  chatBubble.defer;
+  document.append(chatBubble);
+}, TimeoutSeconds * 1000);
+  </script>
 </footer>
