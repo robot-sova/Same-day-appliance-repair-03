@@ -10,12 +10,27 @@
 }
 
 
-.common-communication-buttons {
+.full-button-global {
+  max-width: 600px;
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .common-communication-buttons {
   max-width: 400px;
   width: 100%;
-  /* margin: auto auto; */
   padding: 5px;
-}
+} */
 
 
 
@@ -50,7 +65,7 @@ button.hcp-button {
   justify-self: center;
 }
 
-
+/* 
 .number-digit {
   text-align: center;
   max-width: 185px;
@@ -60,8 +75,6 @@ button.hcp-button {
   display: inline-grid;
   cursor: pointer;
   transition: 250ms;
-
-  /* border: solid 1px #000; */
 }
 
 .number-digit:hover {
@@ -83,4 +96,4 @@ button.hcp-button {
   .number-digit {
     display: none;
   }
-}
+} */
