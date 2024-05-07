@@ -11,8 +11,44 @@
 
 
 .full-button-global {
-  max-width: 600px;
+  max-width: 360px;
   display: flex;
+  
+}
+
+
+
+
+
+
+
+.button-top-global {
+  display: inline-block;
+  width: 50px;
+margin: 0 10px 0 0;
+background-color: #0f77cc;
+border-radius: 7px;
+box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.button-top-global:hover{
+  margin: 0 10px 0 0;
+  background-color: #000000;
+  }
+  
+.button-top-global a {
+  display: grid;
+  color: #fff;
+  text-align: center;
+}
+
+.button-top-global svg {
+  margin: -1px  3px 0px 3px;
+}
+
+.button-top-global p {
+  line-height: 20px;
+  margin: -5px 0 3px 0;
 }
 
 
@@ -25,18 +61,14 @@
 
 
 
+.button-book-global {
+  display: inline-block;
+  align-self: center;
+  margin: 0 10px 0 0;
+  width: 94px;
+}
 
-/* .common-communication-buttons {
-  max-width: 400px;
-  width: 100%;
-  padding: 5px;
-} */
-
-
-
-
-
-button.hcp-button {
+.button-book-global button {
   font-weight: 600;
   line-height: 1.14;
   padding: 12px 24px;
@@ -63,7 +95,111 @@ button.hcp-button {
   overflow: auto;
   max-width: 140px;
   justify-self: center;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 }
+
+.button-book-global:hover button {
+  background-color: black;
+  transition: 0.25s;
+}
+
+
+
+
+
+
+
+
+
+.button-call-global {
+  display: inline-block;
+  width: 180px;
+  background-color: #0f77cc ;
+  box-shadow: inset 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  border-radius: 7px;
+  display: grid;
+  align-self: center;
+}
+
+.button-call-global a {
+padding: 13px 10px;
+width: 180px;
+align-self: center;
+color: #fff;
+}
+
+.button-call-global:hover {
+  background-color: black;
+  transition: 0.25s;
+}
+
+
+
+
+
+
+
+@media (max-width:390px) {
+  .full-button-global {
+    display: inline-block;
+  }
+
+  .button-call-global {
+    margin-top: 10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* button.hcp-button {
+  font-weight: 600;
+  line-height: 1.14;
+  padding: 12px 24px;
+  box-shadow: none;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #0f77cc;
+  text-transform: uppercase;
+  position: relative;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  text-decoration: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  text-indent: 0px;
+  text-shadow: none;
+  font-weight: normal;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  overflow: auto;
+  max-width: 140px;
+  justify-self: center;
+} */
 
 /* 
 .number-digit {
