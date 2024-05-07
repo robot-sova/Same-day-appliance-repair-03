@@ -1,5 +1,7 @@
 {
     "[yaml]": {
         "editor.autoIndent": "full"
-    }
+    },
+    "files.autoSave": "afterDelay",
+    "editor.wordWrap": "on"
 }

@@ -40,6 +40,7 @@ const makeTitle = title
         gtag('js', new Date());
         gtag('config', 'G-F5MBY27XES');
       </script>
+
     <SEO
       title={makeTitle}
       
@@ -62,6 +63,8 @@ const makeTitle = title
         },
       }}
     />
+
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -117,17 +120,22 @@ const makeTitle = title
       }}</script>
   
   </head>
+
+
+
+  
   <body>
     <Navbar />
     <div class="reviews"><p><a  href="#reviews"><strong style="font-size: 17px"> Reviews ⭐⭐⭐⭐⭐ 5.0 </strong> (Google Rating)<a><a  href="#reviews">(Thumbtack Rating)<a></p></div>
-    <slot />
-    <Footer />
-    <style is:global>
 
-.H9lube img {
+    <slot />
+
+    <Footer />
+
+    <style is:global>
+      .H9lube img {
         width: 100% Im !important;
       }
-      
       /* Improve Page speed */
       /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
       img {
@@ -153,8 +161,7 @@ const makeTitle = title
       line-height:66px;
       font-weight:600;
       margin:0 auto 0 auto;}
-    .animate-charcter
-{
+    .animate-charcter {
    text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
@@ -163,6 +170,7 @@ const makeTitle = title
     #111112 67%,
     #858384 100%
   );
+
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -183,8 +191,10 @@ const makeTitle = title
     background-position: 200% center;
   }
 }
+
 /*Truck Driving Animation */
-.loop-wrapper { width:100%;
+.loop-wrapper {
+   width:100%;
   background-color: #1a1b1b;
   border-radius: 5px;;
   margin: 10px auto;

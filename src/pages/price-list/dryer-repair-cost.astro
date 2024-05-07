@@ -10,89 +10,114 @@ import Layout from "@layouts/Layout.astro";
 import Costanchor from "@components/price-list/components_dryer-repair-cost.astro";
 
 import "css/price/style_price.css";
-
 ---
 
-
-<script defer> 
-  document.addEventListener('DOMContentLoaded', function () {
-  let coll = document.getElementsByClassName('FAQ');
-  for (let i = 0; i < coll.length; i++) {
-    coll[i].addEventListener('click', function () {
-      this.classList.toggle('active');
-      let content = this.nextElementSibling;
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + 'px';
-      }
-    });
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    let coll = document.getElementsByClassName("FAQ");
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
     }
   });
 </script>
 
-
 <Layout title="Dryer Repair Cost">
-
-<Container>
-  
+  <Container>
     <main>
-      
-        <h1><span class="animate-charcter">Dryer Repair Cost</span></h1>
-     
-     <div class="two-col-grid">
-      <div class="col-one">
+      <h1><span class="animate-charcter">Dryer Repair Cost</span></h1>
 
-      <img class="img-header" src="/images/lg-dryer-repair.webp" width="500" height="500" alt="Dryer Repair Cost">
-     
-     <Contactbtn />
-     
-     </div>
-     
-     <div class="col-two">
+      <div class="two-col-grid">
+        <div class="col-one">
+          <img
+            class="img-header"
+            src="/images/lg-dryer-repair.webp"
+            width="500"
+            height="500"
+            alt="Dryer Repair Cost"
+          />
 
-      <Costanchor/>
+          <Contactbtn />
+        </div>
 
-      <p>At Same Day Appliance Repair, we are a family-owned business committed to enhancing your customer experience. We understand the frustration of appliance repairs, and we pride ourselves on our transparency and reliability. This page is designed to give you a thorough understanding of our pricing policies, the costs associated with dryer repairs, and our unique approach to service. We offer a wide range of appliance repair services, including dryer repair, to highlight the breadth of our expertise.</p>
-      <p><b>Have Questions? We’re Here to Help!</b></p>
-      <p>Feel free to call us with any questions. Our team is dedicated to assisting you and ensuring your satisfaction.</p>
+        <div class="col-two">
+          <Costanchor />
 
-      <h2>How Much Does It Cost to Repair a Dryer?</h2>
-      <p>Discussing the average cost to repair is essential when considering the general costs associated with repairing common household appliances. Understanding the average dryer repair costs can help homeowners budget for repairs more effectively. Dryer repair costs can vary based on the type of issue as well as the brand and model of your appliance. Our technician will first need to diagnose the problem to provide you with the most accurate estimate. Following the diagnosis, you’ll receive a detailed price breakdown. This helps make an informed decision about whether to repair or replace your dryer and includes recommendations should you consider a replacement.</p>
+          <p>
+            At Same Day Appliance Repair, we are a family-owned business
+            committed to enhancing your customer experience. We understand the
+            frustration of appliance repairs, and we pride ourselves on our
+            transparency and reliability. This page is designed to give you a
+            thorough understanding of our pricing policies, the costs associated
+            with dryer repairs, and our unique approach to service. We offer a
+            wide range of appliance repair services, including dryer repair, to
+            highlight the breadth of our expertise.
+          </p>
+          <p><b>Have Questions? We’re Here to Help!</b></p>
+          <p>
+            Feel free to call us with any questions. Our team is dedicated to
+            assisting you and ensuring your satisfaction.
+          </p>
+
+          <h2>How Much Does It Cost to Repair a Dryer?</h2>
+          <p>
+            Discussing the average cost to repair is essential when considering
+            the general costs associated with repairing common household
+            appliances. Understanding the average dryer repair costs can help
+            homeowners budget for repairs more effectively. Dryer repair costs
+            can vary based on the type of issue as well as the brand and model
+            of your appliance. Our technician will first need to diagnose the
+            problem to provide you with the most accurate estimate. Following
+            the diagnosis, you’ll receive a detailed price breakdown. This helps
+            make an informed decision about whether to repair or replace your
+            dryer and includes recommendations should you consider a
+            replacement.
+          </p>
+        </div>
       </div>
 
-    </div>
+      <div class="pricing-policy">
+        <div class="head_pricing-policy">
+          <h2>Our Pricing Policy For Dryer Repair And How We Work</h2>
+          <p>
+            There are four costs to consider when making your dryer work
+            optimally.
+          </p>
+        </div>
 
-
-
-
-
-
-
-
-<div class="pricing-policy">
-
-  <div class="head_pricing-policy">
-    <h2>Our Pricing Policy For Dryer Repair And How We Work</h2>
-    <p>There are four costs to consider when making your dryer work optimally.</p>
-  </div>
-
-
-  <div class="content_pricing-policy">
-
-    <div class="con-inside_pricing-policy">
-
-      <div class="icon_pricing-policy">
-        <svg fill="#000000" height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 490 490" xml:space="preserve">
-<g id="bold_copy_5_">
-	<path  d="M392.383,0H245H97.617v369.414L245,490l147.383-120.586V0z M361.758,354.898L245,450.432l-116.758-95.535V30.625H245
-		h116.758V354.898z"/>
-	<path d="M245,311.395c-23.229,0-42.109,18.88-42.109,42.109c0,23.229,18.88,42.109,42.109,42.109
+        <div class="content_pricing-policy">
+          <div class="con-inside_pricing-policy">
+            <div class="icon_pricing-policy">
+              <svg
+                fill="#000000"
+                height="50px"
+                width="50px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 490 490"
+                xml:space="preserve">
+                <g id="bold_copy_5_">
+                  <path
+                    d="M392.383,0H245H97.617v369.414L245,490l147.383-120.586V0z M361.758,354.898L245,450.432l-116.758-95.535V30.625H245
+		h116.758V354.898z"
+                  ></path>
+                  <path
+                    d="M245,311.395c-23.229,0-42.109,18.88-42.109,42.109c0,23.229,18.88,42.109,42.109,42.109
 		c23.229,0,42.109-18.88,42.109-42.109C287.109,330.275,268.229,311.395,245,311.395z M245,364.989
 		c-6.324,0-11.484-5.16-11.484-11.484c0-6.324,5.16-11.484,11.484-11.484c6.324,0,11.484,5.16,11.484,11.484
-		C256.484,359.828,251.324,364.989,245,364.989z"/>
-	<path d="M238.079,62.919v12.005c-13.904,1.378-25.051,6.584-33.427,15.603c-8.376,9.019-12.556,20.151-12.556,33.427
+		C256.484,359.828,251.324,364.989,245,364.989z"
+                  ></path>
+                  <path
+                    d="M238.079,62.919v12.005c-13.904,1.378-25.051,6.584-33.427,15.603c-8.376,9.019-12.556,20.151-12.556,33.427
 		c0,13.092,3.706,24.24,11.117,33.427c7.411,9.188,19.018,16.032,34.867,20.565v50.837c-4.364-2.113-8.33-5.497-11.882-10.198
 		c-3.553-4.701-5.987-10.275-7.289-16.752l-31.651,3.399c2.419,15.94,7.993,28.282,16.737,37.01
 		c8.743,8.728,20.09,13.95,34.101,15.649v22.065h17.579v-22.678c15.772-2.251,28.083-8.407,36.949-18.436
@@ -101,98 +126,129 @@ import "css/price/style_price.css";
 		c-7.61-7.243-17.839-11.637-30.701-13.169v-12.02H238.079z M238.079,143.356c-5.268-2.251-9.187-5.237-11.775-8.912
 		c-2.588-3.675-3.874-7.672-3.874-11.944c0-4.701,1.409-8.988,4.226-12.862c2.848-3.889,6.645-6.646,11.408-8.253v41.972H238.079z
 		 M271.383,192.187c3.2,3.935,4.778,8.606,4.778,14.011c0,6.064-1.899,11.347-5.696,15.833c-3.797,4.487-8.728,7.304-14.807,8.437
-		v-47.316C262.946,185.266,268.183,188.267,271.383,192.187z"/>
-</g>
-</svg>
-        <h6>Maintenance Cost</h6>
-      </div>
-      
-      <div class="desc_pricing-policy">
-        <p> Regular maintenance is essential for your dryer’s longevity and optimal performance. We recommend annual maintenance, which includes checking drum and door seals for damage, lubricating moving parts, tightening electrical connections, testing the thermostat and heating element, and checking the exhaust hood. Our flat fee for this comprehensive service is $80. This preventive approach is not only cost-effective by reducing the need for dryer repair but also enhances the efficiency and lifespan of your appliance. Schedule your maintenance appointment with us today and ensure your dryer runs smoothly.</p>
-      </div>
-    
-    </div>
-    
-  </div>
-  
-  
+		v-47.316C262.946,185.266,268.183,188.267,271.383,192.187z"
+                  ></path>
+                </g>
+              </svg>
+              <h6>Maintenance Cost</h6>
+            </div>
 
+            <div class="desc_pricing-policy">
+              <p>
+                Regular maintenance is essential for your dryer’s longevity and
+                optimal performance. We recommend annual maintenance, which
+                includes checking drum and door seals for damage, lubricating
+                moving parts, tightening electrical connections, testing the
+                thermostat and heating element, and checking the exhaust hood.
+                Our flat fee for this comprehensive service is $80. This
+                preventive approach is not only cost-effective by reducing the
+                need for dryer repair but also enhances the efficiency and
+                lifespan of your appliance. Schedule your maintenance
+                appointment with us today and ensure your dryer runs smoothly.
+              </p>
+            </div>
+          </div>
+        </div>
 
+        <div class="content_pricing-policy">
+          <div class="con-inside_pricing-policy">
+            <div class="icon_pricing-policy">
+              <svg
+                fill="#000000"
+                width="50px"
+                height="50px"
+                viewBox="0 0 1024 1024"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  d="M951.467 721.067C908.8 678.4 853.334 665.6 802.134 674.134l-409.6-409.6c8.533-51.2-4.267-110.933-46.933-149.333-42.667-46.933-110.933-64-174.933-42.667 0 0-4.267 0-4.267 4.267-4.267 0-4.267 4.267-8.533 4.267-8.533 8.533-8.533 21.333 0 29.867l59.733 59.733c4.267 4.267 4.267 12.8 0 17.067l-29.867 29.867c-8.533 4.267-12.8 4.267-17.067 0l-59.733-55.467c-8.533-8.533-21.333-8.533-29.867 0 0 0 0 4.267-4.267 4.267 0 0 0 4.267-4.267 4.267-21.333 59.733-8.533 128 38.4 174.933 34.133 34.133 76.8 46.933 115.2 46.933 12.8 0 21.333 0 34.133-4.267l409.6 409.6c-12.8 51.2 4.267 110.933 46.933 149.333 29.867 29.867 72.533 46.933 119.467 46.933 21.333 0 38.4-4.267 55.467-8.533 0 0 4.267 0 4.267-4.267 4.267 0 4.267-4.267 8.533-4.267 8.533-8.533 8.533-21.333 0-29.867L849.066 896c-4.267-4.267-4.267-4.267-4.267-8.533s0-8.533 4.267-8.533l29.867-29.867c4.267-4.267 4.267-4.267 8.533-4.267s4.267 0 8.533 4.267l55.467 55.467c8.533 8.533 21.333 8.533 29.867 0 0 0 0-4.267 4.267-4.267 4.267-4.267 4.267-4.267 4.267-8.533 25.6-59.733 8.533-128-38.4-170.667zM140.8 315.733c-25.6-25.6-38.4-64-34.133-98.133l29.867 29.867c12.8 8.533 25.6 17.067 42.667 17.067 12.8 0 29.867-4.267 38.4-17.067l29.867-29.867c21.333-21.333 21.333-55.467 0-76.8l-34.133-34.133c38.4-4.267 72.533 8.533 102.4 34.133 46.933 46.933 46.933 128 0 174.933-46.933 51.2-123.733 51.2-174.933 0zm166.4 59.734c12.8-8.533 29.867-17.067 38.4-29.867 12.8-12.8 21.333-25.6 29.867-42.667l384 384C746.667 695.466 729.6 704 716.8 716.8s-21.333 25.6-29.867 38.4L307.2 375.467zm580.267 426.666c-12.8 0-29.867 4.267-38.4 17.067L819.2 849.067c-8.533 8.533-17.067 25.6-17.067 38.4s4.267 29.867 17.067 38.4l29.867 29.867c-38.4 4.267-72.533-8.533-102.4-34.133-46.933-46.933-46.933-128 0-174.933s128-46.933 174.933 0c25.6 25.6 38.4 64 34.133 102.4l-29.867-29.867c-8.533-8.533-21.333-17.067-38.4-17.067z"
+                ></path><path
+                  d="M610.133 409.6c4.267 0 12.8 0 17.067-4.267L802.133 230.4l34.133 34.133-174.933 174.933c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 17.067 4.267 4.267 0 12.8 0 17.067-4.267l196.267-192 68.267-25.6c4.267-4.267 12.8-8.533 12.8-12.8l29.867-85.333c4.267-8.533 0-17.067-4.267-21.333l-59.733-64c-4.267-4.267-12.8-8.533-21.333-4.267l-85.333 29.867c-4.267 4.267-12.8 8.533-12.8 12.8l-25.6 72.533c-4.267 0-4.267 4.267-4.267 4.267l-192 192c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 12.8 4.267zm243.2-277.333l64-21.333 38.4 38.4-21.333 64-64 21.333-38.4-38.4 21.333-64zm-384 558.933L209.066 951.467c-8.533 8.533-17.067 8.533-21.333 4.267l-81.067-81.067c-4.267-4.267 0-12.8 4.267-21.333l256-256c8.533-8.533 8.533-21.333 0-29.867s-21.333-8.533-29.867 0l-256 256c-25.6 25.6-25.6 59.733-4.267 81.067l81.067 81.067c8.533 8.533 21.333 12.8 34.133 12.8 17.067 0 34.133-8.533 46.933-21.333l260.267-260.267c8.533-8.533 8.533-21.333 0-29.867s-21.333-4.267-29.867 4.267z"
+                ></path></svg
+              >
+              <h6>Service fees</h6>
+            </div>
 
+            <div class="desc_pricing-policy">
+              <p>
+                If your dryer requires a repair, we charge a service fee of $65,
+                which includes a detailed price breakdown. This fee is waived if
+                you choose to proceed with the dryer repair. Unlike some
+                companies, we do not offer free estimates but guarantee you will
+                not pay this fee if we cannot diagnose properly. Our technicians
+                are highly trained and equipped with specialized tools to
+                accurately diagnose and resolve issues, ensuring transparency
+                and fairness in our charges. Our appliance repair technicians
+                possess the qualifications and experience to efficiently
+                diagnose and fix problems, ensuring your dryer is in capable
+                hands.
+              </p>
+            </div>
+          </div>
+        </div>
 
-
-
-
-  <div class="content_pricing-policy">
-
-    <div class="con-inside_pricing-policy">
-
-      <div class="icon_pricing-policy">
-        <svg fill="#000000" width="50px" height="50px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M951.467 721.067C908.8 678.4 853.334 665.6 802.134 674.134l-409.6-409.6c8.533-51.2-4.267-110.933-46.933-149.333-42.667-46.933-110.933-64-174.933-42.667 0 0-4.267 0-4.267 4.267-4.267 0-4.267 4.267-8.533 4.267-8.533 8.533-8.533 21.333 0 29.867l59.733 59.733c4.267 4.267 4.267 12.8 0 17.067l-29.867 29.867c-8.533 4.267-12.8 4.267-17.067 0l-59.733-55.467c-8.533-8.533-21.333-8.533-29.867 0 0 0 0 4.267-4.267 4.267 0 0 0 4.267-4.267 4.267-21.333 59.733-8.533 128 38.4 174.933 34.133 34.133 76.8 46.933 115.2 46.933 12.8 0 21.333 0 34.133-4.267l409.6 409.6c-12.8 51.2 4.267 110.933 46.933 149.333 29.867 29.867 72.533 46.933 119.467 46.933 21.333 0 38.4-4.267 55.467-8.533 0 0 4.267 0 4.267-4.267 4.267 0 4.267-4.267 8.533-4.267 8.533-8.533 8.533-21.333 0-29.867L849.066 896c-4.267-4.267-4.267-4.267-4.267-8.533s0-8.533 4.267-8.533l29.867-29.867c4.267-4.267 4.267-4.267 8.533-4.267s4.267 0 8.533 4.267l55.467 55.467c8.533 8.533 21.333 8.533 29.867 0 0 0 0-4.267 4.267-4.267 4.267-4.267 4.267-4.267 4.267-8.533 25.6-59.733 8.533-128-38.4-170.667zM140.8 315.733c-25.6-25.6-38.4-64-34.133-98.133l29.867 29.867c12.8 8.533 25.6 17.067 42.667 17.067 12.8 0 29.867-4.267 38.4-17.067l29.867-29.867c21.333-21.333 21.333-55.467 0-76.8l-34.133-34.133c38.4-4.267 72.533 8.533 102.4 34.133 46.933 46.933 46.933 128 0 174.933-46.933 51.2-123.733 51.2-174.933 0zm166.4 59.734c12.8-8.533 29.867-17.067 38.4-29.867 12.8-12.8 21.333-25.6 29.867-42.667l384 384C746.667 695.466 729.6 704 716.8 716.8s-21.333 25.6-29.867 38.4L307.2 375.467zm580.267 426.666c-12.8 0-29.867 4.267-38.4 17.067L819.2 849.067c-8.533 8.533-17.067 25.6-17.067 38.4s4.267 29.867 17.067 38.4l29.867 29.867c-38.4 4.267-72.533-8.533-102.4-34.133-46.933-46.933-46.933-128 0-174.933s128-46.933 174.933 0c25.6 25.6 38.4 64 34.133 102.4l-29.867-29.867c-8.533-8.533-21.333-17.067-38.4-17.067z"/><path d="M610.133 409.6c4.267 0 12.8 0 17.067-4.267L802.133 230.4l34.133 34.133-174.933 174.933c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 17.067 4.267 4.267 0 12.8 0 17.067-4.267l196.267-192 68.267-25.6c4.267-4.267 12.8-8.533 12.8-12.8l29.867-85.333c4.267-8.533 0-17.067-4.267-21.333l-59.733-64c-4.267-4.267-12.8-8.533-21.333-4.267l-85.333 29.867c-4.267 4.267-12.8 8.533-12.8 12.8l-25.6 72.533c-4.267 0-4.267 4.267-4.267 4.267l-192 192c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 12.8 4.267zm243.2-277.333l64-21.333 38.4 38.4-21.333 64-64 21.333-38.4-38.4 21.333-64zm-384 558.933L209.066 951.467c-8.533 8.533-17.067 8.533-21.333 4.267l-81.067-81.067c-4.267-4.267 0-12.8 4.267-21.333l256-256c8.533-8.533 8.533-21.333 0-29.867s-21.333-8.533-29.867 0l-256 256c-25.6 25.6-25.6 59.733-4.267 81.067l81.067 81.067c8.533 8.533 21.333 12.8 34.133 12.8 17.067 0 34.133-8.533 46.933-21.333l260.267-260.267c8.533-8.533 8.533-21.333 0-29.867s-21.333-4.267-29.867 4.267z"/></svg>
-        <h6>Service fees</h6>
-      </div>
-      
-      <div class="desc_pricing-policy">
-        <p>If your dryer requires a repair, we charge a service fee of $65, which includes a detailed price breakdown. This fee is waived if you choose to proceed with the dryer repair. Unlike some companies, we do not offer free estimates but guarantee you will not pay this fee if we cannot diagnose properly. Our technicians are highly trained and equipped with specialized tools to accurately diagnose and resolve issues, ensuring transparency and fairness in our charges. Our appliance repair technicians possess the qualifications and experience to efficiently diagnose and fix problems, ensuring your dryer is in capable hands.</p>
-      </div>
-    
-    </div>
-    
-  </div>
-
-
-
-
-
-
-
-
-
-  <div class="content_pricing-policy">
-
-    <div class="con-inside_pricing-policy">
-
-      <div class="icon_pricing-policy">
-        <svg height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 512 512" xml:space="preserve">
-<polygon style="fill:#FFFFFF;" points="58,397.144 58,114.856 256,9.072 454,114.856 454,397.144 256,502.936 "/>
-<path  id="cost-svg" style="fill:#000;" d="M256,18.144l190,101.512V392.36L256,493.856L66,392.352V119.648L256,18.144 M256,0L50,110.056
-	v291.888L256,512l206-110.056V110.056L256,0L256,0z"/>
-<circle cx="256" cy="115.624" r="27.256"/>
-<path  d="M286.424,153.776h-60.856c-21.456,0-38.92,17.464-38.92,38.92v76.32c0,7.816,6.336,14.152,14.152,14.152
+        <div class="content_pricing-policy">
+          <div class="con-inside_pricing-policy">
+            <div class="icon_pricing-policy">
+              <svg
+                height="50px"
+                width="50px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                xml:space="preserve">
+                <polygon
+                  style="fill:#FFFFFF;"
+                  points="58,397.144 58,114.856 256,9.072 454,114.856 454,397.144 256,502.936 "
+                ></polygon>
+                <path
+                  id="cost-svg"
+                  style="fill:#000;"
+                  d="M256,18.144l190,101.512V392.36L256,493.856L66,392.352V119.648L256,18.144 M256,0L50,110.056
+	v291.888L256,512l206-110.056V110.056L256,0L256,0z"
+                ></path>
+                <circle cx="256" cy="115.624" r="27.256"></circle>
+                <path
+                  d="M286.424,153.776h-60.856c-21.456,0-38.92,17.464-38.92,38.92v76.32c0,7.816,6.336,14.152,14.152,14.152
 	s14.152-6.336,14.152-14.152V200.56h8.496v64.536c0,0.032-0.008,0.056-0.008,0.088v144.288c0,7.816,6.336,14.152,14.152,14.152
 	c7.816,0,14.152-6.336,14.152-14.152v-116.08h8.488v116.08c0,7.816,6.336,14.152,14.152,14.152s14.152-6.336,14.152-14.152v-116.08
 	v-28.208V200.56h8.496v68.448c0,7.816,6.336,14.152,14.152,14.152s14.152-6.336,14.152-14.152v-76.32
-	C325.344,171.24,307.88,153.776,286.424,153.776z"/>
-</svg>
-        <h6>Labor cost</h6>
-      </div>
-      
-      <div class="desc_pricing-policy">
-        <p> See prices below. The cost of labor depends on the complexity of the repair and the estimated time required. We ensure transparency by providing a detailed quote before you commit to the service. Should the repair take longer than expected, you won’t be charged extra; we waive the diagnostic fee upon proceeding with the repair, ensuring no surprises on your final bill.</p>
-      </div>
-    
-    </div>
-    
-  </div>
+	C325.344,171.24,307.88,153.776,286.424,153.776z"
+                ></path>
+              </svg>
+              <h6>Labor cost</h6>
+            </div>
 
+            <div class="desc_pricing-policy">
+              <p>
+                See prices below. The cost of labor depends on the complexity of
+                the repair and the estimated time required. We ensure
+                transparency by providing a detailed quote before you commit to
+                the service. Should the repair take longer than expected, you
+                won’t be charged extra; we waive the diagnostic fee upon
+                proceeding with the repair, ensuring no surprises on your final
+                bill.
+              </p>
+            </div>
+          </div>
+        </div>
 
-
-
-
-
-
-
-
-
-  <div class="content_pricing-policy">
-
-    <div class="con-inside_pricing-policy">
-
-      <div class="icon_pricing-policy">
-        <svg fill="#000000" height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-  viewBox="0 0 383.114 383.114" xml:space="preserve">
-<path d="M144.114,316.654c4.864,1.025,7.976,5.8,6.95,10.663c-0.894,4.237-4.633,7.146-8.798,7.146
+        <div class="content_pricing-policy">
+          <div class="con-inside_pricing-policy">
+            <div class="icon_pricing-policy">
+              <svg
+                fill="#000000"
+                height="50px"
+                width="50px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 383.114 383.114"
+                xml:space="preserve">
+                <path
+                  d="M144.114,316.654c4.864,1.025,7.976,5.8,6.95,10.663c-0.894,4.237-4.633,7.146-8.798,7.146
  c-0.615,0-1.239-0.063-1.865-0.195c-52.492-11.066-93.56-52.135-104.624-104.627c-1.025-4.864,2.087-9.638,6.951-10.663
  c4.86-1.024,9.637,2.087,10.663,6.95C62.984,271.446,98.596,307.058,144.114,316.654z M177.525,201.533c0-4.971-4.029-9-9-9h-0.031
  c-4.971,0-8.984,4.029-8.984,9s4.044,9,9.015,9S177.525,206.503,177.525,201.533z M383.114,22.071v109.6c0,4.971-4.029,9-9,9
@@ -220,1415 +276,1368 @@ import "css/price/style_price.css";
  l21.398,37.063c17.654-13.049,29.83-33.104,32.379-56.022h-42.808C204.25,217.894,200.365,224.443,195.047,229.493z
   M204.775,120.721H172.69c-0.717,0-1.415-0.084-2.083-0.242c-0.668,0.158-1.366,0.242-2.083,0.242
  c-11.505,0-22.456,2.415-32.372,6.765l21.4,37.067c3.476-1.032,7.153-1.586,10.959-1.586c3.805,0,7.483,0.554,10.958,1.586
- L204.775,120.721z"/>
-        </svg>
-        <h6>Replacement Parts cost</h6>
+ L204.775,120.721z"
+                ></path>
+              </svg>
+              <h6>Replacement Parts cost</h6>
+            </div>
+
+            <div class="desc_pricing-policy">
+              <p>
+                See prices below. While not every repair needs new parts,
+                certain situations require them to restore your dryer to peak
+                performance. Our technicians carry various parts in their
+                vehicles, which usually enables same-day repairs. If a part must
+                be ordered, the cost will vary depending on your dryer's repair,
+                brand, and model.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pros_pricing-policy">
+          <p>
+            *We always do our best to find parts at a lower price for our
+            customers. We do not make extra money on the parts; our priority is
+            to make it as easy as possible for the customer.
+          </p>
+          <p>
+            Understanding the average cost to fix an appliance, including
+            refrigerators, dishwashers, washers, and dryers, is crucial for
+            homeowners who want to decide whether to replace or repair them.
+          </p>
+        </div>
       </div>
-      
-      <div class="desc_pricing-policy">
-        <p>See prices below. While not every repair needs new parts, certain situations require them to restore your dryer to peak performance. Our technicians carry various parts in their vehicles, which usually enables same-day repairs. If a part must be ordered, the cost will vary depending on your dryer's repair, brand, and model.</p>
+
+      <Btn />
+
+      <div class="job-prices">
+        <div class="head-prices">
+          <h2>Dryer Repair Cost - Labor Only Excluding Parts</h2>
+          <p>
+            Here are the common problems and associated dryer repair costs in
+            Los Angeles:
+          </p>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Heating Dryer Belt Replacement.</p></a>
+            <p>
+              The dryer drum doesn't turn when the motor is running, or you hear
+              a loud noise like a thumping sound.
+            </p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>100 - 250$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Thermostat Replacement.</p></a>
+            <p>
+              The dryer overheats or doesn't heat up, resulting in burnt or damp
+              clothes.
+            </p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>100 - 250$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Control Board Replacement.</p></a>
+            <p>
+              The dryer doesn't start, or it starts but doesn't complete the
+              cycle, and there are no other apparent issues like a faulty door
+              switch or thermal fuse.
+            </p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>100 - 300$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="/price-list/dryer-roller-replacement-cost"
+              ><p>Dryer rollers replacement cost*</p></a
+            >
+            <p>
+              Dryer making noise or loud vibrating noise during drum rotation.
+            </p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>200$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="/price-list/dryer-vent-installation-cost"
+              ><p>Dryer vent installation cost*</p></a
+            >
+            <p>
+              Dryer drying slow, builds excessive lint, overheating, creates
+              mold or meldew oders and excessive humidity in the laundry room.
+            </p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>190$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="/price-list/dryer-vent-repair-cost"
+              ><p>Dryer vent repair cost*</p></a
+            >
+            <p>
+              Dryer drying slow, builds excessive lint, overheating, creates
+              mold or meldew oders and excessive humidity in the laundry room.
+            </p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>190$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="/price-list/dryer-idler-pulley-replacement-cost"
+              ><p>Dryer idler pulley replacement cost*</p></a
+            >
+            <p>LG dryer making scraping noise.</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>220$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="/price-list/dryer-motor-replacement-cost"
+              ><p>Dryer motor replacement cost*</p></a
+            >
+            <p>LG dryer powers on but won't start.</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>220$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="/price-list/dryer-igniter-replacement-cost"
+              ><p>Dryer igniter replacement cost*</p></a
+            >
+            <p>LG dryer not heating.</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>220$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="/price-list/dryer-heating-element-replacement-cost"
+              ><p>Dryer heating element replacement cost*</p></a
+            >
+            <p>Dryer not drying.</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>220$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="/price-list/dryer-thermal-fuse-replacement-cost"
+              ><p>Dryer thermal fuse replacement cost*</p></a
+            >
+            <p>Dryer not drying fully.</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>220$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>
+                Dryer vent cleaning / dryer duct cleaning / clean dryer exhaust
+                / clean out dryer vent / clothes dryer vent cleaning cost*
+              </p></a
+            >
+            <p>Clothes dryer not getting hot.</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>220$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Dryer cleaning service cost*</p></a>
+            <p>It is recommended to do at least 1 time a year to avoid fire.</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>150$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Dryer reverse door cost*</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>120$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Dryer door lock replacement cost*</p></a>
+            <p>Dryer not turning on.</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>200$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Install dryer vent cost/ dryer vent hook up*</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>190$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Install dryer vent cost / hook up gas dryer*</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>190$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>
+                Dryer and washer installation/ stackable washer dryer
+                installation cost*
+              </p></a
+            >
+          </div>
+
+          <div class="money_job-prices">
+            <p>240$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Dryer gas valve replacement cost*</p></a>
+            <p>Clothes dryer not heating.</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>240$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Gas valve coils replacement cost *</p></a>
+            <p>Dryer is not drying.</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>190$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Dryer maintenance cost*</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>190$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Dryer drum replacement cost*</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>220$</p>
+          </div>
+        </div>
       </div>
-    
-    </div>
-    
-  </div>
 
-
-  
-  <div class="pros_pricing-policy">
-    <p>*We always do our best to find parts at a lower price for our customers. We do not make extra money on the parts; our priority is to make it as easy as possible for the customer.</p>
-    <p>Understanding the average cost to fix an appliance, including refrigerators, dishwashers, washers, and dryers, is crucial for homeowners who want to decide whether to replace or repair them.</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<Btn />
-
-
-
-
-<div class="job-prices">
-
-  <div class="head-prices">
-    <h2>Dryer Repair Cost - Labor Only Excluding Parts</h2>
-    <p>Here are the common problems and associated dryer repair costs in Los Angeles:</p>
-  </div>
-    
-
-
-
-
-
-
-
-<div class="content_job-prices" id="col-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Heating Dryer Belt Replacement.</p></a>
-    <p>The dryer drum doesn't turn when the motor is running, or you hear a loud noise like a thumping sound.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>100 - 250$</p>
-  </div>
-
-</div>
-
-
-
-
-<div class="content_job-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Thermostat Replacement.</p></a>
-    <p>The dryer overheats or doesn't heat up, resulting in burnt or damp clothes.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>100 - 250$</p>
-  </div>
-
-</div>
-
-
-
-
-
-<div class="content_job-prices" id="col-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Control Board Replacement.</p></a>
-    <p>The dryer doesn't start, or it starts but doesn't complete the cycle, and there are no other apparent issues like a faulty door switch or thermal fuse.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>100 - 300$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-<div class="content_job-prices">
-
-  <div class="desk_job-prices">
-    <a href="/price-list/dryer-roller-replacement-cost"><p>Dryer rollers replacement cost*</p></a>
-    <p>Dryer making noise or loud vibrating noise during drum rotation.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>200$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-
-<div class="content_job-prices" id="col-prices">
-
-  <div class="desk_job-prices">
-    <a href="/price-list/dryer-vent-installation-cost"><p>Dryer vent installation cost*</p></a>
-    <p>Dryer drying slow, builds excessive lint, overheating, creates mold or meldew oders and excessive humidity in the laundry room.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>190$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-
-<div class="content_job-prices">
-
-  <div class="desk_job-prices">
-    <a href="/price-list/dryer-vent-repair-cost"><p>Dryer vent repair cost*</p></a>
-    <p>Dryer drying slow, builds excessive lint, overheating, creates mold or meldew oders and excessive humidity in the laundry room.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>190$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="content_job-prices" id="col-prices">
-
-  <div class="desk_job-prices">
-    <a href="/price-list/dryer-idler-pulley-replacement-cost"><p>Dryer idler pulley replacement cost*</p></a>
-    <p>LG dryer making scraping noise.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>220$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-
-<div class="content_job-prices">
-
-  <div class="desk_job-prices">
-    <a href="/price-list/dryer-motor-replacement-cost"><p>Dryer motor replacement cost*</p></a>
-    <p>LG dryer powers on but won't start.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>220$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="content_job-prices" id="col-prices">
-
-  <div class="desk_job-prices">
-    <a href="/price-list/dryer-igniter-replacement-cost"><p>Dryer igniter replacement cost*</p></a>
-    <p>LG dryer not heating.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>220$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="content_job-prices">
-
-  <div class="desk_job-prices">
-    <a href="/price-list/dryer-heating-element-replacement-cost"><p>Dryer heating element replacement cost*</p></a>
-    <p>Dryer not drying.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>220$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-
-<div class="content_job-prices" id="col-prices">
-
-  <div class="desk_job-prices">
-    <a href="/price-list/dryer-thermal-fuse-replacement-cost"><p>Dryer thermal fuse replacement cost*</p></a>
-    <p>Dryer not drying fully.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>220$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-<div class="content_job-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Dryer vent cleaning / dryer duct cleaning / clean dryer exhaust / clean out dryer vent / clothes dryer vent cleaning cost*</p></a>
-    <p>Clothes dryer not getting hot.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>220$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="content_job-prices" id="col-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Dryer cleaning service cost*</p></a>
-    <p>It is recommended to do at least 1 time a year to avoid fire.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>150$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-<div class="content_job-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Dryer reverse door cost*</p></a>
-  </div>
-
-  <div class="money_job-prices">
-    <p>120$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-<div class="content_job-prices" id="col-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Dryer door lock replacement cost*</p></a>
-    <p>Dryer not turning on.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>200$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-<div class="content_job-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Install dryer vent cost/ dryer vent hook up*</p></a>
-  </div>
-
-  <div class="money_job-prices">
-    <p>190$</p>
-  </div>
-
-</div>
-
-
-
-
-
-<div class="content_job-prices" id="col-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Install dryer vent cost / hook up gas dryer*</p></a>
-  </div>
-
-  <div class="money_job-prices">
-    <p>190$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-<div class="content_job-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Dryer and washer installation/ stackable washer dryer installation cost*</p></a>
-  </div>
-
-  <div class="money_job-prices">
-    <p>240$</p>
-  </div>
-
-</div>
-
-
-
-
-
-<div class="content_job-prices" id="col-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Dryer gas valve replacement cost*</p></a>
-    <p>Clothes dryer not heating.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>240$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-<div class="content_job-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Gas valve coils replacement cost *</p></a>
-    <p>Dryer is not drying.</p>
-  </div>
-
-  <div class="money_job-prices">
-    <p>190$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-
-<div class="content_job-prices" id="col-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Dryer maintenance cost*</p></a>
-  </div>
-
-  <div class="money_job-prices">
-    <p>190$</p>
-  </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="content_job-prices">
-
-  <div class="desk_job-prices">
-    <a href="#"><p>Dryer drum replacement cost*</p></a>
-  </div>
-
-  <div class="money_job-prices">
-    <p>220$</p>
-  </div>
-
-</div>
-
-
-
-
-
-</div>
-    
-    
-
-
-    <Btn />
-    
-    
-
-
-
-    <div class="job-prices">
-
-      <div class="head-prices">
-        <h2>Dryer Replacement Parts Costs</h2>
-        <p>Dryer replacement parts costs can vary depending on your dryer's specific part, brand, and model. Here’s a ballpark range for some common dryer parts:</p>
+      <Btn />
+
+      <div class="job-prices">
+        <div class="head-prices">
+          <h2>Dryer Replacement Parts Costs</h2>
+          <p>
+            Dryer replacement parts costs can vary depending on your dryer's
+            specific part, brand, and model. Here’s a ballpark range for some
+            common dryer parts:
+          </p>
+        </div>
+
+        <div class="content_job-prices content_job-prices-h-m" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Door Latch Kit.</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>5 - 7$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices content_job-prices-h-m">
+          <div class="desk_job-prices">
+            <a href="#"><p>Dryer heating element.</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>24 - 65$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices content_job-prices-h-m" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Dryer drum roller.</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>30 - 70$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices content_job-prices-h-m">
+          <div class="desk_job-prices">
+            <a href="/price-list/dryer-roller-replacement-cost"
+              ><p>Dryer belt.</p></a
+            >
+          </div>
+
+          <div class="money_job-prices">
+            <p>20 - 40$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices content_job-prices-h-m" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="/price-list/dryer-vent-installation-cost"
+              ><p>Dryer vent cleaning kit.</p></a
+            >
+          </div>
+
+          <div class="money_job-prices">
+            <p>10 - 20$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices content_job-prices-h-m">
+          <div class="desk_job-prices">
+            <a href="/price-list/dryer-vent-repair-cost"
+              ><p>Dryer control board.</p></a
+            >
+          </div>
+
+          <div class="money_job-prices">
+            <p>50 - 200$</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices content_job-prices-h-m" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="/price-list/dryer-idler-pulley-replacement-cost"
+              ><p>Dryer thermal fuse.</p></a
+            >
+          </div>
+
+          <div class="money_job-prices">
+            <p>10 - 30$</p>
+          </div>
+        </div>
+
+        <div class="pros_job-prices">
+          <p>*Free dust cleaning inside the unit is included in the service.</p>
+          <p>
+            Considering the option of DIY appliance repair for simpler tasks,
+            such as replacing a door latch or belt, can be a cost-effective way
+            to save on labor costs. However, it's important to weigh the pros
+            and cons of DIY repairs. While you may only need to pay for
+            replacement parts, DIY repairs can take longer and may not offer the
+            specialized knowledge and safety assurance that professional
+            technicians provide.
+          </p>
+        </div>
       </div>
-        
-    
-    
-    
-    
-    
-    
-    
-    <div class="content_job-prices content_job-prices-h-m" id="col-prices">
-    
-      <div class="desk_job-prices">
-        <a href="#"><p>Door Latch Kit.</p></a>
+
+      <h2>Ways to Save Money on Dryer Repair</h2>
+      <p>
+        <b>Timely maintenance</b> - timely maintenance can save you money on unnecessary
+        dryer repairs and increase your appliance’s longevity. We charge a flat fee
+        of $80 for the dryer maintenance service.
+      </p>
+      <p>
+        Dryer maintenance includes checking drum and door seals for damage,
+        lubricating moving parts, tightening electrical connections, testing
+        thermostat and heating element, checking the exhaust hood. These tasks
+        help catch small issues before they become costly problems and ensure
+        efficient and safe operation to preserve food quality.
+      </p>
+      <p>
+        Comparing the cost-effectiveness of dryer repairs to other appliances,
+        such as garbage disposals, highlights potential savings. Garbage
+        disposal repairs cost typically ranges between $100 and $275, with
+        simple jams being the least expensive to fix. This comparison
+        underscores the value of opting for repairs over replacements for
+        various appliances, including dryers.
+      </p>
+      <p>
+        <b>Find a company that provides a warranty.</b> At the Same Day Appliance
+        Repair, we provide up to three months of warranty.
+      </p>
+
+      <Btn />
+
+      <h2>FAQs</h2>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a><h3>What are common issues with dryers?</h3></a>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
       </div>
-    
-      <div class="money_job-prices">
-        <p>5 - 7$</p>
+
+      <div class="questions">
+        <p>Common issues with dryers include:</p>
+        <p>
+          <b>No Heat or Insufficient Heat:</b> This could be due to a faulty heating
+          element, thermostat, thermal fuse, or igniter.
+        </p>
+        <p>
+          <b>Excessive Noise:</b> Loud noises during operation may indicate worn
+          drum support rollers, bearings, or a damaged belt.
+        </p>
+        <p>
+          <b>Failure to Start:</b> This could be caused by a broken door switch,
+          thermal fuse, or faulty start switch.
+        </p>
+        <p>
+          <b>Not Tumbling:</b> A broken belt, faulty motor, or worn drum rollers
+          can cause the dryer drum not to turn.
+        </p>
+        <p>
+          <b>Overheating:</b> Blocked vents, clogged lint traps, or malfunctioning
+          thermostats can cause a dryer to overheat.
+        </p>
+        <p>
+          <b>Long Drying Times:</b> Poor airflow due to lint buildup in the vent
+          or ductwork can prolong drying times.
+        </p>
+        <p>
+          <b>7. Burning Smell:</b> This may indicate a lint buildup near the heating
+          element or a malfunctioning component like the thermostat.
+        </p>
+        <p>
+          <b>Clothes Not Fully Dry:</b> If clothes are still damp after a cycle,
+          it could be due to a clogged lint screen, improper venting, or a faulty
+          moisture sensor.
+        </p>
+        <p>
+          <b>Wrinkled Clothes:</b> Insufficient tumbling or an overloaded dryer can
+          result in wrinkled clothes.
+        </p>
+        <p>
+          <b>Dryer Won't Shut Off:</b> A malfunctioning timer or control panel may
+          cause the dryer to continue running even after the cycle is complete.
+        </p>
       </div>
-    
-    </div>
-    
-    
-    
-    
-    <div class="content_job-prices content_job-prices-h-m">
-    
-      <div class="desk_job-prices">
-        <a href="#"><p>Dryer heating element.</p></a>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a><h3>What are the benefits of regular dryer maintenance?</h3></a>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
       </div>
-    
-      <div class="money_job-prices">
-        <p>24 - 65$</p>
+
+      <div class="questions">
+        <p>Regular dryer maintenance offers several benefits, including:</p>
+        <p>
+          <b> Improved Efficiency:</b> Cleaning the lint trap, exhaust vent, and
+          ductwork regularly ensures proper airflow, allowing the dryer to operate
+          more efficiently and dry clothes faster.
+        </p>
+        <p>
+          <b>Prevention of Fire Hazards:</b> Lint buildup in the dryer and exhaust
+          system is a significant fire hazard. Regular maintenance helps remove lint,
+          reducing the risk of a dryer fire.
+        </p>
+        <p>
+          <b>Extended Lifespan:</b> Keeping the dryer components clean and well-maintained
+          can prolong the appliance's lifespan, reducing the need for costly repairs
+          or premature replacement.
+        </p>
+        <p>
+          <b>Energy Savings:</b> An efficiently operating dryer consumes less energy,
+          resulting in lower utility bills over time.
+        </p>
+        <p>
+          <b>Improved Safety:</b> Regular maintenance helps identify and address
+          potential safety issues, such as loose electrical connections or damaged
+          components, before they escalate into major problems.
+        </p>
+        <p>
+          <b>Better Performance:</b> Clean dryer components, including the drum,
+          lint trap, and exhaust system, contribute to optimal drying performance,
+          resulting in thoroughly dried clothes with fewer wrinkles.
+        </p>
+        <p>
+          <b>Reduced Risk of Breakdowns:</b> By addressing minor issues promptly
+          and preventing major problems through regular maintenance, you can minimize
+          the risk of unexpected breakdowns and inconvenience.
+        </p>
       </div>
-    
-    </div>
-    
-    
-    
-    
-    
-    <div class="content_job-prices content_job-prices-h-m" id="col-prices">
-    
-      <div class="desk_job-prices">
-        <a href="#"><p>Dryer drum roller.</p></a>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a><h3>What are some dryer brands you service?</h3></a>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
       </div>
-    
-      <div class="money_job-prices">
-        <p>30 - 70$</p>
+
+      <div class="questions">
+        <p>
+          We service a wide range of dryer brands, including but not limited to:
+        </p>
+        <p>
+          1. Whirlpool<br />
+          2. Maytag<br />
+          3. GE (General Electric)<br />
+          4. Samsung<br />
+          5. LG<br />
+          6. Kenmore<br />
+          7. Bosch<br />
+          8. Frigidaire<br />
+          9. Electrolux<br />
+          10. Amana<br />
+          .. and more
+        </p>
+        <p>
+          If you have a dryer from a brand not listed here, feel free to reach
+          out to us, as we may still be able to provide repair services for your
+          appliance.
+        </p>
       </div>
-    
-    </div>
-    
-    
-    
-    
-    
-    
-    <div class="content_job-prices content_job-prices-h-m">
-    
-      <div class="desk_job-prices">
-        <a href="/price-list/dryer-roller-replacement-cost"><p>Dryer belt.</p></a>
+
+      <div class="FAQ">
+        <div class="fa"><a><h3>Can I repair my dryer myself?</h3></a></div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
       </div>
-    
-      <div class="money_job-prices">
-        <p>20 - 40$</p>
+
+      <div class="questions">
+        <p>
+          While some dryer repairs can be DIY-friendly, it's essential to
+          approach them with caution. Minor issues like replacing a dryer belt
+          or thermal fuse can often be handled by homeowners with the right
+          tools and knowledge. However, more complex problems involving
+          electrical components or gas lines should be left to trained
+          professionals to ensure safety and prevent further damage. If you're
+          unsure about your ability to repair your dryer safely, it's best to
+          contact a qualified appliance repair technician.
+        </p>
       </div>
-    
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    <div class="content_job-prices content_job-prices-h-m" id="col-prices">
-    
-      <div class="desk_job-prices">
-        <a href="/price-list/dryer-vent-installation-cost"><p>Dryer vent cleaning kit.</p></a>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a><h3>Do you offer emergency dryer repair services?</h3></a>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
       </div>
-    
-      <div class="money_job-prices">
-        <p>10 - 20$</p>
+
+      <div class="questions">
+        <p>
+          Yes, we understand that issues with your dryer can arise unexpectedly
+          and disrupt your daily routine. That's why we offer emergency dryer
+          repair services to address urgent situations promptly. Whether it's a
+          malfunctioning heating element, a faulty motor, or any other dryer
+          problem, you can count on us to provide efficient and reliable repairs
+          when you need them most.
+        </p>
       </div>
-    
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    <div class="content_job-prices content_job-prices-h-m">
-    
-      <div class="desk_job-prices">
-        <a href="/price-list/dryer-vent-repair-cost"><p>Dryer control board.</p></a>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a><h3>What warranty do you offer on repairs?</h3></a>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
       </div>
-    
-      <div class="money_job-prices">
-        <p>50 - 200$</p>
+
+      <div class="questions">
+        <p>
+          We stand behind the quality of our work, which is why we offer a
+          warranty on all repairs. Depending on the type of repair and the parts
+          used, our warranty typically ranges from three months to one year.
+          This warranty covers both labor and parts, providing you with peace of
+          mind and assurance that your appliance is in good hands. If you
+          experience any issues with your repaired appliance during the warranty
+          period, simply contact us, and we'll promptly address the problem at
+          no additional cost. Your satisfaction is our priority, and we're
+          committed to ensuring that your appliance operates smoothly for the
+          long term.
+        </p>
       </div>
-    
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="content_job-prices content_job-prices-h-m" id="col-prices">
-    
-      <div class="desk_job-prices">
-        <a href="/price-list/dryer-idler-pulley-replacement-cost"><p>Dryer thermal fuse.</p></a>
+
+      <div class="FAQ">
+        <div class="fa"><a><h3>Why is my dryer not heating up?</h3></a></div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
       </div>
-    
-      <div class="money_job-prices">
-        <p>10 - 30$</p>
+
+      <div class="questions">
+        <p>A dryer not heating up can be caused by several factors:</p>
+        <p>
+          <b>Heating Element:</b> The heating element may be faulty or burned out,
+          preventing the dryer from producing heat. This component may need to be
+          replaced.
+        </p>
+        <p>
+          <b>Thermal Fuse:</b> A blown thermal fuse can interrupt the power supply
+          to the heating elements, resulting in no heat. This safety component often
+          blows if the dryer overheats. It needs to be replaced to restore normal
+          operation.
+        </p>
+        <p>
+          <b>Igniter or Pilot Light (Gas Dryers):</b> Gas dryers rely on an igniter
+          or pilot light to ignite the gas and produce heat. If the igniter is faulty
+          or the pilot light is extinguished, the dryer won't heat up.
+        </p>
+        <p>
+          <b>Gas Valve Solenoid (Gas Dryers):</b> In gas dryers, the gas valve solenoids
+          control the flow of gas to the burner. If one or more of these solenoids
+          fail, the dryer won't heat properly.
+        </p>
+        <p>
+          <b>Thermostat:</b> A malfunctioning thermostat can prevent the dryer from
+          reaching the correct temperature to produce heat. It may need to be recalibrated
+          or replaced.
+        </p>
+        <p>
+          <b>Clogged Vent or Duct:</b> A blocked or restricted vent or duct can cause
+          poor airflow, leading to overheating and a failure to produce heat. Cleaning
+          or clearing the vent system can resolve this issue.
+        </p>
+        <p>
+          <b>Timer or Control Board:</b> Problems with the dryer's timer or control
+          board can disrupt the heating cycle, resulting in no heat output.
+        </p>
+        <p>
+          If your dryer is not heating up, it's best to consult a professional
+          appliance repair person to diagnose and fix the issue safely and
+          effectively. Attempting DIY repairs on complex electrical or gas
+          systems can be hazardous and may void warranties.
+        </p>
       </div>
-    
-    </div>
-    
-    
 
-    <div class="pros_job-prices">
-      <p>*Free dust cleaning inside the unit is included in the service. </p>
-      <p>Considering the option of DIY appliance repair for simpler tasks, such as replacing a door latch or belt, can be a cost-effective way to save on labor costs. However, it's important to weigh the pros and cons of DIY repairs. While you may only need to pay for replacement parts, DIY repairs can take longer and may not offer the specialized knowledge and safety assurance that professional technicians provide.</p>
-    </div>
-
-
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-    
-    
-    
- 
-
-
-<h2>Ways to Save Money on Dryer Repair</h2>
-<p><b>Timely maintenance</b> - timely maintenance can save you money on unnecessary dryer repairs and increase your appliance’s longevity. We charge a flat fee of $80 for the dryer maintenance service.</p>
-<p>Dryer maintenance includes checking drum and door seals for damage, lubricating moving parts, tightening electrical connections, testing thermostat and heating element, checking the exhaust hood. These tasks help catch small issues before they become costly problems and ensure efficient and safe operation to preserve food quality.</p>
-<p>Comparing the cost-effectiveness of dryer repairs to other appliances, such as garbage disposals, highlights potential savings. Garbage disposal repairs cost typically ranges between $100 and $275, with simple jams being the least expensive to fix. This comparison underscores the value of opting for repairs over replacements for various appliances, including dryers.</p>
-<p><b>Find a company that provides a warranty.</b> At the Same Day Appliance Repair, we provide up to three months of warranty.</p>
-
-
-
-
-<Btn />
-
-
-
-
-<h2>FAQs</h2>
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>What are common issues with dryers?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>Common issues with dryers include: </p>
-  <p><b>No Heat or Insufficient Heat:</b> This could be due to a faulty heating element, thermostat, thermal fuse, or igniter.</p>
-  <p><b>Excessive Noise:</b> Loud noises during operation may indicate worn drum support rollers, bearings, or a damaged belt.</p>
-  <p><b>Failure to Start:</b> This could be caused by a broken door switch, thermal fuse, or faulty start switch.</p>
-  <p><b>Not Tumbling:</b> A broken belt, faulty motor, or worn drum rollers can cause the dryer drum not to turn.</p>
-  <p><b>Overheating:</b> Blocked vents, clogged lint traps, or malfunctioning thermostats can cause a dryer to overheat.</p>
-  <p><b>Long Drying Times:</b> Poor airflow due to lint buildup in the vent or ductwork can prolong drying times.</p>
-  <p><b>7. Burning Smell:</b> This may indicate a lint buildup near the heating element or a malfunctioning component like the thermostat.</p>
-  <p><b>Clothes Not Fully Dry:</b> If clothes are still damp after a cycle, it could be due to a clogged lint screen, improper venting, or a faulty moisture sensor.</p>
-  <p><b>Wrinkled Clothes:</b> Insufficient tumbling or an overloaded dryer can result in wrinkled clothes.</p>
-  <p><b>Dryer Won't Shut Off:</b> A malfunctioning timer or control panel may cause the dryer to continue running even after the cycle is complete.</p>
-</div>
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>What are the benefits of regular dryer maintenance?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>Regular dryer maintenance offers several benefits, including:</p>
-  <p><b> Improved Efficiency:</b> Cleaning the lint trap, exhaust vent, and ductwork regularly ensures proper airflow, allowing the dryer to operate more efficiently and dry clothes faster.</p>
-  <p><b>Prevention of Fire Hazards:</b> Lint buildup in the dryer and exhaust system is a significant fire hazard. Regular maintenance helps remove lint, reducing the risk of a dryer fire.</p>
-  <p><b>Extended Lifespan:</b> Keeping the dryer components clean and well-maintained can prolong the appliance's lifespan, reducing the need for costly repairs or premature replacement.</p>
-  <p><b>Energy Savings:</b> An efficiently operating dryer consumes less energy, resulting in lower utility bills over time.</p>
-  <p><b>Improved Safety:</b> Regular maintenance helps identify and address potential safety issues, such as loose electrical connections or damaged components, before they escalate into major problems.</p>
-  <p><b>Better Performance:</b> Clean dryer components, including the drum, lint trap, and exhaust system, contribute to optimal drying performance, resulting in thoroughly dried clothes with fewer wrinkles.</p>
-  <p><b>Reduced Risk of Breakdowns:</b> By addressing minor issues promptly and preventing major problems through regular maintenance, you can minimize the risk of unexpected breakdowns and inconvenience.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>What are some dryer brands you service?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>We service a wide range of dryer brands, including but not limited to:</p>
-  <p>1. Whirlpool<br />
-  2. Maytag<br />
-  3. GE (General Electric)<br />
-  4. Samsung<br />
-  5. LG<br />
-  6. Kenmore<br />
-  7. Bosch<br />
-  8. Frigidaire<br />
-  9. Electrolux<br />
-  10. Amana<br />
-  .. and more</p>
-  <p>If you have a dryer from a brand not listed here, feel free to reach out to us, as we may still be able to provide repair services for your appliance.</p>  
-</div>
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>Can I repair my dryer myself?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>While some dryer repairs can be DIY-friendly, it's essential to approach them with caution. Minor issues like replacing a dryer belt or thermal fuse can often be handled by homeowners with the right tools and knowledge. However, more complex problems involving electrical components or gas lines should be left to trained professionals to ensure safety and prevent further damage. If you're unsure about your ability to repair your dryer safely, it's best to contact a qualified appliance repair technician.</p>
-</div>
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>Do you offer emergency dryer repair services?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>Yes, we understand that issues with your dryer can arise unexpectedly and disrupt your daily routine. That's why we offer emergency dryer repair services to address urgent situations promptly. Whether it's a malfunctioning heating element, a faulty motor, or any other dryer problem, you can count on us to provide efficient and reliable repairs when you need them most.</p>
-</div>
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>What warranty do you offer on repairs?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>We stand behind the quality of our work, which is why we offer a warranty on all repairs. Depending on the type of repair and the parts used, our warranty typically ranges from three months to one year. This warranty covers both labor and parts, providing you with peace of mind and assurance that your appliance is in good hands. If you experience any issues with your repaired appliance during the warranty period, simply contact us, and we'll promptly address the problem at no additional cost. Your satisfaction is our priority, and we're committed to ensuring that your appliance operates smoothly for the long term.</p>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>Why is my dryer not heating up?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>A dryer not heating up can be caused by several factors:</p>
-  <p><b>Heating Element:</b> The heating element may be faulty or burned out, preventing the dryer from producing heat. This component may need to be replaced.</p>
-  <p><b>Thermal Fuse:</b> A blown thermal fuse can interrupt the power supply to the heating elements, resulting in no heat. This safety component often blows if the dryer overheats. It needs to be replaced to restore normal operation.</p>
-  <p><b>Igniter or Pilot Light (Gas Dryers):</b> Gas dryers rely on an igniter or pilot light to ignite the gas and produce heat. If the igniter is faulty or the pilot light is extinguished, the dryer won't heat up.</p>
-  <p><b>Gas Valve Solenoid (Gas Dryers):</b> In gas dryers, the gas valve solenoids control the flow of gas to the burner. If one or more of these solenoids fail, the dryer won't heat properly.</p>
-  <p><b>Thermostat:</b> A malfunctioning thermostat can prevent the dryer from reaching the correct temperature to produce heat. It may need to be recalibrated or replaced.</p>
-  <p><b>Clogged Vent or Duct:</b> A blocked or restricted vent or duct can cause poor airflow, leading to overheating and a failure to produce heat. Cleaning or clearing the vent system can resolve this issue.</p>
-  <p><b>Timer or Control Board:</b> Problems with the dryer's timer or control board can disrupt the heating cycle, resulting in no heat output.</p>
-  <p>If your dryer is not heating up, it's best to consult a professional appliance repair person to diagnose and fix the issue safely and effectively. Attempting DIY repairs on complex electrical or gas systems can be hazardous and may void warranties.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>How often should I clean my dryer vents?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>It's recommended to clean your dryer vents at least once a year to prevent lint buildup and maintain proper airflow. However, if you notice any signs of reduced dryer performance, such as longer drying times or the dryer feeling hot to the touch, it's a good idea to check and clean the vents more frequently. Additionally, if you have a large household or do a lot of laundry, you may need to clean the vents more often to ensure optimal dryer efficiency and safety.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>What should I do if my dryer is making strange noises?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>If your dryer is making unusual noises, it could be a sign of underlying issues that need attention. Here's what you can do:</p>
-  <p><b>Check for Objects:</b> Turn off the dryer and inspect the drum for any loose objects like coins, buttons, or zippers that may be causing the noise. Remove any foreign objects you find.</p>
-  <p><b> Inspect the Drum Belt:</b> A worn or frayed drum belt can cause squealing or thumping noises. Open the dryer's cabinet and visually inspect the belt for signs of damage. If it appears worn or damaged, it may need to be replaced.</p>
-  <p><b>Examine the Rollers or Pulleys:</b> Dryer rollers or pulleys that are worn or damaged can also cause noise. Inspect them for signs of wear or damage and replace them if necessary.</p>
-  <p><b>Check the Drum Support Rollers:</b> Dryer drum support rollers can become worn over time, leading to squealing or rumbling noises. Inspect the rollers for wear and replace them if needed.</p>
-  <p><b>Inspect the Motor:</b> A faulty motor can produce grinding or buzzing noises. If you suspect the motor is the source of the noise, it may need to be replaced.</p>
-  <p><b>Call a Professional:</b> If you're unable to identify or resolve the issue on your own, it's best to call a professional appliance repair person. They can diagnose the problem accurately and perform any necessary repairs to ensure your dryer operates safely and efficiently.</p>
-</div>
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>Is it worth repairing an older dryer?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>Deciding whether to repair or replace an older dryer depends on several factors:</p>
-  <p><b>Age of the Dryer:</b> If your dryer is nearing the end of its expected lifespan (typically around 10-15 years), it may be more cost-effective to replace it, especially if multiple components are failing.</p>
-  <p><b>Cost of Repairs:</b> Consider the repair cost compared to the replacement costs. If the repair costs are significantly lower than the price of a new dryer and the unit has plenty of life left, repairing it may be a sensible choice.</p>
-  <p><b> Frequency of Repairs:</b> If your dryer has required multiple repairs in the past and is experiencing another issue, it may be a sign of ongoing problems. In such cases, investing in a new, more reliable dryer could save you money in the long run.</p>
-  <p><b>Energy Efficiency:</b> Newer dryers are often more energy-efficient than older models, which can result in lower energy bills over time. If your current dryer is inefficient, upgrading to a newer model could lead to long-term savings.</p>
-  <p><b>Features and Technology:</b> Modern dryers come with advanced features and technology that may offer added convenience and performance compared to older models. If you're interested in these features, replacing your old dryer might be worthwhile.</p>
-  <p>Ultimately, the decision to repair or replace your older dryer depends on your budget, the extent of the repairs needed, and your long-term needs and preferences. Consulting with a professional appliance repair person can provide valuable insight into the condition of your dryer and help you make an informed decision.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>How can I extend the lifespan of my dryer?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>To extend your dryer's lifespan:</p>
-  <p>1. Clean the lint filter after each use.<br>
-  2. Regularly clean the dryer vents and exhaust duct.<br>
-  3. Ensure the dryer is level and stable.<br>
-  4. Avoid overloading the dryer.<br>
-  5. Use the correct settings for your laundry.<br>
-  6. Inspect and replace worn parts promptly.<br>
-  7. Keep the area around the dryer clear.<br>
-  8. Consider scheduling professional maintenance checks.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>What should I do if my dryer won't start?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-<p>If your dryer won't start, here are some steps to troubleshoot the issue:</p>
-<p><b>Check the Power:</b> Ensure the dryer is plugged in and receiving power. Test the outlet with another device to confirm it's working.</p>
-<p><b>Door Switch:</b> The door switch prevents the dryer from starting if the door is open. Make sure the door is fully closed and the switch is functioning properly.</p>
-<p><b>Circuit Breaker:</b> Check the circuit breaker or fuse box to see if the dryer's circuit has tripped. Reset the breaker or replace the fuse if necessary.</p>
-<p><b>Dryer Timer or Control Panel:</b> Test the dryer timer or control panel to ensure it's working correctly. If it's malfunctioning, it may prevent the dryer from starting.</p>
-<p><b>Thermal Fuse:</b> A blown thermal fuse can also prevent the dryer from starting. Check the fuse and replace it if necessary.</p>
-<p><b>Start Switch:</b> Test the start switch to see if it's faulty. If it's defective, it will need to be replaced.</p>
-<p><b>Drive Motor:</b> The drive motor is responsible for turning the drum. If it's faulty, the dryer won't start. Test the motor and replace it if needed.</p>
-<p><b>Professional Help:</b> If you're unable to diagnose or fix the issue yourself, it's best to call a professional dryer repair technician for assistance.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>How can I troubleshoot a dryer that won't tumble?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>If your dryer won't tumble:</p>
-  <p>1. Check the power supply.<br>
-  2. Ensure the door is fully closed.<br>
-  3. Inspect the belt for damage.<br>
-  4. Test the drive motor.<br>
-  5. Check rollers and idler pulley.<br>
-  6. Look for broken drum glide or bearing.<br>
-  7. Test the start switch.<br>
-  8. Inspect the dryer timer or control board.<br>
-  9. Avoid overloading the dryer.<br>
-  10. Consider professional help if needed.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>Why does my dryer take longer than usual to dry clothes?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>If the dryer takes longer to dry your clothes:</p>
-  - Check for a clogged vent or dirty lint filter.<br>
-  - Avoid overloading the dryer.<br>
-  - Ensure the heating element is functioning.<br>
-  - Clear any obstructions from the air intake.<br>
-  - Use the correct drying settings.<br>
-  - Replace worn-out or damaged parts if needed.<br>
-  - Verify the home's ventilation system is clear.</p>
-  <p>If issues persist, consult a professional technician.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>What are the signs that my dryer needs professional servicing?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>Signs that your dryer needs professional servicing include:
-    <p>1. Clothes take longer than usual to dry, indicating a potential issue with the heating element or airflow.<br>
-    2. The dryer produces unusual noises such as squeaking, grinding, or banging, suggesting worn-out or damaged components.<br>
-    3. Clothes come out of the dryer excessively wrinkled, indicating problems with the drum or motor.<br>
-    4. The dryer emits burning smells or produces smoke, which could signal overheating or electrical issues.<br>
-    5. The dryer fails to start or stops mid-cycle, indicating potential problems with the electrical system, dryer door switch, or motor.<br>
-    6. Visible damage to the dryer, such as cracks, dents, or broken parts, may require professional inspection and repair.<br>
-    7. Persistent issues despite basic troubleshooting and maintenance efforts, suggesting underlying mechanical or electrical issues.</p>
-    <p>If you notice any of these signs, it's advisable to contact a professional dryer repair technician to diagnose and address the problem promptly. Attempting DIY repairs on complex issues may lead to further damage or safety hazards.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>How can I troubleshoot a dryer that won't tumble?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>If your dryer won't tumble:</p>
-  <p>1. Check the power supply.<br>
-  2. Ensure the door is fully closed.<br>
-  3. Inspect the belt for damage.<br>
-  4. Test the drive motor.<br>
-  5. Check rollers and idler pulley.<br>
-  6. Look for broken drum glide or bearing.<br>
-  7. Test the start switch.<br>
-  8. Inspect the dryer timer or control board.<br>
-  9. Avoid overloading the dryer.<br>
-  10. Consider professional help if needed.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>What are the typical costs associated with home appliance repairs, and how do they compare to stove repair costs?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>An appliance repair cost depends on factors such as the brand and model of the appliance, as well as its age and accessibility for the repair specialist. For example, garbage disposal repairs cost can also vary, with most garbage disposal repairs falling between $100 and $275. This parallels the average dryer repair cost, highlighting that simple jams in garbage disposals are usually quick and inexpensive to fix. However, more complex issues like replacing a malfunctioning motor or addressing a leaking disposal can incur higher costs. When considering repairs, it's beneficial to compare the cost of replacing the garbage disposal versus the appliance repair cost of repairs, as purchasing a new unit might often be the more sensible financial decision.</p>
-</div>
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>What is the average dryer repair cost for electric appliances like an electric dryer?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>The average cost to fix an electric dryer typically ranges from $100 to $400, depending on the complexity of the repair and the parts needed.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>Can the cost to fix a broken dryer vary based on the dryer brand and model?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>Yes, the cost to repair can vary significantly based on the dryer brand and model. Some brands may have higher repair cost due to the cost of replacement parts or the complexity of the design.</p>
-</div>
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>What are common issues that lead to higher repair cost in gas dryers?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>Common issues in gas dryers that lead to higher repair costs include replacing burner coils, fixing a broken motor, or addressing a control board malfunction.</p>
-</div>
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a>
-    <h3>Is it worth repairing a dryer with a bad heating element, or should it be replaced?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>Whether it's worth repairing a dryer heating element malfunction depends on the age of the dryer and the cost of the repair versus replacement costs. If the repair is minor and less costly compared to buying a new dryer, it might be worth repairing.</p>
-</div>
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>What should be considered when deciding between frequent repairs and replacing household appliances like clothes dryers?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>When deciding between frequent repairs and replacement, consider the appliance's age, the average repair costs you've incurred, and whether these costs are approaching or exceeding the price of a new appliance.</p>
-</div>
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>How do appliance repair service providers calculate the service fee for a service call?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>Service fees for a service call can vary by service provider. They typically include the cost of labor and travel. Some providers may also offer free estimates or waive the service call fee if you decide to proceed with the repairs.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>What is the typical range for appliance repair costs, including complex appliances like washing machines and dishwashers?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-<p>The average repair costs for appliances like washing machines and dishwashers can range from $100 to $500, depending on the severity of the issue and the parts required.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>Why might some home appliances experience thermostat breaks or door switches issues?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>Thermostat breaks or issues with door switches in home appliances can be due to normal wear and tear, improper usage, or improper repairs that fail to address the root cause of the initial problem.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>What factors contribute to the decision of whether a broken dryer is worth repairing?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>Factors include the cost of the repair, the age and condition of the dryer, potential future problems, and whether the current issue is a minor repair or requires expensive parts like a dryer motor or heating element.</p>
-</div>
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>How do home warranty plans affect the dryer repair cost?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>A home warranty plan can significantly reduce out-of-pocket expenses for dryer repairs as it may cover parts and labor, depending on the plan's terms. This can make frequent repairs more manageable and cost-effective.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>How do appliance repair costs for a gas dryer compare to those for electric dryers?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>An appliance repair cost for gas dryers is often higher than for electric dryers due to the complexity of the components involved, such as the gas burner and ignition systems. Most dryer repairs for gas models require specialized knowledge, potentially increasing the repair cost.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="FAQ">
-
-  <div class="fa"><a><h3>Can ongoing appliance repair costs for an aging gas dryer justify the initial expense of buying a new model?</h3></a></div>
-
-  <div class="fa_plus">︾</div>
-
-  <div class="fa_minus">︽</div>
-
-</div>
-
-<div class="questions">
-  <p>Yes, ongoing appliance repair costs can sometimes justify the expense of purchasing a new model, especially if the dryer requires frequent repairs. Investing in a new dryer might offer more reliability and efficiency, potentially saving on future repair costs and energy bills.</p>
-<p>These questions and answers delve into the complexities of appliance repair costs, particularly focusing on issues related to gas dryers and common scenarios involving replacement costs and repair decisions.</p>
-</div>
-
-<div class="FAQ_bottom"></div> 
-
-
-
-
-
-
-
-      <Cta />
-    </Container>
-    </Layout>
-    
+      <div class="FAQ">
+        <div class="fa">
+          <a><h3>How often should I clean my dryer vents?</h3></a>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          It's recommended to clean your dryer vents at least once a year to
+          prevent lint buildup and maintain proper airflow. However, if you
+          notice any signs of reduced dryer performance, such as longer drying
+          times or the dryer feeling hot to the touch, it's a good idea to check
+          and clean the vents more frequently. Additionally, if you have a large
+          household or do a lot of laundry, you may need to clean the vents more
+          often to ensure optimal dryer efficiency and safety.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a><h3>What should I do if my dryer is making strange noises?</h3></a>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          If your dryer is making unusual noises, it could be a sign of
+          underlying issues that need attention. Here's what you can do:
+        </p>
+        <p>
+          <b>Check for Objects:</b> Turn off the dryer and inspect the drum for any
+          loose objects like coins, buttons, or zippers that may be causing the noise.
+          Remove any foreign objects you find.
+        </p>
+        <p>
+          <b> Inspect the Drum Belt:</b> A worn or frayed drum belt can cause squealing
+          or thumping noises. Open the dryer's cabinet and visually inspect the belt
+          for signs of damage. If it appears worn or damaged, it may need to be replaced.
+        </p>
+        <p>
+          <b>Examine the Rollers or Pulleys:</b> Dryer rollers or pulleys that are
+          worn or damaged can also cause noise. Inspect them for signs of wear or
+          damage and replace them if necessary.
+        </p>
+        <p>
+          <b>Check the Drum Support Rollers:</b> Dryer drum support rollers can become
+          worn over time, leading to squealing or rumbling noises. Inspect the rollers
+          for wear and replace them if needed.
+        </p>
+        <p>
+          <b>Inspect the Motor:</b> A faulty motor can produce grinding or buzzing
+          noises. If you suspect the motor is the source of the noise, it may need
+          to be replaced.
+        </p>
+        <p>
+          <b>Call a Professional:</b> If you're unable to identify or resolve the
+          issue on your own, it's best to call a professional appliance repair person.
+          They can diagnose the problem accurately and perform any necessary repairs
+          to ensure your dryer operates safely and efficiently.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a><h3>Is it worth repairing an older dryer?</h3></a>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          Deciding whether to repair or replace an older dryer depends on
+          several factors:
+        </p>
+        <p>
+          <b>Age of the Dryer:</b> If your dryer is nearing the end of its expected
+          lifespan (typically around 10-15 years), it may be more cost-effective
+          to replace it, especially if multiple components are failing.
+        </p>
+        <p>
+          <b>Cost of Repairs:</b> Consider the repair cost compared to the replacement
+          costs. If the repair costs are significantly lower than the price of a
+          new dryer and the unit has plenty of life left, repairing it may be a sensible
+          choice.
+        </p>
+        <p>
+          <b> Frequency of Repairs:</b> If your dryer has required multiple repairs
+          in the past and is experiencing another issue, it may be a sign of ongoing
+          problems. In such cases, investing in a new, more reliable dryer could
+          save you money in the long run.
+        </p>
+        <p>
+          <b>Energy Efficiency:</b> Newer dryers are often more energy-efficient
+          than older models, which can result in lower energy bills over time. If
+          your current dryer is inefficient, upgrading to a newer model could lead
+          to long-term savings.
+        </p>
+        <p>
+          <b>Features and Technology:</b> Modern dryers come with advanced features
+          and technology that may offer added convenience and performance compared
+          to older models. If you're interested in these features, replacing your
+          old dryer might be worthwhile.
+        </p>
+        <p>
+          Ultimately, the decision to repair or replace your older dryer depends
+          on your budget, the extent of the repairs needed, and your long-term
+          needs and preferences. Consulting with a professional appliance repair
+          person can provide valuable insight into the condition of your dryer
+          and help you make an informed decision.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a><h3>How can I extend the lifespan of my dryer?</h3></a>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>To extend your dryer's lifespan:</p>
+        <p>
+          1. Clean the lint filter after each use.<br />
+          2. Regularly clean the dryer vents and exhaust duct.<br />
+          3. Ensure the dryer is level and stable.<br />
+          4. Avoid overloading the dryer.<br />
+          5. Use the correct settings for your laundry.<br />
+          6. Inspect and replace worn parts promptly.<br />
+          7. Keep the area around the dryer clear.<br />
+          8. Consider scheduling professional maintenance checks.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a><h3>What should I do if my dryer won't start?</h3></a>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          If your dryer won't start, here are some steps to troubleshoot the
+          issue:
+        </p>
+        <p>
+          <b>Check the Power:</b> Ensure the dryer is plugged in and receiving power.
+          Test the outlet with another device to confirm it's working.
+        </p>
+        <p>
+          <b>Door Switch:</b> The door switch prevents the dryer from starting if
+          the door is open. Make sure the door is fully closed and the switch is
+          functioning properly.
+        </p>
+        <p>
+          <b>Circuit Breaker:</b> Check the circuit breaker or fuse box to see if
+          the dryer's circuit has tripped. Reset the breaker or replace the fuse
+          if necessary.
+        </p>
+        <p>
+          <b>Dryer Timer or Control Panel:</b> Test the dryer timer or control panel
+          to ensure it's working correctly. If it's malfunctioning, it may prevent
+          the dryer from starting.
+        </p>
+        <p>
+          <b>Thermal Fuse:</b> A blown thermal fuse can also prevent the dryer from
+          starting. Check the fuse and replace it if necessary.
+        </p>
+        <p>
+          <b>Start Switch:</b> Test the start switch to see if it's faulty. If it's
+          defective, it will need to be replaced.
+        </p>
+        <p>
+          <b>Drive Motor:</b> The drive motor is responsible for turning the drum.
+          If it's faulty, the dryer won't start. Test the motor and replace it if
+          needed.
+        </p>
+        <p>
+          <b>Professional Help:</b> If you're unable to diagnose or fix the issue
+          yourself, it's best to call a professional dryer repair technician for
+          assistance.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a><h3>How can I troubleshoot a dryer that won't tumble?</h3></a>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>If your dryer won't tumble:</p>
+        <p>
+          1. Check the power supply.<br />
+          2. Ensure the door is fully closed.<br />
+          3. Inspect the belt for damage.<br />
+          4. Test the drive motor.<br />
+          5. Check rollers and idler pulley.<br />
+          6. Look for broken drum glide or bearing.<br />
+          7. Test the start switch.<br />
+          8. Inspect the dryer timer or control board.<br />
+          9. Avoid overloading the dryer.<br />
+          10. Consider professional help if needed.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              Why does my dryer take longer than usual to dry clothes?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>If the dryer takes longer to dry your clothes:</p>
+        - Check for a clogged vent or dirty lint filter.<br />
+        - Avoid overloading the dryer.<br />
+        - Ensure the heating element is functioning.<br />
+        - Clear any obstructions from the air intake.<br />
+        - Use the correct drying settings.<br />
+        - Replace worn-out or damaged parts if needed.<br />
+        - Verify the home's ventilation system is clear.
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              What are the signs that my dryer needs professional servicing?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          Signs that your dryer needs professional servicing include:
+          <p>
+            1. Clothes take longer than usual to dry, indicating a potential
+            issue with the heating element or airflow.<br />
+            2. The dryer produces unusual noises such as squeaking, grinding, or
+            banging, suggesting worn-out or damaged components.<br />
+            3. Clothes come out of the dryer excessively wrinkled, indicating problems
+            with the drum or motor.<br />
+            4. The dryer emits burning smells or produces smoke, which could signal
+            overheating or electrical issues.<br />
+            5. The dryer fails to start or stops mid-cycle, indicating potential
+            problems with the electrical system, dryer door switch, or motor.<br
+            />
+            6. Visible damage to the dryer, such as cracks, dents, or broken parts,
+            may require professional inspection and repair.<br />
+            7. Persistent issues despite basic troubleshooting and maintenance efforts,
+            suggesting underlying mechanical or electrical issues.
+          </p>
+          <p>
+            If you notice any of these signs, it's advisable to contact a
+            professional dryer repair technician to diagnose and address the
+            problem promptly. Attempting DIY repairs on complex issues may lead
+            to further damage or safety hazards.
+          </p>
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a><h3>How can I troubleshoot a dryer that won't tumble?</h3></a>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>If your dryer won't tumble:</p>
+        <p>
+          1. Check the power supply.<br />
+          2. Ensure the door is fully closed.<br />
+          3. Inspect the belt for damage.<br />
+          4. Test the drive motor.<br />
+          5. Check rollers and idler pulley.<br />
+          6. Look for broken drum glide or bearing.<br />
+          7. Test the start switch.<br />
+          8. Inspect the dryer timer or control board.<br />
+          9. Avoid overloading the dryer.<br />
+          10. Consider professional help if needed.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              What are the typical costs associated with home appliance repairs,
+              and how do they compare to stove repair costs?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          An appliance repair cost depends on factors such as the brand and
+          model of the appliance, as well as its age and accessibility for the
+          repair specialist. For example, garbage disposal repairs cost can also
+          vary, with most garbage disposal repairs falling between $100 and
+          $275. This parallels the average dryer repair cost, highlighting that
+          simple jams in garbage disposals are usually quick and inexpensive to
+          fix. However, more complex issues like replacing a malfunctioning
+          motor or addressing a leaking disposal can incur higher costs. When
+          considering repairs, it's beneficial to compare the cost of replacing
+          the garbage disposal versus the appliance repair cost of repairs, as
+          purchasing a new unit might often be the more sensible financial
+          decision.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              What is the average dryer repair cost for electric appliances like
+              an electric dryer?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          The average cost to fix an electric dryer typically ranges from $100
+          to $400, depending on the complexity of the repair and the parts
+          needed.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              Can the cost to fix a broken dryer vary based on the dryer brand
+              and model?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          Yes, the cost to repair can vary significantly based on the dryer
+          brand and model. Some brands may have higher repair cost due to the
+          cost of replacement parts or the complexity of the design.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              What are common issues that lead to higher repair cost in gas
+              dryers?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          Common issues in gas dryers that lead to higher repair costs include
+          replacing burner coils, fixing a broken motor, or addressing a control
+          board malfunction.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a>
+            <h3>
+              Is it worth repairing a dryer with a bad heating element, or
+              should it be replaced?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          Whether it's worth repairing a dryer heating element malfunction
+          depends on the age of the dryer and the cost of the repair versus
+          replacement costs. If the repair is minor and less costly compared to
+          buying a new dryer, it might be worth repairing.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              What should be considered when deciding between frequent repairs
+              and replacing household appliances like clothes dryers?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          When deciding between frequent repairs and replacement, consider the
+          appliance's age, the average repair costs you've incurred, and whether
+          these costs are approaching or exceeding the price of a new appliance.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              How do appliance repair service providers calculate the service
+              fee for a service call?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          Service fees for a service call can vary by service provider. They
+          typically include the cost of labor and travel. Some providers may
+          also offer free estimates or waive the service call fee if you decide
+          to proceed with the repairs.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              What is the typical range for appliance repair costs, including
+              complex appliances like washing machines and dishwashers?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          The average repair costs for appliances like washing machines and
+          dishwashers can range from $100 to $500, depending on the severity of
+          the issue and the parts required.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              Why might some home appliances experience thermostat breaks or
+              door switches issues?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          Thermostat breaks or issues with door switches in home appliances can
+          be due to normal wear and tear, improper usage, or improper repairs
+          that fail to address the root cause of the initial problem.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              What factors contribute to the decision of whether a broken dryer
+              is worth repairing?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          Factors include the cost of the repair, the age and condition of the
+          dryer, potential future problems, and whether the current issue is a
+          minor repair or requires expensive parts like a dryer motor or heating
+          element.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              How do home warranty plans affect the dryer repair cost?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          A home warranty plan can significantly reduce out-of-pocket expenses
+          for dryer repairs as it may cover parts and labor, depending on the
+          plan's terms. This can make frequent repairs more manageable and
+          cost-effective.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              How do appliance repair costs for a gas dryer compare to those for
+              electric dryers?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          An appliance repair cost for gas dryers is often higher than for
+          electric dryers due to the complexity of the components involved, such
+          as the gas burner and ignition systems. Most dryer repairs for gas
+          models require specialized knowledge, potentially increasing the
+          repair cost.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <a
+            ><h3>
+              Can ongoing appliance repair costs for an aging gas dryer justify
+              the initial expense of buying a new model?
+            </h3></a
+          >
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          Yes, ongoing appliance repair costs can sometimes justify the expense
+          of purchasing a new model, especially if the dryer requires frequent
+          repairs. Investing in a new dryer might offer more reliability and
+          efficiency, potentially saving on future repair costs and energy
+          bills.
+        </p>
+        <p>
+          These questions and answers delve into the complexities of appliance
+          repair costs, particularly focusing on issues related to gas dryers
+          and common scenarios involving replacement costs and repair decisions.
+        </p>
+      </div>
+
+      <div class="FAQ_bottom"></div>
+
+      <!-- </div> -->
+    </main>
+
+    <Cta />
+  </Container>
+</Layout>
