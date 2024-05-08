@@ -572,6 +572,7 @@ display: flex;
   @media (max-width:425px) { 
     .col-one img  {
       width: 300px;
+      height: 300px;
     }
   }
 
