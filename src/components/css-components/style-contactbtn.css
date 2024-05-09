@@ -10,45 +10,10 @@
 }
 
 
-.full-button-global {
-  max-width: 360px;
+.full-contact-button-global {
+  max-width: 308px;
   display: flex;
-  margin: 15px 0px;
-}
-
-
-
-
-
-
-
-.button-top-global {
-  display: inline-block;
-  width: 50px;
-margin: 0 10px 0 0;
-background-color: #0f77cc;
-border-radius: 7px;
-box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
-}
-
-.button-top-global:hover{
-  margin: 0 10px 0 0;
-  background-color: #000000;
-  }
-  
-.button-top-global a {
-  display: grid;
-  color: #fff;
-  text-align: center;
-}
-
-.button-top-global svg {
-  margin: -1px  3px 0px 3px;
-}
-
-.button-top-global p {
-  line-height: 20px;
-  margin: -5px 0 3px 0;
+  margin: 15px 15px 15px 0;
 }
 
 
@@ -60,15 +25,14 @@ box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%),
 
 
 
-
-.button-book-global {
+.contact-button-book-global {
   display: inline-block;
   align-self: center;
   margin: 0 10px 0 0;
   width: 94px;
 }
 
-.button-book-global button {
+.contact-button-book-global button {
   font-weight: 600;
   height: 53px;
   line-height: 1.14;
@@ -100,8 +64,8 @@ box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%),
   box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 }
 
-.button-book-global:hover button {
-  background-color: black;
+.contact-button-book-global:hover button {
+  background-color: black !important;
   transition: 0.25s;
 }
 
@@ -113,25 +77,31 @@ box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%),
 
 
 
-.button-call-global {
+.contact-button-call-global {
   /* display: inline-block; */
   display: grid;
-  width: 180px;
+  width: 100%;
   background-color: #0f77cc ;
   box-shadow: inset 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
   border-radius: 7px;
   align-self: center;
 }
 
-.button-call-global a {
+.contact-button-call-global a:nth-child(1) {
+  display: none;
+}
+
+.contact-button-call-global a {
+white-space: nowrap;
+
   padding: 14px 8px;
-  width: 180px !important;
+  width: 100% !important;
   align-self: center;
   color: #fff;
   margin: 0 !important;
 }
 
-.button-call-global:hover {
+.contact-button-call-global:hover {
   background-color: black;
   transition: 0.25s;
 }
@@ -142,29 +112,16 @@ box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%),
 
 
 
-@media (max-width:390px) {
-  .full-button-global {
+@media (max-width:350px) {
+  .full-contact-button-global {
     display: inline-block;
   }
 
-  .button-call-global {
+  .contact-button-call-global {
     margin-top: 10px;
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

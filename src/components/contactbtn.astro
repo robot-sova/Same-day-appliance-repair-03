@@ -1,15 +1,27 @@
 ---
-import Link from "./ui/link.astro";
+// import Link from "./ui/link.astro";
+
+import "components/css-components/style-contactbtn.css";
 ---
 
+<div class="full-contact-button-global">
+  <div class="contact-button-book-global">
+    <!--Start of Housecallpro Online booking button-->
+    <button
+      data-token="9e68ce292ba246dbba0fe928b98791f7"
+      data-orgname="Same-Day-Appliance-Repair"
+      onClick="HCPWidget.openModal()">
+      Book
+    </button>
 
-<div class="contactbtn-form">
+    <script
+      async
+      src="https://online-booking.housecallpro.com/script.js?token=9e68ce292ba246dbba0fe928b98791f7&orgName=Same-Day-Appliance-Repair"
+    ></script>
+    <!--End of Housecallpro Online booking button-->
+  </div>
 
-        <!--Start of Housecallpro Online booking button--> <button data-token="9e68ce292ba246dbba0fe928b98791f7" data-orgname="Same-Day-Appliance-Repair" class="hcp-button" onClick="HCPWidget.openModal()"> Book </button> 
-        
-        <script async src="https://online-booking.housecallpro.com/script.js?token=9e68ce292ba246dbba0fe928b98791f7&orgName=Same-Day-Appliance-Repair"> 
-        </script> <!--End of Housecallpro Online booking button-->
-
-<a style="background-color:#000000; color:#ffffff; padding:10px; border-radius: 5px; display:inline-block;" title="" href="tel:+14243250520">Call US: (424) 325-0520</a>
-
+  <div class="contact-button-call-global">
+    <a href="tel:+14243250520">Call US: (424) 325-0520</a>
+  </div>
 </div>
