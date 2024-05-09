@@ -414,6 +414,15 @@ display: flex;
 
 /* water-heater-repair-cost */
 
+.maintenance {
+  width: 100%;
+}
+
+.maintenance p {
+  font-size: clamp(16px, 4vw, 18px);
+  margin: 0;
+}
+
 .head-maintenance {
   text-align: center;
     display: grid;
@@ -431,7 +440,46 @@ display: flex;
   justify-self: center;
 }
 
+.full-content_maintenance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 3%;
+  grid-gap: 5%;
+}
 
+.full-content_maintenance  h3 {
+    margin-top: 10px;
+    font-size: clamp(18px, 4vw, 20px) !important;
+    text-shadow: 0.5px 0.5px 0.8px #75baf587;
+}
+
+.full-content_maintenance p {
+  margin: 0;
+}
+
+.content-1_maintenance, .content-2_maintenance {
+  width: 100%;
+  border: solid 3px #75baf587;
+  border-radius: 20px;
+  padding: 0% 3% 3% 3%;
+}
+
+.maint-a {
+  margin-top: 10px;
+}
+
+.description_maintenance {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.description_maintenance b {
+  display: flex;
+}
+
+.conclusion-description_maintenance {
+  margin-top: 15px;
+}
 
 
 
@@ -558,6 +606,18 @@ display: flex;
   width: 100%;
   margin-top: 10%;
 }
+
+.full-content_maintenance {
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+}
+
+.content-2_maintenance, .content-1_maintenance {
+  margin-bottom: 15px;
+}
+
+
+
 
   }
 
