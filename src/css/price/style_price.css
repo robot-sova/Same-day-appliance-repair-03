@@ -382,7 +382,7 @@ display: flex;
 
 .content_job-prices-h-m p:nth-child(1) {
   font-size: clamp(22px, 5vw, 24px);
-  padding: 1% 1% 0% 0%;
+  padding: 1% 1% 1% 0%;
 }
 
 .desk_job-prices p {
