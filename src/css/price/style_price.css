@@ -209,8 +209,11 @@ display: flex;
 .pros_pricing-policy {
   width: 80%;
   margin: 0 auto;
-  border: solid 3px #ff2a2a52;
+  /* border: solid 3px #ff2a2a52; */
   border-radius: 5px;
+
+  border: solid 2px #ff2a2a;
+    background-color: #dae1e852;
 }
 
 .pros_pricing-policy p{
@@ -397,8 +400,11 @@ display: flex;
     width: 80%;
     margin: 0 auto;
     margin-top: 3%;
-    border: solid 3px #ff2a2a52;
+    /* border: solid 3px #ff2a2a52; */
     border-radius: 5px;
+
+    border: solid 2px #ff2a2a;
+    background-color: #dae1e852;
 }
 
 .pros_job-prices p{
