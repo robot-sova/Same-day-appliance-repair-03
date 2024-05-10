@@ -83,6 +83,10 @@ h2 {
 .col-two p:nth-child(2){
   padding-top: 1%;
   }
+
+  .col-two b {
+    text-shadow: 0.5px 0.5px 0.8px #75baf587;
+  }
   
 
 .two-col-grid {
@@ -452,6 +456,17 @@ display: flex;
     font-size: clamp(18px, 4vw, 20px) !important;
     text-shadow: 0.5px 0.5px 0.8px #75baf587;
 }
+.full-content_maintenance ul{
+  margin-left: 8px;
+}
+
+.full-content_maintenance li {
+  margin-top: 10px;
+}
+
+.content-2_maintenance li::marker {
+  color: #0f77cc !important;
+}
 
 .full-content_maintenance p {
   margin: 0;
@@ -464,24 +479,34 @@ display: flex;
   padding: 0% 3% 3% 3%;
 }
 
-.maint-a {
-  margin-top: 10px;
-}
-
 .description_maintenance {
   width: 100%;
   margin-bottom: 20px;
+  padding: 0 2%;
 }
 
-.description_maintenance b {
+.head_description_maintenance {
   display: flex;
+  margin-bottom: 5px;
+}
+
+.head_description_maintenance svg {
+  margin: 0 10px 0 0;
+}
+
+.head_description_maintenance p{
+  align-self: center;
+  text-shadow: 0.5px 0.5px 0.8px #75baf587;
 }
 
 .conclusion-description_maintenance {
-  margin-top: 20px;
+  margin-top: 4%;
 }
 
-
+.conclusion-description_maintenance:hover svg{
+  fill: rgb(31 120 243);
+  transition: 0.3s;
+}
 
 
 
