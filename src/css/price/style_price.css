@@ -584,40 +584,36 @@ main {
   margin-bottom: 5% !important;
 }
 
-@media (max-width:1024px) {
-  .head_pricing-policy_foto-a {
-    max-width: 50%;
-  }
-}
-
-@media (max-width:768px) {
-  .head_pricing-policy_foto {
-    display: grid;
-  }
-
-  .head_pricing-policy_foto-a,
-  .head_pricing-policy_foto-b {
-    margin: 20px 3% 20px 3%;
-  }
-
-  .head_pricing-policy_foto-a {
-    max-width: 100%;
-    grid-row: 1/2;
-    margin: 20px 3% 0px 3%;
-  }
-
-  .head_pricing-policy_foto-a h2 {
-    margin-bottom: 1% !important;
-  }
-}
-
-
-
-
 /* oven-repair-cost */
 
 
 
+
+
+
+
+
+
+
+/* refrigerator-repair-cost */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* refrigerator-repair-cost */
 
 
 
@@ -675,6 +671,10 @@ main {
     margin-top: 10px;
   }
 
+    .head_pricing-policy_foto-a {
+      max-width: 50%;
+    }
+
 }
 
 
@@ -694,6 +694,25 @@ main {
     margin-bottom: 7%;
   }
 
+.head_pricing-policy_foto {
+  display: grid;
+}
+
+.head_pricing-policy_foto-a,
+.head_pricing-policy_foto-b {
+  margin: 20px 3% 20px 3%;
+}
+
+.head_pricing-policy_foto-a {
+  max-width: 100%;
+  grid-row: 1/2;
+  margin: 20px 3% 0px 3%;
+}
+
+.head_pricing-policy_foto-a h2 {
+  margin-bottom: 1% !important;
+}
+  
   .con-inside_pricing-policy {
     display: grid;
   }

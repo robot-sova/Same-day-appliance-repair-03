@@ -1,0 +1,1522 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Contactbtn from "@components/contactbtn.astro";
+import Btn from "@components/btn.astro";
+import Costanchor from "@components/price-list/components_dryer-repair-cost.astro";
+import Cta from "@components/cta.astro";
+
+import "css/price/style_price.css";
+---
+
+<!-- частые вопросы -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    let coll = document.getElementsByClassName("FAQ");
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  });
+</script>
+
+<Layout title="Oven Repair Cost">
+  <Container>
+    <main>
+      <h1>
+        <span class="animate-charcter">Refrigerator Repair Cost</span>
+      </h1>
+
+      <div class="two-col-grid">
+        <div class="col-one">
+          <img
+            width="500px"
+            height="500px"
+            src="/img-price/refrigerator-repair-cost/refrigerator-repair-cost-1.webp"
+            alt="refrigerator repair cost"
+          />
+
+          <Contactbtn />
+        </div>
+
+        <div class="col-two">
+          <Costanchor />
+
+          <p>
+            At Same Day Appliance Repair, we are a family-owned business
+            committed to enhancing your customer experience. We understand the
+            frustration of appliance repairs, and we pride ourselves on our
+            transparency and reliability. This page is designed to give you a
+            thorough understanding of our pricing policies, the costs associated
+            with fridge repairs, and our unique approach to service.
+          </p>
+
+          <p><b>Have Questions? We’re Here to Help!</b></p>
+
+          <p>
+            Feel free to call us with any questions. Our team is dedicated to
+            assisting you and ensuring your satisfaction.
+          </p>
+
+          <h2>How Much Does It Cost to Repair a Refrigerator?</h2>
+          <p>
+            Discussing the average appliance repair cost is essential when
+            considering the general costs associated with repairing common
+            household appliances. Refrigerator repair costs can vary based on
+            the type of issue as well as the brand and model of your appliance.
+            Our technician will first need to diagnose the problem to provide
+            you with the most accurate estimate. Following the diagnosis, you’ll
+            receive a detailed price breakdown. This helps make an informed
+            decision about whether to repair or replace your refrigerator and
+            includes recommendations should you consider a replacement.
+          </p>
+        </div>
+      </div>
+
+      <div class="pricing-policy">
+        <div class="head_pricing-policy head_pricing-policy_foto">
+          <div class="head_pricing-policy_foto-a">
+            <h2>
+              Our Pricing Policy For The Refrigerator Repair And How We Work
+            </h2>
+            <p>
+              There are four costs to consider when making your refrigerator
+              work optimally.
+            </p>
+          </div>
+
+          <div class="head_pricing-policy_foto-b">
+            <img
+              width="500px"
+              height="500px"
+              src="/img-price/refrigerator-repair-cost/free-refrigerator-repair-estimates-2.webp"
+              alt="Free refrigerator repair estimates"
+            />
+          </div>
+        </div>
+
+        <div class="content_pricing-policy">
+          <div class="con-inside_pricing-policy">
+            <div class="icon_pricing-policy">
+              <svg
+                fill="#000000"
+                height="50px"
+                width="50px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 490 490"
+                xml:space="preserve">
+                <g id="bold_copy_5_">
+                  <path
+                    d="M392.383,0H245H97.617v369.414L245,490l147.383-120.586V0z M361.758,354.898L245,450.432l-116.758-95.535V30.625H245
+		h116.758V354.898z"
+                  ></path>
+                  <path
+                    d="M245,311.395c-23.229,0-42.109,18.88-42.109,42.109c0,23.229,18.88,42.109,42.109,42.109
+		c23.229,0,42.109-18.88,42.109-42.109C287.109,330.275,268.229,311.395,245,311.395z M245,364.989
+		c-6.324,0-11.484-5.16-11.484-11.484c0-6.324,5.16-11.484,11.484-11.484c6.324,0,11.484,5.16,11.484,11.484
+		C256.484,359.828,251.324,364.989,245,364.989z"
+                  ></path>
+                  <path
+                    d="M238.079,62.919v12.005c-13.904,1.378-25.051,6.584-33.427,15.603c-8.376,9.019-12.556,20.151-12.556,33.427
+		c0,13.092,3.706,24.24,11.117,33.427c7.411,9.188,19.018,16.032,34.867,20.565v50.837c-4.364-2.113-8.33-5.497-11.882-10.198
+		c-3.553-4.701-5.987-10.275-7.289-16.752l-31.651,3.399c2.419,15.94,7.993,28.282,16.737,37.01
+		c8.743,8.728,20.09,13.95,34.101,15.649v22.065h17.579v-22.678c15.772-2.251,28.083-8.407,36.949-18.436
+		c8.851-10.03,13.276-22.372,13.276-37.01c0-13.092-3.507-23.842-10.55-32.218c-7.028-8.361-20.258-15.175-39.675-20.442v-47.438
+		c7.855,3.415,12.694,9.876,14.562,19.416l30.686-3.997c-2.098-12.143-6.952-21.82-14.547-29.048
+		c-7.61-7.243-17.839-11.637-30.701-13.169v-12.02H238.079z M238.079,143.356c-5.268-2.251-9.187-5.237-11.775-8.912
+		c-2.588-3.675-3.874-7.672-3.874-11.944c0-4.701,1.409-8.988,4.226-12.862c2.848-3.889,6.645-6.646,11.408-8.253v41.972H238.079z
+		 M271.383,192.187c3.2,3.935,4.778,8.606,4.778,14.011c0,6.064-1.899,11.347-5.696,15.833c-3.797,4.487-8.728,7.304-14.807,8.437
+		v-47.316C262.946,185.266,268.183,188.267,271.383,192.187z"
+                  ></path>
+                </g>
+              </svg>
+              <h3>Maintenance Cost</h3>
+            </div>
+
+            <div class="desc_pricing-policy">
+              <p>
+                Regular maintenance is essential for your fridge’s longevity and
+                optimal performance. We recommend annual maintenance, which
+                includes thorough cleaning of the condenser coils, inspection of
+                door seals for tightness, and checking the temperature
+                calibration to ensure proper cooling. Our flat fee for this
+                comprehensive service is $80. This preventive approach is not
+                only cost-effective by reducing the need for fridge repair but
+                also enhances the efficiency and lifespan of your appliance.
+                Schedule your maintenance appointment with us today and ensure
+                your fridge runs smoothly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content_pricing-policy">
+          <div class="con-inside_pricing-policy">
+            <div class="icon_pricing-policy">
+              <svg
+                fill="#000000"
+                width="50px"
+                height="50px"
+                viewBox="0 0 1024 1024"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  d="M951.467 721.067C908.8 678.4 853.334 665.6 802.134 674.134l-409.6-409.6c8.533-51.2-4.267-110.933-46.933-149.333-42.667-46.933-110.933-64-174.933-42.667 0 0-4.267 0-4.267 4.267-4.267 0-4.267 4.267-8.533 4.267-8.533 8.533-8.533 21.333 0 29.867l59.733 59.733c4.267 4.267 4.267 12.8 0 17.067l-29.867 29.867c-8.533 4.267-12.8 4.267-17.067 0l-59.733-55.467c-8.533-8.533-21.333-8.533-29.867 0 0 0 0 4.267-4.267 4.267 0 0 0 4.267-4.267 4.267-21.333 59.733-8.533 128 38.4 174.933 34.133 34.133 76.8 46.933 115.2 46.933 12.8 0 21.333 0 34.133-4.267l409.6 409.6c-12.8 51.2 4.267 110.933 46.933 149.333 29.867 29.867 72.533 46.933 119.467 46.933 21.333 0 38.4-4.267 55.467-8.533 0 0 4.267 0 4.267-4.267 4.267 0 4.267-4.267 8.533-4.267 8.533-8.533 8.533-21.333 0-29.867L849.066 896c-4.267-4.267-4.267-4.267-4.267-8.533s0-8.533 4.267-8.533l29.867-29.867c4.267-4.267 4.267-4.267 8.533-4.267s4.267 0 8.533 4.267l55.467 55.467c8.533 8.533 21.333 8.533 29.867 0 0 0 0-4.267 4.267-4.267 4.267-4.267 4.267-4.267 4.267-8.533 25.6-59.733 8.533-128-38.4-170.667zM140.8 315.733c-25.6-25.6-38.4-64-34.133-98.133l29.867 29.867c12.8 8.533 25.6 17.067 42.667 17.067 12.8 0 29.867-4.267 38.4-17.067l29.867-29.867c21.333-21.333 21.333-55.467 0-76.8l-34.133-34.133c38.4-4.267 72.533 8.533 102.4 34.133 46.933 46.933 46.933 128 0 174.933-46.933 51.2-123.733 51.2-174.933 0zm166.4 59.734c12.8-8.533 29.867-17.067 38.4-29.867 12.8-12.8 21.333-25.6 29.867-42.667l384 384C746.667 695.466 729.6 704 716.8 716.8s-21.333 25.6-29.867 38.4L307.2 375.467zm580.267 426.666c-12.8 0-29.867 4.267-38.4 17.067L819.2 849.067c-8.533 8.533-17.067 25.6-17.067 38.4s4.267 29.867 17.067 38.4l29.867 29.867c-38.4 4.267-72.533-8.533-102.4-34.133-46.933-46.933-46.933-128 0-174.933s128-46.933 174.933 0c25.6 25.6 38.4 64 34.133 102.4l-29.867-29.867c-8.533-8.533-21.333-17.067-38.4-17.067z"
+                ></path><path
+                  d="M610.133 409.6c4.267 0 12.8 0 17.067-4.267L802.133 230.4l34.133 34.133-174.933 174.933c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 17.067 4.267 4.267 0 12.8 0 17.067-4.267l196.267-192 68.267-25.6c4.267-4.267 12.8-8.533 12.8-12.8l29.867-85.333c4.267-8.533 0-17.067-4.267-21.333l-59.733-64c-4.267-4.267-12.8-8.533-21.333-4.267l-85.333 29.867c-4.267 4.267-12.8 8.533-12.8 12.8l-25.6 72.533c-4.267 0-4.267 4.267-4.267 4.267l-192 192c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 12.8 4.267zm243.2-277.333l64-21.333 38.4 38.4-21.333 64-64 21.333-38.4-38.4 21.333-64zm-384 558.933L209.066 951.467c-8.533 8.533-17.067 8.533-21.333 4.267l-81.067-81.067c-4.267-4.267 0-12.8 4.267-21.333l256-256c8.533-8.533 8.533-21.333 0-29.867s-21.333-8.533-29.867 0l-256 256c-25.6 25.6-25.6 59.733-4.267 81.067l81.067 81.067c8.533 8.533 21.333 12.8 34.133 12.8 17.067 0 34.133-8.533 46.933-21.333l260.267-260.267c8.533-8.533 8.533-21.333 0-29.867s-21.333-4.267-29.867 4.267z"
+                ></path></svg
+              >
+              <h3>Service fees</h3>
+            </div>
+
+            <div class="desc_pricing-policy">
+              <p>
+                If your refrigerator requires repair, we charge a service fee of
+                $65, which includes a detailed price breakdown. This fee is
+                waived if you choose to proceed with the fridge repair. Unlike
+                some companies, we guarantee you will not pay this fee if we
+                cannot diagnose properly. Our technicians are highly trained and
+                equipped with specialized tools to accurately diagnose and
+                resolve issues, ensuring transparency and fairness in our
+                charges.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content_pricing-policy">
+          <div class="con-inside_pricing-policy">
+            <div class="icon_pricing-policy">
+              <svg
+                height="50px"
+                width="50px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                xml:space="preserve">
+                <polygon
+                  style="fill:#FFFFFF;"
+                  points="58,397.144 58,114.856 256,9.072 454,114.856 454,397.144 256,502.936 "
+                ></polygon>
+                <path
+                  id="cost-svg"
+                  style="fill:#000;"
+                  d="M256,18.144l190,101.512V392.36L256,493.856L66,392.352V119.648L256,18.144 M256,0L50,110.056
+	v291.888L256,512l206-110.056V110.056L256,0L256,0z"
+                ></path>
+                <circle cx="256" cy="115.624" r="27.256"></circle>
+                <path
+                  d="M286.424,153.776h-60.856c-21.456,0-38.92,17.464-38.92,38.92v76.32c0,7.816,6.336,14.152,14.152,14.152
+	s14.152-6.336,14.152-14.152V200.56h8.496v64.536c0,0.032-0.008,0.056-0.008,0.088v144.288c0,7.816,6.336,14.152,14.152,14.152
+	c7.816,0,14.152-6.336,14.152-14.152v-116.08h8.488v116.08c0,7.816,6.336,14.152,14.152,14.152s14.152-6.336,14.152-14.152v-116.08
+	v-28.208V200.56h8.496v68.448c0,7.816,6.336,14.152,14.152,14.152s14.152-6.336,14.152-14.152v-76.32
+	C325.344,171.24,307.88,153.776,286.424,153.776z"
+                ></path>
+              </svg>
+              <h3>Labor cost</h3>
+            </div>
+
+            <div class="desc_pricing-policy">
+              <p>
+                See prices below. The cost of labor depends on the complexity of
+                the repair and the estimated time required. We ensure
+                transparency by providing a detailed quote before you commit to
+                the service. Should the repair take longer than expected, you
+                won’t be charged extra; we waive the diagnostic fee upon
+                proceeding with the repair, ensuring no surprises on your final
+                bill.
+              </p>
+            </div>
+          </div>
+
+          <div class="content_pricing-policy">
+            <div class="con-inside_pricing-policy">
+              <div class="icon_pricing-policy">
+                <svg
+                  fill="#000000"
+                  height="50px"
+                  width="50px"
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 383.114 383.114"
+                  xml:space="preserve">
+                  <path
+                    d="M144.114,316.654c4.864,1.025,7.976,5.8,6.95,10.663c-0.894,4.237-4.633,7.146-8.798,7.146
+ c-0.615,0-1.239-0.063-1.865-0.195c-52.492-11.066-93.56-52.135-104.624-104.627c-1.025-4.864,2.087-9.638,6.951-10.663
+ c4.86-1.024,9.637,2.087,10.663,6.95C62.984,271.446,98.596,307.058,144.114,316.654z M177.525,201.533c0-4.971-4.029-9-9-9h-0.031
+ c-4.971,0-8.984,4.029-8.984,9s4.044,9,9.015,9S177.525,206.503,177.525,201.533z M383.114,22.071v109.6c0,4.971-4.029,9-9,9
+ s-9-4.029-9-9v-10.949H225.56l-30.513,52.852c5.318,5.05,9.203,11.599,10.969,18.96h43.302v-42.865c0-4.971,4.029-9,9-9s9,4.029,9,9
+ v51.598c0.002,0.089,0.004,0.178,0.004,0.268c0,29.557-13.044,56.124-33.679,74.247c-0.21,0.222-0.434,0.436-0.67,0.64
+ c-8.145,7.018-17.32,12.601-27.13,16.603c-11.401,4.669-23.861,7.267-36.911,7.321c-0.02,0.003-0.038,0-0.056,0
+ c-0.024,0-0.044,0-0.067,0.001c-0.025,0.001-0.048,0.001-0.071,0c-0.025-0.001-0.051-0.001-0.074,0c-0.025,0-0.052,0-0.076,0
+ c-0.028,0-0.079-0.007-0.078,0c0,0,0,0,0,0c-17.77,0-34.465-4.718-48.89-12.964c-0.172-0.086-0.344-0.178-0.513-0.275
+ c-0.179-0.103-0.353-0.212-0.522-0.325c-29.227-17.183-48.887-48.963-48.887-85.247s19.661-68.064,48.888-85.247
+ c0.169-0.113,0.343-0.223,0.522-0.325c0.169-0.098,0.34-0.189,0.513-0.275c14.427-8.248,31.117-12.964,48.893-12.964
+ c0.719,0,1.419,0.084,2.089,0.244c0.671-0.16,1.37-0.244,2.089-0.244h47.517c0.109-0.003,0.22-0.003,0.329,0h144.578V51.022H172.69
+ c-0.717,0-1.415-0.084-2.083-0.242c-0.668,0.158-1.366,0.242-2.083,0.242C85.519,51.022,18,118.541,18,201.533
+ s67.519,150.511,150.512,150.511c57.937,0,111.379-33.87,136.151-86.288c0.416-0.878,0.954-1.658,1.586-2.329
+ c8.479-18.72,13.235-39.469,13.32-61.301c-0.002-0.075-0.003-0.149-0.003-0.225v-52.233c0-4.971,4.029-9,9-9s9,4.029,9,9v51.598
+ c0.002,0.089,0.004,0.178,0.004,0.268c0,92.917-75.594,168.511-168.512,168.511c-0.182,0-0.363,0-0.546,0
+ C75.594,370.043,0,294.45,0,201.533S75.594,33.022,168.512,33.022c0.719,0,1.419,0.084,2.089,0.244
+ c0.671-0.16,1.37-0.244,2.089-0.244h192.424V22.071c0-4.971,4.029-9,9-9S383.114,17.1,383.114,22.071z M88.195,192.533h42.81
+ c1.767-7.362,5.651-13.91,10.971-18.961l-21.397-37.063C102.922,149.559,90.745,169.614,88.195,192.533z M120.577,266.557
+ l21.398-37.063c-5.319-5.051-9.204-11.599-10.971-18.961h-42.81C90.745,233.455,102.92,253.508,120.577,266.557z M200.871,275.581
+ l-21.4-37.068c-3.475,1.032-7.153,1.586-10.958,1.586c-3.806,0-7.483-0.554-10.959-1.586l-21.401,37.069
+ c9.913,4.348,20.86,6.763,32.36,6.763c0.02,0,0.041,0,0.063,0h0.002c0.026,0,0.047,0,0.071,0c0.021,0,0.048,0,0.066,0
+ c0.023,0,0.044-0.001,0.068,0c0.019-0.002,0.043-0.001,0.063-0.001c0.008,0,0.01,0,0.019,0c10.25-0.045,20.315-2.037,29.685-5.788
+ C199.331,276.242,200.102,275.917,200.871,275.581z M168.512,222.098c11.339,0,20.564-9.226,20.564-20.565
+ s-9.225-20.565-20.564-20.565c-11.341,0-20.567,9.226-20.567,20.565S157.171,222.098,168.512,222.098z M195.047,229.493
+ l21.398,37.063c17.654-13.049,29.83-33.104,32.379-56.022h-42.808C204.25,217.894,200.365,224.443,195.047,229.493z
+  M204.775,120.721H172.69c-0.717,0-1.415-0.084-2.083-0.242c-0.668,0.158-1.366,0.242-2.083,0.242
+ c-11.505,0-22.456,2.415-32.372,6.765l21.4,37.067c3.476-1.032,7.153-1.586,10.959-1.586c3.805,0,7.483,0.554,10.958,1.586
+ L204.775,120.721z"
+                  ></path>
+                </svg>
+                <h3>Replacement Parts cost</h3>
+              </div>
+
+              <div class="desc_pricing-policy">
+                <p>
+                  See prices below. While not every repair needs new parts,
+                  certain situations require them to restore your refrigerator
+                  to peak performance. Our technicians carry a range of parts in
+                  their vehicles, which usually enables same-day repairs. If a
+                  part must be ordered, the cost will vary depending on the
+                  repair, brand, and model of your fridge.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pros_pricing-policy">
+            <p>
+              *We always do our best to find parts at a lower price for our
+              customers. We do not make extra money on the parts; our priority
+              is to make it as easy as possible for the customer.
+            </p>
+            <p>
+              Understanding the appliance repair cost is crucial for homeowners
+              to make informed decisions about whether to repair or replace
+              their appliances, including refrigerators, dishwashers, washers,
+              and dryers.
+            </p>
+          </div>
+        </div>
+        <Btn />
+
+        <div class="job-prices" id="labor-cost-anchor">
+          <div class="head_pricing-policy head_pricing-policy_foto">
+            <div class="head_pricing-policy_foto-b">
+              <img
+                width="600px"
+                height="500px"
+                src="/img-price/refrigerator-repair-cost/refrigerator-repair-labor-cost-3.webp"
+                alt="refrigerator repair labor cost"
+              />
+            </div>
+
+            <div class="head_pricing-policy_foto-a">
+              <h2>Refrigerator Repair Cost - Labor Only Excluding Parts</h2>
+              <p>
+                Here are common problems and associated repair costs in Los
+                Angeles:
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="head-prices">
+          <h2>Oven Repair Cost - Labor Only Excluding Parts</h2>
+          <p>
+            Here are common problems and associated costs for water heater
+            repair in Los Angeles:
+          </p>
+        </div> -->
+          <div class="full-content_job-prices">
+            <div class="content_job-prices" id="col-prices">
+              <div class="desk_job-prices">
+                <a href="#"
+                  ><p>
+                    Faulty Heating Element replacement cost (Electric Oven).
+                  </p></a
+                >
+                <p>Oven not heating, uneven cooking, or element not glowing.</p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>100 - 250$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices">
+              <div class="desk_job-prices">
+                <a href="#"><p>Oven Thermostat Issues replacement cost.</p></a>
+                <p>Oven over or under heating, temperature fluctuation.</p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>100 - 250$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices" id="col-prices">
+              <div class="desk_job-prices">
+                <a href="#"
+                  ><p>Igniter Problems replacement cost (Gas Oven).</p></a
+                >
+                <p>
+                  Oven not heating, igniter glowing but no flame, slow to heat.
+                </p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>150 - 350$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices">
+              <div class="desk_job-prices">
+                <a href="#"
+                  ><p>Gas Valve Malfunction replacement cost(Gas Oven)</p></a
+                >
+                <p>Oven not heating despite active igniter, smell of gas.</p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>150 - 400$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices" id="col-prices">
+              <div class="desk_job-prices">
+                <a href="#"><p>Oven Hinge replacement cost.</p></a>
+                <p>
+                  Door not closing properly, heat escaping during cooking. Hinge
+                  replacement.
+                </p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>100 - 200$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices">
+              <div class="desk_job-prices">
+                <a href="#"><p>Oven Seal replacement cost.</p></a>
+                <p>
+                  Door not closing properly, heat escaping during cooking. Seal
+                  replacemen.
+                </p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>50 - 150$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices" id="col-prices">
+              <div class="desk_job-prices">
+                <a href="#"><p>Control Board Malfunction replacement cost</p></a
+                >
+                <p>
+                  Oven not responding to controls, display errors or oven
+                  turning off unexpectedly.
+                </p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>250- 400$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices">
+              <div class="desk_job-prices">
+                <a href="#"
+                  ><p>Oven Broken Interior Light replacement cost.</p></a
+                >
+                <p>Light not functioning when oven door is opened.</p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>50 - 100$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices" id="col-prices">
+              <div class="desk_job-prices">
+                <a href="#"
+                  ><p>Oven Convection Fan Problems replacement costs.</p></a
+                >
+                <p>
+                  Fan noisy or not turning, uneven cooking in convection mode.
+                </p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>100 - 250$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices">
+              <div class="desk_job-prices">
+                <a href="#"
+                  ><p>Oven Self-Cleaning Latch Problems repair cost.</p></a
+                >
+                <p>
+                  Oven door not locking or unlocking after self-cleaning cycle.
+                </p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>100 - 300$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices" id="col-prices">
+              <div class="desk_job-prices">
+                <a href="#"
+                  ><p>
+                    Oven Baking or Broiler Element Failure (Electric Oven)
+                    repair cost.
+                  </p></a
+                >
+                <p>
+                  No heat from the bottom (baking) or top (broiling) elements.
+                </p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>100 - 200$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices">
+              <div class="desk_job-prices">
+                <a href="#"
+                  ><p>Oven Temperature Sensor Failure repair cost.</p></a
+                >
+                <p>
+                  Inaccurate oven temperature, oven cuts off, or fails to heat
+                  properly.
+                </p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>100 - 200$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices" id="col-prices">
+              <div class="desk_job-prices">
+                <a href="#"><p>Oven Timer or Clock repair cost.</p></a>
+                <p>Timer or clock not advancing or functioning properly.</p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>100 - 300$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices">
+              <div class="desk_job-prices">
+                <a href="#"><p>Oven Ventilation Problems repair cost.</p></a>
+                <p>
+                  Excessive heat around the oven exterior, steam or smoke not
+                  venting properly.
+                </p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>100 - 250$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices" id="col-prices">
+              <div class="desk_job-prices">
+                <a href="#"><p>Oven Wiring Issues repair cost</p></a>
+                <p>
+                  Partial heating, flickering lights, or electrical tripping.
+                </p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>150 - 400$</p>
+              </div>
+            </div>
+
+            <div class="content_job-prices">
+              <div class="desk_job-prices">
+                <a href="#"><p>Oven Rack replacement costs. Per rack.</p></a>
+                <p>Racks bent, corroded, or not sliding smoothly.</p>
+              </div>
+
+              <div class="money_job-prices">
+                <p>85 - 150$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Btn />
+
+        <div class="job-prices" id="parts-cost-anchor">
+          <div class="head_pricing-policy head_pricing-policy_foto">
+            <div class="head_pricing-policy_foto-a">
+              <h2>Our Pricing Policy For The Oven Repair And How We Work</h2>
+              <p>
+                There are four costs to consider when it comes to making your
+                oven work optimally.
+              </p>
+            </div>
+
+            <div class="head_pricing-policy_foto-b">
+              <img
+                width="600px"
+                height="500px"
+                src="/img-price/oven-repair-cost/oven-replacement-parts-cost-4.webp"
+                alt="Oven replacement parts cost"
+              />
+            </div>
+          </div>
+
+          <!-- <div class="head-prices">
+          <h2>Oven Replacement Parts Cost</h2>
+          <p>
+            The cost of replacement parts may vary depending on your model. Here
+            is an approximate range of prices:
+          </p>
+        </div> -->
+
+          <div class="content_job-prices" id="col-prices">
+            <div class="desk_job-prices">
+              <a href="#"><p>Oven Heating Element cost.</p></a>
+              <p>
+                Heating elements can fail due to burnout or physical damage, and
+                they are among the more commonly replaced parts in electric
+                ovens.
+              </p>
+            </div>
+
+            <div class="money_job-prices">
+              <p>20 - 10$</p>
+            </div>
+          </div>
+
+          <div class="content_job-prices">
+            <div class="desk_job-prices">
+              <a href="#"><p>Oven Igniter replacement cost (Gas Oven).</p></a>
+              <p>
+                The igniter is critical for starting the burner in a gas oven.
+                It can weaken over time and require replacement.
+              </p>
+            </div>
+
+            <div class="money_job-prices">
+              <p>30 - 250$</p>
+            </div>
+          </div>
+
+          <div class="content_job-prices" id="col-prices">
+            <div class="desk_job-prices">
+              <a href="#"><p>Oven Control Board cost.</p></a>
+              <p>
+                The control panel governs the oven's heating functions and
+                timers. Malfunctions here can affect many aspects of oven
+                operation.
+              </p>
+            </div>
+
+            <div class="money_job-prices">
+              <p>100 - 400$</p>
+            </div>
+          </div>
+
+          <div class="content_job-prices">
+            <div class="desk_job-prices">
+              <a href="#"><p>Oven Thermostat cost.</p></a>
+              <p>
+                A faulty thermostat that doesn’t accurately detect and control
+                temperature can lead to over or under-cooked food.
+              </p>
+            </div>
+
+            <div class="money_job-prices">
+              <p>50 - 200$</p>
+            </div>
+          </div>
+
+          <div class="content_job-prices" id="col-prices">
+            <div class="desk_job-prices">
+              <a href="#"><p>Oven Temperature Sensor cost.</p></a>
+              <p>
+                Similar to the thermostat, the sensor monitors the oven’s
+                internal temperature, and discrepancies can affect cooking
+                performance.
+              </p>
+            </div>
+
+            <div class="money_job-prices">
+              <p>20 - 150$</p>
+            </div>
+          </div>
+
+          <div class="content_job-prices">
+            <div class="desk_job-prices">
+              <a href="#"><p>Door Gasket.</p></a>
+              <p>
+                The gasket seals the oven door to prevent heat from escaping. A
+                worn gasket can lead to inefficient oven operation and increased
+                energy costs.
+              </p>
+            </div>
+
+            <div class="money_job-prices">
+              <p>10 - 80$</p>
+            </div>
+          </div>
+
+          <div class="content_job-prices" id="col-prices">
+            <div class="desk_job-prices">
+              <a href="#"><p>Oven Gas Safety Valve cost.</p></a>
+              <p>
+                In gas ovens, the safety valve controls the flow of gas to the
+                burner; a failure can prevent the oven from heating.
+              </p>
+            </div>
+
+            <div class="money_job-prices">
+              <p>100 - 300$</p>
+            </div>
+          </div>
+
+          <div class="content_job-prices">
+            <div class="desk_job-prices">
+              <a href="#"><p>Oven Bake or Broil Elements (Gas Oven) cost.</p></a
+              >
+              <p>
+                These elements are used in baking and broiling and can wear out
+                or malfunction, requiring replacement.
+              </p>
+            </div>
+
+            <div class="money_job-prices">
+              <p>25 - 200$</p>
+            </div>
+          </div>
+
+          <div class="content_job-prices" id="col-prices">
+            <div class="desk_job-prices">
+              <a href="#"><p>Oven Fan Motor (Convection Oven) cost.</p></a>
+              <p>
+                The fan motor circulates air in convection ovens. A
+                malfunctioning fan motor can result in uneven cooking.
+              </p>
+            </div>
+
+            <div class="money_job-prices">
+              <p>100 - 250$</p>
+            </div>
+          </div>
+
+          <div class="content_job-prices">
+            <div class="desk_job-prices">
+              <a href="#"><p>Oven Rack cost.</p></a>
+              <p>
+                Racks can become warped or damaged over time and may need
+                replacing for safety and usability.
+              </p>
+            </div>
+
+            <div class="money_job-prices">
+              <p>20 - 100$</p>
+            </div>
+          </div>
+
+          <div class="content_job-prices" id="col-prices">
+            <div class="desk_job-prices">
+              <a href="#"><p>Oven Door Hinge cost.</p></a>
+              <p>
+                Faulty hinges can prevent the oven door from closing properly,
+                affecting the oven’s ability to maintain temperature.
+              </p>
+            </div>
+
+            <div class="money_job-prices">
+              <p>30 - 100$</p>
+            </div>
+          </div>
+
+          <div class="content_job-prices">
+            <div class="desk_job-prices">
+              <a href="#"><p>Oven Light Bulb cost.</p></a>
+              <p>
+                While minor, a non-functioning light bulb needs replacement for
+                visibility and convenience.
+              </p>
+            </div>
+
+            <div class="money_job-prices">
+              <p>4 - 20$</p>
+            </div>
+          </div>
+
+          <div class="pros_job-prices">
+            <p>
+              *Free dust cleaning inside the unit is included in the service.
+            </p>
+            <p>
+              Considering a do-it-yourself appliance repair for simpler tasks
+              can be a cost-effective way to save on labor costs. However, it's
+              important to weigh the pros and cons of repairing with your own
+              hands. While you may only need to pay for replacement parts, a
+              do-it-yourself repair may take longer and may not offer the
+              specialized knowledge and safety assurance that professional
+              Technicians provide.
+            </p>
+          </div>
+        </div>
+        <Btn />
+
+        <div class="maintenance">
+          <div class="head_pricing-policy head_pricing-policy_foto">
+            <div class="head_pricing-policy_foto-b">
+              <img
+                width="600px"
+                height="500px"
+                src="/img-price/oven-repair-cost/ways-to-save-money-on-oven-repair-5.webp"
+                alt="ways to save money on oven repair"
+              />
+            </div>
+
+            <div class="head_pricing-policy_foto-a">
+              <h2>Our Pricing Policy For The Oven Repair And How We Work</h2>
+              <p>
+                There are four costs to consider when it comes to making your
+                oven work optimally.
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="head-maintenance">
+          <h2>Ways to Save Money on Oven Repair</h2>
+        </div> -->
+
+          <div class="description_maintenance">
+            <div class="conclusion-description_maintenance">
+              <div class="head_description_maintenance">
+                <svg
+                  fill="#000000"
+                  width="37px"
+                  height="37px"
+                  viewBox="0 0 1024 1024"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon">
+                  <path
+                    d="M866.9 169.9L527.1 54.1C523 52.7 517.5 52 512 52s-11 .7-15.1 2.1L157.1 169.9c-8.3 2.8-15.1 12.4-15.1 21.2v482.4c0 8.8 5.7 20.4 12.6 25.9L499.3 968c3.5 2.7 8 4.1 12.6 4.1s9.2-1.4 12.6-4.1l344.7-268.6c6.9-5.4 12.6-17 12.6-25.9V191.1c.2-8.8-6.6-18.3-14.9-21.2zM810 654.3L512 886.5 214 654.3V226.7l298-101.6 298 101.6v427.6zm-405.8-201c-3-4.1-7.8-6.6-13-6.6H336c-6.5 0-10.3 7.4-6.5 12.7l126.4 174a16.1 16.1 0 0 0 26 0l212.6-292.7c3.8-5.3 0-12.7-6.5-12.7h-55.2c-5.1 0-10 2.5-13 6.6L468.9 542.4l-64.7-89.1z"
+                  ></path>
+                </svg>
+                <p><b>Find a company that provides a warranty</b></p>
+              </div>
+              <p>
+                - At the Same Day Appliance Repair, we provide up to three
+                months of warranty.
+              </p>
+            </div>
+
+            <div class="conclusion-description_maintenance">
+              <div class="head_description_maintenance">
+                <svg
+                  fill="#000000"
+                  height="35px"
+                  width="35px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 296.999 296.999"
+                  xml:space="preserve">
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          d="M169.197,43.09H18.808c-7.176,0-13.014,5.838-13.014,13.014v227.444c0,7.176,5.838,13.014,13.014,13.014h150.389
+				c7.176,0,13.014-5.838,13.014-13.014V56.105C182.211,48.928,176.373,43.09,169.197,43.09z M151.794,274.258H36.21
+				c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+				S156.273,274.258,151.794,274.258z M151.794,235.73H36.21c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584
+				c4.479,0,8.111,3.632,8.111,8.111C159.905,232.098,156.273,235.73,151.794,235.73z M151.794,197.202H36.21
+				c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+				S156.273,197.202,151.794,197.202z M151.794,158.674H36.21c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584
+				c4.479,0,8.111,3.632,8.111,8.111S156.273,158.674,151.794,158.674z M151.794,120.146H36.21c-4.479,0-8.111-3.632-8.111-8.111
+				s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111S156.273,120.146,151.794,120.146z M151.794,81.618H36.21
+				c-4.479,0-8.111-3.632-8.111-8.111c0-4.479,3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+				C159.905,77.986,156.273,81.618,151.794,81.618z"
+                        ></path>
+                        <path
+                          d="M213.642,0H57.336c-7.177,0-13.014,5.838-13.014,13.014v13.854h124.875c16.121,0,29.237,13.115,29.237,29.237v201.931
+				h15.208c7.176,0,13.014-5.838,13.014-13.014V13.014C226.656,5.838,220.818,0,213.642,0z"
+                        ></path>
+                        <path
+                          d="M291.205,23.324C291.204,10.464,281.88,0,270.42,0c-11.461,0-20.785,10.464-20.785,23.324v13.584h41.57V23.324z"
+                        ></path>
+                        <path
+                          d="M249.635,53.13v214.537h0c0,1.2,0.342,2.373,0.983,3.371l14.921,23.249c1.087,1.694,2.919,2.712,4.881,2.712
+				c1.961,0,3.794-1.018,4.881-2.712l14.921-23.249c0.641-0.998,0.983-2.171,0.983-3.371V53.13H249.635z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <p><b>Timely maintenance</b></p>
+              </div>
+
+              <p>
+                - Timely maintenance can save you from spending money on
+                unnecessary oven repairs. It increases the longevity of your
+                oven. We charge a flat fee of $80 for the oven maintenance
+                service.
+              </p>
+              <p>
+                - Oven maintenance includes visual inspection, professional
+                cleaning of the interior, vent, fan, and burner/heating element,
+                checking and testing of controls and functions, component check,
+                calibrating the oven if necessary, seal and gasket check, and
+                overall safety assessment. Timely maintenance helps to increase
+                the oven's longevity and prevents potential damage
+              </p>
+            </div>
+          </div>
+
+          <Btn />
+
+          <div class="faq-full" id="faqs-anchor">
+            <h2>FAQs</h2>
+
+            <div class="FAQ">
+              <div class="fa">
+                <h3>What are the common signs that my oven needs repairs?</h3>
+              </div>
+
+              <div class="fa_plus">︾</div>
+
+              <div class="fa_minus">︽</div>
+            </div>
+
+            <div class="questions">
+              <p>Common signs that your oven may need repairs include:</p>
+              <p><b>Uneven Heating</b></p>
+              <p>
+                If your oven consistently cooks food unevenly, leaving some
+                parts undercooked while others are overcooked, it could indicate
+                a problem with the heating elements or temperature regulation.
+              </p>
+
+              <p><b>Inaccurate Temperature</b></p>
+              <p>
+                If the oven temperature doesn't match the set temperature or
+                fluctuates during cooking, it could suggest issues with the
+                thermostat or temperature sensor.
+              </p>
+
+              <p><b>Failure to Heat</b></p>
+              <p>
+                If the oven fails to heat up at all, it may indicate a
+                malfunctioning heating element, gas oven igniter, or other
+                electrical components.
+              </p>
+
+              <p><b>Strange Smells</b></p>
+              <p>
+                Unusual odors emanating from the oven during cooking, such as a
+                gas smell in gas ovens, could signify a problem with the
+                igniter, gas valve, or other components. A burning smell could
+                indicate electrical problems, overheating components, or even
+                burning food trapped within the oven cavity.
+              </p>
+
+              <p><b>Unusual Noises</b></p>
+              <p>
+                Excessive noise, such as grinding, buzzing, or rattling, could
+                indicate issues with the fan motor, bearings, or other
+                mechanical components.
+              </p>
+
+              <p><b>Faulty Door Sealing</b></p>
+              <p>
+                If heat escapes from around the oven door, it may suggest a
+                worn-out door gasket, compromising energy efficiency and cooking
+                performance.
+              </p>
+
+              <p><b>Error Messages or Display Issues</b></p>
+              <p>
+                If the oven's control panel displays error messages, doesn't
+                respond to controls, or exhibits erratic behavior, it could
+                indicate a problem with the oven control board or wiring.
+              </p>
+
+              <p><b>Visible Damage</b></p>
+              <p>
+                Any visible damage to components like heating elements,
+                igniters, or wiring should prompt further inspection and
+                possible repair.
+              </p>
+              <p>
+                If you notice any of these signs, it's best to contact a
+                qualified appliance repair technician to diagnose the problem
+                and recommend a course of action. It's important to remember
+                that DIY oven repair might be dangerous and should only be
+                performed by a professional.
+              </p>
+            </div>
+
+            <div class="FAQ">
+              <div class="fa">
+                <h3>What Oven Brands Do We Repair?</h3>
+              </div>
+
+              <div class="fa_plus">︾</div>
+
+              <div class="fa_minus">︽</div>
+            </div>
+
+            <div class="questions">
+              <p>We work with all major brands such as.</p>
+              <p>
+                KitchenAid, Whirlpool, Frigidaire, LG, Samsung, GE, Maytag,
+                Bosch, Electrolux, Jenn-Air, Amana, Dacor, Wolf, Thermador,
+                Viking.
+              </p>
+            </div>
+
+            <div class="FAQ">
+              <div class="fa">
+                <h3>What Are Factors That Determine Oven Repair Costs?</h3>
+              </div>
+
+              <div class="fa_plus">︾</div>
+
+              <div class="fa_minus">︽</div>
+            </div>
+
+            <div class="questions">
+              <p><b>Type of oven</b></p>
+              <p>
+                The oven repair cost can vary significantly depending on whether
+                the oven is electric, gas, or a specialty oven types like a
+                pizza or steam oven. Electric ovens tend to need less expensive
+                repairs than gas ovens.
+              </p>
+
+              <p><b>Extent of Damage</b></p>
+              <p>
+                The severity of the damage or malfunction affects the complexity
+                of the repair and, consequently, the appliance repair cost.
+              </p>
+
+              <p><b>Parts Replacement</b></p>
+              <p>
+                The cost of a replacement part varies depending on the brand,
+                model, and availability of components needed for certain
+                repairs.
+              </p>
+
+              <p><b>Age of the oven</b></p>
+              <p>
+                Older ovens over 10 years old may need costly repairs, as
+                replacement parts can be harder to find. In some cases, it may
+                be more cost-effective to replace an older oven rather than
+                repair it.
+              </p>
+
+              <p><b>Brand and Model</b></p>
+              <p>
+                Different oven brands and models have varying complexities in
+                their designs and components, influencing an average appliance
+                repair cost.
+              </p>
+
+              <p><b>Warranty Coverage</b></p>
+              <p>
+                If the oven is still under warranty, some or all of the
+                appliance repair costs may be covered, reducing the
+                out-of-pocket expenses for the owner.
+              </p>
+              <p>
+                For minor repairs like replacing a light bulb or a knob, DIY
+                appliance repair might be feasible. However, for anything more
+                complex, it's safer and often more cost-effective to call a
+                professional to avoid causing further damage.
+              </p>
+            </div>
+
+            <div class="FAQ">
+              <div class="fa">
+                <h3>What is the average life expectancy of an Oven?</h3>
+              </div>
+
+              <div class="fa_plus">︾</div>
+
+              <div class="fa_minus">︽</div>
+            </div>
+
+            <div class="questions">
+              <p><b>The average life expectancy of an oven is:</b></p>
+              <p>- Gas ovens can last an average of 15 years.</p>
+              <p>
+                - Electric ovens have a slightly shorter lifespan of around 13
+                years on average.
+              </p>
+              <p>
+                - Built-in ovens, which require more construction and
+                installation, typically last around the same 13-15 years as
+                standalone ovens.
+              </p>
+              <p>
+                - The quality and brand of the oven can also affect its
+                lifespan, with higher-quality ovens from reputable brands
+                generally lasting longer than cheaper models.
+              </p>
+
+              <p>
+                <b
+                  >To help extend the life of an oven, the key recommendations
+                  are:</b
+                >
+              </p>
+              <p>
+                - Regularly clean the oven interior, exterior, and door gaskets.
+              </p>
+              <p>
+                - Avoid relying too heavily on the self-cleaning cycle, as the
+                high temperatures can wear down the oven over time.
+              </p>
+              <p>
+                - Have the oven professionally inspected and maintained
+                annually.
+              </p>
+              <p>
+                - Address any issues or malfunctions promptly rather than using
+                a problematic oven.
+              </p>
+              <br />
+              <p>
+                Following these maintenance tips, most ovens can reach their
+                full 13-15-year lifespan, or even longer in the case of
+                high-quality gas models.
+              </p>
+            </div>
+
+            <div class="FAQ">
+              <div class="fa">
+                <h3>What is The Cost to Repair vs. Replacing an Oven?</h3>
+              </div>
+
+              <div class="fa_plus">︾</div>
+
+              <div class="fa_minus">︽</div>
+            </div>
+
+            <div class="questions">
+              <p>
+                The decision if the oven is worth fixing or should be replaced
+                depends on several factors, including:
+              </p>
+
+              <p>
+                <b>Extent of Damage:</b>If the oven has minor issues that are
+                relatively inexpensive to repair and the appliance is otherwise
+                in good condition, repairing might be more cost-effective.
+              </p>
+
+              <p>
+                <b>Age of the Oven:</b>Older ovens nearing the end of their
+                expected lifespan may require frequent repairs, making
+                replacement a more practical long-term solution.
+              </p>
+
+              <p>
+                <b>Cost to repair:</b>Compare the cost of repairing the oven
+                with the average costs of purchasing a new one. If the repair
+                costs are significantly high and approaching the price of a new
+                oven, replacement may be a better option.
+              </p>
+
+              <p>
+                <b>Energy Efficiency:</b>Newer ovens often come with
+                energy-efficient features that can lead to cost savings on
+                energy bills over time. Consider the potential long-term savings
+                when deciding between repair and replacement.
+              </p>
+
+              <p>
+                <b>Warranty Coverage:</b>If the oven is still under warranty,
+                repairing it may be the preferred choice to avoid voiding the
+                warranty. However, if the warranty has expired, replacement
+                becomes a more viable option.
+              </p>
+
+              <p>
+                <b>Desired Features:</b>If you've been considering upgrading to
+                a newer model with advanced features or improved functionality,
+                replacing the oven may be a better investment in the long run.
+              </p>
+
+              <p>
+                Ultimately, it's essential to weigh these factors carefully and
+                consider your budget, needs, and long-term plans before deciding
+                whether to repair or replace your oven. Consulting with a
+                professional appliance technician can also provide valuable
+                insights to help you make an informed decision.
+              </p>
+            </div>
+
+            <div class="FAQ">
+              <div class="fa">
+                <h3>What Brands of Ovens are Most Reliable?</h3>
+              </div>
+
+              <div class="fa_plus">︾</div>
+
+              <div class="fa_minus">︽</div>
+            </div>
+
+            <div class="questions">
+              <p>
+                The most reliable oven brands are Bosch, KitchenAid, Woolf,
+                Viking, and GE. These brands are known for their high-quality
+                materials, advanced features, and dependability.
+              </p>
+              <p>
+                Consumer Reports survey data also indicates that Amana, LG,
+                Maytag, and Whirlpool are among the most reliable electric wall
+                oven brands. The survey found that these brands are less likely
+                to develop problems or break down within the first 5 years of
+                ownership.
+              </p>
+              <p>
+                Gaggenau and Miele also have long-established reputations for
+                excellent oven reliability.
+              </p>
+            </div>
+
+            <div class="FAQ">
+              <div class="fa">
+                <h3>How do I know when my oven needs to be replaced?</h3>
+              </div>
+
+              <div class="fa_plus">︾</div>
+
+              <div class="fa_minus">︽</div>
+            </div>
+
+            <div class="questions">
+              <p>
+                Several factors influence the cost-effectiveness of each option
+                when deciding whether to repair or replace an oven.
+              </p>
+              <p>
+                <b>Repair Cost:</b>Consider the total oven repair costs,
+                including replacement parts and labor. If the repair costs are
+                substantial and approaching or exceeding the price of a new
+                oven, replacement might be more financially sensible in the long
+                run.
+              </p>
+
+              <p>
+                <b>Extent of Damage:</b>Evaluate the nature and severity of the
+                oven's issues. Minor repairs, such as replacing a heating
+                element or thermostat, may be relatively inexpensive and
+                worthwhile if they restore the oven's functionality. However, if
+                the damage is extensive or affects critical components like the
+                control board or gas safety valve, appliance repair costs can
+                escalate quickly.
+              </p>
+
+              <p>
+                <b>Age and Condition:</b>Assess the age and overall condition of
+                the oven. While older ovens can often be repaired, they may be
+                more prone to developing additional problems in the future. If
+                your oven is nearing the end of its expected lifespan or has
+                required frequent repairs in the past, investing in a new
+                appliance may be a more reliable solution.
+              </p>
+
+              <p>
+                <b>Energy Efficiency:</b>Newer ovens are typically more
+                energy-efficient than older models, offering potential long-term
+                savings on utility bills. If your current oven is outdated and
+                consumes more energy than modern equivalents, upgrading to a
+                newer, more efficient model could be economically advantageous
+                despite the initial higher cost.
+              </p>
+
+              <p>
+                <b>Desired Features:</b>Consider whether your existing oven
+                meets your cooking needs and preferences. If you desire
+                additional features, improved performance, or enhanced
+                convenience that your current oven lacks, investing in a new
+                appliance may provide greater satisfaction and utility in the
+                kitchen.
+              </p>
+
+              <p>
+                <b>Warranty and Reliability:</b>New ovens often come with
+                manufacturer warranties, protecting against defects and
+                unexpected repairs. Additionally, newer models may offer
+                improved reliability and durability compared to older
+                appliances, reducing the likelihood of future repair expenses.
+              </p>
+
+              <p>
+                Ultimately, the decision to repair or replace your oven depends
+                on these factors and your individual circumstances and
+                preferences. Consulting with a qualified appliance technician
+                can help you assess your options and make an informed choice
+                that best suits your needs and budget.
+              </p>
+            </div>
+
+            <div class="FAQ">
+              <div class="fa">
+                <h3>Is it worth repairing an oven that's 10 years old?</h3>
+              </div>
+
+              <div class="fa_plus">︾</div>
+
+              <div class="fa_minus">︽</div>
+            </div>
+
+            <div class="questions">
+              <p>
+                Deciding whether it's worth repairing a 10-year-old oven depends
+                on several factors:
+              </p>
+
+              <p>
+                <b>Extent of Damage:</b>Assess the nature and extent of the
+                oven's problem. If a minor repair is necessary and to restore
+                the oven's functionality for a significant period, it might be
+                worthwhile.
+              </p>
+
+              <p>
+                <b>Repair Cost:</b>Compare the cost of repairing the oven to the
+                expense of purchasing a new one. If the repair prices are
+                relatively low compared to the price of a new oven, repairing
+                may be a cost-effective option.
+              </p>
+
+              <p>
+                <b>Oven Condition:</b>Consider the overall condition of the
+                oven. If it has been well-maintained, shows minimal wear and
+                tear, and has performed reliably over the years, investing in
+                repairs to extend its lifespan could be justified.
+              </p>
+
+              <p>
+                <b>Frequency of Repairs:</b>If the oven has required frequent
+                repairs in the past or if multiple components are failing
+                simultaneously, it may indicate that the appliance is reaching
+                the end of its serviceable life. In such cases, investing in a
+                new oven might be more prudent than continuing to repair an
+                aging appliance.
+              </p>
+
+              <p>
+                <b>Energy Efficiency:</b>Newer ovens are often more
+                energy-efficient than older models, which can lead to long-term
+                cost savings on energy bills. If your current oven is
+                energy-inefficient, replacing it with a newer, more efficient
+                model may be a wiser investment in the long run.
+              </p>
+
+              <p>
+                <b>Desired Features:</b>Consider whether your current oven meets
+                your cooking needs and preferences. If you desire modern
+                features, improved performance, or enhanced convenience that
+                your existing oven lacks, upgrading to a new model may offer
+                greater satisfaction and utility.
+              </p>
+              <p>
+                Ultimately, deciding to repair or replace a 10-year-old oven
+                depends on your circumstances, budget, and priorities.
+                Consulting with a qualified appliance technician can provide
+                valuable insights and guidance to help you make an informed
+                choice.
+              </p>
+            </div>
+
+            <div class="FAQ">
+              <div class="fa">
+                <h3>Why does my stove work but not my oven?</h3>
+              </div>
+
+              <div class="fa_plus">︾</div>
+
+              <div class="fa_minus">︽</div>
+            </div>
+
+            <div class="questions">
+              <p>
+                When your stove works but the oven breaks, there could be
+                several reasons behind this issue:
+              </p>
+              <p>
+                <b> Gas Supply Issue:</b> If you have a gas oven, but the stove (which
+                typically operates on gas) works fine while the oven does not, there
+                might be an issue with the gas supply specifically to the oven. This
+                could be due to a malfunctioning gas valve or a blockage in the oven's
+                supply line.
+              </p>
+
+              <p>
+                <b>Igniter Problems:</b>Gas ovens use an igniter to ignite the
+                gas and create the flame necessary for heating. If the oven
+                igniter is faulty or not working correctly, it can prevent the
+                oven from heating up while allowing the stove burners to
+                function normally.
+              </p>
+
+              <p>
+                <b>Thermostat Malfunction:</b>The oven thermostat regulates the
+                temperature by controlling the flow of gas or electricity to the
+                heating elements. If the thermostat is defective or out of
+                calibration, it may not signal the oven to heat up properly even
+                though the stove burners work fine.
+              </p>
+
+              <p>
+                <b>Faulty Heating Element:</b>Electric ovens rely on these to
+                generate heat. If one or more of these elements is faulty or
+                burned out, it can prevent the oven from heating while the stove
+                continues to operate normally.
+              </p>
+
+              <p>
+                <b>Control Panel Malfunctions:</b>The control board serves as
+                the "brain" of the oven, governing its various functions and
+                settings. If the control board is malfunctioning or has failed,
+                it may not send the necessary signals to the oven components to
+                initiate the heating process.
+              </p>
+
+              <p>
+                <b>Wiring Problems:</b>An electric oven requires proper wiring
+                to supply power to the heating elements and other components. If
+                there are issues with the wiring, such as loose connections or
+                damaged wires, it can disrupt the flow of electricity to the
+                oven while allowing the stove to function.
+              </p>
+
+              <p>
+                <b>Internal Component Failures:</b>Various components within the
+                oven, such as relays, switches, or sensors, can fail over time
+                due to wear and tear or other factors. If any of these
+                components fail, the oven may not heat correctly while the stove
+                remains operational.
+              </p>
+              <p>
+                While some oven and stove repairs may seem straightforward, it's
+                essential to recognize that attempting DIY repairs can pose
+                risks, especially if you're not familiar with appliance
+                maintenance or lack the necessary skills and tools.
+                Additionally, the cost to repair any mistakes made during the
+                DIY process can outweigh the savings.
+              </p>
+              <p>
+                To determine the exact cause of the issue, it's recommended to
+                have a qualified appliance technician inspect and diagnose your
+                oven. They can identify the underlying problem and recommend the
+                appropriate oven repair to restore its functionality.
+              </p>
+            </div>
+
+            <div class="FAQ">
+              <div class="fa">
+                <h3>
+                  What common issues might I encounter with my oven that would
+                  require repairs, and how do these compare to issues found in
+                  other household appliances like washing machines or garbage
+                  disposals?
+                </h3>
+              </div>
+
+              <div class="fa_plus">︾</div>
+
+              <div class="fa_minus">︽</div>
+            </div>
+
+            <div class="questions">
+              <p>
+                Ovens, like most appliances, can experience a range of issues
+                that require professional attention. Common oven repair issues
+                include a faulty oven sensor, malfunctioning pilot light, broken
+                latch, and might need replacing burner coils. These problems can
+                affect the oven's ability to heat accurately, potentially
+                leading to undercooked food which could cause food poisoning. In
+                comparison, most garbage disposal repairs involve clearing jams
+                or replacing the motor. However, garbage disposal repairs cost
+                is generally lower than complex oven repairs such as replacing
+                the tempered glass or oven sensor. Similarly, washing machines
+                might need attention for gas leaks or issues with dryer repair,
+                particularly in gas appliances. At Same Day Appliance Repair we
+                offer comprehensive solutions for these problems, ensuring that
+                whether it's stove repair or dryer repair, the job is handled
+                efficiently.
+              </p>
+            </div>
+
+            <div class="FAQ">
+              <div class="fa">
+                <h3>
+                  If I'm considering replacing my old oven, what should I look
+                  for in a new model, and how can I ensure the installation is
+                  handled correctly?
+                </h3>
+              </div>
+
+              <div class="fa_plus">︾</div>
+
+              <div class="fa_minus">︽</div>
+            </div>
+
+            <div class="questions">
+              <p>
+                When considering a replacement oven, it's important to look for
+                models that suit your cooking needs and kitchen layout. Modern
+                ovens come with various features like convection cooking,
+                self-cleaning mechanisms, and more efficient burner coils. If
+                your current oven ranges from gas to electric, ensure that the
+                new model is compatible with your home’s energy setup.
+                Additionally, look for ovens with tempered glass for durability
+                and better heat retention. Installation of a replacement oven
+                should be handled by professionals, especially for gas
+                appliances to prevent gas leaks and ensure safety. We offer
+                same-day appliance repair and installation, ensuring that your
+                new oven is up and running without delay. Our technicians are
+                experienced with every job site, from simple repairs to complex
+                appliance replacements.
+              </p>
+            </div>
+
+            <div class="FAQ_bottom"></div>
+          </div>
+        </div>
+
+        <Cta />
+      </div>
+    </main>
+  </Container>
+</Layout>
