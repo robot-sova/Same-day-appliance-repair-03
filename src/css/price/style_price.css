@@ -546,6 +546,13 @@ main {
   transition: 0.3s;
 }
 
+.conclusion-description_maintenance p {
+  margin-left: 33px;
+}
+
+.head_description_maintenance p {
+  margin: 0;
+}
 
 /* water-heater-repair-cost */
 
@@ -596,6 +603,7 @@ main {
   .head_pricing-policy_foto-a {
     max-width: 100%;
     grid-row: 1/2;
+    margin: 20px 3% 0px 3%;
   }
 
   .head_pricing-policy_foto-a h2 {
