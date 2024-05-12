@@ -25,8 +25,9 @@ h2 {
   margin: 6% 0% 3% 0%;
   text-decoration-line: underline;
   text-decoration-color: #75baf587;
-  text-decoration-thickness: 5px;
+  text-decoration-thickness: 4px;
   font-size: clamp(24px, 5vw, 28px) !important;
+  text-shadow: 1px 1px 1.3px #75baf5;
 }
 
 
@@ -178,6 +179,7 @@ main {
   font-weight: 700;
   font-size: clamp(18px, 4vw, 20px) !important;
   margin-top: 0;
+  text-shadow: 0.5px 0.5px 0.8px #75baf5;
 }
 
 .desc_pricing-policy {
@@ -214,6 +216,7 @@ main {
 
   border: solid 2px #ff2a2a;
   background-color: #dae1e852;
+  /* background: radial-gradient(circle at 48.92% 195.94%, #f7f7f7 0, #e1dfdf82 30%, #b5b4b46b 100%); */
 }
 
 .pros_pricing-policy p {
@@ -553,27 +556,46 @@ main {
 
 /* oven-repair-cost */
 
-#head_pricing-policy_foto {
+.head_pricing-policy_foto {
   display: flex;
   justify-content: center;
 }
 
 .head_pricing-policy_foto-a,
 .head_pricing-policy_foto-b {
-  margin: 1% 3% 20px 3%;
+  margin: 30px 3% 30px 3%;
   align-self: center;
   justify-self: center;
   display: grid;
 }
 
+.head_pricing-policy_foto-a {
+  max-width: 35%;
+}
 
 .head_pricing-policy_foto-a h2 {
   margin-bottom: 5% !important;
 }
 
+@media (max-width:1024px) {
+  .head_pricing-policy_foto-a {
+    max-width: 50%;
+  }
+}
+
 @media (max-width:768px) {
-  #head_pricing-policy_foto {
+  .head_pricing-policy_foto {
     display: grid;
+  }
+
+  .head_pricing-policy_foto-a,
+  .head_pricing-policy_foto-b {
+    margin: 20px 3% 20px 3%;
+  }
+
+  .head_pricing-policy_foto-a {
+    max-width: 100%;
+    grid-row: 1/2;
   }
 
   .head_pricing-policy_foto-a h2 {
