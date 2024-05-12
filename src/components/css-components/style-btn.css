@@ -25,17 +25,17 @@
 .button-top-global {
   display: inline-block;
   width: 50px;
-margin: 0 10px 0 0;
-background-color: #0f77cc;
-border-radius: 7px;
-box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  margin: 0 10px 0 0;
+  background-color: #0f77cc;
+  border-radius: 7px;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 }
 
-.button-top-global:hover{
+.button-top-global:hover {
   margin: 0 10px 0 0;
   background-color: #000000;
-  }
-  
+}
+
 .button-top-global a {
   display: grid;
   color: #fff;
@@ -43,7 +43,7 @@ box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%),
 }
 
 .button-top-global svg {
-  margin: -1px  3px 0px 3px;
+  margin: -1px 3px 0px 3px;
 }
 
 .button-top-global p {
@@ -117,7 +117,7 @@ box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%),
   /* display: inline-block; */
   display: grid;
   width: 180px;
-  background-color: #0f77cc ;
+  background-color: #0f77cc;
   box-shadow: inset 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
   border-radius: 7px;
   align-self: center;
@@ -149,25 +149,6 @@ box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%),
 
   .button-call-global {
     margin-top: 10px;
-}
+  }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
