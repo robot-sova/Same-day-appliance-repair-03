@@ -1,5 +1,5 @@
 :root{
-  --table-color: rgb(231, 231, 231);
+  --table-color:rgb(231 231 231);
 }
 
 *,
@@ -27,11 +27,11 @@ img {
 h2 {
   text-align: center;
   margin: 6% 0% 3% 0%;
-  text-decoration-line: underline;
-  text-decoration-color: #75baf587;
-  text-decoration-thickness: 4px;
+  /* text-decoration-line: underline; */
+  /* text-decoration-color: #abb1b687; */
+  /* text-decoration-thickness: 4px; */
   font-size: clamp(24px, 5vw, 28px) !important;
-  text-shadow: 1px 1px 1.3px #75baf5;
+  text-shadow: 1px 1px 1.3px #8f9499;
 }
 
 
@@ -89,7 +89,7 @@ h2 {
 }
 
 .col-two b {
-  text-shadow: 0.5px 0.5px 0.8px #75baf587;
+  text-shadow: 0.5px 0.5px 0.8px #8f9499;
 }
 
 
@@ -183,7 +183,7 @@ main {
   font-weight: 700;
   font-size: clamp(18px, 4vw, 20px) !important;
   margin-top: 0;
-  text-shadow: 0.5px 0.5px 0.8px #75baf5;
+  text-shadow: 0.5px 0.5px 0.8px #8f9499;
 }
 
 .desc_pricing-policy {
