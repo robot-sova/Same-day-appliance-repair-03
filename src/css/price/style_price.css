@@ -1,3 +1,7 @@
+:root{
+  --table-color: rgb(231, 231, 231);
+}
+
 *,
 *:before,
 *:after {
@@ -378,7 +382,8 @@ main {
 }
 
 #col-prices {
-  background-color: #64b7ff61;
+  /* background-color: #64b7ff61; */
+background-color: var(--table-color);
 }
 
 .content_job-prices p {
