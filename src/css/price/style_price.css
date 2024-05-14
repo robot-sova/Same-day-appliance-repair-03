@@ -1,6 +1,6 @@
 :root{
   --table-color:rgb(231 231 231 / 58%);
-  --text-shadown-p-b-h3: 0.5px 0.5px 0.8px #8f9499;
+  --text-shadown-b-h3: 0.5px 0.5px 0.8px #8f9499;
 }
 
 *,
@@ -93,7 +93,7 @@ h2 {
 }
 
 .col-two b {
-  text-shadow: var(--text-shadown-p-b-h3);
+  text-shadow: var(--text-shadown-b-h3);
 }
 
 
@@ -187,7 +187,7 @@ main {
   font-weight: 700;
   font-size: clamp(18px, 4vw, 20px) !important;
   margin-top: 0;
-  text-shadow: var(--text-shadown-p-b-h3);
+  text-shadow: var(--text-shadown-b-h3);
 }
 
 .desc_pricing-policy {
@@ -287,7 +287,7 @@ main {
   margin: 0;
   font-weight: 600;
   font-size: clamp(22px, 5vw, 24px) !important;
-  text-shadow: var(--text-shadown-p-b-h3);
+  text-shadow: var(--text-shadown-b-h3);
 }
 
 .fa_plus {
@@ -539,7 +539,7 @@ background-color: rgb(231 231 231 / 58%);
 
 .head_description_maintenance p {
   align-self: center;
-  text-shadow: var(--text-shadown-p-b-h3);
+  text-shadow: var(--text-shadown-b-h3);
 }
 
 .conclusion-description_maintenance {
