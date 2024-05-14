@@ -1,5 +1,5 @@
 :root{
-  --table-color:rgb(231 231 231);
+  --table-color:rgb(231 231 231 / 58%);
 }
 
 *,
@@ -13,6 +13,9 @@
   box-sizing: border-box;
 }
 
+/* *{
+  outline: 1px solid red !important;
+} */
 
 html {
   overflow-y: scroll;
@@ -52,7 +55,7 @@ h2 {
   -webkit-text-fill-color: transparent;
   animation: textclip 4s linear infinite;
   display: inline-block;
-  font-size: clamp(40px, 8vw, 60px);
+  font-size: clamp(35px, 8vw, 60px);
   line-height: clamp(56px, 8vh, 60px);
   font-weight: 900;
 }
@@ -408,7 +411,7 @@ background-color: var(--table-color);
 .money_job-prices {
   text-align: center;
   align-self: center;
-  min-width: 130px;
+  min-width: 137px;
 }
 
 .money_job-prices p {
@@ -736,7 +739,7 @@ background-color: var(--table-color);
   }
 
   .content_job-prices {
-    padding: 3% 2%;
+    padding: 3% 0%;
   }
 
   .head-prices p {
