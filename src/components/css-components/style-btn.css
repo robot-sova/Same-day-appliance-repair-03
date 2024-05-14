@@ -11,7 +11,7 @@
 
 
 .full-button-global {
-  max-width: 360px;
+  max-width: 400px;
   display: flex;
   margin: 15px 0px;
 }
@@ -25,16 +25,16 @@
 .button-top-global {
   display: inline-block;
   width: 50px;
+  height: 53px;
   margin: 0 10px 0 0;
   background-color: #090909;
   border-radius: 7px;
   box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 }
 
-.button-top-global:hover {
-  margin: 0 10px 0 0;
-  background-color: #000000;
-}
+/* .button-top-global:hover {
+  background-color: #ca0913;
+} */
 
 .button-top-global a {
   display: grid;
@@ -65,16 +65,17 @@
   display: inline-block;
   align-self: center;
   margin: 0 10px 0 0;
-  width: 150px;
+  max-width: 145px;
+  height: 53px;
 }
 
 .button-book-global button {
-  font-weight: 600;
-  height: 53px;
+  font-weight: 700 !important;
+  height: 100%;
   line-height: 1.14;
-  padding: 12px 24px;
+  padding: 7px 24px;
   box-shadow: none;
-  border-radius: 100px;
+  border-radius: 7px;
   color: #fff;
   background-color: #ca0913;
   text-transform: uppercase;
@@ -92,11 +93,11 @@
   -webkit-tap-highlight-color: transparent;
   text-indent: 0px;
   text-shadow: none;
-  font-weight: normal;
   align-items: center;
   overflow: auto;
-  max-width: 140px;
+  max-width: 145px;
   justify-self: center;
+  white-space: nowrap;
   box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 }
 
@@ -110,20 +111,27 @@
 .button-call-global {
   /* display: inline-block; */
   display: grid;
-  width: 180px;
+  max-width: 180px;
+  height: 53px;
   background-color: #ca0913;
   box-shadow: inset 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
   border-radius: 7px;
   align-self: center;
-  font-weight:;
+  justify-self: center;
 }
 
 .button-call-global a {
-  padding: 10px 8px;
-  width: 180px !important;
+  padding: 13px 24px;
+  width: auto;
+  height: auto;
+  display: grid;
   align-self: center;
+  justify-self: center;
   color: #fff;
   margin: 0 !important;
+  font-weight: 700;
+  transform: scale(1, 1.1);
+  white-space: nowrap;
 }
 
 .button-call-global:hover {
@@ -137,13 +145,52 @@
 
 
 
-@media (max-width:390px) {
-  .full-button-global {
+@media (max-width:768px) {
+
+  .button-top-global {
+    margin: 0 8px 0 0;
+  }
+
+  .button-book-global {
+    margin: 0 8px 0 0;
+  }
+
+
+  .button-book-global button {
+    padding: 7px 8px;
+    font-size: 14px;
+  }
+
+  .button-call-global a {
+    padding: 14px 6px;
+    font-size: 15px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .full-button-global {
     display: inline-block;
   }
 
   .button-call-global {
     margin-top: 10px;
-  }
+  } */
 
 }
