@@ -1,5 +1,6 @@
 :root{
   --table-color:rgb(231 231 231 / 58%);
+  --text-shadown-p-b-h3: 0.5px 0.5px 0.8px #8f9499;
 }
 
 *,
@@ -92,7 +93,7 @@ h2 {
 }
 
 .col-two b {
-  text-shadow: 0.5px 0.5px 0.8px #8f9499;
+  text-shadow: var(--text-shadown-p-b-h3);
 }
 
 
@@ -186,7 +187,7 @@ main {
   font-weight: 700;
   font-size: clamp(18px, 4vw, 20px) !important;
   margin-top: 0;
-  text-shadow: 0.5px 0.5px 0.8px #8f9499;
+  text-shadow: var(--text-shadown-p-b-h3);
 }
 
 .desc_pricing-policy {
@@ -218,12 +219,9 @@ main {
 .pros_pricing-policy {
   width: 80%;
   margin: 0 auto;
-  /* border: solid 3px #ff2a2a52; */
   border-radius: 5px;
-
   border: solid 2px #ff2a2a;
-  background-color: #dae1e852;
-  /* background: radial-gradient(circle at 48.92% 195.94%, #f7f7f7 0, #e1dfdf82 30%, #b5b4b46b 100%); */
+  background-color: rgb(231 231 231 / 58%);
 }
 
 .pros_pricing-policy p {
@@ -289,6 +287,7 @@ main {
   margin: 0;
   font-weight: 600;
   font-size: clamp(22px, 5vw, 24px) !important;
+  text-shadow: var(--text-shadown-p-b-h3);
 }
 
 .fa_plus {
@@ -438,11 +437,9 @@ background-color: var(--table-color);
   width: 80%;
   margin: 0 auto;
   margin-top: 3%;
-  /* border: solid 3px #ff2a2a52; */
   border-radius: 5px;
-
   border: solid 2px #ff2a2a;
-  background-color: #dae1e852;
+background-color: rgb(231 231 231 / 58%);
 }
 
 .pros_job-prices p {
@@ -542,7 +539,7 @@ background-color: var(--table-color);
 
 .head_description_maintenance p {
   align-self: center;
-  text-shadow: 0.5px 0.5px 0.8px #75baf587;
+  text-shadow: var(--text-shadown-p-b-h3);
 }
 
 .conclusion-description_maintenance {
