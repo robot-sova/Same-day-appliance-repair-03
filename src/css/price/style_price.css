@@ -206,13 +206,13 @@ main {
 }
 
 .con-inside_pricing-policy:hover #cost-svg {
-  fill: rgb(31 120 243);
-  stroke: rgb(31 120 243);
+  fill:#ca0913;
+  stroke: #ca0913;
   transition: 0.3s;
 }
 
 .con-inside_pricing-policy:hover svg {
-  fill: rgb(31 120 243);
+  fill: #ca0913;
   transition: 0.3s;
 }
 
@@ -268,7 +268,7 @@ main {
 }
 
 .FAQ:hover .fa h3 {
-  color: #2c7bc0;
+  color: #ca0913;
   /* text-shadow: 0.1px 0.1px 0.1px #000; */
   transition: all 0.25s linear;
 }
@@ -547,7 +547,7 @@ background-color: rgb(231 231 231 / 58%);
 }
 
 .conclusion-description_maintenance:hover svg {
-  fill: rgb(31 120 243);
+  fill:#ca0913;
   transition: 0.3s;
 }
 
