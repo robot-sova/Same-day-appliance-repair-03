@@ -10,37 +10,30 @@
 }
 
 
+
+
 .full-contact-button-global {
-  max-width: 308px;
-  display: flex;
-  margin: 15px 15px 15px 0;
+  max-width: 345px;
+  display: inline-flex;
+  margin: 15px 0px;
 }
 
-
-
-
-
-
-
-
-
-
 .contact-button-book-global {
-  display: inline-block;
   align-self: center;
   margin: 0 10px 0 0;
-  width: 94px;
+  max-width: 145px;
+  height: 53px;
 }
 
 .contact-button-book-global button {
-  font-weight: 600;
-  height: 53px;
+  font-weight: 700 !important;
+  height: 100%;
   line-height: 1.14;
-  padding: 12px 24px;
+  padding: 7px 24px;
   box-shadow: none;
-  border-radius: 100px;
+  border-radius: 7px;
   color: #fff;
-  background-color: #0f77cc;
+  background-color: #ca0913;
   text-transform: uppercase;
   position: relative;
   border: 0;
@@ -56,49 +49,47 @@
   -webkit-tap-highlight-color: transparent;
   text-indent: 0px;
   text-shadow: none;
-  font-weight: normal;
   align-items: center;
   overflow: auto;
-  max-width: 140px;
+  max-width: 145px;
   justify-self: center;
+  white-space: nowrap;
   box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 }
 
 .contact-button-book-global:hover button {
-  background-color: black !important;
+  background-color: black;
   transition: 0.25s;
 }
 
-
-
-
-
-
-
-
-
-.contact-button-call-global {
-  /* display: inline-block; */
-  display: grid;
-  width: 100%;
-  background-color: #0f77cc ;
-  box-shadow: inset 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
-  border-radius: 7px;
-  align-self: center;
-}
 
 .contact-button-call-global a:nth-child(1) {
   display: none;
 }
 
-.contact-button-call-global a {
-white-space: nowrap;
-
-  padding: 14px 8px;
-  width: 100% !important;
+.contact-button-call-global {
+  display: grid;
+  max-width: 180px;
+  height: 53px;
+  background-color: #ca0913;
+  box-shadow: inset 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  border-radius: 7px;
   align-self: center;
+  justify-self: center;
+}
+
+.contact-button-call-global a {
+  padding: 13px 24px;
+  width: auto;
+  height: auto;
+  display: grid;
+  align-self: center;
+  justify-self: center;
   color: #fff;
   margin: 0 !important;
+  font-weight: 700;
+  transform: scale(1, 1.1);
+  white-space: nowrap;
 }
 
 .contact-button-call-global:hover {
@@ -112,16 +103,32 @@ white-space: nowrap;
 
 
 
-@media (max-width:350px) {
-  .full-contact-button-global {
-    display: inline-block;
+@media (max-width:768px) {
+
+  .contact-button-top-global {
+    margin: 0 8px 0 0;
   }
 
-  .contact-button-call-global {
-    margin-top: 10px;
-}
+  .contact-button-book-global {
+    margin: 0 8px 0 0;
+  }
+
+
+  .contact-button-book-global button {
+    padding: 7px 8px;
+    font-size: 14px;
+  }
+
+  .contact-button-call-global a {
+    padding: 14px 6px;
+    font-size: 15px;
+  }
+
 
 }
+
+
+
 
 
 

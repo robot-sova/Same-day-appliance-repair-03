@@ -12,7 +12,7 @@
 
 .full-button-global {
   max-width: 400px;
-  display: flex;
+  display: inline-flex;
   margin: 15px 0px;
 }
 
@@ -166,31 +166,5 @@
     font-size: 15px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* .full-button-global {
-    display: inline-block;
-  }
-
-  .button-call-global {
-    margin-top: 10px;
-  } */
 
 }
