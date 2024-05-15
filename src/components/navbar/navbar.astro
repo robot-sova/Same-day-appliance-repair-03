@@ -3,6 +3,7 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import Layout from "@layouts/Layout.astro";
 
 import "components/css-components/style-header.css";
 
@@ -104,6 +105,8 @@ const menuitems = [
   });
 </script>
 
+<Layout>
+
 <Container>
   <header
     class="flex flex-col lg:flex-row justify-between items-center my-5 header-full">
@@ -198,11 +201,15 @@ const menuitems = [
       <div class="reviews">
         <p>
           <a href="#reviews"
-            ><strong style="font-size: 17px"> Reviews ⭐⭐⭐⭐⭐ 5.0 </strong> (Google
-            Rating)<a><a href="#reviews">(Thumbtack Rating)<a></a></a> </a>
+            ><strong style="font-size: 17px"> Reviews ⭐⭐⭐⭐⭐ 5.0 </strong>
+            (Google Rating)<a
+              ><a href="#reviews">(Thumbtack Rating)<a></a></a>
+            </a>
           </a>
         </p>
       </div>
     </div>
   </header>
 </Container>
+
+</Layout>
