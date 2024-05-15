@@ -8,6 +8,7 @@ import Contactbtn from "@components/contactbtn.astro";
 // import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import Costanchor from "@components/price-list/components_dryer-repair-cost.astro";
+import Navbar from "@components/navbar/navbar.astro";
 
 import "css/price/style_price.css";
 ---
@@ -30,6 +31,7 @@ import "css/price/style_price.css";
   });
 </script>
 
+<Navbar />
 <Layout title="Dryer Repair Cost">
   <Container>
     <main>
@@ -44,7 +46,7 @@ import "css/price/style_price.css";
             alt="Dryer Repair Cost"
           />
 
-          <Contactbtn/>
+          <Contactbtn />
         </div>
 
         <div class="col-two">

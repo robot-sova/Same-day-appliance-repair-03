@@ -1,5 +1,5 @@
-:root{
-  --table-color:rgb(231 231 231 / 58%);
+:root {
+  --table-color: rgb(231 231 231 / 58%);
   --text-shadown-b-h3: 0.5px 0.5px 0.8px #8f9499;
 }
 
@@ -62,7 +62,7 @@ h2 {
 }
 
 
-.reviews {
+/* .reviews {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
@@ -71,7 +71,7 @@ h2 {
 
 .reviews p {
   margin: 0;
-}
+} */
 
 
 
@@ -114,7 +114,7 @@ main {
 .max-w-screen-xl {
   width: 100%;
   max-width: 1920px !important;
-  padding: 0% 3% 0% 3%;
+  padding: 0% 10px 0% 10px;
 }
 
 
@@ -206,7 +206,7 @@ main {
 }
 
 .con-inside_pricing-policy:hover #cost-svg {
-  fill:#ca0913;
+  fill: #ca0913;
   stroke: #ca0913;
   transition: 0.3s;
 }
@@ -385,7 +385,7 @@ main {
 
 #col-prices {
   /* background-color: #64b7ff61; */
-background-color: var(--table-color);
+  background-color: var(--table-color);
 }
 
 .content_job-prices p {
@@ -439,7 +439,7 @@ background-color: var(--table-color);
   margin-top: 3%;
   border-radius: 5px;
   border: solid 2px #ff2a2a;
-background-color: rgb(231 231 231 / 58%);
+  background-color: rgb(231 231 231 / 58%);
 }
 
 .pros_job-prices p {
@@ -547,7 +547,7 @@ background-color: rgb(231 231 231 / 58%);
 }
 
 .conclusion-description_maintenance:hover svg {
-  fill:#ca0913;
+  fill: #ca0913;
   transition: 0.3s;
 }
 
@@ -676,9 +676,9 @@ background-color: rgb(231 231 231 / 58%);
     margin-top: 10px;
   }
 
-    .head_pricing-policy_foto-a {
-      max-width: 50%;
-    }
+  .head_pricing-policy_foto-a {
+    max-width: 50%;
+  }
 
 }
 
@@ -699,25 +699,25 @@ background-color: rgb(231 231 231 / 58%);
     margin-bottom: 7%;
   }
 
-.head_pricing-policy_foto {
-  display: grid;
-}
+  .head_pricing-policy_foto {
+    display: grid;
+  }
 
-.head_pricing-policy_foto-a,
-.head_pricing-policy_foto-b {
-  margin: 20px 3% 20px 3%;
-}
+  .head_pricing-policy_foto-a,
+  .head_pricing-policy_foto-b {
+    margin: 20px 3% 20px 3%;
+  }
 
-.head_pricing-policy_foto-a {
-  max-width: 100%;
-  grid-row: 1/2;
-  margin: 20px 3% 0px 3%;
-}
+  .head_pricing-policy_foto-a {
+    max-width: 100%;
+    grid-row: 1/2;
+    margin: 20px 3% 0px 3%;
+  }
 
-.head_pricing-policy_foto-a h2 {
-  margin-bottom: 1% !important;
-}
-  
+  .head_pricing-policy_foto-a h2 {
+    margin-bottom: 1% !important;
+  }
+
   .con-inside_pricing-policy {
     display: grid;
   }
@@ -774,5 +774,3 @@ background-color: rgb(231 231 231 / 58%);
 
 
 }
-
-

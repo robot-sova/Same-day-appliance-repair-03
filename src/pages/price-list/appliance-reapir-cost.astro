@@ -6,26 +6,51 @@ import Features from "@components/features.astro";
 import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
-
+import Navbar from "@components/navbar/navbar.astro";
 ---
+
+<Navbar />
 <Layout title="Appliance REpair Price List">
-<Container>
+  <Container>
     <main>
-        <h1><span class="animate-charcter">Appliance Repair Cost</span> Online estimates</h1>
-     
-     <div class="two-col-grid"><div class="col-one"><img class="img-header" src="/images/lg-dryer-repair.webp" width="500" height="500" alt="Appliance Repair Cost">
-     
-     <Contactbtn />
-     
-     </div>
-     
-     <div class="col-two">
-       <p>Welcome to our comprehansive appliance repair cost page. We are currently developping an online content for our indepth appliance repair cost guid. We understand that the appliance repair cost is one of the main concerns and we want to help you make your decision easier.</p>
+      <h1>
+        <span class="animate-charcter">Appliance Repair Cost</span> Online estimates
+      </h1>
 
-    </div></div>
-    <p><a href="/price-list/dryer-repair-cost" title="Dryer Repair Cost"><b>Dryer Repair Cost</b></a></p>
-  <p><a href="/price-list/lg-dryer-repair-cost" title="Lg Dryer Repair Cost">Lg Dryer Repair Cost</a></p>
-<Cta />
-</Container>
+      <div class="two-col-grid">
+        <div class="col-one">
+          <img
+            class="img-header"
+            src="/images/lg-dryer-repair.webp"
+            width="500"
+            height="500"
+            alt="Appliance Repair Cost"
+          />
+
+          <Contactbtn />
+        </div>
+
+        <div class="col-two">
+          <p>
+            Welcome to our comprehansive appliance repair cost page. We are
+            currently developping an online content for our indepth appliance
+            repair cost guid. We understand that the appliance repair cost is
+            one of the main concerns and we want to help you make your decision
+            easier.
+          </p>
+        </div>
+      </div>
+      <p>
+        <a href="/price-list/dryer-repair-cost" title="Dryer Repair Cost"
+          ><b>Dryer Repair Cost</b></a
+        >
+      </p>
+      <p>
+        <a href="/price-list/lg-dryer-repair-cost" title="Lg Dryer Repair Cost"
+          >Lg Dryer Repair Cost</a
+        >
+      </p>
+      <Cta />
+    </main>
+  </Container>
 </Layout>
-

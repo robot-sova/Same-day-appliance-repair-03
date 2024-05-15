@@ -6,210 +6,320 @@ import Features from "@components/features.astro";
 import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
-
+import Navbar from "@components/navbar/navbar.astro";
 ---
+
+
+
+<Navbar />
 <Layout title="LG Dryer Repair Cost">
-<Container>
+  <Container>
     <main>
-        <h1><span class="animate-charcter">LG Dryer Repair Cost:</span> Affordable, Efficient, and Reliable</h1>
-     
-     <div class="two-col-grid"><div class="col-one"><img class="img-header" src="/images/lg-dryer-repair.webp" width="500" height="500" alt="LG DRyer Repair Cost">
-     
-     <Contactbtn />
-     
-     </div>
-     
-     <div class="col-two">
-        <p style="text-align: start">Welcome to your go-to solution for LG dryer repairs, offering expert service right at your doorstep. We prioritize customer convenience, helping you decide between repair or replacement with ease which is why we provided the cost for most common LG dryer repairs in the table below.</p>
-            <h2>Understanding LG Dryer Repair Costs</h2>
-            <p>The cost of LG dryer repair is a primary concern for our clients. We address this with straightforward pricing and comprehensive service. Although we may provide initial estimates over the phone based on your description, an in-person assessment is best for accuracy. Our technicians diagnose the issue, detail the required repairs, and provide a clear explanation and cost breakdown.</p>
-            <p> A diagnostic service fee of $65 applies, which we'll waive if you proceed with the repair.  This includes a free dryer cleaning to enhance safety and efficiency. We provide a complimentary dryer cleaning service with each repair because we recognize the health risks and fire hazards posed by a dusty dryer. Accumulated dust not only endangers well-being but also forces your dryer to exert more effort, accelerating the wear and tear on its moving parts. This preventive measure ensures your dryer operates safely and efficiently, prolonging its lifespan.
-            </p>
-      </div></div>
-  
-<table style="font-size:1.5em; width:90%; margin:0 auto 0 auto;">
-   <tbody>
-       <tr>
-           <td class="tdservice"><a class="w" href="/price-list/dryer-roller-replacement-cost">LG dryer rollers replacement cost*</a></td>
-           <td class="price">$200</td>
-       </tr>
-       <tr>
-       <td class="tdred">LG dryer making noise or loud vibrating noise during drum rotation</td>
-       <td class="price"></td>
-   </tr>
-   <tr>
-    <td class="tdservice"><a class="w" href="/price-list/dryer-vent-installation-cost">LG dryer vent installation cost*</a></td>
-    <td class="price">$190</td>
-</tr>
-<tr>
-<td class="tdred">LG dryer drying slow, builds excessive lint, overheating, creates mold or meldew oders and excessive humidity in the laundry room</td>
-<td class="price"></td>
-</tr>
-<tr>
-    <td class="tdservice"><a class="w" href="/price-list/dryer-vent-installation-cost">LG dryer vent repair cost*</a></td>
-    <td class="price">$190</td>
-</tr>
-<tr>
-<td class="tdred">LG dryer drying slow, builds excessive lint, overheating, creates mold or meldew oders and excessive humidity in the laundry room</td>
-<td class="price"></td>
-</tr>
-   <tr>
-       <td class="tdservice"><a class="w" href="/price-list/dryer-idler-pulley-replacement-cost">LG dryer idler pulley replacement cost *</a></td>
-       <td class="price">$220</td>
-   </tr>
-   <tr>
-       <td class="tdred">LG dryer making scraping noise</td>
-       <td class="price"></td>
-   </tr>
+      <h1>
+        <span class="animate-charcter">LG Dryer Repair Cost:</span> Affordable, Efficient,
+        and Reliable
+      </h1>
 
+      <div class="two-col-grid">
+        <div class="col-one">
+          <img
+            class="img-header"
+            src="/images/lg-dryer-repair.webp"
+            width="500"
+            height="500"
+            alt="LG DRyer Repair Cost"
+          />
 
-   <tr>
-       <td class="tdservice"><a class="w" href="/price-list/dryer-motor-replacement-cost">LG dryer motor replacement cost *</a></td>
-       <td class="price">$220</td>
-   </tr>
-   <tr>
-       <td class="tdred">LG dryer powers on but won't start</td>
-       <td class="price"></td>
-   </tr>
+          <Contactbtn />
+        </div>
 
+        <div class="col-two">
+          <p style="text-align: start">
+            Welcome to your go-to solution for LG dryer repairs, offering expert
+            service right at your doorstep. We prioritize customer convenience,
+            helping you decide between repair or replacement with ease which is
+            why we provided the cost for most common LG dryer repairs in the
+            table below.
+          </p>
+          <h2>Understanding LG Dryer Repair Costs</h2>
+          <p>
+            The cost of LG dryer repair is a primary concern for our clients. We
+            address this with straightforward pricing and comprehensive service.
+            Although we may provide initial estimates over the phone based on
+            your description, an in-person assessment is best for accuracy. Our
+            technicians diagnose the issue, detail the required repairs, and
+            provide a clear explanation and cost breakdown.
+          </p>
+          <p>
+            A diagnostic service fee of $65 applies, which we'll waive if you
+            proceed with the repair. This includes a free dryer cleaning to
+            enhance safety and efficiency. We provide a complimentary dryer
+            cleaning service with each repair because we recognize the health
+            risks and fire hazards posed by a dusty dryer. Accumulated dust not
+            only endangers well-being but also forces your dryer to exert more
+            effort, accelerating the wear and tear on its moving parts. This
+            preventive measure ensures your dryer operates safely and
+            efficiently, prolonging its lifespan.
+          </p>
+        </div>
+      </div>
 
-   <tr>
-       <td class="tdservice"><a class="w" href="/price-list/dryer-igniter-replacement-cost">LG dryer igniter replacement cost *</a></td>
-       <td class="price">$220</td>
-   </tr>
-   <tr>
-       <td class="tdred">LG dryer not heating</td>
-       <td class="price"></td>
-   </tr>
+      <table style="font-size:1.5em; width:90%; margin:0 auto 0 auto;">
+        <tbody>
+          <tr>
+            <td class="tdservice"
+              ><a class="w" href="/price-list/dryer-roller-replacement-cost"
+                >LG dryer rollers replacement cost*</a
+              ></td
+            >
+            <td class="price">$200</td>
+          </tr>
+          <tr>
+            <td class="tdred"
+              >LG dryer making noise or loud vibrating noise during drum
+              rotation</td
+            >
+            <td class="price"></td>
+          </tr>
+          <tr>
+            <td class="tdservice"
+              ><a class="w" href="/price-list/dryer-vent-installation-cost"
+                >LG dryer vent installation cost*</a
+              ></td
+            >
+            <td class="price">$190</td>
+          </tr>
+          <tr>
+            <td class="tdred"
+              >LG dryer drying slow, builds excessive lint, overheating, creates
+              mold or meldew oders and excessive humidity in the laundry room</td
+            >
+            <td class="price"></td>
+          </tr>
+          <tr>
+            <td class="tdservice"
+              ><a class="w" href="/price-list/dryer-vent-installation-cost"
+                >LG dryer vent repair cost*</a
+              ></td
+            >
+            <td class="price">$190</td>
+          </tr>
+          <tr>
+            <td class="tdred"
+              >LG dryer drying slow, builds excessive lint, overheating, creates
+              mold or meldew oders and excessive humidity in the laundry room</td
+            >
+            <td class="price"></td>
+          </tr>
+          <tr>
+            <td class="tdservice"
+              ><a
+                class="w"
+                href="/price-list/dryer-idler-pulley-replacement-cost"
+                >LG dryer idler pulley replacement cost *</a
+              ></td
+            >
+            <td class="price">$220</td>
+          </tr>
+          <tr>
+            <td class="tdred">LG dryer making scraping noise</td>
+            <td class="price"></td>
+          </tr>
 
-   <tr>
-       <td class="tdservice"><a class="w" href="/price-list/dryer-heating-element-replacement-cost" >LG dryer heating element replacement cost *</a></td>
-       <td class="price">$220 </td>
-   </tr>
-   <tr>
-       <td class="tdred">LG dryer not drying </td>
-       <td class="price"></td>
-   </tr>
+          <tr>
+            <td class="tdservice"
+              ><a class="w" href="/price-list/dryer-motor-replacement-cost"
+                >LG dryer motor replacement cost *</a
+              ></td
+            >
+            <td class="price">$220</td>
+          </tr>
+          <tr>
+            <td class="tdred">LG dryer powers on but won't start</td>
+            <td class="price"></td>
+          </tr>
 
+          <tr>
+            <td class="tdservice"
+              ><a class="w" href="/price-list/dryer-igniter-replacement-cost"
+                >LG dryer igniter replacement cost *</a
+              ></td
+            >
+            <td class="price">$220</td>
+          </tr>
+          <tr>
+            <td class="tdred">LG dryer not heating</td>
+            <td class="price"></td>
+          </tr>
 
-   <tr>
-       <td class="tdservice"><a class="w" href="/price-list/dryer-thermal-fuse-replacement-cost" title="dryer thermal fuse replacement cost">LG dryer thermal fuse replacement cost *</a></td>
-       <td class="price">$220</td>
-   </tr>
-   <tr>
-       <td class="tdred">LG dryer not drying fully</td>
-       <td class="price"></td>
-   </tr>
+          <tr>
+            <td class="tdservice"
+              ><a
+                class="w"
+                href="/price-list/dryer-heating-element-replacement-cost"
+                >LG dryer heating element replacement cost *</a
+              ></td
+            >
+            <td class="price">$220 </td>
+          </tr>
+          <tr>
+            <td class="tdred">LG dryer not drying </td>
+            <td class="price"></td>
+          </tr>
 
+          <tr>
+            <td class="tdservice"
+              ><a
+                class="w"
+                href="/price-list/dryer-thermal-fuse-replacement-cost"
+                title="dryer thermal fuse replacement cost"
+                >LG dryer thermal fuse replacement cost *</a
+              ></td
+            >
+            <td class="price">$220</td>
+          </tr>
+          <tr>
+            <td class="tdred">LG dryer not drying fully</td>
+            <td class="price"></td>
+          </tr>
 
-   <tr>
-       <td class="tdservice">LG dryer vent cleaning / dryer duct cleaning / clean dryer exhaust / clean out
-           dryer vent / clothes dryer vent cleaning cost *
-        </td>
-       <td class="price">$220 and up</td>
-   </tr>
-   <tr>
-       <td class="tdred">Clothes dryer not getting hot</td>
-       <td class="price"></td>
-   </tr>
+          <tr>
+            <td class="tdservice"
+              >LG dryer vent cleaning / dryer duct cleaning / clean dryer
+              exhaust / clean out dryer vent / clothes dryer vent cleaning cost
+              *
+            </td>
+            <td class="price">$220 and up</td>
+          </tr>
+          <tr>
+            <td class="tdred">Clothes dryer not getting hot</td>
+            <td class="price"></td>
+          </tr>
 
+          <tr>
+            <td class="tdservice">Dryer cleaning service cost *</td>
+            <td class="price">$150</td>
+          </tr>
+          <tr>
+            <td class="tdred"
+              >It is recommended to do at least 1 time a year to avoid fire</td
+            >
+            <td class="price"></td>
+          </tr>
 
-   <tr>
-       <td class="tdservice">Dryer cleaning service cost *</td>
-       <td class="price">$150</td>
-   </tr>
-   <tr>
-       <td class="tdred">It is recommended to do at least 1 time a year to avoid fire</td>
-       <td class="price"></td>
-   </tr>
+          <tr>
+            <td class="tdservice">LG dryer reverse door cost *</td>
+            <td class="price">$120</td>
+          </tr>
+          <tr>
+            <td class="tdred"></td>
+            <td class="price"></td>
+          </tr>
 
+          <tr>
+            <td class="tdservice">LG dryer door lock replacement cost *</td>
+            <td class="price">$200</td>
+          </tr>
+          <tr>
+            <td class="tdred">LG dryer not turning on</td>
+            <td class="price"></td>
+          </tr>
+          <tr>
+            <td class="tdservice"
+              >Install dryer vent cost/ dryer vent hook up *</td
+            >
+            <td class="price">$190</td>
+          </tr>
+          <tr>
+            <td class="tdred"></td>
+            <td class="price"></td>
+          </tr>
+          <tr>
+            <td class="tdservice"
+              >Install dryer vent cost / hook up gas dryer *</td
+            >
+            <td class="price">$190</td>
+          </tr>
+          <tr>
+            <td class="tdred"></td>
+            <td class="price"></td>
+          </tr>
+          <tr>
+            <td class="tdservice"
+              >Dryer and washer installation/ stackable washer dryer
+              installation cost *</td
+            >
+            <td class="price">$240</td>
+          </tr>
+          <tr>
+            <td class="tdred"></td>
+            <td class="price"></td>
+          </tr>
+          <tr>
+            <td class="tdservice">LG dryer gas valve replacement cost *</td>
+            <td class="price">$240</td>
+          </tr>
+          <tr>
+            <td class="tdred">Clothes dryer not heating</td>
+            <td class="price"></td>
+          </tr>
+          <tr>
+            <td class="tdservice">LG gas valve coils replacement cost *</td>
+            <td class="price">$190</td>
+          </tr>
+          <tr>
+            <td class="tdred">LG dryer is not drying</td>
+            <td class="price"></td>
+          </tr>
+          <tr>
+            <td class="tdservice">LG dryer maintenance cost *</td>
+            <td class="price">$190</td>
+          </tr>
+          <tr>
+            <td class="tdred"></td>
+            <td class="price"></td>
+          </tr>
+          <tr>
+            <td class="tdservice">LG dryer drum replacement cost *</td>
+            <td class="price">$220</td>
+          </tr>
+          <tr>
+            <td class="tdred"></td>
+            <td class="price"></td>
+          </tr>
+          <tr>
+            <td class="tdservice"
+              >* including cleaning from dust inside the unit</td
+            >
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
 
-   <tr>
-       <td class="tdservice">LG dryer reverse door cost *</td>
-       <td class="price">$120</td>
-   </tr>
-   <tr>
-       <td class="tdred"></td>
-       <td class="price"></td>
-   </tr>
-
-
-   <tr>
-       <td class="tdservice">LG dryer door lock replacement cost *</td>
-       <td class="price">$200</td>
-   </tr>
-   <tr>
-       <td class="tdred">LG dryer not turning on</td>
-       <td class="price"></td>
-   </tr>
-   <tr>
-       <td class="tdservice">Install dryer vent cost/ dryer vent hook up *</td>
-       <td class="price">$190</td>
-   </tr>
-   <tr>
-       <td class="tdred"></td>
-       <td class="price"></td>
-   </tr>
-   <tr>
-       <td class="tdservice">Install dryer vent cost / hook up gas dryer *</td>
-       <td class="price">$190</td>
-   </tr>
-   <tr>
-       <td class="tdred"></td>
-       <td class="price"></td>
-   </tr>
-   <tr>
-       <td class="tdservice">Dryer and washer installation/ stackable washer dryer installation cost *</td>
-       <td class="price">$240</td>
-   </tr>
-   <tr>
-       <td class="tdred"></td>
-       <td class="price"></td>
-   </tr>
-   <tr>
-       <td class="tdservice">LG dryer gas valve replacement cost *</td>
-       <td class="price">$240</td>
-   </tr>
-   <tr>
-       <td class="tdred">Clothes dryer not heating</td>
-       <td class="price"></td>
-   </tr>
-   <tr>
-       <td class="tdservice">LG gas valve coils replacement cost *</td>
-       <td class="price">$190</td>
-   </tr>
-   <tr>
-       <td class="tdred">LG dryer is not drying</td>
-       <td class="price"></td>
-   </tr>
-   <tr>
-       <td class="tdservice">LG dryer maintenance cost *</td>
-       <td class="price">$190</td>
-   </tr>
-   <tr>
-       <td class="tdred"></td>
-       <td class="price"></td>
-   </tr>
-   <tr>
-       <td class="tdservice">LG dryer drum replacement cost *</td>
-       <td class="price">$220</td>
-   </tr>
-   <tr>
-       <td class="tdred"></td>
-       <td class="price"></td>
-   </tr>
-   <tr>
-       <td class="tdservice">* including cleaning from dust inside the unit</td>
-       <td></td>
-   </tr>
-   </tbody>
-</table>
-
-<h2>Repair Timeframe</h2>
-<p>Most repairs are completed on the first visit, thanks to our technicians' well-stocked vans. Should a special part need ordering, it might extend the repair time to between one day and a week, after which we'll promptly conclude the repair. The repair cost will not increase if the technician has to come the second time.</p>
-<h2>Ensuring Quality Repairs</h2>
-<p>Our expertise in LG dryer repairs ensures high-quality service using genuine parts. Unlike others who may use non-standard parts, risking further damage, we guarantee lasting repairs by adhering to LG's specifications. Our skilled team promises a thorough, effective repair process, reducing future issues and extending your dryer's lifespan. Plus, every repair includes a dryer cleaning to maintain peak performance.</p>
-<p>LG Dryer Repair, leveraging original parts, skilled technicians, and a commitment to customer satisfaction. Don't hesitate to call us to restore your LG dryer to optimal condition.</p>
-<Cta />
-</Container>
+      <h2>Repair Timeframe</h2>
+      <p>
+        Most repairs are completed on the first visit, thanks to our
+        technicians' well-stocked vans. Should a special part need ordering, it
+        might extend the repair time to between one day and a week, after which
+        we'll promptly conclude the repair. The repair cost will not increase if
+        the technician has to come the second time.
+      </p>
+      <h2>Ensuring Quality Repairs</h2>
+      <p>
+        Our expertise in LG dryer repairs ensures high-quality service using
+        genuine parts. Unlike others who may use non-standard parts, risking
+        further damage, we guarantee lasting repairs by adhering to LG's
+        specifications. Our skilled team promises a thorough, effective repair
+        process, reducing future issues and extending your dryer's lifespan.
+        Plus, every repair includes a dryer cleaning to maintain peak
+        performance.
+      </p>
+      <p>
+        LG Dryer Repair, leveraging original parts, skilled technicians, and a
+        commitment to customer satisfaction. Don't hesitate to call us to
+        restore your LG dryer to optimal condition.
+      </p>
+      <Cta />
+    </main>
+  </Container>
 </Layout>

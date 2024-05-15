@@ -4,6 +4,7 @@ import { Picture } from "astro:assets";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import Navbar from "@components/navbar/navbar.astro";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -11,6 +12,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 });
 ---
 
+<Navbar />
 <Layout title="About">
   <Container>
     <Sectionhead>
@@ -25,7 +27,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
       <p class="text-lg leading-relaxed text-slate-500">
         We're a multi-cultural team from around the world! We come from diverse
         backgrounds, bringing different personalities, experiences and skills to
-        the job. This is what makes our team so special. 
+        the job. This is what makes our team so special.
       </p>
     </div>
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">

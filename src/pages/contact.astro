@@ -5,8 +5,10 @@ import Cta from "@components/cta.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon";
+import Navbar from "@components/navbar/navbar.astro";
 ---
 
+<Navbar />
 <Layout title="Contact">
   <Container>
     <Sectionhead>
@@ -16,7 +18,9 @@ import { Icon } from "astro-icon";
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
       <div>
-        <h2 class="font-medium text-2xl text-gray-800">Contact Same Day Appliance Repair</h2>
+        <h2 class="font-medium text-2xl text-gray-800">
+          Contact Same Day Appliance Repair
+        </h2>
         <p class="text-lg leading-relaxed text-slate-500 mt-3">
           Need help? We are here to help!
         </p>
