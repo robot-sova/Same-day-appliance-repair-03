@@ -25,7 +25,7 @@ html {
 
 img {
   border-radius: 10px;
-  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.25);
 }
 
 h2 {
@@ -73,7 +73,9 @@ h2 {
   margin: 0;
 } */
 
-
+.two-col-grid {
+  margin-top: 3%;
+}
 
 .col-one img {
   /* width: 500px; */
@@ -649,6 +651,7 @@ main {
     /* width: 80%; */
     justify-self: center;
     margin-bottom: 10px;
+    margin: 0 auto;
   }
 
   .col-one {
@@ -695,6 +698,12 @@ main {
 
 @media (max-width:768px) {
 
+  .max-w-screen-xl {
+    width: 100%;
+    max-width: 1920px !important;
+    padding: 0% 2% 0% 2%;
+  }
+
   .head_pricing-policy {
     margin-bottom: 7%;
   }
@@ -737,6 +746,10 @@ main {
 
   .content_job-prices {
     padding: 3% 0%;
+  }
+
+  .desk_job-prices {
+    padding-left: 7px;
   }
 
   .head-prices p {

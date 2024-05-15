@@ -152,6 +152,7 @@ button.hcp-button {
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     overflow-x: hidden !important;
+    justify-content: center;
 }
 
 button.hcp-button:hover {
@@ -220,3 +221,17 @@ body {
         
         }
     }
+
+        @media (max-width:400px) {
+            .hover\:bg-gray-200 {
+                    padding: 9px 4px !important;
+                    width: 216px !important;
+                }
+
+            .gap-4 button {
+                max-width: 75px !important;
+                padding: 12px 17px !important;
+                justify-content: center !important;
+            }
+
+        }
