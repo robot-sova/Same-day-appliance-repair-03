@@ -226,6 +226,10 @@ body {
     body {
         margin-top: 90px;
     }
+
+        .inside_header-full{
+            display: block;
+        }
 }
 
 @media (max-width:533px) {
