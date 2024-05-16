@@ -63,10 +63,6 @@
 }
 
 
-.contact-button-call-global a:nth-child(1) {
-  display: none;
-}
-
 .contact-button-call-global {
   display: grid;
   max-width: 180px;

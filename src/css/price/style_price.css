@@ -704,6 +704,10 @@ main {
     padding: 0% 3% 0% 3%;
   }
 
+  .animate-charcter {
+    line-height: clamp(30px, 6vh, 60px);
+  }
+
   .head_pricing-policy {
     margin-bottom: 7%;
   }
