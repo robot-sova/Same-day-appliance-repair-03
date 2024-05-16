@@ -45,7 +45,7 @@ html {
 }
 
 @media (min-width: 900px) {
-.inside-reviews_header-full {
+    .inside-reviews_header-full {
         /* overflow-y: scroll;
         height: 100% !important; */
     }
@@ -223,13 +223,22 @@ body {
 }
 
 @media (max-width:1024px) {
+
+.header-full {
+        padding: 10px 10px 20px 10px;
+    }
+
+        .mt-3 {
+            margin: 10px 0;
+        }
+
     body {
         margin-top: 90px;
     }
 
-        .inside_header-full{
-            display: block;
-        }
+    .inside_header-full {
+        display: block;
+    }
 }
 
 @media (max-width:533px) {
@@ -243,6 +252,10 @@ body {
     .hover\:bg-gray-200 {
         padding: 9px 4px !important;
         width: 216px !important;
+    }
+
+    .gap-4 {
+        gap: 0.6rem;
     }
 
     .gap-4 button {

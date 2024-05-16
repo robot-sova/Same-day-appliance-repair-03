@@ -701,7 +701,7 @@ main {
   .max-w-screen-xl {
     width: 100%;
     max-width: 1920px !important;
-    padding: 0% 2% 0% 2%;
+    padding: 0% 3% 0% 3%;
   }
 
   .head_pricing-policy {

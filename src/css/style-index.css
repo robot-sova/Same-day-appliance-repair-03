@@ -1,3 +1,10 @@
+p {
+    margin: 0;
+}
+
+
+
+
 .home-page-full {
     max-width: 1920px;
     margin: 0 auto;
@@ -52,17 +59,25 @@
     width: 100%;
 }
 
+#full-commercial-machinery-nocolor {
+    background-color: #fff;
+}
+
+.full-commercial-machinery h2 {
+    margin: 0;
+}
+
 .full-commercial-machinery-1920 {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 2% 3%;
+    padding: 2% 3% 4% 3%;
 }
 
 .header-machinery {
     text-align: center;
+    margin: 0 0 20px 0;
 }
-
 .full-conteiner-machinery {
     width: 100%;
     position: relative;
@@ -71,6 +86,8 @@
     grid-gap: 2em;
 }
 
+
+
 .content-machinery {
     display: grid;
     justify-self: center;
@@ -78,6 +95,17 @@
     padding: 10px 8px;
     width: 260px;
     grid-gap: 0.8em;
+}
+
+.content-machinery-f-d {
+    display: grid;
+    justify-self: center;
+    width: 100%;
+}
+
+.content-machinery-f-d a{
+    display: grid;
+    justify-self: center;
 }
 
 .f-content-machinery {
@@ -106,6 +134,7 @@
 .d-content-machinery p {
     justify-self: center;
     align-self: center;
+    text-align: center;
     font-size: 20px;
     line-height: 24px;
     font-weight: 600;
