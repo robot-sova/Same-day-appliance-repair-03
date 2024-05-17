@@ -194,6 +194,10 @@ textarea {
 
 @media (max-width:768px) {
 
+    .full-index-1920 h1 {
+        text-shadow: 1.5px 1.5px 1.7px rgb(21 21 21);
+    }
+
     .animate-charcter {
         line-height: clamp(30px, 6vh, 60px);
     }
