@@ -24,6 +24,11 @@ textarea {
     display: grid;
 }
 
+.full-index-1920 h1 {
+    margin: 3% 0;
+    text-shadow: 2.3px 2.3px 3.7px rgb(21 21 21);
+}
+
 .animate-charcter {
     font-size: clamp(35px, 8vw, 60px);
     line-height: clamp(56px, 8vh, 60px);
