@@ -148,16 +148,16 @@
 @media (max-width:768px) {
 
   .button-top-global {
-    margin: 0 8px 0 0;
+    margin: 0 6px 0 0;
   }
 
   .button-book-global {
-    margin: 0 8px 0 0;
+    margin: 0 6px 0 0;
   }
 
 
   .button-book-global button {
-    padding: 7px 8px;
+    padding: 7px 6px;
     font-size: 14px;
   }
 

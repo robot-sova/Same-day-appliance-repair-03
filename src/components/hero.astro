@@ -3,167 +3,227 @@ import { Picture } from "astro:assets";
 import heroImage from "assets/hero.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
+
+import "components/css-components/style-hero.css";
 ---
-<h1><span class="animate-charcter">
-  Same Day Appliance Repair</span> 
-</h1>
-<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 md:block">
-    <p>Same Day Appliance Repair - your destination for all your commercial and household appliance repair needs! We deliver professional appliance repair services, that you can rely on with confidence.<br><br> We have helped thousands of customers, alleviating the stress that comes when appliances malfunction. Our quick response time and efficient work ethic form the cornerstone of our operational approach, aiming to resolve your appliance issues promptly and proficiently.</p>
-   <br>
- <!--form -->
- <form
-  action="https://api.web3forms.com/submit"
-  method="POST"
-  id="form"
-  class="needs-validation"
-  novalidate>
-  <input type="hidden" name="access_key" value="1d881d82-bde0-46fc-8047-cfaf21357f33" />
-  <!-- Create your free access key from https://web3forms.com/ -->
-  <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
-  <div class="mb-5">
-    <input
-      type="text"
-      placeholder="Full Name"
-      required
-      class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
-      name="name"
-    />
-    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      Please provide your full name.
-    </div>
-  </div>
-  <div class="mb-5">
-    <label for="email_address" class="sr-only">Email Address</label><input
-      id="email_address"
-      type="email"
-      placeholder="Email Address"
-      name="email"
-      required
-      class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
-    />
-    <div class="empty-feedback text-red-400 text-sm mt-1">
-      Please provide your email address.
-    </div>
-    <div class="invalid-feedback text-red-400 text-sm mt-1">
-      Please provide a valid email address.
-    </div>
-  </div>
-  <div class="mb-3">
-    <textarea
-      name="message"
-      required
-      placeholder="Your Message"
-      class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
-    ></textarea>
-    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      Please enter your message.
-    </div><br>
-  <button type="submit" style="background-color:#000000; color:#ffffff; border-radius: 10px; padding:15px;">REQUEST CALLBACK</button>
-  <div id="result" class="mt-3 text-center"></div>
-</form>
-<br>
-<style>
-  .invalid-feedback,
-  .empty-feedback {
-    display: none;
-  }
 
-  .was-validated :placeholder-shown:invalid ~ .empty-feedback {
-    display: block;
-  }
+<!-- слайдер -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelector(".slides");
+    const slide = document.querySelectorAll(".slide");
+    const totalSlides = slide.length;
 
-  .was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
-    display: block;
-  }
+    const firstClone = slide[0].cloneNode(true);
+    const lastClone = slide[totalSlides - 1].cloneNode(true);
 
-  .is-invalid,
-  .was-validated :invalid {
-    border-color: #dc3545;
-  }
-</style>
+    firstClone.id = "first-clone";
+    lastClone.id = "last-clone";
 
-<script is:inline>
-  const form = document.getElementById("form");
-  const result = document.getElementById("result");
+    slides.appendChild(firstClone);
+    slides.insertBefore(lastClone, slide[0]);
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    form.classList.add("was-validated");
-    if (!form.checkValidity()) {
-      form.querySelectorAll(":invalid")[0].focus();
-      return;
+    const allSlides = document.querySelectorAll(".slide");
+    const totalSlidesWithClones = allSlides.length;
+    let currentIndex = 1;
+
+    function goToSlide(index) {
+      slides.style.transform = `translateX(-${index * 100}%)`;
     }
-    const formData = new FormData(form);
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
 
-    result.innerHTML = "Sending...";
+    function nextSlide() {
+      currentIndex++;
+      slides.style.transition = "transform 1s ease";
+      goToSlide(currentIndex);
+    }
 
-    fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    })
-      .then(async (response) => {
-        let json = await response.json();
-        if (response.status == 200) {
-          result.classList.add("text-green-500");
-          result.innerHTML = json.message;
-        } else {
-          console.log(response);
-          result.classList.add("text-red-500");
-          result.innerHTML = json.message;
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-        result.innerHTML = "Something went wrong!";
-      })
-      .then(function () {
-        form.reset();
-        form.classList.remove("was-validated");
-        setTimeout(() => {
-          result.style.display = "none";
-        }, 5000);
-      });
+    function resetSlider() {
+      if (currentIndex === totalSlidesWithClones - 1) {
+        slides.style.transition = "none";
+        currentIndex = 1;
+        goToSlide(currentIndex);
+      } else if (currentIndex === 0) {
+        slides.style.transition = "none";
+        currentIndex = totalSlides;
+        goToSlide(currentIndex);
+      }
+    }
+
+    slides.addEventListener("transitionend", resetSlider);
+
+    setInterval(nextSlide, 5000);
+
+    slides.style.transition = "none";
+    goToSlide(currentIndex);
+    setTimeout(() => {
+      slides.style.transition = "transform 1s ease";
+    }, 20);
   });
 </script>
 
-<!--End Form -->
+<h1><span class="animate-charcter"> Same Day Appliance Repair</span></h1>
 
-</div> 
-  </div>
-  <div class="text-lg mt-4 text-slate-600 max-w-xl">
-      <img alt="Same Day Appliance Repair" width="480" height="480" style="border-radius: 25px;" src="/images/same-day-appliance-repair-experts.webp">
-     
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="#"
-        href="tel:+14243250520"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-6 h-6" name="bx:bxs-phone" />
+<main
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24 full-form-1">
+  <div class="py-6 md:order-1 md:block general-form-foto">
+    <div class="text-lg mt-4 text-slate-600 max-w-xl foto-form">
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img
+              alt="Same Day Appliance Repair"
+              src="/images/same-day-appliance-repair-experts.webp"
+            />
+          </div>
 
-         CALL US: (424) 325-0520
-      </Link>
-      <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="/book"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-6 h-6" name="bx:bxs-calendar" />
-         BOOK US
-      </Link>
+          <div class="slide">
+            <img
+              alt="Same Day Appliance Repair"
+              src="/public/img-price/oven-repair-cost/oven-repair-cost-1.webp"
+            />
+          </div>
+          <div class="slide">
+            <img
+              alt="Same Day Appliance Repair"
+              src="/public/img-price/refrigerator-repair-cost/refrigerator-repair-cost-1.webp"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</main>
-<style>
 
-</style>
+    <!--form -->
+    <form
+      action="https://api.web3forms.com/submit"
+      method="POST"
+      id="form"
+      class="needs-validation form-text-input"
+      novalidate>
+      <input
+        type="hidden"
+        name="access_key"
+        value="1d881d82-bde0-46fc-8047-cfaf21357f33"
+      />
+      <!-- Create your free access key from https://web3forms.com/ -->
+      <input
+        type="checkbox"
+        class="hidden"
+        style="display:none"
+        name="botcheck"
+      />
+      <div class="mb-5">
+        <input
+          type="text"
+          placeholder="Full Name"
+          required
+          class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none ring-gray-100"
+          name="name"
+        />
+        <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+          Please provide your full name.
+        </div>
+      </div>
+      <div class="mb-5">
+        <label for="email_address" class="sr-only">Email Address</label><input
+          id="email_address"
+          type="email"
+          placeholder="Email Address"
+          name="email"
+          required
+          class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none ring-gray-100"
+        />
+        <div class="empty-feedback text-red-400 text-sm mt-1">
+          Please provide your email address.
+        </div>
+        <div class="invalid-feedback text-red-400 text-sm mt-1">
+          Please provide a valid email address.
+        </div>
+      </div>
+      <div class="mb-3">
+        <textarea
+          name="message"
+          required
+          placeholder="Your Message"
+          rows="2"
+          class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none ring-gray-100"
+        ></textarea>
+        <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+          Please enter your message.
+        </div><br />
+
+        <div id="result" class="mt-3 text-center"></div>
+      </div>
+
+      <div class="desc-form">
+        <p>
+          Same Day Appliance Repair - your destination for all your commercial
+          and household appliance repair needs! We deliver professional
+          appliance repair services, that you can rely on with confidence.
+        </p>
+        <p>
+          We have helped thousands of customers, alleviating the stress that
+          comes when appliances malfunction. Our quick response time and
+          efficient work ethic form the cornerstone of our operational approach,
+          aiming to resolve your appliance issues promptly and proficiently.
+        </p>
+      </div>
+
+      <div class="but-request-callback">
+        <button type="submit">REQUEST CALLBACK</button>
+      </div>
+
+      <!--End Form -->
+    </form>
+  </div>
+
+  <!-- форма скрипта отправки формы, только js  -->
+  <script is:inline>
+    const form = document.getElementById("form");
+    const result = document.getElementById("result");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      form.classList.add("was-validated");
+      if (!form.checkValidity()) {
+        form.querySelectorAll(":invalid")[0].focus();
+        return;
+      }
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      result.innerHTML = "Sending...";
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            result.classList.add("text-green-500");
+            result.innerHTML = json.message;
+          } else {
+            console.log(response);
+            result.classList.add("text-red-500");
+            result.innerHTML = json.message;
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          result.innerHTML = "Something went wrong!";
+        })
+        .then(function () {
+          form.reset();
+          form.classList.remove("was-validated");
+          setTimeout(() => {
+            result.style.display = "none";
+          }, 5000);
+        });
+    });
+  </script>
+</main>
