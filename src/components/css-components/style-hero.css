@@ -1,4 +1,4 @@
-p{
+p {
     margin: 0;
 }
 
@@ -96,8 +96,12 @@ textarea {
     padding: 2% 0;
 }
 
+.desc-form p {
+    margin: 0 !important;
+}
+
 .desc-form p:nth-child(1) {
-    margin-bottom: 2%;
+    margin-bottom: 2% !important;
 }
 
 
