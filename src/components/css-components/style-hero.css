@@ -29,7 +29,7 @@ textarea {
 }
 
 .full-index-1920 h1 {
-    margin: 3% 0;
+    margin: 0.5% 0 0 0;
     text-shadow: 2.3px 2.3px 3.7px rgb(21 21 21);
 }
 
@@ -207,7 +207,7 @@ textarea {
     }
 
     .animate-charcter {
-        line-height: clamp(30px, 6vh, 60px);
+        line-height: clamp(30px, 6vh, 60px) !important;
     }
 
     .full-index-1920 h1 {
@@ -238,6 +238,36 @@ textarea {
 
 
 /* слайдер  */
+/* .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    transition: transform 1s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.no-transition {
+    transition: none !important;
+} */
+
+/* слайдер  */
+
+
 .slider {
     position: relative;
     width: 100%;
@@ -264,5 +294,3 @@ textarea {
 .no-transition {
     transition: none !important;
 }
-
-/* слайдер  */
