@@ -62,6 +62,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: solid 3px #919191;
+    border-radius: 4px !important;
 }
 
 

@@ -1,0 +1,127 @@
+p {
+    margin: 0;
+}
+
+h2 {
+    font-size: clamp(24px, 5vw, 28px) !important;
+    text-shadow: 1px 1px 1.3px #8f9499;
+}
+
+.full-our-advantages {
+    display: grid;
+    width: 100%;
+    max-width: 1920px;
+    padding: 2% 10%;
+}
+
+.heder-our-advantages {
+    text-align: center;
+    margin-bottom: 3%;
+    max-width: 80%;
+    justify-self: center;
+}
+
+.conteiner-our-advantages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4em;
+}
+
+.content-our-advantages {
+    width: 100%;
+    max-width: 400px;
+    justify-self: center;
+    /* padding: 1% 2% 1% 2%; */
+    padding: 15px 17px 15px 17px;
+    -webkit-box-shadow: 0px 0px 8px 3px rgba(135, 135, 135, 0.2);
+    -moz-box-shadow: 0px 0px 8px 3px rgba(135, 135, 135, 0.2);
+    box-shadow: 0px 0px 8px 3px rgba(135, 135, 135, 0.2);
+    border-radius: 5px;
+    transition: 0.25s;
+}
+
+.content-our-advantages:hover {
+    -webkit-box-shadow: 0px 0px 13px 6px rgba(135, 135, 135, 0.2);
+    -moz-box-shadow: 0px 0px 13px 6px rgba(135, 135, 135, 0.2);
+    box-shadow: 0px 0px 13px 6px rgba(135, 135, 135, 0.2);
+}
+
+
+
+.f_our-advantages {
+    min-height: 60px;
+    display: grid;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.f_our-advantages svg {
+    justify-self: center;
+    fill: #000;
+    transition: 0.25s;
+}
+
+.content-our-advantages:hover .f_our-advantages svg {
+    fill: #ca0913;
+}
+
+.d_our-advantages {}
+
+
+.d_our-advantages h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: clamp(16px, 3vw, 18px) !important;
+    text-shadow: 0.4px 0.4px 0.7px #5c5c5c;
+}
+
+.d_our-advantages {
+    text-align: center;
+
+}
+
+
+
+
+
+
+@media (max-width:1024px) {
+    .full-our-advantages {
+        padding: 2% 3%;
+    }
+
+    .conteiner-our-advantages {
+        grid-gap: 2em;
+    }
+
+
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+
+    .conteiner-our-advantages {
+        grid-gap: 2em;
+        grid-template-columns: 1fr;
+    }
+
+    .content-our-advantages {
+        width: 100%;
+        max-width: 350px;
+        justify-self: center;
+    }
+
+    .heder-our-advantages {
+        margin-bottom: 7%;
+        max-width: 100%;
+    }
+
+    .f_our-advantages {
+        min-height: auto;
+    }
+
+}

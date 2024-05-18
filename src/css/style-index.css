@@ -2,6 +2,10 @@ p {
     margin: 0;
 }
 
+h2 {
+    font-size: clamp(24px, 5vw, 28px) !important;
+    text-shadow: 1px 1px 1.3px #8f9499;
+}
 
 
 

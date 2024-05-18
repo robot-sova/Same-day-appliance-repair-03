@@ -1,30 +1,33 @@
 ---
 // @ts-ignore
-import { Icon } from "astro-icon";
+// import { Icon } from "astro-icon";
 
-const features = [
-  {
-    title: "Same Day Service",
-    description:
-      "We have a quick response time, and repair appliances the same day in 90% of cases. Your piece of mind is our priority.",
-    icon: "bx:bxs-bell",
-  },
-  {
-    title: "3 Month Warraty",
-    description:
-      "We are confident in the quality of our service adressing any issues related to the repaired appliance within 3 months at no additional cost.",
-    icon: "bx:bxs-bell",
-  },
-  {
-    title: "Upfront Pricing",
-    description:
-      "After our trained technician diagnoses the problem, customer recieves clear and detailed estimate for the cost of the repair before any work begins",
-    icon: "bx:bxs-bell",
-  },
-];
+// const features = [
+//   {
+//     title: "Same Day Service",
+//     description:
+//       "We have a quick response time, and repair appliances the same day in 90% of cases. Your piece of mind is our priority.",
+//     icon: "bx:bxs-bell",
+//   },
+//   {
+//     title: "3 Month Warraty",
+//     description:
+//       "We are confident in the quality of our service adressing any issues related to the repaired appliance within 3 months at no additional cost.",
+//     icon: "bx:bxs-bell",
+//   },
+//   {
+//     title: "Upfront Pricing",
+//     description:
+//       "After our trained technician diagnoses the problem, customer recieves clear and detailed estimate for the cost of the repair before any work begins",
+//     icon: "bx:bxs-bell",
+//   },
+// ];
+
+import "@components/css-components/style-features.css";
 ---
 
-<div class="mt-16 md:mt-0">
+<!-- <div class="mt-16 md:mt-0">
+
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
     Same Day Appliance Repair Services for Commercial & Household Use
   </h2>
@@ -47,4 +50,96 @@ const features = [
       </div>
     ))
   }
+  </div>  -->
+<div class="full-our-advantages">
+
+  <div class="heder-our-advantages">
+    <h2>Same Day Appliance Repair Services for Commercial & Household Use</h2>
+    <p>
+      Over the years, we have helped thousands of customers, alleviating the
+      stress that comes when appliances malfunction. Our quick response time and
+      efficient work ethic form the cornerstone of our operational approach,
+      aiming to resolve your appliance issues promptly and proficiently.
+    </p>
+  </div>
+
+  <div class="conteiner-our-advantages">
+
+    <div class="content-our-advantages">
+      <div class="f_our-advantages">
+        <svg
+          fill="#000000"
+          width="60px"
+          height="60px"
+          viewBox="0 0 512 512"
+          data-name="Layer 1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          ><title></title><path
+            d="M392,294.54h0a135.56,135.56,0,0,0-39.15-95.39,8.36,8.36,0,0,0-.68-.79,8.47,8.47,0,0,0-.8-.68A135.54,135.54,0,0,0,256,158.52h0a135.54,135.54,0,0,0-95.38,39.16,7.36,7.36,0,0,0-1.48,1.47A135.56,135.56,0,0,0,120,294.54h0a135.55,135.55,0,0,0,39.15,95.38,8.36,8.36,0,0,0,.68.79,8.59,8.59,0,0,0,.8.69A135.57,135.57,0,0,0,256,430.55h0a135.57,135.57,0,0,0,95.38-39.15,7.78,7.78,0,0,0,1.48-1.48A135.55,135.55,0,0,0,392,294.54Zm-29.25,8h13a119.5,119.5,0,0,1-29.45,71l-9.14-9.13a8,8,0,0,0-11.31,11.31l9.13,9.13a119.45,119.45,0,0,1-71,29.46v-13a8,8,0,1,0-16,0v13a119.57,119.57,0,0,1-71-29.46l9.13-9.13a8,8,0,1,0-11.31-11.32l-9.14,9.14a119.5,119.5,0,0,1-29.45-71h13a8,8,0,0,0,0-16h-13a119.53,119.53,0,0,1,29.45-71l9.14,9.14a8,8,0,0,0,11.31-11.31L177,204.25a119.5,119.5,0,0,1,71-29.45v13a8,8,0,0,0,16,0v-13a119.5,119.5,0,0,1,71,29.45l-9.13,9.14a8,8,0,0,0,11.31,11.31l9.14-9.14a119.53,119.53,0,0,1,29.45,71h-13a8,8,0,0,0,0,16Zm26.52-110.17,25.66-25.65a8,8,0,0,0,0-11.32l-19.8-19.8a8,8,0,0,0-11.32,0l-25.65,25.65A167.15,167.15,0,0,0,278,128V99.77h20.67a8,8,0,0,0,8-8V57.45a8,8,0,0,0-8-8H213.33a8,8,0,0,0-8,8V91.77a8,8,0,0,0,8,8H234V128a167.11,167.11,0,0,0-80.17,33.28L128.18,135.6a8,8,0,0,0-11.32,0l-19.8,19.8a8,8,0,0,0,0,11.32l25.66,25.65A167.14,167.14,0,0,0,88,294.54c0,92.64,75.37,168,168,168s168-75.37,168-168A167.14,167.14,0,0,0,389.28,192.37Zm.2-39.8,8.49,8.49L378.9,180.11q-4.08-4.38-8.48-8.48ZM221.33,65.45h69.34V83.77H221.33ZM250,99.77h12v26.87c-2-.07-4-.12-6-.12s-4,0-6,.12ZM114,161.06l8.49-8.49,19.06,19.06q-4.4,4.1-8.49,8.48ZM256,446.55c-83.82,0-152-68.19-152-152s68.19-152,152-152,152,68.2,152,152S339.82,446.55,256,446.55ZM291.83,319a8,8,0,0,1-11.32,11.31L250.34,300.2h0c-.18-.18-.36-.38-.53-.58l-.22-.3-.24-.33c-.08-.12-.15-.24-.22-.36a3.14,3.14,0,0,1-.18-.31,2.64,2.64,0,0,1-.18-.38c-.06-.11-.11-.22-.16-.33s-.09-.25-.14-.37-.09-.24-.12-.37-.07-.25-.1-.37-.07-.26-.09-.39,0-.3-.07-.45,0-.21-.05-.32a7,7,0,0,1,0-.79V216.82a8,8,0,0,1,16,0v74.4Z"
+          ></path></svg
+        >
+      </div>
+
+      <div class="d_our-advantages">
+        <h3>
+          We have a quick response time, and repair appliances the same day in
+          90% of cases. Your piece of mind is our priority.
+        </h3>
+      </div>
+    </div>
+
+    <div class="content-our-advantages">
+      <div class="f_our-advantages">
+        <svg
+          width="50px"
+          height="50px"
+          viewBox="0 0 512 512"
+          fill="#000"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
+            class="ci-primary"></path>
+          <polygon
+            points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
+            class="ci-primary"></polygon>
+        </svg>
+      </div>
+
+      <div class="d_our-advantages">
+        <h3>
+          We are confident in the quality of our service adressing any issues
+          related to the repaired appliance within 3 months at no additional
+          cost.
+        </h3>
+      </div>
+    </div>
+
+    <div class="content-our-advantages">
+      <div class="f_our-advantages">
+        <svg
+          width="50px"
+          height="50px"
+          viewBox="0 0 24 24"
+          fill="000"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12 5.25C12.4142 5.25 12.75 5.58579 12.75 6V6.31673C14.3804 6.60867 15.75 7.83361 15.75 9.5C15.75 9.91421 15.4142 10.25 15 10.25C14.5858 10.25 14.25 9.91421 14.25 9.5C14.25 8.65573 13.3765 7.75 12 7.75C10.6235 7.75 9.75 8.65573 9.75 9.5C9.75 10.3443 10.6235 11.25 12 11.25C13.9372 11.25 15.75 12.5828 15.75 14.5C15.75 16.1664 14.3804 17.3913 12.75 17.6833V18C12.75 18.4142 12.4142 18.75 12 18.75C11.5858 18.75 11.25 18.4142 11.25 18V17.6833C9.61957 17.3913 8.25 16.1664 8.25 14.5C8.25 14.0858 8.58579 13.75 9 13.75C9.41421 13.75 9.75 14.0858 9.75 14.5C9.75 15.3443 10.6235 16.25 12 16.25C13.3765 16.25 14.25 15.3443 14.25 14.5C14.25 13.6557 13.3765 12.75 12 12.75C10.0628 12.75 8.25 11.4172 8.25 9.5C8.25 7.83361 9.61957 6.60867 11.25 6.31673V6C11.25 5.58579 11.5858 5.25 12 5.25Z"
+            ></path>
+        </svg>
+      </div>
+
+      <div class="d_our-advantages">
+        <h3>
+          After our trained technician diagnoses the problem, customer recieves
+          clear and detailed estimate for the cost of the repair before any work
+          begins.
+        </h3>
+      </div>
+    </div>
+
+  </div>
+
 </div>
