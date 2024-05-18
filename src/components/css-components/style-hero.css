@@ -40,7 +40,6 @@ textarea {
 
 
 .place-items-center {
-    max-width: 1160px;
     width: 100%;
     /* padding: 2% 5%; */
     padding: 0;
@@ -48,20 +47,21 @@ textarea {
 }
 
 .full-form-1 {
-    max-width: 1200px;
     width: 100%;
-    border: solid 3px #919191;
     display: grid;
     grid-template-columns: 1fr;
-    margin: 2% 5%;
+    margin: 2% 0;
+    padding: 0 10%;
     position: relative;
     justify-self: center;
 }
 
 .general-form-foto {
+    max-width: 1160px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border: solid 3px #919191;
 }
 
 
@@ -173,6 +173,20 @@ textarea {
 }
 
 
+@media (max-width:1440px) {
+.full-form-1 {
+        margin: 2% 0;
+        padding: 0 5%;
+    }
+}
+
+@media (max-width:1150px) {
+    .full-form-1 {
+        margin: 2% 0;
+        padding: 0 2%;
+    }
+}
+
 @media (max-width:1024px) {
     .general-form-foto {
         grid-template-columns: 1fr;
@@ -189,7 +203,7 @@ textarea {
 
     .full-form-1 {
         width: auto;
-        margin: 2% 5%;
+        margin: 2% 2%;
     }
 
     .foto-form img {
