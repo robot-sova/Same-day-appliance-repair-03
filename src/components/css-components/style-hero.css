@@ -239,35 +239,6 @@ textarea {
 
 
 /* слайдер  */
-/* .slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-}
-
-.slides {
-    display: flex;
-    height: 100%;
-    transition: transform 1s ease;
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.slide img {
-    width: 100%;
-    display: block;
-}
-
-.no-transition {
-    transition: none !important;
-} */
-
-/* слайдер  */
-
 
 .slider {
     position: relative;
@@ -295,3 +266,11 @@ textarea {
 .no-transition {
     transition: none !important;
 }
+
+/* слайдер  */
+
+
+
+
+
+

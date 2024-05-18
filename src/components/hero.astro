@@ -7,58 +7,7 @@ import { Icon } from "astro-icon";
 import "components/css-components/style-hero.css";
 ---
 
-<!-- слайдер --><!-- <script defer>
-  document.addEventListener("DOMContentLoaded", () => {
-    const slides = document.querySelector(".slides");
-    const slide = document.querySelectorAll(".slide");
-    const totalSlides = slide.length;
-
-    const firstClone = slide[0].cloneNode(true);
-    const lastClone = slide[totalSlides - 1].cloneNode(true);
-
-    firstClone.id = "first-clone";
-    lastClone.id = "last-clone";
-
-    slides.appendChild(firstClone);
-    slides.insertBefore(lastClone, slide[0]);
-
-    const allSlides = document.querySelectorAll(".slide");
-    const totalSlidesWithClones = allSlides.length;
-    let currentIndex = 1;
-
-    function goToSlide(index) {
-      slides.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    function nextSlide() {
-      currentIndex++;
-      slides.style.transition = "transform 1s ease";
-      goToSlide(currentIndex);
-    }
-
-    function resetSlider() {
-      if (currentIndex === totalSlidesWithClones - 1) {
-        slides.style.transition = "none";
-        currentIndex = 1;
-        goToSlide(currentIndex);
-      } else if (currentIndex === 0) {
-        slides.style.transition = "none";
-        currentIndex = totalSlides;
-        goToSlide(currentIndex);
-      }
-    }
-
-    slides.addEventListener("transitionend", resetSlider);
-
-    setInterval(nextSlide, 5000);
-
-    slides.style.transition = "none";
-    goToSlide(currentIndex);
-    setTimeout(() => {
-      slides.style.transition = "transform 1s ease";
-    }, 20);
-  });
-</script> -->
+<!-- слайдер -->
 <script defer>
   document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelector(".slides");
@@ -102,7 +51,7 @@ import "components/css-components/style-hero.css";
     }
 
     function startSlider() {
-      interval = setInterval(nextSlide, 5000);
+      interval = setInterval(nextSlide, 6000);
     }
 
     function stopSlider() {
