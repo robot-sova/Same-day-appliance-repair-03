@@ -28,10 +28,6 @@ textarea {
     display: grid;
 }
 
-.full-index-1920 h1 {
-    margin: 0.5% 0 0 0;
-    text-shadow: 2.3px 2.3px 3.7px rgb(21 21 21);
-}
 
 .animate-charcter {
     font-size: clamp(35px, 8vw, 60px);
@@ -176,8 +172,8 @@ textarea {
 
 @media (max-width:1440px) {
 .full-form-1 {
-        margin: 2% 0;
-        padding: 0 5%;
+        margin: 0% 0 0 0;
+        padding: 1% 2% 3% 2%;
     }
 }
 
@@ -276,6 +272,7 @@ textarea {
 .slide img {
     width: 100%;
     display: block;
+    content-visibility: visible !important;
 }
 
 .no-transition {

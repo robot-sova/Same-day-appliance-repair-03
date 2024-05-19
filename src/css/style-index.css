@@ -28,13 +28,15 @@ h2 {
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
-    display: grid;
+    /* display: grid; */
 
 }
 
 .full-index-1920 h1 {
     text-align: center;
     width: 100%;
+    margin: 0% 0 0 0;
+    text-shadow: 2.3px 2.3px 3.7px rgb(21 21 21);
 }
 
 .animate-charcter {
@@ -76,19 +78,20 @@ h2 {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 2% 3% 4% 3%;
+    padding: 2% 3% 2% 3%;
 }
 
 .header-machinery {
     text-align: center;
     margin: 0 0 20px 0;
 }
+
 .full-conteiner-machinery {
     width: 100%;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    grid-gap: 1.5em;
 }
 
 
@@ -98,8 +101,13 @@ h2 {
     justify-self: center;
     border-radius: 7px;
     padding: 10px 8px;
-    width: 260px;
+    width: 185px;
     grid-gap: 0.8em;
+    transition: 0.25s;
+}
+
+.content-machinery:hover {
+    box-shadow: 0px 0px 8px 3px rgba(135, 135, 135, 0.2);
 }
 
 .content-machinery-f-d {
@@ -108,7 +116,7 @@ h2 {
     width: 100%;
 }
 
-.content-machinery-f-d a{
+.content-machinery-f-d a {
     display: grid;
     justify-self: center;
 }
@@ -134,6 +142,7 @@ h2 {
     width: 100%;
     display: grid;
     min-height: 50px;
+    margin-top: 7px;
 }
 
 .d-content-machinery p {
@@ -151,7 +160,7 @@ h2 {
     display: grid;
     justify-self: center;
     align-self: center;
-    width: 70%;
+    width: 80%;
     background-color: #000;
     border: solid 1.5px #000;
     border-radius: 5px;
@@ -170,7 +179,7 @@ h2 {
     font-size: 22px;
     font-weight: 500;
     color: #fff;
-    padding: 6px 33px;
+    padding: 6% 13%;
     text-shadow: 1.2px 1.2px 2px black;
     white-space: nowrap;
 }

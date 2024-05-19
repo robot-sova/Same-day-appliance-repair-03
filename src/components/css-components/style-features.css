@@ -11,7 +11,7 @@ h2 {
     display: grid;
     width: 100%;
     max-width: 1920px;
-    padding: 2% 10%;
+    padding: 1% 10%;
 }
 
 .heder-our-advantages {
@@ -111,7 +111,7 @@ h2 {
 
     .content-our-advantages {
         width: 100%;
-        max-width: 350px;
+        max-width: 310px;
         justify-self: center;
     }
 
