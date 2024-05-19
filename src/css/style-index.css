@@ -224,11 +224,6 @@ h2 {
         display: none;
     }
 
-
-
-
-
-
     .full-commercial-machinery-1920 {
         padding: 3% 2%;
     }
@@ -263,6 +258,10 @@ h2 {
         font-size: 18px;
         line-height: 22px;
 
+    }
+
+    .finish-index {
+        padding: 1% 3%;
     }
 }
 
