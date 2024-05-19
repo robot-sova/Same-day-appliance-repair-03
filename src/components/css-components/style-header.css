@@ -63,12 +63,18 @@ html {
     background-color: #000;
 }
 
-.reviews p {
+.reviews-header p {
     max-width: 1920px;
     margin: 0 auto;
     color: #fff;
     padding: 0px 0px 7px 0px;
 }
+
+.reviews-header a {
+color: #fff;
+}
+
+
 
 .relative span,
 .py-2 span {
