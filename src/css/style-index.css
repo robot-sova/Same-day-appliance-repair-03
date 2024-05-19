@@ -189,6 +189,35 @@ h2 {
 }
 
 
+
+
+.finish-index {
+    width: 100%;
+    max-width: 1920px;
+    padding: 1% 10%;
+}
+
+.finish-index h2 {
+    text-align: center;
+    margin: 3% 0 0 0;
+}
+
+.finish-index h3 {
+    font-weight: 700;
+    font-size: clamp(18px, 4vw, 20px) !important;
+    text-shadow: 0.5px 0.5px 0.8px #8f9499;
+    margin-top: 20px;
+}
+
+.finish-index p {
+    margin-bottom: 7px;
+}
+
+
+
+
+
+
 @media (max-width:768px) {
 
     .six-col-grid {
