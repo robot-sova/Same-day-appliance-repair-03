@@ -81,6 +81,10 @@ h2 {
     padding: 2% 3% 2% 3%;
 }
 
+.first-element-without-indentation {
+    padding: 0% 3% 2% 3%;
+}
+
 .header-machinery {
     text-align: center;
     margin: 0 0 20px 0;
