@@ -104,6 +104,7 @@ html {
     text-align: center;
     width: 100%;
     white-space: nowrap;
+    color: #fff;
 }
 
 .gap-4 a:hover {
@@ -186,6 +187,7 @@ button.hcp-button:hover {
     white-space: nowrap;
     font-weight: 700 !important;
     border-radius: 7px !important;
+    color: #fff;
 }
 
 

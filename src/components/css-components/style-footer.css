@@ -12,54 +12,47 @@
 
 
 
-/* быстрый звонок анимация  */
-/*   
-#phone-container {
-    position: fixed;
-    cursor: pointer;
-    bottom: 25px;
-    right: 7px;
-    width: 50px;
-    animation: phoneAnimation 2.5s ease-in-out infinite alternate;
-    z-index: 1201;
-  }
-  
-  #phone-content {
-    width: 100%;
-    opacity: 0.9;
-  }
-  
-  #phone-container-svg {
-    stroke: #000;
-    stroke-width: 13px;
-    filter: drop-shadow(2px 2px 0.5px #848484);
-}
-  
-  #phone-container:hover #phone-content {
-    opacity: 1;
-  }
-  
-  @keyframes phoneAnimation {
-    0% {
-      transform: rotate(0deg); 
-    }
-    50% {
-      transform: rotate(20deg); 
-    }
-    100% {
-      transform: rotate(0deg); 
-    }
-  }
-  
-  
-  @media (max-width:1024px) {
-    #phone-container {
-      width: 45px;
-    }
-  } */
-  
-  /* быстрый звонок анимация  */
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

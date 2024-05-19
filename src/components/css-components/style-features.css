@@ -65,14 +65,15 @@ h2 {
     fill: #ca0913;
 }
 
-.d_our-advantages {}
-
+/* .d_our-advantages {}
+ */
 
 .d_our-advantages h3 {
     margin: 0;
     font-weight: 500;
     font-size: clamp(16px, 3vw, 18px) !important;
     text-shadow: 0.4px 0.4px 0.7px #5c5c5c;
+    color: #000;
 }
 
 .d_our-advantages {
