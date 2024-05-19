@@ -8,16 +8,14 @@ import Layout from "@layouts/Layout.astro";
 import "components/css-components/style-header.css";
 
 const menuitems = [
+
   {
-    title: "Services",
+    title: "HOUSEHOLD",
     path: "/services/commercial-and-household",
     children: [
       { title: "Refrigerator Repair", path: "/services/refrigerator-repair" },
       { title: "Freezer Repair", path: "/services/freezer-repair" },
-      {
-        title: "Washing Machine Repair",
-        path: "/services/washing-machine-repair",
-      },
+      {title: "Washing Machine Repair", path: "/services/washing-machine-repair"},
       { title: "Dryer Repair", path: "/services/dryer-repair" },
       { title: "Stove/Range Repair", path: "/services/stove-repair" },
       { title: "Dishwasher Repair", path: "/services/dishwasher-repair" },
@@ -27,7 +25,14 @@ const menuitems = [
       { title: "Range Hood Repair", path: "/services/range-hood-repair" },
       { title: "Fireplace Repair", path: "/services/fireplace-repair" },
       { title: "BBQ Grill Repair", path: "/services/bbq-grill-repair" },
-      { title: "____________________" },
+      ],
+  },
+
+
+      {
+    title: "COMMERCIAL",
+    path: "/services/commercial-and-household",
+    children: [
       {
         title: "Commercial Refrigerator Repair",
         path: "/services/commercial-refrigerator-repair-los-angeles",
@@ -46,6 +51,31 @@ const menuitems = [
       },
     ],
   },
+
+  {
+    title: "HVAC",
+    path: "/services/commercial-and-household",
+    children: [
+      {
+        title: "Commercial Refrigerator Repair",
+        path: "/services/commercial-refrigerator-repair-los-angeles",
+      },
+      {
+        title: "Commercial Freezer Repair",
+        path: "/services/commercial-freezer-repair",
+      },
+      {
+        title: "Commercial Dishwasher Repair",
+        path: "/services/commercial-dishwasher-repair",
+      },
+      {
+        title: "Commercial Dryer Repair",
+        path: "/services/commercial-dryer-repair",
+      },
+    ],
+  },
+
+
   {
     title: "Service Areas",
     path: "/areas/los-angeles-and-surrounding-areas",
