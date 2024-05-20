@@ -238,7 +238,7 @@ button.hcp-button:hover {
 }
 
 .header-licenses-foto {
-    display: flex;
+    display: none;
 }
 
 .header-licenses-foto img {
