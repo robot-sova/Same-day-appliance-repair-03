@@ -225,6 +225,11 @@ h2 {
         display: none;
     }
 
+    .animate-charcter {
+        font-size: clamp(48px, 8vw, 60px) !important;
+        line-height: clamp(56px, 8vh, 60px) !important;
+    }
+
     .full-commercial-machinery-1920 {
         padding: 3% 2%;
     }
