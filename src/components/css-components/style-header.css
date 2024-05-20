@@ -21,7 +21,7 @@ body {
     margin: 0 auto;
     position: relative;
     top: 0;
-    margin-top: 258px;
+    margin-top: 126px;
 }
 
 .max-w-screen-xl {
@@ -68,21 +68,6 @@ body {
     justify-content: space-between;
 }
 
-.reviews {
-    width: 100%;
-    background-color: #000;
-}
-
-.reviews-header p {
-    max-width: 1920px;
-    margin: 0 auto;
-    color: #fff;
-    padding: 0px 0px 0px 0px;
-}
-
-.reviews-header a {
-    color: #fff;
-}
 
 
 
@@ -123,6 +108,7 @@ body {
     white-space: nowrap;
     color: #fff;
     transition: 0.25s;
+    text-shadow: 1.2px 1.2px 2px black
 }
 
 .gap-4 a:hover {
@@ -132,6 +118,8 @@ body {
 .header-bootun {
     display: flex;
     align-self: center;
+    margin: 0 6px;
+    grid-gap: 0.5em
 }
 
 .hover\:bg-gray-200 {
@@ -170,7 +158,7 @@ button.hcp-button {
     width: 100%;
     font-weight: 700 !important;
     line-height: 1.14;
-    padding: 12px 24px;
+    padding: 10px 24px !important;
     box-shadow: none;
     border-radius: 7px !important;
     color: #fff;
@@ -191,9 +179,9 @@ button.hcp-button {
     /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
     overflow-x: hidden !important;
     justify-content: center;
-    margin-left: 10px !important;
     text-shadow: 1.2px 1.2px 2px black !important;
     transition: 0.25s !important;
+    white-space: nowrap !important;
 }
 
 button.hcp-button:hover {
@@ -217,7 +205,7 @@ button.hcp-button:hover {
 .call-header a {
     width: 100%;
     display: grid;
-    padding: 9px 4px;
+    padding: 10px 4px;
     white-space: nowrap;
     font-weight: 700 !important;
     border-radius: 7px !important;
@@ -233,7 +221,7 @@ button.hcp-button:hover {
 
 
 .lg\:gap-3 {
-    gap: 0.55rem;
+    gap: 0.20rem;
     align-self: center;
 }
 
@@ -247,10 +235,58 @@ button.hcp-button:hover {
 
 .logo-header img {
     max-width: 244px;
+    transition: 0.25s;
 }
 
 .w-full {
     width: auto;
+    grid-gap: 0.4em;
+}
+
+#astronav-menu svg {
+    width: 34px;
+    height: 34px;
+}
+
+.header-menu-content li {
+    align-content: center;
+}
+
+.astronav-dropdown svg {
+    width: 100%;
+    min-width: 15px;
+    max-width: 15px;
+}
+
+.w-3 {
+    width: 15px;
+    height: 20px;
+}
+
+.header-bootun-1024 {
+    display: none;
+}
+
+.call-header-1024 a {
+    color: #fff;
+    background-color: #ca0913;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    white-space: nowrap;
+    color: #fff;
+    transition: 0.25s;
+    border-radius: 7px;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: 700 !important;
+    text-shadow: 1.2px 1.2px 2px black !important;
+}
+
+.header-bootun-1024:hover a {
+    color: #000;
+    box-shadow: inset 0px 4px 6px 1px rgb(0 0 0 / 25%), 0px 6px 7px 0px rgb(0 0 0 / 11%), 0px 3px 11px 4px rgb(0 0 0 / 25%) !important;
 }
 
 
@@ -262,11 +298,53 @@ button.hcp-button:hover {
 
 
 
+@media (max-width:1440px) {
+    .header-bootun {
+        display: grid;
+    }
 
 
+}
+
+
+
+
+@media (max-width:1180px) {
+    body {
+        margin-top: 112px;
+    }
+
+
+    .logo-header img {
+        max-width: 214px;
+    }
+
+    .w-full {
+        grid-gap: 0.2em;
+    }
+
+    .call-header a {
+        font-size: 14px;
+    }
+
+    button.hcp-button {
+        padding: 10px 10px !important;
+        font-size: 15px;
+    }
+
+}
 
 
 @media (max-width:1024px) {
+
+    .block {
+        display: flex;
+    }
+
+    .header-bootun-1024 {
+        display: flex;
+        align-self: center;
+    }
 
 
     .mt-3 {
@@ -274,7 +352,7 @@ button.hcp-button:hover {
     }
 
     body {
-        margin-top: 117px;
+        margin-top: 84px;
     }
 
     .logo-header img {
@@ -285,7 +363,7 @@ button.hcp-button:hover {
         margin: 0 !important;
     }
 
-   
+
 
 }
 
@@ -298,28 +376,33 @@ button.hcp-button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:530px) {
-    body {
-        margin-top: 136px;
+@media (max-width:400px) {
+    .call-header-1024 a {
+        width: 100%;
+        max-width: 300px;
+        white-space: wrap;
+        padding: 2% 2%;
+        font-size: 16px;
+        justify-self: center;
+        display: grid;
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:400px) {
     .hover\:bg-gray-200 {

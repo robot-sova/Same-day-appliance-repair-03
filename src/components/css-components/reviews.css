@@ -1,0 +1,21 @@
+.reviews {
+    width: 100%;
+    background-color: #000;
+}
+
+.reviews-header p {
+    max-width: 1920px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 15px 10px 15px 10px;
+    cursor: pointer;
+}
+
+.reviews-header a {
+    color: #fff;
+    transition: 0.25s;
+}
+
+.reviews-header:hover a{
+    color: #ca0913 !important;
+}

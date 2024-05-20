@@ -117,24 +117,57 @@ const menuitems = [
         <div class="inside_header-full">
           <Astronav>
             <div class="flex w-full lg:w-auto items-center justify-between">
-              <a href="/" class="text-lg"
-                ><span
-                  class="font-bold text-slate-800 logo-header"
-                  style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
-                  ><img
-                    src="images/same-day-appalince-repair-logo.webp"
-                    title="Same Day Appliance Repair Services"
-                    width="244"
-                    height="106"
-                  /></span
-                ><span class="text-slate-500"></span>
-              </a>
+              <!-- картинка лого -->
+              <div class="header-logo-main">
+                <a href="/" class="text-lg"
+                  ><span
+                    class="font-bold text-slate-800 logo-header"
+                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
+                    ><img
+                      src="images/same-day-appalince-repair-logo.webp"
+                      title="Same Day Appliance Repair Services"
+                      width="244"
+                      height="106"
+                    /></span
+                  ><span class="text-slate-500"></span>
+                </a>
+              </div>
+
+              <div class="hidden lg:flex items-center gap-4">
+                <div class="header-bootun">
+                  <div class="call-header">
+                    <a href="tel:+14243250520">(424) 325-0520</a>
+                  </div>
+
+                  <!--Start of Housecallpro Online booking button-->
+                  <button
+                    data-token="9e68ce292ba246dbba0fe928b98791f7"
+                    data-orgname="Same-Day-Appliance-Repair"
+                    class="hcp-button"
+                    onClick="HCPWidget.openModal()">
+                    BOOK NOW!
+                  </button>
+                  <script
+                    async
+                    src="https://online-booking.housecallpro.com/script.js?token=9e68ce292ba246dbba0fe928b98791f7&orgName=Same-Day-Appliance-Repair"
+                  ></script>
+                </div>
+              </div>
+
+              
+              <!-- кнопка меню -->
               <div class="block lg:hidden">
+                <div class="header-bootun-1024">
+                  <div class="call-header-1024">
+                    <a href="tel:+14243250520">(424) 325-0520</a>
+                  </div>
+                </div>
                 <MenuIcon class="w-4 h-4 text-gray-800" />
               </div>
             </div>
             <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-              <ul class="flex flex-col lg:flex-row lg:gap-3">
+              <ul
+                class="flex flex-col lg:flex-row lg:gap-3 header-menu-content">
                 {
                   menuitems.map((item, index) => (
                     <>
@@ -188,15 +221,14 @@ const menuitems = [
             </MenuItems>
           </Astronav>
         </div>
-        <!--Red Buttons in the black header on Desktop -->
-        <div>
-          <div class="hidden lg:flex items-center gap-4">
+
+        <!-- <div class="hidden lg:flex items-center gap-4">
             <div class="header-bootun">
               <div class="call-header">
-                <a href="tel:+14243250520">CALL US: (424) 325-0520</a>
+                <a href="tel:+14243250520">(424) 325-0520</a>
               </div>
 
-              <!--Start of Housecallpro Online booking button-->
+            
               <button
                 data-token="9e68ce292ba246dbba0fe928b98791f7"
                 data-orgname="Same-Day-Appliance-Repair"
@@ -209,67 +241,55 @@ const menuitems = [
                 src="https://online-booking.housecallpro.com/script.js?token=9e68ce292ba246dbba0fe928b98791f7&orgName=Same-Day-Appliance-Repair"
               ></script>
             </div>
-
-            <div class="header-licenses-foto">
-              <!--End of Housecallpro Online booking button-->
-              <div>
-                <!-- src="images/same-day-appliance-repair-licensed.webp" -->
-                <img
-                  src="../images/same-day-appliance-repair-licensed.webp"
-                  width="130"
-                  height="90"
-                />
-              </div>
-              <div>
-                <img
-                  src="images/same-day-appliance-repair-insured.webp"
-                  width="112"
-                  height="90"
-                />
-              </div>
-              <div>
-                <img
-                  src="images/same-day-appliance-repair-epa-certified.webp"
-                  width="165"
-                  height="90"
-                />
-              </div>
-              <div>
-                <img
-                  src="images/same-day-appliance-repair-osha-trained.webp"
-                  width="98"
-                  height="90"
-                />
-              </div>
-              <div>
-                <img
-                  style="border-radius:45px;"
-                  src="images/same-day-applaince-repair-nate-certified.webp"
-                  width="90"
-                  height="90"
-                />
-              </div>
-              <div>
-                <img
-                  style="border-radius:10px;"
-                  src="images/same-day-appliance-repair-background-checked.webp"
-                  width="100"
-                  height="90"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--End Red Buttons in the black header on Desktop -->
-        <div class="reviews reviews-header">
-          <p>
-            <a href="#reviews"
-              ><strong style="font-size: 17px"> Reviews ⭐⭐⭐⭐⭐ 5.0</strong>
-              (Google Rating)<a><a href="#reviews">(Thumbtack Rating)</a> </a>
-            </a>
-          </p>
-        </div>
+          </div> -->
       </div>
     </header>
   </Container>
 </Layout>
+
+<!-- <div class="header-licenses-foto">
+<div>
+  <img
+    src="../images/same-day-appliance-repair-licensed.webp"
+    width="130"
+    height="90"
+  />
+</div>
+<div>
+  <img
+    src="images/same-day-appliance-repair-insured.webp"
+    width="112"
+    height="90"
+  />
+</div>
+<div>
+  <img
+    src="images/same-day-appliance-repair-epa-certified.webp"
+    width="165"
+    height="90"
+  />
+</div>
+<div>
+  <img
+    src="images/same-day-appliance-repair-osha-trained.webp"
+    width="98"
+    height="90"
+  />
+</div>
+<div>
+  <img
+    style="border-radius:45px;"
+    src="images/same-day-applaince-repair-nate-certified.webp"
+    width="90"
+    height="90"
+  />
+</div>
+<div>
+  <img
+    style="border-radius:10px;"
+    src="images/same-day-appliance-repair-background-checked.webp"
+    width="100"
+    height="90"
+  />
+</div>
+</div> -->
