@@ -397,6 +397,7 @@ main {
 
 .desk_job-prices a:hover {
   text-decoration: underline;
+  color: #767676;
 }
 
 .money_job-prices {
