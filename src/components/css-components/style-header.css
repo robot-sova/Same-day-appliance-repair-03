@@ -10,8 +10,18 @@
 }
 
 html {
+    width: 100%;
     scroll-behavior: auto;
     scroll-behavior: smooth;
+}
+
+body {
+    /* max-width: 1920px; */
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    margin-top: 258px;
 }
 
 .max-w-screen-xl {
@@ -67,11 +77,11 @@ html {
     max-width: 1920px;
     margin: 0 auto;
     color: #fff;
-    padding: 0px 0px 7px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .reviews-header a {
-color: #fff;
+    color: #fff;
 }
 
 
@@ -103,6 +113,7 @@ color: #fff;
 
 .gap-4 {
     color: #fff;
+    justify-content: space-between;
 }
 
 .gap-4 a {
@@ -111,18 +122,26 @@ color: #fff;
     width: 100%;
     white-space: nowrap;
     color: #fff;
+    transition: 0.25s;
 }
 
 .gap-4 a:hover {
     color: rgb(0, 0, 0);
 }
 
+.header-bootun {
+    display: flex;
+    align-self: center;
+}
+
 .hover\:bg-gray-200 {
     font-weight: 700 !important;
+    transition: 0.25s;
 }
 
 .hover\:bg-gray-200:hover {
     background-color: #ca0913;
+    box-shadow: inset 0px 4px 6px 1px rgb(0 0 0 / 25%), 0px 6px 7px 0px rgb(0 0 0 / 11%), 0px 3px 11px 4px rgb(0 0 0 / 25%) !important;
 }
 
 .text-gray-800 {
@@ -147,7 +166,7 @@ button.hcp-button:hover {
 
 button.hcp-button {
     overflow-x: hidden !important;
-    max-width: 100px;
+    max-width: 148px;
     width: 100%;
     font-weight: 700 !important;
     line-height: 1.14;
@@ -160,7 +179,6 @@ button.hcp-button {
     position: relative;
     border: 0;
     cursor: pointer;
-    margin: 0;
     display: inline-flex;
     outline: 0;
     text-decoration: none;
@@ -170,20 +188,30 @@ button.hcp-button {
     text-indent: 0px;
     text-shadow: none;
     align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
     overflow-x: hidden !important;
     justify-content: center;
+    margin-left: 10px !important;
+    text-shadow: 1.2px 1.2px 2px black !important;
+    transition: 0.25s !important;
 }
 
 button.hcp-button:hover {
     color: #000;
+    box-shadow: inset 0px 4px 6px 1px rgb(0 0 0 / 25%), 0px 6px 7px 0px rgb(0 0 0 / 11%), 0px 3px 11px 4px rgb(0 0 0 / 25%) !important;
 }
 
 .call-header {
     width: 214px;
     height: 100%;
-    display: block;
+    /* display: block; */
+    display: contents;
     border-radius: 7px;
+    transition: 0.25s !important;
+}
+
+.call-header a:hover {
+    box-shadow: inset 0px 4px 6px 1px rgb(0 0 0 / 25%), 0px 6px 7px 0px rgb(0 0 0 / 11%), 0px 3px 11px 4px rgb(0 0 0 / 25%) !important;
 }
 
 .call-header a {
@@ -194,6 +222,35 @@ button.hcp-button:hover {
     font-weight: 700 !important;
     border-radius: 7px !important;
     color: #fff;
+    text-shadow: 1.2px 1.2px 2px black !important;
+    align-self: center;
+}
+
+
+
+
+
+
+
+.lg\:gap-3 {
+    gap: 0.55rem;
+    align-self: center;
+}
+
+.header-licenses-foto {
+    display: flex;
+}
+
+.header-licenses-foto img {
+    margin: 3px 5px;
+}
+
+.logo-header img {
+    max-width: 244px;
+}
+
+.w-full {
+    width: auto;
 }
 
 
@@ -208,55 +265,58 @@ button.hcp-button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-html {
-    width: 100%;
-}
-
-body {
-    /* max-width: 1920px; */
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    top: 0;
-    margin-top: 100px;
-}
-
-@media (max-width:1150px) {
-
-    body {
-        margin-top: 126px;
-    }
-
-}
 
 @media (max-width:1024px) {
 
 
-        .mt-3 {
-            margin: 10px 0;
-        }
-
-    body {
-        margin-top: 90px;
+    .mt-3 {
+        margin: 10px 0;
     }
 
+    body {
+        margin-top: 117px;
+    }
+
+    .logo-header img {
+        max-width: 150px;
+    }
+
+    button.hcp-button {
+        margin: 0 !important;
+    }
+
+   
+
+}
+
+
+@media (max-width:1023px) {
     .inside_header-full {
         display: block;
     }
 }
 
-@media (max-width:533px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:530px) {
     body {
-        margin-top: 110px;
+        margin-top: 136px;
 
     }
 }
