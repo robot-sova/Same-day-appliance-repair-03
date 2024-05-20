@@ -11,6 +11,10 @@
     cursor: pointer;
 }
 
+.reviews-header {
+    margin-top: -3px;
+}
+
 .reviews-header a {
     color: #fff;
     transition: 0.25s;

@@ -32,6 +32,8 @@ body {
 
 }
 
+
+
 .inside-reviews_header-full {
     max-width: 1920px;
     width: 100%;
@@ -340,6 +342,13 @@ button.hcp-button:hover {
 
 
 @media (max-width:1024px) {
+
+    .w-full {
+        grid-gap: 0.2em;
+        max-height: calc(100vh - 86px);
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 
     .block {
         display: flex;
