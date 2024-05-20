@@ -6,9 +6,11 @@ import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon";
 import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
 ---
 
 <Navbar />
+<Reviews />
 <Layout title="Contact">
   <Container>
     <Sectionhead>
@@ -44,6 +46,6 @@ import Navbar from "@components/navbar/navbar.astro";
         <Contactform />
       </div>
     </div>
-    <Cta />
   </Container>
 </Layout>
+<Cta />

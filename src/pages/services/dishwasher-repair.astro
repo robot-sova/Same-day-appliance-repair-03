@@ -7,11 +7,13 @@ import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
+<Reviews />
 <Layout title="Same Day Dishwasher Repair">
   <Container>
     <main>
@@ -182,7 +184,7 @@ import "css/service/style_services.css";
         for our customers, ensuring they understand the benefits and scope of
         our dishwasher repair services in Los Angeles."
       </p>
-      <Cta />
     </main>
   </Container>
 </Layout>
+<Cta />

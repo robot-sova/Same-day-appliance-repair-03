@@ -263,6 +263,10 @@ button.hcp-button:hover {
     height: 20px;
 }
 
+.lg\:bg-white {
+    white-space: nowrap;
+}
+
 .header-bootun-1024 {
     display: none;
 }

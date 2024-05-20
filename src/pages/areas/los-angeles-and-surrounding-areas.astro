@@ -7,11 +7,13 @@ import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
 
 import "css/service-areas/style-service-areas.css";
 ---
 
 <Navbar />
+<Reviews />
 <Layout title="Same Day Appliance Repair Los Angeles: (424) 325-0520">
   <Container>
     <main>
@@ -455,7 +457,8 @@ import "css/service-areas/style-service-areas.css";
               <a
                 title="Commercial Refrigerator Repair Los Angeles"
                 href="/services/commercial-refrigerator-repair-los-angeles"
-                >Refrigerator Repair</a>
+                >Refrigerator Repair</a
+              >
             </p>
             <a
               class="grid-a"
@@ -1103,6 +1106,6 @@ import "css/service-areas/style-service-areas.css";
         fee, meaning you'll only pay for the actual repair work.
       </p>
     </main>
-    <Cta />
   </Container>
 </Layout>
+<Cta />

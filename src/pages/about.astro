@@ -4,7 +4,9 @@ import { Picture } from "astro:assets";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import Cta from "@components/cta.astro";
 import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -13,6 +15,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 ---
 
 <Navbar />
+<Reviews />
 <Layout title="About">
   <Container>
     <Sectionhead>
@@ -57,3 +60,4 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
     </div>
   </Container>
 </Layout>
+<Cta />

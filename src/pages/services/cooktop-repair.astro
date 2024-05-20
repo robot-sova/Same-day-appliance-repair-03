@@ -7,11 +7,13 @@ import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
+<Reviews />
 <Layout title="Same Day Cooktop Repair">
   <Container>
     <main>
@@ -63,7 +65,8 @@ import "css/service/style_services.css";
       </div>
       <h2>
         <strong
-          >Why Opt for Our Cooktop Repair Services in Los Angeles, CA</strong>
+          >Why Opt for Our Cooktop Repair Services in Los Angeles, CA</strong
+        >
       </h2><h3><strong>Speedy Same-Day Service</strong></h3><p>
         We understand the inconvenience caused by a malfunctioning cooktop,
         which is why we offer same-day repair services to residents of Los
@@ -214,7 +217,7 @@ import "css/service/style_services.css";
         ensuring our customers understand the comprehensive scope of our
         offerings.
       </p>
-      <Cta />
     </main>
   </Container>
 </Layout>
+<Cta />

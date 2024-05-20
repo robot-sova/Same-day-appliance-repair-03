@@ -7,11 +7,13 @@ import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
+<Reviews />
 <Layout title="Same Day Oven Repair">
   <Container>
     <main>
@@ -141,7 +143,7 @@ import "css/service/style_services.css";
         about our oven repair services in Los Angeles, ensuring you understand
         the benefits and scope of choosing us for your appliance repair needs.
       </p>
-      <Cta />
     </main>
   </Container>
 </Layout>
+<Cta />

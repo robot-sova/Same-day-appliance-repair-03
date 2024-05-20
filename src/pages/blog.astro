@@ -4,7 +4,9 @@ import { Picture } from "astro:assets";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import Cta from "@components/cta.astro";
 import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
 
 // Filter blog entries with 'draft: false' & date before current date
 const publishedBlogEntries = await getCollection("blog", ({ data }) => {
@@ -18,6 +20,7 @@ publishedBlogEntries.sort(function (a, b) {
 ---
 
 <Navbar />
+<Reviews />
 <Layout title="Blog">
   <Container>
     <Sectionhead>
@@ -74,3 +77,4 @@ publishedBlogEntries.sort(function (a, b) {
     </Sectionhead>
   </Container>
 </Layout>
+<Cta />

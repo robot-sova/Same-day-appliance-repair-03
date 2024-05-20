@@ -7,11 +7,13 @@ import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
+<Reviews />
 <Layout title="Same Day Commercial Refrigerator Repair">
   <Container>
     <div class="content">
@@ -214,7 +216,7 @@ import "css/service/style_services.css";
         Contact us today to schedule a repair or to learn more about how we can
         help keep your operations running efficiently.
       </p>
-      <Cta />
     </div>
   </Container>
 </Layout>
+<Cta />

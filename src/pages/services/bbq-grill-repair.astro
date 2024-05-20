@@ -7,11 +7,13 @@ import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
+<Reviews />
 <Layout title="Same Day BBQ Grill Repair">
   <Container>
     <main>
@@ -198,7 +200,7 @@ import "css/service/style_services.css";
         Extend your grill's lifespan and ensure peak performance with our
         maintenance services, including thorough inspections and cleaning.
       </p>
-      <Cta />
     </main>
   </Container>
 </Layout>
+<Cta />

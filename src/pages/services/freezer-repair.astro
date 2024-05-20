@@ -7,11 +7,13 @@ import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
+<Reviews />
 <Layout title="Same Day Freezer Repair">
   <Container>
     <main>
@@ -434,7 +436,8 @@ import "css/service/style_services.css";
           <div class="accordion-title">
             <h3>
               How often Should I do a <strong
-                >Professional Maintenance of My Freezer?</strong>
+                >Professional Maintenance of My Freezer?</strong
+              >
             </h3>
             <span class="arrow">&#9660;</span>
           </div>
@@ -597,7 +600,7 @@ import "css/service/style_services.css";
         </label>
         <!-- Add more accordion items as needed -->
       </div>
-      <Cta />
     </main>
   </Container>
 </Layout>
+<Cta />

@@ -7,11 +7,13 @@ import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
+<Reviews />
 <Layout title="Same Day Refrigerator Repair">
   <Container>
     <div class="content">
@@ -334,7 +336,8 @@ import "css/service/style_services.css";
         hard to beat!
       </p><h3>
         <strong
-          >Comprehensive Parts Selection for Diverse Brands of Refrigerators:</strong>
+          >Comprehensive Parts Selection for Diverse Brands of Refrigerators:</strong
+        >
       </h3><p>
         At our refrigerator repair service in Los Angeles, CA, and surrounding
         areas we understand the importance of using high-quality parts for every
@@ -391,7 +394,7 @@ import "css/service/style_services.css";
           </p>
         </li>
       </ol><p style="text-align: start"></p>
-      <Cta />
     </div>
   </Container>
 </Layout>
+<Cta />

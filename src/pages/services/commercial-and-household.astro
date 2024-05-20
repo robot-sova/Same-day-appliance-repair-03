@@ -6,11 +6,13 @@ import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
+<Reviews />
 <Layout
   title="Commercial And Household Appliance Repair Los Angeles and Surrounding Areas">
   <Container>
@@ -142,7 +144,6 @@ import "css/service/style_services.css";
                                               </p>
                                             </div>
                                           </p>
-                                          <Cta />
                                         </p>
                                       </p>
                                     </p>
@@ -161,6 +162,7 @@ import "css/service/style_services.css";
           </p>
         </div>
       </div>
-    </main></Container
-  ></Layout
->
+    </main>
+  </Container>
+</Layout>
+<Cta />
