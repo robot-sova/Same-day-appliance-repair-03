@@ -309,6 +309,13 @@ main {
   font-size: clamp(16px, 3vw, 20px);
 }
 
+.questions img {
+  max-width: 90%;
+  height: auto;
+  margin:  0 5% 20px 5%;
+  margin-bottom: 20px;
+}
+
 
 /* .questions li::marker {
   unicode-bidi: normal !important;
