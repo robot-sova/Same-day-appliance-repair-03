@@ -312,7 +312,7 @@ main {
 .questions img {
   max-width: 90%;
   height: auto;
-  margin:  0 5% 20px 5%;
+  margin: 0 5% 20px 5%;
   margin-bottom: 20px;
 }
 
@@ -353,6 +353,10 @@ main {
   width: 100%;
 }
 
+#parts-cost-anchor .content_job-prices {
+  min-height: 100px;
+}
+
 .head-prices {
   text-align: center;
   display: grid;
@@ -375,7 +379,7 @@ main {
   justify-content: space-between;
   padding: 0 2%;
   border-radius: 5px;
-  min-height: 120px;
+  min-height: 194px;
 }
 
 .content_job-prices-h-m {
@@ -396,6 +400,7 @@ main {
   text-align: left;
   width: 90%;
   display: grid;
+  align-self: center;
 }
 
 .desk_job-prices a {
@@ -420,7 +425,7 @@ main {
 }
 
 .desk_job-prices p:nth-child(1) {
-  font-size: clamp(22px, 5vw, 24px);
+  font-size: clamp(18px, 5vw, 24px);
   padding: 1% 1% 0% 0%;
 }
 
@@ -764,6 +769,7 @@ main {
 
   .money_job-prices {
     min-width: auto;
+    padding-right: 9px;
   }
 
   .money_job-prices p {
