@@ -681,6 +681,18 @@ main {
         max-width: 50%;
     }
 
+    .first-element-without-indentation {
+        padding: 0% 1% 2% 1%;
+    }
+
+    .full-commercial-machinery-1920 {
+        padding: 2% 1% 2% 1%;
+    }
+
+        .full-commercial-machinery p {
+            margin: 0;
+        }
+
 }
 
 
@@ -701,6 +713,7 @@ main {
         max-width: 1920px !important;
         padding: 0% 3% 0% 3%;
     }
+
 
     .animate-charcter {
         line-height: clamp(30px, 6vh, 60px);
@@ -785,38 +798,9 @@ main {
         margin-bottom: 15px;
     }
 
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:768px) {
-
-    .max-w-screen-xl {
-        width: 100%;
-        max-width: 1920px !important;
-        padding: 0% 3% 0% 3%;
+    .full-commercial-machinery-1920 {
+        padding: 3% 0%;
     }
+
+
 }

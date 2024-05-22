@@ -135,3 +135,43 @@
     text-shadow: 1.2px 1.2px 2px black;
     white-space: nowrap;
 }
+
+
+@media (max-width:768px) {
+
+    .full-commercial-machinery-1920 {
+        padding: 3% 2%;
+    }
+
+    .full-conteiner-machinery {
+        grid-template-columns: repeat(auto-fit, minmax(142px, 1fr));
+        grid-gap: 1em;
+    }
+
+    .content-machinery {
+        padding: 10px 4px;
+        width: 142px;
+        grid-gap: 0.6em;
+    }
+
+    .but-content-machinery {
+        width: 90%;
+    }
+
+    .but-content-machinery a {
+        font-size: 16px;
+        padding: 6% 18%;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    .d-content-machinery {
+        min-height: 66px;
+    }
+
+    .d-content-machinery p {
+        font-size: 18px;
+        line-height: 22px;
+
+    }
+
+}
