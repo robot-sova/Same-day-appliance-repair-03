@@ -359,7 +359,7 @@ main {
 }
 
 #parts-cost-anchor .content_job-prices {
-  min-height: 100px;
+  min-height: 109px;
 }
 
 .head-prices {
@@ -801,7 +801,9 @@ main {
     margin-bottom: 15px;
   }
 
-
+  .questions li:before {
+    top: -10px;
+  }
 
 
 }
