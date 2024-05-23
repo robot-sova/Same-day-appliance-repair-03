@@ -112,7 +112,9 @@ main {
 
 
 
-
+.pricing-policy {
+  grid-template-rows: 1fr;
+}
 
 
 .pricing-policy {
@@ -220,7 +222,10 @@ main {
   font-size: clamp(16px, 4vw, 18px);
 }
 
+.pros_pricing-policy-indent {
+  margin: 3% auto;
 
+}
 
 
 
@@ -553,6 +558,11 @@ main {
 
 .conclusion-description_maintenance:hover svg {
   fill: #ca0913;
+  transition: 0.3s;
+}
+
+.conclusion-description_maintenance:hover .cls-1{
+  stroke: #ca0913;
   transition: 0.3s;
 }
 
