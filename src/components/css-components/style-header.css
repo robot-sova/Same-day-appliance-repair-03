@@ -73,6 +73,10 @@ body {
 }
 
 
+.py-2 {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
 
 
 .relative span,
@@ -86,6 +90,7 @@ body {
 
 .lg\:bg-white {
     background-color: rgb(0 0 0);
+    white-space: nowrap;
 }
 
 .w-3 {
@@ -112,7 +117,8 @@ body {
     white-space: nowrap;
     color: #fff;
     transition: 0.25s;
-    text-shadow: 1.2px 1.2px 2px black
+    text-shadow: 1.2px 1.2px 2px black;
+    border-radius: 7px !important;
 }
 
 .gap-4 a:hover {
@@ -259,9 +265,7 @@ button.hcp-button:hover {
     height: 20px;
 }
 
-.lg\:bg-white {
-    white-space: nowrap;
-}
+
 
 .header-bootun-1024 {
     display: none;
@@ -282,11 +286,16 @@ button.hcp-button:hover {
     font-size: 18px;
     font-weight: 700 !important;
     text-shadow: 1.2px 1.2px 2px black !important;
+
+    /* border: solid 2px #ca0913; */
 }
 
 .header-bootun-1024:hover a {
     color: #000;
     box-shadow: inset 0px 4px 6px 1px rgb(0 0 0 / 25%), 0px 6px 7px 0px rgb(0 0 0 / 11%), 0px 3px 11px 4px rgb(0 0 0 / 25%) !important;
+
+    /* background-color: #000000;
+    border: solid 2px #ca0913; */
 }
 
 
@@ -394,7 +403,7 @@ button.hcp-button:hover {
         font-size: clamp(42px, 8vw, 60px) !important;
         line-height: clamp(56px, 8vh, 60px) !important;
     }
-} 
+}
 
 
 
@@ -425,6 +434,10 @@ button.hcp-button:hover {
         max-width: 75px !important;
         padding: 12px 17px !important;
         justify-content: center !important;
+    }
+
+    .lg\:bg-white {
+        white-space: wrap;
     }
 
 }
