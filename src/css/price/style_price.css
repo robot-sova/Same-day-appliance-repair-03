@@ -325,6 +325,7 @@ main {
 .questions ul {
   padding: 0;
   list-style: none;
+  margin-bottom: 15px;
 }
 
 .questions li {
