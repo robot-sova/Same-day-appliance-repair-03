@@ -334,7 +334,6 @@ main {
   max-width: 92%;
   font-size: clamp(16px, 3vw, 20px);
   margin-top: 5px;
-  display: flex;
   align-items: center;
   padding-left: 25px;
 }
