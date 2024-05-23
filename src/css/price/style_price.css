@@ -339,12 +339,12 @@ main {
 }
 
 .questions li::before {
-  content: '*';
+  content: '•';
   font-size: 30px;
   color: #ca0913;
   position: absolute;
   left: 0px;
-  top: -5px;
+  top: -8px;
 }
 
 /* Часто задаваемые вопросы */
