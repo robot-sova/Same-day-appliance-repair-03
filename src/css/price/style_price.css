@@ -322,7 +322,7 @@ main {
 }
 
 
-/* .questions li::marker {
+.questions li::marker {
   unicode-bidi: normal !important;
   font-variant-numeric: normal !important;
   text-transform: unset;
@@ -338,7 +338,7 @@ main {
   margin-top: 5px !important;
   margin-right: 8px !important;
   align-self: center;
-} */
+}
 
 .questions li {
   font-weight: 500;
@@ -561,7 +561,7 @@ main {
   transition: 0.3s;
 }
 
-.conclusion-description_maintenance:hover .cls-1{
+.conclusion-description_maintenance:hover .cls-1 {
   stroke: #ca0913;
   transition: 0.3s;
 }
