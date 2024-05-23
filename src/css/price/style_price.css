@@ -322,29 +322,29 @@ main {
 }
 
 
-.questions li::marker {
-  unicode-bidi: normal !important;
-  font-variant-numeric: normal !important;
-  text-transform: unset;
-  text-indent: unset !important;
-  text-align: center !important;
-  -moz-text-align-last: unset;
-  text-align-last: center !important;
-
-
-  content: '*';
-  font-size: 28px !important;
-  color: #0f77cc !important;
-  margin-top: 5px !important;
-  margin-right: 8px !important;
-  align-self: center;
+.questions ul {
+  padding: 0;
+  list-style: none;
 }
 
 .questions li {
+  position: relative;
   font-weight: 500;
   max-width: 92%;
   font-size: clamp(16px, 3vw, 20px);
   margin-top: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.questions li::before {
+  content: '*';
+  font-size: 30px;
+  color: #ca0913;
+  position: absolute;
+  left: 0px;
+  top: -5px;
 }
 
 /* Часто задаваемые вопросы */
