@@ -328,6 +328,10 @@ main {
   margin-bottom: 15px;
 }
 
+/* .questions ol {
+  list-style-type: decimal;
+} */
+
 .questions li {
   position: relative;
   font-weight: 500;
