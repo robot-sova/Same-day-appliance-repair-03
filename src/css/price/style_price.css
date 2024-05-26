@@ -337,7 +337,7 @@ main {
 .questions li {
   position: relative;
   font-weight: 500;
-  max-width: 92%;
+  max-width: 100%;
   font-size: clamp(16px, 3vw, 18px);
   margin-top: 5px;
   align-items: center;
