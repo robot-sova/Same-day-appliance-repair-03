@@ -319,8 +319,7 @@ main {
 .questions img {
   max-width: 90%;
   height: auto;
-  margin: 0 5% 20px 5%;
-  margin-bottom: 20px;
+  margin: 2% 1% 20px 1%;
 }
 
 
@@ -811,7 +810,7 @@ main {
 
   .money_job-prices {
     min-width: auto;
-    padding-right: 9px;
+    padding-right: 7px;
   }
 
   .money_job-prices p {
