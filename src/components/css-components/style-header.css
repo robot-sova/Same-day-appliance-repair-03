@@ -395,13 +395,13 @@ button.hcp-button:hover {
 @media (max-width:768px) {
 
     h1 {
-        font-size: clamp(42px, 8vw, 60px) !important;
-        line-height: clamp(56px, 8vh, 60px) !important;
+        font-size: clamp(35px, 6vw, 60px) !important;
+        line-height: clamp(46px, 6vh, 60px) !important;
     }
 
     .animate-charcter {
-        font-size: clamp(42px, 8vw, 60px) !important;
-        line-height: clamp(56px, 8vh, 60px) !important;
+        font-size: clamp(35px, 6vw, 60px) !important;
+        line-height: clamp(46px, 6vh, 60px) !important;
     }
 }
 

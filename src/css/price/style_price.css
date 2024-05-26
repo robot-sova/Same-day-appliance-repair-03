@@ -213,6 +213,7 @@ main {
 .pros_pricing-policy {
   width: 80%;
   margin: 0 auto;
+  padding: 10px 10px;
   border-radius: 5px;
   border: solid 2px #ff2a2a;
   background-color: rgb(231 231 231 / 58%);
@@ -220,6 +221,7 @@ main {
 
 .pros_pricing-policy p {
   font-size: clamp(16px, 4vw, 18px);
+  margin: 0;
 }
 
 .pros_pricing-policy-indent {
@@ -336,7 +338,7 @@ main {
   position: relative;
   font-weight: 500;
   max-width: 92%;
-  font-size: clamp(16px, 3vw, 20px);
+  font-size: clamp(16px, 3vw, 18px);
   margin-top: 5px;
   align-items: center;
   padding-left: 25px;
@@ -348,7 +350,7 @@ main {
   color: #ca0913;
   position: absolute;
   left: 0px;
-  top: -8px;
+  top: -9px;
 }
 
 /* Часто задаваемые вопросы */
@@ -430,7 +432,7 @@ main {
 .money_job-prices p {
   white-space: nowrap;
   width: 100%;
-  font-size: clamp(22px, 5vw, 24px);
+  font-size: clamp(18px, 5vw, 24px);
 }
 
 .desk_job-prices p:nth-child(1) {
@@ -450,6 +452,7 @@ main {
 .pros_job-prices {
   width: 80%;
   margin: 0 auto;
+  padding: 10px 10px;
   margin-top: 3%;
   border-radius: 5px;
   border: solid 2px #ff2a2a;
@@ -540,6 +543,31 @@ main {
   width: 100%;
   margin-bottom: 20px;
   padding: 0 2%;
+}
+
+.description_maintenance ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.description_maintenance li {
+  position: relative;
+  font-weight: 500;
+  max-width: 100%;
+  font-size: clamp(16px, 3vw, 18px);
+  margin-top: 5px;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.description_maintenance li::before {
+  content: '•';
+  font-size: 30px;
+  color: #ca0913;
+  position: absolute;
+  left: 0px;
+  top: -9px;
 }
 
 .head_description_maintenance {
@@ -721,9 +749,9 @@ main {
     padding: 0% 3% 0% 3%;
   }
 
-  .animate-charcter {
+  /* .animate-charcter {
     line-height: clamp(30px, 6vh, 60px);
-  }
+  } */
 
   .head_pricing-policy {
     margin-bottom: 7%;
