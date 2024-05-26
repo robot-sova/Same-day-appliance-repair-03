@@ -431,7 +431,7 @@ main {
 }
 
 .money_job-prices {
-  text-align: center;
+  text-align: left;
   align-self: center;
   min-width: 137px;
 }
@@ -817,6 +817,7 @@ main {
   }
 
   .money_job-prices {
+    text-align: right;
     min-width: auto;
     padding-right: 7px;
   }
