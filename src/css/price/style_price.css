@@ -278,7 +278,7 @@ main {
 }
 
 .fa {
-  width: 96%;
+  width: 95%;
   margin-right: 10px;
 }
 
@@ -310,10 +310,16 @@ main {
   padding: 0% 2%;
 }
 
+.questions b {
+  font-weight: 700;
+  max-width: 100%;
+  font-size: clamp(16px, 3vw, 20px);
+}
+
 .questions p {
   font-weight: 500;
-  max-width: 92%;
-  font-size: clamp(16px, 3vw, 20px);
+  max-width: 100%;
+  font-size: clamp(16px, 3vw, 18px);
 }
 
 .questions img {
@@ -324,6 +330,7 @@ main {
 
 
 .questions ul {
+  width: 100%;
   padding: 0;
   list-style: none;
   margin-bottom: 15px;
@@ -345,13 +352,19 @@ main {
   /* list-style-type:circle !important; */
 }
 
+.questions li b {
+    font-weight: 700;
+    max-width: 100%;
+    font-size: clamp(16px, 3vw, 18px);
+}
+
 .questions li::before {
   content: '•';
   font-size: 30px;
   color: #ca0913;
   position: absolute;
   left: 0px;
-  top: -9px;
+  top: -11px;
 }
 
 .questions li li::before {
@@ -842,7 +855,7 @@ main {
   }
 
   .questions li:before {
-    top: -10px;
+    top: -12px;
   }
 
 
