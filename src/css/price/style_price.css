@@ -329,28 +329,64 @@ main {
 }
 
 
-.questions ul {
-  width: 100%;
-  padding: 0;
-  list-style: none;
-  margin-bottom: 15px;
-}
-
-/* .questions ol {
-  list-style-type: decimal;
-} */
-
-.questions li {
+.questions ul li{
   position: relative;
-  font-weight: 500;
-  max-width: 100%;
-  font-size: clamp(16px, 3vw, 18px);
-  margin-top: 5px;
+  width: 100%;
   align-items: center;
-  padding-left: 25px;
-
-  /* list-style-type:circle !important; */
+  max-width: 100%;
+  padding: 0;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  font-weight: 500;
+  list-style: none;
+  font-size: clamp(16px, 3vw, 18px);
 }
+
+
+
+.questions ul li::before {
+  content: '•';
+  font-size: 30px;
+  color: #ca0913;
+  filter: drop-shadow(0px 0px 0.9px #000);
+  position: absolute;
+  left: 10px;
+  top: -11px;
+}
+
+
+
+
+
+
+.questions ol {
+  counter-reset: item; 
+}
+
+.questions ol li {
+  counter-increment: item;
+  margin-bottom: 15px; 
+  padding-left: 30px;
+  position: relative; 
+}
+
+.questions ol li::before {
+  content: counter(item) "";
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  font-weight: 700;
+  font-size: 20px;
+  color: red;
+  filter: drop-shadow(1.5px 1.5px 0.5px #000);
+}
+
+
+
+
+
+
 
 .questions li b {
     font-weight: 700;
@@ -358,22 +394,15 @@ main {
     font-size: clamp(16px, 3vw, 18px);
 }
 
-.questions li::before {
-  content: '•';
-  font-size: 30px;
-  color: #ca0913;
-  position: absolute;
-  left: 0px;
-  top: -11px;
-}
 
 .questions li li::before {
   font-size: 24px;
-  left: 5px;
+  left: 10px;
   top: -5px;
 }
 
 /* Часто задаваемые вопросы */
+
 
 
 
@@ -860,8 +889,12 @@ main {
 
   .questions li li:before {
     font-size: 24px;
-    left: 5px;
+    left: 10px;
     top: -7px;
+}
+
+.questions ol li::before {
+  top: -5px;
 }
 
 
