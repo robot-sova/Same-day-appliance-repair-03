@@ -590,43 +590,45 @@ main {
   padding: 0% 3% 3% 3%;
 }
 
-.description_maintenance {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 0 2%;
-}
-
 /* .description_maintenance ul {
   padding: 0;
   list-style: none;
   margin-bottom: 10px;
 } */
 
+.description_maintenance {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 2%;
+}
 
+.description_maintenance b {
+  text-shadow: var(--text-shadown-b-h3);
+}
 
-
-
-
-
-
-
-
-
+.description_maintenance li::before {
+  content: '•';
+  font-size: 30px;
+  color: #ca0913;
+  position: absolute;
+  left: 0px;
+  top: -9px;
+}
 
 .description_maintenance ol {
-  counter-reset: item; 
+  counter-reset: item;
 }
 
-.description_maintenance ol li {
+.description_maintenance ol > li {
   counter-increment: item;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
   padding-left: 30px;
-  position: relative; 
+  position: relative;
   font-weight: 500;
-  font-size: clamp(16px,3vw,18px);
+  font-size: clamp(16px, 3vw, 18px);
 }
 
-.description_maintenance ol li::before {
+.description_maintenance ol > li::before {
   content: counter(item) "";
   position: absolute;
   left: 10px;
@@ -637,21 +639,19 @@ main {
   filter: drop-shadow(1.5px 1.5px 0.5px #000);
 }
 
-.description_maintenance ul li{
+.description_maintenance ul {
+  padding-left: 0;
+}
+
+.description_maintenance ul li {
   position: relative;
-  width: 100%;
-  align-items: center;
-  max-width: 100%;
-  padding: 0;
-  padding-left: 30px;
   margin-bottom: 15px;
   margin-top: 5px;
+  padding-left: 30px;
   font-weight: 500;
   list-style: none;
   font-size: clamp(16px, 3vw, 18px);
 }
-
-
 
 .description_maintenance ul li::before {
   content: '•';
@@ -664,23 +664,11 @@ main {
 }
 
 .description_maintenance li {
-  position: relative;
-  font-weight: 500;
   max-width: 100%;
-  font-size: clamp(16px, 3vw, 18px);
-  margin-top: 5px;
   align-items: center;
-  padding-left: 25px;
 }
 
-/* .description_maintenance li::before {
-  content: '•';
-  font-size: 30px;
-  color: #ca0913;
-  position: absolute;
-  left: 0px;
-  top: -9px;
-} */
+
 
 .head_description_maintenance {
   display: flex;
@@ -920,6 +908,10 @@ main {
   .head-maintenance p {
     max-width: 100%;
   }
+
+  .description_maintenance ol > li::before {
+    top: -5px;
+}
 
   .money_job-prices {
     text-align: right;
