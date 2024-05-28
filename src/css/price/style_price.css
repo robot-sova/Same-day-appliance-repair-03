@@ -179,6 +179,7 @@ main {
 
 .icon_pricing-policy svg {
   justify-self: center;
+  filter: drop-shadow(1px 1px 1px #6c6c6c);
 }
 
 .icon_pricing-policy h3 {
@@ -204,6 +205,7 @@ main {
 #cost-svg {
   stroke: #000;
   stroke-width: 5px;
+  filter: drop-shadow(1px 1px 1px #6c6c6c);
 }
 
 .con-inside_pricing-policy:hover #cost-svg {
