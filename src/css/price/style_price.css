@@ -907,6 +907,7 @@ main {
 
   .content_job-prices {
     padding: 3% 0%;
+    min-height: auto;
   }
 
   .desk_job-prices {
