@@ -43,12 +43,12 @@
 }
 
 .button-top-global svg {
-  margin: -1px 3px 0px 3px;
+  margin: -1px 3px 0px 3px ;
 }
 
 .button-top-global p {
-  line-height: 20px;
-  margin: -5px 0 3px 0;
+  line-height: 20px ;
+  margin: -5px 0 3px 0 !important;
   color: #fff;
 }
 
