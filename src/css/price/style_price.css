@@ -339,7 +339,7 @@ main {
 }
 
 
-.questions ul li{
+.questions ul li {
   position: relative;
   width: 100%;
   align-items: center;
@@ -371,16 +371,16 @@ main {
 
 
 .questions ol {
-  counter-reset: item; 
+  counter-reset: item;
 }
 
 .questions ol li {
   counter-increment: item;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
   padding-left: 30px;
-  position: relative; 
+  position: relative;
   font-weight: 500;
-  font-size: clamp(16px,3vw,18px);
+  font-size: clamp(16px, 3vw, 18px);
 }
 
 .questions ol li::before {
@@ -401,9 +401,9 @@ main {
 
 
 .questions li b {
-    font-weight: 700;
-    max-width: 100%;
-    font-size: clamp(16px, 3vw, 18px);
+  font-weight: 700;
+  max-width: 100%;
+  font-size: clamp(16px, 3vw, 18px);
 }
 
 
@@ -424,6 +424,30 @@ main {
 .job-prices {
   width: 100%;
 }
+
+#labor-cost-anchor::before {
+  content: '';
+  display: block;
+  height: 115px;
+  margin-top: -115px;
+}
+
+#parts-cost-anchor::before {
+  content: '';
+  display: block;
+  height: 115px;
+  margin-top: -115px;
+}
+
+#faqs-anchor::before {
+  content: '';
+  display: block;
+  height: 45px;
+  margin-top: -45px;
+}
+
+
+
 
 #parts-cost-anchor .content_job-prices {
   min-height: 109px;
@@ -521,7 +545,7 @@ main {
 }
 
 .pros_job-prices p {
-  font-size: clamp(16px,4vw,18px);
+  font-size: clamp(16px, 4vw, 18px);
   font-weight: 500;
   margin: 0;
 }
@@ -631,7 +655,7 @@ main {
   counter-reset: item;
 }
 
-.description_maintenance ol > li {
+.description_maintenance ol>li {
   counter-increment: item;
   margin-bottom: 15px;
   padding-left: 30px;
@@ -640,7 +664,7 @@ main {
   font-size: clamp(16px, 3vw, 18px);
 }
 
-.description_maintenance ol > li::before {
+.description_maintenance ol>li::before {
   content: counter(item) "";
   position: absolute;
   left: 10px;
@@ -798,6 +822,29 @@ main {
 
 @media (max-width:1024px) {
 
+  #labor-cost-anchor::before {
+    content: '';
+    display: block;
+    height: 70px;
+    margin-top: -70px;
+  }
+
+  #parts-cost-anchor::before {
+    content: '';
+    display: block;
+    height: 70px;
+    margin-top: -70px;
+  }
+
+  #faqs-anchor::before {
+    content: '';
+    display: block;
+    height: 40px;
+    margin-top: -40px;
+  }
+
+
+
   .two-col-grid {
     width: 100%;
     display: grid;
@@ -854,6 +901,29 @@ main {
 
 
 @media (max-width:768px) {
+
+
+  #labor-cost-anchor::before {
+    content: '';
+    display: block;
+    height: 55px;
+    margin-top: -55px;
+  }
+
+  #parts-cost-anchor::before {
+    content: '';
+    display: block;
+    height: 55px;
+    margin-top: -55px;
+  }
+
+  #faqs-anchor::before {
+    content: '';
+    display: block;
+    height: 20px;
+    margin-top: -20px;
+  }
+
 
   .max-w-screen-xl {
     width: 100%;
@@ -922,9 +992,9 @@ main {
     max-width: 100%;
   }
 
-  .description_maintenance ol > li::before {
+  .description_maintenance ol>li::before {
     top: -5px;
-}
+  }
 
   .money_job-prices {
     text-align: right;
@@ -959,11 +1029,11 @@ main {
     font-size: 24px;
     left: 10px;
     top: -7px;
-}
+  }
 
-.questions ol li::before {
-  top: -5px;
-}
+  .questions ol li::before {
+    top: -5px;
+  }
 
 
 }
