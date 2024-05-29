@@ -626,11 +626,7 @@ main {
   padding: 0% 3% 3% 3%;
 }
 
-/* .description_maintenance ul {
-  padding: 0;
-  list-style: none;
-  margin-bottom: 10px;
-} */
+
 
 .description_maintenance {
   width: 100%;
@@ -656,7 +652,6 @@ main {
   position: absolute;
   left: 0px;
   top: -9px;
-
   border-radius: 20%;
   transition: 0.3s ease-in-out;
 }
@@ -701,7 +696,7 @@ main {
 
 .description_maintenance ol li:after {
   position: absolute;
-  border-left: 1.5px dotted #4F5151;
+  border-left: 2px dotted #4F5151;
   width: 2px;
   bottom: 6px;
   content: "";
@@ -709,7 +704,9 @@ main {
   top: 40px;
 }
 
-
+.description_maintenance ol > li:nth-child(-n+9)::after {
+  left: 12px;
+}
 
 
 
