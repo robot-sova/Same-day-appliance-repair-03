@@ -642,6 +642,13 @@ main {
   text-shadow: var(--text-shadown-b-h3);
 }
 
+.description_maintenance li {
+  max-width: 100%;
+  align-items: center;
+  
+  position: relative;
+}
+
 .description_maintenance li::before {
   content: '•';
   font-size: 30px;
@@ -649,7 +656,18 @@ main {
   position: absolute;
   left: 0px;
   top: -9px;
+
+  border-radius: 20%;
+  transition: 0.3s ease-in-out;
 }
+
+.description_maintenance  li:last-child:after {
+  content: none;
+}
+
+
+
+
 
 .description_maintenance ol {
   counter-reset: item;
@@ -658,7 +676,7 @@ main {
 .description_maintenance ol>li {
   counter-increment: item;
   margin-bottom: 15px;
-  padding-left: 30px;
+  padding-left: 35px;
   position: relative;
   font-weight: 500;
   font-size: clamp(16px, 3vw, 18px);
@@ -667,13 +685,36 @@ main {
 .description_maintenance ol>li::before {
   content: counter(item) "";
   position: absolute;
-  left: 10px;
+  left: 5px;
   top: -3px;
   font-weight: 700;
   font-size: 20px;
   color: red;
   filter: drop-shadow(1.5px 1.5px 0.5px #000);
 }
+
+.description_maintenance ol li:hover:before{
+  background:  rgba(0,0,0,.2);
+  box-shadow: 0 0 0 5px rgba(0,0,0,.2);
+}
+
+
+.description_maintenance ol li:after {
+  position: absolute;
+  border-left: 1.5px dotted #4F5151;
+  width: 2px;
+  bottom: 6px;
+  content: "";
+  left: 16px;
+  top: 40px;
+}
+
+
+
+
+
+
+
 
 .description_maintenance ul {
   padding-left: 0;
@@ -699,10 +740,16 @@ main {
   top: -11px;
 }
 
-.description_maintenance li {
-  max-width: 100%;
-  align-items: center;
+.description_maintenance ul li:hover:before{
+  box-shadow: none;
+  background: none;
 }
+
+.description_maintenance ul li::after {
+  display: none;
+}
+
+
 
 
 
