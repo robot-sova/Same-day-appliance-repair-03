@@ -442,8 +442,8 @@ main {
 #faqs-anchor::before {
   content: '';
   display: block;
-  height: 45px;
-  margin-top: -45px;
+  height: 65px;
+  margin-top: -65px;
 }
 
 
