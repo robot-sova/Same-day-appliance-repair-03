@@ -20,15 +20,21 @@
     border-radius: 5px;
 }
 
+/* ::-webkit-scrollbar-button {
+    color: #000;
+    background-color: #000;
+} */
 
 
 html {
     width: 100%;
     scroll-behavior: auto;
     scroll-behavior: smooth;
-
-    scrollbar-color: #ca0913 #000;
+    
+    /* scrollbar-color: #ca0913 #000; для fiefox но со стрелками
+    scrollbar-width: thin;  */
 }
+
 
 
 
