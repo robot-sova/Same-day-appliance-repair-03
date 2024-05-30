@@ -26,6 +26,8 @@ html {
     width: 100%;
     scroll-behavior: auto;
     scroll-behavior: smooth;
+
+    scrollbar-color: #ca0913 #000;
 }
 
 
