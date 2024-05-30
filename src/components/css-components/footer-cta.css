@@ -152,6 +152,119 @@ a {
 
 
 
+
+
+
+
+/* куки */
+
+.cookie-full {
+    display: grid;
+  }
+  
+  #cookie_note {
+    visibility: hidden;
+    position: fixed;
+    bottom: 15px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+    max-width: clamp(290px, 80%, 800px);
+    display: grid;
+    justify-self: center;
+    animation: cookie-keyf 5s forwards;
+  
+  
+  }
+  
+  #cookie_note.show {
+    visibility: visible;
+    z-index: 1000;
+  }
+  
+  #cookie_note p {
+    margin: 0;
+    font-size: 0.8rem;
+    text-align: left;
+    color: #373636;
+    padding-right: 7px;
+    grid-row: 1/2;
+    font-weight: 500;
+  }
+  
+  #cookie_note a {
+    max-width: 125px;
+    padding-top: 2px;
+    text-decoration-line: underline;
+    text-decoration-color: #d0e9eee8;
+    text-decoration-thickness: 1px;
+    color: #37444b;
+    text-shadow: none;
+    font-size: 0.9rem;
+  }
+  
+  #cookie_note a:hover {
+    text-decoration-thickness: 1.5px;
+    color: #000;
+    transition: 0.25s;
+  }
+  
+  .cookie_accept {
+    min-width: 90px;
+    max-height: 55px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: #ca0913;
+    grid-row: 1/2;
+    /* border: 2px solid #000000; */
+    transition: 0.3s ease-in-out;
+    color: #fff;
+    text-shadow: 1.2px 1.2px 2px black;
+    box-shadow: inset 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+  
+  .cookie_accept:hover {
+    background-color: #000;
+    /* border: 2px solid #ca0913; */
+  }
+  
+  
+  @media (max-width:767px) {
+    .cookie_accept {
+      grid-row: 2/2;
+      margin-top: 7px;
+      padding: 7px;
+      justify-self: center;
+      width: 50%;
+    }
+  }
+  
+  
+  @keyframes cookie-keyf {
+  
+    0%,
+    99% {
+      bottom: -160px;
+    }
+  
+    100% {
+      bottom: 15px;
+  
+    }
+  }
+
+  /* куки */
+
+
+
+
+
+
+
+
+
 @media (max-width:768px) {
 
 
