@@ -674,6 +674,7 @@ main {
 
 .description_maintenance ol {
   counter-reset: item;
+  margin-top: 10px;
 }
 
 .description_maintenance ol>li {
