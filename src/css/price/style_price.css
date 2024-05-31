@@ -599,7 +599,7 @@ main {
 .full-content_maintenance h3 {
   margin-top: 10px;
   font-size: clamp(18px, 4vw, 20px) !important;
-  text-shadow: 0.5px 0.5px 0.8px #75baf587;
+  text-shadow: var(--text-shadown-b-h3);
 }
 
 .full-content_maintenance ul {
@@ -610,22 +610,20 @@ main {
   margin-top: 10px;
 }
 
-.content-2_maintenance li::marker {
+/* .content-2_maintenance li::marker {
   color: #0f77cc !important;
-}
+} */
 
 .full-content_maintenance p {
   margin: 0;
 }
 
-.content-1_maintenance,
-.content-2_maintenance {
+.content-1_maintenance, .content-2_maintenance {
   width: 100%;
-  border: solid 3px #75baf587;
+  border: solid 2px #ca0913;
   border-radius: 20px;
-  padding: 0% 3% 3% 3%;
+  padding: 0% 3% 3%;
 }
-
 
 
 .description_maintenance {
