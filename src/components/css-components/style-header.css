@@ -427,6 +427,9 @@ button.hcp-button:hover {
 }
 
 
+
+
+
 @media (hover: none) {
      svg:hover {
       color: initial;
@@ -434,9 +437,6 @@ button.hcp-button:hover {
       fill: initial;
     }
   }
-
-
-
 
 @media (max-width:768px) {
 
