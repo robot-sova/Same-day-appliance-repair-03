@@ -20,6 +20,8 @@
     border-radius: 5px;
 }
 
+
+
 /* ::-webkit-scrollbar-button {
     color: #000;
     background-color: #000;
@@ -272,6 +274,12 @@ button.hcp-button:hover {
 #astronav-menu svg {
     width: 34px;
     height: 34px;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+#astronav-menu svg:hover {
+    color:#ca0913;
 }
 
 .header-menu-content li {
@@ -370,6 +378,10 @@ button.hcp-button:hover {
 
 @media (max-width:1024px) {
 
+    .w-full::-webkit-scrollbar-thumb {
+        background: #000000;
+    }
+
     .w-full {
         grid-gap: 0.2em;
         max-height: calc(100vh - 86px);
@@ -415,6 +427,16 @@ button.hcp-button:hover {
 }
 
 
+@media (hover: none) {
+     svg:hover {
+      color: initial;
+      background-color: initial;
+      fill: initial;
+    }
+  }
+
+
+
 
 @media (max-width:768px) {
 
@@ -426,6 +448,10 @@ button.hcp-button:hover {
     .animate-charcter {
         font-size: clamp(35px, 6vw, 60px) !important;
         line-height: clamp(46px, 6vh, 60px) !important;
+    }
+
+    #astronav-menu svg:hover {
+        pointer-events: none;
     }
 }
 
