@@ -314,6 +314,11 @@ main {
   font-weight: 300;
 }
 
+
+
+
+
+
 .questions {
   max-height: 0px;
   overflow: hidden;
@@ -339,13 +344,15 @@ main {
   margin: 2% 1% 20px 1%;
 }
 
+.questions ul {
+  padding-left: 0;
+}
 
 .questions ul li {
   position: relative;
   width: 100%;
   align-items: center;
   max-width: 100%;
-  padding: 0;
   padding-left: 30px;
   margin-bottom: 15px;
   margin-top: 5px;
@@ -353,8 +360,6 @@ main {
   list-style: none;
   font-size: clamp(16px, 3vw, 18px);
 }
-
-
 
 .questions ul li::before {
   content: '•';
@@ -366,16 +371,11 @@ main {
   top: -11px;
 }
 
-
-
-
-
-
 .questions ol {
   counter-reset: item;
 }
 
-.questions ol li {
+.questions ol > li {
   counter-increment: item;
   margin-bottom: 15px;
   padding-left: 30px;
@@ -384,7 +384,7 @@ main {
   font-size: clamp(16px, 3vw, 18px);
 }
 
-.questions ol li::before {
+.questions ol > li::before {
   content: counter(item) "";
   position: absolute;
   left: 10px;
@@ -400,23 +400,40 @@ main {
   top: -3px;
 }
 
-
-
-
-
-
 .questions li b {
   font-weight: 700;
   max-width: 100%;
   font-size: clamp(16px, 3vw, 18px);
 }
 
-
 .questions li li::before {
   font-size: 24px;
   left: 10px;
   top: -5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Часто задаваемые вопросы */
 
@@ -488,7 +505,6 @@ main {
 }
 
 #col-prices {
-  /* background-color: #64b7ff61; */
   background-color: var(--table-color);
 }
 
@@ -563,10 +579,6 @@ main {
 
 
 
-
-
-/* water-heater-repair-cost */
-
 .maintenance {
   width: 100%;
 }
@@ -615,9 +627,8 @@ main {
   margin-top: 10px;
 }
 
-/* .content-2_maintenance li::marker {
-  color: #0f77cc !important;
-} */
+
+
 
 .full-content_maintenance p {
   margin: 0;
@@ -798,14 +809,13 @@ main {
   margin: 0;
 }
 
-/* water-heater-repair-cost */
 
 
 
 
 
 
-/* oven-repair-cost */
+
 
 .head_pricing-policy_foto {
   display: flex;
@@ -827,39 +837,6 @@ main {
 .head_pricing-policy_foto-a h2 {
   margin-bottom: 5% !important;
 }
-
-/* oven-repair-cost */
-
-
-
-
-
-
-
-
-
-
-/* refrigerator-repair-cost */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* refrigerator-repair-cost */
-
-
 
 
 
