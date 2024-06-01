@@ -172,9 +172,12 @@ main {
 
 
 .icon_pricing-policy {
-  margin: auto auto;
+  margin: auto 0;
+  left: 0;
+  position: relative;
   display: grid;
   min-width: 130px;
+  max-width: 131px;
 }
 
 .icon_pricing-policy svg {
@@ -278,12 +281,10 @@ main {
 
 .FAQ:hover .fa h3 {
   color: #ca0913;
-  /* text-shadow: 0.1px 0.1px 0.1px #000; */
   transition: all 0.25s linear;
 }
 
 .FAQ_bottom {
-  /* border-bottom: 1px solid #75baf566; */
   border-top: 1px solid #dedede;
 }
 
@@ -1019,6 +1020,7 @@ main {
   }
 
   .icon_pricing-policy {
+    margin: auto auto;
     min-width: auto;
     margin-bottom: 2%;
   }
