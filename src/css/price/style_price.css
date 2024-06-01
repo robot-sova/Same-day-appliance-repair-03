@@ -395,6 +395,10 @@ main {
   filter: drop-shadow(1.5px 1.5px 0.5px #000);
 }
 
+.questions ul ol li::before {
+  font-size: 20px;
+  top: -3px;
+}
 
 
 
