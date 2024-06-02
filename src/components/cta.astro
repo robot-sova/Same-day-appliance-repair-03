@@ -6,16 +6,15 @@ import "@components/css-components/footer-cta.css";
 ---
 
 <!--Reviews -->
-<div id="reviews"><br /><br /><br />
-</div><br /><br /><br /><br /><br />
+<div id="reviews"><br /><br /><br /></div><br /><br /><br /><br /><br />
+<Btn />
 
 <div class="thumbtack-profile">
   <h2>
     Real Customer Reviews From Our Google and <a
-      href="https://www.thumbtack.com/ca/los-angeles/dishwasher-installation/same-day-appliance-repair/service/474673684619198464"
-      title="Thumbtack Reviews"
-      target="_blank">
-      Thumbtack Profile</a
+    href="https://www.thumbtack.com/ca/los-angeles/dishwasher-installation/same-day-appliance-repair/service/474673684619198464"
+    title="Thumbtack Reviews"
+    target="_blank"> Thumbtack Profile</a
     >
   </h2>
 </div>
@@ -41,8 +40,8 @@ import "@components/css-components/footer-cta.css";
     >Expert Appliance Repair Services Across All LA Locations</span
   >
 </h2>
+
 <div class="feedback">
-  <Btn />
   <p>
     Our skilled expert appliance repair technicians have extensive experience in
     servicing and maintaining appliances from leading brands across various
@@ -75,7 +74,7 @@ import "@components/css-components/footer-cta.css";
   loading="lazy"
   width="100%"
   height="400"
-  title="Same Day APpliance Repair - areas we serve"
+  title="Same Day Appliance Repair - areas we serve"
   src="https://www.google.com/maps/d/u/2/embed?mid=1WYfJlezd7yel0cIXNhjCrg5PrRJVxh0&ehbc=2E312F"
   style="border:0;"></iframe>
 
@@ -133,58 +132,4 @@ import "@components/css-components/footer-cta.css";
       </div>
     </div>
   </div>
-
-  <!-- куки -->
-  <div class="cookie-full">
-    <div id="cookie_note" class="cookie-note--Timeout">
-      <p>
-        We use cookies to improve our website. By staying on our website, you
-        agree to the terms and conditions of cookies. To read our Privacy and
-        Cookie Policy, please read the following <a
-          href="privacy.php"
-          target="_blank">click here</a>
-      </p>
-      <button class="cookie_accept">I agree</button>
-    </div>
-  </div>
-
-  <!-- скрипт куки -->
-  <script defer>
-    function setCookie(name, value, days) {
-      let expires = "";
-      if (days) {
-        let date = new Date();
-        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-        expires = "; expires=" + date.toUTCString();
-      }
-      document.cookie = name + "=" + (value || "") + expires + "; path=/";
-    }
-
-    function getCookie(name) {
-      let matches = document.cookie.match(
-        new RegExp(
-          "(?:^|; )" +
-            name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
-            "=([^;]*)",
-        ),
-      );
-      return matches ? decodeURIComponent(matches[1]) : undefined;
-    }
-
-    function checkCookies() {
-      let cookieNote = document.getElementById("cookie_note");
-      let cookieBtnAccept = cookieNote.querySelector(".cookie_accept");
-
-      if (!getCookie("cookies_policy")) {
-        cookieNote.classList.add("show");
-      }
-
-      cookieBtnAccept.addEventListener("click", function () {
-        setCookie("cookies_policy", "true", 365);
-        cookieNote.classList.remove("show");
-      });
-    }
-
-    checkCookies();
-  </script>
 </footer>
