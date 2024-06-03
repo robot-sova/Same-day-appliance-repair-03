@@ -1,38 +1,238 @@
+.max-w-screen-xl {
+    max-width: 100%;
+    padding: 0;
+}
+
+h1 {
+    text-shadow: 2.3px 2.3px 3.7px rgb(21 21 21);
+}
+
+main {
+    display: grid;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+.page-header {
+    position: relative;
+    display: grid;
+    justify-self: center;
+    width: 100%;
+    overflow: hidden;
+    min-height: 70vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 42%, rgba(255, 255, 255, 0.7478641114648985) 63%, rgba(255, 255, 255, 0) 100%);
+}
+
+.page-header-d-full {
+    width: 100%;
+    max-width: 1920px;
+    justify-self: center;
+    height: 100%;
+}
+
+.page-header-d {
+    left: 0;
+    width: 50%;
+    position: relative;
+    align-self: center;
+    /* min-height: 60vh;
+    height: 100%; */
+    margin-top: 10%;
+    margin-left: 3%;
+}
+
+.page-header-d h1 {
+    margin-bottom: 3%;
+}
+
+
+
+.page-header-f {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    margin-left: 40%;
+}
+
+.page-header-f img {
+    width: 65%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 :root {
     --table-color: rgb(231 231 231 / 58%);
     --text-shadown-b-h3: 0.5px 0.5px 0.8px #8f9499;
-  }
-  
-  
-  /* *{
+}
+
+
+/* *{
     outline: 1px solid red !important;
   } */
-  
-  html {
+
+
+html {
     overflow-y: scroll;
     scroll-behavior: smooth;
-  }
-  
-  img {
+}
+
+/* img {
     border-radius: 10px;
     box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.25);
-  }
-  
-  h2 {
+  } */
+
+h2 {
     text-align: center;
     margin: 6% 0% 3% 0%;
     font-size: clamp(24px, 5vw, 28px) !important;
     text-shadow: 1px 1px 1.3px #8f9499;
-  }
-  
-  
-  .animate-charcter {
+}
+
+
+.animate-charcter {
     text-transform: uppercase;
     background-image: linear-gradient(-225deg,
-        #fff 0%,
-        #000 15%,
-        #111112 67%,
-        #858384 100%);
+            #fff 0%,
+            #000 15%,
+            #111112 67%,
+            #858384 100%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -45,203 +245,194 @@
     font-size: clamp(35px, 8vw, 60px);
     line-height: clamp(56px, 8vh, 60px);
     font-weight: 900;
-  }
-  
-  .two-col-grid {
+}
+
+.two-col-grid {
     margin-top: 3%;
-  }
-  
-  .two-col-grid p {
+}
+
+.two-col-grid p {
     font-weight: 500;
-  }
-  
-  .col-one img {
+}
+
+.col-one img {
     max-width: 100%;
     height: auto;
     margin-bottom: 25px;
     box-shadow: 0px 3px 5px 2px rgb(0 0 0 / 25%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 5px 14px 0px rgb(0 0 0 / 12%);
-  }
-  
-  .col-two {
+}
+
+.col-two {
     grid-column: auto;
-  }
-  
-  .col-two p:nth-child(2) {
+}
+
+.col-two p:nth-child(2) {
     padding-top: 1%;
-  }
-  
-  .col-two b {
+}
+
+.col-two b {
     text-shadow: var(--text-shadown-b-h3);
-  }
-  
-  
-  .two-col-grid {
+}
+
+
+.two-col-grid {
     display: block;
-  }
-  
-  .col-one {
+}
+
+.col-one {
     margin: 0 25px 15px 0;
     float: left;
-  }
-  
-  main {
-    width: 100%;
-    max-width: 1920px !important;
-  }
-  
-  .max-w-screen-xl {
-    width: 100%;
-    max-width: 1920px !important;
-    padding: 0% 10% 0% 10%;
-  }
-  
-  
-  
-  
-  .pricing-policy {
+}
+
+
+
+
+
+
+.pricing-policy {
     grid-template-rows: 1fr;
-  }
-  
-  
-  .pricing-policy {
+}
+
+
+.pricing-policy {
     width: 100%;
     display: grid;
     /* margin-bottom: 5%; */
-  }
-  
-  .head_pricing-policy {
+}
+
+.head_pricing-policy {
     text-align: center;
     display: grid;
-  }
-  
-  .head_pricing-policy h2:nth-child(1) {
+}
+
+.head_pricing-policy h2:nth-child(1) {
     margin: 3% 0% 0% 0%;
-  }
-  
-  
-  .head_pricing-policy h2 {
+}
+
+
+.head_pricing-policy h2 {
     margin: 6% 0% 0% 0%;
     margin-bottom: 1%;
-  }
-  
-  .head_pricing-policy p {
+}
+
+.head_pricing-policy p {
     text-align: center;
     margin: 0 0 3% 0;
     font-size: clamp(16px, 3vw, 20px);
     max-width: 80%;
     justify-self: center;
     font-weight: 500;
-  }
-  
-  
-  .content_pricing-policy {
+}
+
+
+.content_pricing-policy {
     text-align: left;
     margin-bottom: 3%;
-  }
-  
-  .con-inside_pricing-policy {
+}
+
+.con-inside_pricing-policy {
     display: flex;
-  }
-  
-  .con-inside_pricing-policy p {
+}
+
+.con-inside_pricing-policy p {
     margin: 0;
-  }
-  
-  
-  
-  
-  
-  
-  .icon_pricing-policy {
+}
+
+
+
+
+
+
+.icon_pricing-policy {
     margin: auto 0;
     left: 0;
     position: relative;
     display: grid;
     min-width: 130px;
     max-width: 131px;
-  }
-  
-  .icon_pricing-policy svg {
+}
+
+.icon_pricing-policy svg {
     justify-self: center;
     filter: drop-shadow(1px 1px 1px #6c6c6c);
-  }
-  
-  .icon_pricing-policy h3 {
+}
+
+.icon_pricing-policy h3 {
     padding-top: 10px;
     text-align: center;
     font-weight: 700;
     font-size: clamp(18px, 4vw, 20px) !important;
     margin-top: 0;
     text-shadow: var(--text-shadown-b-h3);
-  }
-  
-  .desc_pricing-policy {
+}
+
+.desc_pricing-policy {
     display: grid;
     padding-left: 2%;
-  }
-  
-  .desc_pricing-policy p {
+}
+
+.desc_pricing-policy p {
     align-self: center;
     font-size: clamp(16px, 4vw, 18px);
     font-weight: 500;
-  }
-  
-  #cost-svg {
+}
+
+#cost-svg {
     stroke: #000;
     stroke-width: 5px;
     filter: drop-shadow(1px 1px 1px #6c6c6c);
-  }
-  
-  .con-inside_pricing-policy:hover #cost-svg {
+}
+
+.con-inside_pricing-policy:hover #cost-svg {
     fill: #ca0913;
     stroke: #ca0913;
     transition: 0.3s;
-  }
-  
-  .con-inside_pricing-policy:hover svg {
+}
+
+.con-inside_pricing-policy:hover svg {
     fill: #ca0913;
     transition: 0.3s;
-  }
-  
-  .pros_pricing-policy {
+}
+
+.pros_pricing-policy {
     width: 80%;
     margin: 0 auto;
     padding: 10px 10px;
     border-radius: 5px;
     border: solid 2px #ff2a2a;
     background-color: rgb(231 231 231 / 58%);
-  }
-  
-  .pros_pricing-policy p {
+}
+
+.pros_pricing-policy p {
     font-size: clamp(16px, 4vw, 18px);
     margin: 0;
     font-weight: 500;
-  }
-  
-  .pros_pricing-policy-indent {
+}
+
+.pros_pricing-policy-indent {
     margin: 3% auto;
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* Часто задаваемые вопросы */
-  
-  .FAQ {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Часто задаваемые вопросы */
+
+.FAQ {
     cursor: pointer;
     width: 100%;
     text-align: left;
@@ -250,86 +441,86 @@
     padding: 2% 2%;
     display: flex;
     justify-content: space-between;
-  }
-  
-  .FAQ.active .fa_minus {
+}
+
+.FAQ.active .fa_minus {
     display: block;
-  }
-  
-  .FAQ.active .fa_plus {
+}
+
+.FAQ.active .fa_plus {
     display: none;
-  }
-  
-  .FAQ:hover .fa h3 {
+}
+
+.FAQ:hover .fa h3 {
     color: #ca0913;
     transition: all 0.25s linear;
-  }
-  
-  .FAQ_bottom {
+}
+
+.FAQ_bottom {
     border-top: 1px solid #dedede;
-  }
-  
-  .fa {
+}
+
+.fa {
     width: 95%;
     margin-right: 10px;
-  }
-  
-  .fa h3 {
+}
+
+.fa h3 {
     margin: 0;
     font-weight: 600;
     font-size: clamp(22px, 5vw, 24px) !important;
     text-shadow: var(--text-shadown-b-h3);
-  }
-  
-  .fa_plus {
+}
+
+.fa_plus {
     display: inline-block;
     position: relative;
     padding-top: 5px;
     font-weight: 300;
-  }
-  
-  .fa_minus {
+}
+
+.fa_minus {
     display: none;
     position: relative;
     padding-bottom: 5px;
     font-weight: 300;
-  }
-  
-  
-  
-  
-  
-  
-  .questions {
+}
+
+
+
+
+
+
+.questions {
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
     padding: 0% 2%;
-  }
-  
-  .questions b {
+}
+
+.questions b {
     font-weight: 700;
     max-width: 100%;
     font-size: clamp(16px, 3vw, 20px);
-  }
-  
-  .questions p {
+}
+
+.questions p {
     font-weight: 500;
     max-width: 100%;
     font-size: clamp(16px, 3vw, 18px);
-  }
-  
-  .questions img {
+}
+
+.questions img {
     max-width: 90%;
     height: auto;
     margin: 2% 1% 20px 1%;
-  }
-  
-  .questions ul {
+}
+
+.questions ul {
     padding-left: 0;
-  }
-  
-  .questions ul li {
+}
+
+.questions ul li {
     position: relative;
     width: 100%;
     align-items: center;
@@ -340,9 +531,9 @@
     font-weight: 500;
     list-style: none;
     font-size: clamp(16px, 3vw, 18px);
-  }
-  
-  .questions ul li::before {
+}
+
+.questions ul li::before {
     content: '•';
     font-size: 30px;
     color: #ca0913;
@@ -350,22 +541,22 @@
     position: absolute;
     left: 10px;
     top: -11px;
-  }
-  
-  .questions ol {
+}
+
+.questions ol {
     counter-reset: item;
-  }
-  
-  .questions ol > li {
+}
+
+.questions ol>li {
     counter-increment: item;
     margin-bottom: 15px;
     padding-left: 30px;
     position: relative;
     font-weight: 500;
     font-size: clamp(16px, 3vw, 18px);
-  }
-  
-  .questions ol > li::before {
+}
+
+.questions ol>li::before {
     content: counter(item) "";
     position: absolute;
     left: 10px;
@@ -374,169 +565,169 @@
     font-size: 20px;
     color: red;
     filter: drop-shadow(1.5px 1.5px 0.5px #000);
-  }
-  
-  .questions ul ol li::before {
+}
+
+.questions ul ol li::before {
     font-size: 20px;
     top: -3px;
-  }
-  
-  .questions li b {
+}
+
+.questions li b {
     font-weight: 700;
     max-width: 100%;
     font-size: clamp(16px, 3vw, 18px);
-  }
-  
-  .questions li li::before {
+}
+
+.questions li li::before {
     font-size: 24px;
     left: 10px;
     top: -5px;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* Часто задаваемые вопросы */
-  
-  
-  
-  
-  
-  
-  
-  .job-prices {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Часто задаваемые вопросы */
+
+
+
+
+
+
+
+.job-prices {
     width: 100%;
-  }
-  
-  #labor-cost-anchor::before {
+}
+
+#labor-cost-anchor::before {
     content: '';
     display: block;
     height: 115px;
     margin-top: -115px;
-  }
-  
-  #parts-cost-anchor::before {
+}
+
+#parts-cost-anchor::before {
     content: '';
     display: block;
     height: 115px;
     margin-top: -115px;
-  }
-  
-  #faqs-anchor::before {
+}
+
+#faqs-anchor::before {
     content: '';
     display: block;
     height: 65px;
     margin-top: -65px;
-  }
-  
-  
-  
-  
-  #parts-cost-anchor .content_job-prices {
+}
+
+
+
+
+#parts-cost-anchor .content_job-prices {
     min-height: 109px;
-  }
-  
-  .head-prices {
+}
+
+.head-prices {
     text-align: center;
     display: grid;
-  }
-  
-  .head-prices h2 {
+}
+
+.head-prices h2 {
     margin-bottom: 1%;
-  }
-  
-  .head-prices p {
+}
+
+.head-prices p {
     text-align: center;
     margin: 0 0 3% 0;
     font-size: clamp(16px, 3vw, 20px);
     max-width: 80%;
     justify-self: center;
-  }
-  
-  .content_job-prices {
+}
+
+.content_job-prices {
     display: flex;
     justify-content: space-between;
     padding: 0 2%;
     border-radius: 5px;
     min-height: 194px;
-  }
-  
-  .content_job-prices-h-m {
+}
+
+.content_job-prices-h-m {
     min-height: auto;
-  }
-  
-  #col-prices {
+}
+
+#col-prices {
     background-color: var(--table-color);
-  }
-  
-  .content_job-prices p {
+}
+
+.content_job-prices p {
     margin: 0;
     padding: 0% 1% 1% 0%;
-  }
-  
-  .desk_job-prices {
+}
+
+.desk_job-prices {
     text-align: left;
     width: 90%;
     display: grid;
     align-self: center;
-  }
-  
-  .desk_job-prices a {
+}
+
+.desk_job-prices a {
     align-self: center;
-  }
-  
-  .desk_job-prices a:hover {
+}
+
+.desk_job-prices a:hover {
     text-decoration: underline;
     color: #767676;
-  }
-  
-  .money_job-prices {
+}
+
+.money_job-prices {
     text-align: left;
     align-self: center;
     min-width: 166px;
-  }
-  
-  .money_job-prices p {
+}
+
+.money_job-prices p {
     white-space: nowrap;
     width: 100%;
     font-size: clamp(18px, 5vw, 24px);
-  }
-  
-  .desk_job-prices p:nth-child(1) {
+}
+
+.desk_job-prices p:nth-child(1) {
     font-size: clamp(18px, 5vw, 24px);
     padding: 1% 1% 0% 0%;
-  }
-  
-  .content_job-prices-h-m p:nth-child(1) {
+}
+
+.content_job-prices-h-m p:nth-child(1) {
     font-size: clamp(22px, 5vw, 24px);
     padding: 1% 1% 1% 0%;
-  }
-  
-  .desk_job-prices p {
+}
+
+.desk_job-prices p {
     font-size: clamp(16px, 4vw, 20px);
-  }
-  
-  .pros_job-prices {
+}
+
+.pros_job-prices {
     width: 80%;
     margin: 0 auto;
     padding: 10px 10px;
@@ -544,111 +735,112 @@
     border-radius: 5px;
     border: solid 2px #ff2a2a;
     background-color: rgb(231 231 231 / 58%);
-  }
-  
-  .pros_job-prices p {
+}
+
+.pros_job-prices p {
     font-size: clamp(16px, 4vw, 18px);
     font-weight: 500;
     margin: 0;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  .maintenance {
+}
+
+
+
+
+
+
+
+
+
+.maintenance {
     width: 100%;
-  }
-  
-  .maintenance p {
+}
+
+.maintenance p {
     font-size: clamp(16px, 4vw, 18px);
     margin: 0;
     font-weight: 500;
-  }
-  
-  .head-maintenance {
+}
+
+.head-maintenance {
     text-align: center;
     display: grid;
-  }
-  
-  .head-maintenance h2 {
+}
+
+.head-maintenance h2 {
     margin-bottom: 1%;
-  }
-  
-  .head-maintenance p {
+}
+
+.head-maintenance p {
     text-align: center;
     margin: 0 0 3% 0;
     font-size: clamp(16px, 3vw, 20px);
     max-width: 80%;
     justify-self: center;
-  }
-  
-  .full-content_maintenance {
+}
+
+.full-content_maintenance {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 3%;
     grid-gap: 5%;
-  }
-  
-  .full-content_maintenance h3 {
+}
+
+.full-content_maintenance h3 {
     margin-top: 10px;
     font-size: clamp(18px, 4vw, 20px) !important;
     text-shadow: var(--text-shadown-b-h3);
-  }
-  
-  .full-content_maintenance ul {
+}
+
+.full-content_maintenance ul {
     margin-left: 8px;
-  }
-  
-  .full-content_maintenance li {
+}
+
+.full-content_maintenance li {
     margin-top: 10px;
-  }
-  
-  
-  
-  
-  .full-content_maintenance p {
+}
+
+
+
+
+.full-content_maintenance p {
     margin: 0;
-  }
-  
-  .content-1_maintenance, .content-2_maintenance {
+}
+
+.content-1_maintenance,
+.content-2_maintenance {
     width: 100%;
     box-shadow: 0 0 8px 3px #87878733;
     border-radius: 20px;
     padding: 0% 3% 3%;
-  }
-  
-  
-  .description_maintenance {
+}
+
+
+.description_maintenance {
     width: 100%;
     margin-bottom: 20px;
     padding: 0 2%;
-  }
-  
-  .description_maintenance h3 {
+}
+
+.description_maintenance h3 {
     margin-top: 25px;
     margin-bottom: 5px;
     font-weight: 600;
     font-size: clamp(22px, 5vw, 24px) !important;
     text-shadow: var(--text-shadown-b-h3);
     text-align: center;
-  }
-  
-  .description_maintenance b {
+}
+
+.description_maintenance b {
     text-shadow: var(--text-shadown-b-h3);
-  }
-  
-  .description_maintenance li {
+}
+
+.description_maintenance li {
     max-width: 100%;
     align-items: center;
     position: relative;
-  }
-  
-  .description_maintenance li::before {
+}
+
+.description_maintenance li::before {
     content: '•';
     font-size: 30px;
     color: #ca0913;
@@ -657,31 +849,31 @@
     top: -9px;
     border-radius: 20%;
     transition: 0.3s ease-in-out;
-  }
-  
-  .description_maintenance  li:last-child:after {
+}
+
+.description_maintenance li:last-child:after {
     content: none;
-  }
-  
-  
-  
-  
-  
-  .description_maintenance ol {
+}
+
+
+
+
+
+.description_maintenance ol {
     counter-reset: item;
     margin-top: 10px;
-  }
-  
-  .description_maintenance ol>li {
+}
+
+.description_maintenance ol>li {
     counter-increment: item;
     margin-bottom: 15px;
     padding-left: 35px;
     position: relative;
     font-weight: 500;
     font-size: clamp(16px, 3vw, 18px);
-  }
-  
-  .description_maintenance ol>li::before {
+}
+
+.description_maintenance ol>li::before {
     content: counter(item) "";
     position: absolute;
     left: 5px;
@@ -690,15 +882,15 @@
     font-size: 20px;
     color: red;
     filter: drop-shadow(1.5px 1.5px 0.5px #000);
-  }
-  
-  .description_maintenance ol li:hover:before{
-    background:  rgba(0,0,0,.2);
-    box-shadow: 0 0 0 5px rgba(0,0,0,.2);
-  }
-  
-  
-  .description_maintenance ol li:after {
+}
+
+.description_maintenance ol li:hover:before {
+    background: rgba(0, 0, 0, .2);
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, .2);
+}
+
+
+.description_maintenance ol li:after {
     position: absolute;
     border-left: 2px dotted #4F5151;
     width: 2px;
@@ -706,22 +898,22 @@
     content: "";
     left: 16px;
     top: 40px;
-  }
-  
-  .description_maintenance ol > li:nth-child(-n+9)::after {
+}
+
+.description_maintenance ol>li:nth-child(-n+9)::after {
     left: 12px;
-  }
-  
-  
-  
-  
-  
-  
-  .description_maintenance ul {
+}
+
+
+
+
+
+
+.description_maintenance ul {
     padding-left: 0;
-  }
-  
-  .description_maintenance ul li {
+}
+
+.description_maintenance ul li {
     position: relative;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -729,9 +921,9 @@
     font-weight: 500;
     list-style: none;
     font-size: clamp(16px, 3vw, 18px);
-  }
-  
-  .description_maintenance ul li::before {
+}
+
+.description_maintenance ul li::before {
     content: '•';
     font-size: 30px;
     color: #ca0913;
@@ -739,313 +931,309 @@
     position: absolute;
     left: 10px;
     top: -11px;
-  }
-  
-  .description_maintenance ul li:hover:before{
+}
+
+.description_maintenance ul li:hover:before {
     box-shadow: none;
     background: none;
-  }
-  
-  .description_maintenance ul li::after {
+}
+
+.description_maintenance ul li::after {
     display: none;
-  }
-  
-  
-  
-  
-  
-  .head_description_maintenance {
+}
+
+
+
+
+
+.head_description_maintenance {
     display: flex;
     margin-bottom: 5px;
-  }
-  
-  .head_description_maintenance svg {
+}
+
+.head_description_maintenance svg {
     margin: 0 10px 0 0;
-  }
-  
-  .head_description_maintenance p {
+}
+
+.head_description_maintenance p {
     align-self: center;
     text-shadow: var(--text-shadown-b-h3);
-  }
-  
-  .conclusion-description_maintenance {
+}
+
+.conclusion-description_maintenance {
     margin-top: 4%;
-  }
-  
-  .conclusion-description_maintenance:hover svg {
+}
+
+.conclusion-description_maintenance:hover svg {
     fill: #ca0913;
     transition: 0.3s;
-  }
-  
-  .conclusion-description_maintenance:hover .cls-1 {
+}
+
+.conclusion-description_maintenance:hover .cls-1 {
     stroke: #ca0913;
     transition: 0.3s;
-  }
-  
-  .conclusion-description_maintenance p {
+}
+
+.conclusion-description_maintenance p {
     margin-left: 33px;
-  }
-  
-  .head_description_maintenance p {
+}
+
+.head_description_maintenance p {
     margin: 0;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  .head_pricing-policy_foto {
+}
+
+
+
+
+
+
+
+
+
+.head_pricing-policy_foto {
     display: flex;
     justify-content: center;
-  }
-  
-  .head_pricing-policy_foto-a,
-  .head_pricing-policy_foto-b {
+}
+
+.head_pricing-policy_foto-a,
+.head_pricing-policy_foto-b {
     margin: 30px 3% 30px 3%;
     align-self: center;
     justify-self: center;
     display: grid;
-  }
-  
-  .head_pricing-policy_foto-a {
-    max-width: 35%;
-  }
-  
-  .head_pricing-policy_foto-a h2 {
-    margin-bottom: 5% !important;
-  }
-  
-  
-  
-  
-  @media (max-width:1440px) {
-    .head_pricing-policy h2:nth-child(1) {
-      margin: 6% 0% 0% 0%;
-    }
-  }
-  
-  
-  
-  
-  
-  
-  
-  @media (max-width:1024px) {
-  
-    #labor-cost-anchor::before {
-      content: '';
-      display: block;
-      height: 70px;
-      margin-top: -70px;
-    }
-  
-    #parts-cost-anchor::before {
-      content: '';
-      display: block;
-      height: 70px;
-      margin-top: -70px;
-    }
-  
-    #faqs-anchor::before {
-      content: '';
-      display: block;
-      height: 40px;
-      margin-top: -40px;
-    }
-  
-  
-  
-    .two-col-grid {
-      width: 100%;
-      display: grid;
-      /* grid-template-columns: 1fr 2fr; */
-    }
-  
-    .col-one img {
-      /* width: 80%; */
-      justify-self: center;
-      margin-bottom: 10px;
-      margin: 0 auto;
-    }
-  
-    .col-one {
-      width: 100%;
-      margin: 0;
-      max-width: 100%;
-    }
-  
-    .col-one a {
-      width: 100%;
-      margin: 0;
-      display: grid;
-      text-align: center;
-    }
-  
-    .contactbtn-form {
-      max-width: 341px;
-      margin: 0 !important;
-    }
-  
-  
-    .contactbtn-form a {
-      max-width: 215px !important;
-      display: inline;
-      margin-top: 10px;
-    }
-  
-    .head_pricing-policy_foto-a {
-      max-width: 50%;
-    }
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  @media (max-width:768px) {
-  
-      .max-w-screen-xl {
-        width: 100%;
-        max-width: 1920px !important;
-        padding: 0% 3% 0% 3%;
-      }
-  
-    #labor-cost-anchor::before {
-      content: '';
-      display: block;
-      height: 55px;
-      margin-top: -55px;
-    }
-  
-    #parts-cost-anchor::before {
-      content: '';
-      display: block;
-      height: 55px;
-      margin-top: -55px;
-    }
-  
-    #faqs-anchor::before {
-      content: '';
-      display: block;
-      height: 20px;
-      margin-top: -20px;
-    }
-  
-  
+}
 
-  
+.head_pricing-policy_foto-a {
+    max-width: 35%;
+}
+
+.head_pricing-policy_foto-a h2 {
+    margin-bottom: 5% !important;
+}
+
+
+
+
+@media (max-width:1440px) {
+    .head_pricing-policy h2:nth-child(1) {
+        margin: 6% 0% 0% 0%;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+
+    #labor-cost-anchor::before {
+        content: '';
+        display: block;
+        height: 70px;
+        margin-top: -70px;
+    }
+
+    #parts-cost-anchor::before {
+        content: '';
+        display: block;
+        height: 70px;
+        margin-top: -70px;
+    }
+
+    #faqs-anchor::before {
+        content: '';
+        display: block;
+        height: 40px;
+        margin-top: -40px;
+    }
+
+
+
+    .two-col-grid {
+        width: 100%;
+        display: grid;
+        /* grid-template-columns: 1fr 2fr; */
+    }
+
+    .col-one img {
+        /* width: 80%; */
+        justify-self: center;
+        margin-bottom: 10px;
+        margin: 0 auto;
+    }
+
+    .col-one {
+        width: 100%;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .col-one a {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        text-align: center;
+    }
+
+    .contactbtn-form {
+        max-width: 341px;
+        margin: 0 !important;
+    }
+
+
+    .contactbtn-form a {
+        max-width: 215px !important;
+        display: inline;
+        margin-top: 10px;
+    }
+
+    .head_pricing-policy_foto-a {
+        max-width: 50%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+
+
+
+    #labor-cost-anchor::before {
+        content: '';
+        display: block;
+        height: 55px;
+        margin-top: -55px;
+    }
+
+    #parts-cost-anchor::before {
+        content: '';
+        display: block;
+        height: 55px;
+        margin-top: -55px;
+    }
+
+    #faqs-anchor::before {
+        content: '';
+        display: block;
+        height: 20px;
+        margin-top: -20px;
+    }
+
+
+
+
     .head_pricing-policy {
-      margin-bottom: 7%;
+        margin-bottom: 7%;
     }
-  
+
     .head_pricing-policy_foto {
-      display: grid;
+        display: grid;
     }
-  
+
     .head_pricing-policy_foto-a,
     .head_pricing-policy_foto-b {
-      margin: 20px 3% 20px 3%;
+        margin: 20px 3% 20px 3%;
     }
-  
+
     .head_pricing-policy_foto-a {
-      max-width: 100%;
-      grid-row: 1/2;
-      margin: 20px 3% 0px 3%;
+        max-width: 100%;
+        grid-row: 1/2;
+        margin: 20px 3% 0px 3%;
     }
-  
+
     .head_pricing-policy_foto-a h2 {
-      margin-bottom: 1% !important;
+        margin-bottom: 1% !important;
     }
-  
+
     .con-inside_pricing-policy {
-      display: grid;
+        display: grid;
     }
-  
+
     .content_pricing-policy {
-      margin-bottom: 10%;
+        margin-bottom: 10%;
     }
-  
+
     .icon_pricing-policy {
-      margin: auto auto;
-      min-width: auto;
-      margin-bottom: 2%;
+        margin: auto auto;
+        min-width: auto;
+        margin-bottom: 2%;
     }
-  
+
     .pros_pricing-policy {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .content_job-prices {
-      padding: 3% 0%;
-      min-height: auto;
+        padding: 3% 0%;
+        min-height: auto;
     }
-  
+
     .desk_job-prices {
-      padding-left: 7px;
+        padding-left: 7px;
     }
-  
+
     .head-prices p {
-      max-width: 100%;
+        max-width: 100%;
     }
-  
+
     .head-maintenance p {
-      max-width: 100%;
+        max-width: 100%;
     }
-  
+
     .description_maintenance ol>li::before {
-      top: -5px;
+        top: -5px;
     }
-  
+
     .money_job-prices {
-      text-align: right;
-      min-width: auto;
-      padding-right: 7px;
+        text-align: right;
+        min-width: auto;
+        padding-right: 7px;
     }
-  
+
     .money_job-prices p {
-      white-space: wrap;
+        white-space: wrap;
     }
-  
+
     .pros_job-prices {
-      width: 100%;
-      margin-top: 10%;
+        width: 100%;
+        margin-top: 10%;
     }
-  
+
     .full-content_maintenance {
-      grid-template-columns: 1fr;
-      grid-gap: 0;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
     }
-  
+
     .content-2_maintenance,
     .content-1_maintenance {
-      margin-bottom: 15px;
+        margin-bottom: 15px;
     }
-  
+
     .questions li:before {
-      top: -12px;
+        top: -12px;
     }
-  
+
     .questions li li:before {
-      font-size: 24px;
-      left: 10px;
-      top: -7px;
+        font-size: 24px;
+        left: 10px;
+        top: -7px;
     }
-  
+
     .questions ol li::before {
-      top: -5px;
+        top: -5px;
     }
-  
-  
-  }
+
+
+}
