@@ -1,3 +1,9 @@
+:root {
+    --table-color: rgb(231 231 231 / 58%);
+    --text-shadown-b-h3: 0.5px 0.5px 0.8px #8f9499;
+}
+
+
 .max-w-screen-xl {
     max-width: 100%;
     padding: 0;
@@ -6,6 +12,14 @@
 h1 {
     text-shadow: 2.3px 2.3px 3.7px rgb(21 21 21);
 }
+
+h2 {
+    text-align: center;
+    margin: 6% 0% 3% 0%;
+    font-size: clamp(24px, 5vw, 28px) !important;
+    text-shadow: 1px 1px 1.3px #8f9499;
+}
+
 
 main {
     display: grid;
@@ -197,98 +211,9 @@ main {
 
 
 
-:root {
-    --table-color: rgb(231 231 231 / 58%);
-    --text-shadown-b-h3: 0.5px 0.5px 0.8px #8f9499;
-}
 
 
-/* *{
-    outline: 1px solid red !important;
-  } */
-
-
-html {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
-
-/* img {
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.25);
-  } */
-
-h2 {
-    text-align: center;
-    margin: 6% 0% 3% 0%;
-    font-size: clamp(24px, 5vw, 28px) !important;
-    text-shadow: 1px 1px 1.3px #8f9499;
-}
-
-
-.animate-charcter {
-    text-transform: uppercase;
-    background-image: linear-gradient(-225deg,
-            #fff 0%,
-            #000 15%,
-            #111112 67%,
-            #858384 100%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 4s linear infinite;
-    display: inline-block;
-    font-size: clamp(35px, 8vw, 60px);
-    line-height: clamp(56px, 8vh, 60px);
-    font-weight: 900;
-}
-
-.two-col-grid {
-    margin-top: 3%;
-}
-
-.two-col-grid p {
-    font-weight: 500;
-}
-
-.col-one img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 25px;
-    box-shadow: 0px 3px 5px 2px rgb(0 0 0 / 25%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 5px 14px 0px rgb(0 0 0 / 12%);
-}
-
-.col-two {
-    grid-column: auto;
-}
-
-.col-two p:nth-child(2) {
-    padding-top: 1%;
-}
-
-.col-two b {
-    text-shadow: var(--text-shadown-b-h3);
-}
-
-
-.two-col-grid {
-    display: block;
-}
-
-.col-one {
-    margin: 0 25px 15px 0;
-    float: left;
-}
-
-
-
-
-
-
+/* 
 .pricing-policy {
     grid-template-rows: 1fr;
 }
@@ -297,7 +222,6 @@ h2 {
 .pricing-policy {
     width: 100%;
     display: grid;
-    /* margin-bottom: 5%; */
 }
 
 .head_pricing-policy {
@@ -337,11 +261,6 @@ h2 {
 .con-inside_pricing-policy p {
     margin: 0;
 }
-
-
-
-
-
 
 .icon_pricing-policy {
     margin: auto 0;
@@ -416,7 +335,7 @@ h2 {
 
 
 
-
+ */
 
 
 
@@ -613,39 +532,12 @@ h2 {
 
 
 
-
+/* 
 
 .job-prices {
     width: 100%;
 }
 
-#labor-cost-anchor::before {
-    content: '';
-    display: block;
-    height: 115px;
-    margin-top: -115px;
-}
-
-#parts-cost-anchor::before {
-    content: '';
-    display: block;
-    height: 115px;
-    margin-top: -115px;
-}
-
-#faqs-anchor::before {
-    content: '';
-    display: block;
-    height: 65px;
-    margin-top: -65px;
-}
-
-
-
-
-#parts-cost-anchor .content_job-prices {
-    min-height: 109px;
-}
 
 .head-prices {
     text-align: center;
@@ -741,7 +633,7 @@ h2 {
     font-size: clamp(16px, 4vw, 18px);
     font-weight: 500;
     margin: 0;
-}
+} */
 
 
 
@@ -749,7 +641,7 @@ h2 {
 
 
 
-
+/* 
 
 .maintenance {
     width: 100%;
@@ -1009,15 +901,13 @@ h2 {
 
 .head_pricing-policy_foto-a h2 {
     margin-bottom: 5% !important;
-}
+} */
 
 
 
 
 @media (max-width:1440px) {
-    .head_pricing-policy h2:nth-child(1) {
-        margin: 6% 0% 0% 0%;
-    }
+    
 }
 
 
