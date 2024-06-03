@@ -1,217 +1,1290 @@
 ---
-import Container from "@components/container.astro";
-import Cta from "@components/cta.astro";
-import Contactbtn from "@components/contactbtn.astro";
-import Features from "@components/features.astro";
-import Hero from "@components/hero.astro";
-import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Contactbtn from "@components/contactbtn.astro";
+import Btn from "@components/btn.astro";
+import Costanchor from "@components/price-list/components_dryer-repair-cost.astro";
+import Cta from "@components/cta.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
 
 import "css/service/style_services.css";
 ---
 
+<!-- частые вопросы -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    let coll = document.getElementsByClassName("FAQ");
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  });
+</script>
+
 <Navbar />
 <Reviews />
-<Layout title="Same Day Microwave Repair">
+<Layout title="Microwave Repair">
   <Container>
     <main>
-      <h1>
-        <span class="animate-charcter">Same Day Dryer Repair</span> in Los Angeles
-        and Surrounding Areas
-      </h1>
+      <h1><span class="animate-charcter">Microwave Repair</span></h1>
 
       <div class="two-col-grid">
         <div class="col-one">
           <img
-            class="img-header"
-            src="/images/microwave-repair-los-angeles-and-surrounding-areas.webp"
-            width="500"
-            height="500"
-            alt="Dryer Repair SErvices Los Angeles - technician repairing a dryer"
+            loading="lazy"
+            width="500px"
+            height="500px"
+            src="/grill-repair/bbq-grill-repair-1.webp"
+            alt="BBQ grill repair cost"
           />
 
           <Contactbtn />
         </div>
 
         <div class="col-two">
-          <p style="text-align: start">
-            When your microwave starts malfunctioning, it can throw off your
-            daily meal preparation and schedules. That's precisely where Same
-            Day Appliance Repair offers professional microwave repair services
-            throughout Los Angeles. We aim to deliver quick and dependable
-            repair solutions to restore your microwave to peak condition with
-            the most minor downtime. Contact us for immediate, same-day repair
-            services and keep your kitchen operating smoothly.
-          </p><p style="text-align: start">
-            At Same Day Appliance Repair Services, we are proud of our highly
-            qualified technicians dedicated to staying abreast of the latest
-            appliance repair technology. We back our services with solid
-            guarantees, including up to a 3-month warranty on parts and labor,
-            underscoring our commitment to excellence and customer satisfaction.
-            Our pricing is designed to offer unmatched value, ensuring you get
-            the best service at competitive rates.
-          </p><p style="text-align: start">
-            Our team often encounters microwave issues that can be fixed with
-            simple solutions, such as replacing malfunctioning components or
-            fixing wiring issues. Yet, we're fully equipped to handle more
-            complex repairs, thanks to our technicians' vast experience. We
-            service all leading microwave brands, including GE, Samsung, Viking,
-            Thermador, and Whirlpool, ensuring we can address any problem you
-            face.
+          <Costanchor />
+
+          <p>
+            At Same Day Appliance Repair, we are a family-owned business
+            committed to enhancing your customer experience. We understand the
+            frustration of appliance repairs, and we pride ourselves on our
+            transparency and reliability. This page is designed to give you a
+            thorough understanding of our pricing policies, the costs associated
+            with a BBQ Grill repair, and our unique approach to service.
+          </p>
+
+          <p><b>Have Questions? We’re Here to Help!</b></p>
+
+          <p>
+            Feel free to call us if you have any questions. Our team is
+            dedicated to helping you and making sure you're happy.
+          </p>
+
+          <h2>How Much Does it Cost to Repair a BBQ Grill?</h2>
+          <p>
+            The typical cost to repair a BBQ grill varies from $85 to $500,
+            including parts and labor. A BBQ grill repair cost can vary based on
+            the type of issue, as well as the brand and model of your appliance.
+            Our technician will first need to diagnose the problem to provide
+            you with the most accurate estimate. Following the diagnosis, you'll
+            receive a detailed price breakdown. This helps make an informed
+            decision about whether to repair or replace your BBQ grill and
+            includes recommendations should you consider a replacement.
           </p>
         </div>
       </div>
-      <h2>Why Choose Our Microwave Repair Services in Los Angeles</h2><h3>
-        <strong>Prompt Same-Day Service</strong>
-      </h3><p>
-        We recognize the inconvenience of a broken microwave, so we provide
-        same-day appliance repair services across Los Angeles, aiming to solve
-        your appliance troubles swiftly, often within a single visit.
-      </p><h3><strong>Affordable Diagnostic Fee</strong></h3><p>
-        Our diagnostic fee is competitively priced, and we waive it if you
-        choose us for appliance repair services, making our services even more
-        cost-effective.
-      </p><h3><strong>Expert Repair Technicians</strong></h3><p>
-        Our certified technicians are adept at quickly diagnosing and repairing
-        microwave issues, whether an electric or a convection model, ensuring
-        fast and efficient service.
-      </p><h3><strong>Microwave Repair for Homes in Los Angeles</strong></h3><p
-        style="text-align: start">
-        Opting for the Same Day Appliance Repair benefits homeowners, including
-        efficient and safe microwave operation. Enjoy access to expert
-        technicians, quick service, fair prices, genuine parts, extensive
-        warranties, and a commitment to customer satisfaction.
-      </p><h3><strong>Commercial Microwave Repair in Los Angeles</strong></h3><p
-        style="text-align: start">
-        Our services extend to commercial microwaves, supporting restaurants,
-        catering companies, and other food service businesses. We understand the
-        crucial role of a fully functional microwave in these settings and offer
-        quick, reliable, and cost-effective appliance repairs to minimize
-        downtime and keep your operations running smoothly.
-      </p><h2><strong>Microwave Repair FAQs</strong></h2><h3>
-        <strong>Common Issues</strong>:
-      </h3><p>
-        We tackle various problems, from unresponsive buttons and ineffective
-        heating to turntable malfunctions and sparking issues.
-      </p><h3><strong>Signs You Need a Repair</strong></h3><p>
-        Persistent issues like ineffective heating, unusual noises, or sparks
-        indicate it's time to seek professional help.
-      </p><h3><strong>Repair or Replace?</strong></h3><p>
-        Consider repairs for relatively new or reliable microwaves with
-        manageable repair costs. Replacement may be better for older models or
-        when appliance repair costs approach the price of a new unit.
-      </p><h3><strong>Brands We Service</strong></h3><p>
-        We're experienced with various brands, ensuring expert appliance repair
-        services regardless of your microwave's make.
-      </p><ol>
-        <li>
+
+      <div class="pricing-policy">
+        <div class="head_pricing-policy head_pricing-policy_foto">
+          <div class="head_pricing-policy_foto-a">
+            <h2>Our Pricing Policy For BBQ Grill Repair And How We Work</h2>
+            <p>
+              There are four costs to consider when making your BBQ grill work
+              optimally.
+            </p>
+          </div>
+
+          <div class="head_pricing-policy_foto-b">
+            <img
+              loading="lazy"
+              width="600px"
+              height="500px"
+              src="/grill-repair/bbq-grill-repair-2.webp"
+              alt="Grill gas replacement cost"
+            />
+          </div>
+        </div>
+
+        <div class="content_pricing-policy">
+          <div class="con-inside_pricing-policy">
+            <div class="icon_pricing-policy">
+              <svg
+                fill="#000000"
+                height="50px"
+                width="50px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 490 490"
+                xml:space="preserve">
+                <g id="bold_copy_5_">
+                  <path
+                    d="M392.383,0H245H97.617v369.414L245,490l147.383-120.586V0z M361.758,354.898L245,450.432l-116.758-95.535V30.625H245
+		h116.758V354.898z"
+                  ></path>
+                  <path
+                    d="M245,311.395c-23.229,0-42.109,18.88-42.109,42.109c0,23.229,18.88,42.109,42.109,42.109
+		c23.229,0,42.109-18.88,42.109-42.109C287.109,330.275,268.229,311.395,245,311.395z M245,364.989
+		c-6.324,0-11.484-5.16-11.484-11.484c0-6.324,5.16-11.484,11.484-11.484c6.324,0,11.484,5.16,11.484,11.484
+		C256.484,359.828,251.324,364.989,245,364.989z"
+                  ></path>
+                  <path
+                    d="M238.079,62.919v12.005c-13.904,1.378-25.051,6.584-33.427,15.603c-8.376,9.019-12.556,20.151-12.556,33.427
+		c0,13.092,3.706,24.24,11.117,33.427c7.411,9.188,19.018,16.032,34.867,20.565v50.837c-4.364-2.113-8.33-5.497-11.882-10.198
+		c-3.553-4.701-5.987-10.275-7.289-16.752l-31.651,3.399c2.419,15.94,7.993,28.282,16.737,37.01
+		c8.743,8.728,20.09,13.95,34.101,15.649v22.065h17.579v-22.678c15.772-2.251,28.083-8.407,36.949-18.436
+		c8.851-10.03,13.276-22.372,13.276-37.01c0-13.092-3.507-23.842-10.55-32.218c-7.028-8.361-20.258-15.175-39.675-20.442v-47.438
+		c7.855,3.415,12.694,9.876,14.562,19.416l30.686-3.997c-2.098-12.143-6.952-21.82-14.547-29.048
+		c-7.61-7.243-17.839-11.637-30.701-13.169v-12.02H238.079z M238.079,143.356c-5.268-2.251-9.187-5.237-11.775-8.912
+		c-2.588-3.675-3.874-7.672-3.874-11.944c0-4.701,1.409-8.988,4.226-12.862c2.848-3.889,6.645-6.646,11.408-8.253v41.972H238.079z
+		 M271.383,192.187c3.2,3.935,4.778,8.606,4.778,14.011c0,6.064-1.899,11.347-5.696,15.833c-3.797,4.487-8.728,7.304-14.807,8.437
+		v-47.316C262.946,185.266,268.183,188.267,271.383,192.187z"
+                  ></path>
+                </g>
+              </svg>
+              <h3>Maintenance Cost</h3>
+            </div>
+
+            <div class="desc_pricing-policy">
+              <p>
+                Regular maintenance is essential for your BBQ grill's longevity
+                and optimal performance. We recommend annual maintenance, which
+                includes a thorough cleaning of the grill grates, burners, and
+                interior components, inspection and cleaning of the exterior
+                surfaces like control panels and knobs, checking and adjusting
+                gas supply and pressure, lubricating moving parts such as lid
+                hinges, replacing worn or damaged components like ignitors and
+                valves, and conducting a general tune-up to ensure all functions
+                are operational, thereby extending the grill's lifespan and
+                ensuring safe, reliable use. Our flat fee for this comprehensive
+                service is $80. This preventive approach is not only
+                cost-effective by reducing the need for BBQ grill repair but
+                also enhances the efficiency and lifespan of your appliance.
+                Schedule your maintenance appointment with us today and ensure
+                your BBQ grill runs smoothly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content_pricing-policy">
+          <div class="con-inside_pricing-policy">
+            <div class="icon_pricing-policy">
+              <svg
+                fill="#000000"
+                width="50px"
+                height="50px"
+                viewBox="0 0 1024 1024"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  d="M951.467 721.067C908.8 678.4 853.334 665.6 802.134 674.134l-409.6-409.6c8.533-51.2-4.267-110.933-46.933-149.333-42.667-46.933-110.933-64-174.933-42.667 0 0-4.267 0-4.267 4.267-4.267 0-4.267 4.267-8.533 4.267-8.533 8.533-8.533 21.333 0 29.867l59.733 59.733c4.267 4.267 4.267 12.8 0 17.067l-29.867 29.867c-8.533 4.267-12.8 4.267-17.067 0l-59.733-55.467c-8.533-8.533-21.333-8.533-29.867 0 0 0 0 4.267-4.267 4.267 0 0 0 4.267-4.267 4.267-21.333 59.733-8.533 128 38.4 174.933 34.133 34.133 76.8 46.933 115.2 46.933 12.8 0 21.333 0 34.133-4.267l409.6 409.6c-12.8 51.2 4.267 110.933 46.933 149.333 29.867 29.867 72.533 46.933 119.467 46.933 21.333 0 38.4-4.267 55.467-8.533 0 0 4.267 0 4.267-4.267 4.267 0 4.267-4.267 8.533-4.267 8.533-8.533 8.533-21.333 0-29.867L849.066 896c-4.267-4.267-4.267-4.267-4.267-8.533s0-8.533 4.267-8.533l29.867-29.867c4.267-4.267 4.267-4.267 8.533-4.267s4.267 0 8.533 4.267l55.467 55.467c8.533 8.533 21.333 8.533 29.867 0 0 0 0-4.267 4.267-4.267 4.267-4.267 4.267-4.267 4.267-8.533 25.6-59.733 8.533-128-38.4-170.667zM140.8 315.733c-25.6-25.6-38.4-64-34.133-98.133l29.867 29.867c12.8 8.533 25.6 17.067 42.667 17.067 12.8 0 29.867-4.267 38.4-17.067l29.867-29.867c21.333-21.333 21.333-55.467 0-76.8l-34.133-34.133c38.4-4.267 72.533 8.533 102.4 34.133 46.933 46.933 46.933 128 0 174.933-46.933 51.2-123.733 51.2-174.933 0zm166.4 59.734c12.8-8.533 29.867-17.067 38.4-29.867 12.8-12.8 21.333-25.6 29.867-42.667l384 384C746.667 695.466 729.6 704 716.8 716.8s-21.333 25.6-29.867 38.4L307.2 375.467zm580.267 426.666c-12.8 0-29.867 4.267-38.4 17.067L819.2 849.067c-8.533 8.533-17.067 25.6-17.067 38.4s4.267 29.867 17.067 38.4l29.867 29.867c-38.4 4.267-72.533-8.533-102.4-34.133-46.933-46.933-46.933-128 0-174.933s128-46.933 174.933 0c25.6 25.6 38.4 64 34.133 102.4l-29.867-29.867c-8.533-8.533-21.333-17.067-38.4-17.067z"
+                ></path><path
+                  d="M610.133 409.6c4.267 0 12.8 0 17.067-4.267L802.133 230.4l34.133 34.133-174.933 174.933c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 17.067 4.267 4.267 0 12.8 0 17.067-4.267l196.267-192 68.267-25.6c4.267-4.267 12.8-8.533 12.8-12.8l29.867-85.333c4.267-8.533 0-17.067-4.267-21.333l-59.733-64c-4.267-4.267-12.8-8.533-21.333-4.267l-85.333 29.867c-4.267 4.267-12.8 8.533-12.8 12.8l-25.6 72.533c-4.267 0-4.267 4.267-4.267 4.267l-192 192c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 12.8 4.267zm243.2-277.333l64-21.333 38.4 38.4-21.333 64-64 21.333-38.4-38.4 21.333-64zm-384 558.933L209.066 951.467c-8.533 8.533-17.067 8.533-21.333 4.267l-81.067-81.067c-4.267-4.267 0-12.8 4.267-21.333l256-256c8.533-8.533 8.533-21.333 0-29.867s-21.333-8.533-29.867 0l-256 256c-25.6 25.6-25.6 59.733-4.267 81.067l81.067 81.067c8.533 8.533 21.333 12.8 34.133 12.8 17.067 0 34.133-8.533 46.933-21.333l260.267-260.267c8.533-8.533 8.533-21.333 0-29.867s-21.333-4.267-29.867 4.267z"
+                ></path></svg
+              >
+              <h3>Service fees</h3>
+            </div>
+
+            <div class="desc_pricing-policy">
+              <p>
+                If your BBQ grill requires a repair, we charge a service fee of
+                $65, which includes a detailed price breakdown. This fee is
+                waived if you proceed with the BBQ grill repair. Unlike some
+                other appliance repair service companies, we do not offer free
+                estimates, but we guarantee you will not pay this fee if we
+                cannot diagnose properly. Our technicians are highly trained and
+                equipped with specialized tools to accurately diagnose and
+                resolve issues, ensuring transparency and fairness in our
+                charges. While DIY appliance repair might seem like a
+                cost-saving option, it often overlooks the potential safety
+                hazards and the complexity of modern appliances. Opting for
+                professional services ensures access to specialized knowledge
+                and tools, mitigating the stress and risks associated with DIY
+                repairs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content_pricing-policy">
+          <div class="con-inside_pricing-policy">
+            <div class="icon_pricing-policy">
+              <svg
+                height="50px"
+                width="50px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                xml:space="preserve">
+                <polygon
+                  style="fill:#FFFFFF;"
+                  points="58,397.144 58,114.856 256,9.072 454,114.856 454,397.144 256,502.936 "
+                ></polygon>
+                <path
+                  id="cost-svg"
+                  style="fill:#000;"
+                  d="M256,18.144l190,101.512V392.36L256,493.856L66,392.352V119.648L256,18.144 M256,0L50,110.056
+	v291.888L256,512l206-110.056V110.056L256,0L256,0z"
+                ></path>
+                <circle cx="256" cy="115.624" r="27.256"></circle>
+                <path
+                  d="M286.424,153.776h-60.856c-21.456,0-38.92,17.464-38.92,38.92v76.32c0,7.816,6.336,14.152,14.152,14.152
+	s14.152-6.336,14.152-14.152V200.56h8.496v64.536c0,0.032-0.008,0.056-0.008,0.088v144.288c0,7.816,6.336,14.152,14.152,14.152
+	c7.816,0,14.152-6.336,14.152-14.152v-116.08h8.488v116.08c0,7.816,6.336,14.152,14.152,14.152s14.152-6.336,14.152-14.152v-116.08
+	v-28.208V200.56h8.496v68.448c0,7.816,6.336,14.152,14.152,14.152s14.152-6.336,14.152-14.152v-76.32
+	C325.344,171.24,307.88,153.776,286.424,153.776z"
+                ></path>
+              </svg>
+              <h3>Labor cost</h3>
+            </div>
+
+            <div class="desc_pricing-policy">
+              <p>
+                See prices below. The cost of labor depends on the complexity of
+                the repair and the estimated time required. We ensure
+                transparency by providing a detailed quote before you commit to
+                the service. Should the repair take longer than expected, you
+                won’t be charged extra; we waive the diagnostic fee upon
+                proceeding with the repair, ensuring no surprises with the total
+                appliance repair costs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content_pricing-policy">
+          <div class="con-inside_pricing-policy">
+            <div class="icon_pricing-policy">
+              <svg
+                fill="#000000"
+                height="50px"
+                width="50px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 383.114 383.114"
+                xml:space="preserve">
+                <path
+                  d="M144.114,316.654c4.864,1.025,7.976,5.8,6.95,10.663c-0.894,4.237-4.633,7.146-8.798,7.146
+ c-0.615,0-1.239-0.063-1.865-0.195c-52.492-11.066-93.56-52.135-104.624-104.627c-1.025-4.864,2.087-9.638,6.951-10.663
+ c4.86-1.024,9.637,2.087,10.663,6.95C62.984,271.446,98.596,307.058,144.114,316.654z M177.525,201.533c0-4.971-4.029-9-9-9h-0.031
+ c-4.971,0-8.984,4.029-8.984,9s4.044,9,9.015,9S177.525,206.503,177.525,201.533z M383.114,22.071v109.6c0,4.971-4.029,9-9,9
+ s-9-4.029-9-9v-10.949H225.56l-30.513,52.852c5.318,5.05,9.203,11.599,10.969,18.96h43.302v-42.865c0-4.971,4.029-9,9-9s9,4.029,9,9
+ v51.598c0.002,0.089,0.004,0.178,0.004,0.268c0,29.557-13.044,56.124-33.679,74.247c-0.21,0.222-0.434,0.436-0.67,0.64
+ c-8.145,7.018-17.32,12.601-27.13,16.603c-11.401,4.669-23.861,7.267-36.911,7.321c-0.02,0.003-0.038,0-0.056,0
+ c-0.024,0-0.044,0-0.067,0.001c-0.025,0.001-0.048,0.001-0.071,0c-0.025-0.001-0.051-0.001-0.074,0c-0.025,0-0.052,0-0.076,0
+ c-0.028,0-0.079-0.007-0.078,0c0,0,0,0,0,0c-17.77,0-34.465-4.718-48.89-12.964c-0.172-0.086-0.344-0.178-0.513-0.275
+ c-0.179-0.103-0.353-0.212-0.522-0.325c-29.227-17.183-48.887-48.963-48.887-85.247s19.661-68.064,48.888-85.247
+ c0.169-0.113,0.343-0.223,0.522-0.325c0.169-0.098,0.34-0.189,0.513-0.275c14.427-8.248,31.117-12.964,48.893-12.964
+ c0.719,0,1.419,0.084,2.089,0.244c0.671-0.16,1.37-0.244,2.089-0.244h47.517c0.109-0.003,0.22-0.003,0.329,0h144.578V51.022H172.69
+ c-0.717,0-1.415-0.084-2.083-0.242c-0.668,0.158-1.366,0.242-2.083,0.242C85.519,51.022,18,118.541,18,201.533
+ s67.519,150.511,150.512,150.511c57.937,0,111.379-33.87,136.151-86.288c0.416-0.878,0.954-1.658,1.586-2.329
+ c8.479-18.72,13.235-39.469,13.32-61.301c-0.002-0.075-0.003-0.149-0.003-0.225v-52.233c0-4.971,4.029-9,9-9s9,4.029,9,9v51.598
+ c0.002,0.089,0.004,0.178,0.004,0.268c0,92.917-75.594,168.511-168.512,168.511c-0.182,0-0.363,0-0.546,0
+ C75.594,370.043,0,294.45,0,201.533S75.594,33.022,168.512,33.022c0.719,0,1.419,0.084,2.089,0.244
+ c0.671-0.16,1.37-0.244,2.089-0.244h192.424V22.071c0-4.971,4.029-9,9-9S383.114,17.1,383.114,22.071z M88.195,192.533h42.81
+ c1.767-7.362,5.651-13.91,10.971-18.961l-21.397-37.063C102.922,149.559,90.745,169.614,88.195,192.533z M120.577,266.557
+ l21.398-37.063c-5.319-5.051-9.204-11.599-10.971-18.961h-42.81C90.745,233.455,102.92,253.508,120.577,266.557z M200.871,275.581
+ l-21.4-37.068c-3.475,1.032-7.153,1.586-10.958,1.586c-3.806,0-7.483-0.554-10.959-1.586l-21.401,37.069
+ c9.913,4.348,20.86,6.763,32.36,6.763c0.02,0,0.041,0,0.063,0h0.002c0.026,0,0.047,0,0.071,0c0.021,0,0.048,0,0.066,0
+ c0.023,0,0.044-0.001,0.068,0c0.019-0.002,0.043-0.001,0.063-0.001c0.008,0,0.01,0,0.019,0c10.25-0.045,20.315-2.037,29.685-5.788
+ C199.331,276.242,200.102,275.917,200.871,275.581z M168.512,222.098c11.339,0,20.564-9.226,20.564-20.565
+ s-9.225-20.565-20.564-20.565c-11.341,0-20.567,9.226-20.567,20.565S157.171,222.098,168.512,222.098z M195.047,229.493
+ l21.398,37.063c17.654-13.049,29.83-33.104,32.379-56.022h-42.808C204.25,217.894,200.365,224.443,195.047,229.493z
+  M204.775,120.721H172.69c-0.717,0-1.415-0.084-2.083-0.242c-0.668,0.158-1.366,0.242-2.083,0.242
+ c-11.505,0-22.456,2.415-32.372,6.765l21.4,37.067c3.476-1.032,7.153-1.586,10.959-1.586c3.805,0,7.483,0.554,10.958,1.586
+ L204.775,120.721z"
+                ></path>
+              </svg>
+              <h3>Replacement Parts cost</h3>
+            </div>
+
+            <div class="desc_pricing-policy">
+              <p>
+                See prices below. While not every repair needs new parts,
+                certain situations require them to restore your BBQ grill to
+                peak performance. Our technicians carry various parts in their
+                vehicles, which usually enables same-day repairs. If a part must
+                be ordered, the cost will vary depending on your BBQ grill's
+                repair, brand, and model.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pros_pricing-policy">
           <p>
-            <strong>Panasonic</strong> - Known for innovative inverter technology,
-            which provides even cooking and defrosting.
+            *We always do our best to find parts at a lower price for our
+            customers. We do not make extra money on the parts; our priority is
+            to make it as easy as possible for the customer.
           </p>
-        </li><li>
-          <p>
-            <strong>Samsung</strong> - Offers a range of microwaves, including models
-            with intelligent technology and eco-mode features.
-          </p>
-        </li><li>
-          <p>
-            <strong>LG</strong> - Features models with EasyClean interiors and intelligent
-            inverter technology for precise cooking.
-          </p>
-        </li><li>
-          <p>
-            <strong>GE Appliances (General Electric)</strong> - Provides a variety
-            of models, including countertop, over-the-range, and built-in microwaves
-            with multiple features.
-          </p>
-        </li><li>
-          <p>
-            <strong>Whirlpool</strong> - Offers microwaves with sensor cooking and
-            steam cooking capabilities.
-          </p>
-        </li><li>
-          <p>
-            <strong>Sharp</strong> - Known for the Carousel countertop microwaves
-            and microwave drawers.
-          </p>
-        </li><li>
-          <p>
-            <strong>Bosch</strong> - Offers built-in microwaves and microwave oven
-            combos with sleek designs.
-          </p>
-        </li><li>
-          <p>
-            <strong>KitchenAid</strong> - Features models with convection cooking
-            and crispwave technology.
-          </p>
-        </li><li>
-          <p>
-            <strong>Frigidaire</strong> - Provides a range of easy-to-use microwaves
-            with quick-start options.
-          </p>
-        </li><li>
-          <p>
-            <strong>Toshiba</strong> - Offers microwaves with innovative features
-            like eco-mode and sound on/off options.
-          </p>
-        </li><li>
-          <p>
-            <strong>Maytag</strong> - Known for durable microwaves with sensor cooking
-            and multiple power levels.
-          </p>
-        </li><li>
-          <p>
-            <strong>Breville</strong> - Offers high-end microwaves with features
-            like intelligent presets and sensor IQ technology.
-          </p>
-        </li><li>
-          <p>
-            <strong>Electrolux</strong> - Features models with convection cooking
-            and fast cook options.
-          </p>
-        </li><li>
-          <p>
-            <strong>Amana</strong> - Known for commercial-grade microwaves and straightforward,
-            easy-to-use home-use models.
-          </p>
-        </li><li>
-          <p>
-            <strong>Miele</strong> - Offers premium microwaves with unique features
-            like automatic programs and built-in models for seamless kitchen integration.
-          </p>
-        </li>
-      </ol><h3><strong>Same-Day Microwave Repair</strong></h3><p
-        style="text-align: start">
-        Yes, we specialize in same-day repairs, prioritizing efficient solutions
-        to your microwave issues in Los Angeles.
-      </p><h3><strong>Microwave Repair Costs</strong></h3><p
-        style="text-align: start">
-        Costs vary depending on the repair needed and the model of your
-        microwave. We offer competitive pricing and transparent estimates.
-      </p><h3><strong>Warranty on Microwave Repair Services</strong></h3><p
-        style="text-align: start">
-        Our repairs come with a warranty, including 30 days of labor and up to 3
-        months for parts, demonstrating our confidence in our service quality.
-      </p><h3><strong>Preventative Maintenance for Microwaves</strong></h3><p
-        style="text-align: start">
-        We offer maintenance services to extend your microwave's lifespan and
-        ensure its efficiency, including inspections, cleaning, and necessary
-        adjustments or replacements.
-      </p><h3><strong>Duration of Microwave Repair Services</strong></h3><p
-        style="text-align: start">
-        Repair times can vary, but we aim to provide quick and effective
-        service, often completing repairs on the same day to reduce any
-        inconvenience to your routine.
-      </p><p style="text-align: start">
-        By addressing these FAQs, we hope to offer comprehensive information
-        about our microwave repair services in Los Angeles, emphasizing the
-        benefits and ensuring our customers are well-informed about our
-        wide-ranging offerings."
-      </p>
+        </div>
+      </div>
     </main>
+    <Btn />
+
+    <div class="job-prices" id="labor-cost-anchor">
+      <div class="head_pricing-policy head_pricing-policy_foto">
+        <div class="head_pricing-policy_foto-b">
+          <img
+            loading="lazy"
+            width="600px"
+            height="500px"
+            src="/grill-repair/bbq-grill-repair-3.webp"
+            alt="Bbq grill repair cost near me"
+          />
+        </div>
+
+        <div class="head_pricing-policy_foto-a">
+          <h2>BBQ Grill Repair Cost - Labor Only Excluding Parts</h2>
+          <p>Here are some common problems and price ranges</p>
+        </div>
+      </div>
+
+      <div class="full-content_job-prices">
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>
+                Uneven heating, some areas not igniting, visible rust or damage.
+              </p></a
+            >
+            <p>Burners (Gas Grill) Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$100 - $200</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>
+                Grill won’t light despite full gas tank and open valves.
+              </p></a
+            >
+            <p>Ignition System (Gas Grill) Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$85 - $150</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Cracked, warped, or heavily rusted grates.</p></a>
+            <p>Grill Grates Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$85 - $200</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>Flare-ups, uneven flavor, noticeable deterioration.</p></a
+            >
+            <p>Flavorizer Bars (Gas Grill) Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$85 - $150</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>Gas leak (smell of gas), burner not receiving gas.</p></a
+            >
+            <p>Gas Valves and Hoses (Gas Grill) Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$85 - $200</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>Low flame, uneven heat, blockages by insects or debris.</p></a
+            >
+            <p>Venturi Tubes (Gas Grill) Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$85 - $150</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>Low flame or no gas flow, even when the tank is full.</p></a
+            >
+            <p>Regulator (Gas Grill) Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$85 - $150</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>Inaccurate temperature readings, not responding.</p></a
+            >
+            <p>Thermometer Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$85 - $100</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>
+                Difficulty in removing or fitting ash catcher, excessive ash
+                leakage.
+              </p></a
+            >
+            <p>Ash Catcher (Charcoal Grill) Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$85 - $150</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>Cracks or holes, significant rust or corrosion.</p></a
+            >
+            <p>Firebox (Charcoal and Gas Grills) Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$100 - $300</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>Dents, rust, or damage to the handle or hinges.</p></a
+            >
+            <p>Lid Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$100 - $300</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>Knobs stuck, broken, or not regulating flame properly.</p></a
+            >
+            <p>Control Knobs (Gas Grill) Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$85 - $150</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>Difficulty moving the grill, broken or stuck wheels.</p></a
+            >
+            <p>Casters and Wheels Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$85 - $150</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"
+              ><p>Difficulty sliding in or out, corrosion or damage.</p></a
+            >
+            <p>Pull-out Trays and Racks Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$85 - $150</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Non-functional or damaged lights.</p></a>
+            <p>Lighting Fixtures (for night grilling) Replacement Cost</p>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$85 - $150</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <Btn />
+
+    <div class="job-prices" id="parts-cost-anchor">
+      <div class="head_pricing-policy head_pricing-policy_foto">
+        <div class="head_pricing-policy_foto-a">
+          <h2>BBQ Grill Replacement Parts Costs</h2>
+          <p>Here is a list of BBQ grill replacement part costs based on the search results</p>
+        </div>
+
+        <div class="head_pricing-policy_foto-b">
+          <img
+            loading="lazy"
+            width="500px"
+            height="500px"
+            src="/grill-repair/bbq-grill-repair-4.webp"
+            alt="Best BBQ grill repair cost near me"
+          />
+        </div>
+      </div>
+
+      <div class="full-content_job-prices">
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Ceramic briquettes</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$30 - $100</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Grill grates</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$30 - $100</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Burners</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$20 -$200</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Ignition components</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$5 - $31</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices" id="col-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Warming racks</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$100</p>
+          </div>
+        </div>
+
+        <div class="content_job-prices">
+          <div class="desk_job-prices">
+            <a href="#"><p>Miscellaneous parts (knobs, drip trays, thermometers, hoods)</p></a>
+          </div>
+
+          <div class="money_job-prices">
+            <p>$15 - $430 </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pros_job-prices">
+        <p>
+          *The search results indicate that the cost of repairing a BBQ grill can vary significantly depending on the specific parts needed and the brand/model of the grill. In general, smaller replacement parts like knobs and thermometers are relatively inexpensive, while larger components like burners, grates, and hoods can be more costly. The overall cost of repairs should be weighed against the cost of buying a new grill to determine the best course of action.
+        </p>
+      </div>
+    </div>
+    <Btn />
+
+    <div class="maintenance">
+      <div class="head_pricing-policy head_pricing-policy_foto">
+        <div class="head_pricing-policy_foto-b">
+          <img
+            loading="lazy"
+            width="600px"
+            height="500px"
+            src="/grill-repair/bbq-grill-repair-5.webp"
+            alt="Grill cleaning service cost"
+          />
+        </div>
+
+        <div class="head_pricing-policy_foto-a">
+          <h2>Ways to Save Money on BBQ Grill Repair</h2>
+        </div>
+      </div>
+
+      <div class="description_maintenance">
+        <div class="conclusion-description_maintenance">
+          <div class="head_description_maintenance">
+            <svg
+              fill="#000000"
+              height="35px"
+              width="35px"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 296.999 296.999"
+              xml:space="preserve">
+              <g>
+                <g>
+                  <g>
+                    <path
+                      d="M169.197,43.09H18.808c-7.176,0-13.014,5.838-13.014,13.014v227.444c0,7.176,5.838,13.014,13.014,13.014h150.389
+				c7.176,0,13.014-5.838,13.014-13.014V56.105C182.211,48.928,176.373,43.09,169.197,43.09z M151.794,274.258H36.21
+				c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+				S156.273,274.258,151.794,274.258z M151.794,235.73H36.21c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584
+				c4.479,0,8.111,3.632,8.111,8.111C159.905,232.098,156.273,235.73,151.794,235.73z M151.794,197.202H36.21
+				c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+				S156.273,197.202,151.794,197.202z M151.794,158.674H36.21c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584
+				c4.479,0,8.111,3.632,8.111,8.111S156.273,158.674,151.794,158.674z M151.794,120.146H36.21c-4.479,0-8.111-3.632-8.111-8.111
+				s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111S156.273,120.146,151.794,120.146z M151.794,81.618H36.21
+				c-4.479,0-8.111-3.632-8.111-8.111c0-4.479,3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+				C159.905,77.986,156.273,81.618,151.794,81.618z"
+                    ></path>
+                    <path
+                      d="M213.642,0H57.336c-7.177,0-13.014,5.838-13.014,13.014v13.854h124.875c16.121,0,29.237,13.115,29.237,29.237v201.931
+				h15.208c7.176,0,13.014-5.838,13.014-13.014V13.014C226.656,5.838,220.818,0,213.642,0z"
+                    ></path>
+                    <path
+                      d="M291.205,23.324C291.204,10.464,281.88,0,270.42,0c-11.461,0-20.785,10.464-20.785,23.324v13.584h41.57V23.324z"
+                    ></path>
+                    <path
+                      d="M249.635,53.13v214.537h0c0,1.2,0.342,2.373,0.983,3.371l14.921,23.249c1.087,1.694,2.919,2.712,4.881,2.712
+				c1.961,0,3.794-1.018,4.881-2.712l14.921-23.249c0.641-0.998,0.983-2.171,0.983-3.371V53.13H249.635z"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <p><b>Timely maintenance</b></p>
+          </div>
+
+          <p>
+            - Timely maintenance can save you money on unnecessary repairs and increase your appliance’s longevity. We charge a flat fee of $80 for the BBQ grill maintenance service.
+          </p>
+          <p>
+            - BBQ grill maintenance includesa thorough cleaning of the grill grates, burners, and interior components, inspection and cleaning of the exterior surfaces like control panels and knobs, checking and adjusting gas supply and pressure, lubricating moving parts such as lid hinges, replacing worn or damaged components like ignitors and valves, and conducting a general tune-up to ensure all functions are operational, thereby extending the grill's lifespan and ensuring safe, reliable use.
+          </p>
+        </div>
+
+        <div class="conclusion-description_maintenance">
+          <div class="head_description_maintenance">
+            <svg
+              width="35px"
+              height="35px"
+              viewBox="0 0 24 24"
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              ><defs
+                ><style>
+                  .cls-1 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-miterlimit: 10;
+                    stroke-width: 1.91px;
+                  }
+                </style></defs
+              ><polygon
+                class="cls-1"
+                points="16.35 1.5 7.65 1.5 1.5 7.65 1.5 16.35 7.65 22.5 16.35 22.5 22.5 16.35 22.5 7.65 16.35 1.5"
+              ></polygon><line
+                class="cls-1"
+                x1="12"
+                y1="6.27"
+                x2="12"
+                y2="13.91"></line><line
+                class="cls-1"
+                x1="12"
+                y1="15.82"
+                x2="12"
+                y2="17.73"></line></svg
+            >
+            <p><b>Avoid DIY range hood repair</b></p>
+          </div>
+          <p>
+            - While the idea of DIY BBQ grill repair might seem appealing for cost savings, it poses significant safety concerns and potential long-term costs. It's crucial to consult a professional for appliance repair to ensure safety and avoid additional expenses from improper fixes.
+          </p>
+        </div>
+
+        <div class="conclusion-description_maintenance">
+          <div class="head_description_maintenance">
+            <svg
+              fill="#000000"
+              width="37px"
+              height="37px"
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon">
+              <path
+                d="M866.9 169.9L527.1 54.1C523 52.7 517.5 52 512 52s-11 .7-15.1 2.1L157.1 169.9c-8.3 2.8-15.1 12.4-15.1 21.2v482.4c0 8.8 5.7 20.4 12.6 25.9L499.3 968c3.5 2.7 8 4.1 12.6 4.1s9.2-1.4 12.6-4.1l344.7-268.6c6.9-5.4 12.6-17 12.6-25.9V191.1c.2-8.8-6.6-18.3-14.9-21.2zM810 654.3L512 886.5 214 654.3V226.7l298-101.6 298 101.6v427.6zm-405.8-201c-3-4.1-7.8-6.6-13-6.6H336c-6.5 0-10.3 7.4-6.5 12.7l126.4 174a16.1 16.1 0 0 0 26 0l212.6-292.7c3.8-5.3 0-12.7-6.5-12.7h-55.2c-5.1 0-10 2.5-13 6.6L468.9 542.4l-64.7-89.1z"
+              ></path>
+            </svg>
+            <p><b>Find a company that provides a warranty.</b></p>
+          </div>
+          <p>
+            - At the Same Day Appliance Repair, we provide up to three months of warranty.
+          </p>
+        </div>
+      </div>
+    </div>
+    <Btn />
+
+    <div class="faq-full" id="faqs-anchor">
+      <h2>FAQs</h2>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>Should I repair my grill or replace it with a new one?</h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          Deciding whether to repair your grill or replace it with a new one depends on several factors:
+        </p>
+        <ul>
+          <li><b>Cost of Repairs vs. New Grill: </b>Compare the cost of necessary repairs to the price of purchasing a new grill. If repair costs approach or exceed 50% of the price of a new grill, it might be more economical to invest in a new one.</li>
+          <li><b>Age of the Grill: </b>Consider the age of your grill. If it's nearing the end of its typical lifespan (usually about 5-15 years depending on the model and how well it's been maintained), replacement might be a better long-term solution.</li>
+          <li><b>Condition and Performance: </b>Evaluate the overall condition and performance of your grill. If you're experiencing frequent breakdowns or if the grill no longer meets your needs (e.g., size, features), upgrading to a new model could enhance your grilling experience.</li>
+          <li><b>Availability of Replacement Parts: </b>Check the availability of replacement parts for your grill. If parts are difficult to find or discontinued, repairing might not be a viable option.</li>
+          <li><b>Energy Efficiency and Features: </b>Newer models might offer better energy efficiency or additional features that improve cooking and convenience, which could justify the cost of an upgrade.</li>
+          <li><b>Sentimental Value: </b>Sometimes, a grill may have sentimental value, influencing your decision to repair it instead of replacing it.</li>
+        </ul>
+        <p>Weighing these factors will help you decide on whether to repair or replace your grill.</p>
+        <img
+          loading="lazy"
+          width="600px"
+          height="800px"
+          src="/grill-repair/bbq-grill-repair-6.webp"
+          alt="Gas grill cleaning service cost"
+        />
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>
+            What is the cost of your BBQ repair service?
+          </h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          The cost of our BBQ repair service is $155.00.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>Where can I find Outdoor Gourmet grill parts?</h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          You can find Outdoor Gourmet grill parts through our repair service. While not every repair requires new parts, our technicians carry a variety of parts in their vehicles, allowing for same-day repairs in many cases. If a specific part for your Outdoor Gourmet grill needs to be ordered, the cost and availability will depend on the specific repair requirements and the model of your grill.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>What is the typical cost to have a grill cleaned and serviced?</h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          The cost for bbq cleaning and repair services typically ranges from $130 to $450, depending on the grill's size, brand, and overall condition:
+        </p>
+        <ul>
+          <li>For smaller grills measuring 20-29 inches, the cleaning and repair service cost is usually between $249 and $329.</li>
+          <li>Medium-sized grills, spanning 30-39 inches, generally cost between $279 and $350 to clean and service.</li>
+          <li>Larger grills, which are 40-49 inches, have a service price ranging from $309 to $450.</li>
+          <li>Extra-large grills, those 50 inches or larger, start at a service cost of $349.</li>
+        </ul>
+        <p>
+          Additional services may be necessary, such as cleaning side burners at $25 each, and servicing exhaust hoods, which costs between $70 and $150. Some service providers offer annual maintenance plans to ensure grills are maintained throughout the year.
+        </p>
+        <p>The final pricing can be affected by the grill’s condition; grills with extensive rust or damage may incur higher costs. Overall, the comprehensive nature of professional grill cleaning and repair services justifies the cost range of $130 to $450, depending on the specific job details.</p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>
+            How much do grill repairs usually cost?
+          </h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          The cost of grill repairs can vary significantly, with prices starting at around $80 and potentially reaching $710 or more for extensive repairs, depending on the specific issues and the parts needed for replacement. Here are some typical costs associated with common grill repair needs:
+        </p>
+        <ul>
+          <li>Replacing ceramic briquettes can cost between $80 and $100.</li>
+          <li>New grill grates also range from $80 to $100.</li>
+          <li>Replacing burners might cost over $100, which could make purchasing a new grill a more viable option.</li>
+          <li>Ignitors, on the lower end of the cost spectrum, typically cost around $80 to replace.</li>
+        </ul>
+        <p>The average repair cost for commercial flat-top grills is $710.25, indicating the higher expenses that can be involved in more substantial repairs.</p>
+        <p>These figures suggest that while minor repairs might start at a higher baseline of $80, significant issues could lead to considerable expenses, sometimes making the replacement of the grill a more sensible choice.</p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>What does the BBQ cleaning service include?</h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          A BBQ cleaning service typically offers a comprehensive approach to maintaining your barbecue grill, ensuring it operates efficiently and safely in your outdoor kitchen. Here's what the service generally covers:
+        </p>
+        <ul>
+          <li><b>Inspection: </b>Initially, a thorough inspection of the grill, including built-in grills and models powered by propane or natural gas, identifies areas that need attention.</li>
+          <li><b>Removing Dirt and Grease: </b>The process includes removing accumulated dirt and grease from cooking grates and heat plates, essential for preventing smoke and flare-ups during grilling.</li>
+          <li><b>Cleaning Burner Tubes and Control Panel: </b>The service involves meticulously brushing burner tubes and the control panel to ensure optimal gas flow and flame control.</li>
+          <li><b>Brushing Cooking Grates: </b>Cooking grates are scrubbed clean, which helps in better heat distribution and a smoother cooking experience.</li>
+          <li><b>Igniter Check: </b>The igniter is inspected and cleaned to ensure reliable ignition every time you cook.</li>
+          <li><b>Lava Rocks and Heat Plates: </b>Lava rocks and heat plates are also cleaned to ensure they distribute heat evenly and enhance the flavor of your food.</li>
+          <li><b>Exterior and Interior Cleaning: </b>Both the interior and exterior of the grill are cleaned, which includes polishing and removing any oil residues, ensuring your grill looks as good as new.</li>
+          <li><b>Grease Management: </b>The service includes cleaning out grease traps and catch pans to reduce the risk of grease fires.</li>
+          <li><b>Reassembly and Testing: </b>After cleaning, the grill is reassembled, and all components are tested to ensure they work correctly, including a check for any necessary grill repair services.</li>
+          <li><b>Additional Services: </b>Some BBQ cleaning services might also offer to oil the grates and apply protective coatings to keep the grill in prime condition.</li>
+        </ul>
+        <p>These steps are designed to extend the life of your barbecue grill, improve its performance, and ensure it remains a centerpiece of your outdoor kitchen.</p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>How do I find the right replacement parts for my grill?</h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>Finding the right replacement parts for your grill ensures that it continues to operate efficiently and safely. Here’s a step-by-step guide on how to find and purchase the correct parts:
+        </p>
+        <ul>
+          <li>
+            <b>Identify Your Grill Model: </b> The first step is to identify the make and model of your grill. This information is typically found on a label on the grill itself, often on the back, underside of the lid, or inside the door of the grill’s cart. The model number is crucial as it helps in finding the exact parts that fit your grill.
+          </li>
+          <li>
+            <b>Check the Grill’s Manual: </b> If you have the grill’s manual, it can be an excellent resource. Most manuals will have a parts list that includes part numbers and descriptions. If you don’t have a physical copy of the manual, often manufacturers provide digital versions on their websites.
+
+          </li>
+          <li>
+            <b> Visit the Manufacturer’s Website: </b> Most grill manufacturers sell replacement parts directly from their website. Using the model number, you can search for specific parts. This ensures that you get components that are guaranteed to fit and function correctly with your grill.
+
+          </li>
+          <li>
+            <b>Authorized Dealers and Retailers: </b> Besides the manufacturer, you can also check with authorized dealers and retailers. They often have a range of parts available and can order specific parts on your behalf if they don't have them in stock.
+
+          </li>
+          <li>
+            <b>Online Marketplaces: </b>Websites like Amazon, eBay, and other online marketplaces can be good sources for grill parts. However, it’s crucial to ensure that the parts are compatible with your grill model. Check customer reviews and seller ratings to make informed decisions.
+
+          </li>
+          <li>
+            <b>Specialty Stores: </b>Some specialty stores focus on barbecue equipment and supplies. These stores not only offer a variety of grill parts but also provide expert advice on installation and maintenance.
+
+          </li>
+          <li>
+            <b>Verify Compatibility: </b>Before making a purchase, double-check that the part is compatible with your grill model. This can usually be confirmed by the part number and detailed product descriptions.
+
+          </li>
+          <li>
+            <b>Consider Universal Parts: </b>For some common parts like grill grates and burners, universal options might be available. These are designed to fit a wide range of grill models but check the specifications to ensure they will work with your grill.
+
+          </li>
+          <li>
+            <b>Customer Support: </b>If you're unsure, most manufacturers and retailers have customer support services. They can assist you in finding the right parts and answer any questions regarding installation or maintenance.
+
+          </li>
+        </ul>
+        <p>By following these steps, you can find the right replacement parts that will keep your grill in top condition, enhancing your cooking experience and extending the lifespan of your grill.</p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>
+            What are common issues with built-in BBQ grills that you address?
+          </h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          <b>Here are the common issues with built-in BBQ grills:</b>
+        </p>
+        <p>Ventilation is a major concern with built-in grills. Freestanding grills are designed to have proper airflow, but when enclosed in an outdoor kitchen structure, ventilation can become inadequate. This can lead to heat buildup, fire hazards, and even explosions.</p>
+        <p>Warranty issues are also common when using a freestanding grill as a built-in. Modifying a grill by removing legs or enclosing it often voids the manufacturer's warranty, leaving the owner responsible for any repairs.</p>
+        <p>Longevity is questionable for built-in grills made from freestanding models. Freestanding grills are not designed for permanent installation and may not last as long as a grill specifically engineered for built-in use.</p>
+        <p>Replacement of a built-in grill can be problematic if it was made from a freestanding model. The dimensions and fit may not match up with the existing outdoor kitchen structure.</p>
+        <p>Structural integrity is a concern, as built-in grills require proper support and installation that freestanding models may not provide.</p>
+        <p>In summary, the key issues are ventilation problems, warranty concerns, reduced lifespan, replacement difficulties, and structural challenges when using a freestanding grill as a built-in.</p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>
+            My grill ignitor is not working. What could be wrong?
+          </h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          If your grill ignitor isn't working, several issues could be at play. Here is a step-by-step guide to help you troubleshoot and potentially resolve the problem, incorporating terms like maintain, replaced, BBQ repair, deep cleaning, grill repair service, and grill cleaning:
+        </p>
+        <ul>
+          <li>
+            <b>Maintain the Battery (if applicable)</b>
+            <p>Many grill ignitors operate with a battery. Start by maintaining the battery’s condition:</p>
+            <ul>
+              <li>Access the battery compartment, typically located on the ignitor button panel.</li>
+              <li>Replace the old battery with a new one, ensuring it's correctly installed with the right polarity.</li>
+              <li>Attempt to ignite the grill again.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Inspect the Ignitor Button</b>
+            <p>The ignitor button can sometimes become stuck or break:</p>
+            <ul>
+              <li>Press the button and listen for a clicking sound; a lack of sound might suggest a malfunction.</li>
+              <li>Check that the button is not jammed or visibly damaged.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Deep Cleaning of the Ignitor and Electrodes</b>
+            <p>Residue from grease and food can impair the functionality of the ignitor and electrodes:</p>
+            <ul>
+              <li>Turn off the gas and disconnect the power supply.</li>
+              <li>Use a wire brush or an alcohol wipe to thoroughly clean around the ignitor’s electrode, removing any buildup.</li>
+              <li>Inspect for any signs of wear or damage.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Check the Electrode Connections</b>
+            <p>Improper connections can prevent the ignitor from working:</p>
+            <ul>
+              <li>Confirm that all wires connecting to the ignitor and electrode are secure and not damaged.</li>
+              <li>Look for signs of corrosion and clean or replace connectors as needed.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Test the Spark</b>
+            <p>After deep cleaning and checking connections, test for a spark:</p>
+            <ul>
+              <li>Make sure the area is sufficiently dark to observe the spark.</li>
+              <li>Slightly turn on the gas and press the ignitor button.</li>
+              <li>Observe for a spark at the electrode tip; absence of a spark might indicate a need for replacement of the electrode or wiring.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Ensure Proper Gas Flow</b>
+            <p>Confirm that gas is flowing correctly to the burners:</p>
+            <ul>
+              <li>Check that the gas tank is not empty and that all valves are fully open.</li>
+              <li>Look for any kinks or blockages in the gas line.</li>
+              <li>Use a pin or small wire to clear any blockages in the burner holes.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Consider a Professional Grill Repair Service</b>
+            <p>If the above solutions do not resolve the issue, it may be more complex than anticipated:</p>
+            <ul>
+              <li>You might want to seek advice from the grill manufacturer’s support team.</li>
+              <li>Engaging a professional grill repair service can be crucial for safely handling more intricate issues, especially those related to gas connections or electrical components.</li>
+            </ul>
+          </li>
+
+        </ul>
+        <p>By following these steps, you should be able to diagnose and potentially fix common issues with your grill ignitor. Always prioritize safety by turning off the gas and disconnecting power while performing any grill cleaning or maintenance.</p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>How long does a typical bbq repair job take?</h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          The duration of a typical grill repair job can vary widely depending on several factors, including the nature and complexity of the issue, the availability of parts, and the skill level of the technician. Here are some general guidelines:
+        </p>
+        <ol>
+          <li><b>Simple Repairs (e.g., replacing ignitors, burners, or grates): </b>These are usually straightforward and can often be completed within 1 to 2 hours. These tasks generally involve replacing worn or damaged components which don’t require extensive disassembly.
+          </li>
+          <li><b>Moderate Repairs (e.g., fixing gas leaks, replacing valves):  </b>These types of repairs might take a few hours. They can involve more detailed diagnostics to locate the problem, followed by careful disassembly and replacement of parts.</li>
+          <li><b>Complex Repairs (e.g., extensive corrosion repair, multiple part replacements): </b>If a grill has not been maintained properly and requires extensive cleaning, part replacements, or has multiple issues, the repair can take a half day or even a full day. Complex repairs might also involve waiting for parts to be ordered and delivered if they are not immediately available.</li>
+          <li><b>Cleaning and Maintenance:  </b>A deep cleaning job or thorough maintenance check can take anywhere from an hour to several hours, depending on the grill's condition and the thoroughness of the service.</li>
+        </ol>
+        <p>If you are considering a repair, it's a good idea to consult with a professional grill repair service who can provide a more accurate estimate based on the specific condition and model of your grill. This can help you understand whether a repair is feasible or if it might be more cost-effective to consider a replacement.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>Why isn't my gas grill getting hot?</h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>If your gas grill is not getting hot enough, several issues could be causing the problem. Here’s a list of common causes and steps you can take to diagnose and resolve the issue:
+        </p>
+        <ul>
+
+          <li>
+            <b>Check the Propane Tank</b>
+            <ul>
+              <li>Low Fuel: Ensure that there's enough propane in the tank. A simple way to check is to feel the weight of the tank or use a propane gauge.</li>
+              <li>Tank Connection: Sometimes the regulator (the part that connects the propane tank to the grill) needs resetting. Turn off the gas at the tank, disconnect it, wait a minute, reconnect it, and slowly turn the gas on again.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Inspect the Burners</b>
+            <ul>
+              <li>Clogged Burner Holes: Grease and food debris can clog the burner holes, restricting gas flow. Turn off the grill and the gas, let it cool, and then clean the burners with a wire brush or a small piece of wire to clear the holes.</li>
+              <li>Misalignment: Ensure the burners are correctly aligned with their respective gas ports.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Examine the Regulator</b>
+            <ul>
+              <li>Faulty Regulator: The regulator controls the gas pressure. If it’s faulty or stuck, it can restrict the flow of gas. If resetting the regulator as mentioned doesn’t help, you might need to replace it.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Check for Gas Leaks</b>
+            <ul>
+              <li>Leak Test: Mix a small amount of soap with water and apply it to the hoses and connections. Turn the gas on (with the grill off) and look for bubbles forming, which indicate a leak. Tighten connections or replace the hose if necessary.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Venturi Tubes Adjustment</b>
+            <ul>
+              <li>Alignment and Blockages: The venturi tubes, which mix air and gas and deliver it to the burners, can sometimes get misaligned or blocked by insects or debris. Check and clean these tubes if necessary.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Thermostat Issues</b>
+            <ul>
+              <li>Faulty Thermostat: If your grill has a built-in thermostat, it might be malfunctioning and not reading the temperature correctly.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>General Maintenance</b>
+            <ul>
+              <li>Regular Cleaning and Upkeep: Regular maintenance and deep cleaning of the grill are crucial to ensure it operates at optimal efficiency. Build-up of grease and dirt can affect performance.</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Check for Adequate Airflow</b>
+            <ul>
+              <li>Airflow Blockage: Make sure the grill is not placed in a tightly enclosed area which might be restricting airflow necessary for the gas to burn efficiently.</li>
+            </ul>
+          </li>
+        </ul>
+        <p>By systematically checking these areas, you can often find the reason your gas grill is not getting hot enough and resolve the issue. If you’ve checked these areas and still face problems, it might be time to consult a professional for a more thorough inspection and bbq repair.</p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>What should I know about burners and ignitors?</h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>Burners and ignitors are critical components of a gas grill. Burners are usually made of stainless steel, cast iron, or aluminum and are responsible for the direct heating of the grill. Ignitors are used to light the gas released by the burners. It's important to regularly check these parts for wear and damage, such as clogged burner holes or faulty ignitor connections, which can affect the efficiency and safety of your grill.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>Should I disconnect the gas or fuel line before attempting grill repairs?</h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>Yes, it is essential to disconnect the gas or fuel line before attempting any repairs on your grill. This is a safety precaution to prevent any accidental ignition or gas leaks while you are working on the grill. Make sure the gas supply is completely turned off and the grill is cooled down before starting any repair work.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>How long do gas grills typically last?</h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>The lifespan of a gas grill depends on its build quality, usage frequency, and maintenance. On average, a well-maintained gas grill can last between 5 to 15 years. Regular cleaning, timely repairs, and proper winter storage can significantly extend the life of your grill.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>What are the components of grill grates?</h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>Grill grates are typically made from cast iron, stainless steel, or porcelain-coated materials. They may have different designs, such as rods, grids, or a combination thereof. The material and design of the grates affect their heat distribution properties and durability. It's important to choose the right type based on your cooking preferences and maintenance capacity.</p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>How do I remove the grate, rocks, and flame bar for cleaning or repair?</h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>To remove these components, ensure the grill is cool and the gas is disconnected. Start by lifting out the grill grates. If your grill has lava rocks or ceramic briquettes, remove them by hand after ensuring they are cool. Finally, remove the flame tamers (flame bars) that sit above the burners. This exposes the burners for easy cleaning or replacement. Consult your grill’s manual for specific instructions as designs may vary.
+        </p>
+      </div>
+
+      <div class="FAQ">
+        <div class="fa">
+          <h3>Should I repair or replace my gas Grill?</h3>
+        </div>
+
+        <div class="fa_plus">︾</div>
+
+        <div class="fa_minus">︽</div>
+      </div>
+
+      <div class="questions">
+        <p>
+          Deciding whether to repair or replace your gas grill depends on several factors:
+        </p>
+        <ul>
+          <li>Age of the Grill: If your grill is old and nearing the end of its expected lifespan, replacement might be a better investment.</li>
+          <li>Cost of Repairs: If the cost of repairs approaches or exceeds half the cost of a new grill, it might be more economical to replace it.</li>
+          <li>Availability of Replacement Parts: Some older models may have discontinued parts, making repairs difficult or impossible.</li>
+          <li>Overall Condition: If other parts of the grill are also worn out or rusted, replacing the entire unit could be more beneficial.</li>
+        </ul>
+        <p>Before making a decision, weigh the cost implications and consider how much life you can realistically get from repairing your current grill versus purchasing a new one.</p>
+      </div>
+
+      <div class="FAQ_bottom"></div>
+    </div>
+    <Btn />
   </Container>
 </Layout>
 <Cta />
