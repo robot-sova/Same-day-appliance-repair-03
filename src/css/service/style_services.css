@@ -16,10 +16,10 @@ h1 {
 .animate-charcter {
     text-transform: uppercase;
     background-image: linear-gradient(-225deg,
-        #fff 0%,
-        #000 15%,
-        #111112 67%,
-        #858384 100%);
+            #fff 0%,
+            #000 15%,
+            #111112 67%,
+            #858384 100%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -33,8 +33,8 @@ h1 {
     font-size: clamp(35px, 7vw, 60px);
     line-height: clamp(56px, 8vh, 60px);
     font-weight: 900;
-  }
-  
+}
+
 
 h2 {
     text-align: center;
@@ -46,7 +46,8 @@ h2 {
 
 main {
     display: grid;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    position: relative;
     width: 100%;
     max-width: 100%;
 }
@@ -57,7 +58,6 @@ main {
     justify-self: center;
     width: 100%;
     overflow: hidden;
-    min-height: 70vh;
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 42%, rgba(255, 255, 255, 0.7478641114648985) 63%, rgba(255, 255, 255, 0) 100%);
 }
 
@@ -66,6 +66,7 @@ main {
     max-width: 1920px;
     justify-self: center;
     height: 100%;
+    padding: 10% 0;
 }
 
 .page-header-d {
@@ -73,9 +74,7 @@ main {
     width: 50%;
     position: relative;
     align-self: center;
-    /* min-height: 60vh;
-    height: 100%; */
-    margin-top: 10%;
+    margin-top: 3%;
     margin-left: 3%;
 }
 
@@ -100,6 +99,22 @@ main {
 
 
 
+.page213 {
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    margin: 0 auto;
+}
+
+.page213-container {
+    grid-column: 2 / 8;
+    position: relative;
+    position: sticky;
+    margin-left: 0;
+    margin-right: 0;
+}
 
 
 
@@ -130,7 +145,173 @@ main {
 
 
 
+/* левое мменю  */
 
+.full_left_menu_r {
+    grid-column: 1/2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 140px;
+    height: 520px;
+    min-width: 215px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    border-radius: 5px;
+}
+
+.list_left {
+    background-color: var(--table-color);
+    border-bottom: 1.5px solid #ca09134d;
+    transition: 0.25s ;
+}
+
+.list_left:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.list_left a {
+    display: flex;
+    
+}
+
+#list_left-line {
+    border-bottom: none;
+}
+
+.list_left h2 {
+    color: #3f3f3f;
+    text-shadow: 1.2px 1.2px 2px black !important;
+    padding: 4px 20px;
+    padding-right: 3px;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out;
+}
+
+.list_left:hover h2 {
+    color: #000;
+}
+
+/* .full_cart-scrol.list_left h2 {
+    color: #32a9d8;
+}
+
+.full_cart-scrol:hover.list_left h2 {
+    color: #1b7aa0;
+} */
+
+.list_im {
+    max-width: 80px;
+    margin-left: 10px;
+}
+
+.list_im img {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.open-full_left {
+    position: fixed;
+    z-index: 11;
+    top: 140px;
+    left: -40px;
+    width: 40px;
+    background-color: #000;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #ca0913;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+.open-full_left svg {
+    width: 100%;
+}
+
+.open-full_left #arrow-left-menu {
+    stroke: #ca0913;
+    transition: 0.4s;
+}
+
+
+
+@media (max-width:1024px) {
+    .full_left_menu_r {
+        top: 100px;
+    }
+
+}
+
+@media (max-width:767px) {
+    .open-full_left {
+        top: 95px;
+        left: -1px;
+        transition: all 0.5s;
+    }
+
+    .open-full_left.menu-LeftOpen {
+        left: 249px;
+        transition: 0.5s;
+    }
+
+    #arrow-left-menu.menu-LeftOpen {
+        transform: rotate(180deg) translateY(-24px) translateX(-24px);
+        transition: 0.5s;
+    }
+
+
+    .desc_full_cart {
+        grid-column: 1/8;
+    }
+
+    .full_left_menu_r {
+        position: fixed;
+        z-index: 10;
+        height: 100%;
+        top: 65px;
+        max-width: 250px;
+        min-width: 250px;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        left: -255px;
+        transition: 0.5s;
+    }
+
+    .full_left_menu_r.menu-LeftOpen {
+        left: 0;
+    }
+}
+
+
+@media (max-height:520px) {
+    .full_left_menu_r {
+        top: 65px;
+        height: 100%;
+        max-height: 13.5%;
+    }
+}
+
+@media (max-height:319px),
+(max-width:767px) {
+    .full_left_menu_r {
+        top: 94px;
+        height: 100%;
+        max-height: 78%;
+    }
+}
 
 
 
@@ -929,9 +1110,7 @@ main {
 
 
 
-@media (max-width:1440px) {
-    
-}
+@media (max-width:1440px) {}
 
 
 
