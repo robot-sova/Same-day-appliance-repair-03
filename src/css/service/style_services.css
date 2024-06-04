@@ -121,7 +121,7 @@ main {
     position: -webkit-sticky;
     position: sticky;
     top: 140px;
-    height: 520px;
+    height: 580px;
     min-width: 215px;
     overflow-y: auto;
     scroll-behavior: smooth;
@@ -129,13 +129,13 @@ main {
 }
 
 .list_left {
-    background-color: rgb(206 206 206);
+    background-color: rgb(237, 237, 237);
     border-bottom: 1.5px solid #ca09134d;
     transition: 0.25s;
 }
 
 .list_left:hover {
-    background-color: rgb(167, 166, 166);
+    background-color: rgb(203, 203, 203);
 }
 
 .list_left a {
@@ -149,16 +149,15 @@ main {
 
 .list_left h2 {
     color: #3f3f3fff;
-    text-shadow: 1px 1px 1.4px black !important;
-    padding: 2px 14px;
+    padding: 2px 7px;
     padding-right: 3px;
     align-self: center;
     font-size: 18px;
     font-weight: 300;
+    margin: 1% 0% 1% 0%;
+    font-size: clamp(16px, 5vw, 18px) !important;
+    text-shadow: 0.7px 0.7px 1px black !important;
     transition: color 0.3s ease-in-out;
-    margin: 2% 0% 2% 0%;
-    font-size: clamp(24px, 5vw, 28px) !important;
-
 }
 
 .list_left:hover h2 {
