@@ -164,13 +164,32 @@ main {
     color: #000;
 }
 
-/* .full_cart-scrol.list_left h2 {
-    color: #32a9d8;
+
+
+
+
+
+
+
+.full_cart-scrol .list_left {
+    background-color: #181818;
 }
 
-.full_cart-scrol:hover.list_left h2 {
+.full_cart-scrol .list_left h2 {
+    color: #000000;
+}
+
+/* .full_cart-scrol:hover.list_left h2 {
     color: #1b7aa0;
 } */
+
+
+
+
+
+
+
+
 
 .list_im {
     max-width: 80px;
@@ -1412,3 +1431,6 @@ main {
 
 
 }
+
+
+

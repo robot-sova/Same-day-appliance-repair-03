@@ -29,24 +29,9 @@ import "css/service/style_services.css";
   });
 </script>
 
-<!-- стрелка левого меню для телефона -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", function () {
-    var openFullLeft = document.querySelector(".open-full_left");
-    var fullLeftMenu = document.querySelector(".full_left_menu_r");
-    var leftClose = document.getElementById("arrow-left-menu");
-
-    openFullLeft.addEventListener("click", function () {
-      fullLeftMenu.classList.toggle("menu-LeftOpen");
-      openFullLeft.classList.toggle("menu-LeftOpen");
-      leftClose.classList.toggle("menu-LeftOpen");
-    });
-  });
-</script>
-
 <!-- фокус левого меню при скролле-->
 <script defer>
-  var sections = document.querySelectorAll(".desc_full_cart"),
+  var sections = document.querySelectorAll(".page213-content"),
     lis = document.querySelectorAll(".list_left");
 
   window.addEventListener("scroll", scrollActiv);
@@ -74,6 +59,21 @@ import "css/service/style_services.css";
       }
     });
   }
+</script>
+
+<!-- стрелка левого меню для телефона -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    var openFullLeft = document.querySelector(".open-full_left");
+    var fullLeftMenu = document.querySelector(".full_left_menu_r");
+    var leftClose = document.getElementById("arrow-left-menu");
+
+    openFullLeft.addEventListener("click", function () {
+      fullLeftMenu.classList.toggle("menu-LeftOpen");
+      openFullLeft.classList.toggle("menu-LeftOpen");
+      leftClose.classList.toggle("menu-LeftOpen");
+    });
+  });
 </script>
 
 <Navbar />
