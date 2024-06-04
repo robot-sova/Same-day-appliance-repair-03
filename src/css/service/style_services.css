@@ -321,6 +321,7 @@ main {
 
 .page213-content {
     margin: 4% 0;
+    width: 100%;
 }
 
 .content__page-desc-phot {
@@ -348,11 +349,39 @@ main {
 
 
 
+.costTable {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
 
+.costTable tr:nth-child(1) {
+    font-size: 22px;
+    font-weight: 600;
+    color: #181818;
+    background-color: rgb(231 231 231 / 58%);
+    border-radius: 3px;
+}
 
+.costTable tr {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #262626;
+    border-bottom: solid 1px #c9c9c9;
+}
 
+.costTable tr:last-child {
+    border-bottom: none;
+}
 
+.costTable td {
+    padding: 3px 5px;
+}
 
+.costTable td:nth-child(2) {
+    font-weight: 600;
+}
 
 
 
