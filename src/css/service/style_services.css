@@ -281,13 +281,6 @@ main {
 /* левое меню  навигации*/
 
 
-@media (max-width:1024px) {
-    .page-header-d-full {
-        padding: 5% 0;
-    }
-
-}
-
 
 
 
@@ -330,7 +323,6 @@ main {
 }
 
 .content__page-desc-phot img {
-    /* width: 100%; */
     max-width: 100%;
     box-shadow: 0px 3px 5px 2px rgb(0 0 0 / 20%), 3px 2px 3px 0px rgb(0 0 0 / 14%), 3px 3px 14px 0px rgb(0 0 0 / 12%);
     border-radius: 10px;
@@ -352,7 +344,7 @@ main {
 .costTable {
     max-width: 700px;
     width: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .costTable tr:nth-child(1) {
@@ -390,6 +382,27 @@ main {
 
 
 
+
+
+@media (max-width:1024px) {
+    .page-header-d-full {
+        padding: 5% 0;
+    }
+
+
+}
+
+
+
+
+@media (max-width:768px) {
+    .costTable tr {
+        font-size: 18px;
+    }
+    .costTable tr:nth-child(1) {
+        font-size: 19px;
+    }
+}
 
 
 
