@@ -324,9 +324,9 @@ main {
 
 
 .page213-container {
+    /* display: grid; */
     grid-column: 2 / 8;
     position: relative;
-    position: sticky;
     margin: 0 2% 0 2%;
 }
 
@@ -371,6 +371,8 @@ main {
     display: block;
     height: 125px;
     margin-top: -125px;
+    z-index: -5;
+    position: relative;
 }
 
 .content__page-desc-phot {
@@ -1470,3 +1472,80 @@ main {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
