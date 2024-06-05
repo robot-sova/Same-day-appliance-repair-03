@@ -140,6 +140,7 @@ main {
     border-radius: 5px;
 }
 
+
 .list_left {
     background-color: rgb(237, 237, 237);
     border-bottom: 1.5px solid #ca09134d;
@@ -150,20 +151,29 @@ main {
     background-color: rgb(215, 215, 215);
 }
 
-.list_left a {
-    display: flex;
+/* .list_left a:first-child {
+    text-align: center;
+    display: grid;
+} */
 
+.list_left a {
+    display: grid;
+    text-align: left;
+    justify-self: left;
 }
 
 #list_left-line {
     border-bottom: none;
 }
 
+
 .list_left h2 {
     color: #3f3f3fff;
     padding: 2px 7px;
     padding-right: 3px;
     align-self: center;
+    justify-self: left;
+    text-align: left;
     font-size: 18px;
     font-weight: 300;
     margin: 1% 0% 1% 0%;
