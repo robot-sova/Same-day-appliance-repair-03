@@ -11,38 +11,7 @@ import Reviews from "@components/reviews.astro";
 import "css/service/style_services.css";
 ---
 
-<!-- частые вопросы -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", function () {
-    let coll = document.getElementsByClassName("FAQ");
-    for (let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  });
-</script>
 
-<!-- стрелка левого меню для телефона -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", function () {
-    var openFullLeft = document.querySelector(".open-full_left");
-    var fullLeftMenu = document.querySelector(".full_left_menu_r");
-    var leftClose = document.getElementById("arrow-left-menu");
-
-    openFullLeft.addEventListener("click", function () {
-      fullLeftMenu.classList.toggle("menu-LeftOpen");
-      openFullLeft.classList.toggle("menu-LeftOpen");
-      leftClose.classList.toggle("menu-LeftOpen");
-    });
-  });
-</script>
 
 <Navbar />
 <Reviews />
@@ -766,6 +735,40 @@ import "css/service/style_services.css";
     });
   }
 </script>
+
+<!-- стрелка левого меню для телефона -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    var openFullLeft = document.querySelector(".open-full_left");
+    var fullLeftMenu = document.querySelector(".full_left_menu_r");
+    var leftClose = document.getElementById("arrow-left-menu");
+
+    openFullLeft.addEventListener("click", function () {
+      fullLeftMenu.classList.toggle("menu-LeftOpen");
+      openFullLeft.classList.toggle("menu-LeftOpen");
+      leftClose.classList.toggle("menu-LeftOpen");
+    });
+  });
+</script>
+
+<!-- частые вопросы -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    let coll = document.getElementsByClassName("FAQ");
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  });
+</script>
+
 
 
 
