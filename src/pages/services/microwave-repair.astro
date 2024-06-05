@@ -29,38 +29,6 @@ import "css/service/style_services.css";
   });
 </script>
 
-<!-- фокус левого меню при скролле-->
-<script defer>
-  var sections = document.querySelectorAll(".page213-content"),
-    lis = document.querySelectorAll(".list_left");
-
-  window.addEventListener("scroll", scrollActiv);
-  window.addEventListener("DOMContentLoaded", scrollActiv);
-
-  function scrollActiv() {
-    var scrollPos = window.scrollY,
-      navHeight = document.querySelector(".full_left_menu_r").offsetHeight;
-
-    sections.forEach(function (section) {
-      var top = section.offsetTop,
-        bottom = top + section.offsetHeight;
-
-      if (scrollPos > top - navHeight && scrollPos < bottom) {
-        var targetIndex = Array.from(sections).indexOf(section);
-        var target = lis[targetIndex];
-
-        lis.forEach(function (li) {
-          if (li !== target) {
-            li.classList.remove("full_cart-scrol");
-          }
-        });
-
-        target.classList.add("full_cart-scrol");
-      }
-    });
-  }
-</script>
-
 <!-- стрелка левого меню для телефона -->
 <script defer>
   document.addEventListener("DOMContentLoaded", function () {
@@ -81,6 +49,7 @@ import "css/service/style_services.css";
 <Layout title="Microwave Repair">
   <Container>
     <main>
+
       <div class="page-header">
         <div class="page-header-d-full">
           <div class="page-header-d">
@@ -118,32 +87,39 @@ import "css/service/style_services.css";
         </div>
 
         <div class="full_left_menu_r">
+
           <div class="list_left">
             <a href="#left-menu-1">
-              <h2>Microwave oven types and their repair needs</h2>
+              <h2>MICROWAVE REPAIR</h2>
             </a>
           </div>
 
           <div class="list_left">
             <a href="#left-menu-2">
-              <h2>Common Microwave Issues</h2>
+              <h2>Microwave oven types and their repair needs</h2>
             </a>
           </div>
 
           <div class="list_left">
             <a href="#left-menu-3">
-              <h2>Microwave Parts Explained</h2>
+              <h2>Common Microwave Issues</h2>
             </a>
           </div>
 
           <div class="list_left">
             <a href="#left-menu-4">
-              <h2>Microwave Replacement Parts Costs</h2>
+              <h2>Microwave Parts Explained</h2>
             </a>
           </div>
 
           <div class="list_left">
             <a href="#left-menu-5">
+              <h2>Microwave Replacement Parts Costs</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-6">
               <h2>Cost to Repair a Microwave Depending on the Brand</h2>
             </a>
           </div>
@@ -204,7 +180,7 @@ import "css/service/style_services.css";
           </div>
         </div>
 
-        <div class="page213-container">
+        <div class="page213-container" >
 
           <div class="page213-content" id="left-menu-1">
             <div class="content__page-desc">
@@ -757,3 +733,35 @@ import "css/service/style_services.css";
   </Container>
 </Layout>
 <Cta />
+
+<!-- фокус левого меню при скролле-->
+<script defer>
+  var sections = document.querySelectorAll(".page213-content"),
+    lis = document.querySelectorAll(".list_left");
+
+  window.addEventListener("scroll", scrollActiv);
+  window.addEventListener("DOMContentLoaded", scrollActiv);
+
+  function scrollActiv() {
+    var scrollPos = window.scrollY,
+      navHeight = document.querySelector(".full_left_menu_r").offsetHeight;
+
+    sections.forEach(function (section) {
+      var top = section.offsetTop,
+        bottom = top + section.offsetHeight;
+
+      if (scrollPos > top - navHeight && scrollPos < bottom) {
+        var targetIndex = Array.from(sections).indexOf(section);
+        var target = lis[targetIndex];
+
+        lis.forEach(function (li) {
+          if (li !== target) {
+            li.classList.remove("full_cart-scrol");
+          }
+        });
+
+        target.classList.add("full_cart-scrol");
+      }
+    });
+  }
+</script>
