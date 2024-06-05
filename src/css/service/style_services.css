@@ -271,10 +271,6 @@ main {
     }
 
 
-    .desc_full_cart {
-        grid-column: 1/8;
-    }
-
     .full_left_menu_r {
         position: fixed;
         z-index: 10;
@@ -348,7 +344,6 @@ main {
 .page213-content {
     margin: 4% 0;
     width: 100%;
-    position: relative;
 }
 
 #left-menu-1::before,
@@ -432,6 +427,50 @@ main {
 .costTable td:nth-child(2) {
     font-weight: 600;
 }
+
+
+
+
+
+
+
+.content__page-full-logo-brand {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2.5em;
+    padding: 15px 5px 10px 5px;
+}
+
+.logo-brand {
+    max-width: 340px;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    padding: 7px;
+    display: grid;
+    /* border: solid 3px #ca09137a; */
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 4px rgba(135, 135, 135, 0.2);
+}
+
+.logo-brand  img {
+    max-width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
