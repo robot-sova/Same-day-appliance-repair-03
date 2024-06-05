@@ -80,7 +80,9 @@
 }
 
 .f-content-machinery img {
-    width: 100%;
+    width: 130px;
+    max-width: 100%;
+    height: 100%;
     transition: 0.25s;
     transform: scale(1, 1);
 }
@@ -162,6 +164,11 @@
         font-size: 16px;
         padding: 6% 18%;
         text-shadow: 1px 1px 2px black;
+    }
+
+    .f-content-machinery img {
+        width: 120px;
+        max-width: 100%;
     }
 
     .d-content-machinery {
