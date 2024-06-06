@@ -427,9 +427,10 @@ main {
     content: counter(item) "";
     position: absolute;
     left: 5px;
-    top: -3px;
-    font-size: 20px;
+    top: -5px;
+    font-size: 30px;
     color: red;
+    line-height: 38px;
     filter: drop-shadow(1.5px 1.5px 0.5px #000);
 }
 
@@ -462,7 +463,6 @@ main {
     margin-bottom: 15px;
     margin-top: 5px;
     padding-left: 30px;
-    font-weight: 500;
     list-style: none;
     font-size: clamp(16px, 3vw, 18px);
 }
