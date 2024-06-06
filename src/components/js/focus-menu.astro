@@ -1,0 +1,31 @@
+<!-- фокус левого меню при скролле-->
+<script defer>
+  var sections = document.querySelectorAll(".page213-content"),
+    lis = document.querySelectorAll(".list_left");
+
+  window.addEventListener("scroll", scrollActiv);
+  window.addEventListener("DOMContentLoaded", scrollActiv);
+
+  function scrollActiv() {
+    var scrollPos = window.scrollY,
+      navHeight = document.querySelector(".full_left_menu_r").offsetHeight;
+
+    sections.forEach(function (section) {
+      var top = section.offsetTop,
+        bottom = top + section.offsetHeight;
+
+      if (scrollPos > top - navHeight && scrollPos < bottom) {
+        var targetIndex = Array.from(sections).indexOf(section);
+        var target = lis[targetIndex];
+
+        lis.forEach(function (li) {
+          if (li !== target) {
+            li.classList.remove("full_cart-scrol");
+          }
+        });
+
+        target.classList.add("full_cart-scrol");
+      }
+    });
+  }
+</script>

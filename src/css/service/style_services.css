@@ -443,18 +443,17 @@ main {
 }
 
 .logo-brand {
-    max-width: 340px;
+    max-width: 330px;
     width: 100%;
     height: 100%;
     justify-self: center;
     align-self: center;
     padding: 7px;
     display: grid;
-    /* border: solid 3px #ca09137a; */
+    /* border: solid 3px #ca0913; */
     border-radius: 50%;
-    box-shadow: 0px 0px 10px 4px rgba(135, 135, 135, 0.2);
+    box-shadow: 0px 0px 12px 4px rgba(135, 135, 135, 0.2);
 }
-
 .logo-brand  img {
     max-width: 100%;
     justify-self: center;

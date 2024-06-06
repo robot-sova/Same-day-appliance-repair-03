@@ -7,6 +7,9 @@ import Costanchor from "@components/price-list/components_dryer-repair-cost.astr
 import Cta from "@components/cta.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
+import Arrow from "@components/js/arrow-phone.astro";
+import Focus from "@components/js/focus-menu.astro";
+import Faqs from "@components/js/faqs.astro"
 
 import "css/service/style_services.css";
 ---
@@ -789,71 +792,13 @@ import "css/service/style_services.css";
   </Container>
 </Layout>
 <Cta />
+<Arrow/>
+<Focus />
+<Faqs/>
 
-<!-- фокус левого меню при скролле-->
-<script defer>
-  var sections = document.querySelectorAll(".page213-content"),
-    lis = document.querySelectorAll(".list_left");
 
-  window.addEventListener("scroll", scrollActiv);
-  window.addEventListener("DOMContentLoaded", scrollActiv);
 
-  function scrollActiv() {
-    var scrollPos = window.scrollY,
-      navHeight = document.querySelector(".full_left_menu_r").offsetHeight;
 
-    sections.forEach(function (section) {
-      var top = section.offsetTop,
-        bottom = top + section.offsetHeight;
-
-      if (scrollPos > top - navHeight && scrollPos < bottom) {
-        var targetIndex = Array.from(sections).indexOf(section);
-        var target = lis[targetIndex];
-
-        lis.forEach(function (li) {
-          if (li !== target) {
-            li.classList.remove("full_cart-scrol");
-          }
-        });
-
-        target.classList.add("full_cart-scrol");
-      }
-    });
-  }
-</script>
-
-<!-- стрелка левого меню для телефона -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", function () {
-    var openFullLeft = document.querySelector(".open-full_left");
-    var fullLeftMenu = document.querySelector(".full_left_menu_r");
-    var leftClose = document.getElementById("arrow-left-menu");
-
-    openFullLeft.addEventListener("click", function () {
-      fullLeftMenu.classList.toggle("menu-LeftOpen");
-      openFullLeft.classList.toggle("menu-LeftOpen");
-      leftClose.classList.toggle("menu-LeftOpen");
-    });
-  });
-</script>
-
-<!-- частые вопросы -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", function () {
-    let coll = document.getElementsByClassName("FAQ");
-    for (let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  });
-</script>
 
 
 
