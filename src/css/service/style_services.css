@@ -594,22 +594,27 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 2.5em;
+    grid-gap: 2em;
     padding: 15px 5px 10px 5px;
+    margin: 0 auto;
+    max-width: 740px;
 }
 
 .logo-brand {
-    max-width: 330px;
+    max-width: 200px;
     width: 100%;
     height: 100%;
     justify-self: center;
     align-self: center;
-    padding: 7px;
+    padding: 10px;
     display: grid;
     /* border: solid 3px #ca0913; */
     border-radius: 50%;
-    box-shadow: 0px 0px 12px 4px rgba(135, 135, 135, 0.2);
+    /* box-shadow: 0px 0px 12px 4px rgba(135, 135, 135, 0.2); */
+    box-shadow: 0px 0px 13px 1px rgb(135 135 135 / 11%);
 }
+
+
 
 .logo-brand img {
     max-width: 100%;
@@ -1121,11 +1126,13 @@ main {
     content: counter(item) "";
     position: absolute;
     left: 2px;
-    top: -6px;
+    top: -1px;
     font-weight: 700;
     font-size: 20px;
     color: red;
     filter: drop-shadow(1.5px 1.5px 0.5px #000);
+    line-height: normal;
+    border-radius: 20%;
 }
 
 
@@ -1145,6 +1152,23 @@ main {
     font-size: 24px;
     left: 10px;
     top: -5px;
+}
+
+@media (max-width:768px) {
+
+    .questions li:before {
+        top: -12px;
+    }
+
+    .questions li li:before {
+        font-size: 24px;
+        left: 10px;
+        top: -7px;
+    }
+
+    
+
+
 }
 
 /* Часто задаваемые вопросы */
@@ -1180,377 +1204,29 @@ main {
         padding: 5% 0;
     }
 
-
-}
-
-
-
-
-@media (max-width:768px) {
-    .costTable tr {
-        font-size: 18px;
-    }
-
-    .costTable tr:nth-child(1) {
-        font-size: 19px;
-    }
-
-    .content_job-prices {
-        padding: 3% 0%;
-        min-height: auto;
-    }
-
-    .money_job-prices {
-        text-align: right;
-        min-width: auto;
-        padding-right: 7px;
-    }
-
-    .money_job-prices p {
-        white-space: wrap;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-.head_pricing-policy {
-    text-align: center;
-    display: grid;
-}
-
-.head_pricing-policy h2:nth-child(1) {
-    margin: 3% 0% 0% 0%;
-}
-
-
-.head_pricing-policy h2 {
-    margin: 6% 0% 0% 0%;
-    margin-bottom: 1%;
-}
-
-.head_pricing-policy p {
-    text-align: center;
-    margin: 0 0 3% 0;
-    font-size: clamp(16px, 3vw, 20px);
-    max-width: 80%;
-    justify-self: center;
-    font-weight: 500;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-.job-prices {
-    width: 100%;
-}
-
-
-.head-prices {
-    text-align: center;
-    display: grid;
-}
-
-.head-prices h2 {
-    margin-bottom: 1%;
-}
-
-.head-prices p {
-    text-align: center;
-    margin: 0 0 3% 0;
-    font-size: clamp(16px, 3vw, 20px);
-    max-width: 80%;
-    justify-self: center;
-}
-
-
-} */
-
-
-
-
-
-
-
-/* 
-
-.maintenance {
-    width: 100%;
-}
-
-.maintenance p {
-    font-size: clamp(16px, 4vw, 18px);
-    margin: 0;
-    font-weight: 500;
-}
-
-.head-maintenance {
-    text-align: center;
-    display: grid;
-}
-
-.head-maintenance h2 {
-    margin-bottom: 1%;
-}
-
-.head-maintenance p {
-    text-align: center;
-    margin: 0 0 3% 0;
-    font-size: clamp(16px, 3vw, 20px);
-    max-width: 80%;
-    justify-self: center;
-}
-
-.full-content_maintenance {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 3%;
-    grid-gap: 5%;
-}
-
-.full-content_maintenance h3 {
-    margin-top: 10px;
-    font-size: clamp(18px, 4vw, 20px) !important;
-    text-shadow: var(--text-shadown-b-h3);
-}
-
-.full-content_maintenance ul {
-    margin-left: 8px;
-}
-
-.full-content_maintenance li {
-    margin-top: 10px;
-}
-
-
-
-
-.full-content_maintenance p {
-    margin: 0;
-}
-
-.content-1_maintenance,
-.content-2_maintenance {
-    width: 100%;
-    box-shadow: 0 0 8px 3px #87878733;
-    border-radius: 20px;
-    padding: 0% 3% 3%;
-}
-
-
-
-
-
-
-
-
-
-
-.head_pricing-policy_foto {
-    display: flex;
-    justify-content: center;
-}
-
-.head_pricing-policy_foto-a,
-.head_pricing-policy_foto-b {
-    margin: 30px 3% 30px 3%;
-    align-self: center;
-    justify-self: center;
-    display: grid;
-}
-
-.head_pricing-policy_foto-a {
-    max-width: 35%;
-}
-
-.head_pricing-policy_foto-a h2 {
-    margin-bottom: 5% !important;
-} */
-
-
-
-
-@media (max-width:1440px) {}
-
-
-
-
-
-
-
-@media (max-width:1024px) {
-
-    #labor-cost-anchor::before {
-        content: '';
-        display: block;
-        height: 70px;
-        margin-top: -70px;
-    }
-
-    #parts-cost-anchor::before {
-        content: '';
-        display: block;
-        height: 70px;
-        margin-top: -70px;
-    }
-
-    #faqs-anchor::before {
-        content: '';
-        display: block;
-        height: 40px;
-        margin-top: -40px;
-    }
-
-
-
-    .two-col-grid {
-        width: 100%;
+    .content__page-full-desc {
         display: grid;
-        /* grid-template-columns: 1fr 2fr; */
     }
 
-    .col-one img {
-        /* width: 80%; */
+    .content__page-desc-phot {
+        float: none;
+        margin: 5px 10px 15px 10px;
         justify-self: center;
-        margin-bottom: 10px;
-        margin: 0 auto;
     }
 
-    .col-one {
-        width: 100%;
-        margin: 0;
-        max-width: 100%;
+    .content__page-full-desc-ph-ri .content__page-desc-phot {
+        float: none;
+        margin: 5px 10px 15px 10px;
     }
 
-    .col-one a {
-        width: 100%;
-        margin: 0;
-        display: grid;
-        text-align: center;
+    #left-menu-1::before, #left-menu-2::before, #left-menu-3::before, #left-menu-4::before, #left-menu-5::before, #left-menu-6::before, #left-menu-7::before, #left-menu-8::before, #left-menu-9::before, #left-menu-10::before, #left-menu-11::before, #left-menu-12::before, #left-menu-13::before, #left-menu-14::before, #left-menu-15::before, #left-menu-16::before {
+        height: 95px;
+        margin-top: -95px;
     }
+
+
+
+
 
     .contactbtn-form {
         max-width: 341px;
@@ -1564,73 +1240,84 @@ main {
         margin-top: 10px;
     }
 
-    .head_pricing-policy_foto-a {
-        max-width: 50%;
-    }
 
 }
 
 
 
 
-
-
-
-
-
-
-
-
 @media (max-width:768px) {
 
-
-
-    #labor-cost-anchor::before {
-        content: '';
-        display: block;
-        height: 55px;
-        margin-top: -55px;
+    .page-header-d-full {
+        padding: 1% 0;
     }
 
-    #parts-cost-anchor::before {
-        content: '';
-        display: block;
-        height: 55px;
-        margin-top: -55px;
-    }
-
-    #faqs-anchor::before {
-        content: '';
-        display: block;
-        height: 20px;
-        margin-top: -20px;
-    }
-
-
-
-
-    .head_pricing-policy {
-        margin-bottom: 7%;
-    }
-
-    .head_pricing-policy_foto {
+    .page-header-d {
+        left: 0;
+        width: 96%;
+        position: relative;
         display: grid;
+        align-self: center;
+        margin: 0 2% 0 2%;
     }
 
-    .head_pricing-policy_foto-a,
-    .head_pricing-policy_foto-b {
-        margin: 20px 3% 20px 3%;
+    .page-header-d h1 {
+        margin-bottom: 0;
     }
 
-    .head_pricing-policy_foto-a {
-        max-width: 100%;
-        grid-row: 1/2;
-        margin: 20px 3% 0px 3%;
+    .page-header-f img {
+        display: none;
     }
 
-    .head_pricing-policy_foto-a h2 {
-        margin-bottom: 1% !important;
+
+
+
+
+    .page213 {
+        margin-top: 0;
     }
+
+    .content__page-full-logo-brand {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 1.5em;
+    }
+
+
+
+
+
+
+    .costTable tr {
+        font-size: 18px;
+    }
+
+    .costTable tr:nth-child(1) {
+        font-size: 19px;
+    }
+
+
+
+
+
+
+
+    .content_job-prices {
+        padding: 3% 2%;
+        min-height: auto;
+    }
+
+    .money_job-prices {
+        text-align: right;
+        min-width: auto;
+        padding-right: 7px;
+    }
+
+    .money_job-prices p {
+        white-space: wrap;
+    }
+
+
 
     .con-inside_pricing-policy {
         display: grid;
@@ -1652,61 +1339,14 @@ main {
 
 
 
-    .desk_job-prices {
-        padding-left: 7px;
-    }
-
-    .head-prices p {
-        max-width: 100%;
-    }
-
-    .head-maintenance p {
-        max-width: 100%;
-    }
 
     .description_maintenance ol>li::before {
         top: -5px;
     }
 
-
-    .pros_job-prices {
-        width: 100%;
-        margin-top: 10%;
-    }
-
-    .full-content_maintenance {
-        grid-template-columns: 1fr;
-        grid-gap: 0;
-    }
-
-    .content-2_maintenance,
-    .content-1_maintenance {
-        margin-bottom: 15px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-    .questions li:before {
-        top: -12px;
-    }
-
-    .questions li li:before {
-        font-size: 24px;
-        left: 10px;
-        top: -7px;
-    }
-
-    .questions ol li::before {
-        top: -5px;
-    }
-
-
 }
+
+
+
+
+
