@@ -624,6 +624,7 @@ main {
 
 .logo-brand:hover {
     box-shadow: 0px 0px 17px 6px #87878738;
+    border-radius: 25%;
 }
 
 
