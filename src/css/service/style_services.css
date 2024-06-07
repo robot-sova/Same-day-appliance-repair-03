@@ -598,22 +598,20 @@ main {
 
 .ph-logo-brand {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 2em;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+    /* justify-self: left; */
+    grid-gap: 1.5em;
     padding: 10px 5px 10px 5px;
-    /* margin: 0 auto; */
-    /* max-width: 740px; */
-    justify-self: left;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
 .logo-brand {
-    max-width: 160px;
-    width: 100%;
-    height: 100%;
+    width: 160px;
+    height: 160px;
     justify-self: center;
     align-self: center;
-    padding: 10px;
+    padding: 13px;
     display: grid;
     border-radius: 50%;
     cursor: pointer;
@@ -623,6 +621,11 @@ main {
 }
 
 .logo-brand:hover {
+    box-shadow: 0px 0px 17px 6px #87878738;
+    border-radius: 25%;
+}
+
+.logo-bran-ph-1:hover {
     box-shadow: 0px 0px 17px 6px #87878738;
     border-radius: 25%;
 }
@@ -655,6 +658,10 @@ main {
     text-shadow: var(--text-shadown-b-h3);
 }
 
+.desc-logo-brand {
+    position: relative;
+}
+
 .desc-logo-brand h3 {
     font-weight: 500;
     text-shadow: var(--text-shadown-b-h3);
@@ -673,16 +680,57 @@ main {
     display: block;
     content: '';
     bottom: 0;
-    height: 2px;
-    width: 10%;
+    height: 3px;
+    width: 0%;
     position: absolute;
-    margin-top: 29px;
-    transition: 0.4s ease-out;
+    margin-top: 32px;
+    transition: 0.3s ease-out;
 }
 
-.logo-brand:hover.desc-logo-brand a::before{
+.desc-logo-brand a:hover::before {
     width: 100%;
 }
+
+
+
+
+/* скрипт иконок с брэндами */
+
+.logo-brand img.hovered {
+    transform: scale(1.1); 
+}
+.logo-bran-ph-1.hovered, .logo-bran-ph-2.hovered, .logo-bran-ph-3.hovered, .logo-bran-ph-4.hovered, .logo-bran-ph-5.hovered, .logo-bran-ph-6.hovered{
+    box-shadow: 0px 0px 17px 6px #87878738;
+    border-radius: 25%;
+}
+.logo-bran-d-1 a, .logo-bran-d-2 a, .logo-bran-d-3 a, .logo-bran-d-4 a, .logo-bran-d-5 a, .logo-bran-d-6 a{
+    position: relative;
+    display: inline-block;
+}
+.logo-bran-d-1 a::before, .logo-bran-d-2 a::before, .logo-bran-d-3 a::before, .logo-bran-d-4 a::before, .logo-bran-d-5 a::before, .logo-bran-d-6 a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: #ca0913;
+    transition: width 0.3s;
+}
+.logo-bran-d-1 a.hovered::before, .logo-bran-d-2 a.hovered::before, .logo-bran-d-3 a.hovered::before, .logo-bran-d-4 a.hovered::before, .logo-bran-d-5 a.hovered::before, .logo-bran-d-6 a.hovered::before{
+    width: 100%;
+}
+
+
+
+
+
+/* скрипт иконок с брэндами */
+
+
+
+
+
+
 
 
 
