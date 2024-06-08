@@ -10,6 +10,7 @@ import Reviews from "@components/reviews.astro";
 import Arrow from "@components/js/arrow-phone.astro";
 import Focus from "@components/js/focus-menu.astro";
 import Faqs from "@components/js/faqs.astro";
+import LogoBrands from "@components/js/logo-brands.astro";
 
 import "css/service/style_services.css";
 ---
@@ -890,7 +891,7 @@ import "css/service/style_services.css";
 
               </div>
 
-              <div class="desc-logo-brand">
+              <div class="full-desc-logo-brand">
                 <p>Brands of microwaves we repair</p>
                 <div class="desc-logo-brand logo-bran-d-1">
                   <h3><a href="#">Panasonic</a></h3>
@@ -2432,90 +2433,8 @@ import "css/service/style_services.css";
   <Focus />
   <Faqs />
 </Layout>
-
-<!-- 1 -->
-<!-- <script>
-  const logoBranPh1 = document.querySelector('.logo-bran-ph-1');
-  const logoBranD1Link = document.querySelector('.logo-bran-d-1 a');
-
-  logoBranPh1.addEventListener('mouseover', function() {
-      logoBranD1Link.classList.add('hovered');
-      logoBranPh1.classList.add('hovered');
-  });
-
-  logoBranPh1.addEventListener('mouseout', function() {
-      logoBranD1Link.classList.remove('hovered');
-      logoBranPh1.classList.remove('hovered');
-  });
-
-  const logoBranD1 = document.querySelector('.logo-bran-d-1');
-
-  logoBranD1.addEventListener('mouseover', function() {
-      logoBranPh1.querySelector('img').classList.add('hovered');
-      logoBranPh1.classList.add('hovered');
-  });
-
-  logoBranD1.addEventListener('mouseout', function() {
-      logoBranPh1.querySelector('img').classList.remove('hovered');
-      logoBranPh1.classList.remove('hovered');
-  });
-</script> -->
-
-<!-- 2 -->
-<!-- <script>
-  const logoBranPh1 = document.querySelector('.logo-bran-ph-2');
-  const logoBranD1Link = document.querySelector('.logo-bran-d-2 a');
-
-  logoBranPh1.addEventListener('mouseover', function() {
-      logoBranD1Link.classList.add('hovered');
-      logoBranPh1.classList.add('hovered');
-  });
-
-  logoBranPh1.addEventListener('mouseout', function() {
-      logoBranD1Link.classList.remove('hovered');
-      logoBranPh1.classList.remove('hovered');
-  });
-
-  const logoBranD1 = document.querySelector('.logo-bran-d-2');
-
-  logoBranD1.addEventListener('mouseover', function() {
-      logoBranPh1.querySelector('img').classList.add('hovered');
-      logoBranPh1.classList.add('hovered');
-  });
-
-  logoBranD1.addEventListener('mouseout', function() {
-      logoBranPh1.querySelector('img').classList.remove('hovered');
-      logoBranPh1.classList.remove('hovered');
-  });
-</script> -->
+<LogoBrands/>
 
 
-<!-- общий -->
-<script>
-  for (let i = 1; i <= 20; i++) {
-      const logoBranPh = document.querySelector(`.logo-bran-ph-${i}`);
-      const logoBranDLink = document.querySelector(`.logo-bran-d-${i} a`);
 
-      logoBranPh.addEventListener('mouseover', function() {
-          logoBranDLink.classList.add('hovered');
-          logoBranPh.classList.add('hovered');
-      });
 
-      logoBranPh.addEventListener('mouseout', function() {
-          logoBranDLink.classList.remove('hovered');
-          logoBranPh.classList.remove('hovered');
-      });
-
-      const logoBranD = document.querySelector(`.logo-bran-d-${i}`);
-
-      logoBranD.addEventListener('mouseover', function() {
-          logoBranPh.querySelector('img').classList.add('hovered');
-          logoBranPh.classList.add('hovered');
-      });
-
-      logoBranD.addEventListener('mouseout', function() {
-          logoBranPh.querySelector('img').classList.remove('hovered');
-          logoBranPh.classList.remove('hovered');
-      });
-  }
-</script>
