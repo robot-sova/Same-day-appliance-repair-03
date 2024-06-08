@@ -660,6 +660,7 @@ main {
 
 .desc-logo-brand {
     position: relative;
+    margin-bottom: 3px;
 }
 
 .desc-logo-brand h3 {
@@ -667,23 +668,23 @@ main {
     text-shadow: var(--text-shadown-b-h3);
     font-size: clamp(16px, 4vw, 20px) !important;
     position: relative;
-    margin-bottom: 3px;
 }
 
 .desc-logo-brand a {
     color: #000;
     position: relative;
 }
-  
+
 .desc-logo-brand a::before {
     background-color: #ca0913;
     display: block;
     content: '';
     bottom: 0;
     height: 3px;
+    border-radius: 2px;
     width: 0%;
     position: absolute;
-    margin-top: 32px;
+    /* margin-top: 32px; */
     transition: 0.3s ease-out;
 }
 
@@ -697,26 +698,108 @@ main {
 /* скрипт иконок с брэндами */
 
 .logo-brand img.hovered {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
-.logo-bran-ph-1.hovered, .logo-bran-ph-2.hovered, .logo-bran-ph-3.hovered, .logo-bran-ph-4.hovered, .logo-bran-ph-5.hovered, .logo-bran-ph-6.hovered{
+
+.logo-bran-ph-1.hovered,
+.logo-bran-ph-2.hovered,
+.logo-bran-ph-3.hovered,
+.logo-bran-ph-4.hovered,
+.logo-bran-ph-5.hovered,
+.logo-bran-ph-6.hovered,
+.logo-bran-ph-7.hovered,
+.logo-bran-ph-8.hovered,
+.logo-bran-ph-9.hovered,
+.logo-bran-ph-10.hovered,
+.logo-bran-ph-11.hovered,
+.logo-bran-ph-12.hovered,
+.logo-bran-ph-13.hovered,
+.logo-bran-ph-14.hovered,
+.logo-bran-ph-15.hovered,
+.logo-bran-ph-16.hovered,
+.logo-bran-ph-17.hovered,
+.logo-bran-ph-18.hovered,
+.logo-bran-ph-19.hovered,
+.logo-bran-ph-20.hovered {
     box-shadow: 0px 0px 17px 6px #87878738;
     border-radius: 25%;
 }
-.logo-bran-d-1 a, .logo-bran-d-2 a, .logo-bran-d-3 a, .logo-bran-d-4 a, .logo-bran-d-5 a, .logo-bran-d-6 a{
-    position: relative;
-    display: inline-block;
+
+.logo-bran-d-1 a,
+.logo-bran-d-2 a,
+.logo-bran-d-3 a,
+.logo-bran-d-4 a,
+.logo-bran-d-5 a,
+.logo-bran-d-6 a,
+.logo-bran-d-7 a,
+.logo-bran-d-8 a,
+.logo-bran-d-9 a,
+.logo-bran-d-10 a,
+.logo-bran-d-11 a,
+.logo-bran-d-12 a,
+.logo-bran-d-13 a,
+.logo-bran-d-14 a,
+.logo-bran-d-15 a,
+.logo-bran-d-16 a,
+.logo-bran-d-17 a,
+.logo-bran-d-18 a,
+.logo-bran-d-19 a,
+.logo-bran-d-20 a{
+position: relative;
+display: inline-block;
 }
-.logo-bran-d-1 a::before, .logo-bran-d-2 a::before, .logo-bran-d-3 a::before, .logo-bran-d-4 a::before, .logo-bran-d-5 a::before, .logo-bran-d-6 a::before{
+
+.logo-bran-d-1 a::before,
+.logo-bran-d-2 a::before,
+.logo-bran-d-3 a::before,
+.logo-bran-d-4 a::before,
+.logo-bran-d-5 a::before,
+.logo-bran-d-6 a::before,
+.logo-bran-d-7 a::before,
+.logo-bran-d-8 a::before,
+.logo-bran-d-9 a::before,
+.logo-bran-d-10 a::before,
+.logo-bran-d-11 a::before,
+.logo-bran-d-12 a::before,
+.logo-bran-d-13 a::before,
+.logo-bran-d-14 a::before,
+.logo-bran-d-15 a::before,
+.logo-bran-d-16 a::before,
+.logo-bran-d-17 a::before,
+.logo-bran-d-18 a::before,
+.logo-bran-d-19 a::before,
+.logo-bran-d-20 a::before {
     content: '';
     position: absolute;
     left: 0;
     height: 3px;
     width: 0;
     background: #ca0913;
+    border-radius: 2px;
     transition: width 0.3s;
+    margin-top: 15px;
 }
-.logo-bran-d-1 a.hovered::before, .logo-bran-d-2 a.hovered::before, .logo-bran-d-3 a.hovered::before, .logo-bran-d-4 a.hovered::before, .logo-bran-d-5 a.hovered::before, .logo-bran-d-6 a.hovered::before{
+
+.logo-bran-d-1 a.hovered::before,
+.logo-bran-d-2 a.hovered::before,
+.logo-bran-d-3 a.hovered::before,
+.logo-bran-d-4 a.hovered::before,
+.logo-bran-d-5 a.hovered::before,
+.logo-bran-d-6 a.hovered::before,
+.logo-bran-d-7 a.hovered::before,
+.logo-bran-d-8 a.hovered::before,
+.logo-bran-d-9 a.hovered::before,
+.logo-bran-d-10 a.hovered::before, 
+.logo-bran-d-11 a.hovered::before,
+.logo-bran-d-12 a.hovered::before,
+.logo-bran-d-13 a.hovered::before,
+.logo-bran-d-14 a.hovered::before,
+.logo-bran-d-15 a.hovered::before,
+.logo-bran-d-16 a.hovered::before,
+.logo-bran-d-17 a.hovered::before,
+.logo-bran-d-18 a.hovered::before,
+.logo-bran-d-19 a.hovered::before,
+.logo-bran-d-20 a.hovered::before{
     width: 100%;
 }
 
