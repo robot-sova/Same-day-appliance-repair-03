@@ -630,6 +630,11 @@ main {
     border-radius: 25%;
 }
 
+.logo-brand a {
+    max-width: 100%;
+    justify-self: center;
+    align-self: center;
+}
 
 .logo-brand img {
     max-width: 100%;
@@ -1503,13 +1508,14 @@ main {
         grid-gap: 1.2em;
         grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     }
-
-
-
     .logo-brand {
         width: 110px;
         height: 110px;
         padding: 10px;
+    }
+
+    .desc-logo-brand {
+        margin-bottom: 0;
     }
 
 
