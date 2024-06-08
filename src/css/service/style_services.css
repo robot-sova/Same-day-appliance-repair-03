@@ -603,12 +603,12 @@ main {
     /* justify-self: left; */
     grid-gap: 1.5em;
     padding: 10px 5px 10px 5px;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .logo-brand {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     justify-self: center;
     align-self: center;
     padding: 13px;
@@ -1391,6 +1391,8 @@ display: inline-block;
 
 
 @media (max-width:1024px) {
+
+
     .page-header-d-full {
         padding: 5% 0;
     }
@@ -1398,6 +1400,7 @@ display: inline-block;
     .content__page-full-desc {
         display: grid;
     }
+    
 
     .content__page-desc-phot {
         float: none;
@@ -1410,6 +1413,7 @@ display: inline-block;
         margin: 5px 10px 15px 10px;
     }
 
+    
     #left-menu-1::before,
     #left-menu-2::before,
     #left-menu-3::before,
@@ -1428,13 +1432,19 @@ display: inline-block;
     #left-menu-16::before {
         height: 95px;
         margin-top: -95px;
-    }
+        }
+        
+        .content__page-full-logo-brand {
+            grid-template-columns: 1fr;
+        }
+        
+        
+        
+        
 
 
-
-
-
-    .contactbtn-form {
+        
+        .contactbtn-form {
         max-width: 341px;
         margin: 0 !important;
     }
@@ -1483,17 +1493,21 @@ display: inline-block;
         margin-top: 0;
     }
 
-    .content__page-full-logo-brand {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-gap: 1.5em;
+    .ph-logo-brand {
+        grid-gap: 1.2em;
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    }
+
+    .logo-brand {
+        width: 110px;
+        height: 110px;
+        padding: 10px;
     }
 
 
 
 
-
-
+    
     .costTable tr {
         font-size: 18px;
     }
