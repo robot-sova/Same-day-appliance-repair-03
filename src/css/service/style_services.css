@@ -442,12 +442,16 @@ main {
 .content__page-desc ol>li::before {
     content: counter(item) "";
     position: absolute;
-    left: 5px;
+    left: -4px;
     top: -5px;
     font-size: 30px;
     color: red;
     line-height: 38px;
     filter: drop-shadow(1.5px 1.5px 0.5px #000);
+}
+
+.content__page-desc ol>li:nth-child(-n+9)::before {
+    left: 2px;
 }
 
 .content__page-desc ol li:hover:before {
@@ -462,12 +466,12 @@ main {
     width: 2px;
     bottom: 6px;
     content: "";
-    left: 16px;
+    left: 12px;
     top: 40px;
 }
 
 .content__page-desc ol>li:nth-child(-n+9)::after {
-    left: 12px;
+    left: 10px;
 }
 
 .content__page-desc ul {
@@ -1355,6 +1359,11 @@ main {
     left: 10px;
     top: -5px;
 }
+
+.questions  ol>li:nth-child(-n+9)::after {
+    left: 12px;
+}
+
 
 @media (max-width:768px) {
 
