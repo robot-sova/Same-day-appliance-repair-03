@@ -93,6 +93,9 @@ main {
 
 }
 
+.furnace-page-header-d-full .page-header-d{
+    width: 45%;
+}
 
 .page-header-d {
     left: 0;
@@ -103,9 +106,6 @@ main {
     margin-left: 3%;
 }
 
-.furnace-page-header-d-full .page-header-d{
-    width: 45%;
-}
 
 
 
@@ -1516,7 +1516,7 @@ main {
 
     .page-header-d {
         left: 0;
-        width: 96%;
+        width: 96% !important;
         position: relative;
         display: grid;
         align-self: center;
