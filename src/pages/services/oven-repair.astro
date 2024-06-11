@@ -1,149 +1,2357 @@
 ---
-import Container from "@components/container.astro";
-import Cta from "@components/cta.astro";
-import Contactbtn from "@components/contactbtn.astro";
-import Features from "@components/features.astro";
-import Hero from "@components/hero.astro";
-import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Contactbtn from "@components/contactbtn.astro";
+import Btn from "@components/btn.astro";
+import Cta from "@components/cta.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
+import Arrow from "@components/js/arrow-phone.astro";
+import Focus from "@components/js/focus-menu.astro";
+import Faqs from "@components/js/faqs.astro";
+import LogoBrands from "@components/js/logo-brands.astro";
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
 <Reviews />
-<Layout title="Same Day Oven Repair">
+<Layout title="Oven Repair">
   <Container>
     <main>
-      <h1>
-        <span class="animate-charcter">Same Day Oven Repair</span> in Los Angeles
-        and Surrounding Areas
-      </h1>
-
-      <div class="two-col-grid">
-        <div class="col-one">
-          <img
-            class="img-header"
-            src="/images/same-day-oven-repair-los-angeles-and-surrounding-areas.webp"
-            width="500"
-            height="500"
-            alt="Oven Repair Services Los Angeles - technician repairing an oven"
-          />
-          <Contactbtn />
+      <div class="page-header">
+        <div class="page-header-d-full oven-page-header-d-full">
+          <div class="page-header-d">
+            <h1>
+              <span class="animate-charcter"
+                ><p>Oven Repair</p></span>
+            </h1>
+            <Contactbtn />
+          </div>
         </div>
 
-        <div class="col-two">
-          <p style="text-align: start">
-            When your oven fails to heat up or experiences any malfunction, it
-            disrupts your daily routine and meal preparation. That's where Same
-            Day Appliance Repair offers professional and quick oven repair and
-            range repair services in Los Angeles. Our team ensures your oven is
-            back in working order with minimal downtime. Contact us today to
-            schedule a same-day repair service and get your kitchen running
-            smoothly again.
-          </p><p style="text-align: start">
-            Our alliance repair services team is built of highly skilled
-            technicians dedicated to staying abreast of the latest appliance
-            technology. Our commitment to excellence is reflected in our service
-            guarantees, including up to a 3-month warranty on parts and labor.
-            We strive to offer the best value through competitive pricing
-            without compromising quality.
-          </p><p style="text-align: start">
-            Our diagnostic process often reveals that many oven issues can be
-            resolved through straightforward repairs, such as replacing heating
-            elements or fixing door seals. However, our certified repair
-            professionals are equipped to handle more complex problems
-            efficiently. We service various oven brands, including Samsung, LG,
-            GE, Thermador, Whirlpool, Frigidaire, and more, ensuring that our
-            team is prepared to provide a solution no matter the issue. Call our
-            appliance repair services to find out more.
-          </p>
+        <div class="page-header-f">
+          <img
+            src="/oven-repair/oven-machines-page_header_photos.webp"
+            alt="Oven Repair"
+            loading="lazy"
+          />
         </div>
       </div>
-      <h2>
-        <strong>Why Choose Our Oven Repair Services in Los Angeles, CA</strong>
-      </h2><h3><strong>Prompt Same-Day Oven Repair</strong></h3><p>
-        Our commitment to Los Angeles residents includes providing same-day
-        appliance repair services. We understand the inconvenience of a
-        malfunctioning oven, whether in a home or a commercial setting, and we
-        aim to resolve issues swiftly, often completing repairs on our first
-        visit.
-      </p><h3><strong>Affordable Diagnostic Service Fee</strong></h3><p>
-        We offer a low diagnostic service fee, which we happily waive if you
-        decide to proceed with the repair, making our services even more
-        accessible.
-      </p><h3><strong>Experienced Oven Repair Technicians</strong></h3><p>
-        Our technicians are certified and deeply understand various oven and
-        appliance repair issues, allowing them to diagnose and repair problems
-        quickly and efficiently. Whether you're dealing with a residential or
-        commercial oven, our team is renowned for providing timely and
-        cost-effective appliance repair services.
-      </p><h3>
-        <strong>Residential Oven Repair Services in Los Angeles, CA</strong>
-      </h3><p style="text-align: start">
-        Choosing our oven repair service in Los Angeles ensures numerous
-        benefits for homeowners. These include access to expert technicians,
-        rapid service, competitive pricing, authentic replacement parts,
-        comprehensive warranties, and a satisfaction guarantee. We prioritize
-        your convenience and satisfaction, ensuring a smooth and efficient
-        repair process.
-      </p><h2>
-        <strong>Commercial Oven Repair Services in Los Angeles, CA</strong>
-      </h2><p style="text-align: start">
-        For businesses relying on commercial ovens, such as restaurants and
-        bakeries, we offer specialized repair services to address the unique
-        needs of these high-demand appliances. Our certified technicians are
-        adept at handling the complexities of commercial oven repairs, ensuring
-        fast, reliable, and cost-effective solutions to minimize downtime and
-        keep your operations running smoothly.
-      </p><h2><strong>Frequently Asked Questions</strong></h2><h3>
-        <strong>Common Oven Repair Issues</strong>
-      </h3><p>
-        Typical problems include the oven not heating, uneven baking, the oven
-        door not closing properly, the self-cleaning function not working, and
-        issues with the control panel. Our team can address these and other
-        concerns efficiently.
-      </p><h3><strong>Signs You Need Professional Oven Repair</strong></h3><p>
-        If you notice your oven not reaching the set temperature, producing
-        unevenly cooked food, making unusual noises, or the door not sealing
-        correctly, it's time to seek professional repair services.
-      </p><h3><strong>Repair or Replace Your Oven?</strong></h3><p>
-        Consider repairing your oven if it's relatively new, the repair cost is
-        less than half the price of a new oven, and it has been reliable.
-        Replacement might be more cost-effective if the oven is old, frequently
-        needs repairs, or the repair cost is high relative to a new oven's
-        price.
-      </p><h3><strong>Brands of Ovens We Repair</strong></h3><p>
-        We repair a broad spectrum of oven brands, ensuring that regardless of
-        your appliance's manufacturer, our technicians have the expertise to fix
-        it.
-      </p><h3><strong>Same-Day Oven Repair in Los Angeles</strong></h3><p>
-        Yes, we specialize in providing same-day oven repair services to address
-        your needs quickly and efficiently.
-      </p><h3><strong>Oven Repair Costs:</strong></h3><p>
-        The oven repair cost varies depending on the issue, required parts, and
-        oven model. We offer competitive pricing and transparent estimates to
-        ensure you make an informed decision.
-      </p><h3><strong>Warranty on Oven Repair Services</strong></h3><p>
-        Our oven repair and range repair services come with a solid warranty,
-        including a 30-day warranty on labor and up to a 3-month warranty on
-        parts, emphasizing our commitment to quality and customer satisfaction.
-      </p><h3><strong>Preventative Maintenance for Ovens</strong></h3><p>
-        Yes, we offer preventative maintenance services to extend the lifespan
-        of your oven and ensure it operates efficiently, including inspections,
-        cleaning, and part replacements as needed.
-      </p><h3><strong>Repair Service Duration</strong></h3><p>
-        The time required for an oven repair service can vary, but we aim for
-        swift and practical solutions, often providing same-day service to
-        minimize any inconvenience.
-      </p><p style="text-align: start">
-        By addressing these FAQs, we aim to provide comprehensive information
-        about our oven repair services in Los Angeles, ensuring you understand
-        the benefits and scope of choosing us for your appliance repair needs.
-      </p>
+
+      <div class="page213">
+        <div class="open-full_left">
+          <svg
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path
+                id="arrow-left-menu"
+                d="M4 12H20M20 12L16 8M20 12L16 16"
+                stroke="rgb(59, 59, 59)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </g>
+          </svg>
+        </div>
+
+        <div class="full_left_menu_r">
+          <div class="list_left">
+            <a href="#left-menu-1">
+              <h2>Whashing machine Repair</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-2">
+              <h2>Types of washers and their repair needs</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-3">
+              <h2>Common Washer Issues</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-4">
+              <h2>Washing machine parts explained</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-5">
+              <h2>Washing machine replacement parts costs</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-6">
+              <h2>Cost to repair a washing machine depending on the brand</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-7">
+              <h2>Washing Machine Repair Labor Costs</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-8">
+              <h2>Washing machine repair cost - labor only, excluding parts</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-9">
+              <h2>Ways to Save Money on Washer Repair</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-10">
+              <h2>
+                What is included in Washing Machine maintenance and how it can help prevent repairs
+              </h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-11">
+              <h2>How to decide whether to repair or replace a washing machine</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-12">
+              <h2>Same Day Appliance Repair at your service</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-13">
+              <h2>How Much Does It Cost to Repair a Washing Machine?</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-14">
+              <h2>Our Pricing Policy For The Washing Machine Repair and How We Work</h2>
+            </a>
+          </div>
+
+          <div class="list_left" id="list_left-line">
+            <a href="#left-menu-15">
+              <h2>FAQs</h2>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="page213-container">
+          <div class="page213-content" id="left-menu-1">
+            <div class="content__page-desc">
+              <p>
+                The cost to repair a washing machine can vary widely depending
+                on several factors, including the nature of the problem, the
+                brand of the device, and your location. On average, a service
+                call to diagnose the issue can range from <b>$75 to $150</b>.
+                This initial fee typically covers the first visit and basic
+                troubleshooting to identify the problem. If parts need to be
+                replaced or more extensive repairs are required, the total cost
+                can increase significantly. For instance, replacing a faulty
+                motor or water pump can cost anywhere from <b>$200 to $600</b>,
+                while more minor repairs, such as fixing a door latch or belt,
+                might only add <b>$50 to $100</b> to the service call fee.
+              </p>
+
+              <p>
+                Given the potential expenses, it's important to weigh the cost
+                of repairs against the price of purchasing a new washing
+                machine. Most washers have a lifespan of around 10-15 years, so
+                if your machine is approaching this age, it might be more
+                cost-effective to invest in a new appliance rather than
+                continually paying for repairs. Additionally, frequent
+                breakdowns can lead to more hand washing and inconvenience, not
+                to mention the risk of water damage to your floor if the washer
+                is not operating correctly. Regular maintenance and prompt
+                attention to minor issues can help extend the life of your
+                washing machine and reduce the likelihood of needing costly
+                repairs.
+              </p>
+            </div>
+          </div>
+
+          <div class="page213-content" id="left-menu-2">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Types of washers and their repair needs</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/oven-repair/1-oven.webp"
+                  loading="lazy"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Top-Load Washers</h3>
+                <p>
+                  Are a popular choice for many households due to their ease of
+                  use and quick wash cycles. Common repair needs include
+                  addressing issues with the motor, pump, and agitation cycle.
+                  Problems such as a broken belt or a clogged drain hose can
+                  cause the machine to malfunction. Regularly checking for
+                  debris and ensuring the load is balanced can prevent many
+                  issues. If you find leaks, it’s often caused by worn hoses or
+                  seals that need replacing. Simple fixes like tightening
+                  connections or resetting the machine can solve many common
+                  problems. For more complex issues, having the right parts and
+                  tools, such as pliers, is essential.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Front-Load Washers</h3>
+                <p>
+                  Are known for their efficiency and lower water usage but may
+                  require more maintenance. Common repairs involve the door
+                  seal, which can leak or become clogged with debris, causing
+                  unpleasant smells. The pump and motor can also wear out,
+                  requiring replacement. Ensuring the washer is level and
+                  balanced can prevent many operational issues. Regularly
+                  cleaning the drum and checking for clogged hoses can extend
+                  the life of the machine. If you encounter a problem with the
+                  spin cycle, it might be due to a broken pulley or frayed belt.
+                  Front-load washers often require professional labor for more
+                  significant repairs.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>High-Efficiency (HE) Washers</h3>
+                <p>
+                  Use less water and energy but can be more prone to certain
+                  issues requiring repair. These machines often have specific
+                  detergent requirements, and using the wrong type can cause
+                  excess suds and drainage problems. Common repairs include
+                  fixing the pump and motor, which may wear out faster due to
+                  the machine’s efficiency demands. Issues with the agitation
+                  cycle or a clogged drain hose are also common. Regular
+                  maintenance, such as cleaning the detergent dispenser and
+                  drum, can prevent many problems. If the washer becomes
+                  imbalanced, redistributing the load can often fix the issue.
+                  Checking for leaks and worn parts regularly is crucial to keep
+                  the machine running smoothly.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Compact Washers</h3>
+                <p>
+                  Are ideal for small spaces and often found in apartments or
+                  RVs, but they come with their own set of repair needs. Due to
+                  their size, they can become imbalanced more easily, requiring
+                  frequent adjustments to the load. Common issues include
+                  clogged hoses and worn belts, which can affect the machine's
+                  performance. The pump and motor may also need replacing more
+                  often due to the compact design. Keeping the area around the
+                  washer clean and free of debris can prevent many problems.
+                  Regularly checking for leaks and ensuring all connections are
+                  secure can save on repair costs. Compact washers often require
+                  quick and simple fixes but may need specialized parts due to
+                  their unique design.
+                </p>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-3">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Common Washer Issues</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc-phot">
+                <img
+                 src="/oven-repair/2-oven.webp"
+                  width="500px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Leaking Washing Machine:</h3>
+                <p>
+                  A leaking washing machine is a common issue often caused by
+                  worn hoses or seals. If you find water around your washer,
+                  check the hose connections and seals for any signs of damage.
+                  Tighten loose connections and replace any broken parts to fix
+                  the leak. Regularly watching for leaks can prevent more
+                  significant problems. Ensuring the machine is level can also
+                  reduce the risk of leaks. If the issue persists, it might be
+                  worth consulting a washing machine repair service.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Washer Not Draining:</h3>
+                <p>
+                  When your washer fails to drain, it could be due to a clogged
+                  drain hose or pump. Small items like socks can sometimes block
+                  the drainage system. To fix this, first check and clean the
+                  drain hose and pump. If these parts are broken, you'll need to
+                  replace them. Regularly cleaning the machine and avoiding
+                  overloading it can help prevent this issue. If draining
+                  problems continue, a professional washer repair might be
+                  needed.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Washing Machine Not Filling with Water:</h3>
+                <p>
+                  If your washing machine isn’t filling with water, the issue
+                  may lie with the water inlet valve or the water level switch.
+                  Start by checking that the water supply is open and not
+                  restricted. If the inlet valve is broken, you'll need to
+                  replace it. Sometimes a quick reset of the machine can fix
+                  minor issues. Ensuring the water level switch is working
+                  correctly is also crucial. For more detailed information,
+                  refer to your washer's manual.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Washer Not Spinning:</h3>
+                <p>
+                  When your washer doesn't spin, it could be due to a broken
+                  belt, a malfunctioning lid switch, or an unbalanced load.
+                  First, check if the lid is closed properly and the switch is
+                  engaging. If the belt is frayed or broken, you'll need to
+                  replace it. Redistribute clothes to balance the load, as an
+                  uneven load can prevent the washer from spinning. If these
+                  fixes don't work, consulting a washing machine repair service
+                  might be necessary.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Foul Smell:</h3>
+                <p>
+                  A bad smell from your washing machine can be caused by mold or
+                  mildew buildup. Regularly running a cleaning cycle with a
+                  washing machine cleaner can help eliminate odors. Leaving the
+                  washer lid open after each use allows the machine to dry out,
+                  preventing mold growth. Check the detergent drawer and seals
+                  for any trapped debris and clean them thoroughly. Regular
+                  maintenance and cleaning can keep your washer smelling fresh.
+                  If the smell persists, deeper cleaning or professional help
+                  might be required.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Washer Not Starting:</h3>
+                <p>
+                  If your washer won’t start, it could be due to a faulty power
+                  source, a broken start switch, or issues with the control
+                  board. First, check if the machine is plugged in and that the
+                  outlet is working. If the start switch is not engaging, it may
+                  need replacing. A quick reset of the machine can sometimes fix
+                  minor glitches. If the control board is the issue, it might be
+                  worth getting a professional washer repair. Always choose to
+                  consult the user manual for specific troubleshooting steps.
+                </p>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-4">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Washing machine parts explained</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/oven-repair/3-oven.webp"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Drum:</h3>
+                <p>
+                  The drum is an essential part of the washing machine where you
+                  place your clothes. Over time, it can develop issues requiring
+                  a washing machine repair, especially if you overload it
+                  regularly. Most models have a stainless steel drum that is
+                  durable and efficient. It’s crucial to watch for any signs of
+                  wear and tear to avoid bigger problems later. If you find the
+                  drum making unusual noises, it might be time for a quick
+                  inspection. Regular maintenance can extend the life of your
+                  washer. Make sure to keep the drum clean to avoid any
+                  unpleasant odors.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Motor:</h3>
+                <p>
+                  The motor is the powerhouse of the washing machine, creating
+                  the necessary motion for washing and spinning. If your washer
+                  isn’t running correctly, the motor could be the culprit.
+                  Different models have varying types of motors, but most issues
+                  can be addressed with proper repair. When the motor fails,
+                  it’s often a significant job to fix, sometimes taking more
+                  than half a day. Motor problems might make you consider buying
+                  a new machine if the repair costs are too high. Always close
+                  the washing machine door gently to avoid stressing the motor.
+                  Keeping an eye on the motor's performance can save you a lot
+                  of trouble down the line.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Pump:</h3>
+                <p>
+                  The pump is responsible for draining water from the washing
+                  machine. A malfunctioning pump can lead to water not draining
+                  properly, making washing machine repair necessary. Pumps can
+                  get clogged with lint, small items, or detergent residue,
+                  which affects their efficiency. For most models, a quick
+                  cleaning can solve these issues. If you notice water pooling
+                  in your washer, check the pump first. Regularly cleaning the
+                  filter and pump can help them work more efficiently. If the
+                  pump needs replacing, it’s generally a straightforward task
+                  but might take up to half a day.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Control Panel:</h3>
+                <p>
+                  The control panel is the interface where you select your
+                  washing settings. It is crucial for the machine's operation,
+                  and any malfunction here can disrupt the entire process.
+                  Repairing the control panel can be complex, often requiring
+                  professional help. Some newer models have digital control
+                  panels that are more prone to issues but offer more features.
+                  If your washer isn’t responding or is showing error codes, the
+                  control panel might need an adjustment. Always unplug the
+                  machine before attempting any repairs to avoid electrical
+                  hazards. Regularly cleaning the panel can prevent buttons from
+                  sticking.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Agitator or Impeller:</h3>
+                <p>
+                  The agitator or impeller is the part inside the drum that
+                  moves the clothes around for effective cleaning. If your
+                  clothes aren’t getting clean, this part might need some
+                  attention. Different washing machine models use either an
+                  agitator or an impeller, each with its pros and cons. Repair
+                  can involve replacing worn-out parts or adjusting the existing
+                  ones. Watch for signs of wear, such as broken fins or unusual
+                  noises. Regular cleaning can extend the life of these
+                  components. If you’re considering buying a new machine, think
+                  about whether you prefer an agitator or impeller model.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Water Inlet Valve:</h3>
+                <p>
+                  The water inlet valve controls the flow of water into the
+                  washing machine. If the washer isn’t filling correctly, this
+                  valve might need a quick repair. Over time, mineral deposits
+                  can clog the valve, reducing water flow. Most models have
+                  easily accessible valves that can be cleaned or replaced. If
+                  you find inconsistent water levels, it’s likely a valve issue.
+                  Regularly checking and cleaning the valve can prevent bigger
+                  problems. Always close the water supply before attempting any
+                  repairs.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Door Lock:</h3>
+                <p>
+                  The door lock ensures that the washing machine door remains
+                  securely closed during the wash cycle. If the door doesn’t
+                  lock properly, the machine won’t start, necessitating a
+                  repair. Different models have different locking mechanisms,
+                  but the average repair job is relatively quick. Watch for any
+                  signs of wear or damage to the lock mechanism. If the door
+                  doesn’t close tight, it might need an adjustment. Regularly
+                  cleaning the door seal can also help maintain the lock’s
+                  efficiency. Always ensure the door is properly closed before
+                  starting a cycle to avoid interruptions.
+                </p>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-5">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Washing machine replacement parts costs</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <div class="full-content_job-prices">
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          The drum is where clothes are placed for washing. Costs vary based on size, material (stainless steel is more expensive), and brand.
+                        </p></a
+                      >
+                      <p>Drum</p>
+                    </div>
+                    <div class="money_job-prices"><p>$150 - $400</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          The motor drives the drum and agitator/impeller. Prices depend on the type of motor (direct drive or belt-driven) and the washing machine model.
+                        </p></a
+                      >
+                      <p>Motor</p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $300</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          The pump drains water out of the machine. Costs vary depending on the pump type and whether it’s an internal or external model.
+                        </p></a
+                      >
+                      <p>Pump</p>
+                    </div>
+                    <div class="money_job-prices"><p>$30 - $100</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          The control panel allows users to select settings. Digital panels are more expensive than mechanical ones due to advanced features.
+                        </p></a
+                      >
+                      <p>Control Panel</p>
+                    </div>
+                    <div class="money_job-prices"><p>$80 - $250</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          These components move clothes around in the drum. Prices vary based on design complexity and the washing machine model.
+                        </p></a
+                      >
+                      <p>
+                        Agitator or Impeller
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$50 - $150</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          This valve controls water flow into the machine. Simple in design, but costs can increase for specialized models.
+                        </p></a
+                      >
+                      <p>Water Inlet Valve</p>
+                    </div>
+                    <div class="money_job-prices"><p>$20 - $60</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"><p>
+                          The door lock ensures the door stays closed during operation. Prices depend on the complexity of the locking mechanism and whether it’s electronic or mechanical.
+                        </p></a>
+                      <p>
+                        Door Lock
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$20 - $50</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>The belt connects the motor to the drum in belt-driven models. It’s a relatively inexpensive part but crucial for the machine's operation.
+                        </p></a
+                      >
+                      <p>Belt</p>
+                    </div>
+                    <div class="money_job-prices"><p>$10 - $30</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"><p>
+                        Bearings support the drum and allow it to spin smoothly. Costs can vary significantly depending on the quality and brand.
+                        </p></a>
+                      <p>
+                        Bearing
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$20 - $100</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>Hoses carry water to and from the washing machine. Prices are generally low, but high-quality or reinforced hoses can cost more.
+                        </p></a
+                      >
+                      <p>Hose</p>
+                    </div>
+                    <div class="money_job-prices"><p>$10 - $25</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"><p>
+                        The heating element warms the water in the washer. Prices depend on the model and whether it’s a simple or more advanced component.
+                        </p></a>
+                      <p>
+                        Heating Element
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$30 - $100</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>Seals and gaskets prevent water leaks around the door and other openings. Costs vary based on the material and design.
+                        </p></a
+                      >
+                      <p>Seal/Gasket</p>
+                    </div>
+                    <div class="money_job-prices"><p>$10 - $40</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"><p>
+                        The timer controls the duration of each cycle. Mechanical timers are generally cheaper than electronic ones.
+                        </p></a>
+                      <p>
+                        Timer
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$50 - $120</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>Filters trap lint and debris to protect the pump. Replacement costs are low, but it’s important to get the right type for your model.
+                        </p></a
+                      >
+                      <p>Filter</p>
+                    </div>
+                    <div class="money_job-prices"><p>$10 - $30</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"><p>
+                        Shock absorbers reduce vibrations during spin cycles
+                        </p></a>
+                      <p>
+                        Shock Absorber
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$30 - $60</p></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-6">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Cost to repair a washing machine depending on the brand</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <h3>Miele:</h3>
+                <p>
+                  Washing machine repair for Miele models tends to be on the higher end of the spectrum, often ranging from <b>$300 to $500</b>. The high cost is generally due to the specialized parts and expertise required for these premium machines. Quick fixes for common issues can still run around <b>$200</b>, given the unique components Miele uses. Sometimes, technicians need to create custom solutions to tackle specific problems, adding to the expense. No matter the issue, Miele repairs usually require a thorough diagnostic process, which can extend the repair time. However, once the problem is identified, the repair is often straightforward but costly. Adjustments to these high-end machines tend to be precise, ensuring long-term reliability once fixed.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Whirlpool:</h3>
+                <p>
+                  For Whirlpool washing machines, repair costs are generally more reasonable, typically ranging from <b>$150 to $300</b>. The parts for these models are commonly available, allowing for quicker and less expensive fixes. Quick repairs for minor issues can run as low as <b>$100</b>, making Whirlpool a cost-effective option for maintenance. Technicians are usually well-versed with these machines and can efficiently diagnose and adjust any problems. The matter of cost often depends on whether the repair requires basic adjustments or more extensive work. Regardless, Whirlpool washing machine repairs are often straightforward, keeping both parts and labor costs manageable. This makes Whirlpool a popular choice for budget-conscious consumers.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>LG: </h3>
+                <p>
+                  Repairing an LG washing machine usually falls in the mid-range, with costs typically between <b> $200 and $400</b>. These machines often come with advanced features, which can complicate the repair process. Quick fixes might cost around <b>$150</b>, but the final price can escalate if specialized parts are needed. Technicians trained in LG models can quickly run diagnostics to identify the issue, but more complex repairs may require creating specific solutions. No matter the problem, the cost often hinges on the severity of the issue and the required parts. Adjustments to LG machines are usually efficient, thanks to the availability of parts and skilled technicians. Overall, LG offers a balanced trade-off between advanced features and repair costs.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Bosch: </h3>
+                <p>
+                  Bosch washing machine repairs are generally moderate to high, with typical costs ranging from <b>$250 to $450</b>. The quality of Bosch parts ensures durability, but this also means that replacement components can be pricey. Quick fixes for minor issues can still run around <b>$200</b>, given the specialized nature of Bosch parts. Technicians often need to run extensive diagnostics to pinpoint the exact problem, creating a longer repair time and potentially higher labor costs. No matter the repair, Bosch machines usually require precise adjustments, which can add to the overall expense. However, the investment is often worth it for the long-term reliability and performance. When fixed correctly, Bosch washing machines continue to function efficiently for years.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Frigidaire:</h3>
+                <p>
+                  Repair costs for Frigidaire washing machines are generally on the lower end, typically between <b>$100 and $250</b>. These machines are simpler in design, which makes quick fixes more feasible and less expensive. Quick repairs for common issues can run as low as <b>$75</b>, making Frigidaire an economical choice for maintenance. The parts for these models are widely available and inexpensive, allowing technicians to diagnose and adjust problems quickly. No matter the issue, the overall repair cost tends to be low due to the straightforward nature of these machines. Adjustments are usually simple, and repairs rarely require creating complex solutions. This makes Frigidaire a cost-effective option for those looking to save on washing machine repairs.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="content__page-full-logo-brand">
+              <div class="ph-logo-brand">
+                <div class="logo-brand logo-bran-ph-1">
+                  <a href="#">
+                    <img
+                      width="300px"
+                      height="300px"
+                      src="/brand-logos/panasonic.webp"
+                      alt="Panasonic"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-2">
+                  <a href="#">
+                    <img
+                      width="370px"
+                      height="300px"
+                      src="/brand-logos/samsung.webp"
+                      alt="samsung"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-3">
+                  <a href="#">
+                    <img
+                      width="230px"
+                      height="300px"
+                      src="/brand-logos/GE-general-electric.webp"
+                      alt="GE general electric"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-4">
+                  <a href="#">
+                    <img
+                      width="240px"
+                      height="300px"
+                      src="/brand-logos/lg.webp"
+                      alt="LG"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-5">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/sharp.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-6">
+                  <a href="#">
+                    <img
+                      width="300px"
+                      height="300px"
+                      src="/brand-logos/whirlpool.webp"
+                      alt="Whirlpool"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-7">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/breville.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-8">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/thermador.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-9">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/toshiba.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-10">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/frigidaire.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-11">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/cove.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-12">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/kitchenAid.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="full-desc-logo-brand">
+                <p>Brands of microwaves we repair</p>
+
+                <div class="desc-logo-brand logo-bran-d-1">
+                  <h3><a href="#">Panasonic</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-2">
+                  <h3><a href="#">Samsung</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-3">
+                  <h3><a href="#">GE Appliances</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-4">
+                  <h3><a href="#">LG Electronics</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-5">
+                  <h3><a href="#">Sharp</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-6">
+                  <h3><a href="#">Whirlpool</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-7">
+                  <h3><a href="#">Breville</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-8">
+                  <h3><a href="#">Thermador</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-9">
+                  <h3><a href="#">Toshiba</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-10">
+                  <h3><a href="#">Frigidaire</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-11">
+                  <h3><a href="#">Сove</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-12">
+                  <h3><a href="#">KitchenAid</a></h3>
+                </div>
+              </div>
+            </div>
+
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-7">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Washing Machine Repair Labor Costs</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc content__page-full-desc-ph-ri">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/oven-repair/4-oven.webp"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <p>
+                  Washing machine repair labor costs can vary widely depending on several factors, including the brand of the machine, the complexity of the problem, and the geographic location of the service. On average, labor costs for washing machine repair typically range from <b>$50 to $150</b> per hour. This range can fluctuate based on the following considerations:
+                </p>
+                <ol>
+                  <li>
+                    <b>Brand: </b> High-end brands like Miele, Bosch, and LG might incur higher labor costs because they require specialized knowledge and expertise. Technicians skilled in these brands may charge a premium, often ranging from <b>$75 to $150</b> per hour. On the other hand, more common brands like Whirlpool, Kenmore, or Frigidaire may have lower labor rates, typically between <b>$50 and $100</b> per hour.
+                  </li>
+                  <li>
+                    <b>Complexity of the Problem: </b>Simple repairs such as replacing a belt, unclogging a drain, or fixing a door seal might only require a short amount of time, resulting in lower labor costs. More complex issues such as electrical problems, motor replacements, or advanced diagnostics can take several hours, increasing the labor expense. For example, a quick fix might cost around <b>$50 to $75</b> in labor, while a more complex repair could range from <b>$100 to $300</b> in labor alone.
+                  </li>
+                  <li>
+                    <b>Geographic Location: </b>Labor costs can also vary significantly based on where you live. Urban areas with a higher cost of living generally have higher labor rates compared to rural areas. For instance, in big cities like New York or San Francisco, labor costs might be on the higher end of the spectrum, while in smaller towns or rural areas, they might be on the lower end.
+                  </li>
+                  <li>
+                    <b>Service Call Fees: </b>Many repair services charge a diagnostic or service call fee, which can range from <b>$50 to $100</b>. This fee is often applied regardless of whether the repair is completed. Some companies may waive this fee if you agree to the repair, but it’s important to ask about this upfront to avoid surprises.
+                  </li>
+                  <li>
+                    <b>Emergency Services: </b>If you require emergency or after-hours repair services, expect to pay a premium. Emergency service calls can increase labor costs by 25-50%, depending on the urgency and time of the request.
+                  </li>
+                </ol>
+                <p>
+                  In summary, while the average labor cost for washing machine repair ranges from <b>$50 to $150</b> per hour, the final amount you pay will depend on the brand, complexity of the issue, location, and any additional service fees. Always ask for a detailed estimate before proceeding with any repair work to ensure you understand the full cost.
+                </p>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-8">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Washing machine repair cost - labor only, excluding parts</h2>
+              </div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <div class="full-content_job-prices">
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Washer drum not spinning, loud noises during operation.
+                        </p></a
+                      >
+                      <p>Belt Replacement</p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $150</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Washer not draining, water remaining in the drum after cycle.
+                        </p></a
+                      >
+                      <p>Pump Replacement</p>
+                    </div>
+                    <div class="money_job-prices"><p>$150 - $200</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Washer not agitating, no movement in the drum.
+                        </p></a
+                      >
+                      <p>Motor Replacement</p>
+                    </div>
+                    <div class="money_job-prices"><p>$200 - $300</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Water leaking from the front of the washer, visible wear or mold on the seal.
+                        </p></a
+                      >
+                      <p>Door Seal Replacement</p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $150</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Washer not starting, erratic operation, error codes displayed.
+                        </p></a
+                      >
+                      <p>
+                        Control Board Replacement
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$200 - $350</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Washer not filling with water, water leaking.
+                        </p></a
+                      >
+                      <p>Water Inlet Valve Replacement</p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $150</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Loud noise during spin cycle, drum movement issues.
+                        </p></a
+                      >
+                      <p>
+                        Bearing Replacement
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$200 - $300</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Washer door not locking or unlocking, washer not starting.
+                        </p></a
+                      >
+                      <p>Door Lock Replacement</p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $150</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Clothes not cleaning properly, agitator not moving.
+                        </p></a
+                      >
+                      <p>
+                        Agitator Repair/Replacement
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $150</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Washer overfilling or not filling properly, water level issues.
+                        </p></a
+                      >
+                      <p>Pressure Switch Replacement</p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $150</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Cracks or leaks in the tub, water damage.
+                        </p></a
+                      >
+                      <p>
+                        Tub Replacement
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$300 - $500</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Washer cycle not advancing, stuck on one cycle.
+                        </p></a
+                      >
+                      <p>Timer Replacement</p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $200</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Water leaks, visible cracks or wear in hoses.
+                        </p></a
+                      >
+                      <p>
+                        Hose Replacement
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $150</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Excessive vibration or shaking during spin cycle.
+                        </p></a
+                      >
+                      <p>Shock Absorber Replacement</p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $150</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Washer not spinning or agitating, washer not starting.
+                        </p></a
+                      >
+                      <p>
+                        Lid Switch Replacement
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $150</p></div>
+                  </div>
+                </div>
+                <div class="pros_job-prices"> 
+                  <p>
+                  *Please note that these costs are average estimates and can vary based on location, the specific model of the washing machine, and the service provider.
+                  </p>
+                 </div>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-9">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Ways to Save Money on Washer Repair</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+
+                <div class="description_maintenance">
+                  <div class="conclusion-description_maintenance">
+                    <div class="head_description_maintenance">
+                      <svg
+                        fill="#000000"
+                        height="35px"
+                        width="35px"
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 296.999 296.999"
+                        xml:space="preserve">
+                        <g>
+                          <g>
+                            <g>
+                              <path
+                                d="M169.197,43.09H18.808c-7.176,0-13.014,5.838-13.014,13.014v227.444c0,7.176,5.838,13.014,13.014,13.014h150.389
+              c7.176,0,13.014-5.838,13.014-13.014V56.105C182.211,48.928,176.373,43.09,169.197,43.09z M151.794,274.258H36.21
+              c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+              S156.273,274.258,151.794,274.258z M151.794,235.73H36.21c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584
+              c4.479,0,8.111,3.632,8.111,8.111C159.905,232.098,156.273,235.73,151.794,235.73z M151.794,197.202H36.21
+              c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+              S156.273,197.202,151.794,197.202z M151.794,158.674H36.21c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584
+              c4.479,0,8.111,3.632,8.111,8.111S156.273,158.674,151.794,158.674z M151.794,120.146H36.21c-4.479,0-8.111-3.632-8.111-8.111
+              s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111S156.273,120.146,151.794,120.146z M151.794,81.618H36.21
+              c-4.479,0-8.111-3.632-8.111-8.111c0-4.479,3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+              C159.905,77.986,156.273,81.618,151.794,81.618z"
+                              ></path>
+                              <path
+                                d="M213.642,0H57.336c-7.177,0-13.014,5.838-13.014,13.014v13.854h124.875c16.121,0,29.237,13.115,29.237,29.237v201.931
+              h15.208c7.176,0,13.014-5.838,13.014-13.014V13.014C226.656,5.838,220.818,0,213.642,0z"
+                              ></path>
+                              <path
+                                d="M291.205,23.324C291.204,10.464,281.88,0,270.42,0c-11.461,0-20.785,10.464-20.785,23.324v13.584h41.57V23.324z"
+                              ></path>
+                              <path
+                                d="M249.635,53.13v214.537h0c0,1.2,0.342,2.373,0.983,3.371l14.921,23.249c1.087,1.694,2.919,2.712,4.881,2.712
+              c1.961,0,3.794-1.018,4.881-2.712l14.921-23.249c0.641-0.998,0.983-2.171,0.983-3.371V53.13H249.635z"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <p><b>Timely maintenance</b></p>
+                    </div>
+                    <p>
+                      - Timely maintenance can save you from spending money on unnecessary washing machine repairs and increase the longevity of your washer. We charge a flat fee of $80 for our washing machine maintenance service, which includes a thorough inspection and cleaning of internal components, checking and replacing worn parts, ensuring proper electrical connections, and running diagnostic tests to identify potential issues. This comprehensive service helps extend the life of your washer and prevents potential damage.
+                    </p>
+                  </div>
+
+                  <div class="conclusion-description_maintenance">
+                    <div class="head_description_maintenance">
+                      <svg
+                        width="35px"
+                        height="35px"
+                        viewBox="0 0 24 24"
+                        id="Layer_1"
+                        data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        ><defs
+                          ><style>
+                            .cls-1 {
+                              fill: none;
+                              stroke: #000000;
+                              stroke-miterlimit: 10;
+                              stroke-width: 1.91px;
+                            }
+                          </style></defs
+                        ><polygon
+                          class="cls-1"
+                          points="16.35 1.5 7.65 1.5 1.5 7.65 1.5 16.35 7.65 22.5 16.35 22.5 22.5 16.35 22.5 7.65 16.35 1.5"
+                        ></polygon><line
+                          class="cls-1"
+                          x1="12"
+                          y1="6.27"
+                          x2="12"
+                          y2="13.91"></line><line
+                          class="cls-1"
+                          x1="12"
+                          y1="15.82"
+                          x2="12"
+                          y2="17.73"></line></svg
+                      >
+                      <p><b>Avoid DIY repairs</b></p>
+                    </div>
+                    <p>
+                      - While DIY washer repair can be a viable option for minor issues and can save money on service fees, it’s essential to weigh the potential risks and benefits. If you are unsure about the appliance repair process or if the issue is complex, consulting with a professional technician is advisable to avoid causing further damage.
+                    </p>
+                  </div>
+
+                  <div class="conclusion-description_maintenance">
+                    <div class="head_description_maintenance">
+                      <svg
+                        fill="#000000"
+                        width="37px"
+                        height="37px"
+                        viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon">
+                        <path
+                          d="M866.9 169.9L527.1 54.1C523 52.7 517.5 52 512 52s-11 .7-15.1 2.1L157.1 169.9c-8.3 2.8-15.1 12.4-15.1 21.2v482.4c0 8.8 5.7 20.4 12.6 25.9L499.3 968c3.5 2.7 8 4.1 12.6 4.1s9.2-1.4 12.6-4.1l344.7-268.6c6.9-5.4 12.6-17 12.6-25.9V191.1c.2-8.8-6.6-18.3-14.9-21.2zM810 654.3L512 886.5 214 654.3V226.7l298-101.6 298 101.6v427.6zm-405.8-201c-3-4.1-7.8-6.6-13-6.6H336c-6.5 0-10.3 7.4-6.5 12.7l126.4 174a16.1 16.1 0 0 0 26 0l212.6-292.7c3.8-5.3 0-12.7-6.5-12.7h-55.2c-5.1 0-10 2.5-13 6.6L468.9 542.4l-64.7-89.1z"
+                        ></path>
+                      </svg>
+                      <p><b>Find a company that provides a warranty</b></p>
+                    </div>
+                    <p>
+                      - It's important to find a company that provides a warranty for their services. At Same Day Appliance Repair, we offer up to a three-month warranty, giving you peace of mind and assurance that our work is reliable and backed by a guarantee.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-10">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>
+                  What is included in Washing Machine maintenance and how it can help prevent repairs
+                </h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc content__page-full-desc-ph-ri">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/oven-repair/5-oven.webp"
+                  width="600px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <p>
+                  Regular washing machine maintenance can help extend the lifespan of your appliance, improve its efficiency, and prevent costly repairs. Here’s a detailed list of what is typically included in washing machine maintenance and how it helps:
+                </p>
+                <ol>
+                  <li>
+                    <h3>Cleaning the Drum:</h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves: </b>Run an empty wash cycle with a washing machine cleaner or a mixture of vinegar and baking soda.
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Removes buildup of detergent, fabric softener, and mineral deposits, preventing odor and ensuring the drum functions efficiently.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Inspecting and Cleaning the Door Seal:</h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves:  </b>Wipe down the door seal (gasket) regularly to remove lint, detergent residue, and moisture.
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Prevents mold, mildew, and bacteria buildup, which can cause odors and damage the seal.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Cleaning the Detergent Dispenser: </h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves: </b>Remove and clean the detergent and fabric softener dispensers regularly.
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Prevents clogging and ensures that detergent and softener are dispensed correctly.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Checking and Cleaning the Filter:</h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves: </b>Locate and clean the washing machine filter to remove lint, coins, and other debris.
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Ensures proper draining and prevents blockages that can cause water damage and inefficient operation.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Inspecting Hoses:</h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves: </b>Check water inlet and drain hoses for signs of wear, leaks, or cracks.
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Prevents leaks that can lead to water damage and ensures efficient water flow.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Balancing the Machine:</h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves: </b>Ensure the washing machine is level and adjust the feet if necessary.
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Prevents excessive vibration and noise, reducing wear on internal components.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Running Hot Water Before Starting a Cycle:</h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves:  </b>Run hot water in the sink closest to your washing machine before starting a cycle.
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Ensures the washing machine starts with hot water, improving cleaning efficiency.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Using the Right Detergent:</h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves:  </b>Use the appropriate type and amount of detergent for your machine (HE detergent for high-efficiency washers).
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Prevents excessive suds that can lead to buildup and ensures efficient cleaning.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Avoiding Overloading:</h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves:  </b>Do not overload the washing machine with clothes.
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Ensures clothes are cleaned properly and reduces strain on the motor and drum.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Checking the Water Inlet Valve:</h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves:  </b>Inspect the water inlet valve for signs of clogging or damage.
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Ensures proper water flow into the machine, preventing filling issues.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Wiping Down the Exterior:</h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves:  </b>Regularly clean the exterior of the washing machine with a damp cloth.
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Keeps the machine looking new and prevents dust and dirt from entering the internal components.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Monitoring Performance:</h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves:  </b>Pay attention to any changes in performance, such as unusual noises, vibrations, or error codes.
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Early detection of issues can prevent more serious problems and costly repairs.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Ensuring Proper Ventilation:</h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves:  </b>Ensure there is adequate space around the washing machine for ventilation.
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Prevents overheating and ensures efficient operation.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Cleaning the Lint Trap (if applicable):</h3>
+                    <ul>
+                      <li>
+                        <b>What It Involves:  </b>Clean the lint trap (if your model has one) after every load.
+                      </li>
+                      <li>
+                        <b>How It Helps: </b>Prevents lint buildup that can lead to clogs and inefficient operation.
+                      </li>
+                    </ul>
+                  </li>
+
+                </ol>
+                
+                <p>
+                  By incorporating these maintenance tasks into your routine, you can help prevent many common washing machine problems, ensuring your appliance runs efficiently and effectively for years to come. Regular maintenance not only saves money on repairs but also improves the overall performance and longevity of your washing machine.
+                </p>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-11">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>How to decide whether to repair or replace a washing machine</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc content__page-full-desc-ph-ri">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/oven-repair/6-oven.webp"
+                  width="500px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <p>
+                  Deciding whether to repair or replace a washing machine can be a challenging decision, but considering a few key factors can help guide you to the best choice for your situation:
+                </p>
+                <ol>
+
+                  <li>
+                    <h3>Age of the Washing Machine</h3>
+                    <p>Washing machines typically have a lifespan of about 8-12 years. If your machine is nearing or has surpassed this age range, it may be more cost-effective to replace it rather than invest in frequent repairs that are likely to increase as the machine continues to age.</p>
+                  </li>
+
+                  <li>
+                    <h3>Cost of Repairs</h3>
+                    <p>Consider the cost of the needed repairs. A good rule of thumb is the 50% rule: if the cost of the repair is more than 50% of the price of a new washing machine, it may be more economical to replace the machine. Additionally, if your machine has required several repairs in recent years, ongoing repair costs can quickly add up.</p>
+                  </li>
+
+                  <li>
+                    <h3>Frequency of Breakdowns</h3>
+                    <p>Evaluate how often the washing machine is breaking down. If it's becoming a regular occurrence, this may be a sign that the machine is nearing the end of its useful life. Frequent repairs can be both inconvenient and costly, making replacement a more practical option.</p>
+                  </li>
+
+                  <li>
+                    <h3>Energy Efficiency and Features</h3>
+                    <p>Modern washing machines are generally more energy-efficient and come with advanced features that older models lack. If your old machine is not energy-efficient, you could save money in the long run by upgrading to a new, more efficient model, which will reduce your utility bills.</p>
+                  </li>
+
+                  <li>
+                    <h3>Performance and Reliability</h3>
+                    <p>Consider the overall performance and reliability of your washing machine. If it’s no longer performing well, such as not cleaning clothes properly or making unusual noises, it might be time to evaluate whether the cost and effort of repairs are worth it compared to the benefits of a new machine.</p>
+                  </li>
+
+                  <li>
+                    <h3>Warranty Status</h3>
+                    <p>Check if your washing machine is still under warranty. If the repairs are covered, it makes sense to get it fixed. However, if the warranty has expired, factor this into your decision-making process.</p>
+                  </li>
+
+                  <li>
+                    <h3>Environmental Impact</h3>
+                    <p>Replacing a washing machine does have an environmental impact. If your machine can be repaired and continue to function well for several more years, this might be the more environmentally responsible choice.</p>
+                  </li>
+
+                </ol>
+
+                <p>
+                  In summary, deciding whether to repair or replace your washing machine depends on its age, the cost and frequency of needed repairs, its energy efficiency, overall performance, and whether it’s still under warranty. Carefully weigh these factors to make an informed decision that balances cost, convenience, and the long-term benefits of a new washing machine.
+                </p>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-12">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Same Day Appliance Repair at your service</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <p>
+                  At Same Day Appliance Repair, we are a family-owned business committed to enhancing your customer experience. We understand the frustration of appliance repairs, and we pride ourselves on our transparency and reliability. This page is designed to give you a thorough understanding of our pricing policies, the costs associated with a broken washing machine repair, and our unique approach to service.
+                </p>
+                <b>Have Questions? We’re Here to Help!</b>
+                <p>
+                  Feel free to call us with any questions. Our team is dedicated to assisting you and ensuring your satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page213-content" id="left-menu-13">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>How Much Does It Cost to Repair a Washing Machine?</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <p>The cost of repairing a washing machine can vary depending on the issue type and your appliance's brand and model. Our technician will first need to diagnose the problem to provide you with the most accurate estimate. Following the diagnosis, you'll receive a detailed price breakdown. This helps you decide whether to repair or replace a washing machine and includes recommendations should you consider a replacement.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page213-content" id="left-menu-14">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Our Pricing Policy For The Washing Machine Repair and How We Work</h2>
+              </div>
+              <div class="content__page-hed-desc">
+                <p>
+                  There are four costs to consider when making your washing machine work optimally
+                </p>
+              </div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <div class="pricing-policy">
+                  <div class="content_pricing-policy">
+                    <div class="con-inside_pricing-policy">
+                      <div class="icon_pricing-policy">
+                        <svg
+                          fill="#000000"
+                          height="50px"
+                          width="50px"
+                          version="1.1"
+                          id="Capa_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 490 490"
+                          xml:space="preserve">
+                          <g id="bold_copy_5_">
+                            <path
+                              d="M392.383,0H245H97.617v369.414L245,490l147.383-120.586V0z M361.758,354.898L245,450.432l-116.758-95.535V30.625H245
+                      h116.758V354.898z"
+                            ></path>
+                            <path
+                              d="M245,311.395c-23.229,0-42.109,18.88-42.109,42.109c0,23.229,18.88,42.109,42.109,42.109
+                      c23.229,0,42.109-18.88,42.109-42.109C287.109,330.275,268.229,311.395,245,311.395z M245,364.989
+                      c-6.324,0-11.484-5.16-11.484-11.484c0-6.324,5.16-11.484,11.484-11.484c6.324,0,11.484,5.16,11.484,11.484
+                      C256.484,359.828,251.324,364.989,245,364.989z"
+                            ></path>
+                            <path
+                              d="M238.079,62.919v12.005c-13.904,1.378-25.051,6.584-33.427,15.603c-8.376,9.019-12.556,20.151-12.556,33.427
+                      c0,13.092,3.706,24.24,11.117,33.427c7.411,9.188,19.018,16.032,34.867,20.565v50.837c-4.364-2.113-8.33-5.497-11.882-10.198
+                      c-3.553-4.701-5.987-10.275-7.289-16.752l-31.651,3.399c2.419,15.94,7.993,28.282,16.737,37.01
+                      c8.743,8.728,20.09,13.95,34.101,15.649v22.065h17.579v-22.678c15.772-2.251,28.083-8.407,36.949-18.436
+                      c8.851-10.03,13.276-22.372,13.276-37.01c0-13.092-3.507-23.842-10.55-32.218c-7.028-8.361-20.258-15.175-39.675-20.442v-47.438
+                      c7.855,3.415,12.694,9.876,14.562,19.416l30.686-3.997c-2.098-12.143-6.952-21.82-14.547-29.048
+                      c-7.61-7.243-17.839-11.637-30.701-13.169v-12.02H238.079z M238.079,143.356c-5.268-2.251-9.187-5.237-11.775-8.912
+                      c-2.588-3.675-3.874-7.672-3.874-11.944c0-4.701,1.409-8.988,4.226-12.862c2.848-3.889,6.645-6.646,11.408-8.253v41.972H238.079z
+                       M271.383,192.187c3.2,3.935,4.778,8.606,4.778,14.011c0,6.064-1.899,11.347-5.696,15.833c-3.797,4.487-8.728,7.304-14.807,8.437
+                      v-47.316C262.946,185.266,268.183,188.267,271.383,192.187z"
+                            ></path>
+                          </g>
+                        </svg>
+                        <h3>Maintenance Cost</h3>
+                      </div>
+                      <div class="desc_pricing-policy">
+                        <p>
+                          Regular maintenance is essential for your washing machine's longevity and optimal performance. We recommend annual maintenance, which involves inspecting hoses and connections, cleaning the drum, filter, and detergent dispenser, checking the door seal and water inlet filters, balancing the machine, running a diagnostic test, inspecting electrical components, lubricating moving parts, and listening for unusual noises. This comprehensive service has a flat fee of $80. This preventive approach saves you money by reducing the need for repairs and enhances the efficiency and lifespan of your appliance. Schedule your maintenance appointment with us today to ensure your washing machine runs smoothly.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_pricing-policy">
+                    <div class="con-inside_pricing-policy">
+                      <div class="icon_pricing-policy">
+                        <svg
+                          fill="#000000"
+                          width="50px"
+                          height="50px"
+                          viewBox="0 0 1024 1024"
+                          xmlns="http://www.w3.org/2000/svg"
+                          ><path
+                            d="M951.467 721.067C908.8 678.4 853.334 665.6 802.134 674.134l-409.6-409.6c8.533-51.2-4.267-110.933-46.933-149.333-42.667-46.933-110.933-64-174.933-42.667 0 0-4.267 0-4.267 4.267-4.267 0-4.267 4.267-8.533 4.267-8.533 8.533-8.533 21.333 0 29.867l59.733 59.733c4.267 4.267 4.267 12.8 0 17.067l-29.867 29.867c-8.533 4.267-12.8 4.267-17.067 0l-59.733-55.467c-8.533-8.533-21.333-8.533-29.867 0 0 0 0 4.267-4.267 4.267 0 0 0 4.267-4.267 4.267-21.333 59.733-8.533 128 38.4 174.933 34.133 34.133 76.8 46.933 115.2 46.933 12.8 0 21.333 0 34.133-4.267l409.6 409.6c-12.8 51.2 4.267 110.933 46.933 149.333 29.867 29.867 72.533 46.933 119.467 46.933 21.333 0 38.4-4.267 55.467-8.533 0 0 4.267 0 4.267-4.267 4.267 0 4.267-4.267 8.533-4.267 8.533-8.533 8.533-21.333 0-29.867L849.066 896c-4.267-4.267-4.267-4.267-4.267-8.533s0-8.533 4.267-8.533l29.867-29.867c4.267-4.267 4.267-4.267 8.533-4.267s4.267 0 8.533 4.267l55.467 55.467c8.533 8.533 21.333 8.533 29.867 0 0 0 0-4.267 4.267-4.267 4.267-4.267 4.267-4.267 4.267-8.533 25.6-59.733 8.533-128-38.4-170.667zM140.8 315.733c-25.6-25.6-38.4-64-34.133-98.133l29.867 29.867c12.8 8.533 25.6 17.067 42.667 17.067 12.8 0 29.867-4.267 38.4-17.067l29.867-29.867c21.333-21.333 21.333-55.467 0-76.8l-34.133-34.133c38.4-4.267 72.533 8.533 102.4 34.133 46.933 46.933 46.933 128 0 174.933-46.933 51.2-123.733 51.2-174.933 0zm166.4 59.734c12.8-8.533 29.867-17.067 38.4-29.867 12.8-12.8 21.333-25.6 29.867-42.667l384 384C746.667 695.466 729.6 704 716.8 716.8s-21.333 25.6-29.867 38.4L307.2 375.467zm580.267 426.666c-12.8 0-29.867 4.267-38.4 17.067L819.2 849.067c-8.533 8.533-17.067 25.6-17.067 38.4s4.267 29.867 17.067 38.4l29.867 29.867c-38.4 4.267-72.533-8.533-102.4-34.133-46.933-46.933-46.933-128 0-174.933s128-46.933 174.933 0c25.6 25.6 38.4 64 34.133 102.4l-29.867-29.867c-8.533-8.533-21.333-17.067-38.4-17.067z"
+                          ></path><path
+                            d="M610.133 409.6c4.267 0 12.8 0 17.067-4.267L802.133 230.4l34.133 34.133-174.933 174.933c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 17.067 4.267 4.267 0 12.8 0 17.067-4.267l196.267-192 68.267-25.6c4.267-4.267 12.8-8.533 12.8-12.8l29.867-85.333c4.267-8.533 0-17.067-4.267-21.333l-59.733-64c-4.267-4.267-12.8-8.533-21.333-4.267l-85.333 29.867c-4.267 4.267-12.8 8.533-12.8 12.8l-25.6 72.533c-4.267 0-4.267 4.267-4.267 4.267l-192 192c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 12.8 4.267zm243.2-277.333l64-21.333 38.4 38.4-21.333 64-64 21.333-38.4-38.4 21.333-64zm-384 558.933L209.066 951.467c-8.533 8.533-17.067 8.533-21.333 4.267l-81.067-81.067c-4.267-4.267 0-12.8 4.267-21.333l256-256c8.533-8.533 8.533-21.333 0-29.867s-21.333-8.533-29.867 0l-256 256c-25.6 25.6-25.6 59.733-4.267 81.067l81.067 81.067c8.533 8.533 21.333 12.8 34.133 12.8 17.067 0 34.133-8.533 46.933-21.333l260.267-260.267c8.533-8.533 8.533-21.333 0-29.867s-21.333-4.267-29.867 4.267z"
+                          ></path></svg
+                        >
+                        <h3>Service fees</h3>
+                      </div>
+                      <div class="desc_pricing-policy">
+                        <p>
+                          If your washing machine requires repair, we charge a service fee of $65, which includes a detailed price breakdown. This fee is waived if you proceed with the repair. We guarantee you will not pay this fee if we cannot diagnose the issue properly. Our technicians are highly trained and equipped with specialized tools to accurately diagnose and resolve issues, ensuring transparency and fairness in our charges. This approach ensures you only pay for necessary repairs.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_pricing-policy">
+                    <div class="con-inside_pricing-policy">
+                      <div class="icon_pricing-policy">
+                        <svg
+                          height="50px"
+                          width="50px"
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 512 512"
+                          xml:space="preserve">
+                          <polygon
+                            style="fill:#FFFFFF;"
+                            points="58,397.144 58,114.856 256,9.072 454,114.856 454,397.144 256,502.936 "
+                          ></polygon>
+                          <path
+                            id="cost-svg"
+                            style="fill:#000;"
+                            d="M256,18.144l190,101.512V392.36L256,493.856L66,392.352V119.648L256,18.144 M256,0L50,110.056
+                    v291.888L256,512l206-110.056V110.056L256,0L256,0z"
+                          ></path>
+                          <circle cx="256" cy="115.624" r="27.256"></circle>
+                          <path
+                            d="M286.424,153.776h-60.856c-21.456,0-38.92,17.464-38.92,38.92v76.32c0,7.816,6.336,14.152,14.152,14.152
+                    s14.152-6.336,14.152-14.152V200.56h8.496v64.536c0,0.032-0.008,0.056-0.008,0.088v144.288c0,7.816,6.336,14.152,14.152,14.152
+                    c7.816,0,14.152-6.336,14.152-14.152v-116.08h8.488v116.08c0,7.816,6.336,14.152,14.152,14.152s14.152-6.336,14.152-14.152v-116.08
+                    v-28.208V200.56h8.496v68.448c0,7.816,6.336,14.152,14.152,14.152s14.152-6.336,14.152-14.152v-76.32
+                    C325.344,171.24,307.88,153.776,286.424,153.776z"
+                          ></path>
+                        </svg>
+                        <h3>Labor cost</h3>
+                      </div>
+                      <div class="desc_pricing-policy">
+                        <p>
+                          The cost of labor depends on the complexity of the washing machine repair and the estimated time required. We ensure transparency by providing a detailed quote before you commit to the service. Should the repair take longer than expected, you won't be charged extra; we waive the diagnostic fee upon proceeding with the repair, ensuring no surprises on your bill. This commitment to transparency helps build trust and satisfaction with our service.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_pricing-policy">
+                    <div class="con-inside_pricing-policy">
+                      <div class="icon_pricing-policy">
+                        <svg
+                          fill="#000000"
+                          height="50px"
+                          width="50px"
+                          version="1.1"
+                          id="Capa_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 383.114 383.114"
+                          xml:space="preserve">
+                          <path
+                            d="M144.114,316.654c4.864,1.025,7.976,5.8,6.95,10.663c-0.894,4.237-4.633,7.146-8.798,7.146
+                   c-0.615,0-1.239-0.063-1.865-0.195c-52.492-11.066-93.56-52.135-104.624-104.627c-1.025-4.864,2.087-9.638,6.951-10.663
+                   c4.86-1.024,9.637,2.087,10.663,6.95C62.984,271.446,98.596,307.058,144.114,316.654z M177.525,201.533c0-4.971-4.029-9-9-9h-0.031
+                   c-4.971,0-8.984,4.029-8.984,9s4.044,9,9.015,9S177.525,206.503,177.525,201.533z M383.114,22.071v109.6c0,4.971-4.029,9-9,9
+                   s-9-4.029-9-9v-10.949H225.56l-30.513,52.852c5.318,5.05,9.203,11.599,10.969,18.96h43.302v-42.865c0-4.971,4.029-9,9-9s9,4.029,9,9
+                   v51.598c0.002,0.089,0.004,0.178,0.004,0.268c0,29.557-13.044,56.124-33.679,74.247c-0.21,0.222-0.434,0.436-0.67,0.64
+                   c-8.145,7.018-17.32,12.601-27.13,16.603c-11.401,4.669-23.861,7.267-36.911,7.321c-0.02,0.003-0.038,0-0.056,0
+                   c-0.024,0-0.044,0-0.067,0.001c-0.025,0.001-0.048,0.001-0.071,0c-0.025-0.001-0.051-0.001-0.074,0c-0.025,0-0.052,0-0.076,0
+                   c-0.028,0-0.079-0.007-0.078,0c0,0,0,0,0,0c-17.77,0-34.465-4.718-48.89-12.964c-0.172-0.086-0.344-0.178-0.513-0.275
+                   c-0.179-0.103-0.353-0.212-0.522-0.325c-29.227-17.183-48.887-48.963-48.887-85.247s19.661-68.064,48.888-85.247
+                   c0.169-0.113,0.343-0.223,0.522-0.325c0.169-0.098,0.34-0.189,0.513-0.275c14.427-8.248,31.117-12.964,48.893-12.964
+                   c0.719,0,1.419,0.084,2.089,0.244c0.671-0.16,1.37-0.244,2.089-0.244h47.517c0.109-0.003,0.22-0.003,0.329,0h144.578V51.022H172.69
+                   c-0.717,0-1.415-0.084-2.083-0.242c-0.668,0.158-1.366,0.242-2.083,0.242C85.519,51.022,18,118.541,18,201.533
+                   s67.519,150.511,150.512,150.511c57.937,0,111.379-33.87,136.151-86.288c0.416-0.878,0.954-1.658,1.586-2.329
+                   c8.479-18.72,13.235-39.469,13.32-61.301c-0.002-0.075-0.003-0.149-0.003-0.225v-52.233c0-4.971,4.029-9,9-9s9,4.029,9,9v51.598
+                   c0.002,0.089,0.004,0.178,0.004,0.268c0,92.917-75.594,168.511-168.512,168.511c-0.182,0-0.363,0-0.546,0
+                   C75.594,370.043,0,294.45,0,201.533S75.594,33.022,168.512,33.022c0.719,0,1.419,0.084,2.089,0.244
+                   c0.671-0.16,1.37-0.244,2.089-0.244h192.424V22.071c0-4.971,4.029-9,9-9S383.114,17.1,383.114,22.071z M88.195,192.533h42.81
+                   c1.767-7.362,5.651-13.91,10.971-18.961l-21.397-37.063C102.922,149.559,90.745,169.614,88.195,192.533z M120.577,266.557
+                   l21.398-37.063c-5.319-5.051-9.204-11.599-10.971-18.961h-42.81C90.745,233.455,102.92,253.508,120.577,266.557z M200.871,275.581
+                   l-21.4-37.068c-3.475,1.032-7.153,1.586-10.958,1.586c-3.806,0-7.483-0.554-10.959-1.586l-21.401,37.069
+                   c9.913,4.348,20.86,6.763,32.36,6.763c0.02,0,0.041,0,0.063,0h0.002c0.026,0,0.047,0,0.071,0c0.021,0,0.048,0,0.066,0
+                   c0.023,0,0.044-0.001,0.068,0c0.019-0.002,0.043-0.001,0.063-0.001c0.008,0,0.01,0,0.019,0c10.25-0.045,20.315-2.037,29.685-5.788
+                   C199.331,276.242,200.102,275.917,200.871,275.581z M168.512,222.098c11.339,0,20.564-9.226,20.564-20.565
+                   s-9.225-20.565-20.564-20.565c-11.341,0-20.567,9.226-20.567,20.565S157.171,222.098,168.512,222.098z M195.047,229.493
+                   l21.398,37.063c17.654-13.049,29.83-33.104,32.379-56.022h-42.808C204.25,217.894,200.365,224.443,195.047,229.493z
+                    M204.775,120.721H172.69c-0.717,0-1.415-0.084-2.083-0.242c-0.668,0.158-1.366,0.242-2.083,0.242
+                   c-11.505,0-22.456,2.415-32.372,6.765l21.4,37.067c3.476-1.032,7.153-1.586,10.959-1.586c3.805,0,7.483,0.554,10.958,1.586
+                   L204.775,120.721z"
+                          ></path>
+                        </svg>
+                        <h3>Replacement Parts</h3>
+                      </div>
+                      <div class="desc_pricing-policy">
+                        <p>
+                          While not every repair needs new parts, certain situations require them to restore your washing machine to peak performance. Our technicians carry various parts in their vehicles, which usually enables same-day repairs. If a part must be ordered, the cost will vary depending on your washing machine's brand and model. We strive to ensure the most efficient and cost-effective solution for your repair needs, with a focus on quality and reliability
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pros_pricing-policy">
+                    <p>
+                      *We always do our best to find parts at a lower price for our customers.  We do not make extra money on the parts; our priority is to make it as easy as possible for the customer. .
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-15">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>FAQs</h2>
+              </div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <div class="faq-full" id="faqs-anchor">
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>Which brands of microwaves do you repair?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      At Same Day Appliance Repair, we repair all major brands
+                      of microwaves, including:
+                    </p>
+                    <ul>
+                      <li>Samsung</li>
+                      <li>LG</li>
+                      <li>Panasonic</li>
+                      <li>GE</li>
+                      <li>Whirlpool</li>
+                      <li>Kenmore</li>
+                      <li>Sharp</li>
+                      <li>Bosch</li>
+                      <li>Maytag</li>
+                      <li>KitchenAid</li>
+                      <li>Frigidaire</li>
+                      <li>Toshiba</li>
+                      <li>Amana</li>
+                      <li>Magic Chef</li>
+                      <li>Daewoo</li>
+                      <li>Electrolux</li>
+                      <li>Hamilton Beach</li>
+                      <li>Cuisinart</li>
+                      <li>Breville</li>
+                      <li>RCA</li>
+                    </ul>
+                    <p>and more....</p>
+                    <p>
+                      No matter the brand or model, our skilled technicians are
+                      equipped to handle all your microwave repair needs quickly
+                      and efficiently.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>Can I repair my microwave myself?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      At Same Day Appliance Repair, we understand that you might
+                      be tempted to repair your microwave yourself. While it's
+                      possible to handle simple issues like replacing a new
+                      switch, most microwave repairs involve complex components
+                      and high voltage, which can be dangerous.
+                    </p>
+                    <p>
+                      For instance, if your microwave oven isn't heating food,
+                      it could be due to various reasons, such as a
+                      malfunctioning magnetron or a faulty door switch. These
+                      parts need to be tested and replaced with precision. Even
+                      after you have switched out a faulty component, the
+                      microwave needs to be thoroughly tested to ensure it works
+                      safely.
+                    </p>
+                    <p>
+                      It's essential to remember that microwaves, like most
+                      appliances, should be unplugged before any repair work
+                      begins. However, even an unplugged microwave can retain
+                      dangerous electrical charges. Therefore, if you’re not
+                      experienced with electrical repairs, it’s best not to
+                      attempt fixing it yourself.
+                    </p>
+                    <p>
+                      If you decide to proceed with a DIY repair, don't forget
+                      to ensure that the microwave is powered off and unplugged.
+                      After making any repairs, you should confirm the appliance
+                      heats food evenly and operates without any unusual sound.
+                    </p>
+                    <p>
+                      In many cases, the safest and most efficient job is to
+                      leave microwave repairs to the professionals. Our team at
+                      Same Day Appliance Repair is highly trained to handle all
+                      types of microwave issues. Whether it's a new switch or
+                      any other part that needs to be fixed, we’ve got you
+                      covered. Save yourself the hassle and potential danger;
+                      let us get your microwave back in working order so you can
+                      cook meals without worry.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>Is it safe to repair a microwave on my own?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      At Same Day Appliance Repair, we understand that you might
+                      be considering fixing your microwave on your own. However,
+                      safety is a major concern when it comes to microwave
+                      repairs.
+                    </p>
+                    <p>
+                      Microwaves contain high-voltage components that can retain
+                      a charge even when the appliance is unplugged. This means
+                      you can still get shocked if you accidentally touch the
+                      wrong one area inside the microwave. It's also important
+                      to note that even after you've plugged the microwave back
+                      in, it needs to be thoroughly tested to ensure it properly
+                      heats food and operates safely.
+                    </p>
+                    <p>
+                      If you've decided to attempt a repair yourself, make sure
+                      the microwave is completely unplugged before you start.
+                      However, due to the potential risks involved, we strongly
+                      recommend leaving the job to professionals. Our skilled
+                      technicians at Same Day Appliance Repair are trained to
+                      handle these dangerous components safely and efficiently.
+                    </p>
+                    <p>
+                      So, is it safe to repair a microwave on your own?
+                      Generally, no. For your safety and peace of mind, it's
+                      best to let the experts handle it. We're here to ensure
+                      your microwave is repaired correctly and safely, so you
+                      can get back to cooking without any concerns.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>
+                        How much does it typically cost to repair a microwave?
+                      </h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <ul>
+                      <li>
+                        <b>Minor Repairs: </b>Simple fixes can range from $50 to
+                        $100.
+                      </li>
+                      <li>
+                        <b>Major Repairs: </b>More complex issues, like
+                        replacing the magnetron, can cost between $100 and $200
+                        or more.
+                      </li>
+                      <li>
+                        <b>Consider Replacement: </b>If repair costs approach or
+                        exceed the price of a new microwave, it may be more
+                        economical to replace the unit.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>What should I do if my microwave is sparking?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      If your microwave is sparking, it's important to take
+                      immediate action to prevent further damage or potential
+                      hazards. At Same Day Appliance Repair, we recommend the
+                      following steps:
+                    </p>
+                    <ol>
+                      <li>
+                        <b>Unplug the Microwave: </b>The first thing you should
+                        do is unplug the microwave to prevent any electrical
+                        hazards.
+                      </li>
+                      <li>
+                        <b>Stop Using It: </b>Do not attempt to use the
+                        microwave again until it has been inspected and
+                        repaired. Continuing to use a sparking microwave can
+                        cause more serious damage.
+                      </li>
+                      <li>
+                        <b>Check for Metal Objects: </b>Sometimes, sparking can
+                        be caused by metal objects inside the microwave. Make
+                        sure there are no metal utensils or aluminum foil in the
+                        microwave. If you find any, remove them.
+                      </li>
+                      <li>
+                        <b>Inspect the Interior: </b> Look for any signs of damage
+                        inside the microwave, such as a damaged waveguide cover (a
+                        small piece of cardboard-like material inside the microwave)
+                        or burnt areas. If you notice any damage, do not attempt
+                        to fix it yourself.
+                      </li>
+                      <li>
+                        <b>Contact a Professional: </b>Sparking can be caused by
+                        various issues, including a malfunctioning magnetron,
+                        damaged waveguide cover, or faulty diodes. These
+                        components can be dangerous to handle. It's best to
+                        contact a professional appliance repair service to
+                        diagnose and fix the issue.
+                      </li>
+                      <li>
+                        <b>Avoid DIY Repairs: </b>Microwaves contain
+                        high-voltage components that can retain a charge even
+                        when unplugged. Attempting to fix the microwave yourself
+                        can be dangerous. Leave it to the experts to ensure your
+                        safety.
+                      </li>
+                    </ol>
+                    <p>
+                      Remember, a sparking microwave is not something to be
+                      taken lightly. If you’ve noticed that your microwave is
+                      sparking and not heating properly, it’s time to call in
+                      the professionals. Our skilled technicians at Same Day
+                      Appliance Repair are equipped to handle these issues
+                      quickly and safely, getting your microwave back to working
+                      condition in no time.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>
+                        What are some preventative maintenance tips for
+                        microwaves?
+                      </h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      At Same Day Appliance Repair, we believe that regular
+                      maintenance can help extend the life of your microwave and
+                      keep it functioning properly. Here are some preventative
+                      maintenance tips to ensure your microwave remains in good
+                      condition:
+                    </p>
+                    <ol>
+                      <li>
+                        <b>Clean Regularly: </b>Food splatters and spills can
+                        cause your microwave to malfunction. Wipe down the
+                        interior and exterior surfaces regularly with a damp
+                        cloth and mild detergent. Make sure to clean the door
+                        seals to ensure a proper seal when the door is closed.
+                      </li>
+                      <li>
+                        <b>Avoid Metal Objects: </b>Never place metal objects,
+                        aluminum foil, or dishes with metallic trim inside the
+                        microwave, as these can cause sparking and damage the
+                        appliance.
+                      </li>
+                      <li>
+                        <b>Use Microwave-Safe Containers: </b>Only use
+                        containers that are labeled as microwave-safe. Using the
+                        wrong type of container can lead to melting, warping,
+                        and potential chemical leaching into your food.
+                      </li>
+                      <li>
+                        <b>Cover Food: </b>Use a microwave-safe cover to prevent
+                        food splatters. This not only keeps your microwave clean
+                        but also helps food heat more evenly.
+                      </li>
+                      <li>
+                        <b>Check and Replace the Turntable: </b>Ensure the
+                        turntable is properly aligned and rotating smoothly. If
+                        it's damaged or not rotating, it can result in uneven
+                        heating. Replace it if necessary.
+                      </li>
+                      <li>
+                        <b>Inspect the Door Seal: </b>Regularly check the door
+                        seal for any signs of damage or wear. A damaged seal can
+                        cause heat and radiation to leak, resulting in
+                        inefficient cooking and potential safety hazards.
+                      </li>
+                      <li>
+                        <b>Avoid Overloading: </b>Do not overload the microwave
+                        with too much food, as this can lead to uneven cooking
+                        and strain the appliance.
+                      </li>
+                      <li>
+                        <b>Use the Correct Power Settings: </b>Follow the
+                        manufacturer's guidelines for power settings and cooking
+                        times to avoid overworking the microwave.
+                      </li>
+                      <li>
+                        <b>Ventilation: </b>Ensure the microwave's ventilation
+                        system is not blocked. Proper ventilation helps prevent
+                        overheating and extends the life of the appliance.
+                      </li>
+                      <li>
+                        <b>Professional Inspection: </b>Schedule regular
+                        maintenance checks with a professional technician. They
+                        can identify and fix any potential issues before they
+                        become major problems.
+                      </li>
+                    </ol>
+                    <p>
+                      By following these preventative maintenance tips, you can
+                      keep your microwave in optimal condition and ensure it
+                      continues to heat your food efficiently. If you encounter
+                      any issues or need professional assistance, our team at
+                      Same Day Appliance Repair is here to help.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>Why is my microwave making a loud buzzing noise?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      A loud buzzing noise coming from your microwave can be
+                      concerning and may indicate a variety of issues. Here are
+                      some common reasons why your microwave might be making
+                      that noise:
+                    </p>
+                    <ul>
+                      <li>
+                        <b>Magnetron Issues: </b>The magnetron is the component
+                        that generates the microwaves to heat your food. If it
+                        is failing or malfunctioning, it can produce a loud
+                        buzzing or humming noise.
+                      </li>
+                      <li>
+                        <b>High Voltage Diode: </b>This component converts AC to
+                        DC and works with the capacitor to power the magnetron.
+                        A faulty high voltage diode can cause a loud buzzing
+                        noise.
+                      </li>
+                      <li>
+                        <b>Cooling Fan: </b>The cooling fan helps to keep the
+                        microwave’s components from overheating. If the fan is
+                        obstructed or its motor is failing, it could create a
+                        buzzing noise.
+                      </li>
+                      <li>
+                        <b>Turntable Motor: </b>If the noise is coming from the
+                        bottom of the microwave, it might be due to a
+                        malfunctioning turntable motor.
+                      </li>
+                      <li>
+                        <b>Transformer: </b>The transformer steps up the voltage
+                        to power the magnetron. A failing transformer can also
+                        generate a loud buzzing or humming sound.
+                      </li>
+                      <li>
+                        <b>Loose Components: </b>Over time, screws and other
+                        components inside the microwave can become loose,
+                        causing vibrations that produce a buzzing noise.
+                      </li>
+                      <li>
+                        <b>Capacitor: </b>The high-voltage capacitor can store
+                        electrical energy, and if it’s failing, it might make a
+                        loud buzzing noise.
+                      </li>
+                    </ul>
+                    <p>
+                      If your microwave is making a loud buzzing noise, it’s
+                      important to address the issue sooner rather than later.
+                      Continuing to use the microwave could potentially lead to
+                      more damage or safety hazards. In some cases, it might be
+                      a simple fix, but other times it might require
+                      professional repair or replacement of parts. If you’re not
+                      comfortable troubleshooting or repairing the microwave
+                      yourself, it’s best to contact a professional appliance
+                      repair service to diagnose and fix the problem.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>
+                        What should I do if my microwave smells like burning?
+                      </h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      If your microwave smells like burning, it's important to
+                      act quickly to identify and address the issue to prevent
+                      any potential hazards. Here are the steps you should take:
+                    </p>
+                    <ul>
+                      <li>
+                        <b>Turn Off and Unplug: </b>Immediately turn off the
+                        microwave and unplug it from the electrical outlet to
+                        prevent any further damage or risk of fire.
+                      </li>
+                      <li>
+                        <b>Inspect the Interior: </b>Carefully open the
+                        microwave door and inspect the inside. Look for any
+                        signs of burnt food, packaging, or other materials that
+                        may have caused the smell.
+                      </li>
+                      <li>
+                        <b>Remove Burnt Items: </b>If you find any burnt food or
+                        materials, remove them from the microwave. Be cautious
+                        as they may still be hot.
+                      </li>
+                      <li>
+                        <b>Clean Thoroughly: </b>Clean the interior of the
+                        microwave thoroughly. Use a mild detergent and a damp
+                        cloth to wipe down the walls, turntable, and any
+                        removable parts. Ensure that no food particles or debris
+                        are left behind.
+                      </li>
+                      <li>
+                        <b>Check Ventilation: </b>Ensure that the microwave's
+                        ventilation system is not blocked. Proper airflow is
+                        necessary to prevent overheating.
+                      </li>
+                      <li>
+                        <b>Inspect for Damage: </b>Check for any visible damage
+                        to the microwave's components, such as burnt wires,
+                        melted plastic, or scorch marks. If you notice any
+                        damage, do not use the microwave until it has been
+                        inspected and repaired by a professional.
+                      </li>
+                      <li>
+                        <b>Test with Caution: </b>After cleaning and inspecting,
+                        you can test the microwave with a small amount of water
+                        in a microwave-safe container. Run the microwave for a
+                        short period (e.g., 30 seconds) and monitor it closely
+                        for any unusual smells or noises.
+                      </li>
+                      <li>
+                        <b>Contact a Professional: </b>If the burning smell
+                        persists or if you notice any damage, contact a
+                        professional appliance repair service. Continuing to use
+                        a malfunctioning microwave can be dangerous and may lead
+                        to further damage or fire hazards.
+                      </li>
+                      <li>
+                        <b>Avoid Overheating: </b>Ensure that you are using the
+                        microwave according to the manufacturer's instructions
+                        and avoid overheating food or running the microwave
+                        empty, as this can cause damage and produce burning
+                        smells.
+                      </li>
+                    </ul>
+                    <p>
+                      By taking these steps, you can help identify and address
+                      the source of the burning smell in your microwave. If in
+                      doubt, always seek professional assistance to ensure your
+                      safety.
+                    </p>
+                  </div>
+
+                  <div class="FAQ_bottom"></div>
+                </div>
+              </div>
+            </div>
+            <Btn />
+          </div>
+        </div>
+      </div>
     </main>
+    <Cta />
   </Container>
+
+  <Arrow />
+  <Focus />
+  <Faqs />
 </Layout>
-<Cta />
+<LogoBrands />

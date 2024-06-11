@@ -87,14 +87,12 @@ main {
     padding-bottom: clamp(3%, 5vh, 10%);
 }
 
-
-
-.furnace-page-header-d-full {
-
+.furnace-page-header-d-full .page-header-d {
+    width: 45%;
 }
 
-.furnace-page-header-d-full .page-header-d{
-    width: 45%;
+.oven-page-header-d-full .page-header-d {
+    width: 38%;
 }
 
 .page-header-d {
@@ -1381,7 +1379,7 @@ main {
     top: -5px;
 }
 
-.questions  ol>li:nth-child(-n+9)::after {
+.questions ol>li:nth-child(-n+9)::after {
     left: 12px;
 }
 
@@ -1544,6 +1542,7 @@ main {
         grid-gap: 1.2em;
         grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     }
+
     .logo-brand {
         width: 110px;
         height: 110px;
