@@ -88,6 +88,12 @@ main {
 }
 
 
+
+.furnace-page-header-d-full {
+
+}
+
+
 .page-header-d {
     left: 0;
     width: 50%;
@@ -96,6 +102,13 @@ main {
     margin-top: 3%;
     margin-left: 3%;
 }
+
+.furnace-page-header-d-full .page-header-d{
+    width: 45%;
+}
+
+
+
 
 .page-header-d h1 {
     margin-bottom: 3%;
