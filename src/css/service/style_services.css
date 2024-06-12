@@ -91,7 +91,8 @@ main {
     width: 45%;
 }
 
-.oven-page-header-d-full .page-header-d, .freezer-page-header-d-full .page-header-d {
+.oven-page-header-d-full .page-header-d,
+.freezer-page-header-d-full .page-header-d {
     width: 38%;
 }
 
@@ -587,6 +588,11 @@ main {
     border-radius: 3px;
 }
 
+.costTable tr:nth-child(1) td {
+    font-weight: 600;
+}
+
+
 .costTable tr {
     font-size: 20px;
     font-weight: 400;
@@ -607,6 +613,9 @@ main {
     font-weight: 600;
 }
 
+.costTable-Factor td:nth-child(2){
+    font-weight:400;
+}
 
 
 
@@ -1563,6 +1572,14 @@ main {
 
     .costTable tr:nth-child(1) {
         font-size: 19px;
+    }
+
+    .costTable-Factor tr {
+        font-size: 14px;
+    }
+
+    .costTable-Factor tr:nth-child(1) {
+        font-size: 16px;
     }
 
 
