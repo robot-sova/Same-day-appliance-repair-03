@@ -1,606 +1,2248 @@
 ---
-import Container from "@components/container.astro";
-import Cta from "@components/cta.astro";
-import Contactbtn from "@components/contactbtn.astro";
-import Features from "@components/features.astro";
-import Hero from "@components/hero.astro";
-import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Contactbtn from "@components/contactbtn.astro";
+import Btn from "@components/btn.astro";
+import Cta from "@components/cta.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
+import Arrow from "@components/js/arrow-phone.astro";
+import Focus from "@components/js/focus-menu.astro";
+import Faqs from "@components/js/faqs.astro";
+import LogoBrands from "@components/js/logo-brands.astro";
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
 <Reviews />
-<Layout title="Same Day Freezer Repair">
+<Layout title="Freezer Repair">
   <Container>
     <main>
-      <h1>
-        <span class="animate-charcter">Same Day Freezer Repair</span> in Los Angeles
-        and Surrounding Areas
-      </h1>
-
-      <div class="two-col-grid">
-        <div class="col-one">
-          <img
-            class="img-header"
-            src="/images/same-day-appliance-reapir-los-angeles.webp"
-            width="600"
-            height="232"
-            alt="Professional Appliance Repair Los Angeles - technician working on a dishwasher"
-          />
-
-          <Contactbtn />
+      <div class="page-header">
+        <div class="page-header-d-full freezer-page-header-d-full">
+          <div class="page-header-d">
+            <h1><span class="animate-charcter">Freezer Repair</span></h1>
+            <Contactbtn />
+          </div>
         </div>
 
-        <div class="col-two">
-          <p>
-            Dealing with a malfunctioning freezer can cause significant
-            inconvenience. Without prompt repair, your beverages won't stay
-            chilled, and perishable goods might go bad. The challenge lies in
-            quickly finding a skilled service technician ready to respond
-            immediately. At Same Day Appliance Repair, we address this issue
-            effortlessly and help Los Angeles residents eliminate major
-            inconveniences or malfunctioning freezers. We are a phone call away.
-            With our quick response time, you can schedule a same-day appliance
-            repair service and have top-notch freezer repair specialists
-            available to assist you ASAP.
-          </p>
+        <div class="page-header-f">
+          <img
+            src="/freezer/freezer-page_header_photos.webp"
+            alt="Freezer Repair"
+            loading="lazy"
+          />
         </div>
       </div>
-      <p style="text-align: start">
-        Our comprehensive freezer repair services cater to all types of freezer
-        issues for household and commercial needs. Additionally, we offer up to
-        a 90-day warranty on all repairs, ensuring your peace of mind. Our
-        pricing is budget-friendly, and our same-day service option means we can
-        potentially fix your freezer on the day you book. Schedule an
-        appointment with us for efficient and reliable service today.
-      </p><h2>
-        Potential Freezer Repair Issues That We Handle for All Household
-        Freezers
-      </h2><p>
-        Different types of home freezers come with their unique set of potential
-        issues that may require professional repair. Here's a breakdown of
-        common freezer types and the typical problems they might experience that
-        we handle:
-      </p><ol>
-        <li>
-          <p><strong>Upright Freezers:</strong></p><ul>
-            <li>
-              <p>
-                <strong>Frost Buildup</strong>: Excessive frost can accumulate
-                due to door seal issues or defrost system problems.
-              </p>
-            </li><li>
-              <p>
-                <strong>Temperature Fluctuations</strong>: Caused by faulty
-                thermostats, blocked vents, or compressor issues.
-              </p>
-            </li><li>
-              <p>
-                <strong>Loud Noises</strong>: This could be due to a failing
-                compressor, loose components, or issues with the evaporator fan.
-              </p>
-            </li>
-          </ul>
-        </li><li>
-          <p><strong>Chest Freezers:</strong></p><ul>
-            <li>
-              <p>
-                <strong>Power Issues</strong>: Failure to power on, often due to
-                electrical issues, faulty power cords, or internal components.
-              </p>
-            </li><li>
-              <p>
-                <strong>Inadequate Cooling</strong>: This can result from low
-                refrigerant levels, a malfunctioning thermostat, or compressor
-                problems.
-              </p>
-            </li><li>
-              <p>
-                <strong>Seal Problems</strong>: Damaged seals can lead to air
-                leaks and inefficient cooling.
-              </p>
-            </li>
-          </ul>
-        </li><li>
-          <p><strong>Drawer Freezers:</strong></p><ul>
-            <li>
-              <p>
-                <strong>Drawer Malfunction</strong>: Problems with the sliding
-                mechanism or alignment can occur, hindering accessibility.
-              </p>
-            </li><li>
-              <p>
-                <strong>Temperature Control Issues</strong>: Similar to other
-                types, stemming from thermostat or sensor malfunctions.
-              </p>
-            </li><li>
-              <p>
-                <strong>Frost Buildup</strong>: Due to frequent opening and
-                closing or seal issues.
-              </p>
-            </li>
-          </ul>
-        </li><li>
-          <p><strong>Portable Freezers:</strong></p><ul>
-            <li>
-              <p>
-                <strong>Power Connectivity Issues</strong>: Due to their
-                mobility, issues with power cords or adapters are common.
-              </p>
-            </li><li>
-              <p>
-                <strong>Thermostat Issues</strong>: This can result in
-                inconsistent cooling.
-              </p>
-            </li><li>
-              <p>
-                <strong>Compressor Problems</strong>: As with other freezers,
-                compressor failures can impact cooling efficiency.
-              </p>
-            </li>
-          </ul>
-        </li><li>
-          <p><strong>Compact or Mini Freezers:</strong></p><ul>
-            <li>
-              <p>
-                <strong>Limited Cooling Capacity</strong>: Overloading these
-                small freezers can lead to inefficient cooling.
-              </p>
-            </li><li>
-              <p>
-                <strong>Electrical Problems</strong>: Due to their compact size,
-                internal components like fuses and capacitors may be more prone
-                to failure.
-              </p>
-            </li><li>
-              <p>
-                <strong>Door Seal Wear</strong>: Frequent use can wear out seals
-                faster than in larger models.
-              </p>
-            </li>
-          </ul>
-        </li><li>
-          <p><strong>Frost-Free Freezers:</strong></p><ul>
-            <li>
-              <p>
-                <strong>Defrost System Failure</strong>: The main feature of
-                these freezers can fail, leading to frost buildup.
-              </p>
-            </li><li>
-              <p>
-                <strong>Evaporator Fan Issues</strong>: The fan can malfunction,
-                causing temperature inconsistencies.
-              </p>
-            </li><li>
-              <p>
-                <strong>Drain Clogs</strong>: The defrost drain can become
-                clogged, leading to water leakage.
-              </p>
-            </li>
-          </ul>
-        </li>
-      </ol><p style="text-align: start">
-        Call us when you are facing such issues to schedule an appointment with
-        a professional appliance repair technician. Our technicians can
-        accurately diagnose and fix these problems, ensuring your freezer runs
-        efficiently and safely. They also carry all the necessary professional
-        tools and various parts to tackle any issue.
-      </p><h2>Commercial Freezer Repair Los Angeles, CA</h2><p>
-        Our appliance repair services also handle commercial freezers that are
-        essential in the operation of various businesses, especially in the food
-        and hospitality industries. Our company, Same Day Appliance Repair
-        caters to a range of commercial freezers, including reach-in freezers,
-        walk-in freezers, undercounted freezers, chest freezers, display
-        freezers, blast chillers, worktop freezers, bar freezers, merchandise
-        freezers, roll-in freezers.
-      </p><p>
-        At our Same Day Appliance Repair company, we specialize in commercial
-        freezers and other commercial appliances and are skilled in handling the
-        complex systems and larger scales of these units. We are equipped to
-        deal with a variety of issues, from mechanical to electrical problems,
-        ensuring that businesses can continue to operate without long downtimes.
-      </p><h2>
-        Freezer Maintenance And Proper Repair - Longevity of Your Freezer is Our
-        Priority
-      </h2><p style="text-align: start">
-        At Same Day Appliance Repair in Los Angeles, CA, and surrounding areas,
-        we employ several strategies to ensure the longevity of freezers,
-        focusing on preventative maintenance, quality repairs, and educating
-        customers on proper appliance care. It is our goal to maximize the
-        lifespan of essential appliances, ensuring they remain functional and
-        efficient for as long as possible. Here are the key features of our
-        appliance repair services and freezer maintenance services:
-      </p><ol>
-        <li>
-          <p>
-            <strong>Preventative Maintenance:</strong> Regular maintenance checks
-            are the cornerstone of extending a freezer's lifespan. These checks can
-            include cleaning the condenser coils to ensure efficient cooling, inspecting
-            and sealing any leaks in the door gasket to maintain optimal internal
-            temperatures, and verifying that the thermostat and defrost system are
-            functioning correctly. By catching and addressing minor issues early,
-            we prevent them from escalating into major problems that could shorten
-            the appliance's life.
-          </p>
-        </li><li>
-          <p>
-            <strong>Quality Repairs:</strong> When repairs are necessary, we use
-            high-quality, original manufacturer parts to ensure compatibility and
-            longevity. Skilled service technicians are trained to diagnose and fix
-            a wide range of issues with precision, from electrical faults to mechanical
-            wear, ensuring repairs are done right the first time. This reduces the
-            likelihood of recurrent issues and extends the appliance's operational
-            life.
-          </p>
-        </li><li>
-          <p>
-            <strong>Advanced Diagnostic Tools:</strong> Utilizing the latest diagnostic
-            equipment allows our technicians to accurately identify problems and
-            assess the health of the appliance. This technology enables precise repairs
-            and adjustments, ensuring the freezer operates at peak efficiency and
-            preventing unnecessary strain on its components.
-          </p>
-        </li><li>
-          <p>
-            <strong>Customer Education:</strong> Educating customers on proper freezer
-            care and maintenance is another critical aspect. We advise our customers
-            on optimal temperature settings, how to properly load the freezer to
-            ensure adequate airflow and the importance of regularly defrosting (for
-            models that require manual defrosting). An informed user can prevent
-            overloading, improper ventilation, and other issues that could otherwise
-            lead to premature wear.
-          </p>
-        </li><li>
-          <p>
-            <strong>Energy Efficiency Upgrades:</strong> Our experts might also suggest
-            upgrades or adjustments to improve the freezer's energy efficiency. More
-            efficient operation reduces wear on the freezer's compressor and other
-            vital components, contributing to a longer service life.
-          </p>
-        </li><li>
-          <p>
-            <strong>Follow-Up Services:</strong> We offer follow-up services to check
-            on the appliance after repairs ensuring that the freezer continues to
-            operate correctly and allowing technicians to address any subsequent
-            issues promptly.
-          </p>
-        </li>
-      </ol><h2>
-        Benefits of Our Freezer Repair and Other Appliance Repair Services in
-        Los Angeles, CA
-      </h2><p></p><h3>
-        Same-Day Service in Los Angeles, CA, and Surrounding Areas
-      </h3><p>
-        At Same Day Alliance Repair service center, we provide same-day service
-        for the residents of Los Angeles. Whether it is a small residential
-        freezer or commercial walk-in freezer we are frequently able to fix it
-        on the first visit because we carry professional tools and necessary
-        parts.
-      </p><h3>Low Service Fee</h3><p>
-        We keep our service fee low and waive it if the customer decides to
-        proceed with the repair making it more economical.
-      </p><h3>
-        Complementary Free-of-Charge Condenser Coil Cleaner During Freezer
-        Repair
-      </h3><p>
-        Every freezer repair comes with free-of-charge condenser coil cleaning
-        to improve the longevity of the freezer.
-      </p><h3>
-        We Employ Only Expert Appliance Repair Technicians in Los Angeles
-      </h3><p>
-        Each of our appliance repair technicians is fully certified in safe
-        freezer handling and adept at quickly pinpointing the cause of any
-        malfunction. Whether you need commercial freezer repair or ice-maker
-        service, we're the go-to team. Not only do we save money in your wallet,
-        but we also provide same-day repair services. Our technicians, who are
-        both licensed and factory-trained, have the expertise to fix
-        refrigerators on the very same day.
-      </p>
-      <h2>Frequently Asked Questions:</h2>
 
-      <div class="accordion">
-        <label class="accordion-item" for="item1">
-          <input type="checkbox" id="item1" hidden />
-          <div class="accordion-title">
-            <h3>What are The Signs My Freezer Needs Repair?</h3>
-            <span class="arrow">&#9660;</span>
-          </div>
-          <div class="accordion-content">
-            <p>
-              Recognizing the signs that your freezer needs repair can help
-              prevent further damage and save on costly repairs or replacements
-              down the line. Here are some common indicators that your freezer
-              may require professional attention:
-            </p><ol>
-              <li>
-                <p>
-                  <strong>Unusual Noises:</strong> If your freezer is making strange
-                  noises such as humming, buzzing, clicking, or grinding, it could
-                  indicate a problem with the evaporator fan, compressor, or other
-                  mechanical parts.
-                </p>
-              </li><li>
-                <p>
-                  <strong>Temperature Fluctuations:</strong> A freezer that can’t
-                  maintain a consistent temperature or is not cold enough could have
-                  issues with the thermostat, cooling system, or door seals.
-                </p>
-              </li><li>
-                <p>
-                  <strong>Excessive Frost Build-up:</strong> While some amount of
-                  frost is normal, excessive buildup, especially in frost-free models,
-                  suggests a problem with the defrost system or door seals.
-                </p>
-              </li><li>
-                <p>
-                  <strong>Frequent Cycling or Running Constantly:</strong> If your
-                  freezer seems to be running all the time or cycling on and off
-                  more frequently than usual, it may be working harder to maintain
-                  the correct temperature due to issues with the thermostat, dirty
-                  condenser coils, or inadequate ventilation.
-                </p>
-              </li><li>
-                <p>
-                  <strong>Water Leaks:</strong> Water on the floor around your freezer
-                  can indicate a blocked defrost drain, a leaky water supply line
-                  (for models with ice makers), or seal issues.
-                </p>
-              </li><li>
-                <p>
-                  <strong>High Energy Bills:</strong> An unexpected increase in your
-                  energy bills could be a sign that your freezer is working inefficiently,
-                  possibly due to a failing component or loss of cooling efficiency.
-                </p>
-              </li><li>
-                <p>
-                  <strong>Ice Maker Issues:</strong> For freezers with built-in ice
-                  makers, failure to produce ice or producing very little ice could
-                  signal a malfunction within the ice-making mechanism.
-                </p>
-              </li><li>
-                <p>
-                  <strong>Visible Damage:</strong> Physical damage such as dents
-                  or wear on the door seal can affect your freezer's performance
-                  and may require repairs or part replacements.
-                </p>
-              </li><li>
-                <p>
-                  <strong>Food Spoilage:</strong> If food stored in the freezer is
-                  spoiling before its expiration date, or you notice the freezer
-                  burns more frequently, this could indicate the freezer is not maintaining
-                  the necessary temperatures.
-                </p>
-              </li><li>
-                <p>
-                  <strong>The Freezer is Warm:</strong> The most obvious sign is
-                  when the interior of the freezer is not cold at all, indicating
-                  a serious problem with the cooling system that needs immediate
-                  attention.
-                </p>
-              </li>
-            </ol><p style="text-align: start">
-              If you notice any of these signs, call us for your consultation
-              and appointment where a professional appliance repair technician
-              will diagnose and fix the problem. Prompt repairs can prevent
-              further damage and help extend the lifespan of your freezer.
-            </p>
-          </div>
-        </label>
+      <div class="page213">
+        <div class="open-full_left">
+          <svg
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path
+                id="arrow-left-menu"
+                d="M4 12H20M20 12L16 8M20 12L16 16"
+                stroke="rgb(59, 59, 59)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </g>
+          </svg>
+        </div>
 
-        <label class="accordion-item" for="item1">
-          <input type="checkbox" id="item1" hidden />
-          <div class="accordion-title">
-            <h3>Should I Replace or Repair My Freezer?</h3>
-            <span class="arrow">&#9660;</span>
+        <div class="full_left_menu_r">
+          <div class="list_left">
+            <a href="#left-menu-1">
+              <h2>MICROWAVE REPAIR</h2>
+            </a>
           </div>
-          <div class="accordion-content">
-            <p>
-              Navigating freezer repairs can be a challenging ordeal,
-              particularly when faced with inaccurate assessments by
-              inexperienced technicians or when the risk of food spoilage looms
-              large. Our clients frequently ask the question of whether to opt
-              for repair or replacement, and we are committed to offering sound
-              advice tailored to their situation. The choice between repairing
-              or replacing hinges on various considerations, such as the nature
-              of the problem, the price of acquiring a new appliance, and
-              personal factors, such as the sentimental value of a trusty
-              freezer that has reliably served for many years. For premium
-              appliances like Sub-Zero, investing in costly repairs is often
-              justified, whereas it may not be economical to fix a more
-              affordable freezer that requires a new compressor for example.
-            </p><p style="text-align: start">
-              It's also important to remember that the initial cost of a new
-              freezer can escalate unexpectedly with additional expenses for
-              delivery, installation, and connecting a water supply. Our nominal
-              service charge of $65 aims to empower you with the knowledge
-              needed to make a well-informed choice between repair and
-              replacement. We further support your decision to repair by waiving
-              this fee, ensuring you avoid paying any superfluous charges.
-            </p><p style="text-align: start">
-              Choosing to repair an appliance rather than replace it can
-              frequently be a better decision, particularly if the appliance is
-              expected to remain functional for many more years. Avoid
-              discarding a perfectly good freezer due to a fixable issue;
-              instead, seek advice from a certified technician. Contact us today
-              to arrange for a diagnostic appointment.
-            </p>
-          </div>
-        </label>
 
-        <label class="accordion-item" for="item1">
-          <input type="checkbox" id="item1" hidden />
-          <div class="accordion-title">
-            <h3>
-              How often Should I do a <strong
-                >Professional Maintenance of My Freezer?</strong
-              >
-            </h3>
-            <span class="arrow">&#9660;</span>
+          <div class="list_left">
+            <a href="#left-menu-2">
+              <h2>Microwave oven types and their repair needs</h2>
+            </a>
           </div>
-          <div class="accordion-content">
-            Our return policy is 30 days, no questions asked.
-          </div>
-        </label>
 
-        <label class="accordion-item" for="item2">
-          <input type="checkbox" id="item2" hidden />
-          <div class="accordion-title">
-            <h3>
-              What are At-Home Freezer Maintenance Tips From Appliance Repair
-              Experts
-            </h3>
-            <span class="arrow">&#9660;</span>
+          <div class="list_left">
+            <a href="#left-menu-3">
+              <h2>Common Microwave Issues</h2>
+            </a>
           </div>
-          <div class="accordion-content">
-            <p>
-              Proper at-home maintenance can significantly extend the longevity
-              of your freezer and minimize the chances of breakdowns. Here are
-              some essential tips to keep your freezer running efficiently for
-              years:
-            </p><ol>
-              <li>
-                <p><strong>Keep the Condenser Coils Clean:</strong></p><ul>
-                  <li>
-                    <p>
-                      The condenser coils, usually located at the back or bottom
-                      of the freezer, release heat from inside the unit. When
-                      dust and debris accumulate on the coils, the freezer has
-                      to work harder to cool, which can lead to increased wear
-                      and tear. Clean these coils at least twice a year using a
-                      coil brush or a vacuum cleaner with a brush attachment.
-                    </p>
-                  </li>
-                </ul>
-              </li><li>
-                <p>
-                  <strong>Check and Clean the Door Seals (Gaskets):</strong>
-                </p><ul>
-                  <li>
-                    <p>
-                      The door seals keep the cold air in and the warm air out.
-                      Over time, they can become dirty or damaged, leading to
-                      air leaks and inefficiency. Clean the seals with a mild
-                      detergent and warm water, and check them regularly for
-                      wear and tear. Replace the seals if they are cracked or if
-                      they no longer stick properly to the frame.
-                    </p>
-                  </li>
-                </ul>
-              </li><li>
-                <p>
-                  <strong>Defrost Manual-Defrost Models Regularly:</strong>
-                </p><ul>
-                  <li>
-                    <p>
-                      If your freezer is not frost-free, it will need to be
-                      defrosted periodically to prevent ice buildup. Excessive
-                      frost can block air vents, reduce cooling efficiency, and
-                      strain the compressor. Defrost the freezer whenever the
-                      ice becomes more than a quarter-inch thick.
-                    </p>
-                  </li>
-                </ul>
-              </li><li>
-                <p><strong>Maintain an Appropriate Temperature:</strong></p><ul>
-                  <li>
-                    <p>
-                      Set your freezer to the right temperature, usually around
-                      0°F (-18°C). This temperature is efficient for food
-                      preservation and energy usage. Avoid setting it too low,
-                      as this can overwork the compressor and increase energy
-                      costs without additional benefits.
-                    </p>
-                  </li>
-                </ul>
-              </li><li>
-                <p><strong>Keep the Freezer Well-Ventilated:</strong></p><ul>
-                  <li>
-                    <p>
-                      Ensure there's enough space around your freezer for air to
-                      circulate to and from the condenser coils. This helps the
-                      heat to dissipate efficiently and reduces the workload on
-                      the freezer's cooling system. A few inches of space on all
-                      sides is typically recommended.
-                    </p>
-                  </li>
-                </ul>
-              </li><li>
-                <p><strong>Organize the Contents:</strong></p><ul>
-                  <li>
-                    <p>
-                      Keeping your freezer organized not only makes it easier to
-                      find items but also helps maintain efficient air
-                      circulation. Avoid overpacking, as this can block air
-                      vents and lead to uneven cooling and increased energy
-                      consumption.
-                    </p>
-                  </li>
-                </ul>
-              </li><li>
-                <p>
-                  <strong>Check and Replace the Interior Light:</strong>
-                </p><ul>
-                  <li>
-                    <p>
-                      If your freezer has an interior light, ensure it's
-                      functioning correctly. A malfunctioning light can increase
-                      the internal temperature, forcing the freezer to work
-                      harder. Replace any burnt-out bulbs promptly.
-                    </p>
-                  </li>
-                </ul>
-              </li><li>
-                <p>
-                  <strong>Keep the Freezer Full (But Not Overfull):</strong>
-                </p><ul>
-                  <li>
-                    <p>
-                      A full freezer maintains its temperature better than an
-                      empty one because the frozen items act as insulators.
-                      However, it's important not to overfill it, as this can
-                      block air vents and lead to cooling issues. If your
-                      freezer is less full, consider filling space with water
-                      containers to improve efficiency.
-                    </p>
-                  </li>
-                </ul>
-              </li><li>
-                <p><strong>Regularly Clean the Interior:</strong></p><ul>
-                  <li>
-                    <p>
-                      Spills and debris inside the freezer can lead to odors and
-                      may attract pests. Clean the interior with a mild
-                      detergent or a solution of baking soda and water every few
-                      months, or as needed.
-                    </p>
-                  </li>
-                </ul>
-              </li><li>
-                <p><strong>Avoid Frequent Door Openings:</strong></p><ul>
-                  <li>
-                    <p>
-                      Frequent opening of the freezer door lets in warm air,
-                      making the freezer work harder to cool down again. Try to
-                      open the door less often and make sure it's not left open
-                      for extended periods.
-                    </p>
-                  </li>
-                </ul>
-              </li>
-            </ol><p style="text-align: start">
-              Implementing these maintenance tips can help ensure your freezer
-              operates efficiently, reducing the likelihood of costly repairs
-              and extending its lifespan.
-            </p>
+
+          <div class="list_left">
+            <a href="#left-menu-4">
+              <h2>Microwave Parts Explained</h2>
+            </a>
           </div>
-        </label>
-        <!-- Add more accordion items as needed -->
+
+          <div class="list_left">
+            <a href="#left-menu-5">
+              <h2>Microwave Replacement Parts Costs</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-6">
+              <h2>Cost to Repair a Microwave Depending on the Brand</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-7">
+              <h2>Microwave Repair Labor Costs</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-8">
+              <h2>Microwave Repair Cost - Labor Only Excluding Parts</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-9">
+              <h2>Ways to Save Money on Microwave Repair</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-10">
+              <h2>
+                What is included in regular microwave maintenance and how it can
+                help prevent repairs
+              </h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-11">
+              <h2>How to decide whether to repair of replace a microwave</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-12">
+              <h2>Same Day Appliance Repair at your service</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-13">
+              <h2>How Much Does it Cost to Repair a Microwave oven?</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-14">
+              <h2>Our Pricing Policy For Microwave Repair And How We Work</h2>
+            </a>
+          </div>
+
+          <div class="list_left" id="list_left-line">
+            <a href="#left-menu-15">
+              <h2>FAQs</h2>
+            </a>
+          </div>
+        </div>
+
+        <div class="page213-container">
+          <div class="page213-content" id="left-menu-1">
+            <div class="content__page-desc">
+              <p>
+                At Same Day Appliance Repair, we understand that a malfunctioning freezer can disrupt your household and lead to the loss of valuable food supplies. Our expert technicians are equipped to handle a wide range of freezer issues, from temperature inconsistencies and strange noises to complete system failures. We pride ourselves on delivering prompt and reliable repair services to get your freezer back to optimal performance as quickly as possible.
+              </p>
+
+              <p>
+                The cost of freezer repair can vary significantly depending on the nature and extent of the problem. For minor issues, such as a faulty thermostat or a door seal replacement, you can expect to pay between <b>$100 and $200</b>. More complex repairs, like fixing a malfunctioning compressor or addressing refrigerant leaks, may range from <b>$300 to $500</b>. If the freezer is integrated into a larger appliance system or a high-end model with advanced features, repair costs could be higher due to the specialized parts and expertise required. Regardless of the issue, Same Day Appliance Repair is committed to providing transparent pricing and high-quality service to ensure your freezer operates efficiently and reliably. For an accurate estimate tailored to your specific situation, please contact our customer service team.
+              </p>
+            </div>
+          </div>
+
+          <div class="page213-content" id="left-menu-2">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Freezers Types and Their Repair Needs</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/freezer/1-freezer-repair.webp"
+                  loading="lazy"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Upright Freezers</h3>
+                <p>
+                  Upright freezers are a popular choice for households that require easy access to frozen goods without taking up much floor space. However, their vertical design can sometimes lead to specific repair needs. Common issues include faulty door seals, which can cause frost buildup and reduced efficiency, and malfunctioning thermostats that prevent the freezer from maintaining the correct temperature. Additionally, the defrost system in upright freezers can occasionally fail, leading to excessive ice accumulation. At Same Day Appliance Repair, our technicians are well-versed in diagnosing and addressing these issues, ensuring your upright freezer operates efficiently and reliably.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Chest Freezers</h3>
+                <p>
+                  Chest freezers are often preferred for their larger storage capacity and energy efficiency, making them ideal for bulk storage of frozen goods. However, their horizontal design can present unique repair challenges. Common problems include compressor failures, which can lead to the entire unit losing cooling capability, and issues with the lid gasket, which can result in energy loss and frost buildup. Additionally, chest freezers may experience drainage problems that can lead to water accumulation inside the unit. Our experienced technicians at Same Day Appliance Repair are equipped to handle these and other issues, ensuring your chest freezer remains in top working condition.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Built-In Freezers</h3>
+                <p>
+                  Built-in freezers are integrated seamlessly into kitchen cabinetry, offering a sleek, customized look. Due to their integration, repair needs can be more complex and may require specialized knowledge. Common problems include issues with the built-in ice maker, malfunctioning control panels, and temperature regulation failures. Additionally, the installation of built-in freezers can sometimes lead to ventilation problems, which can affect the unit’s performance. At Same Day Appliance Repair, our skilled technicians are trained to address these unique challenges, ensuring your built-in freezer maintains its functionality and aesthetic appeal.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Portable Freezers</h3>
+                <p>
+                  Portable freezers are versatile and convenient for use in various settings, including recreational vehicles, camping trips, and small apartments. However, their mobility can expose them to wear and tear that stationary units do not face. Common repair needs include fixing power supply issues, addressing temperature control problems, and repairing damaged seals and hinges. Because portable freezers are often used in different environments, they may also experience issues related to varying voltage supplies. Our technicians at Same Day Appliance Repair are adept at troubleshooting and repairing these portable units, ensuring they continue to provide reliable cooling wherever you need them.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Commercial Microwave Ovens</h3>
+                <p>
+                  Commercial microwave ovens are designed for heavy use and are
+                  generally more robust, but they too can encounter problems.
+                  The high voltage components such as the diode, capacitor, and
+                  magnetron are often the first to fail due to the high energy
+                  demands. These microwaves also have more complex door switches
+                  and control panels that can malfunction. Water or insect
+                  infestation is a more significant risk in commercial kitchens,
+                  potentially affecting multiple components and requiring
+                  extensive cleaning and part replacement. Given the critical
+                  role these appliances play in food service, prompt and expert
+                  repair is essential to minimize downtime.
+                </p>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-3">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Common Freezer Issues</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/freezer/2-freezer-repair.webp"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Temperature Issues</h3>
+                <p>
+                  Temperature problems are among the most common freezer issues homeowners encounter. Whether the freezer is not cooling enough or is freezing excessively, the root cause could range from a malfunctioning thermostat to a failing compressor. While some might attempt DIY freezer repair by tinkering with the thermostat, it's generally advisable to seek professional service. Our factory-trained technicians at Same Day Appliance Repair can diagnose and fix temperature issues efficiently, often within the first visit. Replacing faulty components like the control board or compressor may be necessary to restore optimal performance. Regular freezer maintenance can help prevent these problems, extending the life of your appliance and ensuring it operates at peak efficiency.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Unusual Noises</h3>
+                <p>
+                  Unusual noises coming from your freezer can be both annoying and indicative of a larger problem. These sounds could stem from issues with the compressor, fan, or other internal components. While some might try to fix these noises themselves, professional service is often the best route to ensure a thorough and safe repair. At Same Day Appliance Repair, our technicians can quickly diagnose the cause of the noise and perform the necessary repairs. Most repairs are completed on-site and may involve replacing parts like the fan motor or compressor. Addressing unusual noises promptly can save you from more costly repairs down the line and keep your freezer running smoothly.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Frost Buildup</h3>
+                <p>
+                  Frost buildup is a common freezer problem that can affect its efficiency and storage capacity. This issue is often caused by a broken door seal, a malfunctioning defrost timer, or blocked air vents. While some homeowners might attempt a DIY freezer repair by manually defrosting the appliance, it's usually better to schedule a service appointment with a professional. Our factory-trained technicians at Same Day Appliance Repair can diagnose the underlying cause of the frost buildup and perform the necessary repairs or replacements. Regular freezer maintenance can help prevent frost buildup, ensuring your appliance operates efficiently and extends its lifespan.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Electrical Issues</h3>
+                <p>
+                  Electrical problems in freezers can range from a faulty control board to issues with wiring and power supply. These issues can cause the freezer to stop operating completely or function intermittently. Attempting to fix electrical problems without proper knowledge and tools can be dangerous. It is essential to seek professional freezer repair services to diagnose and resolve these issues safely. Our technicians at Same Day Appliance Repair are skilled in handling electrical problems and can replace any faulty components as needed. Ensuring your freezer's electrical system is in good condition will keep it running efficiently and safely.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Door Seal Problems</h3>
+                <p>
+                  A damaged or worn-out door seal is a common freezer issue that can lead to energy loss and frost buildup. A broken seal allows warm air to enter the freezer, causing it to work harder to maintain the desired temperature. While replacing a door seal might seem like an easy DIY freezer repair, it requires precision to ensure a proper fit. Our professional service at Same Day Appliance Repair includes inspecting and replacing door seals to ensure your freezer operates efficiently. Addressing door seal problems promptly can save on energy costs and prevent further issues from developing.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Ice Maker Malfunctions</h3>
+                <p>
+                  Ice maker malfunctions are frequent issues in freezers equipped with built-in ice makers. Problems can range from a clogged water line to a faulty ice maker assembly. Attempting to repair these issues without the proper tools and knowledge can result in further damage. Our factory-trained technicians at Same Day Appliance Repair can diagnose and fix ice maker problems quickly and efficiently. Whether it involves clearing a blockage or replacing the ice maker unit, we ensure your freezer's ice production is restored. Regular freezer maintenance can help prevent ice maker malfunctions and keep your appliance running smoothly.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Control Board Failures</h3>
+                <p>
+                  The control board is the brain of your freezer, regulating its various functions. A failing control board can lead to erratic temperature changes, non-functioning components, and other operational issues. Diagnosing and repairing a control board requires specialized knowledge and equipment. Our professional service at Same Day Appliance Repair includes diagnosing control board issues and replacing the board if necessary. By addressing control board failures promptly, you can ensure your freezer operates correctly and avoid more extensive repairs or replacements.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Energy Efficiency Problems</h3>
+                <p>
+                  Freezers that consume more energy than usual can significantly impact your utility bills. Common causes of energy inefficiency include malfunctioning thermostats, poor insulation, and faulty compressors. While some might try DIY freezer repair to address these issues, professional service is often more effective. Our technicians at Same Day Appliance Repair are skilled in diagnosing and fixing energy efficiency problems. Replacing outdated or malfunctioning components can help restore your freezer's energy efficiency, saving you money in the long run. Regular maintenance can also help keep your appliance operating efficiently.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Compressor Failures</h3>
+                <p>
+                  The compressor is a critical component of your freezer, responsible for circulating refrigerant and maintaining the desired temperature. Compressor failures can result in your freezer not cooling properly or stopping operation altogether. Diagnosing and replacing a compressor is a complex task best left to professionals. At Same Day Appliance Repair, our factory-trained technicians can diagnose compressor issues and perform necessary repairs or replacements. Addressing compressor problems promptly can prevent complete freezer failure and extend the life of your appliance.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>General Wear and Tear</h3>
+                <p>
+                  Like all appliances, freezers experience general wear and tear over time, which can lead to various operational issues. These issues might include worn-out gaskets, aging components, or minor leaks. While some might attempt DIY freezer repairs, professional service ensures a thorough and safe job. Our technicians at Same Day Appliance Repair can diagnose and fix a wide range of wear and tear issues, often using replacement parts to restore your freezer to optimal condition. Regular maintenance can help identify and address wear and tear early, preventing more significant problems and extending the life of your appliance.
+                </p>
+              </div>
+              
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-4">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Freezer Parts Explained</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/freezer/3-freezer-repair.webp"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+
+                
+
+
+
+              </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-5">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Microwave Replacement Parts Costs</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <p>
+                  Microwave replacement parts costs can vary depending on the
+                  specific part needed and the make and model of the microwave.
+                  Here are some common replacement parts and their approximate
+                  costs:
+                </p>
+              </div>
+
+              <table class="costTable">
+                <tr>
+                  <td> Replacement parts </td>
+                  <td> Approximate cost </td>
+                </tr>
+
+                <tr>
+                  <td> Magnetron </td>
+                  <td> $50 to $150 </td>
+                </tr>
+
+                <tr>
+                  <td> Door Switches (each) </td>
+                  <td> $5 to $20 </td>
+                </tr>
+
+                <tr>
+                  <td> Door Seals </td>
+                  <td> $10 to $30 </td>
+                </tr>
+
+                <tr>
+                  <td> Control Panel </td>
+                  <td> $50 to $200 </td>
+                </tr>
+
+                <tr>
+                  <td> Turntable Motor </td>
+                  <td> $20 to $50 </td>
+                </tr>
+
+                <tr>
+                  <td> High Voltage Diode </td>
+                  <td> $5 to $20 </td>
+                </tr>
+
+                <tr>
+                  <td> High Voltage Capacitor </td>
+                  <td> $10 to $30 </td>
+                </tr>
+
+                <tr>
+                  <td> Transformer </td>
+                  <td> $50 to $100 </td>
+                </tr>
+
+                <tr>
+                  <td> Fuse </td>
+                  <td> $1 to $10 </td>
+                </tr>
+
+                <tr>
+                  <td> Waveguide Cover </td>
+                  <td> $5 to $20 </td>
+                </tr>
+              </table>
+
+              <div class="content__page-desc">
+                <p>
+                  These are approximate costs and can vary depending on factors
+                  such as brand, quality, and availability. Additionally, labor
+                  costs for installation may also apply if you hire a technician
+                  to replace the part. It's essential to consider these factors
+                  when budgeting for microwave repairs.
+                </p>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-6">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Cost to Repair a Microwave Depending on the Brand</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <h3>GE (General Electric) Microwaves:</h3>
+                <p>
+                  Repair costs for GE microwaves can vary widely based on the
+                  specific model and the nature of the issue. On average, simple
+                  repairs such as replacing a turntable motor or a light bulb
+                  might range from <b>$50 to $100</b>, including parts and
+                  labor. More complex repairs, such as fixing the magnetron or
+                  addressing control panel issues, can escalate to <b
+                    >$150 to $300</b
+                  >
+                  or more. GE microwaves are generally well-regarded for their durability,
+                  but the cost of OEM (original equipment manufacturer) parts can
+                  add to the repair bill. It's often advisable to consult a certified
+                  GE technician to ensure the repairs are done correctly, which can
+                  also influence the overall cost.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Samsung Microwaves:</h3>
+                <p>
+                  Samsung microwaves are known for their advanced features and
+                  sleek designs, but these qualities can also mean higher repair
+                  costs. Basic repairs, such as replacing a door handle or
+                  turntable plate, can typically range from <b>$60 to $120</b>.
+                  However, more involved repairs, like fixing a malfunctioning
+                  magnetron or control board, can cost between <b
+                    >$200 and $350</b
+                  >. Samsung's advanced technology often requires specialized
+                  parts and skilled technicians, which can drive up the overall
+                  repair costs. Additionally, the availability of Samsung parts
+                  can sometimes be limited, potentially increasing both the cost
+                  and the time required for repairs.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Panasonic Microwaves:</h3>
+                <p>
+                  Panasonic microwaves are popular for their reliability and
+                  innovative technology, but repair costs can vary depending on
+                  the model and the issue at hand. Simple repairs, such as
+                  replacing a turntable motor or a door switch, typically cost
+                  between <b>$50 and $110</b>. More complex repairs, such as
+                  fixing the inverter or replacing the magnetron, can range from
+                  <b>$180 to $320</b>. Panasonic often uses proprietary
+                  technology in their microwaves, which can make parts more
+                  expensive and repairs more specialized. It's usually best to
+                  have repairs handled by authorized Panasonic service centers
+                  to ensure the use of genuine parts and expertise, which can
+                  affect the overall repair cost.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>LG Microwaves:</h3>
+                <p>
+                  LG microwaves are known for their modern features and
+                  reliability, but repair costs can vary significantly based on
+                  the issue. Basic repairs, like replacing a light bulb or door
+                  switch, usually range from <b>$55 to $100</b>. More extensive
+                  repairs, such as addressing issues with the magnetron or
+                  control panel, can cost between <b>$190 and $340</b>. LG
+                  microwaves often feature advanced electronics and unique
+                  components, which may require specialized knowledge and parts.
+                  As a result, the cost for repairs can be higher, particularly
+                  if OEM parts are needed. Consulting with certified LG
+                  technicians is recommended to ensure proper repairs and
+                  maintain warranty coverage, which can also influence the
+                  overall cost.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Whirlpool Microwaves:</h3>
+                <p>
+                  Whirlpool microwaves are appreciated for their reliability and
+                  affordability, but repair costs can still vary depending on
+                  the problem and model. Simple repairs, such as replacing a
+                  turntable plate or door handle, typically range from <b
+                    >$45 to $90</b
+                  >. More complex issues, like fixing a faulty magnetron or
+                  control panel, can cost between <b>$170 and $300</b>.
+                  Whirlpool's parts are generally more accessible and affordable
+                  compared to some other brands, which can help keep repair
+                  costs relatively lower. However, the complexity of the repair
+                  and the need for specialized labor can still impact the
+                  overall price. It's often beneficial to use authorized
+                  Whirlpool service providers to ensure quality repairs and
+                  maintain the appliance's warranty.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Sharp Microwaves:</h3>
+                <p>
+                  Sharp microwaves are known for their innovative features and
+                  solid performance, but repair costs can vary based on the
+                  issue and model. Basic repairs, such as replacing a turntable
+                  motor or light bulb, usually range from <b>$50 to $95</b>.
+                  More significant repairs, like addressing magnetron or
+                  inverter issues, can cost between <b>$180 and $320</b>. Sharp
+                  microwaves often incorporate advanced technology, which can
+                  necessitate the use of specialized parts and skilled
+                  technicians. As a result, repair costs can be higher,
+                  particularly if proprietary components are required.
+                  Consulting with certified Sharp repair technicians is
+                  recommended to ensure proper repairs and the use of authentic
+                  parts, which can also affect the overall cost.
+                </p>
+              </div>
+            </div>
+
+            <div class="content__page-full-logo-brand">
+              <div class="ph-logo-brand">
+                <div class="logo-brand logo-bran-ph-1">
+                  <a href="#">
+                    <img
+                      width="300px"
+                      height="300px"
+                      src="/brand-logos/panasonic.webp"
+                      alt="Panasonic"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-2">
+                  <a href="#">
+                    <img
+                      width="370px"
+                      height="300px"
+                      src="/brand-logos/samsung.webp"
+                      alt="samsung"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-3">
+                  <a href="#">
+                    <img
+                      width="230px"
+                      height="300px"
+                      src="/brand-logos/GE-general-electric.webp"
+                      alt="GE general electric"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-4">
+                  <a href="#">
+                    <img
+                      width="240px"
+                      height="300px"
+                      src="/brand-logos/lg.webp"
+                      alt="LG"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-5">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/sharp.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-6">
+                  <a href="#">
+                    <img
+                      width="300px"
+                      height="300px"
+                      src="/brand-logos/whirlpool.webp"
+                      alt="Whirlpool"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-7">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/breville.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-8">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/thermador.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-9">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/toshiba.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-10">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/frigidaire.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-11">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/cove.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-12">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/kitchenAid.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="full-desc-logo-brand">
+                <p>Brands of microwaves we repair</p>
+
+                <div class="desc-logo-brand logo-bran-d-1">
+                  <h3><a href="#">Panasonic</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-2">
+                  <h3><a href="#">Samsung</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-3">
+                  <h3><a href="#">GE Appliances</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-4">
+                  <h3><a href="#">LG Electronics</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-5">
+                  <h3><a href="#">Sharp</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-6">
+                  <h3><a href="#">Whirlpool</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-7">
+                  <h3><a href="#">Breville</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-8">
+                  <h3><a href="#">Thermador</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-9">
+                  <h3><a href="#">Toshiba</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-10">
+                  <h3><a href="#">Frigidaire</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-11">
+                  <h3><a href="#">Сove</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-12">
+                  <h3><a href="#">KitchenAid</a></h3>
+                </div>
+              </div>
+            </div>
+
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-7">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Microwave Repair Labor Costs</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc content__page-full-desc-ph-ri">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/freezer/4-freezer-repair.webp"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <p>
+                  The cost of labor for microwave repair can vary widely
+                  depending on several factors, including your geographic
+                  location, the complexity of the repair, and the specific rates
+                  of the technician or repair service you choose. Here are some
+                  general guidelines to give you an idea:
+                </p>
+                <ol>
+                  <li>
+                    <b>Hourly Rates: </b>In the United States, the hourly rate
+                    for appliance repair technicians typically ranges from <b
+                      >$50 to $100</b
+                    > per hour. Some high-demand or specialized technicians may charge
+                    more.
+                  </li>
+                  <li>
+                    <b>Service Call Fees: </b>Many repair services charge a
+                    service call fee, which can range from <b>$50 to $100</b>.
+                    This fee covers the cost of the technician coming to your
+                    home to diagnose the problem. Sometimes, this fee is waived
+                    or applied toward the total repair cost if you proceed with
+                    the repair.
+                  </li>
+                  <li>
+                    <b>Flat Rates: </b>Some companies offer flat-rate pricing
+                    for common repairs. For example, replacing a microwave
+                    diode, magnetron, or door switch might have set prices that
+                    could range from <b>$100 to $300</b>, including both parts
+                    and labor.
+                  </li>
+                  <li>
+                    <b>Complex Repairs: </b>More complex issues, such as
+                    problems with the control board or other electronic
+                    components, can be more expensive, potentially costing <b
+                      >$200 to $500</b
+                    > or more.
+                  </li>
+                  <li>
+                    <b>Warranty: </b>If your microwave is still under warranty,
+                    the cost of repair might be covered, either partially or
+                    entirely. Always check your warranty terms before proceeding
+                    with a repair.
+                  </li>
+                  <li>
+                    <b>Geographic Variation: </b>Prices tend to be higher in
+                    urban areas with a higher cost of living and lower in rural
+                    areas.
+                  </li>
+                  <li>
+                    <b>Brand and Model: </b>Some high-end or less common brands
+                    may be more expensive to repair due to the cost of parts and
+                    the need for specialized knowledge.
+                  </li>
+                </ol>
+                <p>
+                  Before committing to any repair, it’s a good idea to get
+                  multiple quotes to compare prices and services. Additionally,
+                  consider the age and condition of your microwave; sometimes,
+                  replacing an old or extensively damaged microwave might be
+                  more cost-effective than repairing it.
+                </p>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-8">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Microwave Repair Cost - Labor Only Excluding Parts</h2>
+              </div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <div class="full-content_job-prices">
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Microwave not heating food properly or at all.
+                        </p></a
+                      >
+                      <p>Microwave Magnetron replacement cost</p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $150</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Microwave not turning on, door not closing properly,
+                          or sparking inside.
+                        </p></a
+                      >
+                      <p>Microwave Door Switches or Seals replacement cost</p>
+                    </div>
+                    <div class="money_job-prices"><p>$80 - $150</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Buttons not responding, display not working, or
+                          erratic behavior.
+                        </p></a
+                      >
+                      <p>Microwave Control Panel replacement cost</p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $200</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          The turntable ishe turntable is not rotating during
+                          operation.
+                        </p></a
+                      >
+                      <p>Microwave Turntable Motor replacement cost</p>
+                    </div>
+                    <div class="money_job-prices"><p>$80 - $100</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Microwave not heating properly, sparking, or making
+                          loud buzzing noises.
+                        </p></a
+                      >
+                      <p>
+                        Microwave High Voltage Diodes or Capacitors replacement
+                        cost
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$80 - $100</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-9">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Ways to Save Money on Microwave Repair</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <div class="description_maintenance">
+                  <div class="conclusion-description_maintenance">
+                    <div class="head_description_maintenance">
+                      <svg
+                        fill="#000000"
+                        height="35px"
+                        width="35px"
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 296.999 296.999"
+                        xml:space="preserve">
+                        <g>
+                          <g>
+                            <g>
+                              <path
+                                d="M169.197,43.09H18.808c-7.176,0-13.014,5.838-13.014,13.014v227.444c0,7.176,5.838,13.014,13.014,13.014h150.389
+              c7.176,0,13.014-5.838,13.014-13.014V56.105C182.211,48.928,176.373,43.09,169.197,43.09z M151.794,274.258H36.21
+              c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+              S156.273,274.258,151.794,274.258z M151.794,235.73H36.21c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584
+              c4.479,0,8.111,3.632,8.111,8.111C159.905,232.098,156.273,235.73,151.794,235.73z M151.794,197.202H36.21
+              c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+              S156.273,197.202,151.794,197.202z M151.794,158.674H36.21c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584
+              c4.479,0,8.111,3.632,8.111,8.111S156.273,158.674,151.794,158.674z M151.794,120.146H36.21c-4.479,0-8.111-3.632-8.111-8.111
+              s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111S156.273,120.146,151.794,120.146z M151.794,81.618H36.21
+              c-4.479,0-8.111-3.632-8.111-8.111c0-4.479,3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+              C159.905,77.986,156.273,81.618,151.794,81.618z"
+                              ></path>
+                              <path
+                                d="M213.642,0H57.336c-7.177,0-13.014,5.838-13.014,13.014v13.854h124.875c16.121,0,29.237,13.115,29.237,29.237v201.931
+              h15.208c7.176,0,13.014-5.838,13.014-13.014V13.014C226.656,5.838,220.818,0,213.642,0z"
+                              ></path>
+                              <path
+                                d="M291.205,23.324C291.204,10.464,281.88,0,270.42,0c-11.461,0-20.785,10.464-20.785,23.324v13.584h41.57V23.324z"
+                              ></path>
+                              <path
+                                d="M249.635,53.13v214.537h0c0,1.2,0.342,2.373,0.983,3.371l14.921,23.249c1.087,1.694,2.919,2.712,4.881,2.712
+              c1.961,0,3.794-1.018,4.881-2.712l14.921-23.249c0.641-0.998,0.983-2.171,0.983-3.371V53.13H249.635z"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <p><b>Timely maintenance</b></p>
+                    </div>
+                    <p>
+                      - Timely maintenance can save you money on unnecessary
+                      microwave repairs and increase your appliance’s longevity.
+                      We charge a flat fee of $80 for our comprehensive
+                      microwave maintenance service. This service includes
+                      inspecting and cleaning internal components, checking
+                      electrical systems and door seals, cleaning surfaces,
+                      testing functions, replacing worn parts, and cleaning
+                      exhaust vents and filters to maintain safe and efficient
+                      operation. Additionally, we provide personalized
+                      recommendations for continued safe and reliable operation.
+                    </p>
+                  </div>
+
+                  <div class="conclusion-description_maintenance">
+                    <div class="head_description_maintenance">
+                      <svg
+                        width="35px"
+                        height="35px"
+                        viewBox="0 0 24 24"
+                        id="Layer_1"
+                        data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        ><defs
+                          ><style>
+                            .cls-1 {
+                              fill: none;
+                              stroke: #000000;
+                              stroke-miterlimit: 10;
+                              stroke-width: 1.91px;
+                            }
+                          </style></defs
+                        ><polygon
+                          class="cls-1"
+                          points="16.35 1.5 7.65 1.5 1.5 7.65 1.5 16.35 7.65 22.5 16.35 22.5 22.5 16.35 22.5 7.65 16.35 1.5"
+                        ></polygon><line
+                          class="cls-1"
+                          x1="12"
+                          y1="6.27"
+                          x2="12"
+                          y2="13.91"></line><line
+                          class="cls-1"
+                          x1="12"
+                          y1="15.82"
+                          x2="12"
+                          y2="17.73"></line></svg
+                      >
+                      <p><b>Avoid DIY microwave repair</b></p>
+                    </div>
+                    <p>
+                      - While the idea of DIY microwave repair might seem
+                      appealing for cost savings, it poses significant safety
+                      concerns and potential long-term costs. Attempting to fix
+                      your microwave on your own can lead to safety hazards and
+                      further damage, ultimately costing more in the long run.
+                      It's crucial to consult a professional for appliance
+                      repair to ensure safety and avoid additional expenses from
+                      improper fixes. Trusting experts ensures that your
+                      microwave is repaired correctly and safely.
+                    </p>
+                  </div>
+
+                  <div class="conclusion-description_maintenance">
+                    <div class="head_description_maintenance">
+                      <svg
+                        fill="#000000"
+                        width="37px"
+                        height="37px"
+                        viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon">
+                        <path
+                          d="M866.9 169.9L527.1 54.1C523 52.7 517.5 52 512 52s-11 .7-15.1 2.1L157.1 169.9c-8.3 2.8-15.1 12.4-15.1 21.2v482.4c0 8.8 5.7 20.4 12.6 25.9L499.3 968c3.5 2.7 8 4.1 12.6 4.1s9.2-1.4 12.6-4.1l344.7-268.6c6.9-5.4 12.6-17 12.6-25.9V191.1c.2-8.8-6.6-18.3-14.9-21.2zM810 654.3L512 886.5 214 654.3V226.7l298-101.6 298 101.6v427.6zm-405.8-201c-3-4.1-7.8-6.6-13-6.6H336c-6.5 0-10.3 7.4-6.5 12.7l126.4 174a16.1 16.1 0 0 0 26 0l212.6-292.7c3.8-5.3 0-12.7-6.5-12.7h-55.2c-5.1 0-10 2.5-13 6.6L468.9 542.4l-64.7-89.1z"
+                        ></path>
+                      </svg>
+                      <p><b>Find a company that provides a warranty.</b></p>
+                    </div>
+                    <p>
+                      - When choosing a repair company, it's important to find
+                      one that provides a warranty for their services. At Same
+                      Day Appliance Repair, we offer up to three months of
+                      warranty on our repair services. This warranty ensures
+                      that you are covered for any issues that may arise after
+                      the repair, giving you peace of mind and confidence in the
+                      quality of our work. Our commitment to customer
+                      satisfaction includes providing reliable and guaranteed
+                      repairs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-10">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>
+                  What is included in regular microwave maintenance and how it
+                  can help prevent repairs
+                </h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc content__page-full-desc-ph-ri">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/freezer/5-freezer-repair.webp"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <p>
+                  Professional maintenance for your microwave involves a more
+                  thorough inspection and servicing than what you might
+                  typically do yourself. Here’s what you can expect from a
+                  professional maintenance visit and how it helps prevent
+                  repairs:
+                </p>
+                <ol>
+                  <li>
+                    <h3>Comprehensive Inspection:</h3>
+                    <ul>
+                      <li>
+                        <b> Internal Components: </b>A professional technician
+                        will open the microwave to inspect internal components
+                        such as the magnetron, high-voltage diode, capacitor,
+                        and control board. Identifying wear and tear early can
+                        prevent more severe problems.
+                      </li>
+                      <li>
+                        <b>Electrical Connections: </b>The technician will check
+                        all electrical connections to ensure they are secure and
+                        not showing signs of damage or corrosion.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Cleaning and Lubrication:</h3>
+                    <ul>
+                      <li>
+                        <b>Internal Cleaning: </b>Professionals use specialized
+                        tools to clean areas you can’t reach, ensuring that
+                        dust, grease, and debris are removed from components
+                        like the fan and motor.
+                      </li>
+                      <li>
+                        <b>Lubrication: </b>Moving parts, such as the door
+                        hinges and turntable motor, may be lubricated to ensure
+                        smooth operation and prevent premature wear.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Diagnostic Testing:</h3>
+                    <ul>
+                      <li>
+                        <b>Performance Tests: </b>The technician will perform
+                        tests to ensure the microwave is heating correctly and
+                        that all functions (such as the turntable and exhaust
+                        fan) are working as they should.
+                      </li>
+                      <li>
+                        <b>Leakage Test: </b>A microwave leakage detector may be
+                        used to ensure there are no radiation leaks, which is
+                        crucial for safety.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Calibration and Adjustments:</h3>
+                    <ul>
+                      <li>
+                        <b>Power Calibration: </b>The microwave’s power output
+                        can be calibrated to ensure it is operating at optimal
+                        efficiency.
+                      </li>
+                      <li>
+                        <b>Door Alignment: </b>The technician will check the
+                        door alignment and adjust it if necessary, ensuring a
+                        proper seal and preventing energy loss.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Filter Replacement:</h3>
+                    <ul>
+                      <li>
+                        <b>Grease and Charcoal Filters: </b>If you have an
+                        over-the-range microwave, the technician will inspect
+                        and replace grease and charcoal filters as needed to
+                        maintain effective ventilation and odor control.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Safety Checks:</h3>
+                    <ul>
+                      <li>
+                        <b>Fuse and Circuit Inspection: </b>The technician will
+                        check the fuses and circuits to ensure they are
+                        functioning correctly and safely.
+                      </li>
+                      <li>
+                        <b>Grounding: </b>Proper grounding of the microwave will
+                        be verified to prevent electrical hazards.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Software Updates:</h3>
+                    <ul>
+                      <li>
+                        <b>Firmware Updates: </b>If your microwave has a digital
+                        control system, the technician might update its firmware
+                        to ensure it has the latest features and security
+                        patches.
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+
+                <h3>Benefits of Professional Maintenance:</h3>
+                <ul>
+                  <li>
+                    <b>Early Detection of Problems: </b>Professional maintenance
+                    allows for the early detection of issues that might not be
+                    noticeable to the untrained eye. This can prevent minor
+                    issues from becoming major, costly repairs.
+                  </li>
+                  <li>
+                    <b>Safety Assurance: </b>Ensuring that the microwave is
+                    operating safely is paramount. Professional technicians can
+                    identify potential safety hazards such as electrical issues
+                    or radiation leaks.
+                  </li>
+                  <li>
+                    <b>Enhanced Performance: </b>Regular professional
+                    maintenance keeps your microwave running efficiently, which
+                    can save on energy costs and ensure your food is cooked
+                    evenly.
+                  </li>
+                  <li>
+                    <b>Extended Lifespan: </b>Professional maintenance can
+                    significantly extend the lifespan of your microwave by
+                    keeping all components in good working order and addressing
+                    issues before they cause irreparable damage.
+                  </li>
+                  <li>
+                    <b>Peace of Mind: </b>Knowing that your microwave has been
+                    thoroughly inspected and maintained by a professional
+                    provides peace of mind, especially if you use the appliance
+                    frequently.
+                  </li>
+                </ul>
+
+                <h3>Frequency of Professional Maintenance:</h3>
+                <ul>
+                  <li>
+                    <b>Annual Check-Up: </b>For most households, an annual
+                    professional maintenance check is typically sufficient.
+                  </li>
+                  <li>
+                    <b>High-Usage Scenarios: </b>If your microwave is heavily
+                    used (e.g., in a commercial setting or a large household),
+                    more frequent maintenance might be recommended.
+                  </li>
+                </ul>
+
+                <p>
+                  By investing in regular professional maintenance, you can
+                  ensure that your microwave remains in optimal condition,
+                  reducing the likelihood of unexpected breakdowns and extending
+                  its useful life.
+                </p>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-11">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>How to decide whether to repair of replace a microwave</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc ">
+              
+              <div class="content__page-desc">
+                <p>
+                  Deciding whether to repair or replace a microwave involves
+                  evaluating several factors, including the cost of repair, the
+                  age of the microwave, its overall condition, and the cost of a
+                  new unit. Here's a step-by-step guide to help you make an
+                  informed decision:
+                </p>
+                <ol>
+                  <li>
+                    <h3>Assess the Problem</h3>
+                    <ul>
+                      <li>
+                        <b>Identify the Issue: </b>Common microwave issues
+                        include failure to heat, strange noises, sparking, or a
+                        malfunctioning door latch.
+                      </li>
+                      <li>
+                        <b>Check the User Manual: </b>Sometimes, the problem
+                        might be a simple fix that you can handle yourself, like
+                        resetting the device or replacing a fuse.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Cost of Repair</h3>
+                    <ul>
+                      <li>
+                        <b>Get an Estimate: </b>If the problem is not easily
+                        identifiable or fixable, get a repair estimate from a
+                        qualified technician.
+                      </li>
+                      <li>
+                        <b>Compare Costs: </b>Generally, if the repair cost is
+                        more than 50-60% of the cost of a new microwave, it’s
+                        more economical to replace it.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Age of the Microwave</h3>
+                    <ul>
+                      <li>
+                        <b>Typical Lifespan: </b>Microwaves typically last about
+                        7-10 years. If your microwave is nearing or has exceeded
+                        this age, replacement might be the better option.
+                      </li>
+                      <li>
+                        <b>Technology and Features: </b>Newer models may offer
+                        improved efficiency, better safety features, and
+                        advanced cooking options that an older model lacks.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Overall Condition</h3>
+                    <ul>
+                      <li>
+                        <b>Frequent Issues: </b>If the microwave has had
+                        multiple problems or repairs in the past, it might be a
+                        sign that it's time for a replacement.
+                      </li>
+                      <li>
+                        <b>Appearance and Cleanliness: </b>Consider whether the
+                        microwave is in good physical condition. If it’s heavily
+                        worn or rusted, replacement is advisable.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Energy Efficiency</h3>
+                    <ul>
+                      <li>
+                        <b>Energy Consumption: </b>Newer models are typically
+                        more energy-efficient. If your microwave is
+                        significantly old, replacing it could save you money on
+                        energy bills over time.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Safety Concerns</h3>
+                    <ul>
+                      <li>
+                        <b>Safety Hazards: </b>If the microwave has issues that
+                        could pose safety risks, such as sparking, electrical
+                        problems, or radiation leaks, replacement is the safest
+                        option.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Environmental Considerations</h3>
+                    <ul>
+                      <li>
+                        <b>Disposal and Recycling: </b>Consider the
+                        environmental impact of disposing of the old microwave
+                        and the benefits of having a more energy-efficient
+                        model.
+                      </li>
+                      <li>
+                        <b>Repairability: </b>Sometimes, repairing an appliance
+                        can be more environmentally friendly than replacing it,
+                        as it reduces waste.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Warranty and Service Plans</h3>
+                    <ul>
+                      <li>
+                        <b>Check Warranty: </b>If your microwave is still under
+                        warranty, the repair might be covered, making it more
+                        economical to fix.
+                      </li>
+                      <li>
+                        <b>Service Plans:: </b>If you have an extended service
+                        plan, see if the repair is covered.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Personal Preference</h3>
+                    <ul>
+                      <li>
+                        <b>Convenience: </b>If you rely heavily on your
+                        microwave and the repair will take a significant amount
+                        of time, replacing it might be more convenient.
+                      </li>
+                      <li>
+                        <b>Upgrading: </b>You might want to upgrade to a model
+                        with better features, larger capacity, or more aesthetic
+                        appeal.
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+
+                <p>
+                  In summary, weigh the cost of repair against the price of a
+                  new microwave, consider the age and condition of your current
+                  appliance, and think about energy efficiency and safety. If
+                  the repair is minor and cost-effective, it might be worth
+                  fixing. However, if the microwave is old, frequently
+                  problematic, or if the repair costs are high, replacement is
+                  likely the better option.
+                </p>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-12">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Same Day Appliance Repair at your service</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <p>
+                  At Same Day Appliance Repair, we are a family-owned business
+                  committed to enhancing your customer experience.of frustration
+                  that can come with appliance repairs, and we pride ourselves
+                  on our transparency and reliability. This page is designed to
+                  give you a thorough understanding of our pricing policies, the
+                  costs associated with a broken microwave repair, and our
+                  unique approach to service.
+                </p>
+                <b>Have Questions? We’re Here to Help!</b>
+                <p>
+                  Feel free to call us with any questions. Our team is dedicated
+                  to assisting you and ensuring your satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page213-content" id="left-menu-13">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>How Much Does it Cost to Repair a Microwave oven?</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <p>
+                  The typical cost to repair a microwave ranges from <b
+                    >$100 to $600</b
+                  >, including parts and labor. A microwave repair cost can vary
+                  based on the type of issue, as well as the brand and model of
+                  your appliance. To provide you with the most accurate
+                  estimate, our technician will first need to diagnose the
+                  problem. Following the diagnosis, you'll receive a detailed
+                  price breakdown. This not only helps in making an informed
+                  decision about whether to repair your microwave or replace it
+                  but also includes recommendations should you consider a
+                  replacement.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page213-content" id="left-menu-14">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Our Pricing Policy For Microwave Repair And How We Work</h2>
+              </div>
+              <div class="content__page-hed-desc">
+                <p>
+                  There are four costs to consider when it comes to making your
+                  microwave work optimally.
+                </p>
+              </div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <div class="pricing-policy">
+                  <div class="content_pricing-policy">
+                    <div class="con-inside_pricing-policy">
+                      <div class="icon_pricing-policy">
+                        <svg
+                          fill="#000000"
+                          height="50px"
+                          width="50px"
+                          version="1.1"
+                          id="Capa_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 490 490"
+                          xml:space="preserve">
+                          <g id="bold_copy_5_">
+                            <path
+                              d="M392.383,0H245H97.617v369.414L245,490l147.383-120.586V0z M361.758,354.898L245,450.432l-116.758-95.535V30.625H245
+                      h116.758V354.898z"
+                            ></path>
+                            <path
+                              d="M245,311.395c-23.229,0-42.109,18.88-42.109,42.109c0,23.229,18.88,42.109,42.109,42.109
+                      c23.229,0,42.109-18.88,42.109-42.109C287.109,330.275,268.229,311.395,245,311.395z M245,364.989
+                      c-6.324,0-11.484-5.16-11.484-11.484c0-6.324,5.16-11.484,11.484-11.484c6.324,0,11.484,5.16,11.484,11.484
+                      C256.484,359.828,251.324,364.989,245,364.989z"
+                            ></path>
+                            <path
+                              d="M238.079,62.919v12.005c-13.904,1.378-25.051,6.584-33.427,15.603c-8.376,9.019-12.556,20.151-12.556,33.427
+                      c0,13.092,3.706,24.24,11.117,33.427c7.411,9.188,19.018,16.032,34.867,20.565v50.837c-4.364-2.113-8.33-5.497-11.882-10.198
+                      c-3.553-4.701-5.987-10.275-7.289-16.752l-31.651,3.399c2.419,15.94,7.993,28.282,16.737,37.01
+                      c8.743,8.728,20.09,13.95,34.101,15.649v22.065h17.579v-22.678c15.772-2.251,28.083-8.407,36.949-18.436
+                      c8.851-10.03,13.276-22.372,13.276-37.01c0-13.092-3.507-23.842-10.55-32.218c-7.028-8.361-20.258-15.175-39.675-20.442v-47.438
+                      c7.855,3.415,12.694,9.876,14.562,19.416l30.686-3.997c-2.098-12.143-6.952-21.82-14.547-29.048
+                      c-7.61-7.243-17.839-11.637-30.701-13.169v-12.02H238.079z M238.079,143.356c-5.268-2.251-9.187-5.237-11.775-8.912
+                      c-2.588-3.675-3.874-7.672-3.874-11.944c0-4.701,1.409-8.988,4.226-12.862c2.848-3.889,6.645-6.646,11.408-8.253v41.972H238.079z
+                       M271.383,192.187c3.2,3.935,4.778,8.606,4.778,14.011c0,6.064-1.899,11.347-5.696,15.833c-3.797,4.487-8.728,7.304-14.807,8.437
+                      v-47.316C262.946,185.266,268.183,188.267,271.383,192.187z"
+                            ></path>
+                          </g>
+                        </svg>
+                        <h3>Maintenance Cost</h3>
+                      </div>
+                      <div class="desc_pricing-policy">
+                        <p>
+                          Regular maintenance is essential for your microwave's
+                          longevity and optimal performance. We recommend annual
+                          maintenance, which includes inspecting and cleaning
+                          internal components, checking electrical systems and
+                          door seals, cleaning surfaces, testing functions,
+                          replacing worn parts, and cleaning exhaust vents and
+                          filters. This helps maintain safe and efficient
+                          operation, and we provide personalized recommendations
+                          for continued reliability. Our flat fee for this
+                          comprehensive service is <b>$80</b>. This preventive
+                          approach not only reduces the need for repairs but
+                          also enhances the efficiency and lifespan of your
+                          appliance. Schedule your maintenance appointment with
+                          us today to ensure your microwave runs smoothly.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_pricing-policy">
+                    <div class="con-inside_pricing-policy">
+                      <div class="icon_pricing-policy">
+                        <svg
+                          fill="#000000"
+                          width="50px"
+                          height="50px"
+                          viewBox="0 0 1024 1024"
+                          xmlns="http://www.w3.org/2000/svg"
+                          ><path
+                            d="M951.467 721.067C908.8 678.4 853.334 665.6 802.134 674.134l-409.6-409.6c8.533-51.2-4.267-110.933-46.933-149.333-42.667-46.933-110.933-64-174.933-42.667 0 0-4.267 0-4.267 4.267-4.267 0-4.267 4.267-8.533 4.267-8.533 8.533-8.533 21.333 0 29.867l59.733 59.733c4.267 4.267 4.267 12.8 0 17.067l-29.867 29.867c-8.533 4.267-12.8 4.267-17.067 0l-59.733-55.467c-8.533-8.533-21.333-8.533-29.867 0 0 0 0 4.267-4.267 4.267 0 0 0 4.267-4.267 4.267-21.333 59.733-8.533 128 38.4 174.933 34.133 34.133 76.8 46.933 115.2 46.933 12.8 0 21.333 0 34.133-4.267l409.6 409.6c-12.8 51.2 4.267 110.933 46.933 149.333 29.867 29.867 72.533 46.933 119.467 46.933 21.333 0 38.4-4.267 55.467-8.533 0 0 4.267 0 4.267-4.267 4.267 0 4.267-4.267 8.533-4.267 8.533-8.533 8.533-21.333 0-29.867L849.066 896c-4.267-4.267-4.267-4.267-4.267-8.533s0-8.533 4.267-8.533l29.867-29.867c4.267-4.267 4.267-4.267 8.533-4.267s4.267 0 8.533 4.267l55.467 55.467c8.533 8.533 21.333 8.533 29.867 0 0 0 0-4.267 4.267-4.267 4.267-4.267 4.267-4.267 4.267-8.533 25.6-59.733 8.533-128-38.4-170.667zM140.8 315.733c-25.6-25.6-38.4-64-34.133-98.133l29.867 29.867c12.8 8.533 25.6 17.067 42.667 17.067 12.8 0 29.867-4.267 38.4-17.067l29.867-29.867c21.333-21.333 21.333-55.467 0-76.8l-34.133-34.133c38.4-4.267 72.533 8.533 102.4 34.133 46.933 46.933 46.933 128 0 174.933-46.933 51.2-123.733 51.2-174.933 0zm166.4 59.734c12.8-8.533 29.867-17.067 38.4-29.867 12.8-12.8 21.333-25.6 29.867-42.667l384 384C746.667 695.466 729.6 704 716.8 716.8s-21.333 25.6-29.867 38.4L307.2 375.467zm580.267 426.666c-12.8 0-29.867 4.267-38.4 17.067L819.2 849.067c-8.533 8.533-17.067 25.6-17.067 38.4s4.267 29.867 17.067 38.4l29.867 29.867c-38.4 4.267-72.533-8.533-102.4-34.133-46.933-46.933-46.933-128 0-174.933s128-46.933 174.933 0c25.6 25.6 38.4 64 34.133 102.4l-29.867-29.867c-8.533-8.533-21.333-17.067-38.4-17.067z"
+                          ></path><path
+                            d="M610.133 409.6c4.267 0 12.8 0 17.067-4.267L802.133 230.4l34.133 34.133-174.933 174.933c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 17.067 4.267 4.267 0 12.8 0 17.067-4.267l196.267-192 68.267-25.6c4.267-4.267 12.8-8.533 12.8-12.8l29.867-85.333c4.267-8.533 0-17.067-4.267-21.333l-59.733-64c-4.267-4.267-12.8-8.533-21.333-4.267l-85.333 29.867c-4.267 4.267-12.8 8.533-12.8 12.8l-25.6 72.533c-4.267 0-4.267 4.267-4.267 4.267l-192 192c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 12.8 4.267zm243.2-277.333l64-21.333 38.4 38.4-21.333 64-64 21.333-38.4-38.4 21.333-64zm-384 558.933L209.066 951.467c-8.533 8.533-17.067 8.533-21.333 4.267l-81.067-81.067c-4.267-4.267 0-12.8 4.267-21.333l256-256c8.533-8.533 8.533-21.333 0-29.867s-21.333-8.533-29.867 0l-256 256c-25.6 25.6-25.6 59.733-4.267 81.067l81.067 81.067c8.533 8.533 21.333 12.8 34.133 12.8 17.067 0 34.133-8.533 46.933-21.333l260.267-260.267c8.533-8.533 8.533-21.333 0-29.867s-21.333-4.267-29.867 4.267z"
+                          ></path></svg
+                        >
+                        <h3>Service fees</h3>
+                      </div>
+                      <div class="desc_pricing-policy">
+                        <p>
+                          If your microwave requires a repair, we charge a
+                          service fee of <b>$65</b>, which includes a detailed
+                          price breakdown. This fee is waived if you choose to
+                          proceed with the repair. Unlike some other appliance
+                          repair companies, we do not offer free estimates, but
+                          we guarantee you will not pay this fee if we cannot
+                          diagnose the issue properly. Our technicians are
+                          highly trained and equipped with specialized tools to
+                          accurately diagnose and resolve issues, ensuring
+                          transparency and fairness in our charges. Opting for
+                          professional services ensures access to specialized
+                          knowledge and tools, mitigating the stress and risks
+                          associated with DIY repairs.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_pricing-policy">
+                    <div class="con-inside_pricing-policy">
+                      <div class="icon_pricing-policy">
+                        <svg
+                          height="50px"
+                          width="50px"
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 512 512"
+                          xml:space="preserve">
+                          <polygon
+                            style="fill:#FFFFFF;"
+                            points="58,397.144 58,114.856 256,9.072 454,114.856 454,397.144 256,502.936 "
+                          ></polygon>
+                          <path
+                            id="cost-svg"
+                            style="fill:#000;"
+                            d="M256,18.144l190,101.512V392.36L256,493.856L66,392.352V119.648L256,18.144 M256,0L50,110.056
+                    v291.888L256,512l206-110.056V110.056L256,0L256,0z"
+                          ></path>
+                          <circle cx="256" cy="115.624" r="27.256"></circle>
+                          <path
+                            d="M286.424,153.776h-60.856c-21.456,0-38.92,17.464-38.92,38.92v76.32c0,7.816,6.336,14.152,14.152,14.152
+                    s14.152-6.336,14.152-14.152V200.56h8.496v64.536c0,0.032-0.008,0.056-0.008,0.088v144.288c0,7.816,6.336,14.152,14.152,14.152
+                    c7.816,0,14.152-6.336,14.152-14.152v-116.08h8.488v116.08c0,7.816,6.336,14.152,14.152,14.152s14.152-6.336,14.152-14.152v-116.08
+                    v-28.208V200.56h8.496v68.448c0,7.816,6.336,14.152,14.152,14.152s14.152-6.336,14.152-14.152v-76.32
+                    C325.344,171.24,307.88,153.776,286.424,153.776z"
+                          ></path>
+                        </svg>
+                        <h3>Labor cost</h3>
+                      </div>
+                      <div class="desc_pricing-policy">
+                        <p>
+                          The cost of labor depends on the complexity of the
+                          repair and the estimated time required. We ensure
+                          transparency by providing a detailed quote before you
+                          commit to the service. Should the repair take longer
+                          than expected, you won’t be charged extra. We waive
+                          the diagnostic fee upon proceeding with the repair,
+                          ensuring no surprises with the total repair costs. Our
+                          appliance repair technicians possess the
+                          qualifications and experience necessary to efficiently
+                          diagnose and fix problems, ensuring your microwave is
+                          in capable hands.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_pricing-policy">
+                    <div class="con-inside_pricing-policy">
+                      <div class="icon_pricing-policy">
+                        <svg
+                          fill="#000000"
+                          height="50px"
+                          width="50px"
+                          version="1.1"
+                          id="Capa_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 383.114 383.114"
+                          xml:space="preserve">
+                          <path
+                            d="M144.114,316.654c4.864,1.025,7.976,5.8,6.95,10.663c-0.894,4.237-4.633,7.146-8.798,7.146
+                   c-0.615,0-1.239-0.063-1.865-0.195c-52.492-11.066-93.56-52.135-104.624-104.627c-1.025-4.864,2.087-9.638,6.951-10.663
+                   c4.86-1.024,9.637,2.087,10.663,6.95C62.984,271.446,98.596,307.058,144.114,316.654z M177.525,201.533c0-4.971-4.029-9-9-9h-0.031
+                   c-4.971,0-8.984,4.029-8.984,9s4.044,9,9.015,9S177.525,206.503,177.525,201.533z M383.114,22.071v109.6c0,4.971-4.029,9-9,9
+                   s-9-4.029-9-9v-10.949H225.56l-30.513,52.852c5.318,5.05,9.203,11.599,10.969,18.96h43.302v-42.865c0-4.971,4.029-9,9-9s9,4.029,9,9
+                   v51.598c0.002,0.089,0.004,0.178,0.004,0.268c0,29.557-13.044,56.124-33.679,74.247c-0.21,0.222-0.434,0.436-0.67,0.64
+                   c-8.145,7.018-17.32,12.601-27.13,16.603c-11.401,4.669-23.861,7.267-36.911,7.321c-0.02,0.003-0.038,0-0.056,0
+                   c-0.024,0-0.044,0-0.067,0.001c-0.025,0.001-0.048,0.001-0.071,0c-0.025-0.001-0.051-0.001-0.074,0c-0.025,0-0.052,0-0.076,0
+                   c-0.028,0-0.079-0.007-0.078,0c0,0,0,0,0,0c-17.77,0-34.465-4.718-48.89-12.964c-0.172-0.086-0.344-0.178-0.513-0.275
+                   c-0.179-0.103-0.353-0.212-0.522-0.325c-29.227-17.183-48.887-48.963-48.887-85.247s19.661-68.064,48.888-85.247
+                   c0.169-0.113,0.343-0.223,0.522-0.325c0.169-0.098,0.34-0.189,0.513-0.275c14.427-8.248,31.117-12.964,48.893-12.964
+                   c0.719,0,1.419,0.084,2.089,0.244c0.671-0.16,1.37-0.244,2.089-0.244h47.517c0.109-0.003,0.22-0.003,0.329,0h144.578V51.022H172.69
+                   c-0.717,0-1.415-0.084-2.083-0.242c-0.668,0.158-1.366,0.242-2.083,0.242C85.519,51.022,18,118.541,18,201.533
+                   s67.519,150.511,150.512,150.511c57.937,0,111.379-33.87,136.151-86.288c0.416-0.878,0.954-1.658,1.586-2.329
+                   c8.479-18.72,13.235-39.469,13.32-61.301c-0.002-0.075-0.003-0.149-0.003-0.225v-52.233c0-4.971,4.029-9,9-9s9,4.029,9,9v51.598
+                   c0.002,0.089,0.004,0.178,0.004,0.268c0,92.917-75.594,168.511-168.512,168.511c-0.182,0-0.363,0-0.546,0
+                   C75.594,370.043,0,294.45,0,201.533S75.594,33.022,168.512,33.022c0.719,0,1.419,0.084,2.089,0.244
+                   c0.671-0.16,1.37-0.244,2.089-0.244h192.424V22.071c0-4.971,4.029-9,9-9S383.114,17.1,383.114,22.071z M88.195,192.533h42.81
+                   c1.767-7.362,5.651-13.91,10.971-18.961l-21.397-37.063C102.922,149.559,90.745,169.614,88.195,192.533z M120.577,266.557
+                   l21.398-37.063c-5.319-5.051-9.204-11.599-10.971-18.961h-42.81C90.745,233.455,102.92,253.508,120.577,266.557z M200.871,275.581
+                   l-21.4-37.068c-3.475,1.032-7.153,1.586-10.958,1.586c-3.806,0-7.483-0.554-10.959-1.586l-21.401,37.069
+                   c9.913,4.348,20.86,6.763,32.36,6.763c0.02,0,0.041,0,0.063,0h0.002c0.026,0,0.047,0,0.071,0c0.021,0,0.048,0,0.066,0
+                   c0.023,0,0.044-0.001,0.068,0c0.019-0.002,0.043-0.001,0.063-0.001c0.008,0,0.01,0,0.019,0c10.25-0.045,20.315-2.037,29.685-5.788
+                   C199.331,276.242,200.102,275.917,200.871,275.581z M168.512,222.098c11.339,0,20.564-9.226,20.564-20.565
+                   s-9.225-20.565-20.564-20.565c-11.341,0-20.567,9.226-20.567,20.565S157.171,222.098,168.512,222.098z M195.047,229.493
+                   l21.398,37.063c17.654-13.049,29.83-33.104,32.379-56.022h-42.808C204.25,217.894,200.365,224.443,195.047,229.493z
+                    M204.775,120.721H172.69c-0.717,0-1.415-0.084-2.083-0.242c-0.668,0.158-1.366,0.242-2.083,0.242
+                   c-11.505,0-22.456,2.415-32.372,6.765l21.4,37.067c3.476-1.032,7.153-1.586,10.959-1.586c3.805,0,7.483,0.554,10.958,1.586
+                   L204.775,120.721z"
+                          ></path>
+                        </svg>
+                        <h3>Replacement Parts cost</h3>
+                      </div>
+                      <div class="desc_pricing-policy">
+                        <p>
+                          While not every repair needs new parts, certain
+                          situations require them to restore your microwave to
+                          peak performance. Our technicians carry a range of
+                          parts in their vehicles, usually enabling same-day
+                          repairs. If a part must be ordered, the cost will vary
+                          depending on the repair, brand, and model of your
+                          microwave. We ensure that any additional costs are
+                          communicated clearly and transparently. This approach
+                          helps in maintaining the efficiency and longevity of
+                          your appliance, ensuring it operates at its best.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pros_pricing-policy">
+                    <p>
+                      *We always do our best to find parts at a lower price for
+                      our customers. We do not make extra money on the parts,
+                      our priority is to make it as easy as possible for the
+                      customer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-15">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>FAQs</h2>
+              </div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <div class="faq-full" id="faqs-anchor">
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>Which brands of microwaves do you repair?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      At Same Day Appliance Repair, we repair all major brands
+                      of microwaves, including:
+                    </p>
+                    <ul>
+                      <li>Samsung</li>
+                      <li>LG</li>
+                      <li>Panasonic</li>
+                      <li>GE</li>
+                      <li>Whirlpool</li>
+                      <li>Kenmore</li>
+                      <li>Sharp</li>
+                      <li>Bosch</li>
+                      <li>Maytag</li>
+                      <li>KitchenAid</li>
+                      <li>Frigidaire</li>
+                      <li>Toshiba</li>
+                      <li>Amana</li>
+                      <li>Magic Chef</li>
+                      <li>Daewoo</li>
+                      <li>Electrolux</li>
+                      <li>Hamilton Beach</li>
+                      <li>Cuisinart</li>
+                      <li>Breville</li>
+                      <li>RCA</li>
+                    </ul>
+                    <p>and more....</p>
+                    <p>
+                      No matter the brand or model, our skilled technicians are
+                      equipped to handle all your microwave repair needs quickly
+                      and efficiently.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>Can I repair my microwave myself?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      At Same Day Appliance Repair, we understand that you might
+                      be tempted to repair your microwave yourself. While it's
+                      possible to handle simple issues like replacing a new
+                      switch, most microwave repairs involve complex components
+                      and high voltage, which can be dangerous.
+                    </p>
+                    <p>
+                      For instance, if your microwave oven isn't heating food,
+                      it could be due to various reasons, such as a
+                      malfunctioning magnetron or a faulty door switch. These
+                      parts need to be tested and replaced with precision. Even
+                      after you have switched out a faulty component, the
+                      microwave needs to be thoroughly tested to ensure it works
+                      safely.
+                    </p>
+                    <p>
+                      It's essential to remember that microwaves, like most
+                      appliances, should be unplugged before any repair work
+                      begins. However, even an unplugged microwave can retain
+                      dangerous electrical charges. Therefore, if you’re not
+                      experienced with electrical repairs, it’s best not to
+                      attempt fixing it yourself.
+                    </p>
+                    <p>
+                      If you decide to proceed with a DIY repair, don't forget
+                      to ensure that the microwave is powered off and unplugged.
+                      After making any repairs, you should confirm the appliance
+                      heats food evenly and operates without any unusual sound.
+                    </p>
+                    <p>
+                      In many cases, the safest and most efficient job is to
+                      leave microwave repairs to the professionals. Our team at
+                      Same Day Appliance Repair is highly trained to handle all
+                      types of microwave issues. Whether it's a new switch or
+                      any other part that needs to be fixed, we’ve got you
+                      covered. Save yourself the hassle and potential danger;
+                      let us get your microwave back in working order so you can
+                      cook meals without worry.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>Is it safe to repair a microwave on my own?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      At Same Day Appliance Repair, we understand that you might
+                      be considering fixing your microwave on your own. However,
+                      safety is a major concern when it comes to microwave
+                      repairs.
+                    </p>
+                    <p>
+                      Microwaves contain high-voltage components that can retain
+                      a charge even when the appliance is unplugged. This means
+                      you can still get shocked if you accidentally touch the
+                      wrong one area inside the microwave. It's also important
+                      to note that even after you've plugged the microwave back
+                      in, it needs to be thoroughly tested to ensure it properly
+                      heats food and operates safely.
+                    </p>
+                    <p>
+                      If you've decided to attempt a repair yourself, make sure
+                      the microwave is completely unplugged before you start.
+                      However, due to the potential risks involved, we strongly
+                      recommend leaving the job to professionals. Our skilled
+                      technicians at Same Day Appliance Repair are trained to
+                      handle these dangerous components safely and efficiently.
+                    </p>
+                    <p>
+                      So, is it safe to repair a microwave on your own?
+                      Generally, no. For your safety and peace of mind, it's
+                      best to let the experts handle it. We're here to ensure
+                      your microwave is repaired correctly and safely, so you
+                      can get back to cooking without any concerns.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>
+                        How much does it typically cost to repair a microwave?
+                      </h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <ul>
+                      <li>
+                        <b>Minor Repairs: </b>Simple fixes can range from $50 to
+                        $100.
+                      </li>
+                      <li>
+                        <b>Major Repairs: </b>More complex issues, like
+                        replacing the magnetron, can cost between $100 and $200
+                        or more.
+                      </li>
+                      <li>
+                        <b>Consider Replacement: </b>If repair costs approach or
+                        exceed the price of a new microwave, it may be more
+                        economical to replace the unit.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>What should I do if my microwave is sparking?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      If your microwave is sparking, it's important to take
+                      immediate action to prevent further damage or potential
+                      hazards. At Same Day Appliance Repair, we recommend the
+                      following steps:
+                    </p>
+                    <ol>
+                      <li>
+                        <b>Unplug the Microwave: </b>The first thing you should
+                        do is unplug the microwave to prevent any electrical
+                        hazards.
+                      </li>
+                      <li>
+                        <b>Stop Using It: </b>Do not attempt to use the
+                        microwave again until it has been inspected and
+                        repaired. Continuing to use a sparking microwave can
+                        cause more serious damage.
+                      </li>
+                      <li>
+                        <b>Check for Metal Objects: </b>Sometimes, sparking can
+                        be caused by metal objects inside the microwave. Make
+                        sure there are no metal utensils or aluminum foil in the
+                        microwave. If you find any, remove them.
+                      </li>
+                      <li>
+                        <b>Inspect the Interior: </b> Look for any signs of damage
+                        inside the microwave, such as a damaged waveguide cover (a
+                        small piece of cardboard-like material inside the microwave)
+                        or burnt areas. If you notice any damage, do not attempt
+                        to fix it yourself.
+                      </li>
+                      <li>
+                        <b>Contact a Professional: </b>Sparking can be caused by
+                        various issues, including a malfunctioning magnetron,
+                        damaged waveguide cover, or faulty diodes. These
+                        components can be dangerous to handle. It's best to
+                        contact a professional appliance repair service to
+                        diagnose and fix the issue.
+                      </li>
+                      <li>
+                        <b>Avoid DIY Repairs: </b>Microwaves contain
+                        high-voltage components that can retain a charge even
+                        when unplugged. Attempting to fix the microwave yourself
+                        can be dangerous. Leave it to the experts to ensure your
+                        safety.
+                      </li>
+                    </ol>
+                    <p>
+                      Remember, a sparking microwave is not something to be
+                      taken lightly. If you’ve noticed that your microwave is
+                      sparking and not heating properly, it’s time to call in
+                      the professionals. Our skilled technicians at Same Day
+                      Appliance Repair are equipped to handle these issues
+                      quickly and safely, getting your microwave back to working
+                      condition in no time.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>
+                        What are some preventative maintenance tips for
+                        microwaves?
+                      </h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      At Same Day Appliance Repair, we believe that regular
+                      maintenance can help extend the life of your microwave and
+                      keep it functioning properly. Here are some preventative
+                      maintenance tips to ensure your microwave remains in good
+                      condition:
+                    </p>
+                    <ol>
+                      <li>
+                        <b>Clean Regularly: </b>Food splatters and spills can
+                        cause your microwave to malfunction. Wipe down the
+                        interior and exterior surfaces regularly with a damp
+                        cloth and mild detergent. Make sure to clean the door
+                        seals to ensure a proper seal when the door is closed.
+                      </li>
+                      <li>
+                        <b>Avoid Metal Objects: </b>Never place metal objects,
+                        aluminum foil, or dishes with metallic trim inside the
+                        microwave, as these can cause sparking and damage the
+                        appliance.
+                      </li>
+                      <li>
+                        <b>Use Microwave-Safe Containers: </b>Only use
+                        containers that are labeled as microwave-safe. Using the
+                        wrong type of container can lead to melting, warping,
+                        and potential chemical leaching into your food.
+                      </li>
+                      <li>
+                        <b>Cover Food: </b>Use a microwave-safe cover to prevent
+                        food splatters. This not only keeps your microwave clean
+                        but also helps food heat more evenly.
+                      </li>
+                      <li>
+                        <b>Check and Replace the Turntable: </b>Ensure the
+                        turntable is properly aligned and rotating smoothly. If
+                        it's damaged or not rotating, it can result in uneven
+                        heating. Replace it if necessary.
+                      </li>
+                      <li>
+                        <b>Inspect the Door Seal: </b>Regularly check the door
+                        seal for any signs of damage or wear. A damaged seal can
+                        cause heat and radiation to leak, resulting in
+                        inefficient cooking and potential safety hazards.
+                      </li>
+                      <li>
+                        <b>Avoid Overloading: </b>Do not overload the microwave
+                        with too much food, as this can lead to uneven cooking
+                        and strain the appliance.
+                      </li>
+                      <li>
+                        <b>Use the Correct Power Settings: </b>Follow the
+                        manufacturer's guidelines for power settings and cooking
+                        times to avoid overworking the microwave.
+                      </li>
+                      <li>
+                        <b>Ventilation: </b>Ensure the microwave's ventilation
+                        system is not blocked. Proper ventilation helps prevent
+                        overheating and extends the life of the appliance.
+                      </li>
+                      <li>
+                        <b>Professional Inspection: </b>Schedule regular
+                        maintenance checks with a professional technician. They
+                        can identify and fix any potential issues before they
+                        become major problems.
+                      </li>
+                    </ol>
+                    <p>
+                      By following these preventative maintenance tips, you can
+                      keep your microwave in optimal condition and ensure it
+                      continues to heat your food efficiently. If you encounter
+                      any issues or need professional assistance, our team at
+                      Same Day Appliance Repair is here to help.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>Why is my microwave making a loud buzzing noise?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      A loud buzzing noise coming from your microwave can be
+                      concerning and may indicate a variety of issues. Here are
+                      some common reasons why your microwave might be making
+                      that noise:
+                    </p>
+                    <ul>
+                      <li>
+                        <b>Magnetron Issues: </b>The magnetron is the component
+                        that generates the microwaves to heat your food. If it
+                        is failing or malfunctioning, it can produce a loud
+                        buzzing or humming noise.
+                      </li>
+                      <li>
+                        <b>High Voltage Diode: </b>This component converts AC to
+                        DC and works with the capacitor to power the magnetron.
+                        A faulty high voltage diode can cause a loud buzzing
+                        noise.
+                      </li>
+                      <li>
+                        <b>Cooling Fan: </b>The cooling fan helps to keep the
+                        microwave’s components from overheating. If the fan is
+                        obstructed or its motor is failing, it could create a
+                        buzzing noise.
+                      </li>
+                      <li>
+                        <b>Turntable Motor: </b>If the noise is coming from the
+                        bottom of the microwave, it might be due to a
+                        malfunctioning turntable motor.
+                      </li>
+                      <li>
+                        <b>Transformer: </b>The transformer steps up the voltage
+                        to power the magnetron. A failing transformer can also
+                        generate a loud buzzing or humming sound.
+                      </li>
+                      <li>
+                        <b>Loose Components: </b>Over time, screws and other
+                        components inside the microwave can become loose,
+                        causing vibrations that produce a buzzing noise.
+                      </li>
+                      <li>
+                        <b>Capacitor: </b>The high-voltage capacitor can store
+                        electrical energy, and if it’s failing, it might make a
+                        loud buzzing noise.
+                      </li>
+                    </ul>
+                    <p>
+                      If your microwave is making a loud buzzing noise, it’s
+                      important to address the issue sooner rather than later.
+                      Continuing to use the microwave could potentially lead to
+                      more damage or safety hazards. In some cases, it might be
+                      a simple fix, but other times it might require
+                      professional repair or replacement of parts. If you’re not
+                      comfortable troubleshooting or repairing the microwave
+                      yourself, it’s best to contact a professional appliance
+                      repair service to diagnose and fix the problem.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>
+                        What should I do if my microwave smells like burning?
+                      </h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      If your microwave smells like burning, it's important to
+                      act quickly to identify and address the issue to prevent
+                      any potential hazards. Here are the steps you should take:
+                    </p>
+                    <ul>
+                      <li>
+                        <b>Turn Off and Unplug: </b>Immediately turn off the
+                        microwave and unplug it from the electrical outlet to
+                        prevent any further damage or risk of fire.
+                      </li>
+                      <li>
+                        <b>Inspect the Interior: </b>Carefully open the
+                        microwave door and inspect the inside. Look for any
+                        signs of burnt food, packaging, or other materials that
+                        may have caused the smell.
+                      </li>
+                      <li>
+                        <b>Remove Burnt Items: </b>If you find any burnt food or
+                        materials, remove them from the microwave. Be cautious
+                        as they may still be hot.
+                      </li>
+                      <li>
+                        <b>Clean Thoroughly: </b>Clean the interior of the
+                        microwave thoroughly. Use a mild detergent and a damp
+                        cloth to wipe down the walls, turntable, and any
+                        removable parts. Ensure that no food particles or debris
+                        are left behind.
+                      </li>
+                      <li>
+                        <b>Check Ventilation: </b>Ensure that the microwave's
+                        ventilation system is not blocked. Proper airflow is
+                        necessary to prevent overheating.
+                      </li>
+                      <li>
+                        <b>Inspect for Damage: </b>Check for any visible damage
+                        to the microwave's components, such as burnt wires,
+                        melted plastic, or scorch marks. If you notice any
+                        damage, do not use the microwave until it has been
+                        inspected and repaired by a professional.
+                      </li>
+                      <li>
+                        <b>Test with Caution: </b>After cleaning and inspecting,
+                        you can test the microwave with a small amount of water
+                        in a microwave-safe container. Run the microwave for a
+                        short period (e.g., 30 seconds) and monitor it closely
+                        for any unusual smells or noises.
+                      </li>
+                      <li>
+                        <b>Contact a Professional: </b>If the burning smell
+                        persists or if you notice any damage, contact a
+                        professional appliance repair service. Continuing to use
+                        a malfunctioning microwave can be dangerous and may lead
+                        to further damage or fire hazards.
+                      </li>
+                      <li>
+                        <b>Avoid Overheating: </b>Ensure that you are using the
+                        microwave according to the manufacturer's instructions
+                        and avoid overheating food or running the microwave
+                        empty, as this can cause damage and produce burning
+                        smells.
+                      </li>
+                    </ul>
+                    <p>
+                      By taking these steps, you can help identify and address
+                      the source of the burning smell in your microwave. If in
+                      doubt, always seek professional assistance to ensure your
+                      safety.
+                    </p>
+                  </div>
+
+                  <div class="FAQ_bottom"></div>
+                </div>
+              </div>
+            </div>
+            <Btn />
+          </div>
+        </div>
       </div>
     </main>
+    <Cta />
   </Container>
+
+  <Arrow />
+  <Focus />
+  <Faqs />
 </Layout>
-<Cta />
+<LogoBrands />

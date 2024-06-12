@@ -91,7 +91,7 @@ main {
     width: 45%;
 }
 
-.oven-page-header-d-full .page-header-d {
+.oven-page-header-d-full .page-header-d, .freezer-page-header-d-full .page-header-d {
     width: 38%;
 }
 
