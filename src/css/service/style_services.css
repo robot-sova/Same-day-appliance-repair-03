@@ -87,12 +87,12 @@ main {
     padding-bottom: clamp(3%, 5vh, 10%);
 }
 
-.furnace-page-header-d-full .page-header-d {
+.furnace-page-header-d-full .page-header-d  {
     width: 45%;
 }
 
 .oven-page-header-d-full .page-header-d,
-.freezer-page-header-d-full .page-header-d {
+.freezer-page-header-d-full .page-header-d, .dryer-page-header-d-full .page-header-d {
     width: 38%;
 }
 

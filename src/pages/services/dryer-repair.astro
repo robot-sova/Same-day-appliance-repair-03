@@ -1,226 +1,2209 @@
 ---
-import Container from "@components/container.astro";
-import Cta from "@components/cta.astro";
-import Contactbtn from "@components/contactbtn.astro";
-import Features from "@components/features.astro";
-import Hero from "@components/hero.astro";
-import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Contactbtn from "@components/contactbtn.astro";
+import Btn from "@components/btn.astro";
+import Cta from "@components/cta.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
+import Arrow from "@components/js/arrow-phone.astro";
+import Focus from "@components/js/focus-menu.astro";
+import Faqs from "@components/js/faqs.astro";
+import LogoBrands from "@components/js/logo-brands.astro";
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
 <Reviews />
-<Layout title="Same Day Dryer Repair">
+<Layout title="Dryer repair">
   <Container>
     <main>
-      <h1>
-        <span class="animate-charcter">Same Day Dryer Repair</span> in Los Angeles
-        and Surrounding Areas
-      </h1>
-
-      <div class="two-col-grid">
-        <div class="col-one">
-          <img
-            class="img-header"
-            src="/images/same-day-dryer-repair-service-los-angeles-and-surrounding-area.webp"
-            width="500"
-            height="500"
-            alt="Dryer Repair Services Los Angeles - technician repairing a dryer"
-          />
-
-          <Contactbtn />
+      <div class="page-header">
+        <div class="page-header-d-full dryer-page-header-d-full">
+          <div class="page-header-d">
+            <h1><span class="animate-charcter">Dryer repair</span></h1>
+            <Contactbtn />
+          </div>
         </div>
 
-        <div class="col-two">
-          <p style="text-align: start">
-            When your dryer isn't drying clothes as it should, it's crucial to
-            bring in the experts. Same Day Appliance Repair is the go-to for
-            fast and efficient dryer repair services in Los Angeles. We repair
-            dryers, ensuring a quick and seamless service. Contact us for more
-            details and to schedule your same-day service appointment.
-          </p><p style="text-align: start">
-            Same Day Appliance Repair has cultivated a team of professionally
-            trained technicians dedicated to ongoing education on the latest
-            appliance innovations. We offer professional appliance repair
-            services with solid guarantees for our work, including up to a
-            3-month warranty. Our competitive pricing policy is designed to
-            provide unbeatable value!
-          </p>
-          <p style="text-align: start">
-            Our service calls often reveal that many dryer malfunctions can be
-            resolved with straightforward solutions, such as replacing a worn
-            belt or cleaning a lint trap. However, our certified repair
-            technicians are equipped to efficiently handle even the most complex
-            repairs, thanks to their extensive experience. At Same Day Appliance
-            Repair, we service dryers from all the leading brands, including
-            Maytag, Kenmore, Whirlpool, and others. Our appliance repair company
-            cares, and we are ready to tackle any issue your dryer may
-            encounter, no matter its complexity.
-          </p>
+        <div class="page-header-f">
+          <img
+            src="/dryer-repair/dryer-page_header_photos.webp"
+            alt="Dryer repair"
+            loading="lazy"
+          />
         </div>
       </div>
-      <h3 style="text-align: start">
-        <strong>Benefits of Our Dryer Repair Services in Los Angeles, CA</strong
-        >
-      </h3>
-      <ul>
-        <li>
-          <p>
-            <strong>Same-Day Dryer Repair Service</strong>: Our Los Angeles
-            Appliance Repair Company is committed to providing same-day service
-            to the residents of Los Angeles. Whether it's a residential or
-            commercial dryer, we often resolve the issue on the first visit,
-            equipped with professional tools and necessary parts. We offer
-            same-day appliance repair service on all major appliances.
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Low Service Fee for Dryer Diagnostic</strong>: We maintain a
-            low service fee and waive it entirely if you choose to proceed with
-            the repair, making our services even more affordable.
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Expert Appliance Repair Technicians in Los Angeles</strong>:
-            Each of our appliance repair technicians is fully certified and
-            highly skilled at quickly diagnosing and fixing dryer issues.
-            Whether you're facing a commercial or residential dryer problem, our
-            team is renowned for saving you money and time with our same-day
-            repair services. Our licensed and factory-trained technicians ensure
-            your dryer can be fixed promptly.
-          </p>
-        </li>
-      </ul>
-      <h3 style="text-align: start">
-        <strong>Household Dryer Repair Los Angeles, CA</strong>
-      </h3>
-      <p style="text-align: start">
-        Opting for our dryer repair service in Los Angeles, CA, offers
-        homeowners numerous advantages, ensuring your drying appliances function
-        efficiently and effectively. Our appliance repair company provides
-        skilled technicians, rapid response times, competitive pricing,
-        authentic replacement parts, comprehensive warranties, and guaranteed
-        customer satisfaction. Our dryer repair in Los Angeles and surrounding
-        areas always comes with a free dryer cleaning service.
-      </p>
-      <p style="text-align: start">
-        Enjoy the reassurance that comes with knowing your dryer repair needs
-        are in the hands of the best in the business. Our expert team, swift
-        service, and commitment to excellence mean you'll be back to your
-        routine without missing a beat.
-      </p>
-      <h3 style="text-align: start">
-        <strong>Commercial Dryer Repair Los Angeles, CA</strong>
-      </h3>
-      <p style="text-align: start">
-        Our appliance repair company specializes in the repair of
-        commercial-grade dryers for hotels, laundromats, hospitals, and other
-        establishments where dependability and efficiency are critical. Our
-        certified technicians are adept at addressing the unique challenges of
-        commercial drying equipment, offering rapid, reliable, and
-        cost-effective repair solutions. Recognizing these machines' essential
-        role in your operations, we ensure quick response times and adaptable
-        scheduling to reduce downtime and keep your business moving forward.
-        From regular maintenance to intricate repairs, our dedication to quality
-        guarantees that your commercial dryers operate at peak performance,
-        extending their lifespan and enhancing efficiency.
-      </p>
-      <p style="text-align: start">
-        Select our professional appliance repair service for unmatched support
-        and to maintain smooth operations in your business.
-      </p>
 
-      <h2>Frequently Asked Questions:</h2>
-      <h3 style="text-align: start">What Are Common Dryer Repair Issues?</h3>
-      <p style="text-align: start">
-        Common issues that require dryer repair include the dryer not starting,
-        not heating properly, taking too long to dry clothes, making unusual
-        noises, vibrating excessively, and problems with the drum spinning. Our
-        team handles these and other issues swiftly, ensuring your dryer works
-        efficiently.
-      </p>
-      <h3 style="text-align: start">
-        How Do I Know When I Need Professional Dryer Repair?
-      </h3>
-      <p style="text-align: start">
-        Signs you need professional dryer repair include lack of heat, the dryer
-        not turning on, clothes not drying within one cycle, strange noises or
-        vibrations, and the dryer stopping unexpectedly during cycles. If you
-        notice any of these issues, it's time to call for expert appliance
-        repair services.
-      </p>
-      <h3 style="text-align: start">Should I Repair or Replace My Dryer?</h3><p
-        style="text-align: start">
-        Consider repairing your dryer if it is relatively new, the repair costs
-        are less than half the price of a new dryer, and it has been reliable
-        until now. Replacement might be more cost-effective if your dryer is
-        old, has needed multiple repairs in the past, or the repair cost is high
-        compared to the price of a new model.
-      </p>
-      <h3 style="text-align: start">What Brands of Dryers Do You Repair?</h3><p
-        style="text-align: start">
-        We repair a wide range of dryer brands, including, but not limited to,
-        Samsung, LG, Whirlpool, Maytag, GE, and Kenmore. Our technicians are
-        experienced with various models from these and other manufacturers.
-      </p>
-      <h3 style="text-align: start">
-        Do You Repair Both Electric and Gas Dryers?
-      </h3><p style="text-align: start">
-        Yes, our technicians are skilled in repairing both electric and gas
-        dryers. We have the expertise to handle each type's specific
-        requirements and safety considerations.
-      </p>
-      <h3 style="text-align: start">
-        Do You Offer Same-Day Dryer Repair in Los Angeles?
-      </h3><p style="text-align: start">
-        Yes, we specialize in same-day dryer repair in Los Angeles. We
-        understand the inconvenience of a malfunctioning dryer and strive to
-        provide fast, effective service to get your appliance back in working
-        order as soon as possible.
-      </p><h4 style="text-align: start">
-        How Much Does It Typically Cost to Repair a Dryer?
-      </h4>
-      <p style="text-align: start">
-        The dryer repair cost can vary based on the issue, the parts required,
-        and the model of the dryer. We offer competitive pricing and a low
-        service fee, which is waived if you proceed with the repair. Contact us
-        for a more accurate estimate based on your specific needs.
-      </p>
-      <h3 style="text-align: start">
-        Is There a Warranty on Your Dryer Repair Services?
-      </h3><p style="text-align: start">
-        Yes, we offer a solid warranty on our dryer repair services, including a
-        30-day warranty on labor and a 3-month warranty on parts. This is part
-        of our commitment to quality service and customer satisfaction.
-      </p>
-      <h3 style="text-align: start">
-        Can You Perform Preventative Maintenance on Dryers?
-      </h3><p style="text-align: start">
-        Absolutely. Preventative maintenance is crucial to extending the life of
-        your dryer and ensuring it runs efficiently. Our service includes
-        cleaning lint traps and vents, inspecting and replacing worn parts, and
-        general maintenance to prevent future issues.
-      </p>
-      <h3 style="text-align: start">
-        How Long Does a Dryer Repair Service Take?
-      </h3><p style="text-align: start">
-        The duration of a dryer repair service can vary depending on the issue
-        and parts availability. However, we always aim to complete repairs as
-        efficiently as possible, often providing same-day service to minimize
-        inconvenience.
-      </p>
-      <p style="text-align: start">
-        By addressing these FAQs, we aim to provide clear, helpful information
-        for our customers, ensuring they understand the benefits and scope of
-        our dryer repair services in Los Angeles.
-      </p>
+      <div class="page213">
+        <div class="open-full_left">
+          <svg
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path
+                id="arrow-left-menu"
+                d="M4 12H20M20 12L16 8M20 12L16 16"
+                stroke="rgb(59, 59, 59)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </g>
+          </svg>
+        </div>
+
+        <div class="full_left_menu_r">
+          <div class="list_left">
+            <a href="#left-menu-1">
+              <h2>MICROWAVE REPAIR</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-2">
+              <h2>Microwave oven types and their repair needs</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-3">
+              <h2>Common Microwave Issues</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-4">
+              <h2>Microwave Parts Explained</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-5">
+              <h2>Microwave Replacement Parts Costs</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-6">
+              <h2>Cost to Repair a Microwave Depending on the Brand</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-7">
+              <h2>Microwave Repair Labor Costs</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-8">
+              <h2>Microwave Repair Cost - Labor Only Excluding Parts</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-9">
+              <h2>Ways to Save Money on Microwave Repair</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-10">
+              <h2>
+                What is included in regular microwave maintenance and how it can
+                help prevent repairs
+              </h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-11">
+              <h2>How to decide whether to repair of replace a microwave</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-12">
+              <h2>Same Day Appliance Repair at your service</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-13">
+              <h2>How Much Does it Cost to Repair a Microwave oven?</h2>
+            </a>
+          </div>
+
+          <div class="list_left">
+            <a href="#left-menu-14">
+              <h2>Our Pricing Policy For Microwave Repair And How We Work</h2>
+            </a>
+          </div>
+
+          <div class="list_left" id="list_left-line">
+            <a href="#left-menu-15">
+              <h2>FAQs</h2>
+            </a>
+          </div>
+        </div>
+
+        <div class="page213-container">
+          <div class="page213-content" id="left-menu-1">
+            <div class="content__page-desc">
+              <b>Dryer Repair Services: Comprehensive and Affordable Solutions</b>
+              <p>
+                At Same Day Appliance Repair, we understand how crucial a functioning dryer is to your daily routine. When your dryer breaks down, it can disrupt your household, leaving you with damp clothes and a growing laundry pile. Our team of certified technicians is skilled in diagnosing and repairing a wide range of dryer issues, from faulty heating elements and broken belts to malfunctioning thermostats and electrical problems. Regardless of the brand or model, we have the expertise to get your dryer back up and running efficiently.
+              </p>
+
+              <p>
+                We aim to keep our services both competitive and transparent. Our standard diagnostic fee generally ranges from <b>$75 to $100</b>, depending on your location. This fee is applied towards the total repair cost if you choose to proceed with the recommended service. The average cost for common repairs, such as replacing a heating element or a drive belt, typically falls between <b>$150 and $300</b>, including parts and labor. More complex issues, like fixing the motor or addressing electrical problems, may range from <b>$300 to $500</b>. We always provide a detailed estimate before beginning any work, ensuring you are fully informed and comfortable with the projected costs. At Same Day Appliance Repair, our goal is to deliver high-quality, affordable dryer repair services with minimal disruption to your daily life.
+              </p>
+            </div>
+          </div>
+
+          <div class="page213-content" id="left-menu-2">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Dryer types and their repair needs</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/dryer-repair/dryer-repair-1.webp"
+                  loading="lazy"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <p>Each type of dryer has its own set of potential issues and repair needs, but with proper maintenance and timely repairs, they can all provide reliable service for many years. At Same Day Appliance Repair, our technicians are trained to handle the specific challenges of each dryer type, ensuring efficient and effective repairs.</p>
+
+                <h3>Electric Dryers</h3>
+                <p>
+                  Electric dryers are a popular choice due to their ease of installation and lower upfront costs. However, they can encounter a range of issues over time. Common problems include a malfunctioning heating element, which may cause the dryer to fail to heat up properly. Additionally, faulty thermostats or thermal fuses can prevent the dryer from reaching the correct temperature. Other issues might involve a broken drive belt, which can stop the drum from spinning, or a defective timer that affects the drying cycle. Repairing electric dryers typically involves diagnosing electrical components, replacing damaged parts, and ensuring that the venting system is clear to prevent overheating and potential fire hazards.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Gas Dryers</h3>
+                <p>
+                  Gas dryers, while more energy-efficient in the long run, come with their own set of repair challenges. One of the most common issues is the failure of the gas ignition system, which includes components like the igniter, flame sensor, and gas valve coils. If any of these parts fail, the dryer may not produce heat. Additionally, gas dryers have a pilot light or electronic ignition system that can malfunction, preventing the dryer from starting. Regular maintenance is crucial for gas dryers to ensure safe operation, as gas leaks can pose serious risks. Repairs often involve checking the gas lines, replacing faulty ignition components, and ensuring proper venting to prevent carbon monoxide buildup.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Vented Dryers</h3>
+                <p>
+                  Vented dryers expel moisture and heat outside through a vent, making proper ventilation crucial for their efficient operation. Common issues with vented dryers include clogged or restricted vents, which can lead to overheating and increased drying times. Lint buildup in the venting system can also pose a fire hazard. Regular cleaning of the lint trap and vent hose is essential to maintain airflow and efficiency. In addition to vent-related problems, vented dryers may experience issues with their drum rollers, bearings, or motor, which can cause unusual noises or a failure to turn. Addressing these mechanical issues often involves disassembling the dryer to replace worn or damaged parts.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Ventless Dryers</h3>
+                <p>
+                  Ventless dryers, including condenser and heat pump models, are becoming increasingly popular for their energy efficiency and flexibility in installation. However, their complexity can lead to unique repair needs. Condenser dryers use a heat exchanger to cool the hot air and condense the moisture, which can lead to water pump or condenser coil issues if not maintained properly. Heat pump dryers are even more efficient but rely on advanced technology that can be more costly to repair. Common problems with ventless dryers include clogged filters, malfunctioning heat exchangers, and issues with the water drainage system. Regular maintenance, such as cleaning filters and emptying water reservoirs, is crucial to keep these dryers running smoothly. Repairs often involve troubleshooting electronic components and ensuring the internal systems are free from blockages.
+                </p>
+              </div>
+
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-3">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Dryer Replacement Parts Explained</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/dryer-repair/dryer-repair-2.webp"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <p>By understanding the function and maintenance needs of these essential dryer parts, you can ensure your dryer operates efficiently and reliably. At Same Day Appliance Repair, our technicians are trained to diagnose and replace these components, providing comprehensive repair services to keep your dryer in top condition.</p>
+
+                <h3>Heating Element: The Core of Electric Dryers</h3>
+                <p>
+                  The heating element is a crucial component in electric dryers, responsible for generating the heat necessary to dry your clothes. Made of a coil or wire that heats up when electricity passes through it, the heating element can wear out or break over time due to constant use. A malfunctioning heating element can lead to your dryer producing no heat or uneven heat, resulting in longer drying times or damp clothes. Replacing the heating element typically involves accessing the dryer's interior, disconnecting the faulty component, and installing a new one. Regular maintenance, such as avoiding overloading the dryer, can help extend the lifespan of the heating element.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Gas Valve Coils: Ignition System for Gas Dryers</h3>
+                <p>
+                  Gas valve coils are essential for the operation of gas dryers, controlling the flow of gas to the burner assembly. These coils work in tandem with the igniter and flame sensor to light the gas and maintain the flame throughout the drying cycle. When gas valve coils fail, the dryer may not heat up or may intermittently stop heating, leading to incomplete drying. Replacing gas valve coils involves disconnecting the gas supply, removing the faulty coils, and installing new ones. Ensuring proper ventilation and regular maintenance of the gas ignition system can help prevent issues with gas valve coils.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Thermostats: Regulating Temperature</h3>
+                <p>
+                  Thermostats in dryers are responsible for regulating the internal temperature to ensure that clothes are dried efficiently and safely. There are usually multiple thermostats, including a high-limit thermostat and a cycling thermostat, which work together to prevent overheating and maintain consistent drying temperatures. If a thermostat fails, it can cause the dryer to overheat or not heat at all. Diagnosing a faulty thermostat involves testing it with a multimeter and replacing it if it's not functioning correctly. Regularly cleaning the lint trap and vents can help prevent thermostat issues by ensuring proper airflow and heat distribution.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Drum Belt: Driving the Drum</h3>
+                <p>
+                  The drum belt is a critical component that connects the motor to the drum, enabling the drum to spin and tumble the clothes. Over time, the drum belt can wear out, stretch, or break, causing the drum to stop spinning. When this happens, the dryer may run but not dry clothes effectively, as the tumbling action is essential for even drying. Replacing the drum belt involves opening the dryer cabinet, removing the old belt, and installing a new one around the drum and motor pulleys. Regularly inspecting the belt for signs of wear and avoiding overloading the dryer can help extend its lifespan.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Lint Filter: Ensuring Airflow and Safety</h3>
+                <p>
+                  The lint filter is a simple yet vital component that traps lint and debris from clothes during the drying process. A clogged lint filter can restrict airflow, reduce drying efficiency, and increase the risk of fires. Regularly cleaning the lint filter before or after each drying cycle is essential for maintaining proper airflow and ensuring safety. In some cases, the lint filter itself may become damaged or worn out and need replacement. Ensuring that the filter is free from damage and properly seated in its housing can help maintain optimal dryer performance.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Drum Rollers: Smooth Drum Operation</h3>
+                <p>
+                  Drum rollers support the drum as it rotates, providing smooth and stable movement. Over time, these rollers can wear out, leading to squeaking, thumping, or grinding noises during operation. Worn-out drum rollers can also cause the drum to wobble or become misaligned, affecting drying performance. Replacing drum rollers involves disassembling the dryer to access and remove the old rollers, then installing new ones. Regularly checking and lubricating the drum rollers can help prevent premature wear and ensure quiet and efficient dryer operation.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Blower Wheel: Circulating Air</h3>
+                <p>
+                  The blower wheel is responsible for circulating air through the dryer drum and venting system. It helps expel moisture-laden air from the drum, ensuring efficient drying. A damaged or obstructed blower wheel can reduce airflow, leading to longer drying times and potential overheating. Common issues include lint buildup, foreign objects obstructing the wheel, or the wheel becoming loose or damaged. Replacing the blower wheel involves accessing the dryer's internal components, removing the faulty wheel, and installing a new one. Regularly cleaning the lint trap and ensuring proper vent maintenance can help prevent blower wheel issues.
+                </p>
+              </div>
+
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-4">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Dryer Replacement Parts Costs</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              
+
+              <div class="content__page-desc">
+
+                <p>Dryer replacement parts costs can vary depending on your dryer's specific part, brand, and model. Here’s a ballpark range for some common dryer parts:</p>
+                
+              </div>
+
+              <div class="content__page-desc">
+                <table class="costTable">
+                  <tr>
+                    <td> Replacement parts </td>
+                    <td> Approximate cost </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Door Latch Kit </td>
+                    <td> $24 - $65 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Drum Roller </td>
+                    <td> $30 - $70</td>
+                  </tr>
+  
+                  <tr>
+                    <td> Belt </td>
+                    <td> $20 - $40 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Vent Cleaning Kit </td>
+                    <td> $10 - $20 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Control Board </td>
+                    <td> $50 - $200 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Thermal Fuse </td>
+                    <td> $10 - $30 </td>
+                  </tr>
+  
+                </table>
+               
+              </div>
+
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-5">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Cost to Repair a Dryer Depending on the Brand</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/dryer-repair/dryer-repair-3.webp"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <p>
+                  The cost to repair a dryer can vary significantly depending on the brand, as different manufacturers use different parts and technologies. Here is a general overview of repair costs associated with some popular dryer brands:
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                
+                <h3>Whirlpool</h3>
+                <p>Whirlpool dryers are known for their reliability and durability, but like any appliance, they may occasionally require repairs. The cost to repair a Whirlpool dryer typically ranges from <b>$100 to $400</b>, depending on the issue and the specific parts needed. Common repairs include replacing the heating element, control board, or drum rollers. Whirlpool's extensive network of authorized service providers can make it easier to find a qualified technician, but labor costs may vary by region. OEM (Original Equipment Manufacturer) parts tend to be more expensive but ensure compatibility and longevity.</p>
+
+                <h3>LG</h3>
+                <p>LG dryers are high-tech and feature-rich, often incorporating advanced sensors and smart home compatibility. Repair costs for LG dryers can range from <b>$150 to $500</b>, largely due to the sophisticated electronics involved. Common issues might include problems with the control board, sensors, or the heating element. Given the complexity of these machines, it's often advisable to use authorized LG service technicians, which can add to the overall cost. However, using OEM parts ensures that your dryer maintains its high performance and efficiency.</p>
+
+                <h3>Samsung</h3>
+                <p>Samsung dryers are popular for their innovative features and sleek designs, but repairs can sometimes be on the pricier side. Typical repair costs range from <b>$150 to $450</b>. Common repairs include fixing or replacing the heating element, control board, or drum rollers. Samsung's smart technologies and digital interfaces often require specialized knowledge, making it advisable to seek out authorized service technicians. While this can add to labor costs, it ensures that the repairs are done correctly and that OEM parts are used, which can prolong the life of your dryer.</p>
+
+                <h3>Maytag</h3>
+                <p>Maytag dryers are renowned for their robustness and reliability, but they are not immune to wear and tear. Repair costs for a Maytag dryer can range from <b>$120 to $400</b>, depending on the complexity of the problem. Common issues include faulty thermal fuses, heating elements, or drum belts. Maytag has a good support network and finding replacement parts is generally straightforward. While you might find cheaper aftermarket parts, using OEM components can ensure that your dryer continues to operate efficiently and reliably.</p>
+
+                <h3>GE</h3>
+                <p>GE dryers are a staple in many households due to their performance and durability. Repair costs for GE dryers typically fall between <b>$100 and $400</b>. Frequent repairs often involve the heating element, control board, or drum bearings. GE has a wide array of service centers and authorized technicians, making it relatively easier to get your dryer repaired. Although you might find cheaper parts from third-party vendors, using OEM parts can help maintain the dryer’s performance and reliability over the long term.</p>
+
+                <h3>Bosch</h3>
+                <p>Bosch dryers are known for their high efficiency and advanced technology, which can make repairs somewhat expensive. Repair costs for Bosch dryers usually range from <b>$200 to $600</b>. Common issues include problems with the control board, sensors, or heating elements. Due to the sophisticated nature of Bosch dryers, it is highly recommended to use authorized service technicians, which can add to the labor costs. However, using OEM parts and professional service ensures that your Bosch dryer continues to operate at peak efficiency.</p>
+
+                <h3>Kenmore</h3>
+                <p>Kenmore dryers, known for their affordability and reliability, generally have repair costs ranging from <b>$100 to $400</b>. Common repairs involve replacing the heating element, thermal fuse, or control board. Kenmore parts are relatively easy to find, and there are numerous service providers who can handle repairs. While aftermarket parts are available, using OEM components can ensure that your dryer continues to function optimally, providing peace of mind and extended appliance life.</p>
+
+              </div>
+            </div>
+
+            <div class="content__page-full-logo-brand">
+              <div class="ph-logo-brand">
+                <div class="logo-brand logo-bran-ph-1">
+                  <a href="#">
+                    <img
+                      width="300px"
+                      height="300px"
+                      src="/brand-logos/panasonic.webp"
+                      alt="Panasonic"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-2">
+                  <a href="#">
+                    <img
+                      width="370px"
+                      height="300px"
+                      src="/brand-logos/samsung.webp"
+                      alt="samsung"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-3">
+                  <a href="#">
+                    <img
+                      width="230px"
+                      height="300px"
+                      src="/brand-logos/GE-general-electric.webp"
+                      alt="GE general electric"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-4">
+                  <a href="#">
+                    <img
+                      width="240px"
+                      height="300px"
+                      src="/brand-logos/lg.webp"
+                      alt="LG"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-5">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/sharp.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-6">
+                  <a href="#">
+                    <img
+                      width="300px"
+                      height="300px"
+                      src="/brand-logos/whirlpool.webp"
+                      alt="Whirlpool"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-7">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/breville.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-8">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/thermador.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-9">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/toshiba.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-10">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/frigidaire.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-11">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/cove.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+
+                <div class="logo-brand logo-bran-ph-12">
+                  <a href="#">
+                    <img
+                      width="290px"
+                      height="300px"
+                      src="/brand-logos/kitchenAid.webp"
+                      alt="Sharp"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="full-desc-logo-brand">
+                <p>Brands of microwaves we repair</p>
+
+                <div class="desc-logo-brand logo-bran-d-1">
+                  <h3><a href="#">Panasonic</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-2">
+                  <h3><a href="#">Samsung</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-3">
+                  <h3><a href="#">GE Appliances</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-4">
+                  <h3><a href="#">LG Electronics</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-5">
+                  <h3><a href="#">Sharp</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-6">
+                  <h3><a href="#">Whirlpool</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-7">
+                  <h3><a href="#">Breville</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-8">
+                  <h3><a href="#">Thermador</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-9">
+                  <h3><a href="#">Toshiba</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-10">
+                  <h3><a href="#">Frigidaire</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-11">
+                  <h3><a href="#">Сove</a></h3>
+                </div>
+
+                <div class="desc-logo-brand logo-bran-d-12">
+                  <h3><a href="#">KitchenAid</a></h3>
+                </div>
+              </div>
+            </div>
+
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-6">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Dryer Repair Labor Costs</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+
+              <div class="content__page-desc-phot">
+                <img
+                  src="/dryer-repair/dryer-repair-4.webp"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <p>
+                  Dryer repair labor costs can vary widely based on several factors, including the complexity of the repair, the technician's experience, and regional price differences. On average, labor costs for dryer repairs range from <b>$50 to $150</b> per hour. Here’s a closer look at what you might expect:
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Basic Repairs</h3>
+                <p>
+                  For simple repairs such as replacing a dryer belt, door latch, or thermal fuse, labor costs typically range from <b>$50 to $100</b>. These repairs are relatively straightforward and usually take less than an hour to complete.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Intermediate Repairs</h3>
+                <p>
+                  More involved repairs, like replacing the heating element, drum rollers, or motor, can take longer and require more expertise. Labor costs for these types of repairs generally range from <b>$100 to $200</b>. These jobs often take between one to two hours, depending on the complexity and accessibility of the parts.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Advanced Repairs</h3>
+                <p>
+                  Complex repairs, such as fixing or replacing the control board, addressing major electrical issues, or extensive troubleshooting, can be the most labor-intensive. Labor costs for these advanced repairs can range from <b>$150 to $300</b> or more. These repairs may take several hours and often require specialized knowledge and diagnostic tools.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Regional Variations</h3>
+                <p>
+                  Labor costs can also fluctuate based on your geographic location. Urban areas or regions with a higher cost of living may see labor rates on the higher end of the spectrum, while rural areas may have lower rates. Always check for local rates and consider obtaining multiple quotes to ensure you’re getting a fair price.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Service Call Fees</h3>
+                <p>
+                  In addition to labor costs, many repair services charge a service call fee, which typically ranges from <b>$50 to $100</b>. This fee covers the technician's time and travel expenses and is often applied towards the total repair cost if you proceed with the service.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>Warranty Considerations</h3>
+                <p>
+                  If your dryer is still under warranty, labor costs may be partially or fully covered, depending on the terms of the warranty. It’s always a good idea to check your warranty details before scheduling a repair.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <h3>DIY vs. Professional Repair</h3>
+                <p>
+                  While some minor repairs can be handled by DIY enthusiasts, more complex issues are best left to professionals to ensure safety and proper functioning. Attempting difficult repairs without the necessary expertise can lead to further damage and higher costs in the long run.
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <p>
+                  In summary, labor costs for dryer repairs can vary widely but generally fall within the $50 to $150 per hour range, depending on the complexity of the repair and regional factors. Always consider the scope of the repair and obtain multiple quotes to ensure you’re getting the best value for your money.
+                </p>
+              </div>
+
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-7">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Dryer Repair Cost - Labor only excluding parts</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              
+
+              <div class="content__page-desc">
+                <p>
+                  The cost of labor for dryer repairs can vary depending on several factors, including location, the complexity of the repair, and the technician's expertise. Here is a general list of potential labor costs for common dryer repairs, excluding the cost of parts:
+                </p>
+              </div>
+
+              <div class="content__page-desc">
+                <table class="costTable">
+                  <tr>
+                    <td> Work only </td>
+                    <td> Approximate cost </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Basic Diagnostic Fee </td>
+                    <td> $50 - $100 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Thermal Fuse Replacement </td>
+                    <td> $75 - $150</td>
+                  </tr>
+  
+                  <tr>
+                    <td> Heating Element Replacement </td>
+                    <td> $100 - $200 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Thermostat Replacement </td>
+                    <td> $75 - $150 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Drum Belt Replacement </td>
+                    <td> $100 - $175 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Motor Replacement </td>
+                    <td> $150 - $300 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Timer Replacement </td>
+                    <td> $100 - $200 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Door Switch Replacement </td>
+                    <td> $75 - $150 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Roller Replacement </td>
+                    <td> $100 - $200 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Igniter Replacement (for gas dryers) </td>
+                    <td> $100 - $200 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Control Board Replacement </td>
+                    <td> $150 - $300 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Vent Cleaning/Repair </td>
+                    <td> $75 - $150 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Bearing Replacement </td>
+                    <td> $100 - $200 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Gas Valve Solenoid Replacement </td>
+                    <td> $100 - $200 </td>
+                  </tr>
+  
+                  <tr>
+                    <td> Blower Wheel Replacement </td>
+                    <td> $100 - $200 </td>
+                  </tr>
+  
+                </table>
+              </div>
+
+              <div class="content__page-desc">
+                <p>
+                  These are approximate ranges and can vary widely based on your geographic location and the specific service provider. Always get a detailed estimate from a qualified technician before proceeding with any repairs.
+                </p>
+              </div>
+
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-8">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Ways to Save Money on Dryer Repair</h2>
+              </div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <div class="full-content_job-prices">
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Microwave not heating food properly or at all.
+                        </p></a
+                      >
+                      <p>Microwave Magnetron replacement cost</p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $150</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Microwave not turning on, door not closing properly,
+                          or sparking inside.
+                        </p></a
+                      >
+                      <p>Microwave Door Switches or Seals replacement cost</p>
+                    </div>
+                    <div class="money_job-prices"><p>$80 - $150</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Buttons not responding, display not working, or
+                          erratic behavior.
+                        </p></a
+                      >
+                      <p>Microwave Control Panel replacement cost</p>
+                    </div>
+                    <div class="money_job-prices"><p>$100 - $200</p></div>
+                  </div>
+
+                  <div class="content_job-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          The turntable ishe turntable is not rotating during
+                          operation.
+                        </p></a
+                      >
+                      <p>Microwave Turntable Motor replacement cost</p>
+                    </div>
+                    <div class="money_job-prices"><p>$80 - $100</p></div>
+                  </div>
+
+                  <div class="content_job-prices" id="col-prices">
+                    <div class="desk_job-prices">
+                      <a href="#"
+                        ><p>
+                          Microwave not heating properly, sparking, or making
+                          loud buzzing noises.
+                        </p></a
+                      >
+                      <p>
+                        Microwave High Voltage Diodes or Capacitors replacement
+                        cost
+                      </p>
+                    </div>
+                    <div class="money_job-prices"><p>$80 - $100</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-9">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Ways to Save Money on Microwave Repair</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <div class="description_maintenance">
+                  <div class="conclusion-description_maintenance">
+                    <div class="head_description_maintenance">
+                      <svg
+                        fill="#000000"
+                        height="35px"
+                        width="35px"
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 296.999 296.999"
+                        xml:space="preserve">
+                        <g>
+                          <g>
+                            <g>
+                              <path
+                                d="M169.197,43.09H18.808c-7.176,0-13.014,5.838-13.014,13.014v227.444c0,7.176,5.838,13.014,13.014,13.014h150.389
+              c7.176,0,13.014-5.838,13.014-13.014V56.105C182.211,48.928,176.373,43.09,169.197,43.09z M151.794,274.258H36.21
+              c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+              S156.273,274.258,151.794,274.258z M151.794,235.73H36.21c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584
+              c4.479,0,8.111,3.632,8.111,8.111C159.905,232.098,156.273,235.73,151.794,235.73z M151.794,197.202H36.21
+              c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+              S156.273,197.202,151.794,197.202z M151.794,158.674H36.21c-4.479,0-8.111-3.632-8.111-8.111s3.632-8.111,8.111-8.111h115.584
+              c4.479,0,8.111,3.632,8.111,8.111S156.273,158.674,151.794,158.674z M151.794,120.146H36.21c-4.479,0-8.111-3.632-8.111-8.111
+              s3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111S156.273,120.146,151.794,120.146z M151.794,81.618H36.21
+              c-4.479,0-8.111-3.632-8.111-8.111c0-4.479,3.632-8.111,8.111-8.111h115.584c4.479,0,8.111,3.632,8.111,8.111
+              C159.905,77.986,156.273,81.618,151.794,81.618z"
+                              ></path>
+                              <path
+                                d="M213.642,0H57.336c-7.177,0-13.014,5.838-13.014,13.014v13.854h124.875c16.121,0,29.237,13.115,29.237,29.237v201.931
+              h15.208c7.176,0,13.014-5.838,13.014-13.014V13.014C226.656,5.838,220.818,0,213.642,0z"
+                              ></path>
+                              <path
+                                d="M291.205,23.324C291.204,10.464,281.88,0,270.42,0c-11.461,0-20.785,10.464-20.785,23.324v13.584h41.57V23.324z"
+                              ></path>
+                              <path
+                                d="M249.635,53.13v214.537h0c0,1.2,0.342,2.373,0.983,3.371l14.921,23.249c1.087,1.694,2.919,2.712,4.881,2.712
+              c1.961,0,3.794-1.018,4.881-2.712l14.921-23.249c0.641-0.998,0.983-2.171,0.983-3.371V53.13H249.635z"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <p><b>Timely maintenance</b></p>
+                    </div>
+                    <p>
+                      - Timely maintenance can save you money on unnecessary
+                      microwave repairs and increase your appliance’s longevity.
+                      We charge a flat fee of $80 for our comprehensive
+                      microwave maintenance service. This service includes
+                      inspecting and cleaning internal components, checking
+                      electrical systems and door seals, cleaning surfaces,
+                      testing functions, replacing worn parts, and cleaning
+                      exhaust vents and filters to maintain safe and efficient
+                      operation. Additionally, we provide personalized
+                      recommendations for continued safe and reliable operation.
+                    </p>
+                  </div>
+
+                  <div class="conclusion-description_maintenance">
+                    <div class="head_description_maintenance">
+                      <svg
+                        width="35px"
+                        height="35px"
+                        viewBox="0 0 24 24"
+                        id="Layer_1"
+                        data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        ><defs
+                          ><style>
+                            .cls-1 {
+                              fill: none;
+                              stroke: #000000;
+                              stroke-miterlimit: 10;
+                              stroke-width: 1.91px;
+                            }
+                          </style></defs
+                        ><polygon
+                          class="cls-1"
+                          points="16.35 1.5 7.65 1.5 1.5 7.65 1.5 16.35 7.65 22.5 16.35 22.5 22.5 16.35 22.5 7.65 16.35 1.5"
+                        ></polygon><line
+                          class="cls-1"
+                          x1="12"
+                          y1="6.27"
+                          x2="12"
+                          y2="13.91"></line><line
+                          class="cls-1"
+                          x1="12"
+                          y1="15.82"
+                          x2="12"
+                          y2="17.73"></line></svg
+                      >
+                      <p><b>Avoid DIY microwave repair</b></p>
+                    </div>
+                    <p>
+                      - While the idea of DIY microwave repair might seem
+                      appealing for cost savings, it poses significant safety
+                      concerns and potential long-term costs. Attempting to fix
+                      your microwave on your own can lead to safety hazards and
+                      further damage, ultimately costing more in the long run.
+                      It's crucial to consult a professional for appliance
+                      repair to ensure safety and avoid additional expenses from
+                      improper fixes. Trusting experts ensures that your
+                      microwave is repaired correctly and safely.
+                    </p>
+                  </div>
+
+                  <div class="conclusion-description_maintenance">
+                    <div class="head_description_maintenance">
+                      <svg
+                        fill="#000000"
+                        width="37px"
+                        height="37px"
+                        viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon">
+                        <path
+                          d="M866.9 169.9L527.1 54.1C523 52.7 517.5 52 512 52s-11 .7-15.1 2.1L157.1 169.9c-8.3 2.8-15.1 12.4-15.1 21.2v482.4c0 8.8 5.7 20.4 12.6 25.9L499.3 968c3.5 2.7 8 4.1 12.6 4.1s9.2-1.4 12.6-4.1l344.7-268.6c6.9-5.4 12.6-17 12.6-25.9V191.1c.2-8.8-6.6-18.3-14.9-21.2zM810 654.3L512 886.5 214 654.3V226.7l298-101.6 298 101.6v427.6zm-405.8-201c-3-4.1-7.8-6.6-13-6.6H336c-6.5 0-10.3 7.4-6.5 12.7l126.4 174a16.1 16.1 0 0 0 26 0l212.6-292.7c3.8-5.3 0-12.7-6.5-12.7h-55.2c-5.1 0-10 2.5-13 6.6L468.9 542.4l-64.7-89.1z"
+                        ></path>
+                      </svg>
+                      <p><b>Find a company that provides a warranty.</b></p>
+                    </div>
+                    <p>
+                      - When choosing a repair company, it's important to find
+                      one that provides a warranty for their services. At Same
+                      Day Appliance Repair, we offer up to three months of
+                      warranty on our repair services. This warranty ensures
+                      that you are covered for any issues that may arise after
+                      the repair, giving you peace of mind and confidence in the
+                      quality of our work. Our commitment to customer
+                      satisfaction includes providing reliable and guaranteed
+                      repairs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-10">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>
+                  What is included in regular microwave maintenance and how it
+                  can help prevent repairs
+                </h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc content__page-full-desc-ph-ri">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/dryer-repair/dryer-repair-5.webp"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <p>
+                  Professional maintenance for your microwave involves a more
+                  thorough inspection and servicing than what you might
+                  typically do yourself. Here’s what you can expect from a
+                  professional maintenance visit and how it helps prevent
+                  repairs:
+                </p>
+                <ol>
+                  <li>
+                    <h3>Comprehensive Inspection:</h3>
+                    <ul>
+                      <li>
+                        <b> Internal Components: </b>A professional technician
+                        will open the microwave to inspect internal components
+                        such as the magnetron, high-voltage diode, capacitor,
+                        and control board. Identifying wear and tear early can
+                        prevent more severe problems.
+                      </li>
+                      <li>
+                        <b>Electrical Connections: </b>The technician will check
+                        all electrical connections to ensure they are secure and
+                        not showing signs of damage or corrosion.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Cleaning and Lubrication:</h3>
+                    <ul>
+                      <li>
+                        <b>Internal Cleaning: </b>Professionals use specialized
+                        tools to clean areas you can’t reach, ensuring that
+                        dust, grease, and debris are removed from components
+                        like the fan and motor.
+                      </li>
+                      <li>
+                        <b>Lubrication: </b>Moving parts, such as the door
+                        hinges and turntable motor, may be lubricated to ensure
+                        smooth operation and prevent premature wear.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Diagnostic Testing:</h3>
+                    <ul>
+                      <li>
+                        <b>Performance Tests: </b>The technician will perform
+                        tests to ensure the microwave is heating correctly and
+                        that all functions (such as the turntable and exhaust
+                        fan) are working as they should.
+                      </li>
+                      <li>
+                        <b>Leakage Test: </b>A microwave leakage detector may be
+                        used to ensure there are no radiation leaks, which is
+                        crucial for safety.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Calibration and Adjustments:</h3>
+                    <ul>
+                      <li>
+                        <b>Power Calibration: </b>The microwave’s power output
+                        can be calibrated to ensure it is operating at optimal
+                        efficiency.
+                      </li>
+                      <li>
+                        <b>Door Alignment: </b>The technician will check the
+                        door alignment and adjust it if necessary, ensuring a
+                        proper seal and preventing energy loss.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Filter Replacement:</h3>
+                    <ul>
+                      <li>
+                        <b>Grease and Charcoal Filters: </b>If you have an
+                        over-the-range microwave, the technician will inspect
+                        and replace grease and charcoal filters as needed to
+                        maintain effective ventilation and odor control.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Safety Checks:</h3>
+                    <ul>
+                      <li>
+                        <b>Fuse and Circuit Inspection: </b>The technician will
+                        check the fuses and circuits to ensure they are
+                        functioning correctly and safely.
+                      </li>
+                      <li>
+                        <b>Grounding: </b>Proper grounding of the microwave will
+                        be verified to prevent electrical hazards.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Software Updates:</h3>
+                    <ul>
+                      <li>
+                        <b>Firmware Updates: </b>If your microwave has a digital
+                        control system, the technician might update its firmware
+                        to ensure it has the latest features and security
+                        patches.
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+
+                <h3>Benefits of Professional Maintenance:</h3>
+                <ul>
+                  <li>
+                    <b>Early Detection of Problems: </b>Professional maintenance
+                    allows for the early detection of issues that might not be
+                    noticeable to the untrained eye. This can prevent minor
+                    issues from becoming major, costly repairs.
+                  </li>
+                  <li>
+                    <b>Safety Assurance: </b>Ensuring that the microwave is
+                    operating safely is paramount. Professional technicians can
+                    identify potential safety hazards such as electrical issues
+                    or radiation leaks.
+                  </li>
+                  <li>
+                    <b>Enhanced Performance: </b>Regular professional
+                    maintenance keeps your microwave running efficiently, which
+                    can save on energy costs and ensure your food is cooked
+                    evenly.
+                  </li>
+                  <li>
+                    <b>Extended Lifespan: </b>Professional maintenance can
+                    significantly extend the lifespan of your microwave by
+                    keeping all components in good working order and addressing
+                    issues before they cause irreparable damage.
+                  </li>
+                  <li>
+                    <b>Peace of Mind: </b>Knowing that your microwave has been
+                    thoroughly inspected and maintained by a professional
+                    provides peace of mind, especially if you use the appliance
+                    frequently.
+                  </li>
+                </ul>
+
+                <h3>Frequency of Professional Maintenance:</h3>
+                <ul>
+                  <li>
+                    <b>Annual Check-Up: </b>For most households, an annual
+                    professional maintenance check is typically sufficient.
+                  </li>
+                  <li>
+                    <b>High-Usage Scenarios: </b>If your microwave is heavily
+                    used (e.g., in a commercial setting or a large household),
+                    more frequent maintenance might be recommended.
+                  </li>
+                </ul>
+
+                <p>
+                  By investing in regular professional maintenance, you can
+                  ensure that your microwave remains in optimal condition,
+                  reducing the likelihood of unexpected breakdowns and extending
+                  its useful life.
+                </p>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-11">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>How to decide whether to repair of replace a microwave</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc content__page-full-desc-ph-ri">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/dryer-repair/dryer-repair-6.webp"
+                  width="400px"
+                  height="500px"
+                  alt="Microwave Repair"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="content__page-desc">
+                <p>
+                  Deciding whether to repair or replace a microwave involves
+                  evaluating several factors, including the cost of repair, the
+                  age of the microwave, its overall condition, and the cost of a
+                  new unit. Here's a step-by-step guide to help you make an
+                  informed decision:
+                </p>
+                <ol>
+                  <li>
+                    <h3>Assess the Problem</h3>
+                    <ul>
+                      <li>
+                        <b>Identify the Issue: </b>Common microwave issues
+                        include failure to heat, strange noises, sparking, or a
+                        malfunctioning door latch.
+                      </li>
+                      <li>
+                        <b>Check the User Manual: </b>Sometimes, the problem
+                        might be a simple fix that you can handle yourself, like
+                        resetting the device or replacing a fuse.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Cost of Repair</h3>
+                    <ul>
+                      <li>
+                        <b>Get an Estimate: </b>If the problem is not easily
+                        identifiable or fixable, get a repair estimate from a
+                        qualified technician.
+                      </li>
+                      <li>
+                        <b>Compare Costs: </b>Generally, if the repair cost is
+                        more than 50-60% of the cost of a new microwave, it’s
+                        more economical to replace it.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Age of the Microwave</h3>
+                    <ul>
+                      <li>
+                        <b>Typical Lifespan: </b>Microwaves typically last about
+                        7-10 years. If your microwave is nearing or has exceeded
+                        this age, replacement might be the better option.
+                      </li>
+                      <li>
+                        <b>Technology and Features: </b>Newer models may offer
+                        improved efficiency, better safety features, and
+                        advanced cooking options that an older model lacks.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Overall Condition</h3>
+                    <ul>
+                      <li>
+                        <b>Frequent Issues: </b>If the microwave has had
+                        multiple problems or repairs in the past, it might be a
+                        sign that it's time for a replacement.
+                      </li>
+                      <li>
+                        <b>Appearance and Cleanliness: </b>Consider whether the
+                        microwave is in good physical condition. If it’s heavily
+                        worn or rusted, replacement is advisable.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Energy Efficiency</h3>
+                    <ul>
+                      <li>
+                        <b>Energy Consumption: </b>Newer models are typically
+                        more energy-efficient. If your microwave is
+                        significantly old, replacing it could save you money on
+                        energy bills over time.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Safety Concerns</h3>
+                    <ul>
+                      <li>
+                        <b>Safety Hazards: </b>If the microwave has issues that
+                        could pose safety risks, such as sparking, electrical
+                        problems, or radiation leaks, replacement is the safest
+                        option.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Environmental Considerations</h3>
+                    <ul>
+                      <li>
+                        <b>Disposal and Recycling: </b>Consider the
+                        environmental impact of disposing of the old microwave
+                        and the benefits of having a more energy-efficient
+                        model.
+                      </li>
+                      <li>
+                        <b>Repairability: </b>Sometimes, repairing an appliance
+                        can be more environmentally friendly than replacing it,
+                        as it reduces waste.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Warranty and Service Plans</h3>
+                    <ul>
+                      <li>
+                        <b>Check Warranty: </b>If your microwave is still under
+                        warranty, the repair might be covered, making it more
+                        economical to fix.
+                      </li>
+                      <li>
+                        <b>Service Plans:: </b>If you have an extended service
+                        plan, see if the repair is covered.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <h3>Personal Preference</h3>
+                    <ul>
+                      <li>
+                        <b>Convenience: </b>If you rely heavily on your
+                        microwave and the repair will take a significant amount
+                        of time, replacing it might be more convenient.
+                      </li>
+                      <li>
+                        <b>Upgrading: </b>You might want to upgrade to a model
+                        with better features, larger capacity, or more aesthetic
+                        appeal.
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+
+                <p>
+                  In summary, weigh the cost of repair against the price of a
+                  new microwave, consider the age and condition of your current
+                  appliance, and think about energy efficiency and safety. If
+                  the repair is minor and cost-effective, it might be worth
+                  fixing. However, if the microwave is old, frequently
+                  problematic, or if the repair costs are high, replacement is
+                  likely the better option.
+                </p>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-12">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Same Day Appliance Repair at your service</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <p>
+                  At Same Day Appliance Repair, we are a family-owned business
+                  committed to enhancing your customer experience.of frustration
+                  that can come with appliance repairs, and we pride ourselves
+                  on our transparency and reliability. This page is designed to
+                  give you a thorough understanding of our pricing policies, the
+                  costs associated with a broken microwave repair, and our
+                  unique approach to service.
+                </p>
+                <b>Have Questions? We’re Here to Help!</b>
+                <p>
+                  Feel free to call us with any questions. Our team is dedicated
+                  to assisting you and ensuring your satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page213-content" id="left-menu-13">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>How Much Does it Cost to Repair a Microwave oven?</h2>
+              </div>
+              <div class="content__page-hed-desc"></div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <p>
+                  The typical cost to repair a microwave ranges from <b
+                    >$100 to $600</b
+                  >, including parts and labor. A microwave repair cost can vary
+                  based on the type of issue, as well as the brand and model of
+                  your appliance. To provide you with the most accurate
+                  estimate, our technician will first need to diagnose the
+                  problem. Following the diagnosis, you'll receive a detailed
+                  price breakdown. This not only helps in making an informed
+                  decision about whether to repair your microwave or replace it
+                  but also includes recommendations should you consider a
+                  replacement.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page213-content" id="left-menu-14">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>Our Pricing Policy For Microwave Repair And How We Work</h2>
+              </div>
+              <div class="content__page-hed-desc">
+                <p>
+                  There are four costs to consider when it comes to making your
+                  microwave work optimally.
+                </p>
+              </div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <div class="pricing-policy">
+                  <div class="content_pricing-policy">
+                    <div class="con-inside_pricing-policy">
+                      <div class="icon_pricing-policy">
+                        <svg
+                          fill="#000000"
+                          height="50px"
+                          width="50px"
+                          version="1.1"
+                          id="Capa_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 490 490"
+                          xml:space="preserve">
+                          <g id="bold_copy_5_">
+                            <path
+                              d="M392.383,0H245H97.617v369.414L245,490l147.383-120.586V0z M361.758,354.898L245,450.432l-116.758-95.535V30.625H245
+                      h116.758V354.898z"
+                            ></path>
+                            <path
+                              d="M245,311.395c-23.229,0-42.109,18.88-42.109,42.109c0,23.229,18.88,42.109,42.109,42.109
+                      c23.229,0,42.109-18.88,42.109-42.109C287.109,330.275,268.229,311.395,245,311.395z M245,364.989
+                      c-6.324,0-11.484-5.16-11.484-11.484c0-6.324,5.16-11.484,11.484-11.484c6.324,0,11.484,5.16,11.484,11.484
+                      C256.484,359.828,251.324,364.989,245,364.989z"
+                            ></path>
+                            <path
+                              d="M238.079,62.919v12.005c-13.904,1.378-25.051,6.584-33.427,15.603c-8.376,9.019-12.556,20.151-12.556,33.427
+                      c0,13.092,3.706,24.24,11.117,33.427c7.411,9.188,19.018,16.032,34.867,20.565v50.837c-4.364-2.113-8.33-5.497-11.882-10.198
+                      c-3.553-4.701-5.987-10.275-7.289-16.752l-31.651,3.399c2.419,15.94,7.993,28.282,16.737,37.01
+                      c8.743,8.728,20.09,13.95,34.101,15.649v22.065h17.579v-22.678c15.772-2.251,28.083-8.407,36.949-18.436
+                      c8.851-10.03,13.276-22.372,13.276-37.01c0-13.092-3.507-23.842-10.55-32.218c-7.028-8.361-20.258-15.175-39.675-20.442v-47.438
+                      c7.855,3.415,12.694,9.876,14.562,19.416l30.686-3.997c-2.098-12.143-6.952-21.82-14.547-29.048
+                      c-7.61-7.243-17.839-11.637-30.701-13.169v-12.02H238.079z M238.079,143.356c-5.268-2.251-9.187-5.237-11.775-8.912
+                      c-2.588-3.675-3.874-7.672-3.874-11.944c0-4.701,1.409-8.988,4.226-12.862c2.848-3.889,6.645-6.646,11.408-8.253v41.972H238.079z
+                       M271.383,192.187c3.2,3.935,4.778,8.606,4.778,14.011c0,6.064-1.899,11.347-5.696,15.833c-3.797,4.487-8.728,7.304-14.807,8.437
+                      v-47.316C262.946,185.266,268.183,188.267,271.383,192.187z"
+                            ></path>
+                          </g>
+                        </svg>
+                        <h3>Maintenance Cost</h3>
+                      </div>
+                      <div class="desc_pricing-policy">
+                        <p>
+                          Regular maintenance is essential for your microwave's
+                          longevity and optimal performance. We recommend annual
+                          maintenance, which includes inspecting and cleaning
+                          internal components, checking electrical systems and
+                          door seals, cleaning surfaces, testing functions,
+                          replacing worn parts, and cleaning exhaust vents and
+                          filters. This helps maintain safe and efficient
+                          operation, and we provide personalized recommendations
+                          for continued reliability. Our flat fee for this
+                          comprehensive service is <b>$80</b>. This preventive
+                          approach not only reduces the need for repairs but
+                          also enhances the efficiency and lifespan of your
+                          appliance. Schedule your maintenance appointment with
+                          us today to ensure your microwave runs smoothly.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_pricing-policy">
+                    <div class="con-inside_pricing-policy">
+                      <div class="icon_pricing-policy">
+                        <svg
+                          fill="#000000"
+                          width="50px"
+                          height="50px"
+                          viewBox="0 0 1024 1024"
+                          xmlns="http://www.w3.org/2000/svg"
+                          ><path
+                            d="M951.467 721.067C908.8 678.4 853.334 665.6 802.134 674.134l-409.6-409.6c8.533-51.2-4.267-110.933-46.933-149.333-42.667-46.933-110.933-64-174.933-42.667 0 0-4.267 0-4.267 4.267-4.267 0-4.267 4.267-8.533 4.267-8.533 8.533-8.533 21.333 0 29.867l59.733 59.733c4.267 4.267 4.267 12.8 0 17.067l-29.867 29.867c-8.533 4.267-12.8 4.267-17.067 0l-59.733-55.467c-8.533-8.533-21.333-8.533-29.867 0 0 0 0 4.267-4.267 4.267 0 0 0 4.267-4.267 4.267-21.333 59.733-8.533 128 38.4 174.933 34.133 34.133 76.8 46.933 115.2 46.933 12.8 0 21.333 0 34.133-4.267l409.6 409.6c-12.8 51.2 4.267 110.933 46.933 149.333 29.867 29.867 72.533 46.933 119.467 46.933 21.333 0 38.4-4.267 55.467-8.533 0 0 4.267 0 4.267-4.267 4.267 0 4.267-4.267 8.533-4.267 8.533-8.533 8.533-21.333 0-29.867L849.066 896c-4.267-4.267-4.267-4.267-4.267-8.533s0-8.533 4.267-8.533l29.867-29.867c4.267-4.267 4.267-4.267 8.533-4.267s4.267 0 8.533 4.267l55.467 55.467c8.533 8.533 21.333 8.533 29.867 0 0 0 0-4.267 4.267-4.267 4.267-4.267 4.267-4.267 4.267-8.533 25.6-59.733 8.533-128-38.4-170.667zM140.8 315.733c-25.6-25.6-38.4-64-34.133-98.133l29.867 29.867c12.8 8.533 25.6 17.067 42.667 17.067 12.8 0 29.867-4.267 38.4-17.067l29.867-29.867c21.333-21.333 21.333-55.467 0-76.8l-34.133-34.133c38.4-4.267 72.533 8.533 102.4 34.133 46.933 46.933 46.933 128 0 174.933-46.933 51.2-123.733 51.2-174.933 0zm166.4 59.734c12.8-8.533 29.867-17.067 38.4-29.867 12.8-12.8 21.333-25.6 29.867-42.667l384 384C746.667 695.466 729.6 704 716.8 716.8s-21.333 25.6-29.867 38.4L307.2 375.467zm580.267 426.666c-12.8 0-29.867 4.267-38.4 17.067L819.2 849.067c-8.533 8.533-17.067 25.6-17.067 38.4s4.267 29.867 17.067 38.4l29.867 29.867c-38.4 4.267-72.533-8.533-102.4-34.133-46.933-46.933-46.933-128 0-174.933s128-46.933 174.933 0c25.6 25.6 38.4 64 34.133 102.4l-29.867-29.867c-8.533-8.533-21.333-17.067-38.4-17.067z"
+                          ></path><path
+                            d="M610.133 409.6c4.267 0 12.8 0 17.067-4.267L802.133 230.4l34.133 34.133-174.933 174.933c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 17.067 4.267 4.267 0 12.8 0 17.067-4.267l196.267-192 68.267-25.6c4.267-4.267 12.8-8.533 12.8-12.8l29.867-85.333c4.267-8.533 0-17.067-4.267-21.333l-59.733-64c-4.267-4.267-12.8-8.533-21.333-4.267l-85.333 29.867c-4.267 4.267-12.8 8.533-12.8 12.8l-25.6 72.533c-4.267 0-4.267 4.267-4.267 4.267l-192 192c-8.533 8.533-8.533 21.333 0 29.867 4.267 4.267 8.533 4.267 12.8 4.267zm243.2-277.333l64-21.333 38.4 38.4-21.333 64-64 21.333-38.4-38.4 21.333-64zm-384 558.933L209.066 951.467c-8.533 8.533-17.067 8.533-21.333 4.267l-81.067-81.067c-4.267-4.267 0-12.8 4.267-21.333l256-256c8.533-8.533 8.533-21.333 0-29.867s-21.333-8.533-29.867 0l-256 256c-25.6 25.6-25.6 59.733-4.267 81.067l81.067 81.067c8.533 8.533 21.333 12.8 34.133 12.8 17.067 0 34.133-8.533 46.933-21.333l260.267-260.267c8.533-8.533 8.533-21.333 0-29.867s-21.333-4.267-29.867 4.267z"
+                          ></path></svg
+                        >
+                        <h3>Service fees</h3>
+                      </div>
+                      <div class="desc_pricing-policy">
+                        <p>
+                          If your microwave requires a repair, we charge a
+                          service fee of <b>$65</b>, which includes a detailed
+                          price breakdown. This fee is waived if you choose to
+                          proceed with the repair. Unlike some other appliance
+                          repair companies, we do not offer free estimates, but
+                          we guarantee you will not pay this fee if we cannot
+                          diagnose the issue properly. Our technicians are
+                          highly trained and equipped with specialized tools to
+                          accurately diagnose and resolve issues, ensuring
+                          transparency and fairness in our charges. Opting for
+                          professional services ensures access to specialized
+                          knowledge and tools, mitigating the stress and risks
+                          associated with DIY repairs.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_pricing-policy">
+                    <div class="con-inside_pricing-policy">
+                      <div class="icon_pricing-policy">
+                        <svg
+                          height="50px"
+                          width="50px"
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 512 512"
+                          xml:space="preserve">
+                          <polygon
+                            style="fill:#FFFFFF;"
+                            points="58,397.144 58,114.856 256,9.072 454,114.856 454,397.144 256,502.936 "
+                          ></polygon>
+                          <path
+                            id="cost-svg"
+                            style="fill:#000;"
+                            d="M256,18.144l190,101.512V392.36L256,493.856L66,392.352V119.648L256,18.144 M256,0L50,110.056
+                    v291.888L256,512l206-110.056V110.056L256,0L256,0z"
+                          ></path>
+                          <circle cx="256" cy="115.624" r="27.256"></circle>
+                          <path
+                            d="M286.424,153.776h-60.856c-21.456,0-38.92,17.464-38.92,38.92v76.32c0,7.816,6.336,14.152,14.152,14.152
+                    s14.152-6.336,14.152-14.152V200.56h8.496v64.536c0,0.032-0.008,0.056-0.008,0.088v144.288c0,7.816,6.336,14.152,14.152,14.152
+                    c7.816,0,14.152-6.336,14.152-14.152v-116.08h8.488v116.08c0,7.816,6.336,14.152,14.152,14.152s14.152-6.336,14.152-14.152v-116.08
+                    v-28.208V200.56h8.496v68.448c0,7.816,6.336,14.152,14.152,14.152s14.152-6.336,14.152-14.152v-76.32
+                    C325.344,171.24,307.88,153.776,286.424,153.776z"
+                          ></path>
+                        </svg>
+                        <h3>Labor cost</h3>
+                      </div>
+                      <div class="desc_pricing-policy">
+                        <p>
+                          The cost of labor depends on the complexity of the
+                          repair and the estimated time required. We ensure
+                          transparency by providing a detailed quote before you
+                          commit to the service. Should the repair take longer
+                          than expected, you won’t be charged extra. We waive
+                          the diagnostic fee upon proceeding with the repair,
+                          ensuring no surprises with the total repair costs. Our
+                          appliance repair technicians possess the
+                          qualifications and experience necessary to efficiently
+                          diagnose and fix problems, ensuring your microwave is
+                          in capable hands.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_pricing-policy">
+                    <div class="con-inside_pricing-policy">
+                      <div class="icon_pricing-policy">
+                        <svg
+                          fill="#000000"
+                          height="50px"
+                          width="50px"
+                          version="1.1"
+                          id="Capa_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 383.114 383.114"
+                          xml:space="preserve">
+                          <path
+                            d="M144.114,316.654c4.864,1.025,7.976,5.8,6.95,10.663c-0.894,4.237-4.633,7.146-8.798,7.146
+                   c-0.615,0-1.239-0.063-1.865-0.195c-52.492-11.066-93.56-52.135-104.624-104.627c-1.025-4.864,2.087-9.638,6.951-10.663
+                   c4.86-1.024,9.637,2.087,10.663,6.95C62.984,271.446,98.596,307.058,144.114,316.654z M177.525,201.533c0-4.971-4.029-9-9-9h-0.031
+                   c-4.971,0-8.984,4.029-8.984,9s4.044,9,9.015,9S177.525,206.503,177.525,201.533z M383.114,22.071v109.6c0,4.971-4.029,9-9,9
+                   s-9-4.029-9-9v-10.949H225.56l-30.513,52.852c5.318,5.05,9.203,11.599,10.969,18.96h43.302v-42.865c0-4.971,4.029-9,9-9s9,4.029,9,9
+                   v51.598c0.002,0.089,0.004,0.178,0.004,0.268c0,29.557-13.044,56.124-33.679,74.247c-0.21,0.222-0.434,0.436-0.67,0.64
+                   c-8.145,7.018-17.32,12.601-27.13,16.603c-11.401,4.669-23.861,7.267-36.911,7.321c-0.02,0.003-0.038,0-0.056,0
+                   c-0.024,0-0.044,0-0.067,0.001c-0.025,0.001-0.048,0.001-0.071,0c-0.025-0.001-0.051-0.001-0.074,0c-0.025,0-0.052,0-0.076,0
+                   c-0.028,0-0.079-0.007-0.078,0c0,0,0,0,0,0c-17.77,0-34.465-4.718-48.89-12.964c-0.172-0.086-0.344-0.178-0.513-0.275
+                   c-0.179-0.103-0.353-0.212-0.522-0.325c-29.227-17.183-48.887-48.963-48.887-85.247s19.661-68.064,48.888-85.247
+                   c0.169-0.113,0.343-0.223,0.522-0.325c0.169-0.098,0.34-0.189,0.513-0.275c14.427-8.248,31.117-12.964,48.893-12.964
+                   c0.719,0,1.419,0.084,2.089,0.244c0.671-0.16,1.37-0.244,2.089-0.244h47.517c0.109-0.003,0.22-0.003,0.329,0h144.578V51.022H172.69
+                   c-0.717,0-1.415-0.084-2.083-0.242c-0.668,0.158-1.366,0.242-2.083,0.242C85.519,51.022,18,118.541,18,201.533
+                   s67.519,150.511,150.512,150.511c57.937,0,111.379-33.87,136.151-86.288c0.416-0.878,0.954-1.658,1.586-2.329
+                   c8.479-18.72,13.235-39.469,13.32-61.301c-0.002-0.075-0.003-0.149-0.003-0.225v-52.233c0-4.971,4.029-9,9-9s9,4.029,9,9v51.598
+                   c0.002,0.089,0.004,0.178,0.004,0.268c0,92.917-75.594,168.511-168.512,168.511c-0.182,0-0.363,0-0.546,0
+                   C75.594,370.043,0,294.45,0,201.533S75.594,33.022,168.512,33.022c0.719,0,1.419,0.084,2.089,0.244
+                   c0.671-0.16,1.37-0.244,2.089-0.244h192.424V22.071c0-4.971,4.029-9,9-9S383.114,17.1,383.114,22.071z M88.195,192.533h42.81
+                   c1.767-7.362,5.651-13.91,10.971-18.961l-21.397-37.063C102.922,149.559,90.745,169.614,88.195,192.533z M120.577,266.557
+                   l21.398-37.063c-5.319-5.051-9.204-11.599-10.971-18.961h-42.81C90.745,233.455,102.92,253.508,120.577,266.557z M200.871,275.581
+                   l-21.4-37.068c-3.475,1.032-7.153,1.586-10.958,1.586c-3.806,0-7.483-0.554-10.959-1.586l-21.401,37.069
+                   c9.913,4.348,20.86,6.763,32.36,6.763c0.02,0,0.041,0,0.063,0h0.002c0.026,0,0.047,0,0.071,0c0.021,0,0.048,0,0.066,0
+                   c0.023,0,0.044-0.001,0.068,0c0.019-0.002,0.043-0.001,0.063-0.001c0.008,0,0.01,0,0.019,0c10.25-0.045,20.315-2.037,29.685-5.788
+                   C199.331,276.242,200.102,275.917,200.871,275.581z M168.512,222.098c11.339,0,20.564-9.226,20.564-20.565
+                   s-9.225-20.565-20.564-20.565c-11.341,0-20.567,9.226-20.567,20.565S157.171,222.098,168.512,222.098z M195.047,229.493
+                   l21.398,37.063c17.654-13.049,29.83-33.104,32.379-56.022h-42.808C204.25,217.894,200.365,224.443,195.047,229.493z
+                    M204.775,120.721H172.69c-0.717,0-1.415-0.084-2.083-0.242c-0.668,0.158-1.366,0.242-2.083,0.242
+                   c-11.505,0-22.456,2.415-32.372,6.765l21.4,37.067c3.476-1.032,7.153-1.586,10.959-1.586c3.805,0,7.483,0.554,10.958,1.586
+                   L204.775,120.721z"
+                          ></path>
+                        </svg>
+                        <h3>Replacement Parts cost</h3>
+                      </div>
+                      <div class="desc_pricing-policy">
+                        <p>
+                          While not every repair needs new parts, certain
+                          situations require them to restore your microwave to
+                          peak performance. Our technicians carry a range of
+                          parts in their vehicles, usually enabling same-day
+                          repairs. If a part must be ordered, the cost will vary
+                          depending on the repair, brand, and model of your
+                          microwave. We ensure that any additional costs are
+                          communicated clearly and transparently. This approach
+                          helps in maintaining the efficiency and longevity of
+                          your appliance, ensuring it operates at its best.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pros_pricing-policy">
+                    <p>
+                      *We always do our best to find parts at a lower price for
+                      our customers. We do not make extra money on the parts,
+                      our priority is to make it as easy as possible for the
+                      customer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Btn />
+          </div>
+
+          <div class="page213-content" id="left-menu-15">
+            <div class="content__page-full-hed">
+              <div class="content__page-hed-h">
+                <h2>FAQs</h2>
+              </div>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc">
+                <div class="faq-full" id="faqs-anchor">
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>Which brands of microwaves do you repair?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      At Same Day Appliance Repair, we repair all major brands
+                      of microwaves, including:
+                    </p>
+                    <ul>
+                      <li>Samsung</li>
+                      <li>LG</li>
+                      <li>Panasonic</li>
+                      <li>GE</li>
+                      <li>Whirlpool</li>
+                      <li>Kenmore</li>
+                      <li>Sharp</li>
+                      <li>Bosch</li>
+                      <li>Maytag</li>
+                      <li>KitchenAid</li>
+                      <li>Frigidaire</li>
+                      <li>Toshiba</li>
+                      <li>Amana</li>
+                      <li>Magic Chef</li>
+                      <li>Daewoo</li>
+                      <li>Electrolux</li>
+                      <li>Hamilton Beach</li>
+                      <li>Cuisinart</li>
+                      <li>Breville</li>
+                      <li>RCA</li>
+                    </ul>
+                    <p>and more....</p>
+                    <p>
+                      No matter the brand or model, our skilled technicians are
+                      equipped to handle all your microwave repair needs quickly
+                      and efficiently.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>Can I repair my microwave myself?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      At Same Day Appliance Repair, we understand that you might
+                      be tempted to repair your microwave yourself. While it's
+                      possible to handle simple issues like replacing a new
+                      switch, most microwave repairs involve complex components
+                      and high voltage, which can be dangerous.
+                    </p>
+                    <p>
+                      For instance, if your microwave oven isn't heating food,
+                      it could be due to various reasons, such as a
+                      malfunctioning magnetron or a faulty door switch. These
+                      parts need to be tested and replaced with precision. Even
+                      after you have switched out a faulty component, the
+                      microwave needs to be thoroughly tested to ensure it works
+                      safely.
+                    </p>
+                    <p>
+                      It's essential to remember that microwaves, like most
+                      appliances, should be unplugged before any repair work
+                      begins. However, even an unplugged microwave can retain
+                      dangerous electrical charges. Therefore, if you’re not
+                      experienced with electrical repairs, it’s best not to
+                      attempt fixing it yourself.
+                    </p>
+                    <p>
+                      If you decide to proceed with a DIY repair, don't forget
+                      to ensure that the microwave is powered off and unplugged.
+                      After making any repairs, you should confirm the appliance
+                      heats food evenly and operates without any unusual sound.
+                    </p>
+                    <p>
+                      In many cases, the safest and most efficient job is to
+                      leave microwave repairs to the professionals. Our team at
+                      Same Day Appliance Repair is highly trained to handle all
+                      types of microwave issues. Whether it's a new switch or
+                      any other part that needs to be fixed, we’ve got you
+                      covered. Save yourself the hassle and potential danger;
+                      let us get your microwave back in working order so you can
+                      cook meals without worry.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>Is it safe to repair a microwave on my own?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      At Same Day Appliance Repair, we understand that you might
+                      be considering fixing your microwave on your own. However,
+                      safety is a major concern when it comes to microwave
+                      repairs.
+                    </p>
+                    <p>
+                      Microwaves contain high-voltage components that can retain
+                      a charge even when the appliance is unplugged. This means
+                      you can still get shocked if you accidentally touch the
+                      wrong one area inside the microwave. It's also important
+                      to note that even after you've plugged the microwave back
+                      in, it needs to be thoroughly tested to ensure it properly
+                      heats food and operates safely.
+                    </p>
+                    <p>
+                      If you've decided to attempt a repair yourself, make sure
+                      the microwave is completely unplugged before you start.
+                      However, due to the potential risks involved, we strongly
+                      recommend leaving the job to professionals. Our skilled
+                      technicians at Same Day Appliance Repair are trained to
+                      handle these dangerous components safely and efficiently.
+                    </p>
+                    <p>
+                      So, is it safe to repair a microwave on your own?
+                      Generally, no. For your safety and peace of mind, it's
+                      best to let the experts handle it. We're here to ensure
+                      your microwave is repaired correctly and safely, so you
+                      can get back to cooking without any concerns.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>
+                        How much does it typically cost to repair a microwave?
+                      </h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <ul>
+                      <li>
+                        <b>Minor Repairs: </b>Simple fixes can range from $50 to
+                        $100.
+                      </li>
+                      <li>
+                        <b>Major Repairs: </b>More complex issues, like
+                        replacing the magnetron, can cost between $100 and $200
+                        or more.
+                      </li>
+                      <li>
+                        <b>Consider Replacement: </b>If repair costs approach or
+                        exceed the price of a new microwave, it may be more
+                        economical to replace the unit.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>What should I do if my microwave is sparking?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      If your microwave is sparking, it's important to take
+                      immediate action to prevent further damage or potential
+                      hazards. At Same Day Appliance Repair, we recommend the
+                      following steps:
+                    </p>
+                    <ol>
+                      <li>
+                        <b>Unplug the Microwave: </b>The first thing you should
+                        do is unplug the microwave to prevent any electrical
+                        hazards.
+                      </li>
+                      <li>
+                        <b>Stop Using It: </b>Do not attempt to use the
+                        microwave again until it has been inspected and
+                        repaired. Continuing to use a sparking microwave can
+                        cause more serious damage.
+                      </li>
+                      <li>
+                        <b>Check for Metal Objects: </b>Sometimes, sparking can
+                        be caused by metal objects inside the microwave. Make
+                        sure there are no metal utensils or aluminum foil in the
+                        microwave. If you find any, remove them.
+                      </li>
+                      <li>
+                        <b>Inspect the Interior: </b> Look for any signs of damage
+                        inside the microwave, such as a damaged waveguide cover (a
+                        small piece of cardboard-like material inside the microwave)
+                        or burnt areas. If you notice any damage, do not attempt
+                        to fix it yourself.
+                      </li>
+                      <li>
+                        <b>Contact a Professional: </b>Sparking can be caused by
+                        various issues, including a malfunctioning magnetron,
+                        damaged waveguide cover, or faulty diodes. These
+                        components can be dangerous to handle. It's best to
+                        contact a professional appliance repair service to
+                        diagnose and fix the issue.
+                      </li>
+                      <li>
+                        <b>Avoid DIY Repairs: </b>Microwaves contain
+                        high-voltage components that can retain a charge even
+                        when unplugged. Attempting to fix the microwave yourself
+                        can be dangerous. Leave it to the experts to ensure your
+                        safety.
+                      </li>
+                    </ol>
+                    <p>
+                      Remember, a sparking microwave is not something to be
+                      taken lightly. If you’ve noticed that your microwave is
+                      sparking and not heating properly, it’s time to call in
+                      the professionals. Our skilled technicians at Same Day
+                      Appliance Repair are equipped to handle these issues
+                      quickly and safely, getting your microwave back to working
+                      condition in no time.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>
+                        What are some preventative maintenance tips for
+                        microwaves?
+                      </h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      At Same Day Appliance Repair, we believe that regular
+                      maintenance can help extend the life of your microwave and
+                      keep it functioning properly. Here are some preventative
+                      maintenance tips to ensure your microwave remains in good
+                      condition:
+                    </p>
+                    <ol>
+                      <li>
+                        <b>Clean Regularly: </b>Food splatters and spills can
+                        cause your microwave to malfunction. Wipe down the
+                        interior and exterior surfaces regularly with a damp
+                        cloth and mild detergent. Make sure to clean the door
+                        seals to ensure a proper seal when the door is closed.
+                      </li>
+                      <li>
+                        <b>Avoid Metal Objects: </b>Never place metal objects,
+                        aluminum foil, or dishes with metallic trim inside the
+                        microwave, as these can cause sparking and damage the
+                        appliance.
+                      </li>
+                      <li>
+                        <b>Use Microwave-Safe Containers: </b>Only use
+                        containers that are labeled as microwave-safe. Using the
+                        wrong type of container can lead to melting, warping,
+                        and potential chemical leaching into your food.
+                      </li>
+                      <li>
+                        <b>Cover Food: </b>Use a microwave-safe cover to prevent
+                        food splatters. This not only keeps your microwave clean
+                        but also helps food heat more evenly.
+                      </li>
+                      <li>
+                        <b>Check and Replace the Turntable: </b>Ensure the
+                        turntable is properly aligned and rotating smoothly. If
+                        it's damaged or not rotating, it can result in uneven
+                        heating. Replace it if necessary.
+                      </li>
+                      <li>
+                        <b>Inspect the Door Seal: </b>Regularly check the door
+                        seal for any signs of damage or wear. A damaged seal can
+                        cause heat and radiation to leak, resulting in
+                        inefficient cooking and potential safety hazards.
+                      </li>
+                      <li>
+                        <b>Avoid Overloading: </b>Do not overload the microwave
+                        with too much food, as this can lead to uneven cooking
+                        and strain the appliance.
+                      </li>
+                      <li>
+                        <b>Use the Correct Power Settings: </b>Follow the
+                        manufacturer's guidelines for power settings and cooking
+                        times to avoid overworking the microwave.
+                      </li>
+                      <li>
+                        <b>Ventilation: </b>Ensure the microwave's ventilation
+                        system is not blocked. Proper ventilation helps prevent
+                        overheating and extends the life of the appliance.
+                      </li>
+                      <li>
+                        <b>Professional Inspection: </b>Schedule regular
+                        maintenance checks with a professional technician. They
+                        can identify and fix any potential issues before they
+                        become major problems.
+                      </li>
+                    </ol>
+                    <p>
+                      By following these preventative maintenance tips, you can
+                      keep your microwave in optimal condition and ensure it
+                      continues to heat your food efficiently. If you encounter
+                      any issues or need professional assistance, our team at
+                      Same Day Appliance Repair is here to help.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>Why is my microwave making a loud buzzing noise?</h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      A loud buzzing noise coming from your microwave can be
+                      concerning and may indicate a variety of issues. Here are
+                      some common reasons why your microwave might be making
+                      that noise:
+                    </p>
+                    <ul>
+                      <li>
+                        <b>Magnetron Issues: </b>The magnetron is the component
+                        that generates the microwaves to heat your food. If it
+                        is failing or malfunctioning, it can produce a loud
+                        buzzing or humming noise.
+                      </li>
+                      <li>
+                        <b>High Voltage Diode: </b>This component converts AC to
+                        DC and works with the capacitor to power the magnetron.
+                        A faulty high voltage diode can cause a loud buzzing
+                        noise.
+                      </li>
+                      <li>
+                        <b>Cooling Fan: </b>The cooling fan helps to keep the
+                        microwave’s components from overheating. If the fan is
+                        obstructed or its motor is failing, it could create a
+                        buzzing noise.
+                      </li>
+                      <li>
+                        <b>Turntable Motor: </b>If the noise is coming from the
+                        bottom of the microwave, it might be due to a
+                        malfunctioning turntable motor.
+                      </li>
+                      <li>
+                        <b>Transformer: </b>The transformer steps up the voltage
+                        to power the magnetron. A failing transformer can also
+                        generate a loud buzzing or humming sound.
+                      </li>
+                      <li>
+                        <b>Loose Components: </b>Over time, screws and other
+                        components inside the microwave can become loose,
+                        causing vibrations that produce a buzzing noise.
+                      </li>
+                      <li>
+                        <b>Capacitor: </b>The high-voltage capacitor can store
+                        electrical energy, and if it’s failing, it might make a
+                        loud buzzing noise.
+                      </li>
+                    </ul>
+                    <p>
+                      If your microwave is making a loud buzzing noise, it’s
+                      important to address the issue sooner rather than later.
+                      Continuing to use the microwave could potentially lead to
+                      more damage or safety hazards. In some cases, it might be
+                      a simple fix, but other times it might require
+                      professional repair or replacement of parts. If you’re not
+                      comfortable troubleshooting or repairing the microwave
+                      yourself, it’s best to contact a professional appliance
+                      repair service to diagnose and fix the problem.
+                    </p>
+                  </div>
+
+                  <div class="FAQ">
+                    <div class="fa">
+                      <h3>
+                        What should I do if my microwave smells like burning?
+                      </h3>
+                    </div>
+
+                    <div class="fa_plus">︾</div>
+
+                    <div class="fa_minus">︽</div>
+                  </div>
+
+                  <div class="questions">
+                    <p>
+                      If your microwave smells like burning, it's important to
+                      act quickly to identify and address the issue to prevent
+                      any potential hazards. Here are the steps you should take:
+                    </p>
+                    <ul>
+                      <li>
+                        <b>Turn Off and Unplug: </b>Immediately turn off the
+                        microwave and unplug it from the electrical outlet to
+                        prevent any further damage or risk of fire.
+                      </li>
+                      <li>
+                        <b>Inspect the Interior: </b>Carefully open the
+                        microwave door and inspect the inside. Look for any
+                        signs of burnt food, packaging, or other materials that
+                        may have caused the smell.
+                      </li>
+                      <li>
+                        <b>Remove Burnt Items: </b>If you find any burnt food or
+                        materials, remove them from the microwave. Be cautious
+                        as they may still be hot.
+                      </li>
+                      <li>
+                        <b>Clean Thoroughly: </b>Clean the interior of the
+                        microwave thoroughly. Use a mild detergent and a damp
+                        cloth to wipe down the walls, turntable, and any
+                        removable parts. Ensure that no food particles or debris
+                        are left behind.
+                      </li>
+                      <li>
+                        <b>Check Ventilation: </b>Ensure that the microwave's
+                        ventilation system is not blocked. Proper airflow is
+                        necessary to prevent overheating.
+                      </li>
+                      <li>
+                        <b>Inspect for Damage: </b>Check for any visible damage
+                        to the microwave's components, such as burnt wires,
+                        melted plastic, or scorch marks. If you notice any
+                        damage, do not use the microwave until it has been
+                        inspected and repaired by a professional.
+                      </li>
+                      <li>
+                        <b>Test with Caution: </b>After cleaning and inspecting,
+                        you can test the microwave with a small amount of water
+                        in a microwave-safe container. Run the microwave for a
+                        short period (e.g., 30 seconds) and monitor it closely
+                        for any unusual smells or noises.
+                      </li>
+                      <li>
+                        <b>Contact a Professional: </b>If the burning smell
+                        persists or if you notice any damage, contact a
+                        professional appliance repair service. Continuing to use
+                        a malfunctioning microwave can be dangerous and may lead
+                        to further damage or fire hazards.
+                      </li>
+                      <li>
+                        <b>Avoid Overheating: </b>Ensure that you are using the
+                        microwave according to the manufacturer's instructions
+                        and avoid overheating food or running the microwave
+                        empty, as this can cause damage and produce burning
+                        smells.
+                      </li>
+                    </ul>
+                    <p>
+                      By taking these steps, you can help identify and address
+                      the source of the burning smell in your microwave. If in
+                      doubt, always seek professional assistance to ensure your
+                      safety.
+                    </p>
+                  </div>
+
+                  <div class="FAQ_bottom"></div>
+                </div>
+              </div>
+            </div>
+            <Btn />
+          </div>
+        </div>
+      </div>
     </main>
+    <Cta />
   </Container>
+
+  <Arrow />
+  <Focus />
+  <Faqs />
 </Layout>
-<Cta />
+<LogoBrands />
