@@ -15,7 +15,10 @@ p {
 b {
     font-weight: 600;
     color: #1f1f1f;
+    margin-bottom: 5px;
+    font-size: clamp(16px, 3vw, 18px);
 }
+
 
 .max-w-screen-xl {
     max-width: 100%;
