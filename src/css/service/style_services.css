@@ -520,6 +520,30 @@ main {
     top: -11px;
 }
 
+.content__page-desc ul ul li::before {
+    font-size: 24px;
+    top: -5px;
+}
+
+.content__page-desc ol>li::before {
+    content: counter(item) "";
+}
+
+.content__page-desc ul ol>li:nth-child(-n+9)::before {
+    left: 7px;
+    top: -7px;
+    filter: drop-shadow(1px 1px 0.7px #000);
+}
+
+.content__page-desc ul ol li::before {
+    font-size: 20px;
+    left: 0px;
+    top: -7px;
+    filter: drop-shadow(1px 1px 0.7px #000);
+}
+
+
+
 .content__page-desc ul li:hover:before {
     box-shadow: none;
     background: none;
@@ -528,7 +552,6 @@ main {
 .content__page-desc ul li::after {
     display: none;
 }
-
 
 
 
@@ -1376,7 +1399,7 @@ main {
 
 .questions ul ol li::before {
     font-size: 20px;
-    top: -3px;
+    top: -1px;
 }
 
 .questions li b {
@@ -1631,6 +1654,17 @@ main {
     }
 
 
+
+
+
+
+    .content__page-desc ul ol>li:nth-child(-n+9)::before {
+        top: -8px;
+    }
+
+    .content__page-desc ul ul li::before {
+        top: -7px;
+    }
 
 
     .description_maintenance ol>li::before {
