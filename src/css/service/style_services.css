@@ -1382,6 +1382,12 @@ main {
     left: 6px;
 }
 
+.questions ul ol>li:nth-child(-n+9)::before {
+    left: 6px;
+    top: 0px;
+    filter: drop-shadow(1px 1px 0.7px #000);
+}
+
 .questions ol>li::before {
     content: counter(item) "";
     position: absolute;
@@ -1429,6 +1435,10 @@ main {
         font-size: 24px;
         left: 10px;
         top: -7px;
+    }
+
+    .questions ul ol>li:nth-child(-n+9)::before {
+        top: -2px !important;
     }
 
 
