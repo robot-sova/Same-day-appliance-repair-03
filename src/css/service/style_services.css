@@ -764,6 +764,11 @@ main {
 
 
 
+
+
+
+
+
 /* скрипт иконок с брэндами */
 
 .logo-brand img.hovered {
@@ -871,10 +876,6 @@ main {
 .logo-bran-d-20 a.hovered::before {
     width: 100%;
 }
-
-
-
-
 
 /* скрипт иконок с брэндами */
 
