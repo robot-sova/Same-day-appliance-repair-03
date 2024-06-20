@@ -116,6 +116,7 @@
     align-self: center;
     width: 80%;
     /* margin: 0 10%; */
+    overflow: hidden;
     text-align: center;
     background-color: #000;
     border: solid 1.5px #000;
