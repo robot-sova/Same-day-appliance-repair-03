@@ -90,12 +90,13 @@ main {
     padding-bottom: clamp(3%, 5vh, 10%);
 }
 
-.furnace-page-header-d-full .page-header-d  {
+.furnace-page-header-d-full .page-header-d {
     width: 45%;
 }
 
 .oven-page-header-d-full .page-header-d,
-.freezer-page-header-d-full .page-header-d, .dryer-page-header-d-full .page-header-d {
+.freezer-page-header-d-full .page-header-d,
+.dryer-page-header-d-full .page-header-d {
     width: 38%;
 }
 
@@ -639,8 +640,8 @@ main {
     font-weight: 600;
 }
 
-.costTable-Factor td:nth-child(2){
-    font-weight:400;
+.costTable-Factor td:nth-child(2) {
+    font-weight: 400;
 }
 
 
@@ -794,7 +795,17 @@ main {
 .logo-bran-ph-17.hovered,
 .logo-bran-ph-18.hovered,
 .logo-bran-ph-19.hovered,
-.logo-bran-ph-20.hovered {
+.logo-bran-ph-20.hovered,
+.logo-bran-ph-21.hovered,
+.logo-bran-ph-22.hovered,
+.logo-bran-ph-23.hovered,
+.logo-bran-ph-24.hovered,
+.logo-bran-ph-25.hovered,
+.logo-bran-ph-26.hovered,
+.logo-bran-ph-27.hovered,
+.logo-bran-ph-28.hovered,
+.logo-bran-ph-29.hovered,
+.logo-bran-ph-30.hovered {
     box-shadow: 0px 0px 17px 6px #87878738;
     border-radius: 25%;
 }
@@ -818,7 +829,17 @@ main {
 .logo-bran-d-17 a,
 .logo-bran-d-18 a,
 .logo-bran-d-19 a,
-.logo-bran-d-20 a {
+.logo-bran-d-20 a, 
+.logo-bran-d-21 a,
+.logo-bran-d-22 a,
+.logo-bran-d-23 a,
+.logo-bran-d-24 a,
+.logo-bran-d-25 a,
+.logo-bran-d-26 a,
+.logo-bran-d-27 a,
+.logo-bran-d-28 a,
+.logo-bran-d-29 a,
+.logo-bran-d-30 a {
     position: relative;
     display: inline-block;
 }
@@ -842,7 +863,17 @@ main {
 .logo-bran-d-17 a::before,
 .logo-bran-d-18 a::before,
 .logo-bran-d-19 a::before,
-.logo-bran-d-20 a::before {
+.logo-bran-d-20 a::before, 
+.logo-bran-d-21 a::before,
+.logo-bran-d-22 a::before,
+.logo-bran-d-23 a::before,
+.logo-bran-d-24 a::before,
+.logo-bran-d-25 a::before,
+.logo-bran-d-26 a::before,
+.logo-bran-d-27 a::before,
+.logo-bran-d-28 a::before,
+.logo-bran-d-29 a::before,
+.logo-bran-d-30 a::before {
     content: '';
     position: absolute;
     left: 0;
@@ -873,7 +904,17 @@ main {
 .logo-bran-d-17 a.hovered::before,
 .logo-bran-d-18 a.hovered::before,
 .logo-bran-d-19 a.hovered::before,
-.logo-bran-d-20 a.hovered::before {
+.logo-bran-d-20 a.hovered::before, 
+.logo-bran-d-21 a.hovered::before,
+.logo-bran-d-22 a.hovered::before,
+.logo-bran-d-23 a.hovered::before,
+.logo-bran-d-24 a.hovered::before,
+.logo-bran-d-25 a.hovered::before,
+.logo-bran-d-26 a.hovered::before,
+.logo-bran-d-27 a.hovered::before,
+.logo-bran-d-28 a.hovered::before,
+.logo-bran-d-29 a.hovered::before, 
+.logo-bran-d-30 a.hovered::before {
     width: 100%;
 }
 
