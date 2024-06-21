@@ -1276,6 +1276,7 @@ main {
     font-size: clamp(16px, 4vw, 18px);
     margin: 0;
     font-weight: 500;
+    
 }
 
 .pros_pricing-policy-indent {
