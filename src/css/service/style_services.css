@@ -1444,6 +1444,11 @@ main {
     border-radius: 20%;
 }
 
+.questions ol li:hover:before {
+    background: none;
+    box-shadow: none;
+}
+
 
 
 .questions ul ol li::before {
