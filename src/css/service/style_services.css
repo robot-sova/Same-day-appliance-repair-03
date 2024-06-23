@@ -109,7 +109,6 @@ main {
     align-self: center;
     margin-top: 3%;
     margin-left: 3%;
-    display: grid;
 }
 
 
@@ -1528,8 +1527,9 @@ main {
         padding-bottom: clamp(3%, 5vh, 10%);
     }
 
-    .wine-cooler-page-header-d-full .page-header-d {
-        width: 54%;
+    .wine-cooler-page-header-d-full .page-header-d,
+    .wine-cellar-page-header-d-full .page-header-d {
+        width: 50%;
     }
 
 
@@ -1552,7 +1552,8 @@ main {
     }
 
     .washer-page-header-d-full,
-    .wine-cooler-page-header-d-full {
+    .wine-cooler-page-header-d-full,
+    .wine-cellar-page-header-d-full {
         padding-top: clamp(2%, 2vh, 10%);
         padding-bottom: clamp(1%, 2vh, 10%);
     }
