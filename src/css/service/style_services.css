@@ -97,7 +97,8 @@ main {
 .oven-page-header-d-full .page-header-d,
 .freezer-page-header-d-full .page-header-d,
 .dryer-page-header-d-full .page-header-d,
-.wine-cooler-page-header-d-full .page-header-d {
+.wine-cooler-page-header-d-full .page-header-d,
+.wine-cellar-page-header-d-full .page-header-d {
     width: 38%;
 }
 
@@ -108,6 +109,7 @@ main {
     align-self: center;
     margin-top: 3%;
     margin-left: 3%;
+    display: grid;
 }
 
 
@@ -600,7 +602,7 @@ main {
 
 
 
-.table-content__page-desc b{
+.table-content__page-desc b {
     text-align: center;
     width: 100%;
     display: block;
@@ -1519,7 +1521,9 @@ main {
 
 
 @media (max-width:1440px) {
-    .wine-cooler-page-header-d-full {
+
+    .wine-cooler-page-header-d-full,
+    .wine-cellar-page-header-d-full {
         padding-top: clamp(5%, 8vh, 10%);
         padding-bottom: clamp(3%, 5vh, 10%);
     }
