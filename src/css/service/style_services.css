@@ -103,7 +103,8 @@ main {
 .freezer-page-header-d-full .page-header-d,
 .dryer-page-header-d-full .page-header-d,
 .wine-cooler-page-header-d-full .page-header-d,
-.wine-cellar-page-header-d-full .page-header-d {
+.wine-cellar-page-header-d-full .page-header-d,
+.walk-in-cooler-page-header-d-full .page-header-d {
     width: 38%;
 }
 
