@@ -441,7 +441,13 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.column3-content__page-desc ul ul {
+.column2-content__page-desc ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column3-content__page-desc ul ul,
+.column2-content__page-desc ul ul {
     display: inline-block;
 }
 
@@ -1582,11 +1588,13 @@ main {
         display: grid;
     }
 
-    .column3-content__page-desc ul {
+    .column3-content__page-desc ul,
+    .column2-content__page-desc ul {
         display: block;
     }
 
-    .column3-content__page-desc ul ul {
+    .column3-content__page-desc ul ul,
+    .column2-content__page-desc ul ul {
         display: block;
     }
 
