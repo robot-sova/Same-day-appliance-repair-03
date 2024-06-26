@@ -1394,7 +1394,7 @@ main {
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    padding: 0% 2%;
+    padding: 0% 2% 3px 2%;
 }
 
 .questions b {
@@ -1408,6 +1408,24 @@ main {
     max-width: 100%;
     font-size: clamp(16px, 3vw, 18px);
 }
+
+.questions a {
+    font-weight: 600;
+    max-width: 100%;
+    font-size: clamp(16px, 3vw, 18px);
+    color: #000000;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    text-decoration: underline;
+    text-decoration-color: #ca0913;
+    text-decoration-thickness: 2px;
+}
+
+.questions a:hover {
+    text-decoration: none;
+}
+
 
 .questions img {
     max-width: 90%;
