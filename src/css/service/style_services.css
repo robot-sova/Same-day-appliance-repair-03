@@ -100,6 +100,7 @@ main {
 }
 
 .oven-page-header-d-full .page-header-d,
+.commercial-oven-page-header-d-full .page-header-d,
 .freezer-page-header-d-full .page-header-d,
 .dryer-page-header-d-full .page-header-d,
 .wine-cooler-page-header-d-full .page-header-d,
@@ -1567,7 +1568,8 @@ main {
 
     .wine-cooler-page-header-d-full,
     .wine-cellar-page-header-d-full,
-    .bar-refrigerator-page-header-d-full {
+    .bar-refrigerator-page-header-d-full,
+    .commercial-oven-page-header-d-full {
         padding-top: clamp(5%, 8vh, 10%);
         padding-bottom: clamp(3%, 3vh, 10%);
     }
