@@ -10,12 +10,17 @@
 }
 
 
+.page-reviews {
+  width: 80%;
+  margin: 20px 10%;
+}
+
 
 .page-reviews__container {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1.5em;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5em;
 }
 
 
@@ -24,17 +29,14 @@
 
 .content-page {
   width: 100%;
-  max-width: 260px;
-  
-
+  max-width: 280px;
   position: relative;
   transition: background-color 0.1s ease 0s;
   box-sizing: border-box;
-  -webkit-box-flex: 1;
-  flex-grow: 1;
+  /* -webkit-box-flex: 1;
+  flex-grow: 1; */
   padding: 24px;
   background-color: rgb(248, 248, 248);
-  /* border: 1px solid transparent; */
   box-shadow: 0 0 1px 1.5px #87878730;
   border-radius: 34px;
 }
@@ -61,19 +63,17 @@
   margin-right: 10px;
 }
 
-.avatar-a img{
-width: 40px;
-border-radius: 50%;
+.avatar-a img {
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px 2px #87878730;
 }
 
 .desc-name-a {
-  text-decoration: none;
   cursor: pointer;
 }
 
-.desc-name-a:hover {
-  text-decoration: underline;
-}
+
 
 .desc-name-a b {
   font-size: 15px;
@@ -83,11 +83,20 @@ border-radius: 50%;
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 100%;
+  color: rgb(28, 28, 28);
+  text-decoration: none;
+}
+
+.desc-name-a b:hover {
+  text-decoration: underline !important;
+  text-decoration-color: rgba(28, 28, 28, 0.79);
 }
 
 .date-a p {
-font-size: 12px;
-color: rgb(65 65 65 / 51%);
+  font-size: 12px;
+  color: rgb(65 65 65 / 51%);
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -99,7 +108,7 @@ color: rgb(65 65 65 / 51%);
 
 
 
-.desc-name-a a{
+.desc-name-a a {
   display: flex;
 }
 
@@ -134,12 +143,66 @@ color: rgb(65 65 65 / 51%);
   width: 100%;
 }
 
+
+
+
+.description-b {
+  position: relative;
+  height: 114px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.description-b p {
+  color: rgb(27, 27, 27);
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+.content-page-moreHid .more{
+display: none;
+}
+
+.more {
+  color: #3838389c;
+  cursor: pointer;
+}
+
+.more:hover  {
+  text-decoration: underline !important;
+}
+
+.more:before {
+  content: 'Read More';
+  font-size: 16px;
+  color: rgb(65 65 65 / 70%);
+}
+
+.content-b.comment-active .more:before {
+  content: 'Hide';
+}
+
+.content-b.comment-active .description-b {
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
 .google-b {
   cursor: pointer;
   margin-top: 20px;
 }
 
-.google-b svg{
+.google-b svg {
   width: 100%;
   max-width: 100px;
   height: auto;
