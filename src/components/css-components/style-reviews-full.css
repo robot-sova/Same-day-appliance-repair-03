@@ -24,7 +24,7 @@
 
 .content-page {
   width: 100%;
-  max-width: 400px;
+  max-width: 260px;
   
 
   position: relative;
@@ -85,9 +85,9 @@ border-radius: 50%;
   max-width: 100%;
 }
 
-.date-a p{
+.date-a p {
 font-size: 12px;
-color: rgb(65, 65, 65);
+color: rgb(65 65 65 / 51%);
 }
 
 
