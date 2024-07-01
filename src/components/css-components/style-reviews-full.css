@@ -323,11 +323,11 @@ display: none;
 
 
 .sel_still h5{
-  color: #FFC501;
+  color: #000000;
   text-shadow: 0.4px 0.4px 0.4px #000;
   transition: color 0.3s ease;
 }
 
 .sel_still h5:hover {
-  color: #304a98;
+  color: #ca0913;
 }
