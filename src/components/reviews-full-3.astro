@@ -20,9 +20,6 @@ import "components/css-components/style-reviews-full.css";
   </div>
 
   <div  class="page-reviews__container full-comment-page-reviews__container" id="d3_model">
-
-    <div class="full-content-page-reviews">
-
     <!-- Google -->
 
     <div class="content-page content-page-moreHid">
@@ -3547,17 +3544,8 @@ import "components/css-components/style-reviews-full.css";
 
   </div>
 
-
-<button class="load-more" id="load-more-d3_model">Load More</button>
-  </div>
-
-
-
-
-  <div class="page-reviews__container google-comment-page-reviews__container" id="video_editing">
-
-    <div class="full-content-page-reviews">
-    
+  <div class="page-reviews__container google-comment-page-reviews__container"
+    id="video_editing">
     <div class="content-page content-page-moreHid">
       <div class="content-a">
         <div class="avatar-a">
@@ -4815,18 +4803,10 @@ import "components/css-components/style-reviews-full.css";
         </div>
       </div>
     </div>
-
   </div>
 
-    <button class="load-more" id="load-more-video_editing">Load More</button>
-  </div>
-
-
-
-
-  <div  class="page-reviews__container thumbtack-comment-page-reviews__container" id="graphic_arts">
-
-    <div class="full-content-page-reviews">
+  <div  class="page-reviews__container thumbtack-comment-page-reviews__container"
+    id="graphic_arts">
 
     <div class="content-page">
       <div class="content-a">
@@ -7090,52 +7070,293 @@ import "components/css-components/style-reviews-full.css";
 
   </div>
 
-    <button class="load-more" id="load-more-graphic_arts">Load More</button>
-  </div>
-
 
 
 </div>
 
+<!-- 
+<div class="any_task_content">
+
+  <div class="any_task_cont_selection">
+    <div class="sel_3d sel_still">
+      <h5>All Reviews <b>4.9</b> </h5>
+    </div>
+    <div class="sel_vid">
+      <h5>Google <b>5.0</b> </h5>
+    </div>
+    <div class="sel_graph">
+      <h5>Thumbtack <b>4.9</b> </h5>
+    </div>
+  </div>
 
 
+  <div class="any_task_cont_filling" id="table_full_desc">
+
+    <div class="con_mbr" id="d3_model" style="display: grid;">
+      <div class="bb_g">
+        <table class="mbr_table_deliv">
+          <tbody>
+            <tr id="fat_table">
+              <th>
+                <p class="str_table_1">Продукция</p>
+              </th>
+              <th>
+                <p class="str_table_1">Тип</p>
+              </th>
+              <th>
+                <p class="str_table_1">Сроки</p>
+              </th>
+              <th>
+                <p class="str_table_1">Услуги</p>
+              </th>
+              <th>
+                <p class="str_table_1">Стоимость</p>
+              </th>
+            </tr>
+            <tr>
+              <th data-label="Продукция">
+                <p class="str_table_1l">Компьютер</p>
+              </th>
+              <th data-label="Тип">
+                <p class="str_table_1l">Курьер </p>
+              </th>
+              <th data-label="Сроки">
+                <p class="str_table_1l">1 день</p>
+              </th>
+              <th data-label="Услуги">
+                <p class="str_table_1l">Установка/Подключение</p>
+              </th>
+              <th data-label="Стоимость">
+                <p class="str_table_1l">Бесплатно</p>
+              </th>
+            </tr>
+            <tr>
+              <th data-label="Продукция">
+                <p class="str_table_1l">Ноутбук</p>
+              </th>
+              <th data-label="Тип">
+                <p class="str_table_1l">Курьер </p>
+              </th>
+              <th data-label="Сроки">
+                <p class="str_table_1l">1 день</p>
+              </th>
+              <th data-label="Услуги">
+                <p class="str_table_1l">-</p>
+              </th>
+              <th data-label="Стоимость">
+                <p class="str_table_1l">Бесплатно</p>
+              </th>
+            </tr>
+            <tr>
+              <th data-label="Продукция">
+                <p class="str_table_1l">Аксессуары</p>
+              </th>
+              <th data-label="Тип">
+                <p class="str_table_1l">Курьер / ТК</p>
+              </th>
+              <th data-label="Сроки">
+                <p class="str_table_1l">1 день</p>
+              </th>
+              <th data-label="Услуги">
+                <p class="str_table_1l">-</p>
+              </th>
+              <th data-label="Стоимость">
+                <p class="str_table_1l">от 300 руб.</p>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="bb_lof">
+        <h6>Доставка</h6>
+        <p class="mm-fst-t2 mn-pt-12px">Доставка до 5 км от МКАД – бесплатно, более 5 км от МКАД по тарифу 40 руб/км.</p>
+        <h6>Сервис</h6>
+        <p class="mm-fst-t2 mn-pt-12px">При доставке вашего заказа, наши специалисты произведут установку и подключение оборудования, а так же, продемонстрируют работоспособность.</p>
+      </div>
+    </div>
 
 
-<!-- кнопка Load More показ более 8 элементов -->
-<script defer>
-document.addEventListener('DOMContentLoaded', function() {
-  function setupReviewLoading(containerId, buttonId) {
-      const reviewsContainer = document.getElementById(containerId);
-      const reviews = reviewsContainer.querySelectorAll('.content-page');
-      const loadMoreButton = document.getElementById(buttonId);
-      let visibleCount = 0;
-      const increment = 8;
+    <div class="con_mbr" id="video_editing" style="display: none;">
+      <div class="bb_g">
+        <table class="mbr_table_deliv">
+          <tbody>
+            <tr id="fat_table">
+              <th>
+                <p class="str_table_1">Продукция</p>
+              </th>
+              <th>
+                <p class="str_table_1">Тип</p>
+              </th>
+              <th>
+                <p class="str_table_1">Сроки</p>
+              </th>
+              <th>
+                <p class="str_table_1">Услуги</p>
+              </th>
+              <th>
+                <p class="str_table_1">Стоимость</p>
+              </th>
+            </tr>
+            <tr>
+              <th data-label="Продукция">
+                <p class="str_table_1l">Компьютер</p>
+              </th>
+              <th data-label="Тип">
+                <p class="str_table_1l">Транспортная компания</p>
+              </th>
+              <th data-label="Сроки">
+                <p class="str_table_1l">от 2 дней</p>
+              </th>
+              <th data-label="Услуги">
+                <p class="str_table_1l">Упаковка/100% страхование</p>
+              </th>
+              <th data-label="Стоимость">
+                <p class="str_table_1l">Бесплатно до терминала ТК</p>
+              </th>
+            </tr>
+            <tr>
+              <th data-label="Продукция">
+                <p class="str_table_1l">Ноутбук</p>
+              </th>
+              <th data-label="Тип">
+                <p class="str_table_1l">Транспортная компания</p>
+              </th>
+              <th data-label="Сроки">
+                <p class="str_table_1l">от 2 дней</p>
+              </th>
+              <th data-label="Услуги">
+                <p class="str_table_1l">Упаковка/100% страхование</p>
+              </th>
+              <th data-label="Стоимость">
+                <p class="str_table_1l">от 800 руб.</p>
+              </th>
+            </tr>
+            <tr>
+              <th data-label="Продукция">
+                <p class="str_table_1l">Аксессуары</p>
+              </th>
+              <th data-label="Тип">
+                <p class="str_table_1l">Транспортная компания</p>
+              </th>
+              <th data-label="Сроки">
+                <p class="str_table_1l">от 2 дней</p>
+              </th>
+              <th data-label="Услуги">
+                <p class="str_table_1l">Упаковка/100% страхование</p>
+              </th>
+              <th data-label="Стоимость">
+                <p class="str_table_1l">от 500 руб.</p>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="bb_lof">
+        <h6>Доставка до терминала</h6>
+        <p class="mm-fst-t2 mn-pt-12px">Доставка по территории РФ осуществляется бесплатно, до ближайшего к вашему адресу терминала, транспортной компанией – партнером .</p>
+        <h6>Доставка до двери</h6>
+        <p class="mm-fst-t2 mn-pt-12px">При необходимости оформим доставку вашего заказа до двери, расчет такой услуги производится индивидуально.</p>
+      </div>
+    </div>
 
-      function showMoreReviews() {
-          for (let i = visibleCount; i < visibleCount + increment && i < reviews.length; i++) {
-              reviews[i].classList.add('visibleLoadMore');
-          }
-          visibleCount += increment;
 
-          if (visibleCount >= reviews.length) {
-              loadMoreButton.style.display = 'none';
-          }
-      }
+    <div class="con_mbr" id="graphic_arts" style="display: none;">
+      <div class="bb_g">
+        <table class="mbr_table_deliv">
+          <tbody>
+            <tr id="fat_table">
+              <th>
+                <p class="str_table_1">Продукция</p>
+              </th>
+              <th>
+                <p class="str_table_1">Тип</p>
+              </th>
+              <th>
+                <p class="str_table_1">Сроки</p>
+              </th>
+              <th>
+                <p class="str_table_1">Услуги</p>
+              </th>
+              <th>
+                <p class="str_table_1">Документы</p>
+              </th>
+              <th>
+                <p class="str_table_1">Стоимость</p>
+              </th>
+            </tr>
+            <tr>
+              <th data-label="Продукция">
+                <p class="str_table_1l">Компьютер</p>
+              </th>
+              <th data-label="Тип">
+                <p class="str_table_1l">Транспортная компания</p>
+              </th>
+              <th data-label="Сроки">
+                <p class="str_table_1l">от 5 дней</p>
+              </th>
+              <th data-label="Услуги">
+                <p class="str_table_1l">Упаковка / 100% страхование </p>
+              </th>
+              <th data-label="Документы">
+                <p class="str_table_1l">Оформление ГТД</p>
+              </th>
+              <th data-label="Стоимость">
+                <p class="str_table_1l">от 8 000 руб.</p>
+              </th>
+            </tr>
+            <tr>
+              <th data-label="Продукция">
+                <p class="str_table_1l">Ноутбук</p>
+              </th>
+              <th data-label="Тип">
+                <p class="str_table_1l">Транспортная компания</p>
+              </th>
+              <th data-label="Сроки">
+                <p class="str_table_1l">от 5 дней</p>
+              </th>
+              <th data-label="Услуги">
+                <p class="str_table_1l">Упаковка / 100% страхование </p>
+              </th>
+              <th data-label="Документы">
+                <p class="str_table_1l">Оформление ГТД</p>
+              </th>
+              <th data-label="Стоимость">
+                <p class="str_table_1l">от 1 200 руб.</p>
+              </th>
+            </tr>
+            <tr>
+              <th data-label="Продукция">
+                <p class="str_table_1l">Аксессуары</p>
+              </th>
+              <th data-label="Тип">
+                <p class="str_table_1l">Транспортная компания</p>
+              </th>
+              <th data-label="Сроки">
+                <p class="str_table_1l">от 5 дней</p>
+              </th>
+              <th data-label="Услуги">
+                <p class="str_table_1l">Упаковка / 100% страхование </p>
+              </th>
+              <th data-label="Документы">
+                <p class="str_table_1l">Оформление ГТД</p>
+              </th>
+              <th data-label="Стоимость">
+                <p class="str_table_1l">от 1 000 руб.</p>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="bb_lof">
+        <h6>Доставка по миру</h6>
+        <p class="mm-fst-t2 mn-pt-12px">Для того чтобы обеспечить нашим покупателям комфортную доставку в любую точку планеты мы отработали механизм взаимодействия с крупнейшими международными логистическими компаниями. Помимо международной доставки мы помогаем нашим клиентам с оформлением всех необходимых таможенных документов.</p>
+      </div>
+    </div>
 
-      loadMoreButton.addEventListener('click', showMoreReviews);
-      showMoreReviews();
-  }
+  </div>
 
-  setupReviewLoading('d3_model', 'load-more-d3_model');
-  setupReviewLoading('video_editing', 'load-more-video_editing');
-  setupReviewLoading('graphic_arts', 'load-more-graphic_arts');
-});
-</script>
+</div> -->
 
-
-
-
-<!-- переключение по вкладкам верхнего меню  reviews-->
 <script defer>
   document.addEventListener("DOMContentLoaded", function () {
     const d3model = document.getElementById("d3_model");
@@ -7144,20 +7365,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector(".sel_3d").addEventListener("click", () => {
       showElement(d3model);
-      removeClassFromAll(".any_task_cont_selection div", "sel_still");
-      toggleClass(".sel_3d", "sel_still");
+      $(".any_task_cont_selection div").removeClass("sel_still");
+      $(".sel_3d").toggleClass("sel_still");
     });
-
     document.querySelector(".sel_vid").addEventListener("click", () => {
       showElement(videoediting);
-      removeClassFromAll(".any_task_cont_selection div", "sel_still");
-      toggleClass(".sel_vid", "sel_still");
+      $(".any_task_cont_selection div").removeClass("sel_still");
+      $(".sel_vid").toggleClass("sel_still");
     });
-
     document.querySelector(".sel_graph").addEventListener("click", () => {
       showElement(graphicarts);
-      removeClassFromAll(".any_task_cont_selection div", "sel_still");
-      toggleClass(".sel_graph", "sel_still");
+      $(".any_task_cont_selection div").removeClass("sel_still");
+      $(".sel_graph").toggleClass("sel_still");
     });
 
     function showElement(elementToShow) {
@@ -7173,24 +7392,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
       elementToShow.style.display = "grid";
     }
-
-    function removeClassFromAll(selector, className) {
-      document.querySelectorAll(selector).forEach((element) => {
-        element.classList.remove(className);
-      });
-    }
-
-    function toggleClass(selector, className) {
-      document.querySelector(selector).classList.toggle(className);
-    }
   });
 </script>
 
-
-
-
-
-<!-- показать больше Read More -->
 <script defer>
   let more = document.querySelectorAll(".more");
   for (let i = 0; i < more.length; i++) {

@@ -19,14 +19,10 @@
 .page-reviews__container {
   width: 100%;
   display: grid;
-}
-
-.full-content-page-reviews {
-  width: 100%;
-  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5em;
 }
+
 
 
 
@@ -234,7 +230,9 @@ display: none;
 
 
 
-
+.any_task_content {
+  display: grid;
+}
 
 .any_task_cont_selection {
   display: grid;
@@ -246,8 +244,9 @@ display: none;
 }
 
 .any_task_cont_selection h5 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   transform: scale(1, 1.2);
+  font-family: 'SemiBold';
 }
 
 .sel_3d h5,
@@ -266,6 +265,24 @@ display: none;
 
 
 
+.con_fill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2%;
+}
+
+.con_fill img {
+  width: 100%;
+}
+
+.bb_y {
+  display: grid;
+  padding: 0 2%;
+  justify-content: center;
+  justify-self: center;
+  overflow: hidden;
+  align-self: center;
+}
 
 #video_editing {
   display: none;
@@ -284,40 +301,12 @@ display: none;
 
 
 
-.sel_still{
+.sel_still h5{
   color: #000000;
   text-shadow: 0.4px 0.4px 0.4px #000;
   transition: color 0.3s ease;
 }
 
-.sel_still:hover {
+.sel_still h5:hover {
   color: #ca0913;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.content-page {
-  display: none;
-}
-.content-page.visibleLoadMore {
-  display: block;
-}
-.load-more {
-  margin-top: 20px;
-}
-
-
-
-
