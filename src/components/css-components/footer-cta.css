@@ -72,7 +72,7 @@ footer {
     padding: 10px 10px;
     white-space: nowrap;
     display: grid;
-    color: #fff;
+    color: #fff !important;
     font-weight: 700;
     text-shadow: 1.2px 1.2px 2px black;
     transition: 0.25s;
@@ -90,7 +90,7 @@ footer {
     padding: 10px 24px;
     white-space: nowrap;
     display: grid;
-    color: #fff;
+    color: #fff !important;
     font-weight: 700;
     text-shadow: 1.2px 1.2px 2px black;
     transition: 0.25s;
@@ -99,7 +99,7 @@ footer {
 
 .book_button-footer:hover a,
 .cal_button-footer:hover a {
-    color: #000;
+    color: #000 !important;
     box-shadow: inset 0px 4px 6px 1px rgb(0 0 0 / 25%), 0px 6px 7px 0px rgb(0 0 0 / 11%), 0px 3px 11px 4px rgb(0 0 0 / 25%);
 }
 

@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+#feedbackReviews {
+  padding: 0;
+}
+
 
 .page-reviews {
   max-width: 1220px;
@@ -17,8 +21,13 @@
   margin: auto auto;
 }
 
-
-
+.page-reviews h2 {
+  margin: 15px 0;
+  text-align: center;
+  padding: 0 3%;
+  font-size: clamp(24px, 5vw, 28px) !important;
+  text-shadow: 1px 1px 1.3px #8f9499;
+}
 
 
 .reviews-head {
@@ -32,8 +41,8 @@
 .sel_vid,
 .sel_graph,
 .sel_3d {
-padding: 3px 8px;
-margin: 5px 5px;
+  padding: 3px 8px;
+  margin: 5px 5px;
   border-radius: 15px;
   transition: all 0.25s ease-out;
 }
@@ -79,6 +88,17 @@ margin: 5px 5px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5em;
+}
+
+/* .full-content-page-reviews {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 1.2em;
+} */
+
+.full-content-page-reviews:nth-child(2) {
+  margin-top: 24px;
 }
 
 
@@ -207,7 +227,7 @@ margin: 5px 5px;
 }
 
 .more {
-  color: #3838389c;
+  color: #3838389c !important;
   cursor: pointer;
 }
 
@@ -384,45 +404,52 @@ margin: 5px 5px;
 
   .description-b {
     height: 45px;
-}
+  }
 
-.content-page-moreHid .more {
-  display: grid;
-}
+  .content-page-moreHid .more {
+    display: grid;
+  }
 
 }
 
 @media (max-width: 500px) {
-  .sel_vid, .sel_graph, .sel_3d {
+
+  .sel_vid,
+  .sel_graph,
+  .sel_3d {
     display: grid;
     text-align: center;
   }
-  .sel_vid svg, .sel_graph svg {
+
+  .sel_vid svg,
+  .sel_graph svg {
     justify-self: center;
-}
-.sel_still::after {
-  content: '';
-  position: absolute;
-  bottom: -13px;
-  left: 8%;
-  width: calc(92% - 8%);
-  border-bottom: 3px solid black;
-  border-radius: 2px;
-}
-.sel_3d.sel_still::after {
-  left: 8%;
-  width: calc(92% - 8%);
+  }
+
+  .sel_still::after {
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    left: 8%;
+    width: calc(92% - 8%);
+    border-bottom: 3px solid black;
+    border-radius: 2px;
+  }
+
+  .sel_3d.sel_still::after {
+    left: 8%;
+    width: calc(92% - 8%);
+  }
+
+  .sel_graph.sel_still::after {
+    left: 8%;
+    width: calc(92% - 8%);
+  }
+
 }
 
-.sel_graph.sel_still::after {
-  left: 8%;
-  width: calc(92% - 8%);
-}
 
-}
-
-
-@media (max-width: 374px) { 
+@media (max-width: 374px) {
   .content-page {
     max-width: 90%;
   }
