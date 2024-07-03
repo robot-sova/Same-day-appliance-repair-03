@@ -379,8 +379,17 @@ margin: 5px 5px;
   }
 
   .content-page {
-    max-width: 100%;
+    max-width: 80%;
   }
+
+  .description-b {
+    height: 45px;
+}
+
+.content-page-moreHid .more {
+  display: grid;
+}
+
 }
 
 @media (max-width: 500px) {
@@ -410,5 +419,11 @@ margin: 5px 5px;
   width: calc(92% - 8%);
 }
 
+}
 
+
+@media (max-width: 374px) { 
+  .content-page {
+    max-width: 90%;
+  }
 }
