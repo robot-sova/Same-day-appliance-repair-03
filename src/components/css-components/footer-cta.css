@@ -52,9 +52,11 @@ footer {
     margin-bottom: 15px;
 }
 
-.a_button-footer h4 {
+.a_button-footer h3 {
     color: #fff;
     font-size: 20px;
+    margin-top: 0;
+    font-weight: 500;
 }
 
 .b_button-footer {
