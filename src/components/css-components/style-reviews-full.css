@@ -285,6 +285,11 @@
   height: auto;
 }
 
+.google-b p {
+  visibility: hidden;
+  margin: 0;
+}
+
 
 
 
