@@ -1,0 +1,173 @@
+---
+import GoogleReviews from "@components/reviews-google.astro";
+import ThumbtackReviews from "@components/reviews-thumbtack.astro";
+
+import "components/css-components/style-reviews-full.css";
+---
+
+
+
+pause 
+<div class="page-reviews">
+  <h2>Real Customer Reviews From Our Google and Thumbtack Profile</h2>
+
+  <div class="reviews-head">
+    <div class="any_task_cont_selection">
+      <div class="sel_3d sel_still">
+        <h5>All Reviews <b>4.9</b></h5>
+      </div>
+      <div class="sel_vid">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="injected-svg"
+          data-src="https://static.elfsight.com/icons/app-all-in-one-reviews-icons-google-multicolor.svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          ><path
+            fill="#2A84FC"
+            d="M21.579 12.234c0-.677-.055-1.359-.172-2.025h-9.403v3.839h5.384a4.615 4.615 0 0 1-1.992 3.029v2.49h3.212c1.886-1.736 2.97-4.3 2.97-7.333Z"
+          ></path><path
+            fill="#00AC47"
+            d="M12.004 21.974c2.688 0 4.956-.882 6.608-2.406l-3.213-2.491c-.893.608-2.047.952-3.392.952-2.6 0-4.806-1.754-5.597-4.113H3.095v2.567a9.97 9.97 0 0 0 8.909 5.491Z"
+          ></path><path
+            fill="#FFBA00"
+            d="M6.407 13.916a5.971 5.971 0 0 1 0-3.817V7.531H3.095a9.977 9.977 0 0 0 0 8.953l3.312-2.568Z"
+          ></path><path
+            fill="#FC2C25"
+            d="M12.004 5.982a5.417 5.417 0 0 1 3.824 1.494l2.846-2.846a9.581 9.581 0 0 0-6.67-2.593A9.967 9.967 0 0 0 3.095 7.53l3.312 2.57c.787-2.363 2.996-4.117 5.597-4.117Z"
+          ></path>
+        </svg>
+        <h5>Google <b>5.0</b></h5>
+      </div>
+      <div class="sel_graph">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 25"
+          class="injected-svg"
+          data-src="https://static.elfsight.com/icons/app-all-in-one-reviews-icons-thumbtack-multicolor.svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          ><circle cx="12" cy="12.5" r="10" fill="#009FD9"></circle><path
+            fill="#fff"
+            d="M12.606 10.43v4.877c0 .842-.22 1.667-.642 2.386l-.456.807-.455-.807a4.712 4.712 0 0 1-.642-2.386v-3.842c.54-.755 1.35-1.035 2.195-1.035ZM16 7.5v2.07H7V7.5h9Z"
+          ></path>
+        </svg>
+        <h5>Thumbtack <b>4.9</b></h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-reviews__container full-comment-page-reviews__container" id="d3_model">
+    <GoogleReviews />
+    <ThumbtackReviews />
+    <button class="load-more" id="load-more-d3_model">Load More</button>
+  </div>
+
+  <div class="page-reviews__container google-comment-page-reviews__container" id="video_editing">
+    <GoogleReviews />
+    <button class="load-more" id="load-more-video_editing">Load More</button>
+  </div>
+
+  <div class="page-reviews__container thumbtack-comment-page-reviews__container" id="graphic_arts">
+    <ThumbtackReviews />
+    <button class="load-more" id="load-more-graphic_arts">Load More</button>
+  </div>
+</div>
+
+
+<!-- кнопка Load More показ более 8 элементов -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    function setupReviewLoading(containerId, buttonId) {
+      const reviewsContainer = document.getElementById(containerId);
+      const reviews = reviewsContainer.querySelectorAll(".content-page");
+      const loadMoreButton = document.getElementById(buttonId);
+      let visibleCount = 0;
+      const increment = 8;
+
+      function showMoreReviews() {
+        for (
+          let i = visibleCount;
+          i < visibleCount + increment && i < reviews.length;
+          i++
+        ) {
+          reviews[i].classList.add("visibleLoadMore");
+        }
+        visibleCount += increment;
+
+        if (visibleCount >= reviews.length) {
+          loadMoreButton.style.display = "none";
+        }
+      }
+
+      loadMoreButton.addEventListener("click", showMoreReviews);
+      showMoreReviews();
+    }
+
+    setupReviewLoading("d3_model", "load-more-d3_model");
+    setupReviewLoading("video_editing", "load-more-video_editing");
+    setupReviewLoading("graphic_arts", "load-more-graphic_arts");
+  });
+</script>
+
+<!-- переключение по вкладкам верхнего меню  reviews-->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    const d3model = document.getElementById("d3_model");
+    const videoediting = document.getElementById("video_editing");
+    const graphicarts = document.getElementById("graphic_arts");
+
+    document.querySelector(".sel_3d").addEventListener("click", () => {
+      showElement(d3model);
+      removeClassFromAll(".any_task_cont_selection div", "sel_still");
+      toggleClass(".sel_3d", "sel_still");
+    });
+
+    document.querySelector(".sel_vid").addEventListener("click", () => {
+      showElement(videoediting);
+      removeClassFromAll(".any_task_cont_selection div", "sel_still");
+      toggleClass(".sel_vid", "sel_still");
+    });
+
+    document.querySelector(".sel_graph").addEventListener("click", () => {
+      showElement(graphicarts);
+      removeClassFromAll(".any_task_cont_selection div", "sel_still");
+      toggleClass(".sel_graph", "sel_still");
+    });
+
+    function showElement(elementToShow) {
+      if (elementToShow !== d3model) {
+        d3model.style.display = "none";
+      }
+      if (elementToShow !== videoediting) {
+        videoediting.style.display = "none";
+      }
+      if (elementToShow !== graphicarts) {
+        graphicarts.style.display = "none";
+      }
+
+      elementToShow.style.display = "grid";
+    }
+
+    function removeClassFromAll(selector, className) {
+      document.querySelectorAll(selector).forEach((element) => {
+        element.classList.remove(className);
+      });
+    }
+
+    function toggleClass(selector, className) {
+      document.querySelector(selector).classList.toggle(className);
+    }
+  });
+</script>
+
+<!-- показать больше Read More -->
+<script defer>
+  let more = document.querySelectorAll(".more");
+  for (let i = 0; i < more.length; i++) {
+    more[i].addEventListener("click", function () {
+      more[i].parentNode.classList.toggle("comment-active");
+    });
+  }
+</script>
