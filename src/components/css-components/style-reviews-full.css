@@ -235,7 +235,7 @@
 
 .more p {
   margin: 0;
-  color: #3838389c !important;
+  color: rgb(49 49 49) !important;
 }
 
 .more:hover {
@@ -245,7 +245,7 @@
 .more:before {
   content: 'Read More';
   font-size: 16px;
-  color: rgb(65 65 65 / 70%);
+  color: rgb(49 49 49);
 }
 
 .content-b.comment-active .more:before {
