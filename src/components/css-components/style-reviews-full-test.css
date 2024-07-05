@@ -265,7 +265,7 @@
 
 .google-b svg {
   width: 100%;
-  /* max-width: 100px; */
+  /* max-width: 100% !important; */
   height: auto;
 }
 

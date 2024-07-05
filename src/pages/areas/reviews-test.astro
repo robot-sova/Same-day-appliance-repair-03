@@ -1,13 +1,26 @@
 ---
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Features from "@components/features.astro";
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/Layout.astro";
+import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
+
+
+
+
 import GoogleReviews from "@components/reviews-google.astro";
 import ThumbtackReviews from "@components/reviews-thumbtack.astro";
 
-import "components/css-components/style-reviews-full.css";
+import "components/css-components/style-reviews-full-test.css";
 ---
 
+<Navbar />
+<Reviews />
+<Layout title="Same Day Appliance Repair - Book Today">
 
-
-pause 
 <div class="page-reviews">
   <h2>Real Customer Reviews From Our Google and Thumbtack Profile</h2>
 
@@ -20,7 +33,8 @@ pause
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          viewBox="0 0 24 24"
+          width="24px"
+          height="24px"
           class="injected-svg"
           data-src="https://static.elfsight.com/icons/app-all-in-one-reviews-icons-google-multicolor.svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -44,7 +58,8 @@ pause
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          viewBox="0 0 24 25"
+          width="24px"
+          height="24px"
           class="injected-svg"
           data-src="https://static.elfsight.com/icons/app-all-in-one-reviews-icons-thumbtack-multicolor.svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -76,8 +91,19 @@ pause
 </div>
 
 
+
+</Layout>
+<Cta />
+
+
+
+
+
+
+
+
 <!-- кнопка Load More показ более 8 элементов -->
-<script defer>
+<!-- <script defer>
   document.addEventListener("DOMContentLoaded", function () {
     function setupReviewLoading(containerId, buttonId) {
       const reviewsContainer = document.getElementById(containerId);
@@ -109,7 +135,47 @@ pause
     setupReviewLoading("video_editing", "load-more-video_editing");
     setupReviewLoading("graphic_arts", "load-more-graphic_arts");
   });
+</script> -->
+
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    function setupReviewLoading(containerId, buttonId) {
+      const reviewsContainer = document.getElementById(containerId);
+      const reviews = reviewsContainer.getElementsByClassName("content-page");
+      const loadMoreButton = document.getElementById(buttonId);
+      let visibleCount = 0;
+      const increment = 8;
+
+      function showMoreReviews() {
+        for (
+          let i = visibleCount;
+          i < visibleCount + increment && i < reviews.length;
+          i++
+        ) {
+          reviews[i].classList.add("visibleLoadMore");
+        }
+        visibleCount += increment;
+
+        if (visibleCount >= reviews.length) {
+          loadMoreButton.style.display = "none";
+        }
+      }
+
+      loadMoreButton.addEventListener("click", showMoreReviews);
+      showMoreReviews();
+    }
+
+    setupReviewLoading("d3_model", "load-more-d3_model");
+    setupReviewLoading("video_editing", "load-more-video_editing");
+    setupReviewLoading("graphic_arts", "load-more-graphic_arts");
+  });
 </script>
+
+
+
+
+
+
 
 <!-- переключение по вкладкам верхнего меню  reviews-->
 <script defer>
