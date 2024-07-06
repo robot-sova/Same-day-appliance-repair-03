@@ -74,7 +74,7 @@
 
 .f-content-machinery {
     max-width: 140px;
-    /* min-height: 150px; */
+    min-height: 128px;
     justify-self: center;
     align-self: center;
     margin-top: 7px;
