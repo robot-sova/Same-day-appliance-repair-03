@@ -2526,31 +2526,3 @@ import "css/service/style_services.css";
 </Layout>
 <!-- <LogoBrands /> -->
 
-<script>
-  for (let i = 1; i <= 20; i++) {
-      const logoBranPh = document.querySelector(`.logo-bran-ph-${i}`);
-      const logoBranDLink = document.querySelector(`.logo-bran-d-${i} a`);
-
-      logoBranPh.addEventListener('mouseover', function() {
-          logoBranDLink.classList.add('hovered');
-          logoBranPh.classList.add('hovered');
-      });
-
-      logoBranPh.addEventListener('mouseout', function() {
-          logoBranDLink.classList.remove('hovered');
-          logoBranPh.classList.remove('hovered');
-      });
-
-      const logoBranD = document.querySelector(`.logo-bran-d-${i}`);
-
-      logoBranD.addEventListener('mouseover', function() {
-          logoBranPh.querySelector('img').classList.add('hovered');
-          logoBranPh.classList.add('hovered');
-      });
-
-      logoBranD.addEventListener('mouseout', function() {
-          logoBranPh.querySelector('img').classList.remove('hovered');
-          logoBranPh.classList.remove('hovered');
-      });
-  }
-</script>
