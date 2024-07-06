@@ -97,8 +97,8 @@
 .d-content-machinery {
     width: 100%;
     display: grid;
-    min-height: 50px;
-    margin-top: 7px;
+    min-height: 72px;
+    /* margin-top: 7px; */
 }
 
 .d-content-machinery p {
