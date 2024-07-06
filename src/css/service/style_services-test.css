@@ -53,7 +53,6 @@ h1 {
     font-size: clamp(35px, 7vw, 60px);
     line-height: clamp(56px, 8vh, 60px);
     font-weight: 900;
-    white-space: nowrap;
 }
 
 
@@ -87,13 +86,10 @@ main {
     max-width: 1920px;
     justify-self: center;
     height: 100%;
-    padding: 10% 0;
+    padding: 2% 3% 1% 3%;
 }
 
-/* .washer-page-header-d-full {
-    padding-top: clamp(5%, 8vh, 10%);
-    padding-bottom: clamp(3%, 5vh, 10%);
-} */
+
 
 .furnace-page-header-d-full .page-header-d {
     width: 45%;
@@ -111,20 +107,25 @@ main {
 
 .page-header-d {
     left: 0;
-    width: 50%;
+    width: 80%;
     position: relative;
     align-self: center;
-    margin-top: 3%;
-    margin-left: 3%;
+}
+
+@media (min-width:1440px) {
+    .page-header-d {
+        width: 50%;
+    }
+
+    .page-header-d-full {
+        padding: 3% 3% 3% 3%;
+    }
+
 }
 
 
 
 
-
-.page-header-d h1 {
-    margin-bottom: 3%;
-}
 
 
 .page-header-f {
@@ -134,8 +135,46 @@ main {
     margin-left: 40%;
 }
 
+.page-header-f-rel {
+    position: relative;
+}
+
+.page-header-f-gradient {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 53%, rgba(255, 255, 255, 0.8991246156665791) 68%, rgba(255, 255, 255, 0) 89%);
+    margin-top: -15%;
+    height: 30vh;
+    width: 100vw;
+}
+
 .page-header-f img {
     width: 65%;
+}
+
+
+.page-header-p-full {
+    max-width: 1920px;
+    justify-self: center;
+    padding: 0 3% 1% 3%;
+    width: 100%;
+    text-align: left;
+}
+
+.page-header-p {
+    text-align: left;
+    width: 70%;
+}
+
+.page-header-p p {
+    color: #262626;
+    font-weight: 400;
+    font-size: clamp(16px, 3vw, 18px);
+}
+
+
+.page-header-p p:nth-child(1) {
+    margin-bottom: 10px;
 }
 
 .page213 {
@@ -1594,20 +1633,34 @@ main {
 
 @media (max-width:1024px) {
 
+    .page-header-f img {
+        display: none;
+    }
 
     .page-header-d-full {
-        padding: 5% 0;
+        padding: 2% 2%;
     }
+
+    .page-header-d {
+        width: 100%;
+    }
+
+    .page-header-p {
+        text-align: left;
+        width: 100%;
+    }
+
+
 
     /* .washer-page-header-d-full, */
     .wine-cooler-page-header-d-full,
     .wine-cellar-page-header-d-full,
-    .commercial-oven-page-header-d-full{
+    .commercial-oven-page-header-d-full {
         padding-top: clamp(2%, 2vh, 10%);
         padding-bottom: clamp(1%, 2vh, 10%);
     }
 
-    .commercial-dishwasher-page-header-d-full .animate-charcter{
+    .commercial-dishwasher-page-header-d-full .animate-charcter {
         white-space: wrap;
     }
 
@@ -1714,9 +1767,7 @@ main {
         white-space: wrap;
     }
 
-    .page-header-f img {
-        display: none;
-    }
+
 
 
 
@@ -1753,11 +1804,11 @@ main {
         font-size: 19px;
     }
 
-    
+
     .costTable-Factor tr {
         font-size: 13px;
     }
-   
+
     .costTable-Factor tr:nth-child(1) {
         font-size: 16px;
     }
