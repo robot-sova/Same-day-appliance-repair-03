@@ -77,9 +77,7 @@ textarea {
   margin: 0;
 }
 
-.foto-form img {
-  width: 100%;
-}
+
 
 
 
@@ -203,9 +201,10 @@ textarea {
   }
 
   .full-form-1 {
-      width: auto;
-      margin: 2% 2%;
-  }
+    width: 100%;
+    margin: 2% auto;
+    max-width: 596px;
+}
 
   .foto-form img {
       content-visibility: visible;
@@ -274,7 +273,8 @@ textarea {
 }
 
 .slide img {
-  width: 100%;
+  max-width: 100%;
+  /* width: 100%; */
   display: block;
   content-visibility: visible !important;
 }
