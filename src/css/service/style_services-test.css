@@ -645,6 +645,7 @@ main {
 .content__page-desc-phot {
     float: left;
     margin: 10px 15px 10px 0px;
+    max-width: 450px;
 }
 
 .content__page-desc-phot img {
