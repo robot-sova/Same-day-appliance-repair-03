@@ -10,34 +10,58 @@ import Arrow from "@components/js/arrow-phone.astro";
 import Focus from "@components/js/focus-menu.astro";
 import Faqs from "@components/js/faqs.astro";
 import LogoBrands from "@components/js/logo-brands.astro";
+import ContactForm from "@components/contact-form.astro";
+
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
 <Reviews />
-<Layout title="Oven Repair Los Angeles">
+<Layout title="Oven Repair Los Angeles and Nearby Areas">
   <Container>
     <main>
       <div class="page-header">
-        <div class="page-header-d-full oven-page-header-d-full">
+
+        <div class="page-header-d-full">
           <div class="page-header-d">
             <h1>
-              <span class="animate-charcter"
-                ><p>Oven Repair</p></span>
+              <span class="animate-charcter">Oven Repair Los Angeles and Nearby Areas</span>
             </h1>
-            <Contactbtn />
           </div>
         </div>
 
         <div class="page-header-f">
-          <img
+
+          <div class="page-header-f-rel">
+            <img
             src="/oven-repair/oven-machines-page_header_photos.webp"
             alt="Oven Repair"
             loading="lazy"
-          />
+            />
+          </div>
+
+          <div class="page-header-f-gradient">
+          </div>
+
         </div>
+
+        <div class="page-header-p-full oven-page-header-p-full">
+          <div class="page-header-p">
+          <p>Having problems with your oven? We are definitely the best team to fix it, and we will solve all your appliance related problems! Why do we claim to be the best? It is not just us. Our well pleased customers, who call us back and keep recommending us to their friends and family, are proof of our quality oven repair services. If you search for oven repair Los Angeles, you will find many appliance repair companies that promise to deliver, and not many of them actually do. </p>
+          <p>To protect our customers, we ensure that our repairmen undergo extensive training in oven repairs, installation, and maintenance. We also strive to protect our customers by being an insured and licensed appliance repair company with a warranty. Providing a warranty gives our clients peace of mind, and they can call us back with a oven issue within three months after the repair. Repairing your oven is as important to us as it is to you. We strive to provide absolutely the best services in repairing your washer. This is why we promise a full refund if we cannot repair it.</p>
+          </div>
+        </div>
+
       </div>
+    </main>
+
+
+
+
+
+
+
 
       <div class="page213">
         <div class="open-full_left">
@@ -62,7 +86,7 @@ import "css/service/style_services.css";
         <div class="full_left_menu_r">
           <div class="list_left">
             <a href="#left-menu-1">
-              <h2>Oven Repair</h2>
+              <h2>Contact Form</h2>
             </a>
           </div>
 
@@ -157,13 +181,7 @@ import "css/service/style_services.css";
         <div class="page213-container">
           <div class="page213-content" id="left-menu-1">
             <div class="content__page-desc">
-              <p>
-                Repairing an oven can vary significantly in cost depending on the issue and the type of oven you have. Common problems such as a malfunctioning heating element, a broken thermostat, or a faulty control board can range from <b>$100 to $400</b>. For instance, replacing a heating element typically costs between <b>$150 and $250</b>, including labor. More complex repairs, such as fixing an oven control board, can ascend to the higher end of the spectrum, potentially costing up to $600 due to the specialized skills and parts required. It's important to factor in the model and brand of your oven, as parts for high-end or commercial units might be more expensive and less readily available, impacting both the price and the repair timeline.
-              </p>
-
-              <p>
-                Annual maintenance can help prevent costly repairs by ensuring that your oven remains in good working condition. This service often includes cleaning the interior, inspecting the heating elements, checking electrical connections, and calibrating the thermostat. Regular maintenance, which typically costs between <b>$100 and $200</b>, can extend the lifespan of your oven and improve its efficiency. However, if you encounter a significant issue, it's advisable to weigh the repair costs against the price of a new unit. In some cases, especially with older ovens, investing in a new appliance might be more cost-effective in the long run. Always consult with a professional technician who can provide an accurate diagnosis and a detailed cost estimate before proceeding with any repairs.
-              </p>
+              <ContactForm />
             </div>
           </div>
 
@@ -650,6 +668,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/GE-general-electric.webp"
                       alt="General Electric"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -661,6 +680,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/whirlpool.webp"
                       alt="Whirlpool"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -672,6 +692,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/frigidaire.webp"
                       alt="Frigidaire"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -683,6 +704,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/samsung.webp"
                       alt="Samsung"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -694,6 +716,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/lg.webp"
                       alt="LG"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -705,6 +728,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/kitchenAid.webp"
                       alt="KitchenAid"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -716,6 +740,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/maytag.webp"
                       alt="Maytag"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -727,6 +752,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/bosch.webp"
                       alt="Bosch"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -738,6 +764,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/electrolux.webp"
                       alt="Electrolux"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -749,6 +776,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/kenmore.webp"
                       alt="Kenmore"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -760,6 +788,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/viking.webp"
                       alt="Viking"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -771,6 +800,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/thermador.webp"
                       alt="Thermador"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -782,6 +812,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/wolf.webp"
                       alt="Wolf"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -793,6 +824,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/monogram.webp"
                       alt="monogram"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -804,6 +836,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/miele.webp"
                       alt="miele"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -815,6 +848,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/jennAir.webp"
                       alt="jennAir"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -826,6 +860,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/bertazzoni.webp"
                       alt="Bertazzoni"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -837,6 +872,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/fisher-paykel.webp"
                       alt="Fisher & Paykel"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -848,6 +884,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/cafe.webp"
                       alt="Cafe"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -859,6 +896,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/zline.webp"
                       alt="ZLINE"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -870,6 +908,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/dacor.webp"
                       alt="Dacor"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -1996,7 +2035,6 @@ import "css/service/style_services.css";
           </div>
         </div>
       </div>
-    </main>
     <Cta />
   </Container>
 

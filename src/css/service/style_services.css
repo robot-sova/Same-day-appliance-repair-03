@@ -127,7 +127,7 @@ main {
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 53%, rgba(255, 255, 255, 0.8991246156665791) 68%, rgba(255, 255, 255, 0) 89%);
     margin-top: -15%;
-    height: 30vh;
+    height: 33vh;
     width: 100vw;
 }
 
@@ -168,12 +168,10 @@ main {
         max-width: 100%;
     }
 
+    .oven-page-header-p-full .page-header-p p:nth-child(2) {
+        max-width: 70%;
+    }
 
-
-    /* .freezer-page-header-p-full .page-header-p p:nth-child(2),
-    .refrigerator-page-header-p-full .page-header-p p:nth-child(2) {
-        max-width: 100%;
-    } */
 }
 
 
@@ -1639,6 +1637,10 @@ main {
 
 
     .page-header-p p {
+        max-width: 100%;
+    }
+
+    .oven-page-header-p-full .page-header-p p:nth-child(2) {
         max-width: 100%;
     }
 

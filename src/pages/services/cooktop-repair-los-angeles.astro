@@ -1,7 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
-import Contactbtn from "@components/contactbtn.astro";
 import Btn from "@components/btn.astro";
 import Cta from "@components/cta.astro";
 import Navbar from "@components/navbar/navbar.astro";
@@ -10,31 +9,59 @@ import Arrow from "@components/js/arrow-phone.astro";
 import Focus from "@components/js/focus-menu.astro";
 import Faqs from "@components/js/faqs.astro";
 import LogoBrands from "@components/js/logo-brands.astro";
+import ContactForm from "@components/contact-form.astro";
+
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
 <Reviews />
-<Layout title="Cooktop Repair Los Angeles">
+<Layout title="Cooktop Repair Los Angeles and Nearby Areas">
   <Container>
     <main>
       <div class="page-header">
-        <div class="page-header-d-full dryer-page-header-d-full">
+
+        <div class="page-header-d-full">
           <div class="page-header-d">
-            <h1><span class="animate-charcter">Cooktop Repair</span></h1>
-            <Contactbtn />
+            <h1>
+              <span class="animate-charcter">Cooktop Repair Los Angeles and Nearby Areas</span>
+            </h1>
           </div>
         </div>
 
         <div class="page-header-f">
-          <img
+
+          <div class="page-header-f-rel">
+            <img
             src="/stove-repair/stove-page_header_photos.webp"
             alt="Cooktop Repair"
             loading="lazy"
-          />
+            />
+          </div>
+
+          <div class="page-header-f-gradient">
+          </div>
+
         </div>
+
+        <div class="page-header-p-full">
+          <div class="page-header-p">
+          <p>Having problems with your cooktop? We are definitely the best team to fix it, and we will solve all your appliance related problems! Why do we claim to be the best? It is not just us. Our well pleased customers, who call us back and keep recommending us to their friends and family, are proof of our quality cooktop repair services. If you search for cooktop repair Los Angeles, you will find many appliance repair companies that promise to deliver, and not many of them actually do. </p>
+          <p>To protect our customers, we ensure that our repairmen undergo extensive training in cooktop repairs, installation, and maintenance. We also strive to protect our customers by being an insured and licensed appliance repair company with a warranty. Providing a warranty gives our clients peace of mind, and they can call us back with a cooktop issue within three months after the repair. Repairing your cooktop is as important to us as it is to you. We strive to provide absolutely the best services in repairing your washer. This is why we promise a full refund if we cannot repair it.</p>
+          </div>
+        </div>
+
       </div>
+    </main>
+
+
+
+
+
+
+
+  
 
       <div class="page213">
         <div class="open-full_left">
@@ -59,7 +86,7 @@ import "css/service/style_services.css";
         <div class="full_left_menu_r">
           <div class="list_left">
             <a href="#left-menu-1">
-              <h2>Cooktop Repair</h2>
+              <h2>Contact Form</h2>
             </a>
           </div>
 
@@ -152,15 +179,10 @@ import "css/service/style_services.css";
         </div>
 
         <div class="page213-container">
+
           <div class="page213-content" id="left-menu-1">
             <div class="content__page-desc">
-              <p>
-                Cooktop repair costs can vary significantly depending on the type of cooktop, the nature of the problem, and the specific parts required for the fix. For minor issues, such as replacing a malfunctioning burner on an electric cooktop, repair costs might range from <b>$50 to $150</b>, including both parts and labor. On the other hand, more complex repairs, like fixing wiring issues or replacing a control board, can cost anywhere from <b>$200 to $500</b>. Gas cooktop repairs tend to be slightly more expensive due to the additional safety measures required. For instance, addressing ignition problems or fixing a gas leak can cost between <b>$100 and $400</b>, depending on the severity of the issue and the repair technician's rates.
-              </p>
-
-              <p>
-                It's also worth noting that labor costs can vary based on geographic location and the expertise of the technician. In urban areas or regions with a higher cost of living, labor charges may be higher, potentially adding an additional <b>$50 to $100</b> per hour to the repair bill. Emergency or same-day services can also come with a premium, sometimes increasing the overall cost by 20% to 50%. For homeowners considering whether to repair or replace their cooktop, it's important to weigh the repair costs against the price of a new unit, which can range from <b>$300</b> for basic models to over <b>$1,500</b> for high-end cooktops. Regular maintenance and timely repairs can often extend the lifespan of a cooktop, making the investment in repairs a cost-effective option in the long run.
-              </p>
+              <ContactForm />
             </div>
           </div>
 
@@ -472,6 +494,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/GE-general-electric.webp"
                       alt="General Electric"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -483,6 +506,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/whirlpool.webp"
                       alt="Whirlpool"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -494,6 +518,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/kitchenAid.webp"
                       alt="KitchenAid"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -505,6 +530,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/samsung.webp"
                       alt="Samsung"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -516,6 +542,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/lg.webp"
                       alt="LG"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -527,6 +554,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/bosch.webp"
                       alt="Bosch"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -538,6 +566,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/frigidaire.webp"
                       alt="Frigidaire"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -549,6 +578,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/maytag.webp"
                       alt="Maytag"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -560,6 +590,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/kenmore.webp"
                       alt="Kenmore"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -571,6 +602,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/jennAir.webp"
                       alt="Jenn-Air"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -582,6 +614,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/thermador.webp"
                       alt="Thermador"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -593,6 +626,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/amana.webp"
                       alt="Amana"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -604,6 +638,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/electrolux.webp"
                       alt="Electrolux"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -615,6 +650,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/viking.webp"
                       alt="Viking"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -626,6 +662,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/dacor.webp"
                       alt="Dacor"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -637,6 +674,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/wolf.webp"
                       alt="Wolf"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -648,6 +686,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/sub-zero.webp"
                       alt="Sub-Zero"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -659,6 +698,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/miele.webp"
                       alt="Miele"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -670,6 +710,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/fisher-paykel.webp"
                       alt="Fisher & Paykel"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -681,6 +722,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/hotpoint.webp"
                       alt="Hotpoint"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -692,6 +734,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/haier.webp"
                       alt="Haier"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -703,6 +746,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/bertazzoni.webp"
                       alt="Bertazzoni"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -714,6 +758,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/blomberg.webp"
                       alt="Blomberg"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -725,6 +770,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/monogram.webp"
                       alt="Monogram"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -736,6 +782,7 @@ import "css/service/style_services.css";
                       height="300px"
                       src="/brand-logos/cafe.webp"
                       alt="Café"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -2034,7 +2081,6 @@ import "css/service/style_services.css";
           </div>
         </div>
       </div>
-    </main>
     <Cta />
   </Container>
 
