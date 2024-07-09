@@ -296,14 +296,18 @@
   height: 100%;
 }
 
-
-
 .google-b p {
   visibility: hidden;
   margin: 0;
 }
 
+.google-b-webp {
+  max-width: 100px;
+}
 
+.google-b-webp img {
+  width: 100%;
+}
 
 
 
