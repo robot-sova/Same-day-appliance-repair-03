@@ -1,7 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
-import Contactbtn from "@components/contactbtn.astro";
 import Btn from "@components/btn.astro";
 import Cta from "@components/cta.astro";
 import Navbar from "@components/navbar/navbar.astro";
@@ -10,31 +9,51 @@ import Arrow from "@components/js/arrow-phone.astro";
 import Focus from "@components/js/focus-menu.astro";
 import Faqs from "@components/js/faqs.astro";
 import LogoBrands from "@components/js/logo-brands.astro";
+import ContactForm from "@components/contact-form.astro";
+
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
 <Reviews />
-<Layout title="Freezer Repair Los Angeles">
+<Layout title="Freezer Repair Los Angeles and Nearby Areas">
   <Container>
-    <main>
-      <div class="page-header">
-        <div class="page-header-d-full freezer-page-header-d-full">
-          <div class="page-header-d">
-            <h1><span class="animate-charcter">Freezer Repair</span></h1>
-            <Contactbtn />
+      <main>
+        <div class="page-header">
+  
+          <div class="page-header-d-full">
+            <div class="page-header-d">
+              <h1>
+                <span class="animate-charcter">Freezer Repair Los Angeles and Nearby Areas</span>
+              </h1>
+            </div>
           </div>
+  
+          <div class="page-header-f">
+  
+            <div class="page-header-f-rel">
+              <img
+              src="/freezer/freezer-page_header_photos.webp"
+              alt="Freezer Repair"
+              loading="lazy"
+            />
+            </div>
+  
+            <div class="page-header-f-gradient">
+            </div>
+  
+          </div>
+  
+          <div class="page-header-p-full freezer-page-header-p-full">
+            <div class="page-header-p">
+            <p> Having problems with your freezer? We are definitely the best team to fix it, and we will solve all your appliance related problems! Why do we claim to be the best? It is not just us. Our well pleased customers, who call us back and keep recommending us to their friends and family, are proof of our quality refrigerator repair services. If you search for refrigerator repair Los Angeles, you will find many appliance repair companies that promise to deliver, and not many of them actually do. </p>
+            <p>To protect our customers, we ensure that our repairmen undergo extensive training in refrigerator repairs, installation, and maintenance. We also strive to protect our customers by being an insured and licensed appliance repair company with a warranty. Providing a warranty gives our clients peace of mind, and they can call us back with a refrigerator issue within three months after the repair. Repairing your refrigerator is as important to us as it is to you. We strive to provide the absolutely best services in repairing your refrigerator. This is why we promise a full refund if we cannot repair it.</p>
+            </div>
+          </div>
+  
         </div>
-
-        <div class="page-header-f">
-          <img
-            src="/freezer/freezer-page_header_photos.webp"
-            alt="Freezer Repair"
-            loading="lazy"
-          />
-        </div>
-      </div>
+      </main>
 
       <div class="page213">
         <div class="open-full_left">
@@ -160,33 +179,7 @@ import "css/service/style_services.css";
         <div class="page213-container">
           <div class="page213-content" id="left-menu-1">
             <div class="content__page-desc">
-              <p>
-                At Same Day Appliance Repair, we understand that a
-                malfunctioning freezer can disrupt your household and lead to
-                the loss of valuable food supplies. Our expert technicians are
-                equipped to handle a wide range of freezer issues, from
-                temperature inconsistencies and strange noises to complete
-                system failures. We pride ourselves on delivering prompt and
-                reliable repair services to get your freezer back to optimal
-                performance as quickly as possible.
-              </p>
-
-              <p>
-                The cost of freezer repair can vary significantly depending on
-                the nature and extent of the problem. For minor issues, such as
-                a faulty thermostat or a door seal replacement, you can expect
-                to pay between <b>$100 and $200</b>. More complex repairs, like
-                fixing a malfunctioning compressor or addressing refrigerant
-                leaks, may range from <b>$300 to $500</b>. If the freezer is
-                integrated into a larger appliance system or a high-end model
-                with advanced features, repair costs could be higher due to the
-                specialized parts and expertise required. Regardless of the
-                issue, Same Day Appliance Repair is committed to providing
-                transparent pricing and high-quality service to ensure your
-                freezer operates efficiently and reliably. For an accurate
-                estimate tailored to your specific situation, please contact our
-                customer service team.
-              </p>
+              <ContactForm />
             </div>
           </div>
 
@@ -2516,7 +2509,6 @@ import "css/service/style_services.css";
           </div>
         </div>
       </div>
-    </main>
     <Cta />
   </Container>
 
