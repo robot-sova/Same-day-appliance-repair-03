@@ -6,7 +6,7 @@ h2 {
 .feedback {
     width: 100%;
     max-width: 1920px;
-    padding: 1% 10%;
+    padding: 3% 10%;
     margin: 0 auto;
 }
 
@@ -106,6 +106,14 @@ footer {
 }
 
 
+.c_button-footer {
+    margin-top: 13px;
+}
+
+.c_button-footer a {
+    color: #fff !important;
+    font-size: 18px;
+}
 
 
 
@@ -162,9 +170,9 @@ a {
 
 .cookie-full {
     display: grid;
-  }
-  
-  #cookie_note {
+}
+
+#cookie_note {
     visibility: hidden;
     position: fixed;
     bottom: 15px;
@@ -176,16 +184,16 @@ a {
     display: grid;
     justify-self: center;
     animation: cookie-keyf 5s forwards;
-  
-  
-  }
-  
-  #cookie_note.show {
+
+
+}
+
+#cookie_note.show {
     visibility: visible;
     z-index: 1000;
-  }
-  
-  #cookie_note p {
+}
+
+#cookie_note p {
     margin: 0;
     font-size: 0.8rem;
     text-align: left;
@@ -193,9 +201,9 @@ a {
     padding-right: 7px;
     grid-row: 1/2;
     font-weight: 500;
-  }
-  
-  #cookie_note a {
+}
+
+#cookie_note a {
     max-width: 125px;
     padding-top: 2px;
     text-decoration-line: underline;
@@ -204,15 +212,15 @@ a {
     color: #37444b;
     text-shadow: none;
     font-size: 0.9rem;
-  }
-  
-  #cookie_note a:hover {
+}
+
+#cookie_note a:hover {
     text-decoration-thickness: 1.5px;
     color: #000;
     transition: 0.25s;
-  }
-  
-  .cookie_accept {
+}
+
+.cookie_accept {
     min-width: 90px;
     max-height: 55px;
     cursor: pointer;
@@ -226,38 +234,38 @@ a {
     text-shadow: 1.2px 1.2px 2px black;
     box-shadow: inset 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 }
-  
-  .cookie_accept:hover {
+
+.cookie_accept:hover {
     background-color: #000;
     /* border: 2px solid #ca0913; */
-  }
-  
-  
-  @media (max-width:767px) {
+}
+
+
+@media (max-width:767px) {
     .cookie_accept {
-      grid-row: 2/2;
-      margin-top: 7px;
-      padding: 7px;
-      justify-self: center;
-      width: 50%;
+        grid-row: 2/2;
+        margin-top: 7px;
+        padding: 7px;
+        justify-self: center;
+        width: 50%;
     }
-  }
-  
-  
-  @keyframes cookie-keyf {
-  
+}
+
+
+@keyframes cookie-keyf {
+
     0%,
     99% {
-      bottom: -160px;
+        bottom: -160px;
     }
-  
-    100% {
-      bottom: 15px;
-  
-    }
-  }
 
-  /* куки */
+    100% {
+        bottom: 15px;
+
+    }
+}
+
+/* куки */
 
 
 
