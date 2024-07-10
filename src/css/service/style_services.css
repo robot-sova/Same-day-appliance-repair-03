@@ -467,8 +467,8 @@ main {
 #left-menu-16::before {
     content: '';
     display: block;
-    height: 125px;
-    margin-top: -125px;
+    height: 130px;
+    margin-top: -130px;
     z-index: -5;
     position: relative;
 }
