@@ -508,6 +508,10 @@ main {
     display: inline-block;
 }
 
+.column3-content__page-desc ul li {
+    display: grid;
+}
+
 
 
 .content__page-desc li {
