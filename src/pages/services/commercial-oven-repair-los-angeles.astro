@@ -10,33 +10,51 @@ import Arrow from "@components/js/arrow-phone.astro";
 import Focus from "@components/js/focus-menu.astro";
 import Faqs from "@components/js/faqs.astro";
 import LogoBrands from "@components/js/logo-brands.astro";
+import ContactForm from "@components/contact-form.astro";
+
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
 <Reviews />
-<Layout title="Commercial Oven Repair Los Angeles">
+<Layout title="Commercial Oven Repair Los Angeles and Nearby Areas">
   <Container>
     <main>
       <div class="page-header">
-        <div class="page-header-d-full commercial-oven-page-header-d-full">
+
+        <div class="page-header-d-full">
           <div class="page-header-d">
             <h1>
-              <span class="animate-charcter">Commercial Oven <br> Repair</span>
+              <span class="animate-charcter">Commercial Oven Repair Los Angeles and Nearby Areas</span>
             </h1>
-            <Contactbtn />
           </div>
         </div>
 
         <div class="page-header-f">
-          <img
+
+          <div class="page-header-f-rel">
+            <img
             src="/commercial-oven-stove/commercial-oven-page_header_photos.webp"
-            alt="Commercial Oven Repair"
+            alt="Commercial Oven Repair Los Angeles"
             loading="lazy"
           />
+          </div>
+
+          <div class="page-header-f-gradient">
+          </div>
+
         </div>
+
+        <div class="page-header-p-full">
+          <div class="page-header-p">
+          <p>Looking for commercial oven repair Los Angeles? We are definitely the best team to fix it, and we will solve all your appliance related problems! Why do we claim to be the best? It is not just us. Our well pleased customers, who call us back and keep recommending us to their friends and family, are proof of our quality commercial oven repair services. If you search for commercial oven repair Los Angeles, you will find many appliance repair companies that promise to deliver, and not many of them actually do. </p>
+          <p>To protect our customers, we ensure that our repairmen undergo extensive training in commercial oven repairs, installation, and maintenance. We also strive to protect our customers by being an insured and licensed appliance repair company with a warranty. Providing a warranty gives our clients peace of mind, and they can call us back with a commercial oven issue within three months after the repair. Repairing your commercial oven is as important to us as it is to you. We strive to provide absolutely the best services in repairing your washer. This is why we promise a full refund if we cannot repair it.</p>
+          </div>
+        </div>
+
       </div>
+    </main>
 
       <div class="page213">
         <div class="open-full_left">
@@ -62,7 +80,7 @@ import "css/service/style_services.css";
 
           <div class="list_left">
             <a href="#left-menu-1">
-              <h2>Commercial Oven Repair</h2>
+              <h2>Contact Form</h2>
             </a>
           </div>
 
@@ -155,12 +173,7 @@ import "css/service/style_services.css";
         <div class="page213-container">
           <div class="page213-content" id="left-menu-1">
             <div class="content__page-desc">
-              <p>
-                When it comes to commercial oven repair, ensuring your equipment is in top working condition is crucial for the smooth operation of your kitchen. Our expert technicians are trained to handle a wide range of commercial oven issues, from temperature inconsistencies to complete breakdowns. We offer a transparent pricing structure to meet the diverse needs of our clients. Basic diagnostic services start at <b>$100</b>, which includes a thorough inspection and identification of the problem. Once the issue is diagnosed, we'll provide a detailed estimate for the necessary repairs, with labor costs typically ranging from <b>$75 to $150</b> per hour, depending on the complexity of the work.
-              </p>
-              <p>
-                For more extensive repairs, such as replacing heating elements, thermostats, or control boards, parts and labor can vary. On average, these repairs can range from <b>$300 to $1,200</b>. We strive to use high-quality, OEM parts to ensure longevity and reliability, and we offer a 90-day warranty on all our repairs to give you peace of mind. For regular clients, we also offer maintenance contracts that can help prevent costly breakdowns, which include quarterly inspections and tune-ups. Investing in regular maintenance can save you money in the long run by keeping your equipment running efficiently and extending its lifespan.
-              </p>
+              <ContactForm />
             </div>
           </div>
 
@@ -1578,12 +1591,11 @@ import "css/service/style_services.css";
           </div>
         </div>
       </div>
-    </main>
-    <Cta />
-  </Container>
+    </Container>
+  </Layout>
+  <Cta />
 
   <Arrow />
   <Focus />
   <Faqs />
-</Layout>
 <LogoBrands />

@@ -234,9 +234,10 @@ textarea {
   }
 
   .but-request-callback {
-      min-width: 230px;
-
-  }
+    min-width: 230px;
+    margin: 30px auto;
+    margin-bottom: 10px;
+}
 
 }
 

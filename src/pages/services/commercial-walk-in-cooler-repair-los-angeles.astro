@@ -10,33 +10,52 @@ import Arrow from "@components/js/arrow-phone.astro";
 import Focus from "@components/js/focus-menu.astro";
 import Faqs from "@components/js/faqs.astro";
 import LogoBrands from "@components/js/logo-brands.astro";
+import ContactForm from "@components/contact-form.astro";
+
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
 <Reviews />
-<Layout title="Walk in Cooler Repair Los Angeles">
+<Layout title="Walk in Cooler Repair Los Angeles and Nearby Areas">
   <Container>
     <main>
       <div class="page-header">
-        <div class="page-header-d-full walk-in-cooler-page-header-d-full">
+
+        <div class="page-header-d-full">
           <div class="page-header-d">
             <h1>
-              <span class="animate-charcter">Walk-in Cooler <br> Repair</span>
+              <span class="animate-charcter">Walk in Cooler Repair Los Angeles and Nearby Areas</span>
             </h1>
-            <Contactbtn />
           </div>
         </div>
 
         <div class="page-header-f">
-          <img
+
+          <div class="page-header-f-rel">
+            <img
             src="/commercial-walk-in-freezer/walk-in-cooler-page_header_photos.webp"
-            alt="Walk-in Cooler Repair"
+            alt="Walk in Cooler Repair Los Angeles"
             loading="lazy"
           />
+          </div>
+
+          <div class="page-header-f-gradient">
+          </div>
+
         </div>
+
+        <div class="page-header-p-full">
+          <div class="page-header-p">
+          <p>Looking for walk in cooler repair Los Angeles? We are definitely the best team to fix it, and we will solve all your appliance related problems! Why do we claim to be the best? It is not just us. Our well pleased customers, who call us back and keep recommending us to their friends and family, are proof of our quality commercial walk-in cooler repair services. If you search for commercial walk-in cooler repair Los Angeles, you will find many appliance repair companies that promise to deliver, and not many of them actually do. </p>
+          <p>To protect our customers, we ensure that our repairmen undergo extensive training in commercial walk-in cooler repairs, installation, and maintenance. We also strive to protect our customers by being an insured and licensed appliance repair company with a warranty. Providing a warranty gives our clients peace of mind, and they can call us back with a commercial walk-in cooler issue within three months after the repair. Repairing your commercial walk-in cooler is as important to us as it is to you. We strive to provide absolutely the best services in repairing your washer. This is why we promise a full refund if we cannot repair it.</p>
+          </div>
+        </div>
+
       </div>
+    </main>
+
 
       <div class="page213">
         <div class="open-full_left">
@@ -62,7 +81,7 @@ import "css/service/style_services.css";
 
           <div class="list_left">
             <a href="#left-menu-1">
-              <h2>Walk-in Cooler Repair</h2>
+              <h2>Contact Form</h2>
             </a>
           </div>
 
@@ -159,14 +178,10 @@ import "css/service/style_services.css";
         </div>
 
         <div class="page213-container">
+
           <div class="page213-content" id="left-menu-1">
             <div class="content__page-desc">
-              <p>
-                When it comes to walk-in cooler repair, ensuring the efficiency and reliability of your unit is crucial for the preservation of perishable goods. Our professional repair services include a comprehensive diagnostic to identify and address issues such as temperature inconsistencies, refrigerant leaks, malfunctioning compressors, and faulty door seals. Our certified technicians have extensive experience working with various brands and models, ensuring that your walk-in cooler operates at optimal performance. Regular maintenance and timely repairs can prevent costly breakdowns and extend the lifespan of your cooler.
-              </p>
-              <p>
-                Our pricing is transparent and competitive. Depending on the nature of the repair, labor costs may range from <b>$75 to $150</b> per hour, with most common repairs, such as replacing a thermostat or fixing a refrigerant leak, typically costing between <b>$200 and $500</b> in total. For more extensive repairs, such as compressor replacement, costs can range from <b>$1,000 to $2,500</b> depending on the specific requirements and parts needed. We also offer maintenance packages starting at <b>$250</b> per visit, which include a full system check, cleaning, and minor adjustments to keep your walk-in cooler in top condition. With our commitment to quality service and customer satisfaction, you can trust us to keep your cooler running smoothly and efficiently.
-              </p>
+              <ContactForm />
             </div>
           </div>
 
@@ -1916,14 +1931,15 @@ import "css/service/style_services.css";
             </div>
             <Btn />
           </div>
+
         </div>
+
       </div>
-    </main>
-    <Cta />
-  </Container>
+    </Container>
+  </Layout>
+  <Cta />
 
   <Arrow />
   <Focus />
   <Faqs />
-</Layout>
 <LogoBrands />

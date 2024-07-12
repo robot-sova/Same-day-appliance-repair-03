@@ -1,7 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
-import Contactbtn from "@components/contactbtn.astro";
 import Btn from "@components/btn.astro";
 import Cta from "@components/cta.astro";
 import Navbar from "@components/navbar/navbar.astro";
@@ -10,33 +9,52 @@ import Arrow from "@components/js/arrow-phone.astro";
 import Focus from "@components/js/focus-menu.astro";
 import Faqs from "@components/js/faqs.astro";
 import LogoBrands from "@components/js/logo-brands.astro";
+import ContactForm from "@components/contact-form.astro";
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
 <Reviews />
-<Layout title="Commercial Showcase Refrigerator Repair Los Angeles">
+<Layout title="Commercial Showcase Refrigerator Repair Los Angeles and Nearby Areas">
   <Container>
     <main>
       <div class="page-header">
-        <div class="page-header-d-full washer-page-header-d-full">
+
+        <div class="page-header-d-full">
           <div class="page-header-d">
             <h1>
-              <span class="animate-charcter">Showcase Refrigerator <br/> Repair</span>
+              <span class="animate-charcter">Commercial Showcase Refrigerator Repair Los Angeles and Nearby Areas</span>
             </h1>
-            <Contactbtn />
           </div>
         </div>
 
         <div class="page-header-f">
-          <img
+
+          <div class="page-header-f-rel">
+            <img
             src="/showcase-refrigerator/showcase-refrigerator-page_header_photos.webp"
-            alt="Showcase Refrigerator Repair"
+            alt="Showcase Refrigerator Repair Los Angeles"
             loading="lazy"
           />
+          </div>
+
+          <div class="page-header-f-gradient">
+          </div>
+
         </div>
+
+        <div class="page-header-p-full">
+          <div class="page-header-p">
+          <p>Looking for commercial showcase refrigerator Los Angeles? We are definitely the best team to fix it, and we will solve all your appliance related problems! Why do we claim to be the best? It is not just us. Our well pleased customers, who call us back and keep recommending us to their friends and family, are proof of our quality commercial showcase refrigerator repair services. If you search for commercial showcase refrigerator repair Los Angeles, you will find many appliance repair companies that promise to deliver, and not many of them actually do. </p>
+          <p>To protect our customers, we ensure that our repairmen undergo extensive training in commercial showcase refrigerator repairs, installation, and maintenance. We also strive to protect our customers by being an insured and licensed appliance repair company with a warranty. Providing a warranty gives our clients peace of mind, and they can call us back with a commercial showcase refrigerator issue within three months after the repair. Repairing your commercial showcase refrigerator is as important to us as it is to you. We strive to provide absolutely the best services in repairing your washer. This is why we promise a full refund if we cannot repair it.
+          </p>
+          </div>
+        </div>
+
       </div>
+    </main>
+
 
       <div class="page213">
         <div class="open-full_left">
@@ -62,7 +80,7 @@ import "css/service/style_services.css";
 
           <div class="list_left">
             <a href="#left-menu-1">
-              <h2>Showcase Refrigerator Repair</h2>
+              <h2>Contact Form</h2>
             </a>
           </div>
 
@@ -155,35 +173,7 @@ import "css/service/style_services.css";
         <div class="page213-container">
           <div class="page213-content" id="left-menu-1">
             <div class="content__page-desc">
-              <p>
-                At Same Day Appliance Repair, we understand how crucial it is
-                for your showcase refrigerator to function flawlessly,
-                especially in a commercial setting where it plays a vital role
-                in displaying products to your customers. Our expert technicians
-                are highly trained and experienced in diagnosing and repairing a
-                wide range of issues that can affect your showcase refrigerator,
-                from temperature inconsistencies to compressor failures and
-                beyond.
-              </p>
-              <p>
-                We believe in transparent and competitive pricing. Once our
-                technician identifies the issue, you'll receive a detailed
-                estimate of the repair costs before any work begins. Repair
-                costs can vary depending on the complexity of the issue and the
-                parts required. For instance, minor repairs such as replacing a
-                thermostat or fixing a fan motor typically range from <b>$150 to $300</b>, while more extensive repairs such as compressor replacements
-                can range from <b>$500 to $1,200</b>.
-              </p>
-              <p>
-                At Same Day Appliance Repair, we are committed to providing
-                high-quality service at fair prices. We use only OEM (Original
-                Equipment Manufacturer) parts to ensure the longevity and
-                reliability of your repairs. Plus, we offer a 90 - day warranty on
-                all parts and labor, giving you peace of mind that your
-                investment is protected. Contact us today to schedule your
-                showcase refrigerator repair and let us help you keep your
-                equipment - and your business - running smoothly.
-              </p>
+              <ContactForm />
             </div>
           </div>
 
@@ -483,6 +473,7 @@ import "css/service/style_services.css";
           </div>
 
           <div class="page213-content" id="left-menu-6">
+
             <div class="content__page-full-hed">
               <div class="content__page-hed-h">
                 <h2>Cost to Repair a Commercial Showcase Refrigerator by Brand</h2>
@@ -2222,14 +2213,14 @@ import "css/service/style_services.css";
             </div>
             <Btn />
           </div>
+
         </div>
       </div>
-    </main>
-    <Cta />
-  </Container>
+    </Container>
+  </Layout>
+  <Cta />
 
   <Arrow />
   <Focus />
   <Faqs />
-</Layout>
-<LogoBrands />
+  <LogoBrands />
