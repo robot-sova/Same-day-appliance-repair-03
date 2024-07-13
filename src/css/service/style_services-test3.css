@@ -133,7 +133,9 @@ main {
 }
 
 .page-header-f img {
-    width: 65%;
+    /* width: 65%; */
+
+    max-width: 65%;
 }
 
 
@@ -1744,7 +1746,8 @@ main {
 @media (max-width:768px) {
 
     .page-header-f img {
-        width: 100%;
+        max-width: 100%;
+        /* width: 100%; */
     }
 
     .page-header-d-full {
