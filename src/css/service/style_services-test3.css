@@ -1628,16 +1628,6 @@ main {
 
 
 
-@media (min-width:1440px) {
-    .page-header-f img {
-        width: 2500px;
-    }
-}
-
-
-
-
-
 @media (max-width:1024px) {
 
     .page-header-p-full {
@@ -1763,7 +1753,6 @@ main {
 @media (max-width:768px) { 
 
     .page-header-f img {
-        width: 600px;
         max-width: 100%;
     }
 
@@ -1905,11 +1894,3 @@ main {
 
 
 
-
-
-
-@media (max-width:375px) {
-    .page-header-f img {
-        width: 300px;
-    }
-}
