@@ -1628,11 +1628,11 @@ main {
 
 
 
-/* @media (min-width:1440px) {
+@media (min-width:1440px) {
     .page-header-f img {
         width: 2500px;
     }
-} */
+}
 
 
 
@@ -1763,7 +1763,7 @@ main {
 @media (max-width:768px) { 
 
     .page-header-f img {
-        /* width: 600px; */
+        width: 600px;
         max-width: 100%;
     }
 
@@ -1908,8 +1908,8 @@ main {
 
 
 
-/* @media (max-width:375px) {
+@media (max-width:375px) {
     .page-header-f img {
         width: 300px;
     }
-} */
+}
