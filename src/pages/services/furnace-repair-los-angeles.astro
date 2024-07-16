@@ -10,32 +10,56 @@ import Arrow from "@components/js/arrow-phone.astro";
 import Focus from "@components/js/focus-menu.astro";
 import Faqs from "@components/js/faqs.astro";
 import LogoBrands from "@components/js/logo-brands.astro";
+import ContactForm from "@components/contact-form.astro";
+
 
 import "css/service/style_services.css";
 ---
 
 <Navbar />
 <Reviews />
-<Layout title="Furnace Repair Los Angeles">
+<Layout title="Furnace Repair Los Angeles and Nearby Areas">
   <Container>
     <main>
       <div class="page-header">
-        <div class="page-header-d-full furnace-page-header-d-full">
+        <div class="page-header-d-full">
           <div class="page-header-d">
-            <h1><span class="animate-charcter">Furnace Repair</span></h1>
-            <Contactbtn />
+            <h1>
+              <span class="animate-charcter"
+                >Furnace Repair Los Angeles and Nearby Areas</span>
+            </h1>
           </div>
         </div>
 
         <div class="page-header-f">
-          <img
+          <div class="page-header-f-rel">
+            <img
             width="2000px"
             height="1000px"
             src="/furnace/page_header_photos-furnace.webp"
-            alt="Furnace Repair"
+            alt="Furnace Repair Los Angeles"
           />
+          </div>
+
+          <div class="page-header-f-gradient"></div>
+        </div>
+
+        <div class="page-header-p-full refrigerator-page-header-p-full">
+          <div class="page-header-p">
+            <p>
+              Looking for furnace repair Los Angeles? We are definitely the best team to fix it, and we will solve all your appliance related problems! Why do we claim to be the best? It is not just us. Our well pleased customers, who call us back and keep recommending us to their friends and family, are proof of our quality furnace repair services. If you search for furnace repair Los Angeles, you will find many HVAC repair companies that promise to deliver, and not many of them actually do.
+            </p>
+            <p>
+              To protect our customers, we ensure that our repairmen undergo extensive training in furnace repairs, installation, and maintenance. We also strive to protect our customers by being an insured and licensed HVAC repair company with a warranty. Providing a warranty gives our clients peace of mind, and they can call us back with their furnace issue within three months after the repair. Repairing your furnace is as important to us as it is to you. We strive to provide absolutely the best services in repairing your furnace. This is why we promise a full refund if we cannot repair it.
+            </p>
+          </div>
         </div>
       </div>
+    </main>
+
+
+
+
 
       <div class="page213">
         <div class="open-full_left">
@@ -60,7 +84,7 @@ import "css/service/style_services.css";
         <div class="full_left_menu_r">
           <div class="list_left">
             <a href="#left-menu-1">
-              <h2>Furnace Repair</h2>
+              <h2>Contact Form</h2>
             </a>
           </div>
 
@@ -149,34 +173,7 @@ import "css/service/style_services.css";
         <div class="page213-container">
           <div class="page213-content" id="left-menu-1">
             <div class="content__page-desc">
-              <p>
-                Maintaining a well-functioning furnace is essential for keeping
-                your home comfortable, especially during the colder months. Our
-                furnace repair services are designed to address a wide range of
-                issues, from malfunctioning thermostats and ignition problems to
-                airflow and heat exchanger issues. Our certified technicians are
-                experienced in servicing various furnace brands and models,
-                ensuring accurate diagnostics and efficient repairs. Regular
-                inspections and timely interventions not only improve your
-                furnace's efficiency but also extend its lifespan, promoting a
-                safer and more reliable heating system for your home.
-              </p>
-
-              <p>
-                The cost of furnace repair can vary significantly depending on
-                the complexity of the issue and the parts needed. On average,
-                minor repairs such as thermostat adjustments or replacing a
-                clogged filter may cost between <b>$100 to $300</b>. More
-                extensive repairs, such as fixing a malfunctioning ignition
-                system or replacing a blower motor, can range from <b
-                  >$400 to $1,500</b
-                >. Our initial diagnostic fee is waived if you proceed with the
-                repair. We provide detailed quotes upfront to ensure
-                transparency, so you know exactly what to expect. Our goal is to
-                offer high-quality service at a fair price, ensuring your
-                furnace is restored to optimal performance without any
-                unexpected expenses.
-              </p>
+              <ContactForm />
             </div>
           </div>
 
@@ -1889,12 +1886,11 @@ import "css/service/style_services.css";
 
         </div>
       </div>
-    </main>
-    <Cta />
-  </Container>
+    </Container>
+  </Layout>
+  <Cta />
 
   <Arrow />
   <Focus />
   <Faqs />
-</Layout>
 <LogoBrands />
