@@ -9,7 +9,8 @@ import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
 import Unitscommercial from "@components/units-commercial-equipment-same-day.astro";
 import Unitsappliances from "@components/units-appliances-same-day.astro";
-
+import Costanchor from "@components/price-list/components_dryer-repair-cost.astro";
+import Contactbtn from "@components/contactbtn.astro";
 import "css/style-index.css";
 ---
 
@@ -18,7 +19,55 @@ import "css/style-index.css";
 <Layout title="Same Day Appliance Repair - Book Today">
   <div class="full-index">
     <div class="full-index-1920">
+      <!---test -->
       <h1><span class="animate-charcter"> Same Day Appliance Repair</span></h1>
+
+      <div class="two-col-grid">
+        <div class="col-one">
+          <img
+            loading="lazy"
+            width="500px"
+            height="500px"
+            src="/fireplace-repair/fireplace-repair-1.webp"
+            alt="Same Day Appliance Repair"
+          />
+
+          <Contactbtn />
+        </div>
+
+        <div class="col-two">
+          <Costanchor />
+
+          <p>
+            At Same Day Appliance Repair, we are a family-owned business
+            committed to enhancing your customer experience. We understand the
+            frustration of appliance repairs, and we pride ourselves on our
+            transparency and reliability. This page is designed to give you a
+            thorough understanding of our pricing policies, the costs associated
+            with a fireplace repair, and our unique approach to service.
+          </p>
+
+          <p><b>Have Questions? We’re Here to Help!</b></p>
+
+          <p>
+            Feel free to call us if you have any questions. Our team is
+            dedicated to helping you and making sure you're happy.
+          </p>
+
+          <h2>How Much Does it Cost to Repair a Fireplace?</h2>
+          <p>
+            The typical cost to repair a fireplace varies from $100 to $3000,
+            including parts and labor. A fireplace repair cost can vary based on
+            the type of issue, as well as the brand and model of your appliance.
+            Our technician will first need to diagnose the problem to provide
+            you with the most accurate estimate. Following the diagnosis, you'll
+            receive a detailed price breakdown. This helps make an informed
+            decision about whether to repair or replace your fireplace and
+            includes recommendations should you consider a replacement.
+          </p>
+        </div>
+      </div>
+      <!--test -->
 
       <div class="category category-0">
         <!-- бытовая техника  -->
