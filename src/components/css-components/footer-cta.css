@@ -142,7 +142,8 @@ a {
 
 .desc_address-footer svg {
     fill: #fff !important;
-    width: 30px;
+    width: 100%;
+    max-width: 30px;
     height: 30px;
     align-self: center;
 }
@@ -287,6 +288,10 @@ a {
     .full-footer {
         grid-template-columns: 1fr;
         padding: 7% 3%;
+    }
+
+    .address-footer h4{
+        margin-top: 8px;
     }
 
     .button-footer {
