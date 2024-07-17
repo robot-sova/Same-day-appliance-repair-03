@@ -40,16 +40,21 @@ footer {
     margin: 0 auto;
     padding: 2% 3%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.5em;
 }
 
 .button-footer {
-    justify-self: right;
+    justify-self: center;
 }
 
 .a_button-footer {
     margin-bottom: 15px;
+}
+
+.a_button-footer h3:nth-child(1) {
+    font-weight: 800;
+    font-size: 22px;
 }
 
 .a_button-footer h3 {
@@ -121,16 +126,13 @@ footer {
 
 
 .address-footer {
-    width: 100%;
+    /* width: 100%; */
+    margin: 0 auto;
     max-width: 600px;
 }
 
-.address-footer h3 {
-    margin: 0 0 7px 0;
-}
 
-.full-footer h3,
-h4,
+.full-footer h4,
 a {
     color: #fff;
 }
@@ -145,7 +147,7 @@ a {
     width: 100%;
     max-width: 30px;
     height: 30px;
-    align-self: center;
+    align-self: flex-start;
 }
 
 .content_address-footer {
@@ -157,6 +159,20 @@ a {
     color: #fff !important;
     margin: 0;
 }
+
+.content_address-footer table {
+    width: 100%;
+}
+
+.content_address-footer tr {
+    padding: 0px;
+}
+
+.content_address-footer td {
+    color: #fff;
+    
+}
+
 
 
 
@@ -270,7 +286,12 @@ a {
 
 
 
-
+@media (max-width:1024px) {
+    .full-footer {
+        padding: 2% 1%;
+        grid-gap: 1em;
+    }
+}
 
 
 
@@ -290,7 +311,7 @@ a {
         padding: 7% 3%;
     }
 
-    .address-footer h4{
+    .address-footer h4 {
         margin-top: 8px;
     }
 
@@ -300,7 +321,8 @@ a {
 
     .address-footer {
         justify-self: center;
-        width: auto;
+        width: 100%;
+        max-width: 300px;
     }
 
     .book_button-footer a {
@@ -309,6 +331,10 @@ a {
 
     .content_address-footer p {
         align-self: center;
+    }
+
+    .desc_address-footer {
+        justify-content: center;
     }
 
 }
