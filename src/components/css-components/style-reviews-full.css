@@ -329,7 +329,7 @@
 }
 
 .any_task_cont_selection h3 {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 .sel_3d h3,
