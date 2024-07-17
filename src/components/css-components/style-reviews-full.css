@@ -182,6 +182,7 @@
   height: 100%;
   max-width: 16px;
   margin-left: 5px;
+  box-shadow: none;
 }
 
 .desc-name-a svg {
@@ -205,6 +206,7 @@
 .stars-b img {
   height: 100%;
   max-width: 14px;
+  box-shadow: none;
 }
 
 .stars-b svg {
@@ -294,6 +296,7 @@
 .google-b img {
   /* width: 100%; */
   height: 100%;
+  box-shadow: none;
 }
 
 .google-b p {
@@ -307,8 +310,8 @@
 
 .google-b-webp img {
   width: 100%;
+  box-shadow: none;
 }
-
 
 
 

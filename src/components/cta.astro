@@ -2,6 +2,7 @@
 import Link from "./ui/link.astro";
 import { Icon } from "astro-icon";
 import Btn from "@components/btn.astro";
+import ReviewsFull from "@components/reviews-full.astro";
 
 import "@components/css-components/footer-cta.css";
 // import ReviewsFull from "@components/reviews-full.astro";
@@ -11,11 +12,12 @@ import "@components/css-components/footer-cta.css";
 <div id="reviews">
   <!-- скрипт отзывов грузит страницу на 17кб -->
   <div class="feedback" id="feedbackReviews">
-    <!-- <ReviewsFull /> -->
+    <ReviewsFull />
     <h2>
       Same Day Appliance Repair Reviews - Real Reviews From Real Customers
     </h2>
-    <script
+
+    <!-- <script
       defer
       src="https://static.elfsight.com/platform/platform.js"
       data-use-service-core></script>
@@ -23,7 +25,8 @@ import "@components/css-components/footer-cta.css";
     <div
       class="elfsight-app-b69045ef-2bc6-4ac0-a4a3-5c17e1820cd5"
       data-elfsight-app-lazy>
-    </div>
+    </div> -->
+
   </div>
   <!--End reviews -->
 
