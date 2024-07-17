@@ -142,6 +142,10 @@ a {
 
 }
 
+.desc_address-footer b {
+    color: #fff;
+}
+
 .desc_address-footer svg {
     fill: #fff !important;
     width: 100%;
