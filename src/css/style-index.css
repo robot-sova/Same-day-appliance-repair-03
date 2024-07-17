@@ -50,7 +50,7 @@ h2 {
     background-clip: border-box;
     background-size: 200% auto;
     color: #fff;
-    background-clip: text;
+    /* background-clip: text; */
     /* text-fill-color: transparent; */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -64,6 +64,8 @@ h2 {
 .two-col-grid {
     padding: 2% 3% 2% 3%;
     display: block;
+    z-index: 3;
+    position: relative;
 }
 
 .col-one {
@@ -78,7 +80,7 @@ h2 {
 }
 
 .full-contact-button-global {
-    margin-top: 24px;
+    margin-top: 20px;
 }
 
 .col-two p {
@@ -110,7 +112,14 @@ h2 {
 }
 
 #full-commercial-machinery-nocolor {
-    background-color: #fff;
+    background-color: #fff;  
+    z-index: 2;
+    position: relative;
+}
+
+#parts-cost-anchor {
+    z-index: 1;
+    position: relative;
 }
 
 .full-commercial-machinery h2 {
@@ -170,31 +179,37 @@ h2 {
 
 
 
-/* 
+
 
 #full-commercial-machinery-nocolor::before {
     content: '';
     display: block;
-    height: 115px;
-    margin-top: -115px;
+    height: 125px;
+    margin-top: -125px;
     z-index: -100;
+    position: relative;
+    
   }
   
   #parts-cost-anchor::before {
     content: '';
     display: block;
-    height: 115px;
-    margin-top: -115px;
+    height: 125px;
+    margin-top: -125px;
     z-index: -100;
+    position: relative;
+
   }
   
   #faqs-anchor::before {
     content: '';
     display: block;
-    height: 65px;
-    margin-top: -65px;
+    height: 100px;
+    margin-top: -100px;
     z-index: -100;
-  } */
+    position: relative;
+
+  }
   
 
 
@@ -225,26 +240,26 @@ h2 {
         grid-column: 1;
     }
 
-    /* #full-commercial-machinery-nocolor::before {
+    #full-commercial-machinery-nocolor::before {
         content: '';
         display: block;
-        height: 70px;
-        margin-top: -70px;
+        height: 85px;
+        margin-top: -85px;
       }
     
       #parts-cost-anchor::before {
         content: '';
         display: block;
-        height: 70px;
-        margin-top: -70px;
+        height: 80px;
+        margin-top: -80px;
       }
     
       #faqs-anchor::before {
         content: '';
         display: block;
-        height: 40px;
-        margin-top: -40px;
-      } */
+        height: 78px;
+        margin-top: -78px;
+      }
     
 }
 
@@ -271,27 +286,7 @@ h2 {
     }
 
 
-    /* #full-commercial-machinery-nocolor::before {
-        content: '';
-        display: block;
-        height: 55px;
-        margin-top: -55px;
-      }
-    
-      #parts-cost-anchor::before {
-        content: '';
-        display: block;
-        height: 55px;
-        margin-top: -55px;
-      }
-    
-      #faqs-anchor::before {
-        content: '';
-        display: block;
-        height: 20px;
-        margin-top: -20px;
-      } */
-    
+   
 }
 
 
