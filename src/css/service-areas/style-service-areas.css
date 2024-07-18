@@ -47,7 +47,6 @@ b {
     color: #131313;
 }
 
-
 p {
     margin: 0;
     margin-bottom: 10px;
@@ -65,7 +64,7 @@ p {
             #111112 67%,
             #858384 100%);
     background-size: auto auto;
-    background-clip: border-box;
+    /* background-clip: border-box; */
     background-size: 200% auto;
     color: #fff;
     -webkit-background-clip: text;
@@ -97,6 +96,28 @@ p {
 }
 
 
+
+
+.page-container {
+    display: block;
+}
+
+.head-content-h {
+    text-align: center;
+}
+
+.head-content-f {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+
+
+
+
+
+
+
 @media (max-width:1024px) {
 
     .page-header {
@@ -114,6 +135,25 @@ p {
         margin-bottom: 10px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
