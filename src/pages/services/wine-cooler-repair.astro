@@ -1,0 +1,52 @@
+---
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Contactbtn from "@components/contactbtn.astro";
+import Features from "@components/features.astro";
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/Layout.astro";
+import Navbar from "@components/navbar/navbar.astro";
+import Reviews from "@components/reviews.astro";
+
+import "css/service/style_services.css";
+---
+
+<Navbar />
+<Reviews />
+<Layout title="Barbecue Grill Repair Los Angeles and Nearby Areas">
+  <Container>
+    <main style="max-width: 1920px; padding: 0 10%; margin: 0 auto;">
+      <h1>
+        <span class="animate-charcter">Barbecue Grill Repair Los Angeles</span>
+        and Nearby Areas
+      </h1>
+
+      <div class="two-col-grid">
+        <div class="col-one">
+          <img
+            class="img-header"
+            src="/images/bbq-grill-repair-los-angeles-and-surrounding-areas.webp"
+            width="500"
+            height="500"
+            alt="Barbecue Grill Repair Services Los Angeles - technician repairing a fireplace"
+          />
+
+          <Contactbtn />
+        </div>
+
+        <div class="col-two">
+          <p style="text-align: start">
+          
+          </p><p style="text-align: start">
+            
+          </p><p style="text-align: start">
+         
+          </p>
+        </div>
+      </div>
+      
+    </main>
+  </Container>
+</Layout>
+<Cta />
