@@ -1,6 +1,6 @@
-h2 {
+#reviews h2 {
     text-align: center;
-    padding: 0 3%;
+    padding: 0 3% !important;
 }
 
 .feedback {
