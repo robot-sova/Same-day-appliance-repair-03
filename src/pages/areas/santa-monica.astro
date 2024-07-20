@@ -8,6 +8,7 @@ import Contactbtn from "@components/contactbtn.astro";
 import Btn from "@components/btn.astro";
 import Unitsappliances from "@components/units-appliances-santa-monica.astro";
 import Unitscommercial from "@components/units-commercial-equipment-santa-monica.astro";
+import Anchor from "@components/anchor/anchor-areas.astro";
 
 import "css/service-areas/style-service-areas.css";
 ---
@@ -32,6 +33,7 @@ import "css/service-areas/style-service-areas.css";
           <Contactbtn />
         </div>
 
+        <Anchor />
           <p>
             Looking for appliance repair Santa Monica CA? You are just in the
             right place for the best repair services! You are to expericence our
@@ -72,6 +74,7 @@ import "css/service-areas/style-service-areas.css";
       </p>
       <p></p>
 
+      <div  id="home-anchor">
       <h2>
         <strong>Home Appliance Repair Santa Monica CA</strong>
       </h2>
@@ -84,7 +87,11 @@ import "css/service-areas/style-service-areas.css";
       </p>
       <Unitsappliances />
       <Btn />
+    </div>
 
+
+
+    <div  id="commercial-anchor">
       <h2>
         <strong>Commercial Appliances Repair Santa Monica CA</strong>
       </h2>
@@ -99,6 +106,12 @@ import "css/service-areas/style-service-areas.css";
       </p>
       <Unitscommercial />
       <Btn />
+    </div>
+
+
+
+
+    
 
       <div class="page-container">
         <div class="header-container">

@@ -8,6 +8,7 @@ import Contactbtn from "@components/contactbtn.astro";
 import Btn from "@components/btn.astro";
 import Unitsappliances from "@components/units-appliances-ladera-heights.astro";
 import Unitscommercial from "@components/units-commercial-equipment-ladera-heights.astro";
+import Anchor from "@components/anchor/anchor-areas.astro";
 
 import "css/service-areas/style-service-areas.css";
 ---
@@ -32,6 +33,7 @@ import "css/service-areas/style-service-areas.css";
           <Contactbtn />
         </div>
       
+        <Anchor />
         <p>Looking for appliance repair Ladera Heights CA? You’re in the right place! Experience our fast and professional home
           appliance repair services from our expert technicians.</p>
         <p>We’ll take care of all your commercial or home appliance repairs, maintenance and installation whether it’s a dryer,
@@ -53,7 +55,7 @@ import "css/service-areas/style-service-areas.css";
 
 
 
-
+      <div  id="home-anchor">
       <h2>Home Appliance Repair Ladera Heights CA</h2>
       <p>Home appliance repair Ladera Heights, CA, includes kitchen appliance repair (refrigerator, freezer, dishwasher, oven,
         microwave, range hood, cooktop, ice maker etc.), laundry room appliance repair, fireplace repair and barbecue grill
@@ -61,11 +63,11 @@ import "css/service-areas/style-service-areas.css";
         services at no extra cost!</p>
         <Unitsappliances />
         <Btn />
+      </div>
 
 
-
-
-      <h2>Commercial Appliance Repair Ladera Heights CA</h2>
+      <div  id="commercial-anchor">
+      <h2 >Commercial Appliance Repair Ladera Heights CA</h2>
       <p>Commercial appliance repair Ladera Heights, CA, includes commercial kitchen appliance repair, commercial laundry room
         appliance repair, bar appliance repair and showcase appliance repair. We also offer property management with fair
         pricing. We get very good reviews for our courteous technicians and reliable appliance repair service at Same Day
@@ -73,7 +75,7 @@ import "css/service-areas/style-service-areas.css";
         manner. Call us to schedule your commercial appliance repair today!</p>
         <Unitscommercial />
         <Btn />
-
+      </div>
 
 
 

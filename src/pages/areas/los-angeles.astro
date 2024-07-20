@@ -11,7 +11,7 @@ import Reviews from "@components/reviews.astro";
 import Btn from "@components/btn.astro";
 import Unitscommercial from "@components/units-commercial-equipment-los-angeles.astro";
 import Unitsappliances from "@components/units-appliances-los-angeles.astro";
-import Unitsheatventcondit from "@components/units-heating-ventilation-air-conditioning.astro";
+import Anchor from "@components/anchor/anchor-areas.astro";
 
 import "css/service-areas/style-service-areas.css";
 ---
@@ -37,15 +37,7 @@ import "css/service-areas/style-service-areas.css";
           <Contactbtn />
         </div>
         <div class="col-two">
-          <p>
-            <a class="anchor" href="#household-appliance-repair">
-              Home Appliance Repair
-            </a>|<a class="anchor" href="#commercial-appliance-repair">
-              Commercial Appliance Repair
-            </a>|<a class="anchor" href="#heating">
-              Heating Ventilation And Air-Conditioning
-            </a>|<a class="anchor" href="#faq"> FAQs</a>
-          </p>
+          <Anchor />
           <p>
             Our team provides top-notch appliance repair services throughout Los
             Angeles and the surrounding areas, offering same-day responses to
@@ -180,7 +172,7 @@ import "css/service-areas/style-service-areas.css";
       </p>
 
       <!-- бытовая техника  -->
-
+      <div  id="home-anchor">
       <div
         class="full-commercial-machinery"
         id="full-commercial-machinery-nocolor">
@@ -198,9 +190,10 @@ import "css/service-areas/style-service-areas.css";
           <Unitsappliances />
         </div>
       </div>
+    </div>
 
       <!--  коммерческая техника -->
-
+      <div  id="commercial-anchor">
       <div
         class="full-commercial-machinery"
         id="full-commercial-machinery-nocolor">
@@ -211,6 +204,7 @@ import "css/service-areas/style-service-areas.css";
           <Unitscommercial />
         </div>
       </div>
+    </div>
 
       <!-- Heating, ventilation, air conditioning -->
       <!-- <div

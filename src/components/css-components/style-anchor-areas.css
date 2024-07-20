@@ -1,0 +1,62 @@
+
+
+
+#home-anchor::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-top: -120px;
+  z-index: -100;
+  position: relative;
+  
+}
+
+#commercial-anchor::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-top: -120px;
+  z-index: -100;
+  position: relative;
+
+}
+
+#feedbackReviews::before {
+  content: '';
+  display: block;
+  height: 110px;
+  margin-top: -110px;
+  z-index: -100;
+  position: relative;
+
+}
+
+
+
+
+
+
+@media (max-width:1024px) {
+ 
+  #home-anchor::before {
+      content: '';
+      display: block;
+      height: 80px;
+      margin-top: -80px;
+    }
+  
+    #commercial-anchor::before {
+      content: '';
+      display: block;
+      height: 80px;
+      margin-top: -80px;
+    }
+  
+    #feedbackReviews::before {
+      content: '';
+      display: block;
+      height: 75px;
+      margin-top: -75px;
+    }
+  
+}

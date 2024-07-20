@@ -11,6 +11,7 @@ import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
 import Unitscommercial from "@components/units-commercial-equipment-pasadena.astro";
 import Unitsappliances from "@components/units-appliances-pasadena.astro";
+import Anchor from "@components/anchor/anchor-areas.astro";
 
 import "css/service-areas/style-service-areas.css";
 ---
@@ -35,15 +36,7 @@ import "css/service-areas/style-service-areas.css";
           <Contactbtn />
         </div>
         <div class="col-two">
-          <p>
-            <a class="anchor" href="#household-appliance-repair">
-              Home Appliance Repair
-            </a>|<a class="anchor" href="#commercial-appliance-repair">
-              Commercial Appliance Repair
-            </a>|<a class="anchor" href="#heating">
-              Heating Ventilation And Air-Conditioning
-            </a>|<a class="anchor" href="#faq"> FAQs</a>
-          </p>
+          <Anchor />
           <p>
             We are an appliance repair company in Pasadena and South Pasadena
             providing same-day expert appliance repair with a quick response
@@ -241,7 +234,7 @@ import "css/service-areas/style-service-areas.css";
       </p>
 
       <!-- бытовая техника  -->
-
+      <div  id="home-anchor">
       <div
         class="full-commercial-machinery"
         id="full-commercial-machinery-nocolor">
@@ -275,9 +268,10 @@ import "css/service-areas/style-service-areas.css";
           </p>
         </div>
       </div>
+    </div>
 
       <!--  коммерческая техника -->
-
+      <div  id="commercial-anchor">
       <div
         class="full-commercial-machinery"
         id="full-commercial-machinery-nocolor">
@@ -308,6 +302,7 @@ import "css/service-areas/style-service-areas.css";
           </p>
         </div>
       </div>
+    </div>
 
       <h2>Common Appliance Issues in Pasadena Home</h2>
       <p>
@@ -633,7 +628,7 @@ import "css/service-areas/style-service-areas.css";
         of the repair.
       </p>
     </div>
-    <Pasadenacta />
+    <!-- <Pasadenacta /> -->
   </Container>
 </Layout>
 
