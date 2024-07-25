@@ -47,6 +47,12 @@ h3 {
     color: #131313;
 }
 
+h4 {
+    font-weight: 500;
+    font-size: clamp(16px, 3vw, 18px);
+    color: #131313;
+}
+
 b {
     color: #131313;
 }
