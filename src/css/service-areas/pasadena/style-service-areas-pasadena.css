@@ -1,0 +1,932 @@
+.max-w-screen-xl {
+    width: 100%;
+    max-width: 1920px !important;
+    padding: 0% 10% 0% 10%;
+}
+
+
+:root {
+    --table-color: rgb(231 231 231 / 58%);
+    --text-shadown-b-h3: 0.5px 0.5px 0.8px #8f9499;
+}
+
+
+/* *{
+  outline: 1px solid red !important;
+} */
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 4% 0% 2% 0%;
+    font-size: clamp(24px, 5vw, 28px) !important;
+    text-shadow: 1px 1px 1.3px #7c7e80;
+    color: #131313;
+}
+
+h3 {
+    font-size: clamp(20px, 4vw, 22px) !important;
+    text-shadow: 0.7px 0.7px 1px #7c7e80;
+    color: #131313;
+}
+
+b {
+    color: #131313;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #262626;
+    font-weight: 400;
+    font-size: clamp(16px, 3vw, 18px);
+}
+
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #fff 0%,
+            #000 15%,
+            #111112 67%,
+            #858384 100%);
+    background-size: auto auto;
+    /* background-clip: border-box; */
+    background-size: 200% auto;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 4s linear infinite;
+    display: inline-block;
+    font-size: clamp(35px, 8vw, 60px);
+    line-height: clamp(56px, 8vh, 60px);
+    font-weight: 900;
+    text-shadow: 2.3px 2.3px 3.7px rgb(21 21 21);
+    display: block;
+}
+
+
+
+
+.page-header {
+    display: block;
+    margin-top: 1%;
+}
+
+.page-header h1 {
+    margin-bottom: 20px;
+}
+
+.header-a {
+    float: left;
+    margin: 0 20px 0px 0;
+    max-width: 500px;
+}
+
+.page-container {
+    display: block;
+}
+
+.head-content-h {
+    text-align: center;
+}
+
+.head-content-f {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+
+
+
+
+@media (max-width:1024px) {
+
+    h2 {
+        padding: 7% 0% 2% 0%;
+    }
+
+    .page-header {
+        display: grid;
+    }
+
+    .header-a {
+        float: none;
+        margin: 0 0px 0px 0;
+        max-width: 100%;
+    }
+
+    .header-a img {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .head-content-f {
+        float: none;
+        margin: 10px 10px 20px 10px;
+        justify-content: center;
+        display: grid;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.two-col-grid {
+    margin-top: 3%;
+}
+
+.col-one img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    box-shadow: 0px 3px 5px 2px rgb(0 0 0 / 25%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 5px 14px 0px rgb(0 0 0 / 12%);
+}
+
+.col-two {
+    grid-column: auto;
+}
+
+.col-two p:nth-child(2) {
+    padding-top: 1%;
+}
+
+.col-two b {
+    text-shadow: var(--text-shadown-b-h3);
+}
+
+
+.two-col-grid {
+    display: block;
+}
+
+.col-one {
+    margin: 0 25px 15px 0;
+    float: left;
+}
+
+main {
+    width: 100%;
+    max-width: 1920px !important;
+}
+
+.max-w-screen-xl {
+    width: 100%;
+    max-width: 1920px !important;
+    padding: 0% 10% 0% 10%;
+}
+
+
+
+
+
+
+
+.pricing-policy {
+    width: 100%;
+    display: grid;
+    /* margin-bottom: 5%; */
+}
+
+.head_pricing-policy {
+    text-align: center;
+    display: grid;
+}
+
+.head_pricing-policy h2:nth-child(1) {
+    margin: 3% 0% 0% 0%;
+}
+
+
+.head_pricing-policy h2 {
+    margin: 6% 0% 0% 0%;
+    margin-bottom: 1%;
+}
+
+.head_pricing-policy p {
+    text-align: center;
+    margin: 0 0 3% 0;
+    font-size: clamp(16px, 3vw, 20px);
+    max-width: 80%;
+    justify-self: center;
+}
+
+
+.content_pricing-policy {
+    text-align: left;
+    margin-bottom: 3%;
+}
+
+.con-inside_pricing-policy {
+    display: flex;
+}
+
+.con-inside_pricing-policy p {
+    margin: 0;
+}
+
+
+
+
+
+
+.icon_pricing-policy {
+    margin: auto auto;
+    display: grid;
+    min-width: 130px;
+}
+
+.icon_pricing-policy svg {
+    justify-self: center;
+}
+
+.icon_pricing-policy h3 {
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: clamp(18px, 4vw, 20px) !important;
+    margin-top: 0;
+    text-shadow: var(--text-shadown-b-h3);
+}
+
+.desc_pricing-policy {
+    display: grid;
+    padding-left: 2%;
+}
+
+.desc_pricing-policy p {
+    align-self: center;
+    font-size: clamp(16px, 4vw, 18px);
+}
+
+#cost-svg {
+    stroke: #000;
+    stroke-width: 5px;
+}
+
+.con-inside_pricing-policy:hover #cost-svg {
+    fill: #ca0913;
+    stroke: #ca0913;
+    transition: 0.3s;
+}
+
+.con-inside_pricing-policy:hover svg {
+    fill: #ca0913;
+    transition: 0.3s;
+}
+
+.pros_pricing-policy {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: solid 2px #ff2a2a;
+    background-color: rgb(231 231 231 / 58%);
+}
+
+.pros_pricing-policy p {
+    font-size: clamp(16px, 4vw, 18px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Часто задаваемые вопросы */
+
+.FAQ {
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #dedede;
+    /* border-top: 1px solid #75baf566; */
+    padding: 2% 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FAQ.active .fa_minus {
+    display: block;
+}
+
+.FAQ.active .fa_plus {
+    display: none;
+}
+
+.FAQ:hover .fa h3 {
+    color: #ca0913;
+    /* text-shadow: 0.1px 0.1px 0.1px #000; */
+    transition: all 0.25s linear;
+}
+
+.FAQ_bottom {
+    /* border-bottom: 1px solid #75baf566; */
+    border-top: 1px solid #dedede;
+}
+
+.fa {
+    width: 96%;
+    margin-right: 10px;
+}
+
+.fa h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: clamp(22px, 5vw, 24px) !important;
+    text-shadow: var(--text-shadown-b-h3);
+}
+
+.fa_plus {
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+    font-weight: 300;
+}
+
+.fa_minus {
+    display: none;
+    position: relative;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+
+.questions {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0% 2%;
+}
+
+.questions p {
+    font-weight: 500;
+    max-width: 92%;
+    font-size: clamp(16px, 3vw, 20px);
+}
+
+
+/* .questions li::marker {
+  unicode-bidi: normal !important;
+  font-variant-numeric: normal !important;
+  text-transform: unset;
+  text-indent: unset !important;
+  text-align: center !important;
+  -moz-text-align-last: unset;
+  text-align-last: center !important;
+
+
+  content: '*';
+  font-size: 28px !important;
+  color: #0f77cc !important;
+  margin-top: 5px !important;
+  margin-right: 8px !important;
+  align-self: center;
+} */
+
+.questions li {
+    font-weight: 500;
+    max-width: 92%;
+    font-size: clamp(16px, 3vw, 20px);
+    margin-top: 5px;
+}
+
+/* Часто задаваемые вопросы */
+
+
+
+
+
+
+.job-prices {
+    width: 100%;
+}
+
+.head-prices {
+    text-align: center;
+    display: grid;
+}
+
+.head-prices h2 {
+    margin-bottom: 1%;
+}
+
+.head-prices p {
+    text-align: center;
+    margin: 0 0 3% 0;
+    font-size: clamp(16px, 3vw, 20px);
+    max-width: 80%;
+    justify-self: center;
+}
+
+.content_job-prices {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    border-radius: 5px;
+    min-height: 120px;
+}
+
+.content_job-prices-h-m {
+    min-height: auto;
+}
+
+#col-prices {
+    /* background-color: #64b7ff61; */
+    background-color: var(--table-color);
+}
+
+.content_job-prices p {
+    margin: 0;
+    padding: 0% 1% 1% 0%;
+}
+
+.desk_job-prices {
+    text-align: left;
+    width: 90%;
+    display: grid;
+}
+
+.desk_job-prices a {
+    align-self: center;
+}
+
+.desk_job-prices a:hover {
+    text-decoration: underline;
+    color: #767676;
+}
+
+.money_job-prices {
+    text-align: center;
+    align-self: center;
+    min-width: 137px;
+}
+
+.money_job-prices p {
+    white-space: nowrap;
+    width: 100%;
+    font-size: clamp(22px, 5vw, 24px);
+}
+
+.desk_job-prices p:nth-child(1) {
+    font-size: clamp(22px, 5vw, 24px);
+    padding: 1% 1% 0% 0%;
+}
+
+.content_job-prices-h-m p:nth-child(1) {
+    font-size: clamp(22px, 5vw, 24px);
+    padding: 1% 1% 1% 0%;
+}
+
+.desk_job-prices p {
+    font-size: clamp(16px, 4vw, 20px);
+}
+
+.pros_job-prices {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3%;
+    border-radius: 5px;
+    border: solid 2px #ff2a2a;
+    background-color: rgb(231 231 231 / 58%);
+}
+
+.pros_job-prices p {
+    font-size: clamp(16px, 4vw, 18px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* water-heater-repair-cost */
+
+.maintenance {
+    width: 100%;
+}
+
+.maintenance p {
+    font-size: clamp(16px, 4vw, 18px);
+    margin: 0;
+}
+
+.head-maintenance {
+    text-align: center;
+    display: grid;
+}
+
+.head-maintenance h2 {
+    margin-bottom: 1%;
+}
+
+.head-maintenance p {
+    text-align: center;
+    margin: 0 0 3% 0;
+    font-size: clamp(16px, 3vw, 20px);
+    max-width: 80%;
+    justify-self: center;
+}
+
+.full-content_maintenance {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3%;
+    grid-gap: 5%;
+}
+
+.full-content_maintenance h3 {
+    margin-top: 10px;
+    font-size: clamp(18px, 4vw, 20px) !important;
+    text-shadow: 0.5px 0.5px 0.8px #75baf587;
+}
+
+.full-content_maintenance ul {
+    margin-left: 8px;
+}
+
+.full-content_maintenance li {
+    margin-top: 10px;
+}
+
+.content-2_maintenance li::marker {
+    color: #0f77cc !important;
+}
+
+.full-content_maintenance p {
+    margin: 0;
+}
+
+.content-1_maintenance,
+.content-2_maintenance {
+    width: 100%;
+    border: solid 3px #75baf587;
+    border-radius: 20px;
+    padding: 0% 3% 3% 3%;
+}
+
+.description_maintenance {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 2%;
+}
+
+.head_description_maintenance {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.head_description_maintenance svg {
+    margin: 0 10px 0 0;
+}
+
+.head_description_maintenance p {
+    align-self: center;
+    text-shadow: var(--text-shadown-b-h3);
+}
+
+.conclusion-description_maintenance {
+    margin-top: 4%;
+}
+
+.conclusion-description_maintenance:hover svg {
+    fill: #ca0913;
+    transition: 0.3s;
+}
+
+.conclusion-description_maintenance p {
+    margin-left: 33px;
+}
+
+.head_description_maintenance p {
+    margin: 0;
+}
+
+/* water-heater-repair-cost */
+
+
+
+
+
+
+/* oven-repair-cost */
+
+.head_pricing-policy_foto {
+    display: flex;
+    justify-content: center;
+}
+
+.head_pricing-policy_foto-a,
+.head_pricing-policy_foto-b {
+    margin: 30px 3% 30px 3%;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+}
+
+.head_pricing-policy_foto-a {
+    max-width: 35%;
+}
+
+.head_pricing-policy_foto-a h2 {
+    margin-bottom: 5% !important;
+}
+
+/* oven-repair-cost */
+
+
+
+
+
+
+
+
+
+
+/* refrigerator-repair-cost */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* refrigerator-repair-cost */
+
+
+
+
+
+
+@media (max-width:1440px) {
+    .head_pricing-policy h2:nth-child(1) {
+        margin: 6% 0% 0% 0%;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+
+    .two-col-grid {
+        width: 100%;
+        display: grid;
+        /* grid-template-columns: 1fr 2fr; */
+    }
+
+    .col-one img {
+        /* width: 80%; */
+        justify-self: center;
+        margin-bottom: 10px;
+        margin: 0 auto;
+    }
+
+    .col-one {
+        width: 100%;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .col-one a {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        text-align: center;
+    }
+
+    .contactbtn-form {
+        max-width: 341px;
+        margin: 0 !important;
+    }
+
+
+    .contactbtn-form a {
+        max-width: 215px !important;
+        display: inline;
+        margin-top: 10px;
+    }
+
+    .head_pricing-policy_foto-a {
+        max-width: 50%;
+    }
+
+    .first-element-without-indentation {
+        padding: 0% 1% 2% 1%;
+    }
+
+    .full-commercial-machinery-1920 {
+        padding: 3% 1% 2% 1%;
+    }
+
+    .full-commercial-machinery p {
+        margin: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+
+    .max-w-screen-xl {
+        width: 100%;
+        max-width: 1920px !important;
+        padding: 0% 3% 0% 3%;
+    }
+
+
+    .animate-charcter {
+        line-height: clamp(30px, 6vh, 60px);
+    }
+
+    .head_pricing-policy {
+        margin-bottom: 7%;
+    }
+
+    .head_pricing-policy_foto {
+        display: grid;
+    }
+
+    .head_pricing-policy_foto-a,
+    .head_pricing-policy_foto-b {
+        margin: 20px 3% 20px 3%;
+    }
+
+    .head_pricing-policy_foto-a {
+        max-width: 100%;
+        grid-row: 1/2;
+        margin: 20px 3% 0px 3%;
+    }
+
+    .head_pricing-policy_foto-a h2 {
+        margin-bottom: 1% !important;
+    }
+
+    .con-inside_pricing-policy {
+        display: grid;
+    }
+
+    .content_pricing-policy {
+        margin-bottom: 10%;
+    }
+
+    .icon_pricing-policy {
+        min-width: auto;
+        margin-bottom: 2%;
+    }
+
+    .pros_pricing-policy {
+        width: 100%;
+    }
+
+    .content_job-prices {
+        padding: 3% 0%;
+    }
+
+    .desk_job-prices {
+        padding-left: 7px;
+    }
+
+    .head-prices p {
+        max-width: 100%;
+    }
+
+    .head-maintenance p {
+        max-width: 100%;
+    }
+
+    .money_job-prices {
+        min-width: auto;
+    }
+
+    .money_job-prices p {
+        white-space: wrap;
+    }
+
+    .pros_job-prices {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .full-content_maintenance {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .content-2_maintenance,
+    .content-1_maintenance {
+        margin-bottom: 15px;
+    }
+
+    .full-commercial-machinery-1920 {
+        padding: 3% 0%;
+    }
+
+
+}
