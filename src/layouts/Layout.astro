@@ -36,7 +36,8 @@ const makeTitle = title
     <!--City Local 101 verification Code -->
     <meta name='citylocal101-verification' content='62654BWjbV4Z5wZcQOzmc' />
     <!-- сбор статистики -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5MBY27XES"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5MBY27XES"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -79,7 +80,7 @@ const makeTitle = title
         "priceRange": "$$",
         "hasMap": "https://maps.app.goo.gl/o1PTfsdJeiBPjdu38",
        
-        "areaServed": [{
+    "areaServed": [{
     "@type": "City",
     "name": "Los Angeles",
     "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
@@ -164,10 +165,9 @@ const makeTitle = title
   }
 ] 
 }
-
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
+    "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
             "Monday",
             "Tuesday",
             "Wednesday",
@@ -176,12 +176,16 @@ const makeTitle = title
             "Saturday"
           ],
           "opens": "08:00",
-          "closes": "20:00"
-        "sameAs": "https://maps.app.goo.gl/o1PTfsdJeiBPjdu38"
+          "closes": "20:00",
+          "sameAs": "https://maps.app.goo.gl/o1PTfsdJeiBPjdu38"
         }
     </script> 
    
   </head>
+
+
+
+
 
   <body>
     <slot />
@@ -763,4 +767,9 @@ const makeTitle = title
       }
     </style>
   </body>
+
+
+
+
+
 </html>
