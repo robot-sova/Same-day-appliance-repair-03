@@ -42,6 +42,10 @@
     padding: 0 10px 0 0;
 }
 
+.header-licenses-foto a {
+    display: flex;
+}
+
 .header-licenses-foto img {
     padding: 0 3px;
     margin: 13px 0px;
