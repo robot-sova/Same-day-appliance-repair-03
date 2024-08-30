@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} https://samedayappliance.repair/services/microwave-repair-los-angeles/services/induction-cooktop-repair
+RewriteRule (.*)https://samedayappliance.repair/services/microwave-repair-los-angeles$1 [R=301,L]
