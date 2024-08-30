@@ -11,7 +11,7 @@ export default defineConfig({
   integrations: [tailwind(), mdx(), sitemap()],
 
   redirects: {
-    'https://samedayappliance.repair/services/microwave-repair-los-angeles/services/induction-cooktop-repair': 'https://samedayappliance.repair/services/microwave-repair-los-angeles',
+    '/services/microwave-repair-los-angeles/services/induction-cooktop-repair': '/services/microwave-repair-los-angeles',
   },
 });
 
