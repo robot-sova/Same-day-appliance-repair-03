@@ -12,7 +12,7 @@ export default defineConfig({
 
   redirects: {
     '/services/microwave-repair-los-angeles/services/induction-cooktop-repair': '/services/microwave-repair-los-angeles',
-  },
+  },  
 });
 
 
