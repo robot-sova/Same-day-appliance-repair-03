@@ -9,7 +9,7 @@ export default defineConfig({
   site: "https://samedayappliance.repair",
   integrations: [tailwind(), mdx(), sitemap()],
 
-  
+
 });
 
 
