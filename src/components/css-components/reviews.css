@@ -26,7 +26,9 @@
 
 .reviews-header a {
     color: #fff;
-    transition: 0.25s;
+    transition: .25s;
+    height: 100%;
+    align-content: center;
 }
 
 .reviews-header:hover a {
