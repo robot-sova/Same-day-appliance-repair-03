@@ -1,4 +1,4 @@
-*,
+/* *,
 *:before,
 *:after {
     margin: 0;
@@ -22,26 +22,18 @@
 
 
 
-/* ::-webkit-scrollbar-button {
-    color: #000;
-    background-color: #000;
-} */
-
 
 html {
     width: 100%;
     scroll-behavior: auto;
     scroll-behavior: smooth;
     
-    /* scrollbar-color: #ca0913 #000; для fiefox но со стрелками
-    scrollbar-width: thin;  */
 }
 
 
 
 
 body {
-    /* max-width: 1920px; */
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -52,9 +44,7 @@ body {
 .max-w-screen-xl {
     width: 100%;
     max-width: 100%;
-    /* background-color: #000; */
-    /* padding: 0; */
-
+ 
 }
 
 
@@ -81,13 +71,7 @@ body {
     z-index: 2000;
 }
 
-@media (min-width: 900px) {
-    .inside-reviews_header-full {
-        /* overflow-y: scroll;
-        height: 100% !important; */
-    }
 
-}
 
 
 .inside_header-full {
@@ -198,7 +182,6 @@ button.hcp-button {
     box-shadow: none;
     border-radius: 7px !important;
     color: #fff;
-    /* background-color: #0f77cc; */
     text-transform: uppercase;
     position: relative;
     border: 0;
@@ -212,7 +195,6 @@ button.hcp-button {
     text-indent: 0px;
     text-shadow: none;
     align-items: center;
-    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
     overflow-x: hidden !important;
     justify-content: center;
     text-shadow: 1.2px 1.2px 2px black !important;
@@ -228,7 +210,6 @@ button.hcp-button:hover {
 .call-header {
     width: 214px;
     height: 100%;
-    /* display: block; */
     display: contents;
     border-radius: 7px;
     transition: 0.25s !important;
@@ -319,15 +300,12 @@ button.hcp-button:hover {
     font-weight: 700 !important;
     text-shadow: 1.2px 1.2px 2px black !important;
 
-    /* border: solid 2px #ca0913; */
 }
 
 .header-bootun-1024:hover a {
     color: #000;
     box-shadow: inset 0px 4px 6px 1px rgb(0 0 0 / 25%), 0px 6px 7px 0px rgb(0 0 0 / 11%), 0px 3px 11px 4px rgb(0 0 0 / 25%) !important;
 
-    /* background-color: #000000;
-    border: solid 2px #ca0913; */
 }
 
 
@@ -490,4 +468,4 @@ button.hcp-button:hover {
         white-space: wrap;
     }
 
-}
+} */
