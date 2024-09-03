@@ -3,9 +3,6 @@
     --text-shadown-b-h3: 0.6px 0.6px 1px #8f9499;
 }
 
-/* div {
-    border: solid 0.5px rgb(0, 255, 85);
-} */
 
 h2,
 h3,
@@ -28,7 +25,7 @@ b {
     max-width: 100%;
     padding: 0;
 }
-
+/* 
 h1 {
     text-shadow: 2.3px 2.3px 3.7px rgb(21 21 21);
 }
@@ -175,7 +172,7 @@ main {
 
 }
 
-
+ */
 
 
 
@@ -1629,7 +1626,7 @@ main {
 
 
 @media (max-width:1024px) {
-
+/* 
     .page-header-p-full {
         padding: 0 3% 3% 3%;
     }
@@ -1668,7 +1665,7 @@ main {
 
     .oven-page-header-p-full .page-header-p p:nth-child(2) {
         max-width: 100%;
-    }
+    } */
 
 
 
@@ -1752,7 +1749,7 @@ main {
 
 @media (max-width:768px) { 
 
-    .page-header-f img {
+    /* .page-header-f img {
         max-width: 100%;
     }
 
@@ -1776,7 +1773,7 @@ main {
 
     .animate-charcter {
         white-space: wrap;
-    }
+    } */
 
 
 

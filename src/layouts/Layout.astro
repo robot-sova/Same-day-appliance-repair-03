@@ -46,6 +46,243 @@ const makeTitle = title
       gtag("js", new Date());
       gtag("config", "G-F5MBY27XES");
     </script>-->
+    
+  <style is:global>
+
+h1 {
+    text-shadow: 2.3px 2.3px 3.7px rgb(21 21 21);
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #fff 0%,
+            #000 15%,
+            #111112 67%,
+            #858384 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 4s linear infinite;
+    display: inline-block;
+    font-size: clamp(35px, 7vw, 60px);
+    line-height: clamp(56px, 8vh, 60px);
+    font-weight: 900;
+}
+
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: clamp(24px, 5vw, 28px) !important;
+    text-shadow: 1px 1px 1.3px #8f9499;
+}
+
+
+main {
+    display: grid;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.page-header {
+    position: relative;
+    display: grid;
+    justify-self: center;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 42%, rgba(255, 255, 255, 0.7478641114648985) 63%, rgba(255, 255, 255, 0) 100%);
+}
+
+.page-header-d-full {
+    width: 100%;
+    max-width: 1920px;
+    justify-self: center;
+    height: 100%;
+    padding: 2% 3% 1% 3%;
+}
+
+
+.page-header-d {
+    left: 0;
+    width: 80%;
+    position: relative;
+    align-self: center;
+}
+
+@media (min-width:1440px) {
+    .page-header-d {
+        width: 50%;
+    }
+
+    .page-header-d-full {
+        padding: 3% 3% 3% 3%;
+    }
+
+}
+
+
+
+
+
+
+.page-header-f {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    margin-left: 40%;
+}
+
+.page-header-f-rel {
+    position: relative;
+    display: grid;
+}
+
+.page-header-f-gradient {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 53%, rgba(255, 255, 255, 0.8991246156665791) 68%, rgba(255, 255, 255, 0) 89%);
+    margin-top: -15%;
+    height: 33vh;
+    width: 100vw;
+}
+
+.page-header-f img {
+    max-width: 65%;
+}
+
+
+.page-header-p-full {
+    max-width: 1920px;
+    justify-self: center;
+    padding: 0 3% 3% 3%;
+    width: 100%;
+    text-align: left;
+}
+
+.page-header-p {
+    text-align: left;
+    width: 100%;
+}
+
+.page-header-p p {
+    color: #262626;
+    font-weight: 400;
+    font-size: clamp(16px, 3vw, 18px);
+    max-width: 70%;
+}
+
+
+.page-header-p p:nth-child(2) {
+    margin-top: 10px;
+}
+
+
+
+
+@media (max-width:1220px) {
+
+    .page-header-p p:nth-child(2) {
+        max-width: 100%;
+    }
+
+    .oven-page-header-p-full .page-header-p p:nth-child(2) {
+        max-width: 70%;
+    }
+
+}
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+
+.page-header-p-full {
+    padding: 0 3% 3% 3%;
+}
+
+.page-header-f {
+    position: relative;
+    width: auto;
+    z-index: 2;
+    margin-left: 0;
+    justify-self: center;
+    margin: 7px 5% 17px 5%;
+}
+
+.page-header-f img {
+    justify-self: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 13px 0 rgba(0, 0, 0, 0.35);
+}
+
+.page-header-f-gradient {
+    display: none;
+}
+
+.page-header-d-full {
+    padding: 2% 2%;
+}
+
+.page-header-d {
+    width: 100%;
+}
+
+
+.page-header-p p {
+    max-width: 100%;
+}
+
+.oven-page-header-p-full .page-header-p p:nth-child(2) {
+    max-width: 100%;
+}
+
+}
+
+
+
+
+@media (max-width:768px) { 
+
+.page-header-f img {
+    max-width: 100%;
+}
+
+.page-header-d-full {
+    padding: 1% 0;
+}
+
+.page-header-d {
+    left: 0;
+    width: 96% !important;
+    position: relative;
+    display: grid;
+    align-self: center;
+    margin: 0 2% 0 2%;
+    text-align: center;
+}
+
+.page-header-d h1 {
+    margin-bottom: 0;
+}
+
+.animate-charcter {
+    white-space: wrap;
+}
+
+}
+
+
+  </style>
+
 
     <SEO
       title={makeTitle}
