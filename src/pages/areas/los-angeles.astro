@@ -12,13 +12,15 @@ import Btn from "@components/btn.astro";
 import Unitscommercial from "@components/units-commercial-equipment-los-angeles.astro";
 import Unitsappliances from "@components/units-appliances-los-angeles.astro";
 import Anchor from "@components/anchor/anchor-areas.astro";
-
 import "css/service-areas/style-service-areas.css";
+const description = "Same Day Appliance Repair Repair Los Angeles is your lifesaver! We offer quick, reliable repairs for all major appliances. Call: (424) 325-0523";
+const title ="Same Day Appliance Repair Los Angeles ⭐ Best Service";
 ---
-
+<title>{title}</title>
+<meta name="description" content={description} />
 <Navbar />
 <Reviews />
-<Layout title="Same Day Appliance Repair Los Angeles">
+<Layout>
   <Container>
     <div class="content">
       <h1>
