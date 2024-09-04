@@ -10,9 +10,12 @@ import Focus from "@components/js/focus-menu.astro";
 import Faqs from "@components/js/faqs.astro";
 import LogoBrands from "@components/js/logo-brands.astro";
 import ContactForm from "@components/contact-form.astro";
+const description = "Air Conditioner Repair Los Angeles and Nearby Areas";
 
 import "css/service/style_services.css";
 ---
+
+<meta name="description" content={description} />
 
 <Navbar />
 <Reviews />
