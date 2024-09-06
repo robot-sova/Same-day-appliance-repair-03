@@ -14,11 +14,17 @@ import ContactForm from "@components/contact-form.astro";
 
 
 import "css/service/style_services.css";
+
+const description = "Fast & reliable same day wine cellar repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (424) 325-0521";
+const title ="Expert Wine Cellar Repair Los Angeles - Fast & Reliable";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
+
 
 <Navbar />
 <Reviews />
-<Layout title="Wine Cellar Repair Los Angeles and Nearby Areas">
+<Layout>
   <Container>
     <main>
       <div class="page-header">

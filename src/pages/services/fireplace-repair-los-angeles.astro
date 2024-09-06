@@ -10,11 +10,16 @@ import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
 
 import "css/service/style_services.css";
+
+const description = "Fast & reliable fireplace repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (424) 325-0521";
+const title ="Expert Fireplace Repair Los Angeles - Fast & Reliable";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
 
 <Navbar />
 <Reviews />
-<Layout title="Same Day Fireplace Repair Los Angeles">
+<Layout>
   <Container>
     <main style="padding: 0 10%">
       <h1>

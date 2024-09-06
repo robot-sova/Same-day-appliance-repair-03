@@ -11,12 +11,18 @@ import Reviews from "@components/reviews.astro";
 
 
 import "css/service/style_services.css";
+
+const description = "Same day wine cooler repair service. Our skilled technicians quickly diagnose and fix any issues: temperature, humidity, and structural.";
+const title ="Same Day Wine Cooler Repair - Guaranteed Fix";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
+
 
 
 <Navbar />
 <Reviews />
-<Layout title="Wine Cellar Repair - (424) 325-0520">
+<Layout>
  <Container>
    <main style="max-width: 1920px; padding: 0 10%; margin: 0 auto;">
      <h1>

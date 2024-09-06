@@ -13,11 +13,16 @@ import ContactForm from "@components/contact-form.astro";
 
 
 import "css/service/style_services.css";
+
+const description = "Fast & reliable cooktop repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (424) 325-0521";
+const title ="Expert Cooktop Repair Los Angeles - Fast & Reliable";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
 
 <Navbar />
 <Reviews />
-<Layout title="Cooktop Repair Los Angeles and Nearby Areas">
+<Layout>
   <Container>
     <main>
       <div class="page-header">

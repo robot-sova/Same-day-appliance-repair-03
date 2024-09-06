@@ -10,11 +10,16 @@ import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
 
 import "css/service/style_services.css";
+
+const description = "Fast & reliable commercial freezer repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (424) 325-0521";
+const title ="Best Commercial Freezer Repair Los Angeles & Nearby Areas";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
 
 <Navbar />
 <Reviews />
-<Layout title="Same Day Commercial Freezer Repair Los Angeles">
+<Layout>
   <Container>
     <main style="max-width: 1920px; padding: 0 10%; margin: 0 auto; ">
       <h1>

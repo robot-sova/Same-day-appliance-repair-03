@@ -9,12 +9,16 @@ import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
 
 import "css/service/style_services.css";
+
+const description = "Same Day Appliance Repair for businesses and homes. Our expert technicians fix all major brands and models quickly and efficiently.  Call: (424) 325-0520";
+const title ="Same Day Commercial & Household Appliance Repair - Guarantee";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
 
 <Navbar />
 <Reviews />
-<Layout
-  title="Commercial And Home Appliance Repair Los Angeles and Surrounding Areas">
+<Layout>
   <Container>
     <main>
       <div class="content">

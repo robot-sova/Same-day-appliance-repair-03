@@ -14,11 +14,16 @@ import ContactForm from "@components/contact-form.astro";
 
 
 import "css/service/style_services.css";
+
+const description = "Fast & reliable walk in cooler repair. Serving LA and nearby areas with expert technicians and quality parts. Call now:  (424) 325-0521";
+const title ="Expert Walk in Cooler Repair in Los Angeles - Call Today!";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
 
 <Navbar />
 <Reviews />
-<Layout title="Walk in Cooler Repair Los Angeles and Nearby Areas">
+<Layout>
   <Container>
     <main>
       <div class="page-header">
