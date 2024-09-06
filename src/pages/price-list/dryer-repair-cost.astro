@@ -12,7 +12,13 @@ import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
 
 import "css/price/style_price.css";
+
+const description = "Click for the real costs of dryer repairs & helpfull tips! Find a reliable technicians, and make informed decisions. Call: (424) 325-0531";
+const title ="Dryer Repair Cost - Labor & Parts Pricing - Ultimate Guide";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
+
 
 <!-- частые вопросы -->
 <script defer>
@@ -34,7 +40,7 @@ import "css/price/style_price.css";
 
 <Navbar />
 <Reviews />
-<Layout title="Dryer Repair Cost">
+<Layout>
   <Container>
     <main>
       <h1><span class="animate-charcter">Dryer Repair Cost</span></h1>

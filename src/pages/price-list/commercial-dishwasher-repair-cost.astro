@@ -9,7 +9,13 @@ import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
 
 import "css/price/style_price.css";
+
+const description = "Click for commercial dishwasher repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (424) 325-0521";
+const title ="Commercial Dishwasher Repair Cost - Full Pricing Guide";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
+
 
 <!-- частые вопросы -->
 <script defer>
@@ -31,7 +37,7 @@ import "css/price/style_price.css";
 
 <Navbar />
 <Reviews />
-<Layout title="Commercial Dishwasher Repair Cost">
+<Layout>
   <Container>
     <main>
       <h1>

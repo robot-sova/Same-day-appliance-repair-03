@@ -9,7 +9,14 @@ import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
 
 import "css/price/style_price.css";
+
+const description = "Click for the real costs of range repairs with our comprehensive guide. Find a reliable technicians, and make informed decisions. Call: (424) 325-0545";
+const title ="Range Repair Cost - Labor & Parts - Online Estimates";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
+
+
 
 <!-- частые вопросы -->
 <script defer>
@@ -31,7 +38,7 @@ import "css/price/style_price.css";
 
 <Navbar />
 <Reviews />
-<Layout title="Range Repair Cost">
+<Layout >
   <Container>
     <main>
       <h1><span class="animate-charcter">Range Repair Cost</span></h1>

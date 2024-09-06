@@ -8,11 +8,17 @@ import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
+
+const description = "Navigate appliance repair costs with our comprehensive guide. Understand pricing factors, compare repair vs. replacement costs. Call: (424) 325-0521";
+const title ="Comprehensive Appliance Repair Cost Guide - All Brands";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
+
 
 <Navbar />
 <Reviews />
-<Layout title="Appliance REpair Price List">
+<Layout>
   <Container>
     <main>
       <h1>
