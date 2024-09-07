@@ -7,11 +7,17 @@ import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
+
+const description = "Experience the convenience of same day appliance repair! Our team of certified and licensed professionals is ready to tackle any appliance issue. Book Online";
+const title ="Book Appliance Repair Appointemet The Same Day";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
+
 
 <Navbar />
 <Reviews />
-<Layout title="Same Day Appliance Repair: (424) 325-0520 or BOOK Online">
+<Layout>
   <Container>
     <main>
       <h1 style="margin:20px;">

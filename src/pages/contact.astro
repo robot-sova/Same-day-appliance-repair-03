@@ -7,11 +7,17 @@ import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon";
 import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
+
+const description = "Appliance emergency? Don't panic! Our skilled technicians provide same day repairs for all major brands. Quick & professional service. Call: (424) 325-0547";
+const title ="Contact The Same Day Appliance Repair With Any Issue";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
+
 
 <Navbar />
 <Reviews />
-<Layout title="Contact">
+<Layout>
   <Container>
     <Sectionhead>
       <Fragment slot="title">Contact</Fragment>

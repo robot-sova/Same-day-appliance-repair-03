@@ -8,11 +8,17 @@ import Contactbtn from "@components/contactbtn.astro";
 import Btn from "@components/btn.astro";
 
 import "css/service-areas/pasadena/style-service-areas-pasadena.css";
+
+const description = "Need quick, reliable stove repair Pasadena CA? Our licensed expert technicians deliver exceptional service. Guaranteed results. (424) 325-0570";
+const title ="Same Day Stove Repair Pasadena CA - Best Local Service";
 ---
+<title>{title}</title>
+<meta name="description" content={description} />
+
 
 <Navbar />
 <Reviews />
-<Layout title="Same Day Appliance Repair Stove Repair, Pasadena, CA">
+<Layout >
   <Container>
     <div class="full-page">
       <div class="page-header">
