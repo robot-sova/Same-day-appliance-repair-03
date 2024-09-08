@@ -1546,17 +1546,41 @@ button.hcp-button:hover {
     />
 
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Same Day Appliance Repair",
-        "image": "https://samedayappliance.repair/images/same-day-appliance-repair-experts.webp",
-        "url": "https://samedayappliance.repair/",
-        "telephone": "4243250520",
-        "priceRange": "$$",
-        "hasMap": "https://maps.app.goo.gl/o1PTfsdJeiBPjdu38",
-       
-    "areaServed": [{
+       {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "image": [
+        "https://samedayappliance.repair/images/same-day-appliance-repair-experts.webp",
+   "https://samedayappliance.repair/commercial-dishwasher/commercial-dishwasher-2.webp",
+        "https://samedayappliance.repair/commercial-oven-stove/commercial-oven-1.webp"
+       ],
+      "name": "Same Day Appliance Repair",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "8748 ½  Rangely Ave",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA",
+        "postalCode": "90048",
+        "addressCountry": "US"
+      },
+  "url": "https://samedayappliance.repair/",
+      "telephone": "+14243250520",
+           "priceRange": "$$$",
+"hasMap": "https://maps.app.goo.gl/o1PTfsdJeiBPjdu38",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+             },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.08026,
+        "longitude": -118.38409
+      },
+"areaServed": [{
     "@type": "City",
     "name": "Los Angeles",
     "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
@@ -1641,9 +1665,10 @@ button.hcp-button:hover {
   }
 ] 
 }
-    "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
+         "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
             "Monday",
             "Tuesday",
             "Wednesday",
@@ -1654,7 +1679,8 @@ button.hcp-button:hover {
           "opens": "08:00",
           "closes": "20:00",
           "sameAs": "https://maps.app.goo.gl/o1PTfsdJeiBPjdu38"
-        }
+    }
+  ]
     </script> 
    
   </head>
