@@ -4,14 +4,7 @@
 }
 
 
-/* *{
-  outline: 1px solid red !important;
-} */
 
-html {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
 
 img {
   border-radius: 10px;
@@ -21,48 +14,11 @@ img {
 h2 {
   text-align: center;
   margin: 6% 0% 3% 0%;
-  /* text-decoration-line: underline; */
-  /* text-decoration-color: #abb1b687; */
-  /* text-decoration-thickness: 4px; */
   font-size: clamp(24px, 5vw, 28px) !important;
   text-shadow: 1px 1px 1.3px #8f9499;
 }
 
 
-.animate-charcter {
-  text-transform: uppercase;
-  background-image: linear-gradient(-225deg,
-      #fff 0%,
-      #000 15%,
-      #111112 67%,
-      #858384 100%);
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  /* text-fill-color: transparent; */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 4s linear infinite;
-  display: inline-block;
-  font-size: clamp(35px, 8vw, 60px);
-  line-height: clamp(56px, 8vh, 60px);
-  font-weight: 900;
-  text-shadow: 2.3px 2.3px 3.7px rgb(21 21 21);
-}
-
-
-/* .reviews {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0% 3% 0% 3%;
-}
-
-.reviews p {
-  margin: 0;
-} */
 
 .two-col-grid {
   margin-top: 3%;
@@ -74,9 +30,7 @@ h2 {
 
 
 .col-one img {
-  /* width: 500px; */
   max-width: 100%;
-  /* height: 500px; */
   height: auto;
   margin-bottom: 25px;
   box-shadow: 0px 3px 5px 2px rgb(0 0 0 / 25%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 5px 14px 0px rgb(0 0 0 / 12%);
@@ -126,7 +80,6 @@ main {
 .pricing-policy {
   width: 100%;
   display: grid;
-  /* margin-bottom: 5%; */
 }
 
 .head_pricing-policy {
@@ -266,7 +219,6 @@ main {
   width: 100%;
   text-align: left;
   border-top: 1px solid #dedede;
-  /* border-top: 1px solid #75baf566; */
   padding: 2% 2%;
   display: flex;
   justify-content: space-between;
@@ -897,11 +849,9 @@ main {
   .two-col-grid {
     width: 100%;
     display: grid;
-    /* grid-template-columns: 1fr 2fr; */
   }
 
   .col-one img {
-    /* width: 80%; */
     justify-self: center;
     margin-bottom: 10px;
     margin: 0 auto;
@@ -980,10 +930,7 @@ main {
     padding: 0% 3% 0% 3%;
   }
 
-  /* .animate-charcter {
-    line-height: clamp(30px, 6vh, 60px);
-  } */
-
+ 
   .head_pricing-policy {
     margin-bottom: 7%;
   }

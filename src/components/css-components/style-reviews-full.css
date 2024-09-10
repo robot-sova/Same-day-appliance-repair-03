@@ -498,4 +498,8 @@
   .content-page {
     max-width: 90%;
   }
+
+  .page-reviews {
+    padding: 20px 2%;
+  }
 }
