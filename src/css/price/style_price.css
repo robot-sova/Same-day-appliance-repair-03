@@ -832,8 +832,14 @@ main {
   grid-template-rows: 1fr;
 }
 
-.content__page-desc p{
-margin: 0;
+.content__page-full-desc p {
+  font-size: clamp(16px, 4vw, 18px);
+  font-weight: 500;
+  margin: 0;
+}
+
+.content__page-desc p {
+  margin: 0;
 }
 
 .ph-logo-brand {
@@ -1107,24 +1113,26 @@ margin: 0;
 
 @media (max-width: 1024px) {
   .content__page-full-logo-brand {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 
 @media (max-width: 768px) {
   .ph-logo-brand {
-      grid-gap: 1.2em;
-      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    grid-gap: 1.2em;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   }
+
   .logo-brand {
     max-width: 110px;
     min-width: 110px;
     max-height: 110px;
     min-height: 110px;
     padding: 10px;
+  }
 }
-}
+
 /* скрипт иконок с брэндами */
 
 
@@ -1268,7 +1276,7 @@ margin: 0;
     padding: 0% 3% 0% 3%;
   }
 
- 
+
   .head_pricing-policy {
     margin-bottom: 7%;
   }
