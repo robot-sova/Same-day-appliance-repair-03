@@ -60,6 +60,184 @@ p {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+.full-page  ul {
+    padding-left: 0;
+}
+
+.full-page  ul li {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    max-width: 100%;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-weight: 500;
+    list-style: none;
+    font-size: clamp(16px, 3vw, 18px);
+}
+
+.full-page  ul li::before {
+    content: '•';
+    font-size: 30px;
+    color: #ca0913;
+    filter: drop-shadow(0px 0px 0.9px #000);
+    position: absolute;
+    left: 10px;
+    top: -11px;
+}
+
+.full-page  ol {
+    counter-reset: item;
+}
+
+.full-page  ol>li {
+    counter-increment: item;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    font-weight: 500;
+    font-size: clamp(16px, 3vw, 18px);
+}
+
+.full-page  ol>li:nth-child(-n+9)::before {
+    left: 6px;
+}
+
+.full-page  ul ol>li:nth-child(-n+9)::before {
+    left: 6px;
+    top: 0px;
+    filter: drop-shadow(1px 1px 0.7px #000);
+}
+
+.full-page ol>li::before {
+    content: counter(item) "";
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    color: red;
+    filter: drop-shadow(1.5px 1.5px 0.5px #000);
+    line-height: normal;
+    border-radius: 20%;
+}
+
+.full-page  ol li:hover:before {
+    background: none;
+    box-shadow: none;
+}
+
+
+
+.full-page  ul ol li::before {
+    font-size: 20px;
+    top: -1px;
+}
+
+.full-page  li b {
+    font-weight: 700;
+    max-width: 100%;
+    font-size: clamp(16px, 3vw, 18px);
+}
+
+.full-page  li li::before {
+    font-size: 24px;
+    left: 10px;
+    top: -5px;
+}
+
+.full-page  ol>li:nth-child(-n+9)::after {
+    left: 12px;
+}
+
+
+@media (max-width:768px) {
+
+    .full-page  li:before {
+        top: -12px;
+    }
+
+    .full-page  li li:before {
+        font-size: 24px;
+        left: 10px;
+        top: -7px;
+    }
+
+    .full-page  ul ol>li:nth-child(-n+9)::before {
+        top: -2px !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .animate-charcter {
     text-transform: uppercase;
     background-image: linear-gradient(-225deg,
@@ -783,20 +961,6 @@ main {
 .head_pricing-policy_foto-a h2 {
     margin-bottom: 5% !important;
 }
-
-/* oven-repair-cost */
-
-
-
-
-
-
-
-
-
-
-/* refrigerator-repair-cost */
-
 
 
 
