@@ -1,18 +1,19 @@
 ---
-import Container from "@components/container.astro";
-import Cta from "@components/cta.astro";
-import Contactbtn from "@components/contactbtn.astro";
-import Features from "@components/features.astro";
-import Hero from "@components/hero.astro";
-import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Btn from "@components/btn.astro";
+import Cta from "@components/cta.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
-
+import Arrow from "@components/js/arrow-phone.astro";
+import Focus from "@components/js/focus-menu.astro";
+import Faqs from "@components/js/faqs.astro";
+import LogoBrands from "@components/js/logo-brands.astro";
+import ContactForm from "@components/contact-form.astro";
 import "css/service/style_services.css";
 
-const description = "Fast & reliable commercial refrigerator repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (424) 325-0520";
-const title ="Commercial Refrigerator Repair Los Angeles & Nearby Areas";
+const description = "Fast & reliable commercial washing machine repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (424) 325-0520";
+const title ="Commercial Washing Machine Repair Los Angeles & Nearby Areas";
 ---
 <title>{title}</title>
 <meta name="description" content={description} />
@@ -21,209 +22,836 @@ const title ="Commercial Refrigerator Repair Los Angeles & Nearby Areas";
 <Reviews />
  
   <Container>
-    <div class="content" style="padding: 0 10%">
-      <h1 class="top" >
-        <span class="animate-charcter" style="white-space: wrap;"
-          >Same Day Commercial Refrigerator Repair</span
-        > Los Angeles
-      </h1>
-      <div class="two-col-grid">
-        <div class="col-one">
-          <img
-            class="img-header"
-            src="/refrigerator-repair/refrigerator-repair-3.webp" 
-              
-            width="500"
-            height="500"
-            alt="Commercial Refrogerator Repair in Los Angeles"
-          />
-          <figcaption>
-            <b> Commercial Refrigerator Repair Los Angeles</b>
-          </figcaption><br />
-          <Contactbtn />
+    <main>
+      <div class="page-header">
+        <div class="page-header-d-full">
+          <div class="page-header-d">
+            <h1>
+              <span class="animate-charcter">h1</span>
+            </h1>
+          </div>
         </div>
-        <div class="col-two">
-          <h2><strong>Commercial Refrigerator Repair Los Angeles</strong></h2><p
-            style="text-align: start">
-            When your commercial refrigerator encounters issues, every minute
-            counts. Our Los Angeles-based repair service specializes in
-            addressing these problems promptly. By booking with us, you ensure
-            that your commercial refrigeration receives expert attention,
-            minimizing downtime and preserving your inventory's quality. After
-            the booking, our highly trained technicians will arrive with all the
-            necessary tools to conduct a proper diagnostic. 
-          </p>
-          <p style="text-align: start">
-            Our streamlined booking process for commercial services is designed
-            for your convenience, offering fast, reliable repairs when you need
-            them most. Whether it's a last-minute emergency or scheduled
-            maintenance, we're here to support your Los Angeles business with
-            top-tier commercial refrigerator repair services.
-          </p>
+
+        <div class="page-header-f">
+          <div class="page-header-f-rel">
+            <img
+              width="2000px"
+              height="1000px"
+              src="/commercial-dryer/commercial-dryer-page_header_photos.webp"
+              alt="Commercial Washing Machine Repair Los Angeles"
+            />
+          </div>
+
+          <div class="page-header-f-gradient"></div>
+        </div>
+
+        <div class="page-header-p-full">
+          <div class="page-header-p">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
         </div>
       </div>
-      <p style="text-align: start">
-        In the bustling environment of Los Angeles, a malfunctioning commercial
-        refrigerator can quickly become a critical issue. We are a same-day
-        appliance repair company with specialized technicians who are experts in
-        diagnosing and repairing all types of commercial refrigerators, ensuring
-        your business experiences minimal disruption.
-      </p>
-      <p style="text-align: start">
-        We offer comprehensive commercial refrigerator repair service across Los
-        Angeles, from minor adjustments to major overhauls. Our goal is to
-        extend the lifespan of your commercial refrigerators, maximizing your
-        investment and keeping your operations running smoothly. We offer
-        affordable prices to our commercial customers.
-      </p>
-      <h2><strong>Commercial Refrigeration Los Angeles, CA</strong></h2>
-      <img
-        loading="lazy"
-        class="img"
-        src="/images/commercial-refrigerator-repair-services-in los angeles.webp"
-        width="600"
-        height="600"
-        alt="Commercial refrigerators that need service"
-      />
-      <p style="text-align: start">
-        Los Angeles businesses rely heavily on commercial refrigeration systems
-        to keep products fresh and safe. Our local commercial refrigeration
-        repair services understand the unique demands of the LA market, offering
-        tailored solutions to meet the needs of restaurants, grocery stores, and
-        other establishments requiring top-notch refrigeration.
-      </p><p style="text-align: start">
-        Our expertise in commercial refrigeration in Los Angeles positions us as
-        your go-to repair service, ensuring that your systems operate
-        efficiently and effectively. With a focus on energy efficiency and
-        performance, we help LA businesses reduce operational costs while
-        maintaining the highest standards of refrigeration.
-      </p><p style="text-align: start">
-        In the bustling environment of Los Angeles, a malfunctioning commercial
-        refrigerator can quickly become a critical issue. Our specialized
-        technicians are experts in diagnosing and repairing all types of
-        commercial refrigerators, ensuring your business experiences minimal
-        disruption. Unlike other refrigeration repair companies, we strive to
-        have same-day appointments, provide proper diagnostics, and transparent
-        pricing. We strive to make commercial refrigeration repair hassle-free.
-      </p><h2>
-        <strong>Commercial Refrigeration Repair Services You Can Trust</strong>
-      </h2><p style="text-align: start">
-        We are licensed, certified, and insured employing only highly trained
-        technicians. Our commercial refrigeration repair services are
-        comprehensive, covering everything from routine maintenance to emergency
-        repairs. We pride ourselves on providing quick, effective solutions that
-        address the root cause of the problem, ensuring lasting results.
-      </p><p style="text-align: start">
-        By choosing our services, you're opting for a team that values
-        reliability and quality. We use only the best parts and the latest
-        techniques in our repairs, guaranteeing that your commercial
-        refrigeration equipment performs optimally. Every technician in our
-        appliance repair company in Los Angeles is trained in all major brands
-        of appliances.
-      </p><h2><strong>Older Commercial Refrigeration Equipment</strong></h2><p
-        style="text-align: start">
-        Dealing with older commercial refrigeration equipment requires a
-        specialized approach. Our technicians have the experience and knowledge
-        needed to service and repair vintage models, bringing them up to modern
-        standards without compromising their integrity.
-      </p><p style="text-align: start">
-        Our commitment to preserving older equipment means your business can
-        continue to rely on its existing refrigeration systems longer. We offer
-        solutions that breathe new life into older models, ensuring they remain
-        functional and efficient. Keep in mind, unlike new fridge repairs, old
-        fridge repairs may take more time and more.
-      </p><h2>
-        <strong>Commercial Appliance Repair Los Angeles Near Me?</strong>
-      </h2><p style="text-align: start">
-        Searching for "commercial appliance repair Los Angeles near me"? Look no
-        further. Our local presence ensures we're always nearby, ready to tackle
-        your commercial appliance repair needs. With a focus on convenience and
-        quick service, we're here to resolve any issues you face, ensuring your
-        business keeps running without a hitch.
-      </p><p style="text-align: start">
-        Our proximity allows for same-day service in many cases, providing the
-        fast, effective repairs that Los Angeles businesses need. Trust us to be
-        your local solution for all commercial appliance repair needs, offering
-        reliability and expertise right where you need it. We also provide home
-        appliance repair services.
-      </p>
-      <h2><strong>Why Commercial Refrigerators Need a Specialist</strong></h2>
-      <img
-        loading="lazy"
-        class="img"
-        src="/images/Commercial-Refrigerator-Repair-Specialist.webp"
-        width="600"
-        height="600"
-        alt="Commercial refrigerator out of order"
-      /><p style="text-align: start">
-        Commercial refrigerators require the expertise of a specialist due to
-        their complexity and the critical role they play in business operations.
-        Our technicians are specifically trained to handle the unique challenges
-        of commercial refrigeration, from advanced diagnostic techniques to
-        specialized repair methods.
-      </p><p style="text-align: start">
-        Choosing a specialist means ensuring that your commercial refrigerators
-        receive the focused attention they need. Our team is equipped to provide
-        high-quality repairs that enhance efficiency, extend equipment lifespan,
-        and keep your business operating at its best.
-      </p><h2>
-        <strong>Same Day Commercial Appliance Repair Services in LA</strong>
-      </h2><p style="text-align: start">
-        When time is of the essence, our same-day commercial appliance repair
-        services in Los Angeles are here to help and solve your problem quickly.
-        We understand that delays can be costly, which is why we prioritize
-        fast, efficient service to get your appliances back in working order as
-        quickly as possible.
-      </p><p style="text-align: start">
-        Our ability to provide same-day repairs is just one of the ways we
-        support Los Angeles businesses. By minimizing downtime, we help you
-        maintain productivity and customer satisfaction, ensuring that your
-        operations continue seamlessly.
-      </p><h2>
-        <strong>When the Fridge Is Down, Your Business Is Down</strong>
-      </h2><p style="text-align: start">
-        The impact of a malfunctioning fridge on your business can be
-        significant. Recognizing this, we're committed to providing quick repair
-        services that restore your refrigeration systems to their optimal state.
-        Our team acts quickly to diagnose and fix issues, reducing the potential
-        for lost revenue and spoiled products.
-      </p><h2>
-        <strong>Commercial Refrigeration Maintenance Checklist</strong>
-      </h2><p style="text-align: start">
-        Regular maintenance is key to preventing unexpected breakdowns. Our
-        commercial refrigeration maintenance checklist is designed to keep your
-        systems running smoothly, identifying potential issues before they
-        become major problems. From cleaning coils to checking temperature
-        settings, our thorough approach ensures your refrigeration equipment
-        remains in top condition.
-      </p><h2>
-        <strong>What Can Go Wrong with a Commercial Refrigerator?</strong>
-      </h2><p style="text-align: start">
-        Several issues can arise with commercial refrigerators, from fridge not
-        cooling, and food going bad to electrical problems and potential
-        improper installation. Our technicians are trained to identify and
-        address these issues efficiently, ensuring your refrigerator maintains
-        its performance and reliability. Understanding the common problems can
-        help in preventing them extending the life of your commercial
-        refrigeration units and preventing the food from going bad.
-      </p><h2><strong>When to Replace Instead of Repair</strong></h2><p
-        style="text-align: start">
-        It is difficult to say goodbye to your installed refrigerators or
-        freezers. The importance of a highly trained technician is significant
-        in advising you in making this decision. There comes a time when
-        replacing a commercial refrigerator is more cost-effective than
-        continuing to repair it. Our team provides honest assessments to help
-        you make informed decisions about whether to repair or replace your
-        equipment. We consider factors like age, repair history, and energy
-        efficiency to guide you toward the best choice for your business.
-      </p><p style="text-align: start">
-        For all your commercial appliance repair needs in Los Angeles, trust our
-        expert team to deliver the quality service your business deserves.
-        Contact us today to schedule a repair or to learn more about how we can
-        help keep your operations running efficiently.
-      </p>
+    </main>
+
+    <div class="page213">
+      <div class="open-full_left">
+        <svg
+          width="40px"
+          height="40px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path
+              id="arrow-left-menu"
+              d="M4 12H20M20 12L16 8M20 12L16 16"
+              stroke="rgb(59, 59, 59)"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </g>
+        </svg>
+      </div>
+<!--Form-->
+      <div class="full_left_menu_r">
+        <div class="list_left">
+          <a href="#form">
+            <h2>Contact Form</h2>
+          </a>
+        </div>
+ <!--Menu-->
+
+        <div class="list_left">
+          <a href="#why-us">
+            <h2>Why Choose Same Day Appliance Repair</h2>
+          </a>
+        </div>
+
+        <div class="list_left">
+          <a href="#types">
+            <h2>Types</h2>
+          </a>
+        </div>
+        <div class="list_left">
+          <a href="#problems">
+            <h2>Common Problems</h2>
+          </a>
+        </div>
+        <div class="list_left">
+          <a href="#signs">
+            <h2>Signs Your Commercial Refrigerator Needs Repair</h2>
+          </a>
+        </div>
+
+        <div class="list_left">
+          <a href="#maintenance">
+            <h2>Professional Maintenance</h2>
+          </a>
+        </div>
+
+        <div class="list_left">
+          <a href="#repair-replace">
+            <h2>Repair Or Replace</h2>
+          </a>
+        </div>
+        
+        <div class="list_left">
+          <a href="#expert-services">
+            <h2>Contact Expert Repair Services</h2>
+          </a>
+        </div>
+
+        <div class="list_left">
+          <a href="#brands">
+            <h2>Brands</h2>
+          </a>
+        </div>
+
+        <div class="list_left">
+          <a href="#areas">
+            <h2>Areas</h2>
+          </a>
+        </div>
+
+        <div class="list_left">
+          <a href="#faqs">
+            <h2>FAQs</h2>
+          </a>
+        </div>
+      </div>
+<!--Form-->
+      <div class="page213-container">
+        <div class="page213-content" id="form">
+          <div class="content__page-desc">
+            <ContactForm />
+          </div>
+        </div>
+
+ <!--why-us-->       
+        <div class="page213-content" id="why-us">
+          <div class="content__page-full-hed">
+            <div class="content__page-hed-h">
+              <h2>why-us</h2>
+            </div>
+
+            <div class="content__page-full-desc">
+              <div class="content__page-desc-phot">
+                <img
+                  src="/commercial-dryer/commercial-dryer-1.webp"
+                  loading="lazy"
+                  width="450px"
+                  height="450px"
+                  alt="Commercial Washing Machine Repair"
+                />
+              </div>
+
+            <div class="content__page-hed-desc"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+          </div>
+          <Btn />
+        </div>
+
+   <!--types-->         
+        <div class="page213-content" id="types">
+          <div class="content__page-full-hed">
+            <div class="content__page-hed-h">
+              <h2>types</h2>
+            </div>
+            <div class="content__page-hed-desc"></div>
+          </div>
+
+          <div class="content__page-full-desc content__page-full-desc-ph-ri">
+            <div class="content__page-desc-phot">
+              <img
+                src="/commercial-dryer/commercial-dryer-2.webp"
+                width="450px"
+                height="450px"
+                alt="Commercial Washing Machine Repair"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="content__page-desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <Btn />
+        </div>
+   
+  <!--problems-->        
+  <div class="page213-content" id="problems">
+    <div class="content__page-full-hed">
+      <div class="content__page-hed-h">
+        <h2>problems</h2>
+      </div>
+      <div class="content__page-hed-desc"></div>
+    </div>
+
+    <div class="content__page-full-desc content__page-full-desc-ph-ri">
+      <div class="content__page-desc-phot">
+        <img
+          src="/commercial-dryer/commercial-dryer-2.webp"
+          width="450px"
+          height="450px"
+          alt="Commercial Washing Machine Repair"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="content__page-desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <Btn />
+  </div>                  
+
+<!--signs--> 
+<div class="page213-content" id="signs">
+  <div class="content__page-full-hed">
+    <div class="content__page-hed-h">
+      <h2>signs</h2>
+    </div>
+    <div class="content__page-hed-desc"></div>
+  </div>
+
+    <div class="content__page-desc">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+      <Btn/>
+    </div> 
+
+   <!--maintenance--> 
+<div class="page213-content" id="maintenance">
+  <div class="content__page-full-hed">
+    <div class="content__page-hed-h">
+      <h2>maintenance</h2>
+    </div>
+    <div class="content__page-hed-desc"></div>
+  </div>
+
+    <div class="content__page-desc">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+      <Btn/>
+    </div> 
+
+       <!--repair-replace--> 
+<div class="page213-content" id="repair-replace">
+  <div class="content__page-full-hed">
+    <div class="content__page-hed-h">
+      <h2>repair-replace</h2>
+    </div>
+    <div class="content__page-hed-desc"></div>
+  </div>
+
+    <div class="content__page-desc">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+      <Btn/>
+    </div> 
+    
+    <!--expert-services--> 
+    <div class="page213-content" id="expert-services">
+      <div class="content__page-full-hed">
+        <div class="content__page-hed-h">
+          <h2>expert-services</h2>
+        </div>
+        <div class="content__page-hed-desc"></div>
+      </div>
+    
+        <div class="content__page-desc">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+          <Btn/>
+        </div> 
+
+<!--Brands-->
+        <div class="page213-content" id="brands">
+          <div class="content__page-full-hed">
+            <div class="content__page-hed-h">
+              <h2>Brands</h2>
+            </div>
+            <div class="content__page-hed-desc">
+              <p>
+                We repair all major brands of commercial washers and other major appliances.
+              </p>
+            </div>
+          </div>
+          <div class="content__page-full-logo-brand">
+            <div class="ph-logo-brand">
+              <div class="logo-brand logo-bran-ph-1">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/speed-queen.webp"
+                    alt="Speed Queen"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-2">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/maytag.webp"
+                    alt="Maytag"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-3">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/whirlpool.webp"
+                    alt="Whirlpool"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-4">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/electrolux.webp"
+                    alt="Electrolux"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-5">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/lg.webp"
+                    alt="LG"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-6">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/samsung.webp"
+                    alt="Samsung"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-7">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/huebsch.webp"
+                    alt="Huebsch"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-8">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/dexter.webp"
+                    alt="Dexter"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-9">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/milnor.webp"
+                    alt="Milnor"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-10">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/continental-girbau.webp"
+                    alt="Continental Girbau"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-11">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/unimac.webp"
+                    alt="Unimac"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-12">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/wascomat.webp"
+                    alt="Wascomat"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-13">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/american-dryer-corporation.webp"
+                    alt="American Dryer Corporation"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-14">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/ipso.webp"
+                    alt="Ipso"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-15">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/primus.webp"
+                    alt="Primus"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-16">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/miele.webp"
+                    alt="JMiele"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-17">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/fagor.webp"
+                    alt="Fagor"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-18">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/alliance-laundry-systems.webp"
+                    alt="Alliance Laundry Systems"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-19">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/girbau-north-america.webp"
+                    alt="Girbau North America "
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="logo-brand logo-bran-ph-20">
+                <a href="#">
+                  <img
+                    width="150px"
+                    height="150px"
+                    src="/brand-logos/pellerin-milnor-corporation.webp"
+                    alt="Pellerin Milnor Corporation"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="full-desc-logo-brand">
+              <p>Brands of Commercial Washing Machine we repair</p>
+
+              <div class="desc-logo-brand logo-bran-d-1">
+                <h3><a href="#">Speed Queen</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-2">
+                <h3><a href="#">Maytag</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-3">
+                <h3><a href="#">Whirlpool</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-4">
+                <h3><a href="#">Electrolux</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-5">
+                <h3><a href="#">LG electronics</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-6">
+                <h3><a href="#">Samsung</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-7">
+                <h3><a href="#">Huebsch</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-8">
+                <h3><a href="#">Dexter</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-9">
+                <h3><a href="#">Milnor</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-10">
+                <h3><a href="#">Continental Girbau</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-11">
+                <h3><a href="#">Unimac</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-12">
+                <h3><a href="#">Wascomat</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-13">
+                <h3><a href="#">American Dryer Corporation</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-14">
+                <h3><a href="#">Ipso</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-15">
+                <h3><a href="#">Primus</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-16">
+                <h3><a href="#">Miele</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-17">
+                <h3><a href="#">Fagor</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-18">
+                <h3><a href="#">Alliance Laundry Systems</a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-19">
+                <h3><a href="#">Girbau North America </a></h3>
+              </div>
+
+              <div class="desc-logo-brand logo-bran-d-20">
+                <h3><a href="#">Pellerin Milnor Corporation</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <Btn />
+        </div>
+
+<!--End Brand-->
+<!--Areas-->
+        <div class="page213-content" id="areas">
+          <div class="content__page-full-hed">
+            <div class="content__page-hed-h">
+              <h2>
+                Areas
+              </h2>
+            </div>
+            <div class="content__page-hed-desc"></div>
+          </div>
+
+            <div class="content__page-desc">
+             <p>Areas</p>
+            </div>
+          <Btn />
+        </div>
+
+      <!--FAQs-->
+
+        <div class="page213-content" id="faqs">
+
+
+          <div class="content__page-full-hed">
+            <div class="content__page-hed-h">
+              <h2>FAQs</h2>
+            </div>
+          </div>
+
+          <div class="content__page-full-desc">
+            <div class="content__page-desc">
+              <div class="faq-full" id="faqs-anchor">
+            
+                <div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+                  <div class="fa_plus">︾</div>
+                  <div class="fa_minus">︽</div>
+                </div>
+                <div class="questions">
+                 Answer
+                </div>
+
+                <div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+
+                  <div class="fa_plus">︾</div>
+
+                  <div class="fa_minus">︽</div>
+                </div>
+                <div class="questions">
+                 Answer
+                </div>
+                
+                <div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+
+                  <div class="fa_plus">︾</div>
+
+                  <div class="fa_minus">︽</div>
+                </div>
+                <div class="questions">
+                 Answer
+                </div>
+                
+                <div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+                  <div class="fa_plus">︾</div>
+                  <div class="fa_minus">︽</div>
+                </div>
+                <div class="questions">
+                 Answer
+                </div>
+                
+                <div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+                  <div class="fa_plus">︾</div>
+                  <div class="fa_minus">︽</div>
+                </div>
+                <div class="questions">
+                 Answer
+                </div>
+                
+                <div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+                  <div class="fa_plus">︾</div>
+                  <div class="fa_minus">︽</div>
+                </div>
+                <div class="questions">
+                 Answer
+                </div>
+                
+                <div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+                  <div class="fa_plus">︾</div>
+                  <div class="fa_minus">︽</div>
+                </div>
+                <div class="questions">
+                 Answer
+                </div>
+                
+                <div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+                  <div class="fa_plus">︾</div>
+                  <div class="fa_minus">︽</div>
+                </div>
+                <div class="questions">
+                 Answer
+                </div>
+                
+                <div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+                  <div class="fa_plus">︾</div>
+                  <div class="fa_minus">︽</div>
+                </div>
+                <div class="questions">
+                 Answer
+                </div>
+                
+                <div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+                  <div class="fa_plus">︾</div>
+                  <div class="fa_minus">︽</div>
+                </div>
+                <div class="questions">
+                 Answer
+                </div>
+                
+                <div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+                  <div class="fa_plus">︾</div>
+                  <div class="fa_minus">︽</div>
+                </div>
+                <div class="questions">
+                 Answer
+                </div><div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+
+                  <div class="fa_plus">︾</div>
+
+                  <div class="fa_minus">︽</div>
+                </div>
+
+                <div class="questions">
+                 Answer
+                </div><div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+
+                  <div class="fa_plus">︾</div>
+
+                  <div class="fa_minus">︽</div>
+                </div>
+
+                <div class="questions">
+                 Answer
+                </div><div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+
+                  <div class="fa_plus">︾</div>
+
+                  <div class="fa_minus">︽</div>
+                </div>
+
+                <div class="questions">
+                 Answer
+                </div><div class="FAQ">
+                  <div class="fa">
+                    <h3>Question</h3>
+                  </div>
+
+                  <div class="fa_plus">︾</div>
+
+                  <div class="fa_minus">︽</div>
+                </div>
+
+                <div class="questions">
+                 Answer
+                </div>
+
+              </div>
+            
+
+                <div class="FAQ_bottom"></div>
+              </div>
+            </div>
+          </div>
+          <Btn />
+        </div>
+      </div>
     </div>
   </Container>
  
-<!-- <CtaTestReviews /> -->
 <Cta />
+
+<Arrow />
+<Focus />
+<Faqs />
+<LogoBrands />
