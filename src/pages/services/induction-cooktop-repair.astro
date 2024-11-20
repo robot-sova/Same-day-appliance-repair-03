@@ -10,7 +10,8 @@ import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
 import "css/service/style_services.css";
 ---
-<Navbar />
+  <title>{title}</title>
+  <meta name="description" content={description} /><Navbar />
 <Reviews />
  <Container>
    <main style="max-width: 1920px; padding: 0 10%; margin: 0 auto;">
