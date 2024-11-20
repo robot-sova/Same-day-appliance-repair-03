@@ -10,30 +10,12 @@ import Reviews from "@components/reviews.astro";
 
 import "css/service-areas/pasadena/style-service-areas-pasadena.css";
 
+const description = "Need quick, reliable washer repair Pasadena CA? Our licensed expert technicians deliver exceptional service. Guaranteed results. (424) 325-0571";
+const title ="Same Day Washer Repair Pasadena CA - Best Local Service";
 ---
- 
-  
 
 
-<!-- частые вопросы -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", function () {
-    let coll = document.getElementsByClassName("FAQ");
-    for (let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  });
-</script>
-
-    <Layout title="Same Day Washer Repair Pasadena CA - Best Local Service" description="Need quick, reliable washer repair Pasadena CA? Our licensed expert technicians deliver exceptional service. Guaranteed results. (424) 325-0571">
+    <Layout title="" description="">
   <Navbar />
 <Reviews />
   <Container>
