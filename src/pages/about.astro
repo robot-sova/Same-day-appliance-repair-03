@@ -14,7 +14,8 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 });
 ---
 
-  <Navbar />
+   <title>{title}</title>
+  <meta name="description" content={description} /><Navbar />
 <Reviews />
   <Container>
     <Sectionhead>
