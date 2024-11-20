@@ -4,7 +4,6 @@ import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import "@fontsource-variable/inter/index.css";
 import Btn from "@components/btn.astro";
-const { title, description } = Astro.props;
 // export interface Props {
 //    title: string;
 // }
@@ -29,10 +28,6 @@ const resolvedImageWithDomain = new URL(
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
     <!--Bing Webmaster Tools -->
-
-    <title>{title}</title>
-    <meta name="description" content={description} />
-
     <meta name="msvalidate.01" content="F2723BD576AB7FA778D3F53898576D0B" />
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <!--City Local 101 verification Code -->
