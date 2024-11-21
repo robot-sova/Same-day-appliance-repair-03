@@ -9,34 +9,8 @@ import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
 
 import "css/price/style_price.css";
-
-const description = "Click for the real costs of fireplace repairs with our comprehensive guide. Find a reliable technicians, and make informed decisions. Call: (424) 325-0541";
-const title ="Fireplace Repair Cost - Labor & Parts Pricing - Ultimate Guide";
 ---
- 
-  
-
-
-
-<!-- частые вопросы -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", function () {
-    let coll = document.getElementsByClassName("FAQ");
-    for (let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  });
-</script>
-
-    <Layout title="" description="">
+    <Layout title="Click for the real costs of fireplace repairs with our comprehensive guide. Find a reliable technicians, and make informed decisions. Call: (424) 325-0541" description="Fireplace Repair Cost - Labor & Parts Pricing - Ultimate Guide">
   <Navbar />
 <Reviews />
  
