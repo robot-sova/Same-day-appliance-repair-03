@@ -150,24 +150,15 @@
 .but-content-machinery-estimates a{
     padding: 2px 0px;
 }
-
-.full-commercial-machinery a, 
-.full-conteiner-machinery a {
-    color: #000; /* Устанавливаем черный цвет текста для всех ссылок */
-    text-decoration: none; /* Опционально: убираем подчеркивание */
-}
-
-.full-commercial-machinery a:hover, 
-.full-conteiner-machinery a:hover {
-    color: #ca0913; /* Красный цвет при наведении */
-}
-
+ 
 @media (max-width:768px) {
-
-    
-
-
-
+  
+  
+  
+  
+  
+ 
+      
     .full-commercial-machinery-1920 {
         padding: 3% 2%;
     }
@@ -201,10 +192,12 @@
     .d-content-machinery p {
         font-size: 18px;
         line-height: 22px;
-
+    
     }
 
-   
-    
 
+
+
+
+    
 }
