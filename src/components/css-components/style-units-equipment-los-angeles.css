@@ -204,15 +204,7 @@
 
     }
 
-    .full-commercial-machinery a:hover, 
-    .full-conteiner-machinery a:hover {
-    color: #ca0913; /* Красный цвет при наведении */
-}
-.full-commercial-machinery a, 
-.full-conteiner-machinery a {
-    color: #000; /* Устанавливаем черный цвет текста для всех ссылок */
-    text-decoration: none; /* Опционально: убираем подчеркивание */
-}
-
+   
+    
 
 }
