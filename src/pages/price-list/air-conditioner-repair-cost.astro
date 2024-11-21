@@ -12,25 +12,7 @@ import "css/price/style_price.css";
 const description = "Click for air conditioner repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (424) 325-0521";
 const title ="Air Conditioner Repair Cost - Labor & Parts Pricing Guide";
 ---
-<!-- частые вопросы -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", function () {
-    let coll = document.getElementsByClassName("FAQ");
-    for (let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  });
-</script>
-
-    <Layout title="" description="">
+    <Layout title="Air Conditioner Repair Cost - Labor & Parts Pricing Guide" description="Click for air conditioner repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (424) 325-0521">
   <Navbar />
 <Reviews />
   <Container>
@@ -1349,3 +1331,20 @@ const title ="Air Conditioner Repair Cost - Labor & Parts Pricing Guide";
     </main>
   </Container>
 <Cta />
+<!-- частые вопросы -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    let coll = document.getElementsByClassName("FAQ");
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  });
+</script>
