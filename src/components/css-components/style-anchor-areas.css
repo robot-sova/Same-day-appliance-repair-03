@@ -58,5 +58,17 @@
       height: 75px;
       margin-top: -75px;
     }
+    ul {
+      color: #000;
+  }
   
+  ul a {
+      color: #000;
+      text-decoration: none; /* Убираем подчеркивание */
+      transition: color 0.3s ease; /* Плавный переход */
+  }
+  
+  ul a:hover {
+      color: #ca0913; /* Красный текст при наведении */
+  }
 }
