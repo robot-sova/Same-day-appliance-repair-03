@@ -153,6 +153,13 @@
 
 @media (max-width:768px) {
 
+    .but-content-machinery a,
+    .content-machinery-f-d a {
+        color: #000; /* Устанавливаем черный цвет текста */
+    }
+
+
+
     .full-commercial-machinery-1920 {
         padding: 3% 2%;
     }
