@@ -193,4 +193,9 @@
 
     }
 
+    .full-commercial-machinery a:hover, 
+    .full-conteiner-machinery a:hover {
+    color: #ca0913; /* Красный цвет при наведении */
+}
+
 }
