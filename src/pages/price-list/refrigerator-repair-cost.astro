@@ -11,33 +11,10 @@ import LogoBrands from "@components/js/logo-brands.astro";
 
 import "css/price/style_price.css";
 
-const description = "Click for the real costs of refrigerator repairs with our comprehensive guide. Find a reliable technicians, and make informed decisions. Call: (424) 325-0546";
-const title ="Refrigerator Repair Cost - Labor & Parts - Online Estimates";
 ---
- 
-  
 
 
-
-<!-- частые вопросы -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", function () {
-    let coll = document.getElementsByClassName("FAQ");
-    for (let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  });
-</script>
-
-    <Layout title="" description="">
+    <Layout title="Refrigerator Repair Cost - Labor & Parts - Online Estimates" description="Click for the real costs of refrigerator repairs with our comprehensive guide. Find a reliable technicians, and make informed decisions. Call: (424) 325-0546">
   <Navbar />
 <Reviews />
  
@@ -1958,3 +1935,20 @@ const title ="Refrigerator Repair Cost - Labor & Parts - Online Estimates";
  
 <Cta />
 <LogoBrands />
+<!-- частые вопросы -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    let coll = document.getElementsByClassName("FAQ");
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  });
+</script>
