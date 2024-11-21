@@ -10,33 +10,8 @@ import Reviews from "@components/reviews.astro";
 import LogoBrands from "@components/js/logo-brands.astro";
 
 import "css/price/style_price.css";
-
-const description = "Click for commercial ice machine repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (424) 325-0523";
-const title ="Commercial Ice Machine Repair Cost - Full Pricing Guide";
 ---
- 
-  
-
-
-<!-- частые вопросы -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", function () {
-    let coll = document.getElementsByClassName("FAQ");
-    for (let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  });
-</script>
-
-    <Layout title="" description="">
+    <Layout title="Commercial Ice Machine Repair Cost - Full Pricing Guide" description="Click for commercial ice machine repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (424) 325-0523">
   <Navbar />
 <Reviews />
  
@@ -1169,3 +1144,20 @@ const title ="Commercial Ice Machine Repair Cost - Full Pricing Guide";
  
 <Cta />
 <LogoBrands />
+<!-- частые вопросы -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    let coll = document.getElementsByClassName("FAQ");
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  });
+</script>

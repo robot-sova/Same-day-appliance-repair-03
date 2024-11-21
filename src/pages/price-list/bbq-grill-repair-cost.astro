@@ -9,24 +9,6 @@ import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
 import "css/price/style_price.css";
 ---
-<!-- частые вопросы -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", function () {
-    let coll = document.getElementsByClassName("FAQ");
-    for (let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  });
-</script>
-
     <Layout title="BBQ Grill Cleaning Cost - Labor & Parts Pricing Guide" description="Click for BBQ grill repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (424) 325-0521">
   <Navbar />
 <Reviews />
@@ -1286,3 +1268,20 @@ import "css/price/style_price.css";
   </Container>
  
 <Cta />
+<!-- частые вопросы -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    let coll = document.getElementsByClassName("FAQ");
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  });
+</script>
