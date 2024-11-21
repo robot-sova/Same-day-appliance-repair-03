@@ -150,7 +150,60 @@
 .but-content-machinery-estimates a{
     padding: 2px 0px;
 }
- 
+/* Ссылки выше кнопок */
+.full-commercial-machinery a, 
+.full-conteiner-machinery a {
+    color: #000; /* Черный цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.25s; /* Плавный переход для цвета */
+}
+
+/* Цвет текста ссылки при наведении выше кнопок */
+.full-commercial-machinery a:hover, 
+.full-conteiner-machinery a:hover {
+    color: #ca0913; /* Красный цвет текста при наведении */
+}
+
+/* Стили для кнопок BOOK US и ESTIMATES */
+.but-content-machinery, 
+.but-content-machinery-estimates {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    text-align: center;
+    background-color: #000; /* Черный фон кнопки по умолчанию */
+    border: solid 1.5px #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s; /* Плавный переход для фона */
+}
+
+/* Стили ссылок внутри кнопок */
+.but-content-machinery a, 
+.but-content-machinery-estimates a {
+    color: #fff; /* Белый текст по умолчанию */
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 1.2px 1.2px 2px black;
+    text-decoration: none;
+    transition: color 0.25s; /* Плавный переход для цвета текста */
+}
+
+/* При наведении на кнопки */
+.but-content-machinery:hover, 
+.but-content-machinery-estimates:hover {
+    background-color: #ca0913; /* Красный фон при наведении */
+    border-color: #ca0913; /* Опционально: рамка становится красной */
+}
+
+.but-content-machinery:hover a, 
+.but-content-machinery-estimates:hover a {
+    color: #fff; /* Белый текст при наведении */
+}
+
+
+
 @media (max-width:768px) {
   
   
@@ -199,5 +252,5 @@
 
 
 
-    
+
 }
