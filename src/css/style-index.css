@@ -339,3 +339,9 @@ h2 {
         width: 100%;
     }
 }
+
+.black-list a {
+    color: #000000;
+}
+
+.black-list a:hover {color:#ca1111}
