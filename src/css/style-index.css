@@ -271,13 +271,4 @@ h2 {
         width: 100%;
     }
 }
-li {
-    color: #000 !important; /* Пример: сделать текст черным */
-}
-li {
-    color: #000; /* Установите цвет текста */
-}
-
-.content__page-desc ul li {
-    color: #262626; /* Пример для конкретного блока */
-}
+.black-list li a{color:#000;}
