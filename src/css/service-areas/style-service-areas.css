@@ -3,13 +3,10 @@
     max-width: 1920px !important;
     padding: 0% 10% 0% 10%;
 }
-
-
 :root {
     --table-color: rgb(231 231 231 / 58%);
     --text-shadown-b-h3: 0.5px 0.5px 0.8px #8f9499;
 }
-
 
 /* *{
   outline: 1px solid red !important;
@@ -820,17 +817,6 @@ main {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:768px) {
 
     .max-w-screen-xl {
@@ -926,6 +912,4 @@ main {
     .full-commercial-machinery-1920 {
         padding: 3% 0%;
     }
-
-
 }

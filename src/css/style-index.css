@@ -6,9 +6,6 @@ h2 {
     font-size: clamp(24px, 5vw, 28px) !important;
     text-shadow: 1px 1px 1.3px #8f9499;
 }
-
-
-
 .home-page-full {
     max-width: 1920px;
     margin: 0 auto;
@@ -93,15 +90,6 @@ h2 {
 .faq-price-list {
     margin-bottom: 2%;
 }
-
-
-
-
-
-
-
-
-
 .category-0 {
     display: inline-block;
 }
@@ -141,20 +129,6 @@ h2 {
     text-align: center;
     margin: 0 0 20px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .finish-index {
     width: 100%;
     max-width: 1920px;
@@ -176,11 +150,6 @@ h2 {
 .finish-index p {
     margin-bottom: 7px;
 }
-
-
-
-
-
 #full-commercial-machinery-nocolor::before {
     content: '';
     display: block;
@@ -210,27 +179,9 @@ h2 {
     position: relative;
 
   }
-  
-
-
-
-
-
-
-
 .desc-logo-brand h3 {
     margin-top: 0;
 }
-
-
-
-
-
-
-
-
-
-
 @media (max-width:1024px) {
     .two-col-grid {
         display: grid;
@@ -268,14 +219,6 @@ h2 {
       }
     
 }
-
-
-
-
-
-
-
-
 @media (max-width:768px) {
 
     .six-col-grid {
@@ -294,17 +237,6 @@ h2 {
 
    
 }
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 1536px) {
     .container {
         max-width: 100%;
@@ -339,7 +271,6 @@ h2 {
         width: 100%;
     }
 }
-
 .black-list a {
     color: #000000;
 }
