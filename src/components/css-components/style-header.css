@@ -21,8 +21,6 @@
 }
 
 
-
-
 html {
     width: 100%;
     scroll-behavior: auto;
@@ -47,8 +45,6 @@ body {
  
 }
 
-
-
 .inside-reviews_header-full {
     max-width: 1920px;
     width: 100%;
@@ -71,21 +67,15 @@ body {
     z-index: 2000;
 }
 
-
-
-
 .inside_header-full {
     display: flex;
     justify-content: space-between;
 }
 
-
 .py-2 {
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
 }
-
-
 .relative span,
 .py-2 span {
     color: #fff;
@@ -432,10 +422,6 @@ button.hcp-button:hover {
         pointer-events: none;
     }
 }
-
-
-
-
 @media (max-width:400px) {
 
     .call-header-1024 a {
