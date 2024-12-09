@@ -1,10 +1,6 @@
-[build.processing]
-  skip_processing = false
-
-[build.processing.css]
-  bundle = true
-  minify = true
-
-[build.processing.js]
-  bundle = true
-  minify = true
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Content-Encoding = "gzip" # or "br" for Brotli
+    Content-Type = "application/javascript"
+    Vary = "Accept-Encoding"
