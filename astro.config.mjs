@@ -5,10 +5,10 @@ import sitemap from "@astrojs/sitemap";
 
 
 
-// https://astro.build/config
 export default defineConfig({
   site: "https://samedayappliance.repair",
   integrations: [tailwind(), mdx(), sitemap()],
+  outDir: "./dist", // Ensures the build output is in the 'dist' folder
 
 });
 

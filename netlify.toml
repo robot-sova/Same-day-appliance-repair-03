@@ -17,7 +17,7 @@
   for = "/fonts/*"
   [headers.values]
     Cache-Control = "max-age=31536000, immutable" # Cache fonts for 1 year
-    
+
 [[headers]]
   for = "/*.js"
   [headers.values]
