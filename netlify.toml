@@ -1,6 +1,25 @@
 [[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "max-age=0, must-revalidate" # No caching for HTML files
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "max-age=31536000, immutable" # Cache static assets for 1 year
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "max-age=31536000, immutable" # Cache images for 1 year
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "max-age=31536000, immutable" # Cache fonts for 1 year
+    
+[[headers]]
   for = "/*.js"
   [headers.values]
-    Content-Encoding = "gzip" # or "br" for Brotli
-    Content-Type = "application/javascript"
-    Vary = "Accept-Encoding"
+    Content-Encoding = "gzip"
+    Cache-Control = "max-age=31536000, immutable"
