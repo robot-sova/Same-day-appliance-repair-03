@@ -8,8 +8,8 @@
     "start": "astro dev",
     "build": "astro build && npm run build:css",
     "preview": "astro preview",
-    "astro": "astro",
-    "build:css": "postcss src/styles/*.css -d dist/styles/"
+    "astro": "astro"
+    
 
   },
   "dependencies": {
