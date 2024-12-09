@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build && npm run build:css",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:css": "postcss src/styles/*.css -d dist/styles/"
+
   },
   "dependencies": {
     "@amcharts/amcharts4": "^4.10.39",
