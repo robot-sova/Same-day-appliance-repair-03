@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",  
+    "build": "astro build && node scripts/add-headers.js", 
     "preview": "astro preview",
     "astro": "astro",
     "build:css": "postcss src/styles/*.css -d dist/styles/"
