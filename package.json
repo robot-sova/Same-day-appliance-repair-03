@@ -1,7 +1,7 @@
 {
   "name": "astroship",
   "type": "module",
-  "version": "0.0.2",
+  "version": "2.2.0n",
   "private": true,
   "scripts": {
     "dev": "astro dev",
