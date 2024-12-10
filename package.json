@@ -1,7 +1,7 @@
 {
   "name": "astroship",
   "type": "module",
-  "version": "5.0.0",
+  "version": "2.2.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -18,7 +18,7 @@
     "@astrojs/tailwind": "^5.1.3",
     "@fontsource-variable/inter": "^5.1.0",
     "@tailwindcss/typography": "^0.5.15",
-    "astro": "^4.16.14",
+    "astro": "^5.0.0",
     "astro-icon": "^0.8.1",
     "astro-navbar": "^2.3.7npm ",
     "astro-seo": "^0.8.4",
